@@ -58,8 +58,8 @@
     },
     {
       "path": "handoff/START-HERE.md",
-      "bytes": 5181,
-      "sha256": "da039ceacb907b679b9833970c79cc552119e703727308e74e552d2d51a2c21d"
+      "bytes": 6457,
+      "sha256": "3e329ab56d1a2d8e5cd91a65156fd9f8e2aa67dd0d304581c244b002e66aeb41"
     },
     {
       "path": "handoff/THINK-AGENTS.md",
@@ -80,6 +80,11 @@
       "path": "handoff/path-map.json",
       "bytes": 2396,
       "sha256": "28ebddb57a005141320977d8c8199af1549dbd7bb7fb3f565e98f91e379720cb"
+    },
+    {
+      "path": "handoff/publication-status.json",
+      "bytes": 1142,
+      "sha256": "d4b0a5cdce19086e873cbecb23506f2992866dc207f9a6a1f97b043b0c795f07"
     },
     {
       "path": "handoff/sources/emulator-first-full-engineering-addendum-2026-09-16.md",
@@ -427,6 +432,11 @@
       "sha256": "d2d8373acd48fe12612c8843029f05c856d99db6bff0880dda1a9e65ba8ebba6"
     },
     {
+      "path": "orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-initial-delivery.json",
+      "bytes": 1673,
+      "sha256": "36647c306d18f6d81650047c62cd9e7b226a678d411bbfd7b7fdf909775f06ce"
+    },
+    {
       "path": "orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-initial/cp2-alternative-offline-chinese-asr-comparison-matrix-2026-09-06.md",
       "bytes": 8578,
       "sha256": "a879822153d0760ca82b6935b3b56442595cc6ea30b3ea1284962381b76fedec"
@@ -440,11 +450,6 @@
       "path": "orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-initial/cp2-alternative-offline-chinese-asr-research-memo-2026-09-06.md",
       "bytes": 8432,
       "sha256": "ec1cd583f0be420433992bdf9f5de574e693783702768a6a2dff7e440d0d361e"
-    },
-    {
-      "path": "orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-initial-delivery.json",
-      "bytes": 1673,
-      "sha256": "36647c306d18f6d81650047c62cd9e7b226a678d411bbfd7b7fdf909775f06ce"
     },
     {
       "path": "orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-leader-review.json",
@@ -537,6 +542,11 @@
       "sha256": "7ab2bbdb46f7b273aeb8c95b8599f20251e4bd279430bcc019586e310aa6b52a"
     },
     {
+      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-RV1-recheck-location.json",
+      "bytes": 1817,
+      "sha256": "ba4992cdc5375fa71a55d62f5d2ea258acaac8455a1a7fa175d1d735f54d424e"
+    },
+    {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-RV1-recheck/leader-large-edge-result.json",
       "bytes": 680,
       "sha256": "7c6b922ba4fc497c0b1873496368d07b8c37b6ce77df525162994b471e73f7c3"
@@ -545,11 +555,6 @@
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-RV1-recheck/leader-source-manifest.json",
       "bytes": 1709,
       "sha256": "f46b478d502200d626ad8afc326ec0d8f4fddd63ad474c2c386c5e5fae9c3b73"
-    },
-    {
-      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-RV1-recheck-location.json",
-      "bytes": 1817,
-      "sha256": "ba4992cdc5375fa71a55d62f5d2ea258acaac8455a1a7fa175d1d735f54d424e"
     },
     {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-RV1.md",
@@ -575,6 +580,11 @@
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-independent-verification.json",
       "bytes": 804,
       "sha256": "0a21cd6c89a4e6718dbb09b1a52b34c5318a88866507752b4c552edb0668b907"
+    },
+    {
+      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-leader-evidence/leader-a-console.log",
+      "bytes": 8416,
+      "sha256": "9516b07d2e447cff96317f16594fff9dd9d0f6ab44081441c749c83f7058731a"
     },
     {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-leader-evidence/leader-a/closed_complete/event-0001.json",
@@ -2627,9 +2637,9 @@
       "sha256": "9aac394f8a618e34e39cbe9ce0eb057dc8ad3d23683d618cb53a45132f33ecf8"
     },
     {
-      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-leader-evidence/leader-a-console.log",
+      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-leader-evidence/leader-b-console.log",
       "bytes": 8416,
-      "sha256": "9516b07d2e447cff96317f16594fff9dd9d0f6ab44081441c749c83f7058731a"
+      "sha256": "dfda6749c4aacbc1c17db4f0d810634da5d1d993ac2cf1214f15eed257157174"
     },
     {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-leader-evidence/leader-b/closed_complete/event-0001.json",
@@ -4682,11 +4692,6 @@
       "sha256": "9ec9d6d9939ffb5815d3e6b78986ce00a976885969b4a1b496fa01ec8922eaca"
     },
     {
-      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-leader-evidence/leader-b-console.log",
-      "bytes": 8416,
-      "sha256": "dfda6749c4aacbc1c17db4f0d810634da5d1d993ac2cf1214f15eed257157174"
-    },
-    {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-leader-evidence/leader-source-manifest.json",
       "bytes": 1709,
       "sha256": "884dac28b5d2ba0dc4d6959ea614a6701f52d2e6461e4ac7995f52b2c48c0cb7"
@@ -4710,6 +4715,11 @@
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-final-verification.json",
       "bytes": 573,
       "sha256": "db0407edaa6a4e2f30cd6e7a9ffc5ef1e27a7fac60824136c585505b33ada68a"
+    },
+    {
+      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-a-console.log",
+      "bytes": 5353,
+      "sha256": "7bd1af6b22356f2ba5f590de0a5b2abbd4d34fc670e3f5fdbba3af82afe72f56"
     },
     {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-a/closed_complete/event-0001.json",
@@ -5177,9 +5187,9 @@
       "sha256": "fbf54545f3dc61586d3990b249369f07365ee35d67d07172c05ecdd016bfb7a4"
     },
     {
-      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-a-console.log",
+      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-b-console.log",
       "bytes": 5353,
-      "sha256": "7bd1af6b22356f2ba5f590de0a5b2abbd4d34fc670e3f5fdbba3af82afe72f56"
+      "sha256": "0249b59e686022059a406a794b64f2b0541dc5eb46aaac2f4c3228f2177aba92"
     },
     {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-b/closed_complete/event-0001.json",
@@ -5645,11 +5655,6 @@
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-b/tests-log.json",
       "bytes": 5399,
       "sha256": "ae955ebecf64fd3c0ca6374606650ee4f1f9383e2958f5e44e7c5e20cd6c46ce"
-    },
-    {
-      "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-b-console.log",
-      "bytes": 5353,
-      "sha256": "0249b59e686022059a406a794b64f2b0541dc5eb46aaac2f4c3228f2177aba92"
     },
     {
       "path": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001-leader-evidence/leader-source-manifest.json",

@@ -1,0 +1,28 @@
+{
+  "leader": {
+    "status": "pushed_and_remote_verified",
+    "repository": "https://github.com/3956ray/Leader",
+    "commit": "a25ed2575c9d0cd8dedb3c3f526987e4910f9634",
+    "entrypoint": "handoff/START-HERE.md"
+  },
+  "developer": {
+    "status": "blocked_by_approval_review_in_developer_task",
+    "remote_writes": false,
+    "local_receipt": "migration/developer-migration-receipt.json",
+    "required_action": "User direct approval in Developer task requested; no bypass attempted"
+  },
+  "product_manager": {
+    "status": "pushed_and_remote_verified_by_pm",
+    "repository": "https://github.com/3956ray/ProductManager",
+    "branch": "codex/thinkv2-pm-migration-20260917",
+    "commit": "d590c574a09726eaa640c2719674f206d50c5d4e",
+    "entrypoint": "product-knowledge-base/ideas/think-v2/migration-handoff-2026-09-17.md",
+    "evidence": "PM tool outputs: push exit 0, ls-remote exact commit, remote README fetched"
+  },
+  "product": {
+    "commit": "88d38616c5a5947d4ca798d4039c6368fa465624",
+    "task": "V2-REMINDERS-USABILITY-001",
+    "state": "AWAITING_REVIEW"
+  },
+  "scope": "Migration first; no new product task started"
+}

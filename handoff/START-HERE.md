@@ -46,3 +46,12 @@ thinkV2由空白独立开发；用户顺序为模拟器工程先行，完整开�
 文字/分类/回收站/提醒/备份/日历/AI建议/显式关系/最小语音命令已有分项工程证据；这不等于完整App交付。通用ASR质量未达标：Vosk专名47/66、可用10/30；隔离SenseVoice61/66、23/30仍失败且私人嵌入许可PAUSE，不启动另一路无界模型研究。真实AI provider=false。实际TalkBack导航、自然每日/每周提醒、小米15与父亲家庭操作未验证。禁止降低门槛、虚构结果、上传录音/私人数据。
 
 下一步先结束当前review，再依批准基线排一个独立任务；不要因换机将目标标完成，不抢先请求用户真机测试替代未完成工程。
+
+## 6. 三仓发布回执（2026-09-17）
+
+- Leader 已推送；初次迁移提交 `a25ed2575c9d0cd8dedb3c3f526987e4910f9634`。
+- PM 已推送到 `codex/thinkv2-pm-migration-20260917`，提交 `d590c574a09726eaa640c2719674f206d50c5d4e`；克隆后需检出此分支。[PM恢复入口](https://github.com/3956ray/ProductManager/blob/codex/thinkv2-pm-migration-20260917/product-knowledge-base/ideas/think-v2/migration-handoff-2026-09-17.md)。
+- Developer 尚未推送：开发者任务的自动审批拒绝了公开交接分支，未接受转述的用户授权。需用户在开发者任务直接确认该公开包（内部路径、历史元数据与约1.17GB公开证据）；不得绕过拒绝。
+- 离开旧电脑前手动安全转移 `/Users/orderly_ray/Projects/thinkV2-migration-private-20260917/complete-original-transfer.tar.gz`（1,849,004,421 bytes）。此包仅私下/离线转移，不上传公开仓库；开发者报告 SHA256 为 `e45bfc25e368b1f823fa2477d03c9c2ac6a899b4bf1cd773b22ff5ac01abd5c9`，新机须重新核对。它包含完整原始历史和验收存档；仅克隆目前远端三个仓库不足以恢复全部内容。
+
+发布状态见 `publication-status.json`。迁移不改变提醒任务 AWAITING_REVIEW，也不表示完整App验收通过。
