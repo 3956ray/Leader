@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "current_checkpoint": "CP5-D2",
+  "state": "AWAITING_REVIEW",
+  "active_task_id": "GYM-DEMO-SCENARIOS-001",
+  "objective": "指导 PM 调研至可开发 MVP，形成 PRD 和 Checkpoint，再逐项派发开发并验收。",
+  "automatic_scheduling_allowed": false,
+  "last_accepted_task_id": "GYM-DEMO-FOUNDATION-001",
+  "last_acceptance_report": "reviews/d1-acceptance.md",
+  "last_accepted_commit": "aae08a1badfb58c6a4c8dda4db8f7a6d5f312cbb"
+}

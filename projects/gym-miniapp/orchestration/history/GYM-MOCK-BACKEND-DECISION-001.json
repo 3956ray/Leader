@@ -1,0 +1,45 @@
+{
+  "task_id": "GYM-MOCK-BACKEND-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP5",
+  "assigned_thread_id": "01a08198-b2ec-7b11-9bc3-89ed40433df5",
+  "status": "accepted",
+  "goal": "Formalize user-approved own dynamic mock backend, persistent storage and extensible external data adapters into a bounded PRD/checkpoint addendum.",
+  "baseline_commit": "f22664d5f5b2320966df53c874eaaf120297be6b",
+  "input_documents": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/prd-mvp-v1.0-2026-09-16.md",
+      "sha256": "7d9948f302f13119120c03043902fba7455437764eb57d4923efebda4254e1bd"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/acceptance-mvp-v1.0-2026-09-16.md",
+      "sha256": "89cded4a468deaa20e6090d19b35dc31c77b6a01e3e45081d3d996484188ae71"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/checkpoints-mvp-v1.0-2026-09-16.md",
+      "sha256": "13060548afb17731e033364817f0e7ee6b0569c334bbfc4138e308ee64678882"
+    }
+  ],
+  "scope": [
+    "Read current accepted baseline and actual existing Node/SQLite backend. User confirms no external backend exists and wants own backend for dynamic mock data with documented storage and future gym-database integration.",
+    "Write formal approved addendum in product knowledge base: simulation scenarios and persistent data model; stable API/domain model; source adapters/mapping/import/version/idempotency/conflict and write ownership; practical first connector contract without pretending unknown external schemas are plug-and-play.",
+    "Define explicit demo identity/operator flow isolated from future official identity and real data; revise prior no-simulation interaction constraints as needed under latest user decision; do not call demo login real WeChat verification.",
+    "Specify runnable mini-program-to-own-backend path and distinguish mock-data issue from actual request-domain blocking. No assumption that adding mock rows solves domain checks. Identify local development versus hosted requirements, minimum dependencies and any security setting change requiring explicit confirmation.",
+    "Update PRD/AC/checkpoint plan as versioned addendum, separate demo-MVP acceptance from future official integration/device/venue evidence, keep old evidence intact; propose one first bounded developer task."
+  ],
+  "out_of_scope": [
+    "No product source edits, live external DB connection, real data, cloud purchases/deployment or blanket universal connector implementation.",
+    "No waiting for unavailable gym backend as prerequisite to demo work; no unsupported promises of zero-effort connection to arbitrary database."
+  ],
+  "acceptance": [
+    "APPROVED/REVISE/PAUSE decision written in formal docs with exact paths/hashes.",
+    "Concrete dynamic backend/storage/adapter/identity/transport acceptance and sequential implementation checkpoints; latest user intent preserved."
+  ],
+  "evidence_required": [
+    "Decision doc, PRD/AC/checkpoint addendum paths and hashes; changed baseline clauses and rationale; recommended first dev task."
+  ],
+  "stop_conditions": [
+    "Stop after document submission for commander review; do not dispatch developer directly."
+  ],
+  "review_report": "reviews/mock-backend-v1.1-acceptance.md"
+}

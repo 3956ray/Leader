@@ -1,15 +1,40 @@
 {
-  "scope": "Leader control-plane snapshot; unrelated projects/cache/locks/credentials excluded",
+  "scope": "Merged Leader migration snapshot; credentials/private originals excluded",
   "files": [
     {
+      "path": ".agents/skills/karpathy-guidelines/SKILL.md",
+      "bytes": 2518,
+      "sha256": "6e22cc54cb02a5e98ae42d06d9d7292db0c1b43894831b32879beb0166b2aea7"
+    },
+    {
+      "path": ".agents/skills/miniapp-devtools-cli-repair/SKILL.md",
+      "bytes": 2815,
+      "sha256": "1356e20b2b9f75f4f977f7c78eafb7ca256c35daff65eda03319e582bc0603e0"
+    },
+    {
+      "path": ".agents/skills/miniapp-devtools-cli-repair/agents/openai.yaml",
+      "bytes": 379,
+      "sha256": "a2abad1eb77483bbbf31a0ab1090b11942874b36044e96a5584a184e7249165a"
+    },
+    {
+      "path": ".agents/skills/miniapp-devtools-cli-repair/references/cli-repair-playbook.md",
+      "bytes": 3844,
+      "sha256": "b6bcb3b22410b406ebff4652f1af781f88b4654fc1ad32211f400815f6649162"
+    },
+    {
+      "path": ".agents/skills/miniapp-devtools-cli-repair/references/example-prompts.md",
+      "bytes": 2189,
+      "sha256": "09baa2cc9a7633d86e38d7f89159da66681e2c697ffd88cee49973ad206e0ae0"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 104,
-      "sha256": "64a31fc1fa5ed12ac22ae7200b1dc1b974a5a1bfbe6893435238ef5be1a6b78f"
+      "bytes": 177,
+      "sha256": "5b378d1446737eb06bca31422943eb2bf6991d76fd772447679cf4cb51bd7e9b"
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5531,
-      "sha256": "a7ba9747a8b54c070b48c77fa1c49b8fb27aef7d179b8dd36c8999e3cacfd28b"
+      "bytes": 1073,
+      "sha256": "6d757f56b8909709b9a77e19de09c7f55b9f82f6ee1ee53eca255489c8ef6f47"
     },
     {
       "path": "LICENSE",
@@ -17,14 +42,29 @@
       "sha256": "fbb0e194da65085d9d4c38ff2f3f81e02c85334c54fe7cb7b7799d939b152dd7"
     },
     {
+      "path": "MIGRATION.md",
+      "bytes": 4445,
+      "sha256": "27dd59530cbdcbc2daed374ff794a6a55a622c814a0ad2cabbbb8d03aa812089"
+    },
+    {
       "path": "README.md",
-      "bytes": 1564,
-      "sha256": "39b6d5385cf3dec7973d888da07e044073d95f66ad9e9d28c1c8885a8cfa04a4"
+      "bytes": 1141,
+      "sha256": "3b61dcebba4e5cf7e6bfee8a7261acfd515c9771038be1fe04af1b56628eb383"
+    },
+    {
+      "path": "handoff/PUBLICATION.md",
+      "bytes": 663,
+      "sha256": "6c362e21a4527af1c517615d6daccb691a6dd45528838eeeb673418878f567e7"
     },
     {
       "path": "handoff/START-HERE.md",
       "bytes": 5181,
       "sha256": "da039ceacb907b679b9833970c79cc552119e703727308e74e552d2d51a2c21d"
+    },
+    {
+      "path": "handoff/THINK-AGENTS.md",
+      "bytes": 5531,
+      "sha256": "a7ba9747a8b54c070b48c77fa1c49b8fb27aef7d179b8dd36c8999e3cacfd28b"
     },
     {
       "path": "handoff/evidence/thinkv2-accessibility-leader-host.log",
@@ -65,6 +105,16 @@
       "path": "handoff/sources/sensevoice-int8-product-admission-decision-2026-09-16.md",
       "bytes": 10831,
       "sha256": "b4927069160becae74a9afaa6d83ec3e14d1e9d0958ddb1a642f4e03cb75969d"
+    },
+    {
+      "path": "migration/files.sha256.json",
+      "bytes": 95649,
+      "sha256": "3c3d39a0c866a63b2e8ab1b50735d105beb1a8f7ff5e43ea84856cd8b4920eb3"
+    },
+    {
+      "path": "migration/verification.md",
+      "bytes": 975,
+      "sha256": "b2e9e9811d64b0bd28805af38cb91017780cd50ded6cfdaea7c4181a72a8f549"
     },
     {
       "path": "orchestration/LOOP-V2.md",
@@ -9272,6 +9322,416 @@
       "sha256": "fd29c5277089518cc4ce200ecf661b1962d0baed87d61823cce950ce0ea53fbc"
     },
     {
+      "path": "projects/gym-miniapp/AGENTS.md",
+      "bytes": 1001,
+      "sha256": "4206d1000712f97da20a0140b0807bbbeecdbd30315f077e15308bd26b7043e6"
+    },
+    {
+      "path": "projects/gym-miniapp/HANDOFF.md",
+      "bytes": 3813,
+      "sha256": "f160fe002dad008116e55cead8ae3c234cc6a64c593ebb1ad04cd152b67883da"
+    },
+    {
+      "path": "projects/gym-miniapp/README.md",
+      "bytes": 1169,
+      "sha256": "52278592d2e7e6219efd864c9858fe99f2bfed1ac8a490615f63e1e93f45e94f"
+    },
+    {
+      "path": "projects/gym-miniapp/checkpoints-draft.md",
+      "bytes": 2595,
+      "sha256": "3d3cbebd42cd02a448f534bc0196a913d7f32c6c33e8c9b969d540f2a9e77a02"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/current-task.json",
+      "bytes": 5186,
+      "sha256": "af08455b732aee9f0998096f46c66a1d5bdce1d1605b4f1fdfdf0bdb0f26729d"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP0-FOUNDATION-001.json",
+      "bytes": 5228,
+      "sha256": "e02ec19f1286cef2ca5b5cda2a4dabbdefddc23c6175fb275564757fb65ac884"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP1-IDENTITY-001.json",
+      "bytes": 5299,
+      "sha256": "809fc87651faa8fb0f8080a8fdad216dfbf876dfbd924fa52b1f17818da71627"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP2-OBSERVATION-001.json",
+      "bytes": 5533,
+      "sha256": "8bf800c397d177143fbd4734c8bcd97247a63d1c9cd8729976d0a9c0ffbf3557"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP3-MEMBERSHIP-001.json",
+      "bytes": 5993,
+      "sha256": "ad6a058b454a01eacd0f6ad7facdcf1d4007340924b1af8e8a27131ba33015df"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP4-SCHEDULE-001.json",
+      "bytes": 5320,
+      "sha256": "9e4f32b257a1a4a01a12cd8e3882b5c013285a2930e9e02c54a6c7d475332181"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP4-TEARDOWN-REVISE-001.json",
+      "bytes": 2682,
+      "sha256": "1a435ef5b74ce755422fc39ff743fb82e513ed1c9af186f095c33bb64ffc85b4"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP5-INTEGRATION-001.json",
+      "bytes": 5368,
+      "sha256": "a1c9dd14f3103c07d5c9592b21c958404c3ebeaad340f2e9e8b89a178797c1d7"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-CP5-TOOLS-002.json",
+      "bytes": 3524,
+      "sha256": "34ad29579dee52368610b12a54668ae33c7b59be7ac98149c47564ad176e8b45"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-DEMO-FOUNDATION-001.json",
+      "bytes": 4514,
+      "sha256": "f06a7e64f81013dad60e338baff21fc73afad36e0c17bc4b05a097c7d9ea7511"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-MOCK-BACKEND-DECISION-001.json",
+      "bytes": 3410,
+      "sha256": "70b1dad0f4b0056097be8a60ea03128434ef36fa221952663699fd0ba1a8f3a7"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-MVP-PRD-001.json",
+      "bytes": 1747,
+      "sha256": "2fee86d8b15e06cff13e76a1c39d697b67a79bebffd4db132dd952f185424a45"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/GYM-MVP-RESEARCH-001.json",
+      "bytes": 2273,
+      "sha256": "4e06857df208cf608f647fa7e0a07ad5c751473fccf5d8621faf633af11040f0"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/migration-original-current-task-2026-09-17.json",
+      "bytes": 5190,
+      "sha256": "e3ff1770d4809951eaccb30883a1f67ed25d9817efe1c489326194fbe09ee427"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/migration-original-project-2026-09-17.json",
+      "bytes": 2329,
+      "sha256": "4c17db1a4261860170bf6ef39f9ed88d0337909f624e2430beeed9f0fc3470a0"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/history/migration-original-state-2026-09-17.json",
+      "bytes": 468,
+      "sha256": "0741a8b12fa62df45a893cebbf48f71a51a8f871ec123d822e2c13dd73ea5aa9"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/pending/GYM-CP0-FOUNDATION-001.json",
+      "bytes": 4382,
+      "sha256": "b4b828792879747c6c30f6d858424e5fcd5119e59d7b65494455f1cde1d77b65"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/pending/GYM-CP2-OBSERVATION-001.json",
+      "bytes": 4622,
+      "sha256": "c5f49d6b1155dd3442ab0a9e42abf05239aacaf22371c86167ecfee720979489"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/pending/GYM-CP3-MEMBERSHIP-001.json",
+      "bytes": 5166,
+      "sha256": "1de6dfb5572c053378805d60cdd801a5ee570d098afadc327a8811cc8e908f4f"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/pending/GYM-CP4-SCHEDULE-001.json",
+      "bytes": 4427,
+      "sha256": "05ac459272685aa458fc6e7fe58bd8099b52a0efea968bae5c92c32a21290093"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/pending/GYM-CP5-INTEGRATION-001.json",
+      "bytes": 4410,
+      "sha256": "5d68ed9bddc05bba036b80839ebe5bd6775715d2d97c070f76f1a75459a71e8f"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/pending/GYM-DEMO-SCENARIOS-001.json",
+      "bytes": 4634,
+      "sha256": "9053de834295f5e0c3998f58781093410f6b1cbfc25bb6de9313beefd785b556"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/project.json",
+      "bytes": 2329,
+      "sha256": "4c17db1a4261860170bf6ef39f9ed88d0337909f624e2430beeed9f0fc3470a0"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp0-acceptance.md",
+      "bytes": 2093,
+      "sha256": "aea80b45268aa5448372b63358904e66da1b2fc2b418f7666c1cf4bd8961c40f"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp0-contract-review.md",
+      "bytes": 1179,
+      "sha256": "2a011fdb9bacda007944f70552f2b307df10a8caf794efb694592f6ffcd6d467"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp0-leader-test.log",
+      "bytes": 1322,
+      "sha256": "8a72306d5ec39c752ada071d7ae54d5cb0ab04651204d692fe97a237cf856916"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp0-tested-files.json",
+      "bytes": 2066,
+      "sha256": "fa46eda6ac53e5ab77c21030d4c2c703c8dfcc5078d6eda070f9f7ee1c225071"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp1-acceptance.md",
+      "bytes": 1924,
+      "sha256": "ef6cf2ffa26408b0a864a0c9515b8965b290229a746457f5cbde5210c1b6a6f9"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp1-leader-supplement.log",
+      "bytes": 2264,
+      "sha256": "96d598b5adf06194ed89722ee6b55b1036877f40993e87b4d0a614fbc302db78"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp1-leader-test.log",
+      "bytes": 3749,
+      "sha256": "8bcbd8678366ceea70a1bcf14b6706db3ba48bf4e11877cf699e995eab4f3daa"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp1-review-notes.md",
+      "bytes": 1080,
+      "sha256": "ab619f8a8e30e937a7246e4aa7ae904723f547c64e11addc2d3fb2027bcc9b9f"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp1-tested-files.json",
+      "bytes": 3794,
+      "sha256": "08dcca35d4036d97b9982105156161777d3437ccf7a5db81609a3c2d4f752fe4"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp2-acceptance.md",
+      "bytes": 2337,
+      "sha256": "e947b7c2e0cc20b49131872bf0c83b237e68c9614f8d310bfafc6af1a4b7f907"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp2-leader-native-supplement.log",
+      "bytes": 924,
+      "sha256": "5c62ac53bc16c7d5636238073613c8346673fac9b6248054965e43ccac5a3792"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp2-leader-tests.log",
+      "bytes": 5856,
+      "sha256": "05a723eb4e02764a15f93a5db029b4884859b1dde77f48038c9a03a98de41d8b"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp2-review-notes.md",
+      "bytes": 2050,
+      "sha256": "e928fcb12afa4f73849324e10a5538ec7539348bb0c4dbd7d0775d3727f14426"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp2-review-plan.md",
+      "bytes": 2603,
+      "sha256": "d207704d237df56f16b77288f6d46319b52caf60bea4abc9a67484cf26459f13"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp2-tested-files.json",
+      "bytes": 4941,
+      "sha256": "1c73570a5008223c02d359993d8556612ae1beaa693ae4024bd54efd8d9e14d3"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-acceptance.md",
+      "bytes": 2334,
+      "sha256": "b3aab731bec39b6151ee596a9a166173b22c22b01d76ba2a4761af5fb26e5296"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-leader-final-tests.log",
+      "bytes": 9114,
+      "sha256": "314dddc65d567406bcea44e9d9bc7cde8a1186f75dca7abd0686a64aac3037de"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-leader-full-tests.log",
+      "bytes": 8257,
+      "sha256": "56bfca5039bad5c21d7faa964c16306586b24b3e697c103bc85de5531c446ea3"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-leader-member-supplement.log",
+      "bytes": 1718,
+      "sha256": "b409dbd67fe2b6ed3ac85c93a520d00272f2d32f3f74b0ed149b084751d0283f"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-leader-membership-early.log",
+      "bytes": 998,
+      "sha256": "c7a519d36ff9972767704dfed2cda8aaffc01ab139f376f6b13f8da7c74ca24c"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-leader-native-supplement.log",
+      "bytes": 1069,
+      "sha256": "cbbeb62616618154ce9da2b16ab3a054faad72c2c7745f387923f2f293df1d67"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-review-notes.md",
+      "bytes": 4575,
+      "sha256": "805607986bddc22f52d68ef1787279dece4e6841ab3e2223a957c3f74eb9afe9"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-review-plan.md",
+      "bytes": 3160,
+      "sha256": "69da8f15956f63c1854c4e364285200646a8bf525f5aa86e769f51cef3893bf1"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp3-tested-files.json",
+      "bytes": 6972,
+      "sha256": "53952ef78a4b1dd2bb1a84edfadb84e0ac6fac2d6982a008823e6970aa44ee3a"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-acceptance.md",
+      "bytes": 1366,
+      "sha256": "bc8daa03b8bd50c1c254572e53dbf0d94188d8b1b5353f4dd4ec3d5a4f08f2ca"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-leader-final-supplement.log",
+      "bytes": 2541,
+      "sha256": "aae906b1dd46d8668aca9fb48321dca0a0239a8929e93d7d73354a3f351614bd"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-leader-full-tests.log",
+      "bytes": 11093,
+      "sha256": "ce7c8630361fe3c011255e1a156bd148b38bc6ae43f97072de7e7d26d9517eb1"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-leader-revision-check.log",
+      "bytes": 96,
+      "sha256": "2c3333c82ed192e8c5be0c6b94b1591ba12f52b0bece7b01984a0546727965d7"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-leader-revision-tests.log",
+      "bytes": 11546,
+      "sha256": "5cec1eaad2c645dea934618e7e92dab09b8d695b8b5b82d01e04604c5abdf8c0"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-leader-server-tests.log",
+      "bytes": 1183,
+      "sha256": "6b8e94757a1805b0df79195ff5f7699dfb64dce058f206c15e473ad729fcf893"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-review-notes.md",
+      "bytes": 1581,
+      "sha256": "e1d28ffa119ad5b114e9f10a78221aa5d2abbee52ca1c678608ef68e06eef21f"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-review-plan.md",
+      "bytes": 2245,
+      "sha256": "44c7e323ef788c5c4d2b1c07be437ae0e439ff87027174aa9463738fac0a96c2"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp4-tested-files.json",
+      "bytes": 8467,
+      "sha256": "a6f75a1c6a46a244bcec43f0588e63510f9743f622468d5c60a0144b52f94381"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp5-engineering-review.md",
+      "bytes": 1549,
+      "sha256": "bb5b2f34563cbcd22414d3ee28d2753429303d516c99ce473b228439557c1f86"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp5-leader-check.log",
+      "bytes": 96,
+      "sha256": "2c3333c82ed192e8c5be0c6b94b1591ba12f52b0bece7b01984a0546727965d7"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp5-leader-full-tests.log",
+      "bytes": 12309,
+      "sha256": "ce459c3c808e777513f2fa22e2f84342806290212c748de789b576cec51311b9"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp5-review-plan.md",
+      "bytes": 3670,
+      "sha256": "e044be8c188a5c164cced5d9ce1c3c7ca0a85ff621a8ecfd314fc5a2b0d64d81"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp5-tested-source.json",
+      "bytes": 10919,
+      "sha256": "ed8f5f766dfb0b70b82942e15949d058608624051abf7167952b8a9b92619607"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp5-tool-recovery.md",
+      "bytes": 2582,
+      "sha256": "58d5773f2032d6663837cdd4ee3144a9b89b4fbeabc550db539ba1d48d96f105"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/cp5-tools-002-review.md",
+      "bytes": 2099,
+      "sha256": "725b40500a843819c51c5a4e11836b48cbaf85a10faa34824a64f870e687ab4c"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/d1-acceptance.md",
+      "bytes": 886,
+      "sha256": "71d935135159b760ba0cc9b4d341e56b0bfff59574636f46546e7c31e9a6a675"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/d1-leader-tests.log",
+      "bytes": 15669,
+      "sha256": "5df5bda716471f647501cfee285c38f216fd099c9e3e47edae31e0d9b435be1f"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/d2-clarifications.md",
+      "bytes": 1114,
+      "sha256": "1850676db4bc8c3d130d0868e843f5396ff072b316c624aba6be2f13f70831a0"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/local-environment-preflight.md",
+      "bytes": 1087,
+      "sha256": "8d0cadcbd4ddefc0ec6c9bad23e0ece9889959cf21a7853ebcd8334f002beec2"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/mock-backend-user-decision.md",
+      "bytes": 638,
+      "sha256": "8c5695b5113cc7d09aa79531875248c563081260f4db6eaa34dfc978e8155dfa"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/mock-backend-v1.1-acceptance.md",
+      "bytes": 1102,
+      "sha256": "f8415df0eb66bc36ae1e3fd4e3d772669106d86eaa5330c0783cf94f18244ef9"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/mvp-readiness-gate.md",
+      "bytes": 2444,
+      "sha256": "a4e434605718b014cdf75a52672654d33f9c5d06195b6d0914448cb00baf1b76"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/mvp-scope-decision-2026-09-16.md",
+      "bytes": 2633,
+      "sha256": "8f239753a601c178769cdebf5efeb1fd3a9f2ca80517897c3bc499dcbdb28453"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/prd-acceptance-2026-09-16.md",
+      "bytes": 1987,
+      "sha256": "1594ae4ce03c512329c6a94f09826ae19d82761d53435dfcb24db7b7118f4b34"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/prd-source-snapshot.json",
+      "bytes": 854,
+      "sha256": "91c766c4e7033f6c4ce86fb3d9c4643a30aeb1e4adbc928f3e128b87357514be"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/research-draft-review-2026-09-16.md",
+      "bytes": 2146,
+      "sha256": "5309cd9a36311fd6593aec02aba472bb3a16cd4e05e4dabf2a0272c8b17dde68"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/research-source-snapshot.json",
+      "bytes": 670,
+      "sha256": "6074683bcb615b056e2cfc7642fad083ce4c45815d1fdefd7bdcb83a3cdb4408"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/reviews/wechat-login-source-check.md",
+      "bytes": 949,
+      "sha256": "9fdfb54268479e694dd4d72e113c1bdd139fff69957d4185cb2de05e1209e26e"
+    },
+    {
+      "path": "projects/gym-miniapp/orchestration/state.json",
+      "bytes": 472,
+      "sha256": "4cdf61ea9884fc0afe54b10cdb1f5991666cc02b5c39ab32b265b0a043737f6d"
+    },
+    {
+      "path": "projects/gym-miniapp/prd-draft.md",
+      "bytes": 7814,
+      "sha256": "c5e903ce03e5aa2cd5a535ddbe7af84ad82864f8e97870e859a50682153e8875"
+    },
+    {
       "path": "scripts/handoff_check.py",
       "bytes": 1544,
       "sha256": "48b1dfdc6a7a06d9c403c77225e7f5e4a6bcf6a15b6b5d7fb004d12fcc4d5f23"
@@ -9285,6 +9745,11 @@
       "path": "scripts/leader_loop.py",
       "bytes": 15881,
       "sha256": "0ccb4380a491ed5584f62fc84694a8b65c28de90e1e81b635845647db87c85b4"
+    },
+    {
+      "path": "scripts/restore_gym.py",
+      "bytes": 2463,
+      "sha256": "0f76c5d769893314ebba548b4a6c94a76d87762a355db8465b4d5aeb5932b622"
     },
     {
       "path": "scripts/verify_vosk_stage1.py",

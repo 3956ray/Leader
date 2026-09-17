@@ -1,22 +1,14 @@
-# Leader · 思（thinkV2）工程指挥者
+# Leader 指挥者仓库
 
-换电脑后从 **[交接入口](handoff/START-HERE.md)** 开始。此仓库保存调度规则、冻结合同、历史账本、审查记录和恢复指南，不是产品源码仓库。
+换机后请按项目选择交接入口；本仓库不存产品源码或账号登录状态。
 
-| 角色 | 专用仓库 |
-|---|---|
-| 指挥者 | https://github.com/3956ray/Leader |
-| 产品经理 | https://github.com/3956ray/ProductManager |
-| 开发者 | https://github.com/3956ray/Developer |
+| 项目 | 恢复入口 | 调度状态 |
+|---|---|---|
+| 思（thinkV2）Android | [换机交接](handoff/START-HERE.md) | 根目录`orchestration/`；提醒UI交付88d3861待Leader最终验收 |
+| 健身房微信小程序 | [换机步骤](MIGRATION.md)、[当前交接](projects/gym-miniapp/HANDOFF.md) | `projects/gym-miniapp/orchestration/` |
 
-当前产品提交：`88d38616c5a5947d4ca798d4039c6368fa465624`。当前单 `V2-REMINDERS-USABILITY-001` **AWAITING_REVIEW**，开发者已交付，Leader 独立127项主机测试通过，但尚未正式接受。上一单笔记UI `8a98e09` 已接受。
+角色仓库：[Leader](https://github.com/3956ray/Leader)、[PM](https://github.com/3956ray/ProductManager)、[dev](https://github.com/3956ray/Developer)。
 
-## 关键入口
+thinkV2保留原始冻结账本与正式来源快照；执行`python3 scripts/handoff_check.py`核验完整性。产品完整目标和缺口见[验收矩阵](orchestration/thinkV2-completion-matrix.md)。旧think证据不等于thinkV2通过，旧任务ID/本机路径需要重绑。
 
-- [AGENTS.md](AGENTS.md)：单任务、单Checkpoint、隐私与验收规则。
-- [权威账本](orchestration/loop-ledger.json)、[当前任务](orchestration/current-task.json)、[状态](orchestration/state.json)。状态视图由工具生成，不能手改成通过。
-- [完整需求与缺口](orchestration/thinkV2-completion-matrix.md)。历史旧think不等于thinkV2验收。
-- [路径与正式来源快照](handoff/path-map.json)：保留原文SHA，适用于新机器离线核验。
-- `scripts/leader_loop.py`：状态转换；`scripts/leader_check.py`：原路径环境的派单前检查。
-- `scripts/handoff_check.py`：跨机器交接完整性检查，不派单、不自动接受结果。
-
-此仓库公开。未包含账户令牌、API密钥、全局Codex聊天数据库、父亲真实数据、录音、其他独立项目或自动启动任务。
+用户2026-09-17在获知公开内部账本、路径与任务元数据风险后明确批准推送；凭据、真实私人数据与受限模型资产仍不公开。原始受限开发备份须私下转移，详见Developer交接。

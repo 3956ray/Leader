@@ -9,3 +9,10 @@ auth.json
 *.pem
 *.key
 local-settings.json
+
+.runtime/
+.env*
+credentials.json
+*.sqlite*
+.codex/sessions/
+.codex/log/
