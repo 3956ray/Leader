@@ -1,0 +1,23 @@
+
+> gym-miniapp@0.0.0 test
+> node --test test/*.test.mjs
+
+✔ durable probe survives full process restart and abrupt termination (327.259458ms)
+ℹ migration: {"migrations":[{"name":"001-foundation.sql","sha256":"f3efa02831adad9a5e73cee958cb48b3e3911cb325327cc0828af94c4ab2ee5d"}],"integrity":{"integrity_check":"ok"}}
+ℹ health: {"ok":true,"serverNow":"2026-09-15T19:31:50.454Z","data":{"status":"ready","checkpoint":"CP0","environment":"test","gymId":"cp0-361aab1a-35a0-4c08-b436-efe4c83a1f12","migrations":1}}
+ℹ full restart: pid changed; persisted {"probe_id":"probe-restart","value":"synthetic-non-member","created_at":1789500710493}
+ℹ abrupt SIGKILL restart: same committed probe retained
+✔ migration replay is stable; changed migration rejected without modifying ledger (2.881083ms)
+✔ failed new migration rolls back DDL and ledger atomically (2.106916ms)
+✔ write rollback preserves original value and no partial row (1.278417ms)
+✔ environment/store namespaces, keys and persistent files are isolated (127.515667ms)
+✔ configuration, simulation, keys and accidental initialization fail closed (39.525167ms)
+✔ cross-process writer lock prevents partial competing write (2276.420125ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2833.387167

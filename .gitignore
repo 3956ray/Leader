@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+.runtime/
+.env*
+auth.json
+credentials.json
+*.sqlite*
+*.pem
+*.key
+.codex/sessions/
+.codex/log/

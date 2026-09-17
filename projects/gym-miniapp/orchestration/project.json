@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "state_values": [
+    "NEEDS_RECONCILIATION",
+    "READY_FOR_DISPATCH",
+    "IN_PROGRESS",
+    "AWAITING_REVIEW",
+    "REVISE",
+    "PRODUCT_DECISION_REQUIRED",
+    "PAUSED",
+    "ACCEPTED"
+  ],
+  "task_owner_values": [
+    "leader",
+    "product_manager",
+    "developer",
+    "user"
+  ],
+  "task_status_values": [
+    "draft",
+    "ready",
+    "dispatched",
+    "completed",
+    "accepted",
+    "rejected"
+  ],
+  "project": "单店健身房微信小程序",
+  "leader_root": "/Users/orderly_ray/Leader/projects/gym-miniapp",
+  "target_repo": "/Users/orderly_ray/Projects/gym-miniapp",
+  "threads": {
+    "leader": "01a0a64a-8f38-7503-a202-29ed08322b14",
+    "product_manager": "01a08198-b2ec-7b11-9bc3-89ed40433df5",
+    "developer": "01a0a64b-85f8-7790-88d9-fd1188ece566"
+  },
+  "canonical_sources": [
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/idea-brief.md",
+    "/Users/orderly_ray/Leader/projects/gym-miniapp/orchestration/reviews/mvp-scope-decision-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/prd-mvp-v1.0-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/acceptance-mvp-v1.0-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/checkpoints-mvp-v1.0-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/decision-mock-backend-v1.1-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/prd-mock-backend-v1.1-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/acceptance-mock-backend-v1.1-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/gym-occupancy/checkpoints-mock-backend-v1.1-2026-09-16.md"
+  ],
+  "checkpoints": [
+    "DISCOVERY",
+    "CP0",
+    "CP1",
+    "CP2",
+    "CP3",
+    "CP4",
+    "CP5",
+    "CP6",
+    "CP7",
+    "CP5-D1",
+    "CP5-D2",
+    "CP5-D3"
+  ],
+  "target_repo_status": "Existing independent Node/SQLite backend; CP0–CP4 accepted; CP5 engineering verified and partial tools reviewed. v1.1 demo addendum accepted."
+}

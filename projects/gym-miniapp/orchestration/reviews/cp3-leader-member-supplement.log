@@ -1,0 +1,21 @@
+✔ M02 actual processes: same member and same requester races preserve both unique constraints (170.233625ms)
+✔ X01 real write locks: delete before bind rejects old work; bind before delete closes its effect (229.178083ms)
+✔ D01/C02 real HTTP clients and process restart: lost receipt recovery, failing cleanup, new identity without inheritance (234.79525ms)
+ℹ two HTTP clients, failed deletion cleanup and whole-process restart recovered; new user has no role or binding
+✔ R01 independent processes/session switching: persistent generation/errors; lock-time next window and storage failure (622.505791ms)
+✔ M01/M02/R02: leading zero, encrypted code, same-key display, one use and exact 600s expiry (27.835ms)
+✔ R02: five collisions rollback replacement and generation counter; no weak random fallback (16.754625ms)
+✔ R01: three creations and five operator/requester errors persist, new window recovers; cleanup race cannot recreate personal error bucket (29.459041ms)
+✔ M03: revoked precedence, same binding explicit restoration and occupied slots; unbind cannot reset revoked registry (17.263ms)
+✔ M03: explicit pending/fixed/no-expiry and server time boundary; dates reject invalid/overflow and handle leap/cross-year (10.608208ms)
+✔ I01/M04: path target is in idempotency digest and audit failure rolls back bind (19.87525ms)
+✔ M05/X01/C02: fresh auth boundaries, lost-response receipt, failed bounded deletion resumes and new login inherits nothing (31.197375ms)
+✔ M03 timezone conversion: configured non+8 zones, DST changes, skipped and repeated midnight (0.989708ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1315.351625

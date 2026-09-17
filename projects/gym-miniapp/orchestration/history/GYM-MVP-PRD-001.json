@@ -1,0 +1,30 @@
+{
+  "task_id": "GYM-MVP-PRD-001",
+  "owner": "product_manager",
+  "checkpoint": "DISCOVERY",
+  "assigned_thread_id": "01a08198-b2ec-7b11-9bc3-89ed40433df5",
+  "status": "accepted",
+  "goal": "Finalize the approved single-store mini-program MVP PRD, complete acceptance matrix, and serial checkpoints in the product knowledge base.",
+  "scope": [
+    "Use the approved scope decision, Leader PRD/checkpoint drafts and draft review notes.",
+    "Freeze page states, membership/session/operator lifecycle, timing, retention/deletion, error and concurrency behavior.",
+    "Publish formal PRD, acceptance matrix and checkpoint documents under gym-occupancy; retain all P0 functionality."
+  ],
+  "out_of_scope": [
+    "No product source edits, deployments, external contacts, new feature research, or developer dispatch."
+  ],
+  "acceptance": [
+    "Full 21 research acceptance scenarios are copied and refined with observable outcomes and layer/CP mapping.",
+    "Each checkpoint has one result, prerequisites, in/out scope, evidence and stop conditions; development is serial.",
+    "Known product decisions are explicit; technical choices requiring CP0 are bounded and do not undermine product behavior.",
+    "All references and IDs resolve; scope decision and selected source directory are reflected."
+  ],
+  "evidence_required": [
+    "RESULT, final document paths/hashes, changed-file list, validation results, unresolved items and scope reconciliation."
+  ],
+  "stop_conditions": [
+    "Return to Leader for review after this document task; do not start implementation.",
+    "Escalate any change to approved core user/data boundaries rather than silently reducing the MVP."
+  ],
+  "acceptance_report": "reviews/prd-acceptance-2026-09-16.md"
+}

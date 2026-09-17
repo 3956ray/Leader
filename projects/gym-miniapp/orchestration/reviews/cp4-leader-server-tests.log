@@ -1,0 +1,17 @@
+✔ Z01 actual competing processes: draft CAS and dual publication CAS admit exactly one writer (336.538667ms)
+✔ M04 actual role write lock before schedule publish blocks former operator (120.874875ms)
+✔ S01/S04/D01 two public HTTP clients: private draft, atomic publish, lost write result, process restart and withdrawal (198.754792ms)
+✔ S01/S02/B01 draft private, explicit empty, coverage replacement/withdrawal never revive history (66.568458ms)
+✔ S03/Z01 stable ID reschedule/cancel, item CAS, full set omission rejection, overlap only blocks publication (26.255083ms)
+✔ Z01 local/UTC exact boundaries, cross-midnight/week, DST missing/repeated and date coverage validation (11.853417ms)
+✔ I01/M04 dual CAS, same-key replay/conflict, audit rollback, current role denial and observation TTL unchanged (16.764833ms)
+✔ C01/D01 bounded cleanup rollback/restart preserves current snapshot/draft/withdrawn; published timezone frozen (126.426917ms)
+✔ X01 account deletion scrubs schedule audit/operations without deleting shared publication (28.040958ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 743.346541
