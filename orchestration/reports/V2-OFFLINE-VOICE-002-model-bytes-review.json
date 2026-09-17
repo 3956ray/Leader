@@ -1,0 +1,6 @@
+{
+  "model_path": "/private/tmp/thinkv2-voice-002-review/model.int8.onnx",
+  "bytes": 239233841,
+  "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+  "scope": "Matches frozen LFS digest; not a runtime safety or private-use approval."
+}

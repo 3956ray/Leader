@@ -1,0 +1,11 @@
+{
+ "task_id":"NOTES-HOME-SCOPE-001",
+ "attempt_id":"5100c42f-d414-44c1-9c56-2ddc040790ba",
+ "contract_sha256":"babd948325a0d0c5a135c3c3d802dc2a074ad08ea298116d224f097bc52c9e5a",
+ "assigned_thread_id":"01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+ "turn_id":"01a0872b-9b0e-7f91-8d6c-acb97d6e1f84",
+ "observed_completed":true,
+ "result":"COMPLETE",
+ "recovery_reason":"wait_threads observed completed idle turn; read_thread returned matching completed turn with items=[]; exact identity is present in independently read formal decision/result artifact. No denied data access or callback retried.",
+ "evidence":[{"path":"/private/tmp/think-notes-home-5100c42f-d414-44c1-9c56-2ddc040790ba/result.json","sha256":"536481d46a125deaf2bbba423cdc4ba2416f1e3d4123e3c6fee3fb7923c9b0f8"}]
+}

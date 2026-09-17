@@ -1,0 +1,1 @@
+{"verdict":"accepted","checks":{"identity":true,"acknowledged":true,"original_final_read":true,"no_product_changes":true,"scope":true},"evidence":[{"path":"/Users/orderly_ray/Leader/orchestration/probes/pm-receipt.json","sha256":"231b8724a15c5702a3d5731dac0b4ff13efcb4d8a4716f4c1c693533f3b79841"}]}

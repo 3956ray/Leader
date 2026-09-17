@@ -1,0 +1,16 @@
+{
+  "received_at": "2026-09-16T03:30:41.992469+00:00",
+  "task_id": "V2-OFFLINE-VOICE-002",
+  "result_path": "/private/tmp/thinkv2-V2-OFFLINE-VOICE-002-cb6a5460/result.json",
+  "result_sha256": "2137503ec73f74c0aa36a9dae3adfc84fcd89b3e76fa9040774ba0d4b22d6d0d",
+  "verified_manifest_entries": 74,
+  "verified_apks": 4,
+  "verified_quality": {
+    "names": "61/66",
+    "usable": "23/30",
+    "same_pcm": "29/30"
+  },
+  "commit": "c22345b1ef18335e11df15f4595879464a385f5b",
+  "dev_idle": true,
+  "workspace_clean": true
+}

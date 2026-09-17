@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "decision": "AUTHORIZED",
+  "accepted_at": "2026-09-05T16:37:27+08:00",
+  "goal": "由 Product Lead 明确决定是否授权下一项只使用已提交证据的 CPU-only／ASR-only 窄 API／适配边界设计任务。",
+  "report": "orchestration/reports/CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-AUTHORIZATION-001.md"
+}

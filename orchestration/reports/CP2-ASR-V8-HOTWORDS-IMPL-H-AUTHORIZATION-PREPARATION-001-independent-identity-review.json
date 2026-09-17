@@ -1,0 +1,55 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001",
+  "RESULT": "PASS",
+  "blockers": [],
+  "scope": "Pending single-file identity review from specified accepted first-party derived records only.",
+  "identity_sources_sha256": "ac3293a66725781607cfceabb41e041e28ab4ac3dd8a30e89ca46710b1f8fa7c",
+  "candidate": {
+    "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "git_type": "blob",
+    "git_mode": "100644",
+    "bytes": 2286,
+    "git_blob": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "historically_verified_body_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6"
+  },
+  "sources": [
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-minimal-source-snapshot/2026-09-05/snapshot-manifest.json",
+      "sha256": "e31d674b1f2c355aa74c744a355d6e8333f99f5dc9baae2072b35baa045089f4",
+      "accepted_commit": "6952167795d1243534a93fa59a18372fb0d192e8",
+      "document_git_mode": "100644",
+      "document_git_type": "blob",
+      "document_git_blob": "5bd9b4853a58ec00426e5882cc5eab28ee44c087",
+      "pointers": ["/commit", "/tree_sha1", "/entries/69"],
+      "current_bytes_equal_accepted_commit": true,
+      "meaning": "Declared frozen path/type/mode/size/Git blob match. This entry explicitly says not_acquired_after_mandatory_stop and its actual_size, actual_git_blob_sha1 and content_sha256 are null. It does not prove body acquisition."
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-static-closure-discovery/2026-09-05/corpus-manifest-current.json",
+      "sha256": "5a27cf1860513fb92d414c64d0723d5df0cf8ce563bf873c9bc3e6d423765cc1",
+      "accepted_commit": "0ded8eb54e5d4d529759b46c62b9b5eb10722fbb",
+      "document_git_mode": "100644",
+      "document_git_type": "blob",
+      "document_git_blob": "33f37772b007c48799add7ffcd6de2f20d93be6d",
+      "pointers": ["/identity/commit", "/identity/tree", "/files/61"],
+      "current_bytes_equal_accepted_commit": true,
+      "meaning": "tree_size=actual_size=response_size=2286 and tree_blob_sha=response_sha=git_blob_sha1_computed equal the candidate Git blob. content_sha256 matches the requested body SHA. Historical filesystem regular/0600/single-link properties are distinct from Git mode100644 and do not establish present private-file properties."
+    }
+  ],
+  "historical_acceptance_sha256": {
+    "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MINIMAL-SOURCE-SNAPSHOT-GATE-001.md": "8bb51bfbb10414189ea3a95f1ce2a055334de26d9c1355617419a32722992691",
+    "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-STATIC-CLOSURE-DISCOVERY-GATE-002.md": "c413bcc7cd6b558463b0d88ffae31bbf5ce3cdb441c3cee0fd52b4159802545e"
+  },
+  "verification": [
+    "The two selected entries and their root commit/tree agree with identity-sources.json and the supplied candidate. No other manifest entry was inspected.",
+    "For each document, accepted-commit git ls-tree mode/type/blob matches the current git hash-object --no-filters result. git show of the accepted document piped to cmp against the current file returned exit0, proving exact byte equality.",
+    "Current source-document and historical acceptance hashes match the input pins. The two acceptance reports were previously read in this task history and their unchanged hashes were rechecked here: both accept correct stopping/evidence with TASK RESULT BLOCKED and ARTIFACT VERDICT manual_review, not source adoption."
+  ],
+  "limitations": [
+    "No raw/private/body/metadata/scanner-context file was read, no source pointer or URL followed, no candidate/reviewer executed and no network accessed.",
+    "The actual impl.h body was not read or rehashed; body identity is inherited from accepted discovery evidence. Availability, present private-file identity, source semantics and any future response remain unverified.",
+    "PASS permits using these identities in pending request preparation only. It creates no acquisition/read authority, clearance, source-adoption permission, retry/resume, dependency authorization or Checkpoint progress."
+  ]
+}

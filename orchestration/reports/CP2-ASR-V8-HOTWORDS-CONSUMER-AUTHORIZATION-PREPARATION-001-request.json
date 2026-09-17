@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "kind": "pending-single-body-authorization-request",
+  "status": "PENDING_USER_APPROVAL",
+  "prepared_at": "2026-09-06T06:31:52.859339+00:00",
+  "preparation_task": {
+    "path": "/Users/orderly_ray/Leader/orchestration/tasks/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001.json",
+    "bytes": 3863,
+    "sha256": "8f836c64d14b76fbc809495a6e769ff3f0ab1a250cb8ce12464a7ea88c360dbd"
+  },
+  "future_task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+    "bytes": 12792,
+    "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2"
+  },
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-V8-LOCAL-CONFIGURATION-DECISION-SYNC-001-acceptance.json",
+    "bytes": 2020,
+    "sha256": "d66ddd54efd5d00312066f3c47e30f09912536301565c076d89ea973a86d366c"
+  },
+  "identity_verification": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-identity-verification.json",
+    "bytes": 4744,
+    "sha256": "0b34ee1ec46fb4967bad88412560bec79382065ca4e064d48b9a4d7ffc2d9437"
+  },
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer.cc",
+    "git_type": "blob",
+    "mode": "100644",
+    "git_blob": "20d4646bb5c6ffbe714848cc497e1809113d5195",
+    "decoded_bytes": 8993,
+    "expected_body_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79"
+  },
+  "request": {
+    "method": "GET",
+    "host": "api.github.com",
+    "endpoint": "/repos/k2-fsa/sherpa-onnx/git/blobs/20d4646bb5c6ffbe714848cc497e1809113d5195",
+    "url": "https://api.github.com/repos/k2-fsa/sherpa-onnx/git/blobs/20d4646bb5c6ffbe714848cc497e1809113d5195",
+    "max_requests": 1,
+    "retries": 0,
+    "resume": false,
+    "redirects": false,
+    "credentials": false,
+    "proxy": false,
+    "TLS_verification": true,
+    "connect_timeout_seconds": 10,
+    "read_timeout_seconds": 10,
+    "expected_decoded_bytes": 8993,
+    "decoded_hard_cap": 262144,
+    "response_entity_hard_cap": 65536,
+    "metadata_requests": 0,
+    "scope_note": "Intrinsic JSON/base64 envelope of the one Git blob response only; no additional commit/tree/metadata endpoint or identity refresh."
+  },
+  "purpose": [
+    "Locate only direct hotwords_file/hotwords_buf consumption and the buffer/file selector.",
+    "Record local empty-value behavior, explicitfileI/O clues and exact next unresolved dependency; nofollow."
+  ],
+  "human_visible_scope": "Only relevant matched statements and minimum enclosing function/type; do not display or export whole body or unrelated content.",
+  "retention": "Fresh private0700 quarantine,regular singlelink0600 files; immutable rawresponse/body/necessaryscannerexcerpts remain private outside Git. Only derived identities/observations/gaps/verifications published toLeader reports.",
+  "execution_preconditions": [
+    "Fresh explicit user authorization for this exact pending request, recorded separately; this document has operational_authority=false.",
+    "Separate bounded body task afterapproval; independently reviewed first-party handling and exactsourcepins must enforce singleblob/count/byte/identity boundaries. Do not invoke or modify any frozenv8run/controller/policy.",
+    "Exclusive one-attempt marker before request; existingmarker/path/identity drift stops. Once one request begins, success/failure/timeout consumes permission; noretry/resume."
+  ],
+  "stop_conditions": [
+    "Any source/response/Gitblob/SHA256/mode/size/path mismatch, unsafe filesystem, invalid UTF8/NUL, malformed/ambiguous/oversized response or persistencefailure:stop withoutretry.",
+    "Decoded size must equal8993 and never exceed262144; rawentitynever exceeds65536; one requestonly,no redirects/credentials/proxy/metadata.",
+    "Any need to follow another include/symbol/file/dependency/metadata:record exact gap and stop. If thisfile onlydelegates, no automaticsecondfile.",
+    "Other prohibitedcapability:stop and returnproductdecision. Targethotwordconfigurationinspection doesnotclear activecategories or modifyexistingdenylist.",
+    "No sourceadoption/build/install/load/test/inference/integration/model/audio/device/publication/v9/mapclearance/Checkpointprogression."
+  ],
+  "preserved_state": [
+    "Currentacquisition/adoptionroute PAUSED; oldsinglev8run terminated, original5active/4vs2rejection/pending unchanged,0successfuladjudication.",
+    "Originalaudio never disk/upload/log/fixtures; nofatherrealdata. CP1andConformer Deferrednotremoved;CP2notpassed;CP3/Alphaunapproved."
+  ],
+  "operational_authority": false,
+  "new_acquisition_authority_created": false,
+  "authorization_sentence": "我批准 `CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001`：只针对 upstream commit `917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e`、tree `fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0`、path `sherpa-onnx/csrc/online-recognizer.cc`、Git blob `20d4646bb5c6ffbe714848cc497e1809113d5195`、mode `100644`、decoded size `8993`，允许一次正文获取和一次离线静态审查；只判断 `hotwords_file`／`hotwords_buf` 的直接消费、selector、空值行为与文件 I/O 线索。不得获取或跟随任何第二文件、include、symbol、依赖或 metadata，不得运行第三方内容、构建、加载、测试、集成、联网扩展、修改 detector/schema/freeze/旧 run 或形成 clearance；任一身份不匹配、超过 262,144 bytes、需要下一文件或出现其他禁止能力时立即停止并回产品决策门。本授权不批准 v9、源码采用、CP2、CP3 或父亲 Alpha。",
+  "preparation_outcome": "authorization_request_ready_for_product_lead"
+}

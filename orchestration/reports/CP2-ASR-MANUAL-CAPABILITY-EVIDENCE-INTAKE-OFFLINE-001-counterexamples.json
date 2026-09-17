@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "case": "control",
+      "stop_reason": "missing_review_evidence",
+      "calls": 10,
+      "effective_status": "comment_only_nonoperative_for_this_body",
+      "authority_records": 1
+    },
+    {
+      "case": "historical_0600",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null,
+      "authority_records": 0
+    },
+    {
+      "case": "external_report_identity",
+      "stop_reason": "manual_commitment_binding",
+      "calls": 0,
+      "effective_status": null,
+      "authority_records": 0
+    }
+  ],
+  "network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  },
+  "only_authored_fixtures": true
+}

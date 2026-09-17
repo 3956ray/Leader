@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "在已验收 v8 C 之后，仅依据已获授权的必要历史派生字段，形成精确、无损、可独立核验且不授予操作权限的审查映射承诺 K。",
+  "baseline_commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "predecessor_acceptance": "orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-acceptance.json",
+  "predecessor_acceptance_sha256": "141c9b5655cbde45dc7761e65658fd6fe2801c2b5252fc6b12810371b430dbeb",
+  "formal_decision": "doc/cp2-review-timestamp-representation-decision-2026-09-06.md",
+  "formal_decision_sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33",
+  "non_time_formal_decision_sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+  "output_directory": "doc/security-reviews/asr-review-map-commitment-v8/2026-09-06",
+  "accepted_C": {
+    "commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+    "tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+    "bundle": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0"
+  },
+  "derived_inputs": [
+    {
+      "path": "orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001.json",
+      "bytes": 7051,
+      "sha256": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+      "read": "exact original derived review report bytes and necessary fields only; do not follow private/source pointers"
+    },
+    {
+      "path": "orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001-verification.json",
+      "bytes": 3067,
+      "sha256": "ca492d93813eb41dc589dbf868c49a8d423c8611d8ee180265c388ed3cf7c102",
+      "read": "derived verification identities only"
+    },
+    {
+      "path": "orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001-approved.json",
+      "bytes": 1784,
+      "sha256": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2",
+      "read": "historical review authority identity/scope; consumed, not a new acquisition authority"
+    },
+    {
+      "path": "orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001.json",
+      "bytes": 3588,
+      "sha256": "c66a9fe77a77e15ca6dfa8f958f47ac1de4e1816de52779add3b9eee497163c7",
+      "read": "derived review request identity/scope"
+    },
+    {
+      "path": "orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001-verify.py",
+      "bytes": 3340,
+      "sha256": "923d0669081f5ad7d2d6c35dace85c5c34b8ce3fbf5443a777f0292179fbe3e9",
+      "read": "opaque byte hash only; DO NOT execute or follow pointers"
+    },
+    {
+      "path": "orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001-acceptance.json",
+      "bytes": 3668,
+      "sha256": "9f747c348bb0bc656ce7cf8f45824e3d4f2003c3ac5c06647d0fb0c453d631db",
+      "read": "accepted historical H identity only"
+    }
+  ],
+  "historical_H": {
+    "commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+    "freeze_path": "doc/security-reviews/asr-acquisition-v6-release-freeze/2026-09-06/freeze.json",
+    "freeze_sha256": "09523de2726e1ac84d065bbf7284d20ae006fae2f561baa6ffbbb88bba0059b7",
+    "bundle": "99114c1ad1126e627723585251ed696063562de4b507d35c28b93a3b1ffb6160",
+    "policy": "43b323b3601b25a5d459e0c553d4da2c38fb2dae7f1f51c82170723f354c1ab7",
+    "semantic": "2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86",
+    "role": "1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125"
+  },
+  "scope": [
+    "这是与离线候选开发完全分开的 K 准备任务。持续授权和正式后续顺序现在允许读取上列已获授权的必要派生报告字段，完成实际 R→representation 转换的可审查文档。先验证每项 exact bytes/hash 及 C验收/正式文档/HEAD，未知修改先停止。只能新增指定目录，不改任何既有文档、代码、evidence、freeze、状态或产品功能。",
+    "交付恰好 H.json、R.json、representation.json、K.json、PROVENANCE.json、VERIFICATION.json、MANIFEST.json、REPORT.md 八文件。前四对象严格采用已接受 v8 SCHEMA 与 manual.py：H保持v1/context_release绑定历史freeze.json精确SHA；R保持v1包装原始7051byte报告，content_base64逐byte还原原报告，不重写/重新canonicalize原报告；representation-v2原报告hash与canonical表示hash分别绑定。K保持v8，C为28filebundle collection，map_schema为intake contract digest，operational_authority严格false，无未来 F/M/A/T/N 或自身digest字段。",
+    "只转换原报告已裁定的两处 occurrence，逐字段记录来源JSON路径或明确可确定推导规则。精确绑定 source commit/tree/path/blob/body SHA/bytes、historical envelope SHA/bytes/regular0600及sourceGit blob100644分域、rule/detector/line、历史无换行hash/物理含换行hash、line/token绝对byteinterval、rawtoken、decision、reviewer/原review时间、历史authority/request/verification身份。detector若为新schema命名，须从已验收第一方语义合同定义和已记录rule/判定给出唯一推导，不读真实正文验证，无法唯一推导立即停。",
+    "原时间只取真实 R 中 reviewed_at，按已接受 v8时间合同逐ASCIIbyte保留，保留6位小数及明确offset，无损UTC、fraction_digits、offset_minutes、epoch/带符号整数微秒、raw/UTC独立hashdomains及全部表示身份。独立标准库整数复算日期/offset/epoch与各hash，并对照原report字段和正式决定说明，禁止改原R/截断/取新时间替代。此实际转换不是fixture；不得把真实字段加入工具测试或使用 candidate的全套fixture生成器。",
+    "K.entries只含两项不同occurrence_id和原decision，顺序匹配表示。保持完整tuple匹配、无新clearance和只限精确body中两处注释本身，不能推导相邻字段/API/服务实现/WebSocket不可达/整份source许可。PROVENANCE逐字段来源与推导、H/C各hash域、原R与representation区别、原文件未变及K阶段范围。",
+    "验证仅纯派生文档/哈希/标准库运算；可在新临时目录使用已审查第一方纯schema/time/occurrence函数做部分形状校验，导入前启用网络陷阱，记录模块身份。不得调用run_input/controller/transport或造假未来F/M/A/T来使完整package验证通过。另用独立标准库实现复算时间、occurrence、H/R/representation/K canonical和所有引用；VERIFICATION记录命令/脚本路径与SHA/运行结果/全部hash；脚本可保留新临时目录供Leader读审。",
+    "MANIFEST包含另七文件的排序相对path/bytes/SHA256/Gitblob/mode/type集合，明确canonical规则且不含自身最终hash；MANIFEST自身hash由提交交付报告提供。REPORT解释准确限制与下一步建议，所有产物须不包含原始源码/注释原文/私有envelope内容。只使用派生标识和原派生报告包装。",
+    "只提交新增八文件，不push；返回commitparent/tree、八文件逐项SHA/bytes/blob、K/H/originalR/representation/C/intake identities、逐条件验证和未验证。完成后通知Leader并停止，等待独立验收，不自行freeze。"
+  ],
+  "out_of_scope": [
+    "禁止读取真实源码/header/LICENSE/body、private envelope、旧rawscannercontext、metadata/API或沿R/H指针复查任何原始材料；旧verify.py只准hash不得执行。无网络、下载、第三方依赖、实际transport、构建、模型、设备或音频。",
+    "不创建真实F/M/A/T/input/N，不恢复旧run/旧授权、不清pending、不更改已接受C/历史H/R或任何旧记录；不把K当获取许可或实际能力裁定。",
+    "不改变schema/日期域/硬停止/身份/权限/预算/三步路径/隐私/Checkpoint。CP1和Conformer Deferred not removed；CP2未通过，CP3/Alpha未批准。"
+  ],
+  "acceptance": [
+    "提交只新增指定八文件，父提交为1fe85740，旧树字节不变、产品工作区干净；所有来源身份与Leader C验收精确一致。",
+    "原R包装还原原7051bytes及原SHA；H/representation/K各域及canonical可独立复算，无self/cycle/future对象。两处occurrence唯一、完整、原裁决不扩散，每字段可追溯。",
+    "真实原时间无损保存和整数微秒/UTC/offset/precision/hash由独立计算确认，representation摘要与原R摘要分离且K精确绑定；无fixture污染。",
+    "K operational_authority=false；未创建F/M/A/T/N或运行controller、请求正文、读取私有body。未验证明确；Leader独立逐字段语义与hash验收前不算K通过。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED、文件目的与八文件身份/提交边界；canonical H/R/representation/K identities、来源映射及时间的独立计算证据。",
+    "VERIFICATION完整命令/独立脚本SHA和输出、已审查模块hash/零网络证据、Git旧路径不变；MANIFEST规则和集合摘要、逐项验收证据、未验证与范围偏移检查。",
+    "完成通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4并停止；建议下一步只为另行F，不自动执行。"
+  ],
+  "stop_conditions": [
+    "任何源hash/正式记录/当前提交漂移、字段无法从已授权派生材料唯一确定、需要重读原始/private源码、需要改原R或精度损失/新时间替代：停止并说明具体字段，不猜测或外推。",
+    "需要改变C/schema/authorityDAG、扩大裁决或产品范围、第三方/网络/正文/未来F/M/A/T/N/CP3：PRODUCT_DECISION_REQUIRED或BLOCKED，保持所有旧产物不变。"
+  ],
+  "prepared_at": "2026-09-06T10:02:05.236589+08:00"
+}

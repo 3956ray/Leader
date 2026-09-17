@@ -1,0 +1,8 @@
+{
+  "kind": "Leader local bookkeeping correction",
+  "reason": "Task-name construction accidentally used a human next-step label with Leader-owned prefix; new task creation stopped before any raw access. A subsequent local status write mistakenly changed the accepted sync state/archive to dispatched. Current state was restored from accepted record then valid sole Leader review task created; no message or duplicate development dispatch occurred. This record restores the earlier sync-dispatched snapshot from its immutable prepared contract and preserved original dispatched_at.",
+  "before_sha256": "8295446dac64de2954baed865b11502ddc1a011ec2168cd30f40d93d9492f416",
+  "restored_sha256": "0c53b4a594f04e482c994be81c2e9351b06f099a74d10531583c1a5f35a63fae",
+  "path": "/Users/orderly_ray/Leader/orchestration/tasks/CP2-V8-HARD-STOP-DECISION-SYNC-001-dispatched.json",
+  "recorded_at": "2026-09-06T06:04:53.214507+00:00"
+}

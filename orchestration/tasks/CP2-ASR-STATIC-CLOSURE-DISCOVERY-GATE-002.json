@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-STATIC-CLOSURE-DISCOVERY-GATE-002",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "task_result": "BLOCKED",
+  "artifact_verdict": "manual_review",
+  "goal": "在正文获取前冻结有界发现策略，从固定 sherpa-onnx commit/tree 按精确 seed 与确定性闭包边逐 blob 建立只供静态阅读的发现 corpus，判断能否形成不含 TTS 与其他排除能力的最终 allowlist 候选。",
+  "commit": "0ded8eb54e5d4d529759b46c62b9b5eb10722fbb",
+  "report": "orchestration/reports/CP2-ASR-STATIC-CLOSURE-DISCOVERY-GATE-002.md"
+}

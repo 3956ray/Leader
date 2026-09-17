@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Obtain fresh explicit Product Lead authorization for one bounded source acquisition using the independently accepted immutable v5 freeze.",
+  "scope": [
+    "User reviews the concrete authorization request and exact accepted v5 freeze; reply determines authority for one separately dispatched fresh acquisition.",
+    "Leader records exact user reply and pins only after explicit authorization, then separately verifies input/freeze mapping before dispatch."
+  ],
+  "out_of_scope": [
+    "No developer dispatch, raw metadata/body/source read, request, input creation or live execution before user authorization.",
+    "No old-run continuation, scope/parser/seed/budget relaxation, build/dependency/model/integration, CP2/CP3/Alpha approval."
+  ],
+  "acceptance": [
+    "Explicit Product Lead approval binds the request and accepted freeze, original design/source identities,9seeds,96files/1MiB and all original stops.",
+    "Original user reply is recorded without inference from silence or generic historic continuation."
+  ],
+  "evidence_required": [
+    "Exact user reply, authorization-request hash, freeze/acceptance mapping and separate new developer task only after approval."
+  ],
+  "stop_conditions": [
+    "Missing, ambiguous, narrowed or declined approval; freeze/source/contract drift; any request to bypass formal limits."
+  ],
+  "authorization_request": "orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-AUTHORIZATION-REQUEST-001.md",
+  "authorization_request_sha256": "b01d2f4c94566220e6aad11bbca5f6a8225b34b65f3a46cc181c2f18e8b74cc4",
+  "accepted_freeze_commit": "b0193cf1e818f76a4e429c4d0aeeb81d29a16cbc",
+  "leader_freeze_acceptance_report": "orchestration/reports/CP2-ASR-LICENSE-TYPED-RELEASE-FREEZE-001.md",
+  "leader_freeze_acceptance_sha256": "962d98b438343fcd86a6271e26b7eb61a6781c268fdc78acfb59ef8d9f641e73",
+  "formal_decision_sha256": "27789c9bd35e6e452de70c21b637fc496d8ac17902cda075a98af81c7006aa75",
+  "accepted_at": "2026-09-06T03:59:39.236503+08:00",
+  "task_result": "APPROVED",
+  "user_reply": "批准",
+  "authorization_report": "orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-AUTHORIZATION-001.md",
+  "authorization_report_sha256": "b6eb68842e8787b75ca1dd14bc472560faca61ec78b4ec28007bac10638cbb03"
+}

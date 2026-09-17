@@ -1,0 +1,118 @@
+{
+  "task_id": "CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T13:10:56.949349+08:00",
+  "product_head": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "approved_record": {
+    "bytes": 2016,
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001-approved.json",
+    "sha256": "694c69bc465663cb2a8ba58e21c9757d131d6135956a92df00ed78f997979c81"
+  },
+  "request": {
+    "bytes": 19883,
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+    "sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b"
+  },
+  "identities": {
+    "A": "5e03d0d42eb6a4c2a48fc9ba5bb4df30e677229b07e2c476194193b467eafccc",
+    "C": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "F": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+    "M": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+    "T": "c43f86fcbccff86a63d1d98931176f2b898c622d0417dd7086109c9ddb78b611",
+    "input": "0bc6c2c79883f35cca5f334b08baca43e01b32790c4e7c771a2f1efb60e5108a",
+    "package": "2bcbb229bdfcd45f9d53c8fd03f288fd6202da4325710a4460aad0059b9cfa9e",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0"
+  },
+  "files": [
+    {
+      "bytes": 339,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/A.json",
+      "sha256": "5e03d0d42eb6a4c2a48fc9ba5bb4df30e677229b07e2c476194193b467eafccc"
+    },
+    {
+      "bytes": 327,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/T.json",
+      "sha256": "c43f86fcbccff86a63d1d98931176f2b898c622d0417dd7086109c9ddb78b611"
+    },
+    {
+      "bytes": 4099,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/input.json",
+      "sha256": "0bc6c2c79883f35cca5f334b08baca43e01b32790c4e7c771a2f1efb60e5108a"
+    },
+    {
+      "bytes": 16768,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/manual-package.json",
+      "sha256": "2bcbb229bdfcd45f9d53c8fd03f288fd6202da4325710a4460aad0059b9cfa9e"
+    },
+    {
+      "bytes": 575,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/metadata-identities.json",
+      "sha256": "61efe77abb86152da4b3670a17ff03bf4c8cfdd6391fb7f2c59a9fa0c3459fd5"
+    },
+    {
+      "bytes": 1494,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/pins.json",
+      "sha256": "e44b1a231153119611ef7c8e0169d87f03b2558c44a318af30588c613f52ae9d"
+    }
+  ],
+  "metadata": [
+    {
+      "bytes": 2336,
+      "mode": "0o600",
+      "nofollow": true,
+      "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/commit.json",
+      "regular_singlelink": true,
+      "sha256": "e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089",
+      "stable_fd": true
+    },
+    {
+      "bytes": 2742250,
+      "mode": "0o600",
+      "nofollow": true,
+      "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/tree.json",
+      "regular_singlelink": true,
+      "sha256": "7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2",
+      "stable_fd": true
+    }
+  ],
+  "references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-prepare.py",
+      "bytes": 8941,
+      "sha256": "a325668728c307061711fc553b96a318d65e07427cf26fdec83a32b2c9dcc0b0"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-verify.py",
+      "bytes": 8655,
+      "sha256": "f03379aa1a3c56fcbf5b1920ff8704fd7f4d78bcff0b1c735900154efc8a556e"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-verification.json",
+      "bytes": 8824,
+      "sha256": "21d4496593acfda70d8356f8ce7ce162a6fa588f49357012007ae3d47fd6b1d7"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-interface-review.json",
+      "bytes": 952,
+      "sha256": "7ee0ecd0152d85756910551fc1d261ff5afc8a7af0d1474b23cf09336759338b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-static-review.json",
+      "bytes": 1868,
+      "sha256": "66634eccb7073e11212159e3861d3bfbb133c44c6c33a26c51f2952ae9468117"
+    }
+  ],
+  "criterion_evidence": [
+    "Postapproval complete frozen69505input and33externalref hashes/Git,28bundle andC/K/F/M identities unchanged; productclean.",
+    "New approval694c69 binds exact pendingrequest; A5e03d/Tc43f86/package2bcbb/input0bc6 composed independently, canonical valid, no selfcycle/newscope.",
+    "Two authorized metadata0600 regularsinglelink descriptor-bound hashes exact; pureparse yields8585 entries, no alternateinputs.",
+    "Completebundle guardedpreflight validates actualrunningbundle, ManualPins/input/helper/package/input/commit/tree; independent standardlibrary object reconstruction and all12networktraps zeroevents.",
+    "No run_input/controller/transport or actualN/bodyrequest; separate fresh-process once-only developerexecution may now proceed."
+  ],
+  "limitations": [
+    "No actualnetwork/thirdpartybody/runtime/build/model/device/audio approval; bounded acquisition only.",
+    "Firstpartialcopy harness failed before input validation; preservedscript, no authorityorobjects regenerated, completecopy independentvalidation resolves harness issue.",
+    "CP1/ConformerDeferrednotremoved;CP2notpassed;CP3/Alphaunapproved."
+  ],
+  "next_authorized_step": "Dispatch exactly one CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001 using this approved mapping and frozen v8, new private run, consumed marker before sole run_input; stop permanently on any failure and report derived evidence."
+}

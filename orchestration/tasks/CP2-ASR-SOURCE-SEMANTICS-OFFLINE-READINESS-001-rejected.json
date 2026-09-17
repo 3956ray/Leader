@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "rejected",
+  "goal": "Implement and prove an isolated first-party v6 offline semantic subset with byte-preserving channels, capability pending, canonical guards and atomic current-file decisions before successor authorization.",
+  "scope": [
+    "Read latest formal doc/cp2-source-semantics-readiness-decision-2026-09-06.md and current PRD/entries, accepted first-party v5 code/schema/own fixtures and derived Leader reports only. This explicit dispatch follows accepted c84685f sync and authorizes v6; historical sync-only language no longer blocks this task.",
+    "Only create tools/asr_review_acquisition_v6/ with necessary first-party stdlib code, full grammar/threat-boundary/schema documentation, minimal self-authored fixtures/tests and new current evidence. Reference old evidence by digest; do not copy historical run trees. Preserve v5, freezes, previous acquisition and all product documents.",
+    "Implement deterministic byte-preserving code/line_comment/block_comment/string_literal/char_literal/preprocessor channel evidence for the formal supported subset. Preserve original bytes/offsets/lines/body and evidence digests, including LF/CRLF/multilingual and escaped ordinary literals. Document directive context versus lexical channels unambiguously. Unsupported raw strings/continuations/trigraphs/digraphs/unclosed or ambiguous forms fail closed without guessed recovery.",
+    "Keep exact original deny terms/capability detectors. Active code/directive/include/string/char hits remain hard stops; definite comment hits become hash-bound comment_capability_mention and capability_review_status=pending. Retain both active and comment evidence in mixed cases. Pending never clears automatically and prevents every successor queue/authorization/request, including remaining seeds; no global or real manual-review override.",
+    "Only add the exact sole outer canonical guard from the formal decision: first ifndef IDENT, next same no-replacement define, matching final structural endif, no substantive outside tail, no other semantic use of guard identifier, nested/else/elif/extra define/undef/token splice or expression evaluation. Conservatively inspect the body without condition evaluation. All other unsupported directives/conditional/macros/generated includes remain stops.",
+    "Create a complete atomic local report for the current retained file with lexical/capability/guard/include evidence before choosing the fixed priority identity/file safety→active deny→lexical ambiguity→unsupported preprocessor→comment pending→eligible literal internal edges. Record simultaneous supported evidence and stops without concealing later known symptoms; do not fetch to finish a report. Preserve bounded persistence/overflow failure evidence rather than silently truncating or continuing.",
+    "Preserve LICENSE/license_text inert routing, role/path validation, immutable source identity,9seeds,96files/1MiB, paths/mode/type, transport and all raw/evidence budgets, metadata fidelity, pre-request receipt durability, body preservation, scanner/license review state and source verdict boundaries. Expose and hash every deliberate semantic/schema/policy identity change in provenance; no unrelated policy changes.",
+    "Run all132 v5 baseline tests plus complete new formal six-part matrix twice with self-authored responses/substitute transport and guards before workload imports. Retain every baseline coverage item; only expected assertions directly superseded by this formal contract may be minimally adapted with exact old/new mapping and rationale, never deleted/skipped or satisfied only on a bypass legacy route. All unchanged behavior checks remain. Include pending/active/unsupported mixed current-file reports, CRLF and multibyte hash recovery, role/LICENSE controls and capacity/persistence failures.",
+    "Provide independent evidence recomputation for byte/channel/line hashes, current-file report, pending/priority, graph, request receipts, ledger/terminal and two-run deterministic outputs. Run the already approved static scanner only on this new first-party/self-authored candidate from outside target and retain actual unmodified verdict/coverage/findings/context/hash; no runtime or license PASS claim.",
+    "Commit only v6 and report source_semantics_candidate_ready_for_freeze or source_semantics_candidate_blocked subject to Leader independent acceptance. Report full code/test/evidence identities and limits; notify current Leader then stop. No next stage starts in this task."
+  ],
+  "out_of_scope": [
+    "No real LICENSE/header/private/raw corpus/API/metadata/source/old body or raw scanner context reads/copies, no report-pointer traversal, no third-party fixture or remembered real source excerpt as fixture. No network/DNS/live transport, old-run continuation or actual body acquisition.",
+    "No token deletion/renaming, blanket comment ignoring, arbitrary preprocessor evaluation, macro expansion, generated includes, compiler/third-party parser/dependency, enlarged identity/seed/path/type/budget/deny/privacy/checkpoint or edits outside v6.",
+    "No actual freeze/new source authority, manual real capability adjudication, transferable comment exemption, source snapshot/build input, build/install/load/model/inference/integration, source/license adoption, CP2/CP3/Alpha claims."
+  ],
+  "acceptance": [
+    "Complete formal supported/unsupported grammar and channel/capability/guard/priority/threat-boundary specification match implemented narrow subset and exact approved decision; ordinary source bytes remain unchanged and derived offsets/hashes reconstruct deterministically.",
+    "Active deny remains hard; comment pending retains precise body/line/rule evidence and zero successor queue/authorization/request. Mixed evidence and fixed priorities verified; no pending/unsupported/open edge/missing P0/fixed_point=false path reaches feasibility.",
+    "Strict guard positives accepted for local conservative analysis; every formal negative form fails before successor. LICENSE text routing and other acquisition/security/evidence controls continue passing.",
+    "All v5 baseline coverage plus authored six-part matrix pass twice, no skips, legitimate adaptations individually justified; matching normalized results/edge/pending/priority/ledger/terminal, zero actual network and stdlib only.",
+    "Exact v6-only Git changes with minimal baseline provenance, complete file manifest/bundle/semantic identity, actual first-party static scan and truthful pending reviews; old candidate/freeze/source evidence unchanged. Independent Leader review remains outstanding."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED and readiness disposition; modified files/purposes, commit/parent, full grammar and exact semantic changes; baseline132 mapping/adaptations plus new matrix.",
+    "Two run commands/counts/outcomes/skips, normalized/artifact/ledger hashes and independent recomputation, network guards, static scanner raw/context/snapshot hashes, full manifest/bundle/policy/semantic schema hashes and old trees unchanged.",
+    "Acceptance criteria evidence, unverified items, scope/PRD check and bounded recommendation only; notify Leader01a071cf-9ac6-7171-b663-749a6e88b0a4 then stop."
+  ],
+  "stop_conditions": [
+    "Cannot uniquely establish formal strict lexical/guard subset without guessed recovery, arbitrary expressions/macros/third-party parser or enlarging grammar: return blocked and pause source route for product decision.",
+    "Need real source/metadata/fixture/network or extra dependency, any old-version/write or source/privacy/checkpoint change, token-global/manual exception, or cannot preserve active deny/pending no-successor and bounded evidence.",
+    "Unknown working-tree changes, unavailable formal source, or inability to retain baseline coverage/deterministic evidence; stop rather than broadening the task."
+  ],
+  "baseline_commit": "c84685fce9205886a6fbe41386acaaa5b7374a57",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "formal_decision_sha256": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+  "formal_prd_sha256": "97ff4382c179482a02261b73b85e7e422d200c0dbf6654bac093cc56fc5d373f",
+  "accepted_baseline_candidate_commit": "a60ced8861f4a9fd4716aa65866a90a861978989",
+  "accepted_baseline_candidate_tree": "d5d66a3ef147b3fa587c8b77dd537b94c82fdf50",
+  "accepted_baseline_bundle_sha256": "1dd806b43fe95722150449e795337ee1e3a8e399ae53766e6aa041d5ca39dd3e",
+  "sync_acceptance_report": "orchestration/reports/CP2-SOURCE-SEMANTICS-DECISION-SYNC-001.json",
+  "sync_acceptance_sha256": "bbafa600d32cea6fd9904a48afecf64b5de3ca1a8adbe748a5332b35e9c6ebf4",
+  "dispatched_at": "2026-09-06T04:40:00.651181+08:00",
+  "result_commit": "e6879d2f0da87b6f070314e98727ed22ef403d04",
+  "review_report": "orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-review.json"
+}

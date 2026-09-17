@@ -1,0 +1,57 @@
+{
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-R1",
+  "decision": "ACCEPTED",
+  "product_result": "APPROVED offline v7 intake only",
+  "accepted_at": "2026-09-06T07:06:03.190707+08:00",
+  "verified_formal_files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-manual-capability-evidence-decision-2026-09-06.md",
+      "sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "sha256": "5c376c961c9ecafd21cb5492254a1c45c7adf422e2a890c1d1181a3871f386a6"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "sha256": "8ccc00f6030d250bd345f2c7957325133831640de180cc290c353a698e7e27c4"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "sha256": "6a54eeb02dacfc0793c311a0154c82c17c129a63285f1ab953d84b98c54aa6ed"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-r1-01.md",
+      "sha256": "6f10a1a069afe85703d1652291e21865b7fb3e67c66cc7d5617e21d5f5840699"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-01.md",
+      "sha256": "96978aa0777208c90a266e341289979d8e45bb71e6f90f6acd7bfdd21a6d7a97"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-02.md",
+      "sha256": "04324e951376c90f4dae69c22e94187a34a5d84bc1c93a24569c59c2e62c11e3"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-03.md",
+      "sha256": "8278e25de603ee60ec8fdc8025a276bed727023912fde0702948817b2e09f7ce"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-04.md",
+      "sha256": "c8d9412d2bbafebd4456dfcbf14c7347f1e1c85d45b856bbc2f6f07d77bc5dbf"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-05.md",
+      "sha256": "fba277a7146dac29f67e3341c885b02e88de6a95e28548591b200595dba5aad7"
+    }
+  ],
+  "finding_resolved": "AUTHORITY-DAG-01",
+  "reason": "Formal H/R/C/K/F/M/A/T/N domains/order now acyclic: historical H→R; H/R/C→nonoperational K; C/K→F; F/K/R→M; F/M→userA; F/M/A→trustedT; F/M/T+input→newN. F binds K not unknown M. Historical/context H and execution F have distinct domains. No selfhash or inputlearned pins. Old records immutable; newrun records have new identities.",
+  "formal_review": [
+    "Full revised decision, R1 source card, current PRD delta, INDEX and LOG inspected. All10currentdocumenthashes validated, original5sourcecards unchanged.",
+    "APPROVED authorizes only isolated first-party v7/std library/self-authored fixtures; realK/M/A/T not constructed. All158baseline coverage,exact occurrence binding,hardstops,nontransferability preserved.",
+    "Historical source/report/authority references independently verified earlier; source01 mutable pointer resolved through byte-identical immutable task archive. No raw pointers followed.",
+    "Product HEAD d78577b clean and current document hashes remain known old baseline. KB broad preexistingdirty/untracked not attributed to this task or claimed clean; automatic lint unavailable recordedpartial; manual consistency checked."
+  ],
+  "next": "Only five-document product sync; v7 implementation requires separate Leader dispatch after sync acceptance. No realdata/mapping/freeze/acquisition authority."
+}

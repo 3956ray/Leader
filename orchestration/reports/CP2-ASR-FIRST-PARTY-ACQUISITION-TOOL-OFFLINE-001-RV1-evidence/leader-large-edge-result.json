@@ -1,0 +1,20 @@
+{
+  "body_bytes": 216171,
+  "edge_count": 12002,
+  "stop_reason": "edge_conditional",
+  "terminal_bytes": 2188808,
+  "calls": 2,
+  "zero_network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  },
+  "inspect_run": "Rejected: unsafe_evidence_file"
+}

@@ -1,0 +1,13 @@
+{
+  "task_id": "LOOP-V2-DEV-PROBE-001",
+  "attempt_id": "40f801e9-53fd-44f0-b2d3-82f4a580f27d",
+  "contract_sha256": "8715bea34881c22554090572dd7298eb49ec32ab9481a9e4c52561e94d7bccdd",
+  "assigned_thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+  "turn_id": "01a07755-7e51-7890-8899-40977912bd37",
+  "acknowledged": true,
+  "result": "COMPLETE",
+  "product_changed": false,
+  "receipt_recovered": true,
+  "note": "coordination_only_receipt_recovery",
+  "observation": "On 2026-09-07 read_thread returned original final msg_0d916019dfd88339016a9d8694d43c87d0835084e149c359d6 in the previously empty recovery turn. Four identities match. Newer user-triggered turn still has items=[]; no claim is made about its content. Product worktree independently clean."
+}

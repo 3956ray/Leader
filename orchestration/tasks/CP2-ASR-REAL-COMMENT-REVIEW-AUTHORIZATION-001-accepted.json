@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Obtain separate explicit approval for a single offline manual capability review of two hash-bound comment hits in one already-retained header.",
+  "scope": [
+    "Read only the exact already-retained body-0002 envelope after bounded no-follow directory-chain/regularsinglelink/mode/hash checks; verify body UTF8,NUL,size,SHA256/GitSHA and both line hashes before interpreting. No other private corpus file required.",
+    "Read same-file context within this one7939byte header to decide only these two rule/line hits. Minimal stdlib data decoding/hash and manual untrusted text inspection only; no code import/execute/source-tree export.",
+    "Record exact per-body/per-line/per-rule decision forbidden, comment_only_nonoperative_for_this_body, or unresolved, with original offsets/line hashes and bounded reasoning. Output only first-party Leader review report and reference hashes; avoid reproducing full source.",
+    "If any scope/identity uncertainty or need other file, retain unresolved and stop; cannot enlarge context to dependencies or obtain new data."
+  ],
+  "out_of_scope": [
+    "No network or new LICENSE/header/API/metadata/body requests; no oldrun continuation or reusing old acquisition authority.",
+    "No code/schema/freeze/App changes, no candidate workload or scanner replay, no blanket/global token waiver or implementation of pending-clearance API.",
+    "No fullsource safety/license/reachability/adoption/build/model/device/CP2/CP3/Alpha approval; comment-only is local line/body adjudication only."
+  ],
+  "acceptance": [
+    "Explicit user approval applies to this exact review request only; record user decision and request hash before dispatching one separately scoped Leader execution task."
+  ],
+  "evidence_required": [
+    "Immutable request and exact source/body/envelope/line/rule pins, formal decision/freeze acceptance references and explicit user response."
+  ],
+  "stop_conditions": [
+    "No affirmative user approval, identity mismatch, extra body/network/code need or unclear scope: do not open real body or dispatch acquisition."
+  ],
+  "approval_request": "orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001.json",
+  "approval_request_sha256": "c66a9fe77a77e15ca6dfa8f958f47ac1de4e1816de52779add3b9eee497163c7",
+  "human_readable_request": "orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001.md",
+  "assigned_thread_id": null,
+  "authorization_record": "orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001-approved.json",
+  "authorization_record_sha256": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2"
+}

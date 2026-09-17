@@ -1,0 +1,75 @@
+{
+  "observed_at": "2026-09-16T03:20:34.600072+00:00",
+  "raw_sha256": "36585f0e8b5124f32c1438311e5c7cbb0fb282e00018f8339628899a633204ce",
+  "names_correct": 61,
+  "names_total": 66,
+  "name_gate": true,
+  "name_error_clips": [
+    {
+      "id": "CN04",
+      "missing_names": [
+        "陈晨"
+      ],
+      "reference": "请记录，陈晨下周去杭州，计划参观西湖附近的博物馆。",
+      "raw": "请记录晨晨下周去杭州，计划参观西湖附近的博物馆。"
+    },
+    {
+      "id": "CN06",
+      "missing_names": [
+        "林静"
+      ],
+      "reference": "林静打算从武汉出发，先买车票，再确认酒店的地址。",
+      "raw": "临静打算从武汉出发，先买车票，再确认酒店的地址。"
+    },
+    {
+      "id": "CN12",
+      "missing_names": [
+        "何丽"
+      ],
+      "reference": "何丽准备到广州参加培训，记得提前一天整理学习材料。",
+      "raw": "合力准备到广州参加培训，记得提前一天整理学习材料。"
+    },
+    {
+      "id": "CN21",
+      "missing_names": [
+        "周杰"
+      ],
+      "reference": "周杰计划在武汉停留一天，上午办事，下午去看朋友。",
+      "raw": "周节计划在武汉停留一天，上午办事，下午去看朋友。"
+    },
+    {
+      "id": "CN24",
+      "missing_names": [
+        "何丽"
+      ],
+      "reference": "何丽准备给天津的亲戚寄东西，明天先确认收件地址。",
+      "raw": "合力准备给天津的亲戚寄东西，明天先确认收件地址。"
+    }
+  ],
+  "strict_usable_upper_bound": 25,
+  "strict_usable_gate_possible": false,
+  "pcm_hash_differences_vs_001": [
+    "CN14"
+  ],
+  "decision": "Stop long performance batch due failed strict usability gate. No retuning/repeated same benchmark to select best. Private embedding separately paused.",
+  "device_host_common_fields_equal": true,
+  "device_rows": 30,
+  "device_results_sha256": "44795c7b8caad00334d6022edf26831ae8244790bde230078df08a93c162ebc8",
+  "reported_load_observation": {
+    "coldLoadMs": 2356,
+    "totalPssKiB": 401724,
+    "nativeAllocatedBytes": 290388752
+  },
+  "scope_limit": "One synthetic run; CN14 PCM differs from001, quality gate fails, embedding PAUSE. Single memory sample is not leak/performance qualification.",
+  "strict_usable_reviewed": 23,
+  "strict_failed_clips": [
+    "CN04",
+    "CN06",
+    "CN12",
+    "CN21",
+    "CN24",
+    "CN26",
+    "CN27"
+  ],
+  "assessment_sha256": "b520fa68ee2800074c192324a1a1d7e84064a2a493a2372a591a06d34c0fec39"
+}

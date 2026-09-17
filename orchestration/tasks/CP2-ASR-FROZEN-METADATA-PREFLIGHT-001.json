@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-FROZEN-METADATA-PREFLIGHT-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "只读核验与冻结摘要完全匹配的两份原始上游身份元数据，确认其能被已冻结输入协议接受，为后续单独正文获取明确可用输入。",
+  "scope": [
+    "仅检查 /private/tmp/think-cp2-minimal-source-g78VnT/commit.json 与 tree.json。来源由已提交 minimal-source-snapshot 和 static-closure-discovery 第一方身份报告定位；仅作固定上游身份资料，不复用旧源码/候选/快照或旧政策。",
+    "检查普通单链接/有界读取，SHA必须分别匹配冻结commit/tree pin；复制精确两份数据到全新私有临时目录，禁止枚举原目录或读取snapshot/corpus。",
+    "使用scan-untrusted-code只做静态扫描；明确metadata JSON超过默认2MiB时，在冻结8MiB上限内将扫描单文件限制设为8MiB，禁止静默跳过。",
+    "只调用已冻结且独立验收的Trust/input_document/canonical/parse_input/parse_commit/parse_tree纯函数，以NetworkGuard拒绝实际网络；核对真实输入与policy身份，记录成功或精确失败原因；不调用run_input/transport。"
+  ],
+  "out_of_scope": [
+    "任何网络、新正文、旧corpus/候选/快照、修改代码/schema/冻结合同、构建/模型/产品实现。",
+    "把元数据静态检查当作源码门禁通过，绕过格式不兼容或自动进入正文获取。"
+  ],
+  "acceptance": [
+    "两个真实metadata原始hash匹配冻结pin，长度与类型合规，静态扫描及限制如实记录。",
+    "已冻结严格解析器完整通过，或者记录可复现的精确停止点及原始字节身份；无新源码请求。",
+    "只在Leader报告和全新临时目录保存证据，不把真实API正文提交产品仓库。"
+  ],
+  "evidence_required": [
+    "RESULT、两个路径/字节/SHA/扫描报告/解析结果、零网络证明、冻结和产品仓库未变；下一步决策。"
+  ],
+  "stop_conditions": [
+    "任一文件/来源/身份不匹配、扫描关键内容跳过或存在未解决风险、严格解析失败时停止，不过滤/改写输入或换pins。"
+  ],
+  "baseline_commit": "e2d64f98aae52bd5e015962191a3bf2c121beeb2",
+  "task_result": "BLOCKED",
+  "disposition": "stopped_preflight_report_accepted; no_acquisition",
+  "completed_at": "2026-09-06T01:03:38.668804+08:00",
+  "leader_report": "orchestration/reports/CP2-ASR-FROZEN-METADATA-PREFLIGHT-001.md"
+}

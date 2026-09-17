@@ -1,0 +1,45 @@
+{
+  "task_id": "CP2-HOTWORDS-CHAIN-TERMINATION-DECISION-SYNC-001",
+  "RESULT": "PASS",
+  "commit": "e89da0e5e119293f6af73ce10ff4e0159f995c4b",
+  "parent": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "tree": "b27de03ae1ed00cf0a8f922902cf156a4c78c823",
+  "old_leaf_records": 129543,
+  "unchanged_outside_allowed": 129539,
+  "allowed_files": [
+    {
+      "path": "/Users/orderly_ray/Projects/think/AGENTS.md",
+      "bytes": 17358,
+      "sha256": "eb15ffcc78aa7eaf73cd23e87b6416f4d0afb0ecffd8eda36717c0ecc7533fe3",
+      "git_record": "100644 blob 59d4534b7e4f00b99dc59ff5a54f3212e2dec37c"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/README.md",
+      "bytes": 16341,
+      "sha256": "c985c4efbc8fa5edf1c83c4f962d94c1848574ee588537f9e94cd44471b2d09f",
+      "git_record": "100644 blob 66665a147ca0ebeedf8b115646df46b7c6aa7ea2"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-hotwords-chain-termination-route-decision-2026-09-06.md",
+      "bytes": 13982,
+      "sha256": "0d639a27ff661ef0106708810f817a2578400c7840e2b13825f9b1ebbc69ef2e",
+      "git_record": "100644 blob f1646ffae919e3873eb813b2e1b510136ab3a809"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 46929,
+      "sha256": "c8030aca50da78c50b3493e723e2cb4b47ced60f97d82a1eab34286cf0f164b0",
+      "git_record": "100644 blob 55e610f12a91dc7d01a397e9b116fff9396c73b0"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/prd-v0.1-2026-09-04.md",
+      "bytes": 72021,
+      "sha256": "abcbd91a45146fca75d53509031bdf0b38318e956cd67f41f057de8118cde030",
+      "git_record": "100644 blob 6574fd8700cb97d99ec51f7734a87cbe15238e6b"
+    }
+  ],
+  "formal_copies_exact": true,
+  "navigation_links_checked": 55,
+  "clean": true,
+  "code_or_old_evidence_changes": false
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-METADATA-PATH-COMPATIBILITY-REPAIR-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Implement the approved minimal offline metadata name compatibility candidate in a new v4 directory, preserving strict acquisition authorization and all accepted v3 behavior.",
+  "scope": [
+    "Read the approved doc/cp2-metadata-path-compatibility-decision-2026-09-06.md and accepted v3 source/freeze as read-only first-party baseline.",
+    "Create only tools/asr_review_acquisition_v4/ with necessary first-party Python stdlib code/schema/tests/docs, small self-authored fixtures and current evidence; reference old evidence by hash rather than copying historical runs.",
+    "Separate lossless inert tree names from strict seed/dependency acquisition authorization. Preserve raw Unicode path, attributes, original index, all entries and identity; no filtering, normalization or interpretation as filesystem paths.",
+    "Reject controls/NUL, absolute paths, backslashes, empty/dot/dot-dot segments and duplicate raw paths. Preserve NFC/NFD collisions as distinct inert entries without acquisition eligibility.",
+    "Run all 100 original baseline tests plus new behavior regressions for @/spaces/plus/parentheses/NFC/NFD/CJK/emoji, malicious paths, exact duplicates, lossless preservation and unauthorized acquisition attempts. Use only self-authored synthetic responses and existing substitute transport test harness; zero actual transport/network/DNS/body requests.",
+    "Produce two deterministic synthetic runs, provenance/diff map, bundle/file hashes and unchanged old release evidence. Fix candidate identity and report for Leader review; actual pinned JSON pure parsing is performed only by Leader after synthetic acceptance."
+  ],
+  "out_of_scope": [
+    "No writes outside v4; no changes to v2/v3/old freeze/product app/docs/Gradle or Leader state; no copying thousands of historical evidence.",
+    "No real metadata access or third-party fixtures/source/old corpus/snapshot/dependencies/models/network, actual transport, builds or integration.",
+    "No changes to pins/seeds/allowed LICENSE-csrc h-cc/mode-type/96 files-1 MiB/denylist/privacy/CP gates; no changes to transport/decode/controller/ledger/authorization semantics except necessary metadata representation call sites.",
+    "No release freeze or real acquisition and no claim of final compatibility readiness before Leader fixed-JSON validation."
+  ],
+  "acceptance": [
+    "Only independent v4 changed, each file provenance and hashes clear, old v2/v3/freeze identities unchanged.",
+    "All 100 baseline behaviors plus new regressions pass without skipping or weakening assertions; two normalized results/request-ledger-terminal evidence sets match.",
+    "Inert names are lossless and cannot become acquisition paths, malicious and duplicate names fail before authorization; raw NFC/NFD identities remain distinct.",
+    "Actual network/DNS and real transport/body requests zero, Python stdlib only; synthetic test doubles explicitly distinguished.",
+    "Candidate hash fixed and synthetic review evidence complete; final metadata_compat_candidate_ready_for_freeze requires subsequent Leader pure-parser validation of the exact two pinned JSONs. Until then report developer COMPLETE with real validation pending, or BLOCKED."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED, files/purposes, baseline/new regression mapping and commands, two runs/hashes, provenance, per-criterion evidence, unverified items, scope check, commit/parent and clean worktree.",
+    "Notify current Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4 and stop. Do not start next task."
+  ],
+  "stop_conditions": [
+    "Need real metadata during development, actual network/transport/body access, old corpus, third-party input or extra dependency.",
+    "Need weaken raw identity/traversal/authorization or change fixed product/source boundaries, modify old frozen release or unrelated semantics.",
+    "Baseline behavior regression cannot pass within minimal metadata repair, unexplained worktree changes, scope or formal decision conflict."
+  ],
+  "baseline_commit": "55d3c3303a3884c88240c2f14d9b855fd51ae88e",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "formal_decision_sha256": "3272b0de1df984f9bb0fac81a369662d5876f3e9268e315f9466c7aae50e918e",
+  "dispatched_at": "2026-09-06T01:20:43.682754+08:00",
+  "task_result": "COMPLETE",
+  "commit": "524c6484b1290cd2556ebf9a1031a4d00b273a86",
+  "accepted_at": "2026-09-06T01:48:21.802111+08:00",
+  "report": "orchestration/reports/CP2-ASR-METADATA-PATH-COMPATIBILITY-REPAIR-001.md",
+  "tool_conclusion": "metadata_compat_candidate_ready_for_freeze"
+}

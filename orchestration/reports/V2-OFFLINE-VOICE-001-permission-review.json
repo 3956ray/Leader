@@ -1,0 +1,53 @@
+{
+  "observed_at": "2026-09-16T02:30:29.556621+00:00",
+  "same_database_before_after": true,
+  "formal_notes": 0,
+  "drafts": 1,
+  "system_process_termination": {
+    "beforePid": "10088",
+    "afterPid": "",
+    "revokeExit": 0,
+    "revokeOutput": "",
+    "revokeError": "",
+    "gestureExit": 0
+  },
+  "evidence": [
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/before-revoke.json",
+      "sha256": "d947599e2b8bb1057375d55b560cd2a3948b41352f916e3075ecfa0cfbb9e503"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/after-permission-dialogs.json",
+      "sha256": "d947599e2b8bb1057375d55b560cd2a3948b41352f916e3075ecfa0cfbb9e503"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/after-revoke.json",
+      "sha256": "d947599e2b8bb1057375d55b560cd2a3948b41352f916e3075ecfa0cfbb9e503"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/revoke-process.json",
+      "sha256": "5eaa379c945c477442bc7fee9cb2c59427dfa504cab0892d77326bad2dd91dd6"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/recording-before-revoke.xml",
+      "sha256": "5d22ef6569705bd481177bd5257638f4bf68b6f95b23fb14fc738e215eb6dc70"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/reopened-after-revoke.xml",
+      "sha256": "c2f242b9c88e7b116fca71e71c81a6d7e4b7bdb3fc1763878c34ce539374021a"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/restored-draft-editor.xml",
+      "sha256": "3c90def66a24b878cc32f402ef63e9260f2879ac5f87278d0b21fb885c33954c"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/reauthorized-after-revoke.xml",
+      "sha256": "1c76152a8787820bd48f25644b1442e6a1917a709c417a0e3b3b412f2cb9366b"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/ui/permission-request.xml",
+      "sha256": "fc608150947ca5480008cddb8637a4b55ce45aec4d1c99755c566b40bbb97833"
+    }
+  ],
+  "scope": "Synthetic emulator test only; retains already committed draft. No claim of a cleanup callback before system kills process or OS physical memory erasure."
+}

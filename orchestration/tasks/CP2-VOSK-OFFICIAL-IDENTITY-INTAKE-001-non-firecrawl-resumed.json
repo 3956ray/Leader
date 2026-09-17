@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-VOSK-OFFICIAL-IDENTITY-INTAKE-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "dispatched",
+  "previous_execution_result": "identity_insufficient; Firecrawl quota failure, zero official pages returned",
+  "resume_authority": "User explicitly permits non-Firecrawl research in current Leader task; 2026-09-06T21:17:23+08:00. Same goal and source boundaries; no new artifact authority.",
+  "resume_budget": {"used_total": 1, "used_runtime": 1, "used_model": 0, "remaining_total": 5, "remaining_runtime": 2, "remaining_model": 3},
+  "assigned_thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+  "report_to_thread_id": "01a07655-fdfd-7683-aa57-a4895188d2ff",
+  "goal": "在最多六个官方公开页面或元数据端点内，分别固定一个 Vosk Android runtime 与一个中文小模型的身份、来源、版本和许可证，判断是否足以提出独立制品审查授权。",
+  "formal_decision": "/Users/orderly_ray/Projects/think/doc/cp2-alternative-asr-security-intake-selection-decision-2026-09-06.md",
+  "formal_decision_sha256": "d58d59a51a94afc92f55f4211bd273972fe6b516d2823108ba55c9d27f166176",
+  "predecessor_acceptance": "/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-SELECTION-DECISION-SYNC-001-acceptance.md",
+  "scope": [
+    "用户明确不要求使用Firecrawl；可使用现有浏览器或其他已可用只读工具直接读取获准官方说明与元数据，不安装新工具、不付费、不绕过权限拒绝。先把此次渠道续接说明追加到知识库就绪记录/LOG，再执行剩余预算。保留第一次失败ledger和历史结论，在三身份文件中明确新一轮结果，不冒充首次成功。",
+    "完整遵循正式决定下一项唯一任务合同。只读已验收R1研究与正式产品文档；Vosk唯一候选，runtime与模型分开。",
+    "允许Alpha Cephei Vosk官方站、官方模型目录、alphacep/vosk-api首页/README/LICENSE及这些入口直接指向的官方release/tag/Android坐标或模型元数据；公开repo/release/tag元数据可读，不遍历源码树。读取前确认一方来源；来源不明停止。",
+    "最多6个官方页面或端点，runtime最多3、模型最多3；记录全部尝试URL、最终URL、日期、用途、计数和可见证据。失败请求不得用来无限重试或扩张预算。合同允许的README/LICENSE/说明/元数据不属于禁止取得的实现制品。",
+    "在知识库 ideas/personal-thought-archive 下以 cp2-vosk-runtime-identity-2026-09-06.md、cp2-vosk-model-identity-2026-09-06.md、cp2-vosk-identity-readiness-2026-09-06.md 产出三文件，仅必要INDEX/LOG更新。每个身份字段写Observed/Unknown、官方URL、访问日期；不猜版本/坐标/SHA/许可证。",
+    "运行库记录维护者、精确release/tag/version、Android发行坐标或分发入口、源码仓库身份、许可证适用范围、公开checksum/签名/SBOM状态。模型记录精确名称/修订、官方对象文件名和下载入口（只记录不请求）、大小、发布者、许可证、checksum/签名状态。",
+    "最终仅给 identity_ready_for_artifact_intake_decision 或 identity_insufficient。官方缺checksum可标Unknown，不能冒充内容已固定；必须仍能唯一指认下一授权对象。不构造生效授权。"
+  ],
+  "out_of_scope": [
+    "不得获取源码实现blob、源码树、模型、AAR/APK、二进制、归档、样本；不扫描、安装、构建、加载、运行、推理、集成、真机或修改think。",
+    "不恢复sherpa链、不推进第二候选、不扩大预算、不改变三步/音频隐私/专名90%/Checkpoint；不得安装未通过安全门禁的新工具或插件。"
+  ],
+  "acceptance": [
+    "最多6官方端点且各对象最多3，全部来源和访问证据可追溯；runtime与模型许可证身份分离。",
+    "三份身份产物覆盖正式合同字段，未知明确，结论与证据强度一致，不将身份准备宣称为安全/采用/CP2通过。",
+    "没有下载制品或产品改动，知识库修改归属清楚，隐私和各门槛保持。"
+  ],
+  "evidence_required": [
+    "在本PM任务最终答复给RESULT、三产物路径/bytes/SHA、端点ledger、各验收证据、未知与停止原因、Git归属。不要重试被拒跨任务发送；本任务最终答复即可。"
+  ],
+  "stop_conditions": [
+    "预算耗尽仍不足、官方冲突/来源不明、需登录付费接受额外条款、需制品/源码实现/源码树/第二候选时立即停止并identity_insufficient。",
+    "不得为关闭未知扩大读取或下载辨认身份；工具权限拒绝不绕过。完成后停止待Leader验收，B/C未获授权。"
+  ]
+}

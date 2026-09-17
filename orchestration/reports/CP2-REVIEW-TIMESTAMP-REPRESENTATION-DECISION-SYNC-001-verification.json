@@ -1,0 +1,47 @@
+{
+  "RESULT": "PASS",
+  "commit": "4e853863e1bf0a68fbf8061767803797947eeec2",
+  "parent": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "files": [
+    {
+      "path": "doc/cp2-review-timestamp-representation-decision-2026-09-06.md",
+      "bytes": 12271,
+      "sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33"
+    },
+    {
+      "path": "doc/prd-v0.1-2026-09-04.md",
+      "bytes": 62659,
+      "sha256": "ca6477c0bb4e40913be6861b5299ae4b0121650552da3aa1cd4acbd46c91528f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 15587,
+      "sha256": "c5a28dbe01b96bde1514ba1af4c37dd0c75d109e9f025743b797bc6841501dc3"
+    },
+    {
+      "path": "doc/README.md",
+      "bytes": 15592,
+      "sha256": "841cbe368a630d04cdd37f969bf23697dc23c51f544856428aa954be21da70a6"
+    },
+    {
+      "path": "doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 39864,
+      "sha256": "5d76a916e6cd5a455c70a5a7003658f697467d779b2c967039cac2c44c6db1a6"
+    }
+  ],
+  "formal_copies_byte_identical": true,
+  "local_navigation_links": 60,
+  "external_not_fetched": 34,
+  "historical_raw_links_not_followed": 9,
+  "unchanged_trees": {
+    "tools": "bc1315ee8927256dfd31d8d7b44023a231791299",
+    "app": "753c8e7ce25f55b13b1492b64fcdc9df85b7fa88",
+    "gradle": "16c07b9058691537e22ea07b2799c56a147db6c7",
+    ".agents": "e2850fdcbf3d34719dd5c3a86484ffff9f07b6a0",
+    "doc/security-reviews": "878e5644e1baef763b4d49719f12b96b07a57323"
+  },
+  "v8_not_created": true,
+  "worktree_clean": true,
+  "whitespace": "PASS",
+  "semantic_review": "All three entries match latest independent v8 timestamp-only scope and formal precedence;167/1210 baseline,lossless raw/UTC/precision/offset/epochmicrosecond and representation domains preserved;K/F/M/A/T/N separate,all previous safety/privacy/checkpoint gates unchanged."
+}

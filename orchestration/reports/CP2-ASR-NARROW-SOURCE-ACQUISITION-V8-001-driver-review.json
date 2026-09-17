@@ -1,0 +1,24 @@
+{
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "review": "Leader full static read of first-party driver; no execution",
+  "driver": "/private/tmp/think-acquisition-v8-driver-w125vAFT/driver.py",
+  "bytes": 6899,
+  "sha256": "8af745d6a0a30ac10d91c5a6cdc4bea6824c62be55a3eaebb9589a2092d6cd11",
+  "findings": [],
+  "verified": [
+    "Complete C28 digest checked before frozen runtime imports",
+    "Two metadata paths only; descriptor-relative nofollow, singlelink0600, parent0700, bounded exact bytes/hash, stable identity",
+    "Exclusive consumed marker fsync and parent fsync before Store and sole run_input",
+    "Exactly one syntactic run_input call, no loop or retry; only manual_raw keyword",
+    "Default factory/review/fault; immutable task/pins/A/T/input/package verification",
+    "Fresh empty0700 quarantine parent and exclusive new Store run",
+    "Scanner/IOC digests match independent historical clarification",
+    "Exception records failure, preserves marker/run; no recovery call"
+  ],
+  "limits": [
+    "Static review cannot prove actual invocation or network trace; await retained actual evidence",
+    "Plain run-plan read is trusted first-party driver input with exact plan assertions, not quarantine-origin input",
+    "Runtime dependency resolution evidence still needs verification from actual bundle and execution"
+  ],
+  "created_at": "2026-09-06T05:25:58.652590+00:00"
+}

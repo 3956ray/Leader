@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-UI-004",
+  "owner": "developer",
+  "checkpoint": "CP1",
+  "status": "accepted",
+  "goal": "实现使用固定合成日历数据的 CP1 导入选择与分析确认原型，验证单日历、只读说明、三分流、模块建议和批量确认交互。",
+  "commit": "56f16060e54d2e22b2c09cb97fc3f0a10111b7b2",
+  "report": "orchestration/reports/CP1-UI-004.md"
+}

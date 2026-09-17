@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-LOCAL-CONFIGURATION-ROUTE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "goal": "基于已验收的同一头文件局部配置证据，正式决定保持或调整当前CP2路线暂停状态及下一项唯一最小工作，不能把配置声明等同实际文件访问或直接绕过原硬停止。",
+  "prepared_at": "2026-09-06T06:07:04.102341+00:00",
+  "baseline_commit": "63de9e684ad39a476624699f18dd349272062a51",
+  "decision_inputs": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-acceptance.json",
+      "bytes": 4701,
+      "sha256": "431eb4d30511858cf298faec7da82d74d871fbb54db31d4075da94190925345d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001.json",
+      "bytes": 22372,
+      "sha256": "f5d1f99d54084aec6757038f726ae455395e334ac0b120c5f254791c1bcbda8b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001.md",
+      "bytes": 1912,
+      "sha256": "a6ec5534ed6b2bcd7b6ae41dd34576f3465ef7df2494c614755a00e809acd39b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-verification.json",
+      "bytes": 1574,
+      "sha256": "1812e5b8ef3384ebf82f7345c35865e5a7837ad39d84101bae14f8ebd24dcaac"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-semantic-review.json",
+      "bytes": 3013,
+      "sha256": "46d63124da6e24064fcc7c45b7e779c6d779cea151347fa7e06e0fd8623b4c8f"
+    }
+  ],
+  "scope": [
+    "只读本合同固定第一方派生材料及正式知识库现行决定/PRD/工程入口，作APPROVED/REVISE/PAUSE并落正式文档。当前7occurrence审查已验收，仅证明1literalinclude、4hotwords_file字段/参数/成员初始化的局部policy-relevant配置和2非操作comment。注释描述buffer/file选择，但实际selector/文件访问/可达性/未来业务handleAPI是否暴露都未证明。不得把这些未验证写成既定能力或无害结论。",
+    "按上一正式决定的路线判断处理：当前获取/采用路线保持暂停，原denylist和complete-set拒绝不变。决定是否正式PAUSE该路线、或是否有保持隐私与handle边界的下一项最小可证伪证据工作。若需明确政策解释，区分上游内部可选配置、构建/运行所需实际能力、业务可达接口；不把未证实的区分直接变成clearance或detector例外。",
+    "只定义一个下一任务或明确停线理由/恢复条件。若需要新body/依赖/metadata/网络，当前许可不覆盖；先列精确证据缺口/候选对象和固定身份来源、获取范围/预算/用途/停止条件，由Leader另行准备具体请求再问用户，不在本任务授权或执行获取。若暂停不凭空进入CP3或改产品隐私门槛。",
+    "评估继续该源码审查路线是否有实际信息价值，不默认创建v9/扩大commentmap/重做全套冻结。不得只补comment绕过4policy-relevant active或把第一方治理产物算成App开发进度。",
+    "仅更新正式知识库decision/sourcecard/PRD必要状态/INDEX/LOG，回报每文件path/bytes/SHA及检查、结论和下一唯一合同。保留历史记录/所有旧对象及当前run永久结束；产品仓库只读，由Leader另安排必要同步。通知本Leader后停止。"
+  ],
+  "out_of_scope": [
+    "不读任何raw/private/body/envelope/metadata/analysisarchive/scannercontext，不运行脚本、候选、scanner、controller、第三方或联网。",
+    "不改产品源码、冻结/denylist/原裁定/授权，不新clearance/map/v9/获取/构建/模型/音频/设备，不改变CP1/CP2/CP3或隐私门槛。"
+  ],
+  "acceptance": [
+    "正式APPROVED/REVISE/PAUSE与局部证据一致，明确当前停止状态和恢复门槛，不误称实际I/O、全局unsafe、业务已暴露或配置已无害。",
+    "下一唯一目标、允许范围、不做、验收、证据、停止条件和授权依据完整；无默认放行/重复获取或无效扩大工程投入。"
+  ],
+  "evidence_required": [
+    "正式文件path/bytes/SHA、PRD delta/链接检查、未验证与下一唯一任务合同；若需新用户权限给具体条款和准备要求。",
+    "通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4后停止；开发者保持空闲。"
+  ],
+  "stop_conditions": [
+    "需原始材料才能决策时保留未验证并停止，不自行扩大阅读。",
+    "触及权限/隐私/Checkpoint或需要改变已批准边界时明确正式决定与所需授权，不直接执行工程或获取。"
+  ],
+  "dispatched_at": "2026-09-06T06:07:09.652205+00:00",
+  "completed_at": "2026-09-06T06:19:37.595413+00:00",
+  "product_result": "APPROVED",
+  "accepted_at": "2026-09-06T06:19:37.595413+00:00",
+  "acceptance_report": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-LOCAL-CONFIGURATION-ROUTE-DECISION-001-acceptance.json",
+    "bytes": 2489,
+    "sha256": "9b186c0855a146dbaf8f6b4b429ebc660fe30a8b93edd3bc79f568a62913b413"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-09-16T02:05:52.181275+00:00",
+  "task_id": "V2-OFFLINE-VOICE-001",
+  "source": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/performance-results.json",
+  "sha256": "0a7293ead909921da8d201e93c9e5e2058385279d38ed6839ebf6e70ab1d4b5d",
+  "p30_count": 10,
+  "p95_ms": 235,
+  "s90_count": 20,
+  "exact_unique_ordered_ids": true,
+  "sample_counts_and_resource_closure_pass": true,
+  "s90_wall_ms_range": [
+    90093,
+    90136
+  ],
+  "scope": "Real engine and product capture with synthetic RAM source on isolated emulator; no physical microphone equivalence. Final APK/input binding still pending. Accuracy gates remain failed; CP2 not accepted."
+}

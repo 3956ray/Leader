@@ -1,0 +1,41 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-ROUTE-DECISION-001",
+  "RESULT": "ACCEPTED",
+  "product_decision": "APPROVED",
+  "accepted_at": "2026-09-06T08:32:16.684357+00:00",
+  "formal_files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+      "bytes": 13812,
+      "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 69391,
+      "sha256": "5d74aea2e04e27415b4fdf4503bf65e27682cd2ed0975279cca23bfa7d3cfddf"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "bytes": 10679,
+      "sha256": "4aa4ce8a5a1dd9ef4453dac180c778b4b61f87a836e21df71b54b4ed7e494cc8"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "bytes": 41004,
+      "sha256": "9eeb39541b448960456049ffe774f70ef53815425516ca4f188137f0458d0dad"
+    }
+  ],
+  "checks": [
+    "Four delivered fixed hashes, five pinned decision inputs and112relative document links verified.",
+    "PRD diff limited to source/route/currentstatus and new local evidence; no privacy/P0/three-step/Checkpoint removal.",
+    "Observed/Inferred/Unverified accurate to28lines1237B. FileExists internal effects/logging execution/complete buffer-only unverified.",
+    "Only final impl.h pendingrequest preparation approved; acceptedcommittedderivedidentity only, missingblob/mode/size blocked without rawmetadata/body/network.",
+    "Future separate user approval1GET<=262144B,64uniquelines/4096visiblebytes; declaration/delegation/missingdefinition ends hotword source chain permanently, no thirdsource."
+  ],
+  "limits": [
+    "KB lint_knowledge.py unavailable disclosedpartial; manualchecks completed.",
+    "KB fourfiles uncommitted in existinguntracked area; no newKBcommit claimed.",
+    "Productrepo cleanbd0bb57e, no raw/source/network/implementation."
+  ],
+  "next_step": "Five-document product sync, then Leader-only impl.h request preparation."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-MINIMAL-SOURCE-SNAPSHOT-GATE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "task_result": "BLOCKED",
+  "artifact_verdict": "manual_review",
+  "goal": "从 sherpa-onnx 固定上游提交按先冻结的显式逐文件 allowlist，在全新隔离目录建立零符号链接的最小 ASR 源码快照，并仅完成静态安全门禁。",
+  "commit": "6952167795d1243534a93fa59a18372fb0d192e8",
+  "report": "orchestration/reports/CP2-ASR-MINIMAL-SOURCE-SNAPSHOT-GATE-001.md"
+}

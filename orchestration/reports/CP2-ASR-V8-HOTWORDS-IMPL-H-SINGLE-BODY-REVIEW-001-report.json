@@ -1,0 +1,131 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "RESULT": "PRODUCT_DECISION_REQUIRED",
+  "review_outcome": "stopped_at_target_declaration_hotword_chain_terminated",
+  "completed_at": "2026-09-06T09:00:08.714604+00:00",
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+    "git_type": "blob",
+    "mode": "100644",
+    "git_blob": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "decoded_bytes": 2286,
+    "expected_body_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6"
+  },
+  "approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-001-approved.json",
+    "bytes": 3405,
+    "sha256": "ffd046a2d0e25ec05a9c0e0e72676bbe0b5f8d132986dd2ebc730eef13c39f38"
+  },
+  "acquisition": {
+    "requests": 1,
+    "response_entity_bytes": 3434,
+    "decoded_bytes": 2286,
+    "retries": 0,
+    "redirects": 0,
+    "metadata_requests": 0,
+    "authority_consumed": true
+  },
+  "observations": [
+    {
+      "status": "Observed",
+      "evidence": "line20 [497,526)",
+      "finding": "The visible enclosing class header names OnlineRecognizerImpl."
+    },
+    {
+      "status": "Observed",
+      "evidence": "lines24-25 [607,707)",
+      "finding": "The visible static Create signature returns std::unique_ptr<OnlineRecognizerImpl> and accepts const OnlineRecognizerConfig &config. It ends with a semicolon, so this occurrence is a declaration rather than a function body."
+    }
+  ],
+  "stop": {
+    "condition": "target_declaration_only",
+    "trigger": "The exact target declaration was visible; the approved immediate-stop rule applies without searching elsewhere for another definition.",
+    "hotword_source_chain": "PERMANENTLY_TERMINATED_UNDER_CURRENT_ROUTE",
+    "subsequent_semantic_reads": 0,
+    "include_symbol_or_second_body_followed": false,
+    "third_source_authorized": false,
+    "meaning": "Evidence-budget termination, not proof that sherpa-onnx cannot implement buffer-only hotwords or that no definition exists in unseen same-file/dependency content."
+  },
+  "inferences": [
+    {
+      "status": "Inferred",
+      "finding": "The three visible lines do not contain config consumption, a buffer/file selector or file I/O implementation, so they cannot close the identified runtime-boundary gap."
+    }
+  ],
+  "visible_scope": {
+    "unique_lines": 3,
+    "visible_bytes": 129,
+    "line_numbers": [
+      20,
+      24,
+      25
+    ],
+    "max_unique_lines": 64,
+    "max_visible_bytes": 4096,
+    "notes": "No other method examined. A pre-display exact target index also recorded another Create token at31 but no text/semantics of that occurrence were displayed or followed."
+  },
+  "scanner": {
+    "verdict": "low_indicators",
+    "risk_score": 0,
+    "text_files": 1,
+    "binary_files": 0,
+    "skipped": 0,
+    "findings": 0,
+    "meaning": "Configured static indicators only; no source approval."
+  },
+  "artifact_verdict": "manual_review",
+  "evidence": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-visible-context.json",
+      "bytes": 1004,
+      "sha256": "690157129448150a036884b7c22743caa3ed4f59908e7facb1965220cd6638b9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-target-index.json",
+      "bytes": 765,
+      "sha256": "c71c3718617bfbddf1c407f01a57f8f84a03d0fa8fcf04a67cc506b15501362d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-leader-verification.json",
+      "bytes": 3657,
+      "sha256": "731abd580c46267bec3ce638428d06530ed3cfd4353bb65271104c851a0c80b2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-pre-request-acceptance.json",
+      "bytes": 1150,
+      "sha256": "6bf2d58da753a5f17fdc0472eb98eb1ce706a30e587df29b96a1be7b9a68074e"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-fetch-review.json",
+      "bytes": 3204,
+      "sha256": "6f6fa843ef4a2b3c78be031d72e468ec94a94a5a56ac0d5b75744c039cc3667a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-handler-provenance.json",
+      "bytes": 2073,
+      "sha256": "1d9ca03d00818211f35007cb02862a6b5eed899f3a31a075258ceaadc9a805e8"
+    }
+  ],
+  "unverified": [
+    "No inference that all same-file/dependency definitions are absent; the immediate-stop rule prevented further semantic reading.",
+    "Create implementation, directconfig processing, selector and file I/O behavior, buffer-only feasibility, actual execution and think business reachability.",
+    "FileExists implementation from earlier review remains unexamined; no function/symbol chain followed.",
+    "Source closure/license/provenance/current vulnerability/model/device/performance/audio privacy gates."
+  ],
+  "preserved_state": [
+    "sherpa-onnx acquisition/adoption route PAUSED, zero clearance, no v9, oldrun and frozenrules unchanged.",
+    "CP1/Conformer Deferred notremoved;CP2notpassed;CP3/Alphaunapproved; originalaudio privacy/three-step paths unchanged.",
+    "No realfatherdata, audio, productcode, network expansion, targetexecution/build/load/test/inference/integration."
+  ],
+  "git": {
+    "HEAD": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+    "clean": true,
+    "product_changes": false,
+    "Leader_outputs": "New firstparty local reports and adapted acquisition helper, uncommitted",
+    "push": false
+  },
+  "next_step": "Formal product decision restricted to alternative offline ASR candidate research or explicit personal-dictionary deferral; no third-source request, no automatic implementation, no presumption deferral clears core ASR adoption blockers."
+}

@@ -1,0 +1,469 @@
+{
+  "request_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001",
+  "status": "AWAITING_EXPLICIT_USER_APPROVAL",
+  "created_at": "2026-09-06T11:38:08.816477+08:00",
+  "proposed_task": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "operational_authority": false,
+  "attempts": 1,
+  "baseline_commit": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "accepted_C": {
+    "commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+    "tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+    "root": "tools/asr_review_acquisition_v8",
+    "files": 69497,
+    "bundle": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "file_manifest_sha256": "d8b003df82da35b20f2e110c074a4a761de926ca914f5affc7b556650f5f9b56"
+  },
+  "F": {
+    "commit": "75a9349c2e54d18a46dacddad762e7e669e9fbc2",
+    "tree": "b9d18a3f9775cdaf5d07e71e36f9eaac0e0c79e4",
+    "file": {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/F.json",
+      "bytes": 344,
+      "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4"
+    }
+  },
+  "M": {
+    "commit": "6b83f40e75cbb501102207018658f6de15a79ff2",
+    "tree": "e6565de08821d03834196dbb5cec7d784db5d4c0",
+    "file": {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-authority-map-v8/2026-09-06/M.json",
+      "bytes": 858,
+      "sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0"
+    }
+  },
+  "identity_domains": {
+    "H": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615",
+    "K": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+    "M": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+    "P": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc",
+    "R_wrapper": "9569a0ff117a88fbda16fd2e548530bc4b46a673c7def9f6e05b2c3b2f49ab05",
+    "authority": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "original_R": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+    "representation": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de",
+    "runtime_F": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+    "supporting_freeze": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607",
+    "timestamp": "9810a201cd0d752a011c92ea1abd81641343ddfc79b325b6645b92b00d2a2d77"
+  },
+  "references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001-acceptance.json",
+      "bytes": 7203,
+      "sha256": "afc74ff5c1e6023bbf5846203c688a6132c1229774717330e991b6e8f8a55c2d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001-acceptance.json",
+      "bytes": 7438,
+      "sha256": "4f35f0fd8efe2dff2950148cf9d8e72599fbb70e675db2147a1f35da3a6fb8e9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-acceptance.json",
+      "bytes": 8041,
+      "sha256": "8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-acceptance.json",
+      "bytes": 6661,
+      "sha256": "141c9b5655cbde45dc7761e65658fd6fe2801c2b5252fc6b12810371b430dbeb"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/F.json",
+      "bytes": 344,
+      "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-authority-map-v8/2026-09-06/M.json",
+      "bytes": 858,
+      "sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/freeze.json",
+      "bytes": 23461,
+      "sha256": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/MANIFEST.json",
+      "bytes": 20545828,
+      "sha256": "a373d657558fd7a8982bf29b737f313420f593793c93d8d3f24504071777f4c4"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-token-provenance-decision-2026-09-06.md",
+      "bytes": 9458,
+      "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-manual-capability-evidence-decision-2026-09-06.md",
+      "bytes": 19715,
+      "sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-timestamp-representation-decision-2026-09-06.md",
+      "bytes": 12271,
+      "sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33"
+    }
+  ],
+  "scope": {
+    "policy_hash": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "frozen_policy": {
+      "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+      "connect_timeout": 10,
+      "content_roles": {
+        "internal_dependency_role": "cpp_source_header",
+        "seeds": {
+          "LICENSE": "license_text",
+          "sherpa-onnx/csrc/online-model-config.h": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer-impl.cc": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer-impl.h": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer.cc": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer.h": "cpp_source_header",
+          "sherpa-onnx/csrc/online-stream.cc": "cpp_source_header",
+          "sherpa-onnx/csrc/online-stream.h": "cpp_source_header",
+          "sherpa-onnx/csrc/version.h": "cpp_source_header"
+        }
+      },
+      "deny": [
+        "wav",
+        "wave-writer",
+        "wave_writer",
+        "adsp",
+        "qnn",
+        "rknn",
+        "tts",
+        "vad",
+        "speaker",
+        "diarization",
+        "denoise",
+        "punctuation",
+        "audio-tagging",
+        "audio_tagging",
+        "websocket",
+        "portaudio",
+        "download",
+        "fetchcontent",
+        "jni",
+        "kotlin-api",
+        "dlopen",
+        "loadlibrary"
+      ],
+      "design": {
+        "commit": "a57f643bac24edef5d6601b8a59baa77060f3d2c",
+        "records": 28,
+        "sha256": "c318c5a5f91d4af1d2759895ab9d5296c5784eaa214548b92f25fba4096764d2",
+        "tree": "31376c73f43caf3bbfd664d8316ffecdc589379d"
+      },
+      "evidence_limits": {
+        "archive": 16777216,
+        "inline_edges": 256000,
+        "part": 48000,
+        "record": 2000000,
+        "state": 1000000
+      },
+      "external": [
+        "stddef.h",
+        "stdint.h",
+        "string",
+        "memory",
+        "vector"
+      ],
+      "generated": [],
+      "host": "api.github.com",
+      "include_roots": [
+        "sherpa-onnx/csrc/"
+      ],
+      "kind": "typed-acquisition-candidate-v8",
+      "limits": {
+        "blob_raw": 1500000,
+        "decoded": 1048576,
+        "files": 96,
+        "metadata_raw": 8388608,
+        "total_raw": 16777216
+      },
+      "max_bytes": 1048576,
+      "max_files": 96,
+      "max_response": 1500000,
+      "mode": "100644",
+      "proxy": false,
+      "read_timeout": 10,
+      "redirect": false,
+      "repository": "k2-fsa/sherpa-onnx",
+      "repository_prefix": "sherpa-onnx/",
+      "required_symbols": [
+        "runtime_handle",
+        "model_handle",
+        "stream_create",
+        "pcm_accept",
+        "decode",
+        "text_result",
+        "version",
+        "release"
+      ],
+      "retries": 0,
+      "seeds": [
+        "LICENSE",
+        "sherpa-onnx/csrc/online-recognizer.h",
+        "sherpa-onnx/csrc/online-recognizer.cc",
+        "sherpa-onnx/csrc/online-recognizer-impl.h",
+        "sherpa-onnx/csrc/online-recognizer-impl.cc",
+        "sherpa-onnx/csrc/online-stream.h",
+        "sherpa-onnx/csrc/online-stream.cc",
+        "sherpa-onnx/csrc/online-model-config.h",
+        "sherpa-onnx/csrc/version.h"
+      ],
+      "source_semantics": {
+        "ambiguous_suffix": "non-definite-code-carrier-no-recovery",
+        "analysis": "atomic-current-file-before-successor-authorization",
+        "channels": [
+          "code",
+          "line_comment",
+          "block_comment",
+          "string_literal",
+          "char_literal",
+          "preprocessor"
+        ],
+        "comments": "hash-bound-pending-no-successors-no-override",
+        "detectors": {
+          "deny": [
+            "wav",
+            "wave-writer",
+            "wave_writer",
+            "adsp",
+            "qnn",
+            "rknn",
+            "tts",
+            "vad",
+            "speaker",
+            "diarization",
+            "denoise",
+            "punctuation",
+            "audio-tagging",
+            "audio_tagging",
+            "websocket",
+            "portaudio",
+            "download",
+            "fetchcontent",
+            "jni",
+            "kotlin-api",
+            "dlopen",
+            "loadlibrary"
+          ],
+          "dynamic_paths": "\\b(?:provider|library|model_path|tokens_file|hotwords_file|encoder|decoder|joiner)\\b",
+          "file_audio": "(?:audio[-_](?:file|reader|writer)|(?:file|read|write)[-_]audio)",
+          "io": "\\b(?:fopen|freopen|fread|fwrite|fseek|ifstream|ofstream|fstream|sndfile|sf_open)\\b"
+        },
+        "directive_extent": "block-comment-newline-after-directive-start-is-unsupported",
+        "guard": "sole-outer-ascii-ident-no-replacement-no-other-semantic-use",
+        "header_name_ambiguity": "open-angle-in-any-directive-before-comment-no-evaluation",
+        "lines": "physical-LF-or-CRLF-including-terminators",
+        "offsets": "half-open-original-utf8-bytes",
+        "priority": [
+          "identity_file_safety",
+          "active_deny",
+          "lexical_ambiguity",
+          "unsupported_preprocessor",
+          "comment_pending",
+          "literal_edges"
+        ],
+        "revision": "v6-r1-directive-boundaries",
+        "schema": 1,
+        "source_verdict": "insufficient_evidence"
+      },
+      "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+      "type": "blob"
+    },
+    "constraints": {
+      "checkpoint": [
+        "CP1 and Conformer Deferred, not removed.",
+        "CP2 not passed; CP3 and father Alpha not approved."
+      ],
+      "deny": [
+        "wav",
+        "wave-writer",
+        "wave_writer",
+        "adsp",
+        "qnn",
+        "rknn",
+        "tts",
+        "vad",
+        "speaker",
+        "diarization",
+        "denoise",
+        "punctuation",
+        "audio-tagging",
+        "audio_tagging",
+        "websocket",
+        "portaudio",
+        "download",
+        "fetchcontent",
+        "jni",
+        "kotlin-api",
+        "dlopen",
+        "loadlibrary"
+      ],
+      "design": {
+        "commit": "a57f643bac24edef5d6601b8a59baa77060f3d2c",
+        "records": 28,
+        "sha256": "c318c5a5f91d4af1d2759895ab9d5296c5784eaa214548b92f25fba4096764d2",
+        "tree": "31376c73f43caf3bbfd664d8316ffecdc589379d"
+      },
+      "evidence_limits": {
+        "archive": 16777216,
+        "inline_edges": 256000,
+        "part": 48000,
+        "record": 2000000,
+        "state": 1000000
+      },
+      "hard_stops": [
+        "Identity/file safety, path/role/mode/type, budgets, persistence and capacity failures remain prior hard stops.",
+        "Active or uncertain deny, lexical ambiguity/traps and unsupported preprocessor/ineligible include outrank comment adjudication.",
+        "Unknown/conflicting/forbidden/unresolved/pending decisions fail closed; no global token/comment exception, wrapper bypass or implicit Trust.",
+        "Exact complete one-to-one occurrence matching only, two original comment decisions do not clear adjacent fields/API/implementation or capabilities.",
+        "Original pending/source analysis/ledger/terminal and terminated historical runs remain immutable; no old acquisition authority reuse."
+      ],
+      "input_bytes": 65536,
+      "limits": {
+        "blob_raw": 1500000,
+        "decoded": 1048576,
+        "files": 96,
+        "metadata_raw": 8388608,
+        "total_raw": 16777216
+      },
+      "ordered_seed_roles": [
+        {
+          "path": "LICENSE",
+          "role": "license_text"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer.cc",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer-impl.cc",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-stream.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-stream.cc",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-model-config.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/version.h",
+          "role": "cpp_source_header"
+        }
+      ],
+      "path_rules": {
+        "include_roots": [
+          "sherpa-onnx/csrc/"
+        ],
+        "mode": "100644",
+        "repository_prefix": "sherpa-onnx/",
+        "syntax": "Existing strict authorized ASCII acquisition path; no normalization or expansion. Metadata labels are never filesystem paths; no traversal, absolute paths, empty/dot/dotdot segments, backslashes or control characters.",
+        "type": "blob"
+      },
+      "priority": [
+        "identity_file_safety",
+        "active_deny",
+        "lexical_ambiguity",
+        "unsupported_preprocessor",
+        "comment_pending",
+        "literal_edges"
+      ],
+      "privacy": [
+        "Normal recording and retrieval stay within three steps.",
+        "Original audio only in memory; no disk, upload, logs, test attachments or crash reports."
+      ],
+      "seed_order": [
+        "LICENSE",
+        "sherpa-onnx/csrc/online-recognizer.h",
+        "sherpa-onnx/csrc/online-recognizer.cc",
+        "sherpa-onnx/csrc/online-recognizer-impl.h",
+        "sherpa-onnx/csrc/online-recognizer-impl.cc",
+        "sherpa-onnx/csrc/online-stream.h",
+        "sherpa-onnx/csrc/online-stream.cc",
+        "sherpa-onnx/csrc/online-model-config.h",
+        "sherpa-onnx/csrc/version.h"
+      ],
+      "transport": {
+        "connect_timeout": 10,
+        "credentials": false,
+        "proxy": false,
+        "read_timeout": 10,
+        "redirect": false,
+        "retries": 0,
+        "scope": "constraints only, no transport execution or acquisition authorization"
+      },
+      "upstream": {
+        "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+        "host": "api.github.com",
+        "repository": "k2-fsa/sherpa-onnx",
+        "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0"
+      }
+    },
+    "transport": "Only existing v8 Git Data blob transport at api.github.com; fixed tree-derived blob SHA; no metadata endpoint, credentials, proxy, redirect, retry, alternate downloader.",
+    "output": "One fresh empty private0700 root with new run identity; retained thirdparty body/evidence regular single-link0600 outside Git. No previous corpus reuse.",
+    "manual_review": "Only exact two already accepted comment occurrences under frozen F/M, reconstructed from each newly verified body by shared controller; append-only new adjudication only; original pending/analysis/ledger/terminal untouched."
+  },
+  "metadata_identity_exception": {
+    "files": [
+      {
+        "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/commit.json",
+        "bytes": 2336,
+        "sha256": "e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089"
+      },
+      {
+        "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/tree.json",
+        "bytes": 2742250,
+        "sha256": "7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2"
+      }
+    ],
+    "scope": "Only these two exact historical identity-input JSON files after explicit approval; no adjacent enumeration or other old-run content; no-follow regular/single-link bounded reads and hashes required. If absent or mismatched, stop; no alternate source or metadata fetch.",
+    "current_verification": "Not reopened during F/M or request preparation; values inherited from historical derived identity mapping and must be reverified after approval."
+  },
+  "execution_protocol": [
+    "After explicit user reply, archive exact reply and request identities in a new approval record. Only then construct canonical A binding exact F/M and frozen policy; A.authority refers to that new approval record digest. No authority is created by this pending request.",
+    "Leader independently rechecks accepted release/map and all critical pins; validates two exact metadata identity inputs and fixed canonical input/package; driver constructs ManualPins and protocol Trust from independent accepted/approval pins, never from untrusted input. No candidate edits or fake authority.",
+    "Then separately dispatch one acquisition.run_input invocation with unmodified frozen v8 and real restricted transport; no substitute review/fault/FakeFactory, no prefetch. All authorization and durable before_request records precede requests.",
+    "Any identity/file safety/active or uncertain deny/lexical/unsupportedpreprocessor/role/path/mode/type/budget/persistence/unknown decision or network failure terminates attempt. No repair/retry/resume; preserve stop evidence.",
+    "Only new retained bounded evidence may be independently statically reviewed under the fixed gate; raw source/envelopes/metadata/full scanner excerpts stay private outside Git. Submit derived identities/budgets/stops/hash/scan-context only, preserve raw scan verdict and all unverified claims."
+  ],
+  "excluded": [
+    "No old run/corpus/authority reuse, no source tree export/adoptable snapshot/build input.",
+    "No new parser/schema/seed/deny/role/path/budget/authority exceptions; no controller bypass or global comment/token clearance.",
+    "No thirdparty execution/build/install/dependency/model/audio/binary/load/inference/integration, product feature changes, accounts/sync/payment/publicrelease/Flutter/KMP/cloudASR.",
+    "No adjacentfield/API/implementation/source/license/reachability approval; CP1/Conformer Deferred not removed;CP2notpassed;CP3/fatherAlphaunapproved."
+  ],
+  "stop_conditions": [
+    "User has not explicitly approved this exact request, declines/narrows/ambiguous response, or any fixed input/release/map/contract drift.",
+    "Missing fixed metadata or need new raw/source/private material outside this one proposed task; return specific new decision/authorization request without silent expansion.",
+    "Any frozen stop during future attempt ends it permanently, even before first body; no retry/resume."
+  ],
+  "approval_basis": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-token-provenance-decision-2026-09-06.md",
+    "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+    "quote": "只有 F/M 完成后，才向 Product Lead 请求全新的 acquisition A；再建立 T/N。"
+  },
+  "not_yet_created": [
+    "A",
+    "T",
+    "input",
+    "N",
+    "manual_package"
+  ]
+}

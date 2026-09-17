@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-SOURCE-SEMANTICS-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Synchronize the formally accepted CP2 source semantics REVISE decision and exact PRD into the product repository with only five documentation changes.",
+  "scope": [
+    "Read formal KB cp2-source-semantics-readiness-decision-2026-09-06.md SHA35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283 and PRD SHA97ff4382c179482a02261b73b85e7e422d200c0dbf6654bac093cc56fc5d373f from /Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/. Verify exact hashes.",
+    "Byte-for-byte copy those two files to doc/. Only additional modifications allowed are AGENTS.md, doc/README.md, doc/development-guide-v0.1-2026-09-04.md; update current status, links, chronological decision precedence and next bounded task.",
+    "Accurately state v5 controlled stop accepted; source contract REVISE; v6 offline-only next after separate Leader dispatch. Comment pending preserves evidence and blocks queue/authorization/successor, active deny stays hard, strict single canonical guard only, atomic current-file evidence/priority, all other unsupported forms stop.",
+    "Preserve identity/9seeds/96files1MiB/forbidden capabilities/privacy/CP/old verdicts. No real source/raw scanner/metadata/corpus use or acquisition during offline development. Failed narrow proof pauses route. Future freeze/manual real-evidence review/new source authority remain separate; no redundant permission for ordinary offline work.",
+    "Check exact five-file diff/links/hash/boundary and commit. Return structured report with file purposes/hash/parent/checks/unverified items. Do not start v6; notify current Leader and stop."
+  ],
+  "out_of_scope": [
+    "No v6 directory/code/tests/synthetic fixtures, actual freeze, tools/old freezes/runs/App changes, real raw/source/corpus/API/metadata/scanner context reads or following body pointers.",
+    "No knowledge-base writes, new network/body request, dependency/model/build/integration, manual real capability verdict or CP2/CP3/Alpha approval.",
+    "No copying raw source cards/historical evidence into product repo; no new authorization request or hidden expansion of semantics."
+  ],
+  "acceptance": [
+    "Exactly5 files changed: new decision, PRD, AGENTS,README,development-guide. Two copied files exactly match formal hashes; remaining3 consistently summarize current decision and separate sync from later v6 dispatch.",
+    "Current status REVISE; accepted execution is not feasible/adoption; pending/active deny/strict guard/unknown forms and failure fallback accurately reflected with unchanged source/privacy/checkpoints.",
+    "Parent5dbfe9ad300a8750cf2f76588983a7069760f200, no unrelated modifications; git diff --check/show --check pass and clean worktree after commit. No implementation/acquisition starts."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED, five file purposes and hashes, commit/parent, validation commands/results, exact formal-source identity and scope/PRD check. Notify Leader01a071cf-9ac6-7171-b663-749a6e88b0a4 then stop."
+  ],
+  "stop_conditions": [
+    "Formal hashes drift, inconsistent decision/PRD, unknown working changes or need to modify files beyond five-document scope; stop and report without resolving product scope independently."
+  ],
+  "baseline_commit": "5dbfe9ad300a8750cf2f76588983a7069760f200",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "leader_decision_review": "orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-READINESS-DECISION-001.json",
+  "leader_decision_review_sha256": "fe7941850f657f72d1753ff8a938593aef11ba0acee13bfb9e74a7feab9ab3bd",
+  "dispatched_at": "2026-09-06T04:30:42.068975+08:00",
+  "accepted_at": "2026-09-06T04:37:37.113144+08:00",
+  "task_result": "COMPLETE",
+  "commit": "c84685fce9205886a6fbe41386acaaa5b7374a57",
+  "report": "orchestration/reports/CP2-SOURCE-SEMANTICS-DECISION-SYNC-001.json",
+  "report_sha256": "bbafa600d32cea6fd9904a48afecf64b5de3ca1a8adbe748a5332b35e9c6ebf4"
+}

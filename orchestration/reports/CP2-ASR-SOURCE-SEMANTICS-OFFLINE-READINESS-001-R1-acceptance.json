@@ -1,0 +1,205 @@
+{
+  "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1",
+  "decision": "ACCEPTED",
+  "disposition": "source_semantics_candidate_ready_for_freeze",
+  "accepted_at": "2026-09-06T06:06:01.792885+08:00",
+  "commit": "f55fda2dea237120ce09639112767c9857dab8d5",
+  "parent": "e6879d2f0da87b6f070314e98727ed22ef403d04",
+  "tree": "05f0b591753a9d8c845656c2f8d6be2c8c725464",
+  "formal_decision_sha256": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+  "formal_prd_sha256": "97ff4382c179482a02261b73b85e7e422d200c0dbf6654bac093cc56fc5d373f",
+  "identities": {
+    "bundle_sha256": "99114c1ad1126e627723585251ed696063562de4b507d35c28b93a3b1ffb6160",
+    "policy_sha256": "43b323b3601b25a5d459e0c553d4da2c38fb2dae7f1f51c82170723f354c1ab7",
+    "semantic_contract_sha256": "2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86"
+  },
+  "role_contract_sha256": "1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125",
+  "input_schema": 6,
+  "source_report_schema": 1,
+  "acceptance_evidence": [
+    {
+      "criterion": "R1/R2 fixed within approved subset",
+      "result": "PASS",
+      "evidence": "Source diff and full narrow specification reviewed; exact3Leader-authored counterexamples times LF/CRLF verified through typed controller, correct decisions with2calls,0pending internal,7remainingseeds,no successor. All6 report/ledger/terminal hashes reproduce developer review-resolutions. Independent readonly reviewer additionally checked18authoredinputs timesLF/CRLF,36pure-functionchecks."
+    },
+    {
+      "criterion": "Baseline and expanded tests deterministic",
+      "result": "PASS",
+      "evidence": "All153previousmethods AST source hashes identical and132baseline coverage retained. Two originalv5 adaptations independently examined, justified by formal lexical priority and newly allowed canonical guard. New5methods; Leader2runs each158tests961outcomes133scenarios0skips,62.696s/61.742s.5432immutableJSONsame across all4runs;3628ledger/run; all3collection digests rederived."
+    },
+    {
+      "criterion": "Full source-analysis and request gate evidence",
+      "result": "PASS",
+      "evidence": "Reviewed independent recalculator and executed against Leader pair. Reconstructed524complete reports2370channels88capability records across2runs. Byte offsets/line hashes/capability hashchains/guard/priority/edges/receipts/metadata/body/ledger/terminal verified.4explicitincompletecases remain stopping and missingfullreporthash not claimed recoverable. Six exactcounterexamples independently through controller verify no successors."
+    },
+    {
+      "criterion": "Git identity and scope",
+      "result": "PASS",
+      "evidence": "10910regularsinglelinkfiles byte-identical toGitblobs;10909manifestrecordsexact;bundle/semantic/policy/role verified. Reverse threeR1semanticfields recovers oldv6 identities; strippingoldnewsemantic/kind recoversv5policy.21v5sourceprovenance and priorR1source records verified;old8treesunchanged;currentformalhashes unchanged;clean worktree."
+    },
+    {
+      "criterion": "Static audit and privacy/authority",
+      "result": "PASS within first-party-only scope",
+      "evidence": "Actual rawscan sandbox_only100,287findings9high274medium4low preserved. Everyfinding/filehash/context validated incl366hexidentitymatches;10902snapshotfiles verified.2exactdiffbytecopies supplementaryactualscanlow0. Runtimeaudit and12traps zeronetwork. No third-party adoption/build/manualrealcapability/realacquisition performed or granted."
+    }
+  ],
+  "verification": {
+    "all_passed_no_skips": true,
+    "byte_identical_json_across_all_four_runs": 5432,
+    "candidate_bundle_unchanged": "99114c1ad1126e627723585251ed696063562de4b507d35c28b93a3b1ffb6160",
+    "collections": {
+      "ledger_collection_sha256": "8f5c1d64e92e5024971472969882a14a249a7c9b5f1395e2e3b41acd57d72abd",
+      "source_analysis_collection_sha256": "e9b130b746762a2896217decf428ada8bc090c6a40d70d1c479c622d53dd2d77",
+      "terminal_collection_sha256": "c40aa2ffc33dbf03bc1baebf91e296e653957b166048fe6ec737b58f888b29bf"
+    },
+    "commands": [
+      "python3 -B verify.py leader-r1-a",
+      "python3 -B verify.py leader-r1-b",
+      "python3 -B recalculate.py leader-r1-a leader-r1-b"
+    ],
+    "independent_root": "/private/tmp/think-leader-v6r1-8r48_6ia",
+    "independently_rehashed": {
+      "leader-r1-a": {
+        "ledger_records": 3628,
+        "scenarios": 133
+      },
+      "leader-r1-b": {
+        "ledger_records": 3628,
+        "scenarios": 133
+      }
+    },
+    "inherited_tests": 132,
+    "methods": [
+      "Reviewed candidate recalculate.py without imports, executed on independent pair",
+      "Leader separately authored hash/role/ledger and four-run identity verification"
+    ],
+    "new_tests": 26,
+    "normalized_sha256": "2b32965a3fd400d688abb9ba32027db481ff9c48c6db305b225587533bdfd1ea",
+    "result": "PASS",
+    "source_verdict": "insufficient_evidence",
+    "test_subtest_outcomes_per_run": 961,
+    "tests_per_run": 158,
+    "zero_network": {
+      "actual_network_events": [],
+      "audit_event_prefixes": [
+        "socket.",
+        "http.client.",
+        "subprocess."
+      ],
+      "dns_http_socket_traps": 12,
+      "proxy_environment": "not consulted by direct HTTPSConnection",
+      "scope": "this offline workload only; no real network protocol validation",
+      "trapped_workload_calls": []
+    }
+  },
+  "semantic_recomputation": {
+    "bounded_incomplete": 4,
+    "capabilities": 88,
+    "channels": 2370,
+    "complete": 524
+  },
+  "evidence_references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1-identity-verify.py",
+      "sha256": "957ef6ace09ca82b0a422c61c6b4930e5d1e145fe1383e3d59bd1907407994e1",
+      "bytes": 9416
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1-identity.json",
+      "sha256": "9e8c3e30d1f541254be1b0e80ca995c975aaaea3b8390be3b9684eab8ff7a7ff",
+      "bytes": 3227
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1-runs-verify.py",
+      "sha256": "d1af5206faf00ee9a98262aec04e343a2af374d1ea5de56eea2cbf49ba3958af",
+      "bytes": 5043
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1-runs.json",
+      "sha256": "bb9472bd49b0b49f4f0071576affb8ecbe14d1185fefa510f34cce47c94ae5b9",
+      "bytes": 1524
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1-recalculation.json",
+      "sha256": "731163c1a44a3967e7003d1483c0c56a399da3565e0a80ad85867c4231676441",
+      "bytes": 691
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1-counterexamples.json",
+      "sha256": "e7e2f83829d0d52b5668fe300029c5607ccfbe89f3f8c61b280201f6a5c3b954",
+      "bytes": 6569
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/file-manifest.json",
+      "sha256": "9842eec0768da72eb736a635b5cf65739a6376e8556641595ffde841a4781569",
+      "bytes": 1792180
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/delivery.json",
+      "sha256": "90c1e352ebcba69a53efabdac2b9c56c1dcec934fb70efdf8cdfecb6ab8b9892",
+      "bytes": 6251
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/identities.json",
+      "sha256": "44d4b42541c22c39f6f6f467fbc5fc569c0bcedc1b8c2a2d14592c25648b3b16",
+      "bytes": 4705
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/review-resolutions.json",
+      "sha256": "b1b6988555b339b431691d90222857fd3bdcf532b54f386488deae4074aaad4d",
+      "bytes": 6186
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/recomputation.json",
+      "sha256": "9c0318952caf8397575c55feb7e47d052ff23a188892860ecd2ef3e7c07a64b8",
+      "bytes": 685
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/provenance.json",
+      "sha256": "60b0823813dd2cff30588440b8aaaede21dc3ad9e1a7f2554ec983a944dcb3c5",
+      "bytes": 6546
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/revision-provenance.json",
+      "sha256": "e9068a8b70694399389c696a06c1ef83f4e333ebb83c9eb1b621caaac3e8944e",
+      "bytes": 52749
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/baseline-test-map.json",
+      "sha256": "07ca4b1eab29291c40c492bfadc2b33d52163d010775c139498610e2c6ce39b6",
+      "bytes": 44017
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/static-scan/scan-report.json",
+      "sha256": "0aedda9528a1145533ffd9b615a1481beb7257960c9bfd931dd6f38e6846f5c5",
+      "bytes": 255953
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/static-scan/context.json",
+      "sha256": "8f76c4d706953142c1925e8f27fb86ee2225fc4227ac128595d7752fc83f2030",
+      "bytes": 173730
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/static-scan/snapshot.json",
+      "sha256": "27646935dca3fc1fa42120a552926d0777bbb39c41e75d5381cca43917c9709e",
+      "bytes": 1791230
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/evidence/static-scan/supplemental-diffs/scan-report.json",
+      "sha256": "642a933ea2abd9b38e1aa8402798146ded6f75174692d609bebb84c6230165c6",
+      "bytes": 1066
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v6/SCHEMA.md",
+      "sha256": "90c2dd9ee7d8e795e6765e9cbfd7c02f1ab6fa8a9be309ddc495abcb84e178c7",
+      "bytes": 33781
+    }
+  ],
+  "unverified": [
+    "No genuine source closure/capability reachability, manual comment adjudication, license applicability, source safety/adoption, build, models or device results. CP2 not passed; CP1 usability deferred not removed; CP3/Alpha not approved.",
+    "No v6 real metadata or wire validation; historical real acquisitions remain terminated and old authorizations nontransferable.",
+    "Truncated reports cannot reconstruct fullmissingbytes/hash;bounded input does not promise smallpeakheap/CPU;not a sandbox againstmalicioussameUID/inprocesscallers.",
+    "First-party scan contextual review does not rewrite sandbox_only or confer runtime/license PASS."
+  ],
+  "next_decision": "Authorize separate three-document freeze only; no code changes, test reruns, raw inputs/network/manual adjudication/new acquisition. Further manual real comment review needs separate explicit authorization and exact body/line/rule scope; any real acquisition requires fresh hash-bound user approval after review/freeze."
+}

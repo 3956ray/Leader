@@ -1,0 +1,22 @@
+{
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001",
+  "RESULT": "REVISE",
+  "reviewed_at": "2026-09-06T09:42:56.866496+00:00",
+  "initial_delivery": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-initial-delivery.json",
+    "bytes": 1673,
+    "sha256": "36647c306d18f6d81650047c62cd9e7b226a678d411bbfd7b7fdf909775f06ce"
+  },
+  "leader_review": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-leader-review.json",
+    "bytes": 4765,
+    "sha256": "4162313d14ee16bdb779bac908763ce37e0d45cd9081a28bf3c5e9222cf984f3"
+  },
+  "independent_review": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-semantic-review.json",
+    "bytes": 6008,
+    "sha256": "d0d3dc7c68ca7c9dcdf2e26a811c009aa79d80febeec656aa1e6dfb38d2b2f8a"
+  },
+  "reason": "Knownmodel-license statementmisread and incompletehardfilterpremises countedPASS; sufficient claim notaccepted. Same-page minimumrepaironly; no intakeselectionorartifactauthority.",
+  "next_step": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1"
+}

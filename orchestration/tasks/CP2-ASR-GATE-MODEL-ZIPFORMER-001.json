@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-GATE-MODEL-ZIPFORMER-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "安全获取并静态审查 Zipformer 14M 中文流式 INT8 最小模型文件集，形成独立模型门禁裁决。",
+  "artifact_verdict": "manual_review",
+  "commit": "cb6f4ba1e2ccd10cf5b0301c3b59a68f75f6837f",
+  "report": "orchestration/reports/CP2-ASR-GATE-MODEL-ZIPFORMER-001.md"
+}

@@ -1,0 +1,143 @@
+{
+  "task_id": "CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T11:35:40.349235+08:00",
+  "candidate_commit": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "parent": "75a9349c2e54d18a46dacddad762e7e669e9fbc2",
+  "root_tree": "d117867b2d14f047c6fe73530eb04fa0ce4faffc",
+  "output_tree": "e6565de08821d03834196dbb5cec7d784db5d4c0",
+  "output_directory": "doc/security-reviews/asr-review-authority-map-v8/2026-09-06",
+  "prepared_contract_sha256": "3c073c93647d1d02ae442dc244b6072f97f19618e9274d3fb8b52c6aff2defa2",
+  "identities": {
+    "H": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615",
+    "K": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+    "M": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+    "P": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc",
+    "R_wrapper": "9569a0ff117a88fbda16fd2e548530bc4b46a673c7def9f6e05b2c3b2f49ab05",
+    "authority": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "original_R": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+    "representation": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de",
+    "runtime_F": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+    "supporting_freeze": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607",
+    "timestamp": "9810a201cd0d752a011c92ea1abd81641343ddfc79b325b6645b92b00d2a2d77"
+  },
+  "entries": [
+    {
+      "decision": "comment_only_nonoperative_for_this_body",
+      "occurrence_id": "d03feeb2d0236594f1feb07b98cb78c2251aa893acb64c67f19b6e0fecfa6649"
+    },
+    {
+      "decision": "comment_only_nonoperative_for_this_body",
+      "occurrence_id": "0cd777bfa5e50b8e0fa7e01b5c2e5ea72b9a24f87189b52a684e4792c9c9bf20"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 858,
+      "git_blob": "87ea0460da18cb167bc8c5ebfab113f4a635ea08",
+      "mode": "100644",
+      "path": "M.json",
+      "sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+      "type": "blob"
+    },
+    {
+      "bytes": 1355,
+      "git_blob": "ee44e1bf890b63704d7cbdab1a575af54807ff05",
+      "mode": "100644",
+      "path": "MANIFEST.json",
+      "sha256": "b9a4ef2ec1d75fe532ee53bc7ee7b3569dfef326aae4821641b905720709373a",
+      "type": "blob"
+    },
+    {
+      "bytes": 16003,
+      "git_blob": "cadce225bd59708bceb665b2d50d2f96aafaf68b",
+      "mode": "100644",
+      "path": "PROVENANCE.json",
+      "sha256": "494dd1adb8bf8a1accd93c68defe11a68b363e9920b3bba7d25bfda6244a2a74",
+      "type": "blob"
+    },
+    {
+      "bytes": 4809,
+      "git_blob": "0e31eeb805efc44887f547eda5f1d336603e09bc",
+      "mode": "100644",
+      "path": "REPORT.md",
+      "sha256": "060727f04387a9b731b01d9baf4c417270bc4429912b5d018e24c167191f4655",
+      "type": "blob"
+    },
+    {
+      "bytes": 13806,
+      "git_blob": "b1acdb85b96c8f794a222d11a0a82370e904b158",
+      "mode": "100644",
+      "path": "VERIFICATION.json",
+      "sha256": "3a3e349be0de1f3eee13d3c76441c261dbdcb9867a8864818f24be5bf78335e9",
+      "type": "blob"
+    }
+  ],
+  "manifest_collection_sha256": "fa7f9d1461fefc9d86987a70f7d38fb712f4708530585d0bef3e8d4f6be237cd",
+  "F_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001-acceptance.json",
+    "bytes": 7438,
+    "sha256": "4f35f0fd8efe2dff2950148cf9d8e72599fbb70e675db2147a1f35da3a6fb8e9"
+  },
+  "K_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-acceptance.json",
+    "bytes": 8041,
+    "sha256": "8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2"
+  },
+  "accepted_C": {
+    "commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+    "tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+    "root": "tools/asr_review_acquisition_v8",
+    "files": 69497,
+    "bundle": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "file_manifest_sha256": "d8b003df82da35b20f2e110c074a4a761de926ca914f5affc7b556650f5f9b56"
+  },
+  "references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001-leader-verify.py",
+      "bytes": 7018,
+      "sha256": "60c11ed58eb792e27d481d5a595540787465e70684c6a13f60a5e3a842649165"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001-leader-verification.json",
+      "bytes": 2479,
+      "sha256": "339d69125b6418ebeae46837d45a2ceb04c1b37017b375776ec1970a09e49979"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001-leader-rerun.json",
+      "bytes": 2944,
+      "sha256": "7eee82d20b639367b92d9ff439d3629ce4939cbbe86ff228cb201b7e34e4390e"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001-developer-verifier-reviewed.py",
+      "bytes": 10645,
+      "sha256": "42b779c4665ff6cf1048019f7b45646727f2088fe8afb8d8bfa368e618fab6fc"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001-developer-final.json",
+      "bytes": 2944,
+      "sha256": "7eee82d20b639367b92d9ff439d3629ce4939cbbe86ff228cb201b7e34e4390e"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001-static-semantic-review.json",
+      "bytes": 1527,
+      "sha256": "e5b9dec238fd73b700e3d85bc074925319f76ed03c8c58e9cd4518cef8c6240d"
+    }
+  ],
+  "criterion_evidence": [
+    "Exactly five new100644/blob regularsinglelink files; bytes/SHA/Gitobject checked,129527oldGitrecords unchanged, C/K/F trees preserved and worktreeclean.",
+    "27fixedreferences exact; fullM independently reconstructed from acceptedF/K. Tenfields andtwoordered originaldecisions correct; runtimeFdistinctsupportingfreeze/H.",
+    "All13leaf mappings semanticallyverified; C/K/F/P independentacceptances pinned, originalR/representation/token/time retained, PexternaltoM schema.",
+    "FourfileMANIFEST canonicalcollection matches; staticallyreviewed independentverifier rerunPASS, entireoutput equalsdeliveredfinal; no source/private pointers or candidateimports/network.",
+    "No A/T/input/N or fullpackage, no newacquisition or pendingclearance; formalprivacy/scopes/checkpoints preserved."
+  ],
+  "limitations": [
+    "Documentmapping accepted only; not source/license/reachability/runtime/build/model/device/audio approval.",
+    "Originalsource/token/time truth inherited from acceptedK/P; no rawsource reread or candidate/test/scanner execution.",
+    "CP1/Conformer Deferred not removed;CP2notpassed;CP3/Alphaunapproved."
+  ],
+  "next_authorized_step": "Leader prepares concrete fresh one-attempt hash-bound acquisition request for user review. New A requires an explicit response to that request; no T/input/N/source acquisition before A."
+}

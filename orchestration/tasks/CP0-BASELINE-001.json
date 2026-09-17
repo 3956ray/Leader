@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP0-BASELINE-001",
+  "owner": "developer",
+  "checkpoint": "CP0",
+  "status": "accepted",
+  "goal": "完成不需要联网或新增依赖的 Android 模板隐私与运行时基线整改，为后续受控构建准备一个可静态验收的安全状态。",
+  "commit": "c5dd1da4e6eda00140fd23c61a153106c0f2eb2c",
+  "report": "orchestration/reports/CP0-BASELINE-001.md"
+}
+

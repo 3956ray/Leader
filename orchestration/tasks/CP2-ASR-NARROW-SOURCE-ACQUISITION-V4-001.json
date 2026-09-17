@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V4-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Execute one bounded static source acquisition using the exact accepted frozen v4 release and unchanged original source authorization, then preserve verifiable completion or stop evidence.",
+  "scope": [
+    "Read Leader accepted freeze and authority mapping reports, latest formal decisions and third-party static-gate skill before execution. Verify clean baseline and all frozen release/document hashes.",
+    "Create a new private /private/tmp output root with empty evidence Store. Do not reuse any prior run/corpus/candidate/snapshot; retain pre-body empty output and identity/mapping evidence.",
+    "Read only /private/tmp/think-frozen-metadata-preflight-_6wsajyf/commit.json and tree.json as exact pinned identity data, through checked directory chain/no-follow/regular single-link/bounded reads. Reverify bytes 2336/2742250 and frozen pins; no adjacent enumeration and no metadata HTTP endpoint. Copy only these two inputs into the new private root.",
+    "Use existing frozen Trust/input_document/canonical/parse_input to derive actual input with 18-file bundle. Verify 2037-byte input hash baab9ddac779808ad8a1ac79e1c76937bc5875cba335148c7984aa54e41810a2 as corroboration. Execute existing acquisition.run_input exactly once with default real restricted transport and private Store; no prefetch, FakeFactory, changed code or injected review/fault.",
+    "Only fixed api.github.com Git Data blob endpoints selected from pinned tree under durable authorize/before_request are permitted. Follow nine seeds and deterministic literal dependencies within LICENSE/csrc .h/.cc blob100644, 96 files/1048576 decoded bytes and all frozen raw/evidence caps. Retain every call, byte count, hash and terminal or last checkpoint.",
+    "On any stop no further acquisition/retry/resume. Inspect only this new run evidence with accepted inspectors, independently rehash metadata/blob/ledger/terminal and statically scan new inert evidence with approved scanner from outside quarantine. Preserve original scanner JSON/Markdown and contextual review; no source execution/export.",
+    "Only add derived reports under doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v4/2026-09-06/. Raw metadata/API/source/body envelopes and full sensitive evidence remain private outside Git. Include identities, execution command, empty-output proof, requests/budgets/stop and artifact locations/hashes. Commit only derived reports then notify Leader and stop."
+  ],
+  "out_of_scope": [
+    "No old corpus/snapshot/restricted artifacts; only the two exact pinned metadata files are the identity-input exception. No arbitrary network endpoints, credentials, proxies, redirects, retries, secondary downloader or metadata fetch.",
+    "No denylist/CMake/JNI/Kotlin/external dependency/model/audio/binary fetching, third-party execution/compilation/import, reconstructed source tree/snapshot/allowlist/build input or runtime adoption.",
+    "No tool/policy/schema/tests/old freeze/App changes, new dependencies, builds/installation/inference/integration/CP3.",
+    "No manual overrides, prefetch, adding seeds, parser changes, evidence repair after request, failed attempt retry or silent continuation. Tool source_verdict remains insufficient_evidence; final P0/source feasibility judgment requires separate review."
+  ],
+  "acceptance": [
+    "Frozen v4 release and authority identity match; original input pins/lengths and freshly derived canonical input verified before body requests.",
+    "All requested paths/SHA/order are explained by pre-request durable records and frozen rules; no unauthorized successor requests and all file/raw/decoded/evidence budgets honored.",
+    "For retained bodies API/Git blob/SHA256/size/UTF8/NUL and ordinary single-link evidence verified; any partial response or interrupted run explicitly recorded without reconstruction.",
+    "Fixed-point or exact stop is truthful; an enforced stop can complete this evidence task while source verdict remains insufficient_evidence. No feasible conclusion or changed scope.",
+    "Static scanner findings and skipped limits contextualized and reported; no target code executed, no real/API/source bytes committed, clean bounded Git changes."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED; source/tool/freeze/mapping/metadata/input hashes, private output path and before-body proof, exact invocation and commands/results.",
+    "Request sequence and count, acquired file/decoded/raw counts, continuous ledger/terminal/checkpoint hashes, fixed-point/stop reason, scan verdict/findings and scope/PRD/zero forbidden actions.",
+    "Derived files/purposes/commit-parent or uncommitted state, all unverified P0/license/closure/runtime/device items; next bounded recommendation without starting it."
+  ],
+  "stop_conditions": [
+    "Any input/release/policy/hash/source mismatch, unknown edits, unavailable pinned metadata or need for added code/endpoint/source scope.",
+    "Any frozen transport/parser/deny/type/identity/budget/persistence stop: stop network immediately, preserve existing evidence, no retry or change.",
+    "Missing durable request authorization, proxy/redirect/retry request, scope escape, third-party execution or checkpoint expansion.",
+    "Static evidence inspection needs additional body acquisition or forbidden materials: stop with insufficient_evidence and report."
+  ],
+  "baseline_commit": "2f4760d0ff3ea78de929198fba88d3744353a321",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "authority_mapping_report": "orchestration/reports/CP2-ASR-V4-SOURCE-AUTHORIZATION-MAPPING-001.md",
+  "authority_mapping_sha256": "14e0b110b8ca14b3635504b21b40b0f4ddb5e2b66764611293a2fa3ff788af98",
+  "frozen_release_sha256": "a9961c8243a75e244517428f53fed87374cd190a5114d5f62193826337196305",
+  "dispatched_at": "2026-09-06T02:01:44.540629+08:00",
+  "task_result": "COMPLETE",
+  "accepted_at": "2026-09-06T02:23:18.607164+08:00",
+  "commit": "9aa40913c57cccd31105ac88385102f0a0758d63",
+  "report": "orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V4-001.md",
+  "source_result": "insufficient_evidence",
+  "attempt_disposition": "terminated_on_edge_unclosed_literal; no_resume"
+}

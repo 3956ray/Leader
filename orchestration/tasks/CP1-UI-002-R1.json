@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-UI-002-R1",
+  "owner": "developer",
+  "checkpoint": "CP1",
+  "status": "accepted",
+  "goal": "修复 CP1-UI-002 搜索原型的 Kotlin 编译错误，完成原任务的严格验证并提交现有范围内的实现。",
+  "commit": "cdc1d9d5c2a47cb1f4585bc36ee4b054e27a1a3f",
+  "report": "orchestration/reports/CP1-UI-002-R1.md"
+}

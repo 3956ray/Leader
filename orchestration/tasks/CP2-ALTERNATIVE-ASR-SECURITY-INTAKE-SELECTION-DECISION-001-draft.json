@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ALTERNATIVE-ASR-SECURITY-INTAKE-SELECTION-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "draft",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "report_to_thread_id": "01a071cf-9ac6-7171-b663-749a6e88b0a4",
+  "prepared_at": "2026-09-06T09:54:48.059539+00:00",
+  "goal": "仅基于已验收R1官方研究，最多选择一个候选并定义独立有界可停止的下一安全intake合同，不实际取得或执行任何制品。",
+  "research_inputs": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-evidence-cards-2026-09-06.md",
+      "bytes": 16903,
+      "sha256": "a28af30971250a028d464e3edc844fde5a0382345aefa40da031899f1078bead"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-comparison-matrix-2026-09-06.md",
+      "bytes": 10231,
+      "sha256": "af747a9ce0654bd6a9b9a285ba08365202de47b6ba28a5eb0661c4db15f9ebac"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-research-memo-2026-09-06.md",
+      "bytes": 9664,
+      "sha256": "4340ad61c2fa0b7e3909baa89a37f9bc8eb16e769736eb265199579f2d8c146b"
+    }
+  ],
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-hotwords-chain-termination-route-decision-2026-09-06.md",
+    "bytes": 13982,
+    "sha256": "0d639a27ff661ef0106708810f817a2578400c7840e2b13825f9b1ebbc69ef2e"
+  },
+  "scope": [
+    "只读已验收R1三研究产物、Leader验收/核验和正式产品文档，不联网补证，不读候选源码/raw/private或下载文件。",
+    "在Vosk与ONNXRuntimeMobile+SenseVoiceSmall-onnx中最多选择一个，并用APPROVED/REVISE/PAUSE正式落地产品选择；可选择暂停。第二组合只是文档支持的工程候选假设，Source08本地服务器不等于AndroidASR已验证。选择不等于运行时或模型采用。",
+    "基于P0中文按住说话离线/仅内存音频/个性词表与90%门槛、Android可验证性、集成复杂度和供应链边界给出取舍；不要重开已终止sherpa链，也不将其裁决继承给新候选。",
+    "为选定候选定义唯一下一项最小intake任务：goal、明确对象/允许官方信息来源、预算、可判定验收、证据、停止和授权边界。runtime与模型身份/许可/来源分别处理；精确release/坐标/版本/SHA未知则先通过有界官方metadata/README/LICENSE识别，不猜来源或版本。需要源码或制品才能判断的技术项标为后续独立门禁目标，不要求未获授权前先读取它们。",
+    "明确区分公开信息身份准备、外部源码/模型/二进制获取与扫描、构建/加载/实机三个动作权限；本任务仅正式决策，不执行任何。现有研究不能变成下载/集成授权；未来取得/执行按适用精确授权处理。不要为普通已授权可逆文档工作额外造重复审批。",
+    "只更新知识库最少正式选择决定、必要PRD/INDEX/LOG；不改think。保持所有三步路径/音频隐私/CP1与Conformer与词表deferred/CP2未过/CP3与Alpha未批准。完成向当前Leader回报正式产物身份/依据/检查/未验证后停止。"
+  ],
+  "out_of_scope": [
+    "不实际开始intake、联网获取官方metadata、读源码、下载模型/AAR/库/样本，不执行构建/扫描/测试/推理/实机或改产品代码。",
+    "不同时推进两个候选、不取消专名准确率或音频隐私门槛，不新增第三源码链/clearance/v9/旧run恢复，不把研究合格说成安全通过。"
+  ],
+  "acceptance": [
+    "APPROVED/REVISE/PAUSE已正式落地，最多选1，推荐依据与研究证据强度一致，无假装设备/安全验证。",
+    "唯一下一合同可执行可停止，runtime/model来源与未来权限明确，未知字段不猜、不把doc选择当制品权限。",
+    "正式文档/PRD入口一致且保留全部隐私/产品/Checkpoint标准；产品repo不变。"
+  ],
+  "evidence_required": [
+    "正式path/bytes/SHA、结论依据及研究ref、下一任务完整scope/stops/auth边界、未验证、检查与Git修改归属；当前Leader回报后停止。"
+  ],
+  "stop_conditions": [
+    "选项证据不足则PAUSE/REVISE明确缺口，不本任务联网补齐。",
+    "若必须改变P0/隐私/三步或门槛才能继续，明确产品决策事项，不暗中放宽；不重开终止链。"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "CP2-VOSK-ARTIFACT-DOC-SYNC-001",
+    "owner": "developer",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+    "goal": "将已验收Vosk静态审查范围、元数据结论及最新PRD同步到产品仓库六个正式文档，满足后续已授权静态审查的文档前置条件，不取得制品。",
+    "source_root": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive",
+    "source_pins": {
+      "cp2-vosk-android-identity-gap-decision-2026-09-06.md": "e4cb90e2184db26dd5021c4acae079384f585a89f7c616f5b2e25af1a85e4dab",
+      "cp2-vosk-artifact-review-scope-decision-2026-09-06.md": "6f537e2a58bbff9bcab8bf605079612d541bf4326d9e90cc825a26d4f66576a8",
+      "cp2-vosk-android-maven-metadata-2026-09-06.md": "f6e70fcbd52e4859f2cdae353eb4720545a135446c9c44206e64e4a0693c67c7",
+      "prd-v0.1-2026-09-04.md": "bee0d0293178bbf4a0dab8ab2e9754aff7e67b415dd2b2d0b65e2773c02730d4"
+    },
+    "scope": [
+      "只读LOOP-V2.md、current-task和Leader范围验收 orchestration/reports/CP2-VOSK-ARTIFACT-REVIEW-SCOPE-DECISION-001-acceptance.md；先输出包含task_id/attempt_id/contract_sha256/assigned_thread_id的接单确认。",
+      "确认产品仓库干净92e50278；四固定源文件逐字节同步到doc/同名文件。只额外更新doc/README.md和AGENTS.md，合计六文件，保留历史，不改知识库。",
+      "两个入口明确：元数据身份已验收、范围已验收、用户在PM中已给精确授权但本单不执行；静态审查须文档验收和工具前置，采用门blocked、阶段C未准、CP2未过。源副本中当时待授权措辞保留历史，用入口注明后续授权，不改固定副本。",
+      "只做源副本hash/bytes一致、差异、链接及权限语义检查，单个六文件文档提交不推送。不要访问报告中的临时网页/制品URL或源码指针。"
+    ],
+    "out_of_scope": ["不联网、不下载AAR/模型/依赖、不安装/构建/扫描/加载/执行/集成/真机；不改产品代码、工具、构建配置或第七文件。"],
+    "acceptance": ["六文件范围内，四副本源/工作区/提交字节一致，入口不混淆权限，现有隐私和Checkpoint未改。", "检查通过，单提交和干净工作区，未发生制品或产品操作。"],
+    "evidence_required": ["最终答复首先给有效JSON回执：task_id、attempt_id、contract_sha256、assigned_thread_id、acknowledged:true、result:COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED；然后给文件目的、源副本hash/bytes、检查结果、提交、未知和Git状态。只在本任务答复，不跨任务发送。"],
+    "stop_conditions": ["源hash或基线变化、归属不明、需要额外文件/权限/工具则停止回报，不自扩范围。完成停止，由Leader主动验收，不自行静态审查。"]
+  }
+}

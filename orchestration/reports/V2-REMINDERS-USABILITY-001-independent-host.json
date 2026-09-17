@@ -1,0 +1,12 @@
+{
+  "commit": "88d38616c5a5947d4ca798d4039c6368fa465624",
+  "counts": {
+    "tests": 127,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "build_success": true,
+  "log": "/private/tmp/thinkv2-reminders-usability-leader-host.log",
+  "sha256": "0636630469ee2edeb96dc8470d0754633ce2fb9b2003e3ec8cbdd7df25f58fe5"
+}

@@ -1,0 +1,33 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "V2-NOTES-ACCESSIBILITY-001",
+    "owner": "developer",
+    "checkpoint": "CP3",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Finish readable and accessible note workflows on emulators while preserving existing storage, navigation intent and privacy boundaries.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2, accepted clean baseline29482c49d17fc9c6470c0ea964419288b8931f67. Approved independent baseline interface requirements and complete UI refinement item, plus E8 accessible relations. One CP3 presentation/usability task; no new business features.",
+      "Inspect actual home/search, editor/title/category selection, category management, recycle/restore and related-note list/confirmations. Fix concrete readability/operability defects at systemfont1.0/1.5/2.0, light/dark, portrait/narrow logical width and IME visible. Body18sp baseline, major targets56dp, scrollable content, no overlapping/truncated essential actions or inaccessible confirmation buttons. Preserve actual empty/search states and existing routes.",
+      "Keep primary new/edit/save/search paths clear and existing text recording independent of AI/category/voice. Reduce developer implementation details in note presentation: full UUIDs should not dominate cards/spoken labels; use real title, excerpt and meaningful context for disambiguation, with IDs kept internally/test semantics or optional detail only if useful. Same-title rows must still open exact stableIDs, no fake display data. Do not hide privacy/permission/backup limits or real operational errors.",
+      "Accessibility: meaningful Chinese labels/roles/heading/state, one coherent clickable control node, understandable focus order, visible keyboard focus where supported, dialogs restore focus, no color/gesture-only dependency. Check actual platform nodes/actions and measured bounds; inspect screenshots. If an already installed authorized TalkBack is available, run a bounded actual service navigation test and restore prior settings; otherwise report service test gap explicitly, never relabel UiAutomation as TalkBack. No unreviewed service download/installation.",
+      "Back/keyboard dismissal/rotation/background and text editing must retain drafts and manual title/category; use actual durable synthetic records and exactID navigation, accidental destructive actions remain confirmed. Existing voice/AI/reminder/backup entry behavior and consent remain unchanged; regressions where editor layout intersects those controls. No persistent fields/schema/backup changes expected.",
+      "Work from observed issues, small layout/semantics changes rather than replacing architecture or adding design dependencies. Document before/after issues, actual screen/context identities, final route checks and remaining physical-device limitations. No aesthetic claims without rendered evidence."
+    ],
+    "out_of_scope": [
+      "No change to P0/P1, user data boundary or fundamental navigation/three-step intent; no new command/model/provider, theme customization/animation/batch actions/graph, reminder/backup business changes or app-wide unbounded redesign. No private data/device access, accounts/sync/payment/publication, unknown dependencies."
+    ],
+    "acceptance": [
+      "All scoped note screens and confirmations operable in actual emulator at tested1.0/1.5/2.0font and light/dark; screenshots and node/bounds evidence expose any unsupported combination rather than mark blanket pass. Clear primary actions, essential text visible/scrollable and touch targets compliant.",
+      "Durable editing, categories/trash/restore and relation navigation preserve exact records under keyboard/back/rotation, including same titles. Presentation changes do not alter existing data/consent/command semantics; affected regressions pass.",
+      "Actual platform accessibility evidence and any actualTalkBack outcome separately identified. Build/lint plus meaningful affected tests pass. Exact cleancommit/APKs/manifest and issue-to-fix evidence; remaining generalASR/provider/Xiaomi/family gaps retained."
+    ],
+    "evidence_required": [
+      "ACK exact task/attempt/hash/baseline. RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED, scoped observed issue list and file purposes; before/after real screenshots with device/font/theme/IME context, platform node/target/focus and route evidence; durable DB assertions, commands/results, final commit/APK/hashmanifest, limitations and next recommendation then stop."
+    ],
+    "stop_conditions": [
+      "Complete only this CP3 usability task and report commander; do not begin anotherCheckpoint or private-device acceptance. Preserve unknown edits.",
+      "Stop affected action for data loss/consent or workflow scope change, new dependency/service need or inability to validate essential controls. Do not expand into new feature or use superficial screenshot success instead of operation evidence."
+    ]
+  }
+}

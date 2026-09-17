@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "rejected",
+  "task_result": "COMPLETE",
+  "design_verdict": "design_feasible",
+  "commit": "8eea68384efcb61cbea40a423b755edf3175f22d",
+  "goal": "只基于固定提交的已提交证据和正式决定，形成并裁决项目自有 CPU-only／ASR-only 窄 API／适配边界设计，使后续源码审查能够针对可证伪合同进行。",
+  "report": "orchestration/reports/CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-001.md"
+}

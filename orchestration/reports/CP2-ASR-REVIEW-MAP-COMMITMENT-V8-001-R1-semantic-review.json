@@ -1,0 +1,18 @@
+{
+  "RESULT": "PASS",
+  "reviewer": "/root/v7_intake_review",
+  "mode": "independent read-only targeted semantic review",
+  "provenance_sha256": "9b835ffb83f007fc81bb9998d981ef1410a51479382a83879f71c077146f57c6",
+  "verifier_sha256": "b6418d70ffd467a26d3dc316b7dc10caee7a4ce1f93582550b399ab017824315",
+  "findings": [
+    "121 leaf targets uniquely and completely covered; 194 JSON source pointers resolve within authorized derived inputs/core objects.",
+    "76 target leaves have exact same-value sources; 45 use reviewed constants, digests, encodings, time or detector derivation. No incorrect mapping found.",
+    "Original 7051 bytes restored; two token encodings derive from accepted P; original R/P.original_review timestamp retained, not P.created_at.",
+    "deny_literal uniquely follows firstparty semantics rule branch, without source reread. Domain separation and boolean operational_authority=false correct.",
+    "Verifier statically read-only standardlibrary; no candidate imports or private pointers. Its coverage assertions are not semantic proof; this independent field review supplements them."
+  ],
+  "limitations": [
+    "Verifier Gregorian algorithm is scoped to this fixed 2026 R, not a general pre-epoch validator. Run without optimization.",
+    "Reviewer did not execute verifier or check full Git/manifest; Leader performs these separately."
+  ]
+}

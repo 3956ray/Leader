@@ -1,0 +1,11 @@
+{
+  "result": {
+    "tests": 107,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "command": "gradlew --offline :app:testDebugUnitTest --rerun-tasks --no-daemon --console=plain",
+  "log": "/private/tmp/thinkv2-ai-leader-host.log",
+  "log_sha256": "1725fe18be9680a77fe8657d597cb473847aa88a6e189e4ca18f24fca554a526"
+}

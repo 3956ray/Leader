@@ -1,0 +1,39 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001",
+  "RESULT": "PASS",
+  "verified_at": "2026-09-06T08:40:23.886366+00:00",
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 7679,
+    "sha256": "d645a34ec6c176c12683588f4bee7f778690bf8d6cebb1e17d028f38f8bbcaed"
+  },
+  "request_markdown": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.md",
+    "bytes": 4306,
+    "sha256": "f6f3def136235e6d52b5bf0d92fd908fad25dc9aeaa0f7fe4ff0afd2684f3e82"
+  },
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+    "git_type": "blob",
+    "mode": "100644",
+    "git_blob": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "decoded_bytes": 2286,
+    "expected_body_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6"
+  },
+  "checks": [
+    "Both accepted derived source entries and their documenthash/acceptance refs agree on allfixed candidateidentity fields. Sourcecurrentbytes verified equal acceptedcommit inidentitysources preparation.",
+    "All4directrequest references match exactbytes/hash; formaltemplate filledwith3verified values equalsJSONandMarkdownquote exactly, no placeholders.",
+    "64unique lines/4096visiblebytes,1GET0retry0redirect0metadata/exact2286B/hardcaps/purpose/finalchainstop/returnproduct/noauthority checked.",
+    "Markdown clearly explains initialsnapshot notacquired versus discovery historicalcontentidentity; no priorbody reused orinterpreted asadoption.",
+    "ProductHEAD/cleanunchanged; no newbody/rawmetadata/network/candidateexecution."
+  ],
+  "product_HEAD": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "product_clean": true,
+  "limits": [
+    "Currentbodycontent, future response and static review remain unverified; pendingrequest doesnot authorize acquisition."
+  ],
+  "outcome": "authorization_request_ready_for_product_lead"
+}

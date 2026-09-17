@@ -1,0 +1,32 @@
+{
+  "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-001",
+  "RESULT": "PRODUCT_DECISION_REQUIRED",
+  "checked_at": "2026-09-06T08:42:11.032223+08:00",
+  "phase": "preparation preflight only; no K created",
+  "accepted_C": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "C_bundle": "198c24c66a3e82117828e9eacfa333b4dde8eb19949c7425b8a81b839399553e",
+  "C_acceptance": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-acceptance.json",
+  "C_acceptance_sha256": "49eea49be628c2eacac3ac99bf8e8caba464d76aba674f8dc3fb1019a8bc7df8",
+  "R_report": "orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001.json",
+  "R_sha256": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+  "reviewer": "Leader",
+  "original_reviewed_at": "2026-09-06T06:48:22.579140+08:00",
+  "lossless_UTC_conversion": "2026-09-05T22:48:22.579140Z",
+  "current_representation_regex": "[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z",
+  "implementation": "tools/asr_review_acquisition_v7/offline_review/manual.py:157",
+  "result_original": false,
+  "result_lossless_UTC": false,
+  "precision_lost_if_truncated_microseconds": 579140,
+  "reason": "Accepted synthetic-only C supports UTC whole-second review labels, but actual previously accepted R contains fractional seconds and explicit offset. No current-schema value preserves the exact review time. Do not truncate, invent replacement time, modify R or reinterpret reviewer/time semantics to manufacture K.",
+  "interpretation": "New K-stage real-derived-evidence representability blocker, not false clearance and not reversal of earlier C synthetic/offline acceptance. Formal next-scope decision required before new code or K.",
+  "read_scope": "Only exact derived Leader review report/verification metadata and accepted firstparty schema/code; private envelope pointer not followed; no header/body/source/network/transport.",
+  "outputs_not_created": [
+    "K",
+    "F",
+    "M",
+    "A",
+    "T",
+    "N"
+  ],
+  "proposed_next": "PM chooses APPROVED/REVISE/PAUSE on minimal independent offline timestamp representation revision with exact fractional-second/offset preservation, no truncation or original record rewrite. New C acceptance before any K."
+}

@@ -1,0 +1,29 @@
+{
+  "RESULT": "PASS",
+  "task_id": "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001",
+  "verified_at": "2026-09-06T06:03:44.661752+00:00",
+  "review_sha256": "f5d1f99d54084aec6757038f726ae455395e334ac0b120c5f254791c1bcbda8b",
+  "markdown_sha256": "a6ec5534ed6b2bcd7b6ae41dd34576f3465ef7df2494c614755a00e809acd39b",
+  "verifier_sha256": "852c3e2ab96a9b70af007f3724ded40577c9033c618c2921e174b5e904ac009b",
+  "unique_retained_path": "/private/tmp/think-acquisition-v8-quarantine-3_hb53be/source_v8_once/body-0002.json",
+  "retained_reads_this_verification": 1,
+  "other_body_reads": 0,
+  "nofollow_regular_singlelink0600_private0700": true,
+  "exact_envelope_body_gitblob": true,
+  "occurrences": 7,
+  "unique_occurrence_ids": 7,
+  "active_policy_relevant": 4,
+  "active_literal_include_unresolved": 1,
+  "comments_local_nonoperative_without_clearance": 2,
+  "human_visible_lines": 55,
+  "human_visible_bytes": 2294,
+  "complete_header_displayed": false,
+  "independent_config_data_flow": "field declaration, const-reference constructor argument, member-initializer target/source, empty constructor body confirmed",
+  "network_or_subprocess_guard_events": [],
+  "source_execution": false,
+  "product_or_old_evidence_changes": false,
+  "limits": [
+    "Verifies local syntax/identity and narrow report; cannot establish downstream semantics, actual file access, business API exposure or runtime reachability.",
+    "Verification is a fourth read of the same authorized object, with no additional human source display; three prior review read receipts remain immutable."
+  ]
+}

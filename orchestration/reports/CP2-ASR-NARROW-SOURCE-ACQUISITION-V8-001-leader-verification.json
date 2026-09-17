@@ -1,0 +1,134 @@
+{
+  "RESULT": "PASS",
+  "active_capabilities": 5,
+  "capability_diagnostics": [
+    {
+      "carrier": "string_literal",
+      "classification": "denylist_capability",
+      "end": 411,
+      "line": 15,
+      "rule": "dynamic_paths",
+      "start": 404,
+      "token_sha256": "c9fbd9152b7ff1375f060ed14c4fac7b6be8709b34cd20c2aeaf8962b100c1ad"
+    },
+    {
+      "carrier": "line_comment",
+      "classification": "comment_capability_mention",
+      "end": 1902,
+      "line": 57,
+      "rule": "websocket",
+      "start": 1893,
+      "token_sha256": "7ce54cbababdd64826b853179905315617306f430e5154177ddbed04c282b7da"
+    },
+    {
+      "carrier": "line_comment",
+      "classification": "comment_capability_mention",
+      "end": 1981,
+      "line": 60,
+      "rule": "websocket",
+      "start": 1972,
+      "token_sha256": "7ce54cbababdd64826b853179905315617306f430e5154177ddbed04c282b7da"
+    },
+    {
+      "carrier": "line_comment",
+      "classification": "comment_capability_mention",
+      "end": 2146,
+      "line": 64,
+      "rule": "dynamic_paths",
+      "start": 2139,
+      "token_sha256": "c9fbd9152b7ff1375f060ed14c4fac7b6be8709b34cd20c2aeaf8962b100c1ad"
+    },
+    {
+      "carrier": "code",
+      "classification": "denylist_capability",
+      "end": 3590,
+      "line": 110,
+      "rule": "dynamic_paths",
+      "start": 3577,
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c"
+    },
+    {
+      "carrier": "line_comment",
+      "classification": "comment_capability_mention",
+      "end": 4310,
+      "line": 132,
+      "rule": "dynamic_paths",
+      "start": 4297,
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c"
+    },
+    {
+      "carrier": "code",
+      "classification": "denylist_capability",
+      "end": 4769,
+      "line": 143,
+      "rule": "dynamic_paths",
+      "start": 4756,
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c"
+    },
+    {
+      "carrier": "code",
+      "classification": "denylist_capability",
+      "end": 5363,
+      "line": 156,
+      "rule": "dynamic_paths",
+      "start": 5350,
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c"
+    },
+    {
+      "carrier": "code",
+      "classification": "denylist_capability",
+      "end": 5377,
+      "line": 156,
+      "rule": "dynamic_paths",
+      "start": 5364,
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c"
+    }
+  ],
+  "comment_set": {
+    "actual": 4,
+    "clearance": false,
+    "expected": 2,
+    "matching_original_ids": [
+      "d03feeb2d0236594f1feb07b98cb78c2251aa893acb64c67f19b6e0fecfa6649",
+      "0cd777bfa5e50b8e0fa7e01b5c2e5ea72b9a24f87189b52a684e4792c9c9bf20"
+    ]
+  },
+  "decoded_bytes": 19297,
+  "ledger_hash": "74f632f92fa35d2e0f6ff96bf95de801eed8ea66490c8f048ad70f3ecfe0659d",
+  "limitations": [
+    "Raw HTTP response bodies/headers are not retained; blob_raw count cannot be reconstructed from wire bytes.",
+    "Persisted chain plus reviewed driver/transport supports single-run/no-successor conclusion; no independent packet capture.",
+    "Base64 archive contents are not recursively scanned by scanner; source/body semantics separately checked above."
+  ],
+  "marker_sha256": "fedb5a0cf6f79659f70c827a0103c7ac9b781aee4a04ce764dd8707ed943b4bb",
+  "private_collection": "f3da5153c3622e5554bbd636eac3fb9aeb526cd59311caa4bccc31a8f15b99c9",
+  "raw_bytes": 2771747,
+  "requests": 2,
+  "run_files": 93,
+  "scanner_context": [
+    {
+      "entire_match_is_stored_part_sha256": true,
+      "matches": 1,
+      "path": "event-0023.json"
+    },
+    {
+      "entire_match_is_stored_part_sha256": true,
+      "matches": 1,
+      "path": "event-0024.json"
+    },
+    {
+      "entire_match_is_stored_part_sha256": true,
+      "matches": 1,
+      "path": "event-0025.json"
+    },
+    {
+      "entire_match_is_stored_part_sha256": true,
+      "matches": 1,
+      "path": "terminal.json"
+    }
+  ],
+  "scanner_raw_verdict": "manual_review",
+  "scope": "Read-only current attempt; no old private source, no network, no scanner or candidate execution. Source/runtime/license approval not established.",
+  "source_stop": "denylist_capability",
+  "terminal_sha256": "53e13fb7c238ab9b6f99353fc0a01a146832fbceee638c089eeb534c8464f26c"
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Manually adjudicate only two exact websocket comment hits in the authorized existing7939byte header and record body/line/rule-bound evidence.",
+  "scope": [
+    "Read only the exact already-retained body-0002 envelope after bounded no-follow directory-chain/regularsinglelink/mode/hash checks; verify body UTF8,NUL,size,SHA256/GitSHA and both line hashes before interpreting. No other private corpus file required.",
+    "Read same-file context within this one7939byte header to decide only these two rule/line hits. Minimal stdlib data decoding/hash and manual untrusted text inspection only; no code import/execute/source-tree export.",
+    "Record exact per-body/per-line/per-rule decision forbidden, comment_only_nonoperative_for_this_body, or unresolved, with original offsets/line hashes and bounded reasoning. Output only first-party Leader review report and reference hashes; avoid reproducing full source.",
+    "If any scope/identity uncertainty or need other file, retain unresolved and stop; cannot enlarge context to dependencies or obtain new data."
+  ],
+  "out_of_scope": [
+    "No network or new LICENSE/header/API/metadata/body requests; no oldrun continuation or reusing old acquisition authority.",
+    "No code/schema/freeze/App changes, no candidate workload or scanner replay, no blanket/global token waiver or implementation of pending-clearance API.",
+    "No fullsource safety/license/reachability/adoption/build/model/device/CP2/CP3/Alpha approval; comment-only is local line/body adjudication only."
+  ],
+  "acceptance": [
+    "Exact envelope/body/line identities and safe read boundaries verified before interpretation. Each hit individually receives one formal allowed verdict with same-body contextual reasoning. No global or operational clearance."
+  ],
+  "evidence_required": [
+    "User authorization/request identities, exact verification results/offsets/hashes and per-target decisions, review limitations, any need for product decision."
+  ],
+  "stop_conditions": [
+    "Any identity/file safety mismatch or need extra file/network/implementation: stop unresolved; no expansion."
+  ],
+  "binding": {
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "source_path": "sherpa-onnx/csrc/online-recognizer.h",
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "body_bytes": 7939,
+    "git_blob_sha1": "a4559f413cae739f055509a01d5684879e4a626c",
+    "private_envelope": "/private/tmp/think-asr-v5-acquisition-hqssnorn/run/body-0002.json",
+    "envelope_sha256": "e112db3f6b7a38060ddbb320b7fdf892ec0aeaaaae95c676880106456823e40d",
+    "envelope_bytes": 8579,
+    "required_file_mode": "0600",
+    "required_parent_modes": "0700",
+    "required_type": "regular single-link with no symlink parent",
+    "rule": "websocket",
+    "targets": [
+      {
+        "line": 57,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      },
+      {
+        "line": 60,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      }
+    ],
+    "historical_line_hash_domain": "SHA256(UTF8 text line from decoded body.splitlines(), without line terminator); do not confuse with v6 physical-line-including-terminator hash. Review may additionally record original byte ranges and physical-line hashes after authorization, preserving original pin."
+  },
+  "authorization_record": "orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001-approved.json",
+  "authorization_record_sha256": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2",
+  "result_report": "orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001.json",
+  "result_report_sha256": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6"
+}

@@ -1,0 +1,27 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "CP2-VOSK-STAGE1-ACQUISITION-INSPECTION-001",
+    "owner": "developer",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+    "goal": "按用户已批准且已同步的简化分阶段合同串行取得两个Vosk制品，完成有限外层清单、路径结构与许可初查，明确后续未验证内容，不执行目标。",
+    "formal_scope": "/Users/orderly_ray/Projects/think/doc/cp2-vosk-simplified-staged-review-decision-2026-09-08.md",
+    "formal_scope_sha256": "ae7af4a693aacb69a2f1766e7c2ea813b068916d1139166ae7e8aeccc375fbb8",
+    "sync_acceptance": "/Users/orderly_ray/Leader/orchestration/reports/CP2-SIMPLIFIED-STAGED-DOC-SYNC-001-acceptance.md",
+    "authorization": "/Users/orderly_ray/Leader/orchestration/decisions/2026-09-08-simplified-staged-review.md plus direct original two-object user authorization documented in CP2-VOSK-ARTIFACT-REVIEW-SCOPE-DECISION-001-acceptance.md; no repeat approval needed within latest scope",
+    "scope": [
+      "先核对5c07c8a9干净基线、正式scope SHA、PRD/入口及验收；输出四身份ACK。完整执行正式scope阶段1所有条款，较新用户批准优先于旧严格合同，不再要求16小时adapter/全内存解包/1GiB硬隔离。",
+      "先A https://repo.maven.apache.org/maven2/com/alphacephei/vosk-android/0.3.75/vosk-android-0.3.75.aar 后B https://alphacephei.com/vosk/models/vosk-model-small-cn-0.22.zip 。每对象2次尝试、每次最多2个核实同源同路径HTTPS跳转，全单12GET；只对正式合同列明的连接/408/429/500/502/503/504故障恢复，不绕过TLS/权限/结构/资源错误。",
+      "每响应64MiB、全单网络256MiB、连接15秒、尝试含跳转180秒、恢复等候最多10秒、全单30分钟；实际流读取/失败/重试正文计数。使用现有curl/标准库/少量本单辅助配置，不安装或开发平台。",
+      "原静态审查根下独占创建attempts/<本合同attempt_id>/artifacts、unpacked、reports，路径/链接/权限检查、不覆盖旧0GET证据。按正式scope安全逐成员流提取，禁止extractall/保留执行位/执行目标；外层每对象10000成员/512MiB展开，全单20000/1GiB，单成员128MiB，实际重读计数；文本2MiB单文件/32MiB全单，初查每对象10分钟。",
+      "只初查外层清单、路径/基础结构、LICENSE/NOTICE/可读配置；不递归JAR或加载模型。CRC仅完整读成员验证，未覆盖如实记录；高压缩比warning不单独定恶意，实际越限/损坏/越界仍停止。A非结构证据不足可继续B，硬停止不可。",
+      "输出acquisition-ledger.json、runtime-inventory.json、model-inventory.json、stage1-review.md及工具/来源/预算/覆盖证据。每对象basic_inventory_complete/manual_review/block/not_acquired，整体adoption_gate=blocked。失败残片保留不冒充完整对象。",
+      "完成后提供身份绑定JSON与报告path/bytes/SHA、网络/展开/时间/CRC覆盖、Git和下一阶段未知。按用户要求回调，优先仅任务完成通知、不附被拒的内部元数据载荷；如自动审批拒绝，不重试或绕过，完整结果留本任务供Leader读取。"
+    ],
+    "out_of_scope": ["不获取JNA/.module/sidecar/公钥/源码/额外模型，不访问异常主页，不安装/导入/构建/运行/加载/inference/集成/真机/外部上传。不改think或知识库/不提交，不恢复旧任务，不取消隐私和Checkpoint。"],
+    "acceptance": ["两个对象的取得/初查记录或诚实硬停止均有证据，实际预算、隔离路径与来源符合完整正式scope。", "读过/未读、CRC/许可/二进制未知明确；初查不宣称安全或采用，无目标执行、无依赖取得、产品工作区未改。"],
+    "evidence_required": ["ACK及最终JSON含task_id/attempt_id/contract_sha256/assigned_thread_id/acknowledged:true/result:COMPLETE或BLOCKED；报告路径hash和逐项证据、回调实际结果。"],
+    "stop_conditions": ["正式scope全部来源/路径/结构/资源/权限停止条件适用；不得遇限自增预算或取得新对象。", "完成或硬停止即回报，不自行开始阶段2或任何执行；只读工具局部配置困难不自动升级为新平台工程。"]
+  }
+}

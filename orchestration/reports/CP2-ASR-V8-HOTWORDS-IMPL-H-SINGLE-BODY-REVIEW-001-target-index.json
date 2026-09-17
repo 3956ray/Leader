@@ -1,0 +1,25 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "body_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6",
+  "scope": "Target Create and enclosing class token index only, no source text displayed",
+  "matches": [
+    {
+      "line": 20,
+      "byte_start": 497,
+      "byte_end": 526,
+      "line_sha256": "3b77bc60f4c1072166e0166ea55d0e24a50bec667a7f7029ad43656e68bc3076"
+    },
+    {
+      "line": 24,
+      "byte_start": 607,
+      "byte_end": 662,
+      "line_sha256": "d1bbd881b54ab4022bd7a5a515719c2d47a17de42adf58da6f3bff35b00a9d27"
+    },
+    {
+      "line": 31,
+      "byte_start": 845,
+      "byte_end": 900,
+      "line_sha256": "d1bbd881b54ab4022bd7a5a515719c2d47a17de42adf58da6f3bff35b00a9d27"
+    }
+  ]
+}

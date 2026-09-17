@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "裁定源码获取前发现第一方审查工具缺陷后的最小离线返工范围，落地正式决定以允许可验证的工具开发并保持全部第三方和产品边界。",
+  "scope": [
+    "阅读 Leader 独立复核及开发者准备报告、已归档授权和现行正式决定，确认停止原因是第一方工具缺陷，未得出上游源码不可行结论。",
+    "给出 APPROVED、REVISE 或 PAUSE 并写入产品知识库正式决定、PRD 与必要索引；明确旧尝试停止状态。",
+    "评估仅第一方、仅离线、标准库及合成输入的工具返工与测试：新版本独立目录、旧文件只作只读问题证据、不复用第三方正文、不联网、不生成产品实现或构建输入。",
+    "明确工具开发与冻结的阶段边界、Leader 验收标准，以及未来获取仍需满足的授权条件。用户已明确要求继续调度开发；不要把可逆第一方修复擅自扩大为第三方获取，也不要为已获授权的普通修复增加无依据的逐次确认。"
+  ],
+  "out_of_scope": [
+    "修改产品仓库或工具、执行被审工具、获取/读取第三方正文或旧 corpus、下载/执行/构建/集成、改变隐私或 CP2/CP3 门槛。",
+    "将工具缺陷认定为 sherpa-onnx 恶意/源码不可行，或自动开启其他运行时路线。"
+  ],
+  "acceptance": [
+    "正式结论和实际写入文件存在，可由 Leader 逐项核对；新旧授权及停止范围准确，无重复或扩大解释。",
+    "最小下一任务具备允许范围、不做、验收、证据和停止条件，能具体开展第一方工具修复与离线验证。",
+    "保留固定上游身份、9 seed、96文件/1MiB、禁止音频落盘上传、CP2未通过和CP3未批准；无新第三方采用。"
+  ],
+  "evidence_required": [
+    "RESULT、正式决定/PRD/索引文件绝对路径与 SHA-256、改动目的、检查结果、Git归属、未验证项及单一下一任务建议。",
+    "Leader报告 orchestration/reports/CP2-ASR-PREFLIGHT-LEADER-REVIEW-001.md 和开发者报告的身份映射。"
+  ],
+  "stop_conditions": [
+    "需要放宽产品隐私、源码获取范围、Checkpoint 门槛或默认批准第三方制品时停止并明确待决问题。",
+    "知识库存在无法归属修改或写回冲突时不覆盖，报告确切阻塞。"
+  ],
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "task_result": "COMPLETE",
+  "report": "orchestration/reports/CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-001.md"
+}

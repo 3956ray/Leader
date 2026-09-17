@@ -1,0 +1,57 @@
+{
+  "task_id": "CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001",
+  "decision": "ACCEPTED",
+  "scope": "Exact three-document freeze of accepted v6 R1 first-party offline candidate only",
+  "accepted_at": "2026-09-06T06:25:50.357447+08:00",
+  "verification": {
+    "RESULT": "PASS",
+    "artifact_collection_sha256": "e9d396749b7e397fc3b83dba793691d0be7d42dadd8060f5f1624b4758924608",
+    "bundle_sha256": "99114c1ad1126e627723585251ed696063562de4b507d35c28b93a3b1ffb6160",
+    "candidate_executed": false,
+    "candidate_tree": "05f0b591753a9d8c845656c2f8d6be2c8c725464",
+    "commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+    "evidence_collections": {
+      "ledger_collection_sha256": "8f5c1d64e92e5024971472969882a14a249a7c9b5f1395e2e3b41acd57d72abd",
+      "source_analysis_collection_sha256": "e9b130b746762a2896217decf428ada8bc090c6a40d70d1c479c622d53dd2d77",
+      "terminal_collection_sha256": "c40aa2ffc33dbf03bc1baebf91e296e653957b166048fe6ec737b58f888b29bf"
+    },
+    "freeze_tree": "b674a029f2faefdd92367866236037a74b7ac053",
+    "git_clean": true,
+    "new_acquisition_authorized": false,
+    "new_files": {
+      "MANIFEST.json": {
+        "bytes": 2952140,
+        "sha256": "a120ddf5e1a80d112454647ca0cee364c6aebdcb4ca112bbcbc624040cdb7914"
+      },
+      "REPORT.md": {
+        "bytes": 25690,
+        "sha256": "5cee4af12a373d80ace966a6122b8ea8853b0e239bc5a8d7c63016c9662d482e"
+      },
+      "freeze.json": {
+        "bytes": 54757,
+        "sha256": "09523de2726e1ac84d065bbf7284d20ae006fae2f561baa6ffbbb88bba0059b7"
+      }
+    },
+    "noncyclic_domains_reviewed": true,
+    "original_manifest_records": 10909,
+    "parent": "f55fda2dea237120ce09639112767c9857dab8d5",
+    "policy_sha256": "43b323b3601b25a5d459e0c553d4da2c38fb2dae7f1f51c82170723f354c1ab7",
+    "real_body_or_metadata_read": false,
+    "real_manual_review_authorized": false,
+    "reference_files": 48,
+    "release_files": 10910,
+    "role_contract_sha256": "1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125",
+    "semantic_contract_sha256": "2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86"
+  },
+  "verification_script_sha256": "0d0b08d226b409536acef435b3fac13be5beaf35f95be805c8e655f4e59d0d05",
+  "verification_report_sha256": "11b702aba2a4fdcab42048b5fe93c984d7115eff9f8e32d14d19b3bfa3e795f8",
+  "semantic_document_review": "Formal current decision, original dispatch, complete REPORT and structured freeze reviewed. No code/authority expansion; all exact semantic/role/policy objects match previously accepted version. Current formal/Leader references and historical attribution are correct, noncyclic document/hash domains explicit. Immutable candidate and previous eight trees preserved.",
+  "historical_attribution": "All158tests/961outcomes and prior complete/incomplete semantic reports belong to prior accepted runs. Freeze verification recomputes identities only; no candidate or real-source workload rerun.",
+  "unverified": [
+    "No real capability adjudication, source/license adoption, actual source closure, build/model/device/audio/privacy checkpoint verification.",
+    "No real v6 input/wire validation; old runs remain terminated, previous authorizations cannot transfer.",
+    "No pending-clearance API exists. Freeze does not implement or authorize any ability to consume future comment-only adjudications.",
+    "CP2 not passed; CP1 and Conformer Deferred not removed; CP3 and Alpha not approved."
+  ],
+  "next": "Prepare a concrete, separately authorized offline manual review limited to existing fixed online-recognizer.h body and two websocket comment hits, then wait for user approval before opening real body."
+}

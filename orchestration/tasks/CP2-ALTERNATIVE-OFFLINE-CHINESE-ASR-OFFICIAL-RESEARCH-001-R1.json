@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1",
+  "owner": "product_manager",
+  "accountable_owner": "leader",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "report_to_thread_id": "01a071cf-9ac6-7171-b663-749a6e88b0a4",
+  "prepared_at": "2026-09-06T09:42:56.866496+00:00",
+  "goal": "仅用原12个官方页面修正Whisper许可证和资源遗漏及组合候选硬筛选依据，统一重算候选数量与研究结果，不扩大调研或技术权限。",
+  "baseline_commit": "e89da0e5e119293f6af73ce10ff4e0159f995c4b",
+  "original_contract": {
+    "path": "/Users/orderly_ray/Leader/orchestration/tasks/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001.json",
+    "bytes": 6321,
+    "sha256": "c366ec299682dd96031d04a373da63978cbe12871c5f2af7c645c2f288049f4e"
+  },
+  "rejection": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-rejection.json",
+    "bytes": 1237,
+    "sha256": "3831454e560e6dc58d5a32be6674881be964ebc6d984e5d86054e8a640f7f07a"
+  },
+  "scope": [
+    "仅修正三份研究文档和INDEX/LOG，原候选4个与原12个官方URL不变，不增加页面/候选、不改PRD/正式路线。可重新查看这些已计预算的相同官方页面或其中实际可见图示；不可点击到新页面/源码/制品，不下载图像或raw源码绕过页面限制。",
+    "Whisper上游README License明确code and modelweights为MIT。修正文档/矩阵第7维及hardfilter中的模型license未识别错误，区别上游license identified与未来具体转换制品溯源/再分发审查未验证，标准与Vosk/ORT一致。许可修正不自动填补中文官方证据；中文仍未证则保留Unknown。",
+    "同一whisper.cpp README Memory usage已有tiny/base磁盘与内存估计，补为官方估计并区别上游A100 VRAM参考与Android真机实测未知。不要把样本benchmark当产品达标。",
+    "ORT+SenseVoice组合可以保留有限工程推断；但请逐个列出官方页面原始支持点及推导，说明为何硬条件本地核心ASR/无强制云上传成立，而不是只凭通用runtime支持Android加模型格式猜。这里不要求研究阶段验证全部算子兼容/JNI/性能/完整实现与动态隐私，也不因是组合就自动排除。若关键前提仍Unknown或必须未来intake才知道，不能以QUALIFIED WITH CONDITIONS计入合格数。",
+    "ModelScope partial页面所有用于hardfilter的中文/模型许可/来源必须可追溯到同一指定页面的可见文字或确切官方搜索摘要；给出简短原文/位置/访问时间及抽取限制，不用其他模型或另一页补齐。文档宣称、有限推断和未知分别表示。",
+    "按原硬筛选重算shortlist<=2；实际合格不足2则research_insufficient，即便剩Vosk有价值也不能说sufficient。候选出现未知不等于技术不支持。结果只回产品门，不自动进入下一intakeselection。"
+  ],
+  "out_of_scope": [
+    "不打开原12页以外的新官方页面，不恢复第三源码链，不读取候选源码/树、下载模型/制品/样本或安装工具/登录/接受条款/执行/构建/测试。",
+    "不改think、PRD/P0/隐私/设备门槛或formalresearch合格规则，不创建新authority/intake/采用结论。"
+  ],
+  "acceptance": [
+    "Whisperlicense与source12原文一致，resource估计/实际未知准确；相关cards/matrix/memo/INDEXLOG同步一致。",
+    "组合hardfilter逐项officialpremise与inference链可复核；Unknown不计PASS；shortlist/outcome严格按原至少2要求。",
+    "页面集合和sourceIDs未扩大，每个修正有来源，5文件新hash及修订范围可检查，产品HEADclean不变。"
+  ],
+  "evidence_required": [
+    "RESULT和research_sufficient_for_security_intake_decision或research_insufficient；5文件path/bytes/SHA、修订摘要、每个修正sourceID/具体证据、hardfilter计数。",
+    "原12页ledger保留并记复核访问，source08partial声明有可复核对应摘要；未验证和页面/代码/下载/执行为零越界，Git检查；只回当前Leader并停止。"
+  ],
+  "stop_conditions": [
+    "原页无法支持就标Unknown/不足，不读取新页或源码补齐。",
+    "不得通过降标准或把推断未证当合格来凑足两个；若需更广研究，先返回现有有界结果。"
+  ]
+}

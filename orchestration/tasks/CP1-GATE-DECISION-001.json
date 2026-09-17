@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-GATE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP1",
+  "status": "accepted",
+  "goal": "根据用户明确决定，正式评估并记录是否延后 CP1 父亲人工可用性门槛，从而允许在不宣称该门槛已通过的前提下进入 CP2 开发。",
+  "decision": "APPROVED",
+  "report": "orchestration/reports/CP1-GATE-DECISION-001.md"
+}

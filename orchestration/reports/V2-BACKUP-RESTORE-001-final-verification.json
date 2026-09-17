@@ -1,0 +1,24 @@
+{
+  "result_sha256": "bbf83cf6d8694706aa3fd96c07616c2c6635b828f614cb79c57937c2db500d70",
+  "verified_entries": 340,
+  "mismatches": [],
+  "android_logs": {
+    "android-backup.log": [
+      "Time: 0.317",
+      "OK (2 tests)"
+    ],
+    "android-reminder-os.log": [
+      "Time: 42.66",
+      "OK (1 test)"
+    ],
+    "android-regression.log": [
+      "Time: 15.429",
+      "OK (4 tests)"
+    ],
+    "android-reminder-ui.log": [
+      "Time: 5.264",
+      "OK (1 test)"
+    ]
+  },
+  "head": "cc957d56e8f5337d6548ed2b0296712fc0cbdcba"
+}

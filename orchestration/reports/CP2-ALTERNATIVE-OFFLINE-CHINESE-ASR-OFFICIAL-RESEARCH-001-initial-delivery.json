@@ -1,0 +1,33 @@
+{
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001",
+  "RESULT": "RECEIVED_NOT_ACCEPTED",
+  "files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-evidence-cards-2026-09-06.md",
+      "bytes": 12823,
+      "sha256": "6ef05df2979fe6e95b07e1979bf2fe03bab7b99cfdb5856397fdb46dfde1de3c"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-comparison-matrix-2026-09-06.md",
+      "bytes": 8578,
+      "sha256": "a879822153d0760ca82b6935b3b56442595cc6ea30b3ea1284962381b76fedec"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-research-memo-2026-09-06.md",
+      "bytes": 8432,
+      "sha256": "ec1cd583f0be420433992bdf9f5de574e693783702768a6a2dff7e440d0d361e"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "bytes": 11389,
+      "sha256": "37c5a009e8fc044a56dd893bb221bb730b766960a28a0100a4785000245483c5"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "bytes": 45598,
+      "sha256": "66268ac06575fb9be6f810f21654ea30e5fc20975b9c2d0fde156a85c8eb8606"
+    }
+  ],
+  "research_claim": "research_sufficient_for_security_intake_decision",
+  "initial_reports_archive": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-initial"
+}

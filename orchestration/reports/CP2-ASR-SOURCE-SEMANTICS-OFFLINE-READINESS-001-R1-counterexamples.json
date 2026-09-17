@@ -1,0 +1,166 @@
+[
+  {
+    "case": "has_include_block",
+    "ending": "lf",
+    "input_sha256": "013c90eb6c43c0a8e8ce17618f216858344eab42b60772f53177c5976634d723",
+    "decision": "denylist_capability",
+    "guard": "no_canonical_header_guard",
+    "calls": 2,
+    "pending_seeds": 7,
+    "pending_internal": 0,
+    "capabilities": [
+      {
+        "body_sha256": "013c90eb6c43c0a8e8ce17618f216858344eab42b60772f53177c5976634d723",
+        "channels": [
+          "code"
+        ],
+        "classification": "denylist_capability",
+        "definite": false,
+        "detector": "deny_literal",
+        "directive_context": true,
+        "end": 34,
+        "evidence_sha256": "dd420117f213d40898f4b0d5ee54d527d8aae7cb8e320c3054d875f53d66034d",
+        "line": 1,
+        "line_sha256": "dd92c94f00b96453fdfe9ed16c16dfa61e394b8a9fb293e12a71d0f4192f9064",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "rule": "websocket",
+        "source": "sherpa-onnx/csrc/online-recognizer.h",
+        "start": 25,
+        "token": "websocket"
+      }
+    ],
+    "report_sha256": "9b0dc9691cf785b6310d58f5908d8d192f8b1e5588db2256a540860f66b10f81",
+    "ledger_hash": "7fe9dfa1c1b332392a52fe7b6e070bd32aac01be280bbade23f9609889143721",
+    "terminal_hash": "28f10dfe1685d3aca8098804006667a5e9af58c5186c0e89d90dcf180d1fa730"
+  },
+  {
+    "case": "has_include_block",
+    "ending": "crlf",
+    "input_sha256": "8299c1fe193f7da90e8c225aca50e23f1118a5545c87ff3485d29b8be3a9182b",
+    "decision": "denylist_capability",
+    "guard": "no_canonical_header_guard",
+    "calls": 2,
+    "pending_seeds": 7,
+    "pending_internal": 0,
+    "capabilities": [
+      {
+        "body_sha256": "8299c1fe193f7da90e8c225aca50e23f1118a5545c87ff3485d29b8be3a9182b",
+        "channels": [
+          "code"
+        ],
+        "classification": "denylist_capability",
+        "definite": false,
+        "detector": "deny_literal",
+        "directive_context": true,
+        "end": 34,
+        "evidence_sha256": "73367cca262863af33674c4996363e6a718a0ea67be6a47ab76daf7b252d10a4",
+        "line": 1,
+        "line_sha256": "bca24aacd959153a78dba20a8e470aec7bdee957782957b50e89b9b9924db93f",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "rule": "websocket",
+        "source": "sherpa-onnx/csrc/online-recognizer.h",
+        "start": 25,
+        "token": "websocket"
+      }
+    ],
+    "report_sha256": "4d3e2189a8bbeb91bfaf5a3388777d0296f1fa348ebe225762e919c6ebb208f6",
+    "ledger_hash": "9c7da6a2758b8dd756b0b8d7c7091806809a35172fbbea0c7003f663c421e77f",
+    "terminal_hash": "0922508b6553384594d6f1791e86f3aaa42ef7d3f4f1043ebeca81a3d4fdb334"
+  },
+  {
+    "case": "has_include_line",
+    "ending": "lf",
+    "input_sha256": "8136866a40e7374295e92f3acd6a71dc9b316d3d4ba55a2be4b2cd6addbd5cc1",
+    "decision": "denylist_capability",
+    "guard": "no_canonical_header_guard",
+    "calls": 2,
+    "pending_seeds": 7,
+    "pending_internal": 0,
+    "capabilities": [
+      {
+        "body_sha256": "8136866a40e7374295e92f3acd6a71dc9b316d3d4ba55a2be4b2cd6addbd5cc1",
+        "channels": [
+          "code"
+        ],
+        "classification": "denylist_capability",
+        "definite": false,
+        "detector": "deny_literal",
+        "directive_context": true,
+        "end": 34,
+        "evidence_sha256": "cb55bd2acb6871b5f2d90c15b01e20707095c796181a5831868efee3f1fde5db",
+        "line": 1,
+        "line_sha256": "bf1b8be11d789b906761f7ec6c057331a9c2f18e0234490dd84f935c50060c2f",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "rule": "websocket",
+        "source": "sherpa-onnx/csrc/online-recognizer.h",
+        "start": 25,
+        "token": "websocket"
+      }
+    ],
+    "report_sha256": "59335061a03e386e6ee466cf981a97b0952479464b305822a3ba1254fecc2a0b",
+    "ledger_hash": "7d7321ddca0f6d450ee1df5db9d857385baf32e9de25ecc74bc1fc72c7da0426",
+    "terminal_hash": "b657fd3e72b33f9c1e0a476c8db157de730b7e33ebc7869c0375975340afb53d"
+  },
+  {
+    "case": "has_include_line",
+    "ending": "crlf",
+    "input_sha256": "92c2a958af676ef51da76fec5c6a9e0130ee4626ba02b8f4c26a7b09c2f9673a",
+    "decision": "denylist_capability",
+    "guard": "no_canonical_header_guard",
+    "calls": 2,
+    "pending_seeds": 7,
+    "pending_internal": 0,
+    "capabilities": [
+      {
+        "body_sha256": "92c2a958af676ef51da76fec5c6a9e0130ee4626ba02b8f4c26a7b09c2f9673a",
+        "channels": [
+          "code"
+        ],
+        "classification": "denylist_capability",
+        "definite": false,
+        "detector": "deny_literal",
+        "directive_context": true,
+        "end": 34,
+        "evidence_sha256": "edc437ff0ac987c28af86027d7ea28133a22cc9a151fdd7dd44974566188cfa5",
+        "line": 1,
+        "line_sha256": "88f1df8d65bf88049f9e0b7b180963f9f1730ffe1e812d8489ad9cb734f53423",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+        "rule": "websocket",
+        "source": "sherpa-onnx/csrc/online-recognizer.h",
+        "start": 25,
+        "token": "websocket"
+      }
+    ],
+    "report_sha256": "ada53b1616fd15a1915fd6d47b1b1a8eb4f9369860d53f7cdc1f96c8f1d413cc",
+    "ledger_hash": "35c2de53bdafdca8aa8115c260583416bd4540936ebe0298507efdb80737c5fb",
+    "terminal_hash": "7258e04aad628bcd2d050cc4f0fd5b076c5ff6221690fbf496614bd98bb187f2"
+  },
+  {
+    "case": "multiline_directive",
+    "ending": "lf",
+    "input_sha256": "6f8fb2e3fa52bab9bda4373c58732ac8b30f4ce0aef494ac10be312ccc1a6ac2",
+    "decision": "edge_multiline_directive",
+    "guard": "no_canonical_header_guard",
+    "calls": 2,
+    "pending_seeds": 7,
+    "pending_internal": 0,
+    "capabilities": [],
+    "report_sha256": "835d332018bed7abbf5a44e696347e39991acb907019aa18b263ef6665678ef5",
+    "ledger_hash": "cc9ae320cd36841b67adcaad617a898bec593a99a3d6d6029f193ca51f19c9c1",
+    "terminal_hash": "d6327b9bb064fe2edec7f1f1b7580566d7a5d5681f902149d65ab5210eb6c3b5"
+  },
+  {
+    "case": "multiline_directive",
+    "ending": "crlf",
+    "input_sha256": "99da60ca734ca9cf8322a2c081e2d2c243b7cb1507e48406ffffd8faad4bb5da",
+    "decision": "edge_multiline_directive",
+    "guard": "no_canonical_header_guard",
+    "calls": 2,
+    "pending_seeds": 7,
+    "pending_internal": 0,
+    "capabilities": [],
+    "report_sha256": "4a7c0dc21d34e36414b5c7943a02178762cbbd6df3219e70b9e55bc800244533",
+    "ledger_hash": "636d4833d866e1da65bf8ca76e9e16c98fdf00e5fce476a76b6fe318127e2ddb",
+    "terminal_hash": "7a8413966fd864af6e001fb2a7fc61ac41c1a473c42e1d87ac14403b2fd30ea6"
+  }
+]

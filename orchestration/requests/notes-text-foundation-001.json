@@ -1,0 +1,21 @@
+{
+ "executor_idle":true,
+ "checkpoint_reconciliation":{"decision_task_id":"NOTES-HOME-SCOPE-001","from":"CP2","to":"CP3","scope_note":"NOTES-L1/L2/L3限定本地文字先行；CP1人工延期，CP2/CP3整体未通过，Alpha未批准。","evidence":[{"path":"/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/notes-home-redesign-decision-2026-09-10.md","sha256":"59e96dd7624f48efb981d3778f73cb607cdd84ca891c8cf55970b5c765d59728"}]},
+ "contract":{
+  "task_id":"NOTES-TEXT-FOUNDATION-001","owner":"developer","checkpoint":"CP3","stage":"NOTES-L1","assigned_thread_id":"01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+  "goal":"交付真实可用的本地文字新建编辑保存恢复及自动标题闭环，替换启动路径合成原型。",
+  "scope":[
+   "基线main bb20e7e3工作区干净。先读取Leader已验收NOTES-HOME-SCOPE-001及知识库notes-home-redesign-decision-2026-09-10.md全文，依其NOTES-L1完整合同实施。该正式例外允许CP3限定先行，不等待CP2且不宣称CP2通过。",
+   "同单先同步正式决定59e96dd...59728与最新PRD a01ba0fa...185dc到产品doc，最小更新AGENTS.md/doc/README.md四文档；随后直接实现，不只交文档。不改旧静态证据或工具。",
+   "优先现有Android平台SQLite事务，无新依赖。真实Note稳定id/body/title/titleMode/createdAt/updatedAt/revision/sourceType，正式保存原子提交，失败保留草稿/旧正式记录，同id幂等更新。新库为空，不导入旧synthetic常量。",
+   "AUTO按首个非空句或24Unicode码点生成，正文保留原文；非空标题编辑MANUAL，清空回AUTO，恢复自动可撤销。即时更新及异步revision保护、mode跨重启。空白正文不可正式保存。",
+   "独立持久草稿500ms空闲写入、旋转/已提交草稿重建恢复、明确保存中/未保存状态，放弃确认不删正式记录；实际保存成功后才返回列表。最小真实首页列表、编辑器和同id重新打开。",
+   "生产MainActivity不再接假录音/FakeWaveform/合成转写或假保存。语音入口如实暂不可用，不计时波形震动、不请求麦克风。L1真搜索未实现则禁用/不显示，不接旧固定搜索。",
+   "运行现有第一方构建测试。关键持久化/事务/恢复验证必须实际数据库而非fake；无现有Android运行环境如实记录device_unverified，不能宣称强停或UI真机通过。检查已有SDK/cache可读，不下载依赖/镜像。完成报告路径doc/verification/NOTES-TEXT-FOUNDATION-001.md，含可独立复验命令和产物身份。"
+  ],
+  "out_of_scope":["不做L2完整首页搜索或L3图谱、不新增第三方依赖/模型/下载、不ASR/麦克风/云服务/设备安装操作/发布、不读取私人截图正文、不改历史审查工具。"],
+  "acceptance":["正式决定L1五项逐一证据；真实保存/打开/标题/草稿/写入失败可验证，mock不替代持久化。","编译和适当回归测试通过，来源/提交/修改边界清楚；设备未验证明确列出。","主入口没有合成内容或假能力，提供实际可构建APK及路径/哈希（构建条件允许时）。"],
+  "evidence_required":["先四身份ACK，最终RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED、四身份、文件目的、测试命令结果、逐项验收、未验证项、范围偏移检查、Git状态/提交。保留完整报告与最终结果本地文件，Leader主动接收；不重试先前被拒回调。"],
+  "stop_conditions":["只做L1，最长8小时；依赖/权限/实机环境真正缺失报告具体项且继续独立可做部分，不伪造测试。完成等待Leader，不自行启动下一阶段。"]
+ }
+}

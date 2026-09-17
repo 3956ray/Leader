@@ -1,0 +1,12 @@
+{
+  "commit": "8a98e09d1276a17016a4e71f7f7385f6c57e402c",
+  "results": {
+    "tests": 127,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "build_successful": true,
+  "log": "/private/tmp/thinkv2-accessibility-leader-host.log",
+  "sha256": "d1b0e7e6efc280c00771b3edf5043815ad6fe9efc854f31e73cd0cf6edb8c77c"
+}

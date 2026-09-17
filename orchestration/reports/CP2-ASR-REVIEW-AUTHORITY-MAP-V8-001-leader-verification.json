@@ -1,0 +1,64 @@
+{
+  "F_sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+  "K_sha256": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+  "M_sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+  "P_sha256": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc",
+  "RESULT": "PASS",
+  "candidate_imports": [],
+  "commit": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "complete_M_reconstructed": true,
+  "files": [
+    {
+      "bytes": 858,
+      "git_blob": "87ea0460da18cb167bc8c5ebfab113f4a635ea08",
+      "mode": "100644",
+      "path": "M.json",
+      "sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+      "type": "blob"
+    },
+    {
+      "bytes": 1355,
+      "git_blob": "ee44e1bf890b63704d7cbdab1a575af54807ff05",
+      "mode": "100644",
+      "path": "MANIFEST.json",
+      "sha256": "b9a4ef2ec1d75fe532ee53bc7ee7b3569dfef326aae4821641b905720709373a",
+      "type": "blob"
+    },
+    {
+      "bytes": 16003,
+      "git_blob": "cadce225bd59708bceb665b2d50d2f96aafaf68b",
+      "mode": "100644",
+      "path": "PROVENANCE.json",
+      "sha256": "494dd1adb8bf8a1accd93c68defe11a68b363e9920b3bba7d25bfda6244a2a74",
+      "type": "blob"
+    },
+    {
+      "bytes": 4809,
+      "git_blob": "0e31eeb805efc44887f547eda5f1d336603e09bc",
+      "mode": "100644",
+      "path": "REPORT.md",
+      "sha256": "060727f04387a9b731b01d9baf4c417270bc4429912b5d018e24c167191f4655",
+      "type": "blob"
+    },
+    {
+      "bytes": 13806,
+      "git_blob": "b1acdb85b96c8f794a222d11a0a82370e904b158",
+      "mode": "100644",
+      "path": "VERIFICATION.json",
+      "sha256": "3a3e349be0de1f3eee13d3c76441c261dbdcb9867a8864818f24be5bf78335e9",
+      "type": "blob"
+    }
+  ],
+  "leaf_semantics_checked": 13,
+  "manifest_collection_sha256": "fa7f9d1461fefc9d86987a70f7d38fb712f4708530585d0bef3e8d4f6be237cd",
+  "old_git_records": 129527,
+  "old_git_records_sha256": "51cd9034f9420d473e24a606c8e75d3269cae02ff89ea943a0fef0f1244425e4",
+  "output_tree": "e6565de08821d03834196dbb5cec7d784db5d4c0",
+  "parent": "75a9349c2e54d18a46dacddad762e7e669e9fbc2",
+  "pinned_references": 27,
+  "root_tree": "d117867b2d14f047c6fe73530eb04fa0ce4faffc",
+  "scope": "Firstparty derived F/K mapping only; original review and token/time truth inherited from accepted K/P. No A/T/input/N or full package.",
+  "source_pointer_reads": 0,
+  "task_id": "CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001",
+  "worktree_clean": true
+}

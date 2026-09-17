@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "在独立 v3 目录完成第一方获取组件和严格输入协议，以零实际网络的合成端到端测试证明完整执行链具备冻结前验收条件。",
+  "decision": "doc/cp2-acquisition-tool-scope-decision-2026-09-05.md",
+  "decision_sha256": "a26cd6f4f9fe103ba7f39034d72afcf32c0c98819cb8270e40689405991136bd",
+  "allowed_root": "tools/asr_review_acquisition_v3/",
+  "scope": [
+    "先读取已同步正式决定全文、现行PRD、既有精确授权归档、da9279a的README/REPORT与Leader验收报告；只读 v2 第一方源码/合成证据。只在全新 tools/asr_review_acquisition_v3/ 新增第一方代码、schema、合成fixtures、测试、README、报告与证据，不改 v2。",
+    "逐文件记录 v2→v3 reused/modified/new 来源及差异，允许在v3派生代码中调整adapter/controller边界；不得在外部先fetch后伪装synthetic输入。完整重跑原66项行为语义、全部F1–F9和受影响场景。",
+    "实现严格canonical input及原始字节入口，覆盖固定设计commit/tree/28项摘要、固定repository/commit/tree、按序9seed、允许根/type/mode、96文件/1048576解码正文字节、各类独立raw响应与累计预算、denylist、policy/release hash。拒绝重复/未知字段、类型错误、非规范输入、身份/commit→tree绑定错误、truncated!=false和任意URL。",
+    "实现真实形状metadata/commit/tree/blob解析、受限request对象与未来Git Data blob transport；metadata只从输入导入核验，不增加metadata联网endpoint。URL仅由固定host/repository和已授权blob SHA生成，禁止代理/重定向/自动重试，设置连接/读取时限、实际分块读取上限，不信任Content-Length代替计数。",
+    "所有执行只注入完全自建GitHub-like合成响应和替身opener/response；实际socket/DNS/HTTP/代理调用为零。静态检查先于测试；用AST/import审查、audit hook与网络调用陷阱共同核对，传输模块允许标准库网络API代码但不得触发真实I/O。",
+    "metadata输入消费前有身份记录/核验；每个blob传输动作前先持久化授权与before_request检查点。实现metadata raw、blob raw、累计raw、文件数与解码正文五类独立预算。失败时在正文采用、解析或后继授权前停止，保留可重算终态/账本/请求序列。",
+    "完整执行链至少两次独立离线运行并比较规范化证据。合成结果只为simulation_result，source_verdict保持insufficient_evidence。提交单一新目录范围的提交后报告并停止，等待Leader独立验收。"
+  ],
+  "out_of_scope": [
+    "实际网络/DNS/HTTP/代理/外部服务，真实GitHub响应、第三方正文/fixture/依赖、旧corpus/快照/受限制品。",
+    "修改v2或其证据、app/Gradle/产品源码/ASR适配器/构建入口、Leader控制面，下载模型、音频或APK。",
+    "真实allowlist/snapshot/构建输入，冻结release/policy、映射或执行真实获取授权、修改固定身份/seed/限额/denylist/隐私/Checkpoint，任何源码可行或CP2/CP3通过结论。"
+  ],
+  "acceptance": [
+    "v2全部已提交文件SHA未变；v3派生清单和实际diff吻合；原66项测试语义及全部F1–F9重新覆盖通过，无静默删减或跳过。",
+    "严格输入协议和metadata身份链测试含重复字段、未知字段、类型与规范化错误、路径穿越、任意URL、错误commit→tree绑定、truncated值异常、错误mode/type/size/SHA；每项显式停止。",
+    "完整组合入口确实执行生产候选解析/controller/transport方法（底层I/O用替身），不能仅测试另写的mock流程；代码完整到冻结无需补transport/入口/协议。",
+    "非200、跳转、代理、重试、超时、短读/短写、大响应、媒体/JSON/base64/身份错误与连接中断均fail closed；失败后无未授权动作；denylist在非最后seed发现后零后续请求。",
+    "五类预算边界和超限实测；每次动作前授权及检查点持久化可验证，metadata导入身份可复算；P0/人工/可达性/fixed-point缺失不能feasible。",
+    "至少两次独立运行结果、请求序列、ledger/终态规范化字节与哈希一致；可捕获故障有终态，永久不可写等证明限制如实记录。",
+    "标准库依赖审查和运行时陷阱证明实际网络为零；所有fixture自建且不含第三方正文。清单/每文件与集合hash、旧v2未变证明、git范围/check/干净状态齐全。",
+    "单一工具结论 complete_tool_candidate_ready_for_freeze 或 complete_tool_candidate_blocked；前者只供Leader冻结前验收，不能自动冻结/获取。"
+  ],
+  "evidence_required": [
+    "RESULT、工具结论、修改目的/范围、提交父项与工作区、README/schema/模块职责、来源diff map、每文件SHA/集合摘要、v2全量未变证明。",
+    "F1–F9/原66项/新增输入传输预算场景测试矩阵与实际命令/完整日志、两次独立结果、请求序列/账本/终态重算方法和结果、零网络证据。",
+    "明确未验证的真实网络/上游闭包/P0/许可证/模型/真机/音频隐私等；PRD范围检查；建议下一步但不得自行开始；向当前Leader报告后停止。"
+  ],
+  "stop_conditions": [
+    "同步基线或工作区不符、新目录已存在或有未知修改、决定哈希变化时停止，不覆盖。",
+    "需要实际网络/第三方输入/依赖/旧corpus、修改v2、无法列出派生语义差异或完整回归时停止。",
+    "需要改变既有固定身份/seed/范围/限额/denylist/隐私/Checkpoint，允许任意URL/代理/跳转/自动重试/未绑定metadata，或无法动作前持久化授权时停止。",
+    "需要冻结/真实获取/snapshot/产品实现/构建/模型/CP2或CP3时停止；返回blocked而非静默扩展本任务。"
+  ],
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "baseline_commit": "926b06fc3513c60b96e494d7d5c087b2763d6064",
+  "dispatch_allowed": true,
+  "dispatch_prerequisite": "CP2-ACQUISITION-TOOL-DECISION-SYNC-001 accepted; set exact baseline commit and run leader_check before dispatch.",
+  "in_progress_review_findings": [
+    {
+      "id": "RV1",
+      "status": "closed_verified_on_final_commit",
+      "report": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-RV1.md",
+      "summary": "216171 decoded bytes and 12002 edges produce a 2188808-byte terminal unreadable by inspect_run; fix and regression required before acceptance.",
+      "recheck": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001-RV1-recheck/leader-large-edge-result.json"
+    }
+  ],
+  "task_result": "COMPLETE",
+  "accepted_at": "2026-09-06T00:37:15.290764+08:00",
+  "commit": "e4cd300ca50be776b7077f1d7fae783642a696a7",
+  "report": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001.md"
+}

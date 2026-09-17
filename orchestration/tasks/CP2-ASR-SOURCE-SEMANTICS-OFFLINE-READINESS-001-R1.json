@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "formal_decision_sha256": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+  "formal_prd_sha256": "97ff4382c179482a02261b73b85e7e422d200c0dbf6654bac093cc56fc5d373f",
+  "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1",
+  "status": "dispatched",
+  "goal": "Repair only the two independently reproduced v6 lexical/directive boundary failures through conservative rejection within the existing approved offline semantic subset.",
+  "baseline_commit": "e6879d2f0da87b6f070314e98727ed22ef403d04",
+  "previous_task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001",
+  "review_report": "orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-review.json",
+  "scope": [
+    "Read exact Leader review report and counterexamples JSON, latest formal semantics decision and original dispatch. Change only necessary first-party v6 lexical/parser logic, specification, own tests/provenance and regenerated current evidence under tools/asr_review_acquisition_v6/. Parent e6879d2 remains immutable reviewed baseline.",
+    "R1: conservatively detect unproven header-name/comment-like bytes in unsupported directive contexts including authored __has_include angle block/line marker examples. Do not classify those tokens as definite comments; keep active deny and correct priority. Do not add evaluation, macro expansion or general header-expression support. Handle context class conservatively, not one fixture/token whitelist.",
+    "R2: enforce single-physical-line directive contract when block comment spans newline from directive. Authored guard counterexample must fail closed and cannot become canonical/eligible. Also cover comment crossing into a directive and directive boundaries/tails as appropriate; do not implement general preprocessor semantics. Closed multiline ordinary comments outside directives may retain existing authorized behavior.",
+    "Keep all existing153methods and132baseline coverage through shared production entry; add self-authored positive/negative LF/CRLF regression matrix covering both problems through controller with retained full current-file evidence and zero successor queue/authorization/request. Preserve ordinary definite-comment pending, active hard stop, LICENSE routing, priority and bounded failures.",
+    "Run entire baseline+new matrix twice with network guards before workload import, no skips; independent recomputation, deterministic events/edges/channels/hash/pending/ledger/terminal. Regenerate exact file manifest, baseline-to-revised provenance/diff, semantic identity/schema consistency and actual approved static scan/context. Clearly preserve original rejected commit as history and distinguish regenerated evidence.",
+    "Report COMPLETE with source_semantics_candidate_ready_for_freeze or BLOCKED with source_semantics_candidate_blocked; commit only v6. Provide files/purposes, both finding resolutions with evidence, tests/counts/hashes, scope and unverified limits, then notify current Leader and stop."
+  ],
+  "out_of_scope": [
+    "No real LICENSE/header/private/raw corpus/API/metadata/source/old body or raw scanner context reads/copies, no report-pointer traversal, no third-party fixture or remembered real source excerpt as fixture. No network/DNS/live transport, old-run continuation or actual body acquisition.",
+    "No token deletion/renaming, blanket comment ignoring, arbitrary preprocessor evaluation, macro expansion, generated includes, compiler/third-party parser/dependency, enlarged identity/seed/path/type/budget/deny/privacy/checkpoint or edits outside v6.",
+    "No actual freeze/new source authority, manual real capability adjudication, transferable comment exemption, source snapshot/build input, build/install/load/model/inference/integration, source/license adoption, CP2/CP3/Alpha claims.",
+    "No edits outside v6, no freeze/release, no new grammar/exception and no PM decision modification. All original task fixed identity, seeds, roles, limits, denylist, privacy and checkpoint boundaries continue."
+  ],
+  "acceptance": [
+    "Both Leader exact authored counterexamples and related LF/CRLF context cases stop with faithful evidence, correct active/lexical/unsupported priority and zero successor; multiline-directive form never accepted canonical.",
+    "All existing153tests including132baseline plus new regression matrix pass twice with no bypass/deletion/skips; legitimate directly required assertion changes individually explained. Deterministic evidence independently reproducible.",
+    "Only bounded v6 changes with exact prior commit provenance, complete regenerated evidence/manifests/static raw verdict/context and preserved old versions/freezes/source evidence. Leader acceptance remains required."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED and readiness disposition; modified files/purposes, commit/parent, full grammar and exact semantic changes; baseline132 mapping/adaptations plus new matrix.",
+    "Two run commands/counts/outcomes/skips, normalized/artifact/ledger hashes and independent recomputation, network guards, static scanner raw/context/snapshot hashes, full manifest/bundle/policy/semantic schema hashes and old trees unchanged.",
+    "Acceptance criteria evidence, unverified items, scope/PRD check and bounded recommendation only; notify Leader01a071cf-9ac6-7171-b663-749a6e88b0a4 then stop.",
+    "Map each review finding to exact code/test/report evidence and new commit/parent. Explain conservative stop rules and why they stay within approved grammar."
+  ],
+  "stop_conditions": [
+    "Cannot uniquely establish formal strict lexical/guard subset without guessed recovery, arbitrary expressions/macros/third-party parser or enlarging grammar: return blocked and pause source route for product decision.",
+    "Need real source/metadata/fixture/network or extra dependency, any old-version/write or source/privacy/checkpoint change, token-global/manual exception, or cannot preserve active deny/pending no-successor and bounded evidence.",
+    "Unknown working-tree changes, unavailable formal source, or inability to retain baseline coverage/deterministic evidence; stop rather than broadening the task."
+  ],
+  "dispatched_at": "2026-09-06T05:29:15.973176+08:00"
+}

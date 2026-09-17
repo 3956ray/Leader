@@ -1,0 +1,4 @@
+{
+  "reason": "Developer receipt unavailable after initial probe turn 01a07753-66a3-7c62-92c1-789cfcb8e5ff and one receipt-only recovery turn 01a07755-7e51-7890-8899-40977912bd37. Both completed/error=null, but wait_threads has no final and read_thread with outputs returns items=[] for both. No acknowledgment/result can be verified; root cause unknown. Do not resend indefinitely or claim permission denial without evidence.",
+  "next_action": "User should open the developer task and confirm whether a reply is visible or submit a direct receipt request there; alternatively designate a working developer task. Resume the same handshake only after transport is reconciled."
+}

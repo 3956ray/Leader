@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-RUNTIME-SECURITY-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "基于已验收的第三方安全门禁结果，正式决定 CP2 本地 ASR 的下一条安全技术路线，且不得降低隐私、证据或第三方门禁要求。",
+  "decision": "APPROVED",
+  "report": "orchestration/reports/CP2-RUNTIME-SECURITY-DECISION-001.md"
+}

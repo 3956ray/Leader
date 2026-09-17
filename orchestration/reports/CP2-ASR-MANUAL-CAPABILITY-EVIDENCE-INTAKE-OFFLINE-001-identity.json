@@ -1,0 +1,17 @@
+{
+  "RESULT": "PASS",
+  "commit": "534e416b989698589bfb511332b3b0af2de4f185",
+  "parent": "7557ed554025ab7a06ea5f76cc1429915bbbbe06",
+  "tree": "77dae263d772aa8fd35de71ae3927d663fa80e53",
+  "files_verified": 15938,
+  "manifest_sha256": "56d56b5bca85015349406c5e8849bceb1103fe3e264fa6032cbe70347f961a76",
+  "manifest_collection": "cefef6be345e695cf16906f860b7ea76fbbd8277537365f794cd47b631c918ad",
+  "sources_verified": 23,
+  "all_original_test_files_unchanged": true,
+  "bundle_sha256": "fd4c6bffd3597e2ca05ab5518f0a6f6ace008694f4b8655cf4115206d8f2af46",
+  "scan_inputs_verified": 15929,
+  "raw_scan_verdict": "sandbox_only",
+  "scan_finding_contexts_rehashed": 465,
+  "worktree_clean": true,
+  "scope": "Identity, provenance and existing first-party scan evidence only; does not assert semantic acceptance or runtime pass."
+}

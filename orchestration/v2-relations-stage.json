@@ -1,0 +1,34 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "V2-EXPLICIT-RELATIONS-001",
+    "owner": "developer",
+    "checkpoint": "CP3",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Implement durable manual related-note links and an accessible list over the existing real note database.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2, accepted clean baseline186204ee45b2f2664fd8073e53a63fe118e0df04. Approved addendum E8 R1-R5; one CP3 task.",
+      "R1: Manual undirected related edges reference stable real-note IDs in the same SQLite store; stable edge ID, endpoints, manual source and time. Reject self, duplicate unordered pair and missing/recycled endpoints. Explicit create/remove; never duplicate body, infer confirmed edges from category or AI.",
+      "R2: Default note list retained. Accessible related-note list shows current real titles, opens exact record ID and removes edge. Honest empty/search states; usable large font, TalkBack labels and focus; no dependence on dragging/color. Similar titles must open correct IDs.",
+      "R3: Graph optional; omit fake entry/claim if absent. If implemented, same source/counts/filter limits and accessible list fallback.",
+      "R4: Soft delete hides affected relations but preserves identity; restoring original ID restores valid links. Removing edge never deletes note. Title/category edits reflect current data. Atomic failure must not show success; restart consistent. Migration preserves note/draft IDs, text, reminders, calendar and accepted AI provenance.",
+      "R5: Actual Android persistent synthetic-data tests for create/duplicate/remove/rename/delete/restore/restart/accessibility, comparing displayed endpoints to DB. At least1000 notes/5000 relations; bounded pages/rendering and measured device timing. Preserve current local features with appropriate regressions, host constraints/migration/rollback tests, offline build/lint.",
+      "Document relation exclusion in current backup; format expansion remains separate CP8 E9. Prefer current/platform dependencies. New third-party object must pass safety gate."
+    ],
+    "out_of_scope": [
+      "No voice models/controls, real AI provider requests, CP8 backup schema expansion, accounts/sync/payment/public release/Flutter/KMP/cloud ASR or private data/device access. No second developer task."
+    ],
+    "acceptance": [
+      "R1-R5 each backed by implementation and actual synthetic Android evidence, including stable ID navigation, delete/restore, failure atomicity, process restart and bounded1000/5000 dataset. Graph optional status explicit.",
+      "Necessary host/device regressions and offline build/lint pass; migration preserves prior data; no unidentified changes or unreviewed dependency.",
+      "Final clean Git commit, exact product/test APK hashes and reproducible evidence; limitations distinguish emulator engineering from Xiaomi/family and provider/voice gaps."
+    ],
+    "evidence_required": [
+      "ACK exact task/attempt/contract/baseline. RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED; changed files/purpose, test commands/results, R1-R5 evidence matrix, actual accessibility and performance environment, sanitized DB comparisons, manifest hashes, commit/APKs, unverified items, PRD/scope check. Propose next step then stop."
+    ],
+    "stop_conditions": [
+      "Stop after this CP3 delivery and report to commander; never begin CP8 or other checkpoint independently. Preserve unidentified changes.",
+      "Pause affected action for destructive migration, privacy/product boundary change, missing dependency approval or data corruption; report concrete evidence. Raw audio/private data may never appear in fixtures/logs/artifacts."
+    ]
+  }
+}

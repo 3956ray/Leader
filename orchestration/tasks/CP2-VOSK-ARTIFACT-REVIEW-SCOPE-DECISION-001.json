@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-VOSK-ARTIFACT-REVIEW-SCOPE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+  "report_to_thread_id": "01a07655-fdfd-7683-aa57-a4895188d2ff",
+  "goal": "基于已验收Vosk Android固定坐标和既有中文模型目录身份，制定一次可执行的精确制品安全审查范围与用户授权请求，不取得或执行任何制品。",
+  "acceptance_report": "/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-ANDROID-MAVEN-METADATA-001-acceptance.md",
+  "scope": [
+    "只读现有正式决定、三身份记录、Maven报告及Leader验收；不联网。正式结论APPROVED/REVISE/PAUSE。",
+    "固定runtime com.alphacephei:vosk-android:0.3.75 aar与模型vosk-model-small-cn-0.22各自来源/对象名/许可声明。元数据规范推导地址标明未请求，不伪装已验证存在。官方制品SHA当前Unknown，不编造。",
+    "定义下一项最小可执行获取与静态审查合同：精确允许对象、来源/重定向/类型核对、次数和字节上限、隔离目录、实际SHA记录、归档目录与链接/路径风险检查、许可证/NOTICE/native能力/依赖和二进制来源证据、成功/人工复核/阻塞状态及停止。安全检查是静态，不执行安装导入或构建；使用已审可用工具，不能临时安装第三方。",
+    "显式处理POM异常主页（不访问/不信任）、JNA5.18.1声明及未读Gradle metadata；未固定的依赖不自动下载，不将主AAR扫描当完整依赖闭包。可以把依赖与来源缺口保留为后续阻塞，不为当前假装闭合。",
+    "若runtime/model须分项审查，写清串行子步骤与各自裁决，不能同时派两个任务。提供仅覆盖实际下一单精确对象的不含占位符用户授权句；该句是待用户确认，不是已获授权。无需为普通本地文档工作再请求审批。",
+    "仅新增知识库cp2-vosk-artifact-review-scope-decision-实际日期.md及必要PRD/INDEX/LOG。保持历史结果、各隐私/Checkpoint标准。明确开发者执行前须同步最新正式文档并取得精确用户授权。"
+  ],
+  "out_of_scope": [
+    "不联网、下载任何对象/sidecar/metadata、不读新源码、不安装工具、不改think、不构建/加载/运行/推理/集成/真机。",
+    "不放宽原始音频隐私、专名90%、CP1恢复、CP2或CP3/Alpha门槛；不恢复sherpa链或新增候选。"
+  ],
+  "acceptance": [
+    "正式范围与现有身份证据一致，独立对象/预算/停止/静态证据可判断；未知不猜，依赖不隐式授权。",
+    "精确用户请求只覆盖下一审查单，B与C明确分离，不把研究/范围APPROVED当下载或采用授权。",
+    "正式入口一致、只改限定知识文件，产品仓库不变。"
+  ],
+  "evidence_required": [
+    "本PM任务最终答复给RESULT、path/bytes/SHA、下一合同/授权句、检查与未知、Git归属；不要跨任务发送，Leader主动读取。"
+  ],
+  "stop_conditions": [
+    "现有身份不足以形成精确请求则REVISE/PAUSE指出唯一缺口，不自行联网补证。",
+    "完成停止，不通知开发者执行，不进行任何实际取得或后续阶段。"
+  ]
+}

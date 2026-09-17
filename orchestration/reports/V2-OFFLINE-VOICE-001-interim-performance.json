@@ -1,0 +1,39 @@
+{
+  "complete_batch": false,
+  "observed_cases": 4,
+  "rows": [
+    {
+      "samples": 480000,
+      "capturedSamples": 480000,
+      "wallMs": 30236,
+      "releaseToResultMs": 235,
+      "failure": "",
+      "sourceClosed": true
+    },
+    {
+      "samples": 480000,
+      "capturedSamples": 480000,
+      "wallMs": 30119,
+      "releaseToResultMs": 118,
+      "failure": "",
+      "sourceClosed": true
+    },
+    {
+      "samples": 480000,
+      "capturedSamples": 480000,
+      "wallMs": 30119,
+      "releaseToResultMs": 113,
+      "failure": "",
+      "sourceClosed": true
+    },
+    {
+      "samples": 480000,
+      "capturedSamples": 480000,
+      "wallMs": 30110,
+      "releaseToResultMs": 108,
+      "failure": "",
+      "sourceClosed": true
+    }
+  ],
+  "observed_file_sha256": "9caf95bb87d15c2ea935fb482e5858684a5f09d7adc81433cb82b4619d5e6fa0"
+}

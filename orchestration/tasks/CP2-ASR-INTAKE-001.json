@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-INTAKE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "rejected",
+  "goal": "从官方来源固定 CP2 所需的 sherpa-onnx Android 运行时和至少两个中文模型候选的精确身份，并形成下载与静态安全门禁前的可审计清单。",
+  "commit": "9d16bcda0f91af37d26fbbe726aef05022e30062",
+  "report": "orchestration/reports/CP2-ASR-INTAKE-001.md"
+}

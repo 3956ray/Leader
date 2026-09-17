@@ -1,0 +1,14 @@
+{
+  "received_at": "2026-09-16T02:50:35.305029+00:00",
+  "task_id": "V2-OFFLINE-VOICE-001",
+  "RESULT": "BLOCKED",
+  "implementation_status": "PARTIAL",
+  "final_commit": "23ede0961ff83e5637493d7eb5f6c5ecf6b84f59",
+  "result_path": "/private/tmp/thinkv2-V2-OFFLINE-VOICE-001-a20f0582/result.json",
+  "result_sha256": "160f3e0d39ecb2c0af3c4747ce7b6a990660251a3b1ce860e6fc3e76e37f605b",
+  "evidence_manifest_verified_entries": 79,
+  "performance_core_files_verified": 4,
+  "workspace_clean": true,
+  "dev_turn_completed": true,
+  "assessment": "AWAITING_REVIEW. Quality gates failed; no CP2 acceptance. Full app goal remains active."
+}

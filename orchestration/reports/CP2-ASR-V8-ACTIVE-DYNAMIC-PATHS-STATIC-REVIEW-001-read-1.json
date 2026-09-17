@@ -1,0 +1,184 @@
+{
+  "task_id": "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001",
+  "read_at": "2026-09-06T05:56:59.472178+00:00",
+  "script_sha256": "4919c35f23babbe012c7e936c90ffe9b94c964f24d2203f4ab2ec732773e8860",
+  "checked": {
+    "path": "/private/tmp/think-acquisition-v8-quarantine-3_hb53be/source_v8_once/body-0002.json",
+    "bytes": 8579,
+    "sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+    "identity": [
+      16777234,
+      29821547,
+      33152,
+      1,
+      8579,
+      1788672363716396071,
+      1788672363717266490
+    ],
+    "regular_singlelink": true,
+    "mode": "0600",
+    "stable_fd": true,
+    "nofollow": true,
+    "directories": [
+      {
+        "path": "/private/tmp/think-acquisition-v8-quarantine-3_hb53be",
+        "mode": "0700",
+        "nofollow": true
+      },
+      {
+        "path": "/private/tmp/think-acquisition-v8-quarantine-3_hb53be/source_v8_once",
+        "mode": "0700",
+        "nofollow": true
+      }
+    ]
+  },
+  "occurrences": [
+    {
+      "line": 15,
+      "start": 404,
+      "end": 411,
+      "kind": "active",
+      "raw_token": "decoder",
+      "token_sha256": "c9fbd9152b7ff1375f060ed14c4fac7b6be8709b34cd20c2aeaf8962b100c1ad",
+      "carrier": "string_literal",
+      "line_start": 362,
+      "line_end": 422,
+      "physical_line_sha256": "5657993a76acb3a7e3dce0699cbba8b0ff5233f2812cbdae59b80163e5ce7e77",
+      "historical_line_sha256": "dd7e4972a3aaed361c2c4598ad67141c3392667b5714d06fc307243284c27302",
+      "rule": "dynamic_paths",
+      "detector": "path_pattern"
+    },
+    {
+      "line": 110,
+      "start": 3577,
+      "end": 3590,
+      "kind": "active",
+      "raw_token": "hotwords_file",
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+      "carrier": "code",
+      "line_start": 3563,
+      "line_end": 3592,
+      "physical_line_sha256": "f63f83cdbff077b64e972de6dabb605ac2f04201bf1cca417f7e84b47228313d",
+      "historical_line_sha256": "384a9523dc40335bcf8b3a2ac36101d34a7501d90f2f72d67c2acb513a4184cb",
+      "rule": "dynamic_paths",
+      "detector": "path_pattern"
+    },
+    {
+      "line": 143,
+      "start": 4756,
+      "end": 4769,
+      "kind": "active",
+      "raw_token": "hotwords_file",
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+      "carrier": "code",
+      "line_start": 4705,
+      "line_end": 4771,
+      "physical_line_sha256": "d1c7b7ab5b385d80614363bdebf2262d11970babfb711dfabc3d0405a8fa3c41",
+      "historical_line_sha256": "5ed1b84ff24e585e26c7e484b50313670caec60a8f27aaf7fb1ce08fe35125a2",
+      "rule": "dynamic_paths",
+      "detector": "path_pattern"
+    },
+    {
+      "line": 156,
+      "start": 5350,
+      "end": 5363,
+      "kind": "active",
+      "raw_token": "hotwords_file",
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+      "carrier": "code",
+      "line_start": 5342,
+      "line_end": 5380,
+      "physical_line_sha256": "4381a67a1fbb9ea0d0f640fdc5c2202cb0e4c7d5882bc0018fe4b7c5d81d0dc8",
+      "historical_line_sha256": "b000a7b984520b24459fc9537bfb1e39b5fa0f347e76b86e1485bf88691ab892",
+      "rule": "dynamic_paths",
+      "detector": "path_pattern"
+    },
+    {
+      "line": 156,
+      "start": 5364,
+      "end": 5377,
+      "kind": "active",
+      "raw_token": "hotwords_file",
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+      "carrier": "code",
+      "line_start": 5342,
+      "line_end": 5380,
+      "physical_line_sha256": "4381a67a1fbb9ea0d0f640fdc5c2202cb0e4c7d5882bc0018fe4b7c5d81d0dc8",
+      "historical_line_sha256": "b000a7b984520b24459fc9537bfb1e39b5fa0f347e76b86e1485bf88691ab892",
+      "rule": "dynamic_paths",
+      "detector": "path_pattern"
+    },
+    {
+      "line": 64,
+      "start": 2139,
+      "end": 2146,
+      "kind": "new_comment",
+      "raw_token": "decoder",
+      "token_sha256": "c9fbd9152b7ff1375f060ed14c4fac7b6be8709b34cd20c2aeaf8962b100c1ad",
+      "carrier": "line_comment",
+      "line_start": 2097,
+      "line_end": 2171,
+      "physical_line_sha256": "9fd037da6ef494ffba223ebd39de2f8dd06d09d4a3f301b34033d87fc1cc00ed",
+      "historical_line_sha256": "30be15bbe3b0bc93b541b19120a57ca5a0c9b04cd45e04c3183c5c5c9b8d7162",
+      "rule": "dynamic_paths",
+      "detector": "path_pattern"
+    },
+    {
+      "line": 132,
+      "start": 4297,
+      "end": 4310,
+      "kind": "new_comment",
+      "raw_token": "hotwords_file",
+      "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+      "carrier": "line_comment",
+      "line_start": 4290,
+      "line_end": 4312,
+      "physical_line_sha256": "5383a9c0fa36267a2ee41c4dc41f7b4b178d3492302fc23bf794a18e4006dd49",
+      "historical_line_sha256": "b4276d09f49a873f7e08d73501c83445886e4af6b3e7a3e25ed5e4533e39cc8e",
+      "rule": "dynamic_paths",
+      "detector": "path_pattern"
+    }
+  ],
+  "human_visible": [
+    {
+      "line": 15,
+      "start": 362,
+      "end": 422,
+      "sha256": "5657993a76acb3a7e3dce0699cbba8b0ff5233f2812cbdae59b80163e5ce7e77"
+    },
+    {
+      "line": 64,
+      "start": 2097,
+      "end": 2171,
+      "sha256": "9fd037da6ef494ffba223ebd39de2f8dd06d09d4a3f301b34033d87fc1cc00ed"
+    },
+    {
+      "line": 110,
+      "start": 3563,
+      "end": 3592,
+      "sha256": "f63f83cdbff077b64e972de6dabb605ac2f04201bf1cca417f7e84b47228313d"
+    },
+    {
+      "line": 132,
+      "start": 4290,
+      "end": 4312,
+      "sha256": "5383a9c0fa36267a2ee41c4dc41f7b4b178d3492302fc23bf794a18e4006dd49"
+    },
+    {
+      "line": 143,
+      "start": 4705,
+      "end": 4771,
+      "sha256": "d1c7b7ab5b385d80614363bdebf2262d11970babfb711dfabc3d0405a8fa3c41"
+    },
+    {
+      "line": 156,
+      "start": 5342,
+      "end": 5380,
+      "sha256": "4381a67a1fbb9ea0d0f640fdc5c2202cb0e4c7d5882bc0018fe4b7c5d81d0dc8"
+    }
+  ],
+  "other_body_reads": 0,
+  "network_calls": 0,
+  "thirdparty_executed": false,
+  "candidate_scanner_controller_executed": false
+}

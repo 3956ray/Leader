@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-LICENSE-TEXT-ROUTING-REPAIR-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Implement an isolated offline v5 candidate with explicit exact LICENSE/license_text routing, preserving all acquisition controls and unchanged C/C++ parsing behavior.",
+  "scope": [
+    "Read latest approved doc/cp2-license-text-routing-decision-2026-09-06.md and read-only accepted v4 code/schema/test baseline; only first-party and derived reports.",
+    "Create only tools/asr_review_acquisition_v5/ with necessary stdlib code/schema/minimal self-authored fixtures/tests/docs/current evidence; reference old evidence by hash rather than copying historical runs.",
+    "Implement exact path/role contract: LICENSE with license_text uses inert text review, never C/C++ lex_lines/include/dependency expansion. Only explicitly typed allowed C/C++ source/header may use unchanged C/C++ parser. Unknown roles/path-role conflicts/near LICENSE names fail before requests.",
+    "Preserve source identity/path/mode/type/budgets, durable pre-request authorization, UTF8/NUL/body preservation/hashes, scanner requirement, manual license review status, ledger/terminal and filesystem protections. Role/schema/policy identity changes strictly necessary for the approved typed contract must be explicit in provenance; no hidden parser or scope changes.",
+    "Run original112 behavior regressions and all new tests twice using self-authored responses and substitute transport only; document any necessary fixture/schema adaptation without weakening original checks. Cover prose apostrophes/quotes/URLs/Markdown/multilingual text and synthetic include-like text as inert license data; near paths/role conflicts/unknown roles denied before requests.",
+    "Separate readiness cases: typed-routing bug, supported-behavior bug, intentional C/C++ stop. Existing include guards/conditionals/macros/generated/unknown directives/continuations remain deterministic stops without successor fetch.",
+    "Run approved static scanner on first-party candidate/self-authored fixtures and retain actual report/hash/context. Runtime scan or manual review not yet performed must be recorded as pending, never fabricated as passed or accepted. Deliver smallest provenance/diff/test map/manifests plus two-run evidence and fixed bundle, commit and report to Leader."
+  ],
+  "out_of_scope": [
+    "No writes outside v5, old v2/v3/v4/freezes/runs/App/product docs changes or historic evidence copying.",
+    "No real LICENSE/API/metadata/source/corpus/snapshot/third-party fixture reads, following raw-data pointers, network/live transport/new body request, new dependency/build/model/integration.",
+    "No extension guessing/content sniffing/casefold/approximate license type matching, new allowed file types/paths/seeds/budgets/denylist relaxation, or C/C++ lexical/preprocessor semantic expansion.",
+    "No actual freeze, fresh-source authorization or second real acquisition. Prior actual run remains terminated; future fetching requires new explicit Product Lead authorization."
+  ],
+  "acceptance": [
+    "Exact LICENSE+license_text is inert and creates no C++ edges; role/path/unknown/near-match failures precede authorization.",
+    "All controls survive; scanner/manual-license-review status is explicit and truthful; no route or low scan score creates source feasible/license adoption approval.",
+    "Original112 plus new regressions pass twice without skips or weakened assertions; normalized output/request/ledger/terminal evidence byte-identical; zero actual network and stdlib only.",
+    "C++ parser supported behavior unchanged; expected-stop fixtures fail closed without successor request and are labelled intentional unsupported forms, not source infeasibility.",
+    "Only v5 changed with clear provenance/file hashes and old-release identities unchanged; deliver license_text_routing_candidate_ready_for_freeze or license_text_routing_candidate_blocked, subject to independent Leader acceptance."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED; file purposes/commit-parent; original112+new mapping; commands/two-run records/hash/static scan; role contract and exact changed components; per-criterion evidence, unverified items and scope/PRD check.",
+    "Notify current Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4 then stop; no next task."
+  ],
+  "stop_conditions": [
+    "Need real third-party bytes/fixtures/network/extra dependency or old-run reuse.",
+    "Need change fixed source identity/9seeds/96files1MiB/denylist/privacy/checkpoints or expand C++ semantics.",
+    "Unable to preserve pre-request role/control checks, honest scanner/manual review state, or complete baseline regressions within the approved minimal scope."
+  ],
+  "baseline_commit": "f347260f8afc24a22970cead9740c5b6792d0527",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "formal_decision_sha256": "27789c9bd35e6e452de70c21b637fc496d8ac17902cda075a98af81c7006aa75",
+  "dispatched_at": "2026-09-06T02:41:28.634573+08:00",
+  "result_commit": "a60ced8861f4a9fd4716aa65866a90a861978989",
+  "accepted_at": "2026-09-06T03:14:38.089071+08:00",
+  "task_result": "COMPLETE",
+  "commit": "a60ced8861f4a9fd4716aa65866a90a861978989",
+  "report": "orchestration/reports/CP2-ASR-LICENSE-TEXT-ROUTING-REPAIR-001.md",
+  "report_sha256": "d9b8ba069a105eec3b23d14bc97f8ea833aac83ec5831842c8461006f959b0c1"
+}

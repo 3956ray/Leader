@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "将已验收时间无损表示正式决定及最新PRD逐字节同步到产品仓库，并仅更新三个开发入口说明，使独立v8下一任务和权限边界明确一致。",
+  "baseline_commit": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "formal_decision_source": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-review-timestamp-representation-decision-2026-09-06.md",
+  "formal_decision_sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33",
+  "formal_prd_source": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+  "formal_prd_sha256": "ca6477c0bb4e40913be6861b5299ae4b0121650552da3aa1cd4acbd46c91528f",
+  "leader_acceptance_report": "orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-001-acceptance.json",
+  "leader_acceptance_sha256": "67b9d877666d72344b12da67c4ebde472fdfd0558ecec8967dbb1c92aaa2c391",
+  "scope": [
+    "恰好五文件：逐字节复制正式决定到doc/cp2-review-timestamp-representation-decision-2026-09-06.md，PRD到doc/prd-v0.1-2026-09-04.md；仅另改AGENTS.md、doc/README.md、doc/development-guide-v0.1-2026-09-04.md的当前状态/优先级/链接/下一单与授权顺序。不要修改KB。",
+    "入口记录v7R1 C443bbb5已验收167tests1210outcomes，原报告与表示双身份/历史0600和Git100644修复完成；K前置精确时间检查停止，无实际K/F/M/A/T/N。v7仅自建离线接受保持只读，不能用于真实映射。最新APPROVED仅独立v8无损时间表示；旧决定保留历史身份，不得覆盖当前范围。",
+    "明确raw逐byte保留、合法Gregorian/1..6fraction/显式offset、无损UTC/precision/offset/signedepochmicroseconds、raw/UTC独立hash及完整representation身份；等时异串不可替代K承诺。representation-v2及受影响v8authoritydomain隔离旧版本，H/R原身份不变。具体规范以原样正式副本为准，入口不另造规则。",
+    "本次只同步文档不创建v8；本次验收后唯一下一单CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001由Leader另发，167methods1210outcomes与158最初基线+新matrix双跑/独立复算。普通可逆离线已有持续授权，不需用户重复批准；新C独立接受后再另任务K→F→M→新用户A→T/N。不得把本次文档同步当新C/K批准。",
+    "核对exactcopyhash/五文件当前语义/本地链接存在/whitespace/Git边界，原tools/历史freeze-run/app/gradle不变；文档任务无需测试/scanner/build。提交恰好五文件，报告后停止并通知Leader。"
+  ],
+  "out_of_scope": [
+    "不改代码/schema/tests/旧记录，不创建v8或真实R转换/K/F/M/A/T/input/N，不读取真实source/header/LICENSE/private/body/rawscannercontext/API/metadata或沿原文指针读取，无网络/新获取/依赖/构建/模型/设备。",
+    "不放宽其它authority/occurrence/角色/预算/权限/硬停止/隐私/三步路径/CP1和ConformerDeferred/CP2未过/CP3Alpha未批准；不把既有block/manual_review改成采用批准。"
+  ],
+  "acceptance": [
+    "五文件范围精确、两份正式副本exactSHA、三个入口状态/优先级/链接与正式决定一致；旧代码/证据不变，postcommitclean。",
+    "无v8代码或测试提前执行、无实际mapping/acquisition，完整报告承认未验证的未来候选及设备/音频/源码门槛。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED；五paths用途/bytes/SHA、commitparent、Git/链接/whitespace检查、旧trees未变和未验证项；建议下一单但不执行，完成通知Leader并停止。"
+  ],
+  "stop_conditions": [
+    "未知工作区修改、formalhash漂移/缺失或合同矛盾、需要第六文件/代码/真实数据/网络：停止报告，不静默扩项。"
+  ],
+  "prepared_at": "2026-09-06T08:54:40.882619+08:00",
+  "dispatched_at": "2026-09-06T08:55:38.850764+08:00",
+  "accepted_at": "2026-09-06T09:02:20.364476+08:00",
+  "acceptance_report": "orchestration/reports/CP2-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-SYNC-001-acceptance.json",
+  "acceptance_sha256": "9225fdbfc75549219cca0eb8551402185b56153026b34431a5cf322e5017c316",
+  "accepted_commit": "4e853863e1bf0a68fbf8061767803797947eeec2"
+}

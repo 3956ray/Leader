@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001",
+  "owner": "product_manager",
+  "accountable_owner": "leader",
+  "checkpoint": "CP2",
+  "status": "completed",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "report_to_thread_id": "01a071cf-9ac6-7171-b663-749a6e88b0a4",
+  "prepared_at": "2026-09-06T09:17:23.314539+00:00",
+  "goal": "在最多18个官方页面预算内比较3至5个非sherpa的Android本地离线中文ASR候选，形成证据卡、12项矩阵和至多两个未来独立安全intake建议。",
+  "formal_sources": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-hotwords-chain-termination-route-decision-2026-09-06.md",
+      "bytes": 13982,
+      "sha256": "0d639a27ff661ef0106708810f817a2578400c7840e2b13825f9b1ebbc69ef2e"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 72021,
+      "sha256": "abcbd91a45146fca75d53509031bdf0b38318e956cd67f41f057de8118cde030"
+    }
+  ],
+  "scope": [
+    "产品经理实际执行，Leader负责调度/验收，developeridle。只读取官方公开产品/项目docs、官方仓库README/LICENSE/release metadata/Android平台文档及已验收派生产品边界，不读候选源码文件/源码树/private/corpus，不下载制品。现有普通只读调研授权充足，不为官方页面重复询问用户。",
+    "3-5个非sherpa候选，每个最多3官方页面，加最多3跨候选官方页面，总最多18。开始即维护URL预算台账：每个实际打开或用于事实结论的官方页面唯一ID、URL、候选/跨候选归属、访问日期、文档/版本/维护者来源。搜索结果只用于定位；若用某官方结果摘要支持事实，该页面也计入预算。重定向到同一规范页去重，不能借跨候选分类绕开每候选预算。不要进行无上限crawl或自动多页全文抽取。",
+    "按正式决定12标准逐项比较：本地offline及音频upload要求；中文及streaming/batch；Android/arm64/CPU；内存PCM/stream和是否强制filepath；原音频disk/upload/log/release可控性；runtime/model大小和设备最低要求；runtime/modellicense商业使用和来源分别；维护者/发布版本渠道；词表/热词/phrasebias/post-correction；小米15flightmode30/90秒性能90秒20次稳定性及隐私可验证性；独立可复现供应链gate；接入复杂度与未知。",
+    "每候选Evidence Card、比较矩阵、结论memo、词表状态缺口，均直接引用官方页面和支持的具体事实；区分Observed/Inferred/Unknown及厂商文档宣称与实测。无官方证据的arm64/CPU/PCM/隐私/热词/硬件性能不能猜测补齐，不能用社区stars/营销转载/模型输出当核心证据。README中的命令只是文档，不运行。",
+    "shortlist最多2且必须官方证据覆盖中文、Android调用、本地offline、可识别runtime/model许可与来源、不强制原音频云传；缺项不入选。预算内少于2符合硬条件时输出research_insufficient，不以只有1候选宣称sufficient。推荐只用于下一次独立产品决定，不自动开始intake或采用。",
+    "只输出KB中的新研究Evidence Cards、矩阵（可JSON/Markdown）和结论memo及必要INDEX/LOG；保留所有既有知识库修改，PRD/路线决定不在研究中自行更改。不得修改think。最终提交页面budget ledger、每项证据/日期/URL、结果路径/bytes/SHA、检查及未验证后停止，直接回报当前Leader01a071cf-9ac6-7171-b663-749a6e88b0a4，不发旧Leader。"
+  ],
+  "out_of_scope": [
+    "不clone/download/save源码归档/源码文件/模型/AAR/APK/库/二进制/样本/installer；不读private/raw/corpus/旧scannercontext，不安装工具或依赖，不运行任何候选或文档命令/构建/load/inference/benchmark/测试。",
+    "不恢复sherpa热词链或用改名包装继续，不把sherpa列为候选，不形成源码实现清单/脚本/补丁/构建输入。",
+    "不新增candidateapproval/安全intake/模型取得/实机测试/集成/v9/clearance/CP2或CP3通过。"
+  ],
+  "acceptance": [
+    "3-5候选证据卡和12项矩阵完整，官方页面台账满足每候选3+跨候选3/总18预算。",
+    "至多2建议均满足全部硬筛选且证据可复核；不足2则research_insufficient；未知/推断/文档宣称与实测准确区分。",
+    "正文/制品/执行等禁区未越界；任何必须源码/下载/登录/额外条款/运行才判断的候选停止并记录。",
+    "PRD隐私/三步/设备/性能/词表90%/Checkpoint门槛保留；新研究文档身份/修改归属和产品HEAD/clean可验。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED与research_sufficient_for_security_intake_decision或research_insufficient；全部报告路径/bytes/SHA。",
+    "官方URL台账含18页预算计数、按候选分组、访问日期、官方归属依据；矩阵每结论sourceID/Unknown以及hardfilter判定。",
+    "未验证清单、范围/权限/依赖/下载/执行为零声明与检查，Git/KB修改归属，直接通知当前Leader并停止。"
+  ],
+  "stop_conditions": [
+    "某候选需要源码/制品/download/登录/接受额外条款/运行才能继续判断就停止该候选，记录Unknown/排除原因，不越界取证。",
+    "每候选3页/跨候选3页/总18达到上限停止打开新页；不足两个合格候选输出research_insufficient并回产品门。",
+    "第三源码链、隐私弱化、采用/执行/产品实现或隐藏未知均不允许。"
+  ],
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-HOTWORDS-CHAIN-TERMINATION-DECISION-SYNC-001-acceptance.json",
+    "bytes": 1275,
+    "sha256": "5d15e1a418e113db001104bddaf4a5b433015292548f51b2cd9e82ce96cc8776"
+  },
+  "baseline_commit": "e89da0e5e119293f6af73ce10ff4e0159f995c4b",
+  "product_formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-hotwords-chain-termination-route-decision-2026-09-06.md",
+    "bytes": 13982,
+    "sha256": "0d639a27ff661ef0106708810f817a2578400c7840e2b13825f9b1ebbc69ef2e"
+  },
+  "dispatched_at": "2026-09-06T09:20:49.755518+00:00",
+  "completed_at": "2026-09-06T09:42:56.866496+00:00",
+  "result": "COMPLETE",
+  "reported_research_outcome": "research_sufficient_for_security_intake_decision"
+}

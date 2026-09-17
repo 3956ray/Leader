@@ -1,0 +1,1 @@
+{"verdict":"accepted","checks":{"user_decision_alignment":true,"identity":true,"links":true,"stage_boundaries":true,"privacy_checkpoint_preserved":true,"no_product_change":true},"evidence":[{"path":"/Users/orderly_ray/Leader/orchestration/reports/CP2-SIMPLIFIED-STAGED-REVIEW-DECISION-001-acceptance.md","sha256":"52cfb96c6e1290dcf8a131e78f169a959abf30f694f67e7b527e6a49456390f5"}]}

@@ -1,0 +1,13 @@
+{
+  "config_sha256": "dc81492e82016c969329b7db8bc883639a97186012d50f1c7e4a6b5780bfca40",
+  "app_apk_sha256": "7e43364910b37989a5898e760f868387beb735c948fba183bc8d6e39667c34a1",
+  "baseline_apk": "/private/tmp/thinkv2-V2-OFFLINE-VOICE-001-a20f0582/final-app-debug.apk",
+  "changed_entries": [
+    "classes3.dex",
+    "classes4.dex",
+    "classes5.dex",
+    "classes6.dex"
+  ],
+  "same_assets_native": true,
+  "scope": "No candidate-named assets/native in normal app. Dex bytes differ; class/dependency evidence requested. Not claiming whole APK equality."
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001",
+  "RESULT": "BLOCKED_CONFIRMED",
+  "reviewed_at": "2026-09-06T10:08:58.628294+08:00",
+  "candidate_commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "reason": "Permitted derived target objects contain rule and intervals but no raw_token. Current C detector lowercases text; rule and token length cannot establish original case. Developer correctly stopped without outputs.",
+  "evidence": {
+    "original_R_sha256": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+    "verification_sha256": "ca492d93813eb41dc589dbf868c49a8d423c8611d8ee180265c388ed3cf7c102",
+    "worktree_clean": true,
+    "K_directory_absent": true
+  },
+  "next": "Leader separate read-only firstparty verification-script provenance audit; no script execution or private/source reads, no K acceptance."
+}

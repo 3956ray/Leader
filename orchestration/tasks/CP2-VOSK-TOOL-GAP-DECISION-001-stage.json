@@ -1,0 +1,15 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "CP2-VOSK-TOOL-GAP-DECISION-001",
+    "owner": "product_manager",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+    "goal": "针对已证实现有扫描器不满足静态审查合同的前置缺口，正式裁定一项有限可执行补救范围，避免重复下载或开放式工具工程。",
+    "scope": ["只读Leader reports/CP2-VOSK-PREFLIGHT-SCOPE-ESCALATION.md、隔离reports/tool-preflight.md及已批准范围；不联网。", "APPROVED/REVISE/PAUSE落地一个最小下一合同：可选有限第一方离线工具补齐，或明确分层静态覆盖方案；资源保护和未知必须真实可落实，不把跳过二进制说成安全通过，不改变隐私/Checkpoint。", "若允许第一方修复，限定一个有界产物/模块和合成测试，达到可审查条件后停止，不自动获取制品、不另造逐小步授权链。若修改实际取得或审查约束，说明已有精确授权适用与不适用边界，不代用户批准改变的部分。", "仅新增知识库cp2-vosk-tool-gap-decision-实际日期.md及必要PRD/INDEX/LOG。保留原零GET失败与对象授权，不改think。"],
+    "out_of_scope": ["不下载/读制品、不实施工具、不安装、不联网、不执行/构建/集成，不恢复sherpa链，不扩大到第二候选或取消采用门blocked。"],
+    "acceptance": ["单一正式选择及下一任务目标、边界、预算、可验收证据和停止条件齐全；不把用户拖回普通工程审批。", "旧阻塞保持历史，隐私和CP2门槛不变，授权范围解释明确。"],
+    "evidence_required": ["身份绑定ACK与最终RESULT，正式文件path/bytes/SHA、具体下一合同、检查/未知；按用户要求完成后主动回调Leader，仅结果与证据索引，拒绝则记录不绕过。"],
+    "stop_conditions": ["需要更多事实则说明最小缺口，不自行联网；无法形成有界可执行路线则PAUSE。完成回报后停止，不自行派dev。"]
+  }
+}

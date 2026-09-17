@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-UI-001",
+  "owner": "developer",
+  "checkpoint": "CP1",
+  "status": "accepted",
+  "goal": "实现使用合成内容的 Compose 三步语音记录交互原型，让首页按住说话、左滑取消、转写确认和保存形成可运行且可测试的最小闭环。",
+  "commit": "ac5ad12921e2dc7f9fee0e5437aef75b0a00e6ac",
+  "report": "orchestration/reports/CP1-UI-001.md"
+}

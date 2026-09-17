@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP0-RECONCILE-001",
+  "checkpoint": "CP0",
+  "status": "accepted",
+  "goal": "只读核对 CP0、CP1、CP2 的现有证据，并说明当前 Android 骨架与未提交审查文档的性质，以恢复可信的 Checkpoint 顺序。",
+  "acceptance_basis": "开发者任务两次完成但未返回可读取报告；Leader 随后直接读取正式文档、提交历史、工作区状态和安全审查，完成独立验收。",
+  "report": "orchestration/reports/CP0-RECONCILE-001.md"
+}
+

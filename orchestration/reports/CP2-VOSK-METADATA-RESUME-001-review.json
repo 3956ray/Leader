@@ -1,0 +1,5 @@
+{
+  "verdict":"accepted",
+  "checks":{"formal_report_identity":true,"retained_evidence_hashes":true,"fixed_versions_and_text_scope":true,"budget_preserves_old_attempt":true,"metadata_and_license_claims_supported":true,"unknowns_and_runtime_blockers_explicit":true,"product_worktree_unchanged":true,"verification_proportionate":true},
+  "evidence":[{"path":"/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-METADATA-RESUME-001-verification.md","sha256":"715c9167524ad37b9b25ada3f2a0ba7519f5c5247f2a910792be52cdf0f337d3"},{"path":"/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-vosk-dependency-license-metadata-resumed-2026-09-08.md","sha256":"e55ebdf23380fa03a5b7b917cbc699482f79fc689a5a8768708d8a0b09e3580c"}]
+}

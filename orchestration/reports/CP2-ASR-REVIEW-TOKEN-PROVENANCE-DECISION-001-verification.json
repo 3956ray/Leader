@@ -1,0 +1,76 @@
+{
+  "RESULT": "PASS",
+  "formal_files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-token-provenance-01.md",
+      "bytes": 3519,
+      "sha256": "e2a57b91319fc930d922c5ae3eb0a684892d669e4a548333296e1c71b17f007d"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-review-token-provenance-decision-2026-09-06.md",
+      "bytes": 9458,
+      "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 63461,
+      "sha256": "3cce758ccff443bdb7ea9368f3c585e4179653228c5071b0353b3991ce99ded7"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "bytes": 9746,
+      "sha256": "4a3b35a625316773a8460ea1da778de316487fe3f13ce6328430358ab084175a"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "bytes": 37018,
+      "sha256": "fbbfc7080936162bf5e61372242e47414e7c7fae8f90f6a255ff0de9831a633b"
+    }
+  ],
+  "local_links_verified": 103,
+  "source_pins_verified": 10,
+  "prd_change_hunks": [
+    {
+      "operation": "replace",
+      "old_start": 5,
+      "old_end": 5,
+      "new_start": 5,
+      "new_end": 5
+    },
+    {
+      "operation": "replace",
+      "old_start": 7,
+      "old_end": 7,
+      "new_start": 7,
+      "new_end": 7
+    },
+    {
+      "operation": "replace",
+      "old_start": 12,
+      "old_end": 13,
+      "new_start": 12,
+      "new_end": 13
+    },
+    {
+      "operation": "insert",
+      "old_start": 49,
+      "old_end": 48,
+      "new_start": 49,
+      "new_end": 50
+    },
+    {
+      "operation": "replace",
+      "old_start": 774,
+      "old_end": 774,
+      "new_start": 776,
+      "new_end": 776
+    }
+  ],
+  "source_id_unique": true,
+  "knowledge_lint": "missing script previously established; PM LOG accurately records partial, manual checks performed",
+  "product_head": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "product_worktree_clean": true,
+  "KB_scope": "Five task files verified; unrelated pre-existing uncommitted/untracked KB state not attributed or changed",
+  "authority_review": "Original exact request/approval permit same retained object/two hits offline; no once-onlyread term. New product decision narrows to two existing slices and preserves all acquisition prohibitions; no new user permission needed within scope.",
+  "scope_review": "Only P evidencecompletion with separate acceptance; old R/time/decision/v8/schema unchanged; no K/F/M/A/T/N/newacquisition/CP2approval."
+}

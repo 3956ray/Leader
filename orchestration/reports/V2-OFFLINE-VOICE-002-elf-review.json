@@ -1,0 +1,47 @@
+{
+  "aar_sha256": "633c24321e06b1fe79feafa03ea16cbc0f8a286641e2da3559bac91bdb13bd96",
+  "libraries": [
+    {
+      "file": "jni/arm64-v8a/libonnxruntime.so",
+      "machine": 183,
+      "load_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ],
+      "sha256": "33847ad43bffe204699fd4a27f7f3603452a8cdaf2f9a44983a0bc31ffcf2da1"
+    },
+    {
+      "file": "jni/arm64-v8a/libsherpa-onnx-c-api.so",
+      "machine": 183,
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "sha256": "c85e2382e2ca12b0513826be926eaccfea896b4cbf568182e287671ba526f80d"
+    },
+    {
+      "file": "jni/arm64-v8a/libsherpa-onnx-cxx-api.so",
+      "machine": 183,
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "sha256": "5eabb2bcf5a8af66aeab37431c09fab4a9c65cdebf02bd7e50f8c589044bd70e"
+    },
+    {
+      "file": "jni/arm64-v8a/libsherpa-onnx-jni.so",
+      "machine": 183,
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "sha256": "3c6492ea91ea68fd3b72b9495efdde6dd913f6b58c387e3b07389cf335f4d26f"
+    }
+  ],
+  "limits": "ELF metadata only. Scanner skipped12 large members; source/runtime audio-path and license decisions remain separate."
+}

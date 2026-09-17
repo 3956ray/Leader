@@ -1,0 +1,77 @@
+{
+  "task_id": "CP2-ASR-REVIEW-TOKEN-PROVENANCE-AUDIT-001",
+  "RESULT": "INSUFFICIENT_DERIVED_EVIDENCE",
+  "reviewed_at": "2026-09-06T10:11:01.934009+08:00",
+  "source_references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001.json",
+      "bytes": 7051,
+      "sha256": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001-verification.json",
+      "bytes": 3067,
+      "sha256": "ca492d93813eb41dc589dbf868c49a8d423c8611d8ee180265c388ed3cf7c102"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001-verify.py",
+      "bytes": 3340,
+      "sha256": "923d0669081f5ad7d2d6c35dace85c5c34b8ce3fbf5443a777f0292179fbe3e9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001.json",
+      "bytes": 3588,
+      "sha256": "c66a9fe77a77e15ca6dfa8f958f47ac1de4e1816de52779add3b9eee497163c7"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001-approved.json",
+      "bytes": 1784,
+      "sha256": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2"
+    }
+  ],
+  "static_script_audit": {
+    "script_not_executed_or_imported": true,
+    "line23": "segment.lower().index/count finds case-insensitive literal; no original token extraction or recorded raw_token",
+    "line24": "records interval and rule, no original token bytes",
+    "line25": "writes verification report subsequently pinned by original R",
+    "conclusion": "Historical script/results do not recover exact original token case. Neither normalized rule nor chat summary can substitute for original bytes."
+  },
+  "authored_semantics_probe": {
+    "case_variants": 512,
+    "all_have_same_lowercase_match_and_length": true,
+    "claim_limit": "Demonstrates noninjective matching only; not asserting variants have equal body/line hashes or are actual source."
+  },
+  "affected_targets": [
+    {
+      "line": 57,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1865,
+      "line_byte_end": 1918,
+      "token_byte_start": 1893,
+      "token_byte_end": 1902,
+      "rule": "websocket"
+    },
+    {
+      "line": 60,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1944,
+      "line_byte_end": 1997,
+      "token_byte_start": 1972,
+      "token_byte_end": 1981,
+      "rule": "websocket"
+    }
+  ],
+  "authorization_distinction": "Original approved offline review names this exact retained envelope/header and two hits. Its written scope does not specify a once-only read; prohibition on old acquisition authority concerns acquisition. Current K task and formal derived-only stage still do not allow private-body access. Ask PM to decide a separate exact evidence-completion task under persistent existing scope, without inventing new acquisition authority or automatic user-confirmation gate.",
+  "candidate_unchanged": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "real_body_reads_this_audit": 0,
+  "network_calls": 0,
+  "operational_effect": {
+    "K_created": false,
+    "original_R_modified": false,
+    "pending_cleared": false,
+    "new_acquisition_authorized": false
+  },
+  "next": "PRODUCT_DECISION_REQUIRED: minimal exact-byte provenance completion for already-reviewed two occurrences, or PAUSE; do not weaken schema or rebuild candidate."
+}

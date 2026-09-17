@@ -1,0 +1,103 @@
+{
+  "task_id": "CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001",
+  "RESULT": "COMPLETE",
+  "review_status": "ACCEPTED_BY_LEADER",
+  "reviewed_at": "2026-09-06T06:48:22.579140+08:00",
+  "reviewer": "Leader",
+  "authorization_record": "orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001-approved.json",
+  "authorization_record_sha256": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2",
+  "request_sha256": "c66a9fe77a77e15ca6dfa8f958f47ac1de4e1816de52779add3b9eee497163c7",
+  "formal_decision_sha256": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+  "freeze_commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+  "binding": {
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "source_path": "sherpa-onnx/csrc/online-recognizer.h",
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "body_bytes": 7939,
+    "git_blob_sha1": "a4559f413cae739f055509a01d5684879e4a626c",
+    "private_envelope": "/private/tmp/think-asr-v5-acquisition-hqssnorn/run/body-0002.json",
+    "envelope_sha256": "e112db3f6b7a38060ddbb320b7fdf892ec0aeaaaae95c676880106456823e40d",
+    "envelope_bytes": 8579,
+    "required_file_mode": "0600",
+    "required_parent_modes": "0700",
+    "required_type": "regular single-link with no symlink parent",
+    "rule": "websocket",
+    "targets": [
+      {
+        "line": 57,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      },
+      {
+        "line": 60,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      }
+    ],
+    "historical_line_hash_domain": "SHA256(UTF8 text line from decoded body.splitlines(), without line terminator); do not confuse with v6 physical-line-including-terminator hash. Review may additionally record original byte ranges and physical-line hashes after authorization, preserving original pin."
+  },
+  "verification_report_sha256": "ca492d93813eb41dc589dbf868c49a8d423c8611d8ee180265c388ed3cf7c102",
+  "verification_script_sha256": "923d0669081f5ad7d2d6c35dace85c5c34b8ce3fbf5443a777f0292179fbe3e9",
+  "targets": [
+    {
+      "line": 57,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "rule": "websocket",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1865,
+      "line_byte_end": 1918,
+      "token_byte_start": 1893,
+      "token_byte_end": 1902,
+      "line_starts_with_comment_marker": true,
+      "ends_with_continuation": false,
+      "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+      "source_path": "sherpa-onnx/csrc/online-recognizer.h",
+      "decision": "comment_only_nonoperative_for_this_body",
+      "reason": "Exact websocket occurrence is in a terminated ordinary documentation line comment. It names the server consumer of the following boolean field; the comment bytes themselves do not execute operations. This finding does not clear that field, referenced implementation, entire file or runtime."
+    },
+    {
+      "line": 60,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "rule": "websocket",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1944,
+      "line_byte_end": 1997,
+      "token_byte_start": 1972,
+      "token_byte_end": 1981,
+      "line_starts_with_comment_marker": true,
+      "ends_with_continuation": false,
+      "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+      "source_path": "sherpa-onnx/csrc/online-recognizer.h",
+      "decision": "comment_only_nonoperative_for_this_body",
+      "reason": "Exact websocket occurrence is in a terminated ordinary documentation line comment. It names the server consumer of the following boolean field; the comment bytes themselves do not execute operations. This finding does not clear that field, referenced implementation, entire file or runtime."
+    }
+  ],
+  "manual_context_review": {
+    "read_scope": "One authorized envelope only. Manually inspected same-file opening through line82; no other body, original API/metadata or dependent source opened.",
+    "established": "Both target tokens are in distinct triple-slash line comments within a result struct. Preceding inspected context establishes normal code/comment state, without enclosing string or unfinished block comment. Neither target line ends in a continuation. Both comments identify a server-side consumer of immediately neighboring boolean fields. They are documentation bytes, not include operands, directives, strings/chars, executable expressions or network operations.",
+    "not_established": "The neighboring fields remain active data declarations and their server-related purpose is a relevant clue. This review does not establish absence/unreachability of networking elsewhere, approve those fields as the minimal API, or adjudicate referenced server implementation. No following source pointer was opened."
+  },
+  "operational_effect": {
+    "candidate_or_freeze_modified": false,
+    "pending_cleared": false,
+    "pending_override_interface_exists": false,
+    "global_rule_exception": false,
+    "new_acquisition_authorized": false,
+    "original_run_resumed": false,
+    "source_verdict": "insufficient_evidence",
+    "scanner_status": "pending",
+    "license_review_status": "manual_review"
+  },
+  "verification_performed": [
+    "Bounded no-follow descriptor-relative read through verified directory chain; one regularsinglelink0600 file and private0700 ancestors.",
+    "Envelope size/SHA, body7939bytes/UTF8/NUL/SHA256/Gitblob and both historical line hashes verified before interpretation. Physical LF line hashes and original byte intervals separately bound.",
+    "Manual lexical/context interpretation of just the authorized targets; no candidate/thirdparty/scanner/test workload executed.",
+    "Product HEAD d78577b and worktree unchanged."
+  ],
+  "limitations": [
+    "Decisions attach independently to exact sourcepath/bodySHA/lineidentity/rule and targetbyteinterval, not any other body/version/line/token occurrence.",
+    "Historical line hashes omit terminator; physical hashes include it. Both domains retained distinctly; identical line hashes at57/60 do not make targets interchangeable.",
+    "No full closure/P0/reachability/license/source safety/adoption/build/model/device/audio privacy or checkpoint conclusion.",
+    "Frozen tool has no way to consume this external adjudication. Do not bypass controller or edit oldrun/freeze; a formal product decision is needed for any bounded integration of such evidence."
+  ],
+  "next": "Escalate only derived review evidence to Product Manager for APPROVED/REVISE/PAUSE on minimal offline exact review-evidence consumption or route pause; no real source/body read by PM or new acquisition."
+}

@@ -1,0 +1,30 @@
+{
+  "RESULT": "ACCEPTED",
+  "commit": "55d3c3303a3884c88240c2f14d9b855fd51ae88e",
+  "parent": "e2d64f98aae52bd5e015962191a3bf2c121beeb2",
+  "files": {
+    "AGENTS.md": "196c2a6701b716b36b5cab67b7a50254fbc323ca489d26f30354fdb907015b42",
+    "doc/README.md": "993ef1e1b52122abfec184826a81848c0560a1b0d929dec4f763faab284af106",
+    "doc/development-guide-v0.1-2026-09-04.md": "60acc97cb3d74d3ada86daae892c2c55f22cdb2d9356ffee1a627bc92f567fc2",
+    "doc/cp2-metadata-path-compatibility-decision-2026-09-06.md": "3272b0de1df984f9bb0fac81a369662d5876f3e9268e315f9466c7aae50e918e",
+    "doc/prd-v0.1-2026-09-04.md": "d56ff590d7a1d7afc0b1a9e3e3dec858debbabbab65f3b25b19088f31810a67b"
+  },
+  "unchanged_trees": {
+    "tools/asr_review_offline_v2": "190af629fbb3794f741fd3f9fcfd5cc45fc985e5",
+    "tools/asr_review_acquisition_v3": "bdd78d6fc5d2837bc2749d441659886c07406321",
+    "doc/security-reviews/asr-acquisition-v3-release-freeze": "552e7c5d71877cf3323f72d7ef3700fb84a3b58c"
+  },
+  "source_worktree_HEAD_equal": true,
+  "clean_worktree": true,
+  "v4_absent": true,
+  "semantic_review": "Three entry diffs match approved two-layer metadata repair and unchanged authorization/CP boundaries.",
+  "unverified": [
+    "compatibility implementation",
+    "real metadata validation",
+    "real transport",
+    "source",
+    "builds",
+    "models",
+    "device"
+  ]
+}

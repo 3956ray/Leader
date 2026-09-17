@@ -1,0 +1,16 @@
+{
+  "RESULT": "PASS",
+  "script": {
+    "path": "/private/tmp/think-f-v8-14aswdsm/verify.py",
+    "bytes": 15839,
+    "sha256": "faaa33645961306784d5ed5bf083c62a4a5e2ff2bc03d20da8b92749d7925d00"
+  },
+  "command": "/Library/Developer/CommandLineTools/usr/bin/python3 -I -B /private/tmp/think-f-v8-14aswdsm/verify.py --final",
+  "checks": [
+    "Full exact source read before execution; fixed read-only Git and standardlibrary only.",
+    "Leader separately verified prepared task identity, allowed33refs, all69505 source paths and exact two verification_script paths before execution.",
+    "No original/private pointers followed, no candidate imports, only final verifier executed.",
+    "Execution succeeded with isolated mode, bytecode disabled, optimization off, no network events; complete result equals developer final report."
+  ],
+  "archival_note": "Exact archived verifier is review evidence; its __file__ relative script references require original temp path for execution."
+}

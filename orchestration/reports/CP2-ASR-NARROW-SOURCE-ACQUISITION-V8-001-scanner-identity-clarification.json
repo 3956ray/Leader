@@ -1,0 +1,31 @@
+{
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "kind": "existing_scanner_identity_clarification",
+  "result": "MATCH",
+  "created_at": "2026-09-06T05:25:14.820369+00:00",
+  "historical_derived_record": {
+    "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v5/2026-09-06/acquisition.json",
+    "bytes": 16990,
+    "sha256": "98a09576a41139917f123792d8928b42f35d83199272cad5f9ab289f9137be5f",
+    "matches_HEAD": true
+  },
+  "tools": [
+    {
+      "path": "/Users/orderly_ray/.codex/skills/scan-untrusted-code/scripts/scan_untrusted_code.py",
+      "bytes": 36797,
+      "sha256": "d25665e6d0499134775c0113eb2a6a04b406c9984fb928dda6609b1d74d67509",
+      "historical_json_pointer": "/scanner_script_sha256",
+      "regular_singlelink": true,
+      "stable_fd": true
+    },
+    {
+      "path": "/Users/orderly_ray/.codex/skills/scan-untrusted-code/references/ioc-pack-daam-node-stealer.json",
+      "bytes": 2185,
+      "sha256": "6fd45164ec4310d8853dbf94f99c6cfa25ab3fc6559370690b0e97c4479e99d6",
+      "historical_json_pointer": "/scanner_ioc_pack_sha256",
+      "regular_singlelink": true,
+      "stable_fd": true
+    }
+  ],
+  "scope": "Existing tool identities only. No change to immutable task, A/T/input/package/policy, attempt count, scanner flags or acquisition authority. No scanner execution, old raw evidence access, metadata access or network performed by this verification."
+}

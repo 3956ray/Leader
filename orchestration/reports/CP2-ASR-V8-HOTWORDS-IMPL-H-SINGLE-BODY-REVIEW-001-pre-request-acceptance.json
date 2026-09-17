@@ -1,0 +1,20 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "RESULT": "PASS",
+  "accepted_at": "2026-09-06T08:57:35.040799+00:00",
+  "handler": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-fetch.py",
+    "bytes": 7704,
+    "sha256": "5175f3d5623a04ea0d975a802df651c003f8cb5320c632e2fca228290d32e3ac"
+  },
+  "independent_review": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-fetch-review.json",
+    "sha256": "6f6fa843ef4a2b3c78be031d72e468ec94a94a5a56ac0d5b75744c039cc3667a"
+  },
+  "checks": [
+    "Exact authorized new task/request/approval/body pins match; old reviewed code reproduced by listed substitutions only.",
+    "Independent review PASS; private root empty0700, no prior marker/body reused.",
+    "Same strict parsing, oneGET/no retry/redirect/metadata, lower16384 entitycap and exact2286B checks preserved; scanner andIOC hashes unchanged."
+  ],
+  "authority_scope": "One approved acquisition and<=64unique lines/4096B review only; declaration/delegation ends chain; no target execution."
+}

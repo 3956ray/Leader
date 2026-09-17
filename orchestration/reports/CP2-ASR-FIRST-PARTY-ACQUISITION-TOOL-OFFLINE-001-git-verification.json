@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "commit": "e4cd300ca50be776b7077f1d7fae783642a696a7",
+  "parent": "926b06fc3513c60b96e494d7d5c087b2763d6064",
+  "new_files": 4257,
+  "manifest_entries": 4256,
+  "all_HEAD_blobs_match": true,
+  "v2_unchanged": 302,
+  "provenance_verified": true,
+  "collection_sha256": "5b3178f5d8b3640dde642aa7f8abdcc305e9f6c9c07ac7ae4084cfc3af509e69",
+  "bundle_sha256": "dc57dd71af457cbc25501a61f1d11f5f107d758fddb20c76898e6667bdf2e436",
+  "worktree": "clean",
+  "formal_documents_unchanged": true
+}

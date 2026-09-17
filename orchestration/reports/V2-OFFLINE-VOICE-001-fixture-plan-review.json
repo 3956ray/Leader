@@ -1,0 +1,7 @@
+{
+  "plan_sha256": "95d97b465918f40831658cbcbc29390cc2b417be6a13adf542826c76d9db0b6b",
+  "cases": 30,
+  "proper_name_occurrences": 66,
+  "voice": "com.apple.voice.compact.zh-CN.Tingting",
+  "review": "75% meaning anchors is screening proxy only; all raw/reference cases require semantic review before no-rerecord acceptance. RealtimeFixture uses paced source through production queue; confirm actual captured count, sourceClosed and full timing results."
+}

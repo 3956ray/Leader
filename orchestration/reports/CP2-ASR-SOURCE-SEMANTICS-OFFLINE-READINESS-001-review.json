@@ -1,0 +1,42 @@
+{
+  "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001",
+  "decision": "REVISE",
+  "candidate_commit": "e6879d2f0da87b6f070314e98727ed22ef403d04",
+  "candidate_tree": "8ff892477fa8d8d3e4e7d59fcc11f24262b5e830",
+  "reviewed_at": "2026-09-06T05:28:01.806433+08:00",
+  "formal_decision_sha256": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+  "checks_completed": [
+    "All 6767 new Git blobs, exact v6-only boundary, manifest, bundle, semantic and policy identities, provenance and preserved old trees independently checked; see identity.json.",
+    "Actual static scanner findings and supplemental scan/context individually reconciled; raw sandbox_only verdict unchanged.",
+    "Leader isolated first-party full run:153 tests PASS,0skips,59.540s, normalized e5caf8ffc08f94c1361938e1f6465269fa40002320750f6b5ed669df0d2039dc.",
+    "Independent readonly semantics review plus Leader self-authored pure parser reproductions under NetworkGuard."
+  ],
+  "findings": [
+    {
+      "id": "R1",
+      "priority": "P2",
+      "file": "offline_review/semantics.py",
+      "line": 153,
+      "problem": "Header-like operands in unsupported preprocessor contexts such as __has_include are mislabeled definite comments; deny evidence demoted to pending and unsupported-preprocessor outranks the active deny that should be conservatively retained.",
+      "observed": "Both authored block and line marker variants produce edge_conditional, no lexical issue, comment_capability_mention. Conditional still stops; no successor bypass demonstrated.",
+      "required": "Reject unproven lexical/header-name contexts conservatively without adding expression or macro support. Preserve active deny and original byte/hash evidence; add controller-level zero-successor regressions."
+    },
+    {
+      "id": "R2",
+      "priority": "P2",
+      "file": "offline_review/parser.py",
+      "line": 49,
+      "problem": "A block comment beginning in a directive and crossing a physical newline is masked preserving newline, allowing following replacement-like bytes to become independent body and a canonical guard with decision null.",
+      "observed": "Exact authored multiline_directive counterexample in accompanying JSON returns canonical_header_guard and null decision.",
+      "required": "Enforce formally approved single-physical-line directive subset. Fail closed for directive-spanning comments/ambiguous directive extent without implementing general preprocessing. This is a narrow-contract rejection, not a claim to have validated general C++ preprocessing behavior."
+    }
+  ],
+  "counterexample_file": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-counterexamples.json",
+  "counterexample_sha256": "7fd2bcba314f0fd9e2d1582766ce91be1d0521ac660a8c2ab72b1e0598aa4a27",
+  "independent_root": "/private/tmp/think-leader-v6-gy26cpgq",
+  "unverified": [
+    "No second Leader full run/recomputation: concrete counterexamples already reject candidate; required after repair.",
+    "Real source/manual capability review/network/build/device/checkpoints remain unauthorized or unverified."
+  ],
+  "next": "Single same-Checkpoint minimal R1 repair; preserve exact formal grammar and all other controls; if conservative rejection cannot implement contract without expansion, BLOCKED and return to PM."
+}

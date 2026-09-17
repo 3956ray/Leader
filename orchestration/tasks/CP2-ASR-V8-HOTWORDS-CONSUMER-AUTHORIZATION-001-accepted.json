@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "prepared_at": "2026-09-06T06:38:49.383637+00:00",
+  "goal": "审阅并决定是否批准已完成身份核验的单文件正文获取与局部静态审查请求；批准只绑定此处固定合同，不延用旧授权。",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-acceptance.json",
+    "bytes": 3072,
+    "sha256": "e9c78dbcdac06fc305e1b1beb0a50a17b0c6f4b32f2b3b019f2c073c0a5b0259"
+  },
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 5956,
+    "sha256": "0c08c5cfd1c3cc3ebe2daf32ea128bf91f171ed72a29639b953918c735fd562d"
+  },
+  "request_markdown": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.md",
+    "bytes": 3891,
+    "sha256": "8b69db108f40ec81b3fe667572e7c70ae48336de7b0932fdf88a9a9bfff9643b"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+    "bytes": 12792,
+    "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2"
+  },
+  "future_task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "scope": [
+    "展示完整pending请求及已填写的正式授权句，等待用户对同一固定请求的新明确决定。",
+    "若批准，后续另行归档精确批准来源和合同身份，并生成单文件任务；当前不生成正文任务或获取authority。"
+  ],
+  "out_of_scope": [
+    "禁止在新批准前读正文或metadata、发起网络、恢复旧run或借此前批准代替本次决定。",
+    "不授权第二文件、规则修改、v9、构建、模型、集成、采用或Checkpoint通过。"
+  ],
+  "acceptance": [
+    "用户已经看到该完整请求；新决定明确对应request JSON和Markdown固定身份，记录实际答复不推断。"
+  ],
+  "evidence_required": [
+    "具体用户答复及其上下文、请求path/bytes/SHA、正式决定和准备验收记录。"
+  ],
+  "stop_conditions": [
+    "请求身份变化或用户决定不明时停止依赖工作；拒绝则保持路线暂停。",
+    "批准只用于未来一次单文件审查，不能续跑、重试或扩大范围。"
+  ],
+  "accepted_at": "2026-09-06T08:01:14.121132+00:00",
+  "approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-001-approved.json",
+    "bytes": 3258,
+    "sha256": "2cc71640231337f3984a465b8ad6ae08482bfc1cb45338d43b98e6661114935d"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "goal": "Freeze only the independently accepted v6 R1 semantic candidate and its complete evidence in three new documentation files, with no code change or real-data authority.",
+  "baseline_commit": "f55fda2dea237120ce09639112767c9857dab8d5",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "formal_decision_sha256": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+  "formal_prd_sha256": "97ff4382c179482a02261b73b85e7e422d200c0dbf6654bac093cc56fc5d373f",
+  "leader_acceptance_report": "orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1-acceptance.json",
+  "leader_acceptance_sha256": "b06d977b376a8e1ed16efcb452e724333a79b14a471834c5b0a80de45c65678b",
+  "stable_dispatch_reference": "orchestration/tasks/CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001-dispatch.json",
+  "scope": [
+    "Only create doc/security-reviews/asr-acquisition-v6-release-freeze/2026-09-06/freeze.json, MANIFEST.json and REPORT.md. Use committed first-party files and derived formal/Leader reports. No modifications to candidate or prior records.",
+    "Bind accepted candidate f55fda2dea237120ce09639112767c9857dab8d5 parent rejected e6879d2f0da87b6f070314e98727ed22ef403d04, v6tree05f0b591753a9d8c845656c2f8d6be2c8c725464, complete10910-file release including originalfilemanifest. Original manifest SHA9842eec0768da72eb736a635b5cf65739a6376e8556641595ffde841a4781569 covers10909others,collectionb1d0bcffc328914f092297fd8e1a44bf81423e29299e5e57e1372562d4b38c18. Verify fresh fullreleasecollection and regularsinglelink types; pin exact paths/bytes/hash without omission.",
+    "Freeze bundle99114c1ad1126e627723585251ed696063562de4b507d35c28b93a3b1ffb6160, policy43b323b3601b25a5d459e0c553d4da2c38fb2dae7f1f51c82170723f354c1ab7, semantic2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86, role1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125, SCHEMA90c2dd9ee7d8e795e6765e9cbfd7c02f1ab6fa8a9be309ddc495abcb84e178c7, input6/report1/kindtyped-acquisition-candidate-v6. Explicitly describe v5→v6 semantics and R1 conservative rejection identity changes; no policy domain omitted.",
+    "Bind exact current formal semantics decision/PRD and AGENTS/README/development guide, original immutable design/source contract and historical authorizations as provenance only, new Leader acceptance/identity/runs/recalculation/counterexamples and developer provenance/revision/testmap/scanner/raw/context/snapshot. Pin stable archived dispatch file named in task, never mutable orchestration/current-task.json or state.json. Use explicit canonical hash domains and non-cyclic manifest/report references; candidate commit pinned, new freeze commit reported after commit without self-hash cycles.",
+    "Explain six byte-preserving channels; active/uncertain deny hard-stop; definite comment hash-bound pending and zero successors incl remainingseeds; exact sole outer canonical guard with no expression evaluation; current-file atomic evidence and identity→active→lexical→unsupported→pending priority. R1 rejects unproven angle/comment contexts in any directive and directive-spanning blockcomments. Preserve ordinary comment controls. No implemented API clears real capability pending or transfers adjudication.",
+    "Record Leader independentdouble158tests961outcomes133scenarios0skips,5432immutableJSONacrossfourruns,3628ledger/run,524completereports2370channels88capabilityrecordsacrosstwoLeader runs plus4explicitincompletecases. All153previousmethodsunchanged incl132baseline; historicaltwoadaptations justified. Normalized2b32965a3fd400d688abb9ba32027db481ff9c48c6db305b225587533bdfd1ea. Pin collections with precise fields/order/canonicalencoding; do not claim incompletefullreporthashrecoverability.",
+    "Preserve actualfirstparty scan sandbox_only100/287findings9high274medium4low,10902inputs10900text2binary0skips,366hexcontextmatches; twodiffexactbyte supplementaryscanlow0. Scope of scanned inputs/post-scan exclusions explicit; no safety PASS or runtime/license/adoption approval. Pin contexts and fullmanifest separately.",
+    "Recompute file/hash/regularsinglelink and pureidentity domains only; no tests, workloadimports, acquisition input/trust construction, rawinput reads, metadata parse or transport. Exact LICENSE/license_text inert routing, source identity/9seeds/path/mode/type/96files1MiB and other budgets, deny/privacy/checkpoint remain unchanged. Historical realmetadata/source results attributed to versions, never called v6 validated.",
+    "Commit exactlythree newfiles, validate hash references/Gitboundary, provide COMPLETE/BLOCKED report and notify Leader then stop. Only documentation freeze is authorized. Future real comment adjudication requires separate explicit bodySHA/linehash/rule-bound authorization, and real acquisition needs fresh user authorization after review and accepted freeze; old runs/authorizations cannot resume or transfer."
+  ],
+  "out_of_scope": [
+    "No edits to candidate/tool/schema/tests/old freezes/runs/productdocs/App, no rerun/recalculation workload execution, no real LICENSE/header/private/raw/source/API/metadata/scannercontext or oldbody reads, no network/DNS/transport/thirdparty/dependencies/model/build/integration.",
+    "No execution scripts/new canonical acquisition input/trust or sourceallowlist/snapshot/buildinput generation. No realmanualcapabilityadjudication, overrideinterface, globaltokenexception, newacquisitionapproval, sourceadoption or CP2/CP3/Alpha claims.",
+    "Only three declared outputfiles; temporary console/artifacts in systemtmp, not extra files besidefreeze. Do not overwrite unknown work or immutable archived Leader records."
+  ],
+  "acceptance": [
+    "Exactlythree newdocuments in declarednewdirectory; parentf55fda2, v6andalloldtreesunchanged, cleanworktree and whitespacecheck passes.",
+    "All10910regularreleasefiles covered; release/bundle/schema/semantic/policy/role/evidence hashes recomputed and references exact; explicit noncyclic digestdomains.",
+    "Currentformaldecision and independent Leader acceptance/test/finding-resolution evidence accurately bound; historicalscope/auth distinguished. Correct strictgrammar/pending/priority and incompleteevidence/scan limitations preserved.",
+    "Freeze grants no realdata/manualreview/network/acquisition/build/adoption/checkpoint authority. No code or workload executed or changed; pending remains pending."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED; threepaths/purposes/SHA,commitparenttree,10910fullreleasecollection/bundle/policy/role/semantic/schema hashes, complete reference mapping and canonical domains, validationcommands/results, unverifiedscope. Notify currentLeader thenstop."
+  ],
+  "stop_conditions": [
+    "Any accepted candidate/hash/formal drift, unknownwork, missingreference/acceptance, needcode/schema/grammarchange, rawdata/network/extratool execution or unclear authority:stopandreport,do notrepairinsidefreeze."
+  ]
+}

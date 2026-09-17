@@ -1,0 +1,16 @@
+{
+  "task_id": "V2-CALENDAR-IMPORT-001",
+  "attempt_id": "9b7b85da-ae29-4198-9f6e-a7e2df71784d",
+  "contract_sha256": "6428f6f45b8af2686011caa3813378ffbbe6ca56dd51e471da31eb1340b17223",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "turn_id": "01a0a846-43f6-7073-b439-aa5e6dd44eb7",
+  "observed_completed": true,
+  "result": "COMPLETE",
+  "recovery_reason": "wait_threads observed completed/idle revision7; read_thread final items empty; explicit completion callback received and hash-bound result artifact independently inspected.",
+  "evidence": [
+    {
+      "path": "/private/tmp/thinkv2-V2-CALENDAR-IMPORT-001-9b7b85da/result.json",
+      "sha256": "f2aac5b3ef2e9f872607c107051acb66f9e9734624210737236745811fb09e92"
+    }
+  ]
+}

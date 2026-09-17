@@ -1,0 +1,40 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "RESULT": "REVISE",
+  "scope": "Independent static pre-execution review of the Leader fetch helper, handler config, approved request and approval only.",
+  "reviewed_sha256": {
+    "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-fetch.py": "d267920b69b48e7b9fbe5189b6fb9a9a4dafdf4b83076cec44129288a678b0c9",
+    "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-handler-config.json": "0428fb3cb59e660939221fd8c2e3e1c538c7d0e26c345579ae031115af125cc5",
+    "CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.json": "0c08c5cfd1c3cc3ebe2daf32ea128bf91f171ed72a29639b953918c735fd562d",
+    "CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-001-approved.json": "2cc71640231337f3984a465b8ad6ae08482bfc1cb45338d43b98e6661114935d"
+  },
+  "findings": [
+    {
+      "id": "strict_json_constants",
+      "line": 122,
+      "impact": "The response parser rejects duplicate keys but uses json.loads without parse_constant. An otherwise matching blob envelope with an additional field whose value is NaN or Infinity is accepted as successful acquisition. Those are not valid JSON values, conflicting with the approved malformed-response stop and requested strict JSON handling. The exact body pins still prevent body substitution.",
+      "static_counterexample": "A response containing all four correct mandatory blob fields plus an ignored extra property with the unquoted value NaN reaches the normal identity checks; json.loads accepts that value by default.",
+      "minimum_fix": "Supply a parse_constant callback that always raises ValueError when parsing the response. No new parser or framework is needed."
+    },
+    {
+      "id": "base64_padding_bits",
+      "line": 128,
+      "impact": "base64.b64decode(validate=True) validates alphabet/padding placement but does not require canonical zero padding bits. With an 8993-byte body, the final quartet has one equals sign; changing only the unused low two bits of the final data sextet preserves the decoded bytes and all body hashes, yet the noncanonical representation is accepted. This leaves the strict response-encoding validation incomplete, without permitting different decoded source bytes.",
+      "static_counterexample": "For a fixed 8993-byte body, take its valid base64 response content and change only the unused low two bits of the final non-padding sextet. The current decode and decoded-byte identity checks do not reject that spelling.",
+      "minimum_fix": "After removing the permitted LF characters and decoding, compare base64.b64encode(body).decode('ascii') with the compact input, and stop on inequality."
+    }
+  ],
+  "confirmed_boundaries": [
+    "The exact request and approval hashes match the script/config. The approved source blob, decoded SHA256, size 8993 and Git mode match the explicit constants; whole-document pins bind the remaining repository/commit/tree/path fields.",
+    "There is one fixed GET to api.github.com and no request loop, second endpoint, redirect following, retry, proxy helper, Authorization header or target execution. SSLContext(PROTOCOL_TLS_CLIENT) with default certificates preserves certificate/hostname verification and avoids create_default_context's automatic SSLKEYLOGFILE behavior.",
+    "The private root must already be an empty 0700 directory owned by the current UID. O_EXCL creates the sole attempt marker; marker contents and the directory are fsynced before constructing the connection or attempting GET. A second invocation on this root fails before requesting. Outputs are created exclusive/no-follow and checked regular/single-link/0600.",
+    "The entity read is explicitly bounded to 65536 bytes and rejects reaching that bound. Decoded size must be 8993 with both exact SHA256 and Git blob checks, strict UTF8 and no NUL before body publication. Chunked/length ambiguity, duplicate framing headers, non-200 status and compressed content stop without retry.",
+    "Normal stdout contains only terminal identity/status/count/root, not response/body text. Error detail is stored in the private terminal. Persistence failures stop; an outer Leader record must handle failures before or during terminal publication."
+  ],
+  "limitations": [
+    "No helper, reviewer, candidate, test or target code executed; no private/raw/body data read and no network accessed. Counterexamples are static reasoning, not executed fixtures.",
+    "HTTPSConnection timeout=10 provides socket-operation inactivity bounds, not an absolute ten-second wall-clock limit for DNS, headers or a slowly streaming entire response. This distinction is recorded for Leader's concurrent timeout review; the approved request names connect/read timeouts and does not itself specify an overall deadline.",
+    "The root is trusted and owned by the sole Leader executor; the helper does not claim protection against a malicious same-UID process replacing directories. Handler config is a documentary mirror of the script's constants, not a runtime input.",
+    "The review binds the listed script bytes only. Any revision requires its final hash and changed checks to be confirmed before the single authorized execution."
+  ]
+}

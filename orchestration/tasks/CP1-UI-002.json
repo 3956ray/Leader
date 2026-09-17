@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-UI-002",
+  "owner": "developer",
+  "checkpoint": "CP1",
+  "status": "rejected",
+  "goal": "在现有合成录入原型上实现三步找回的 Compose 可点击流程，使用户能从首页进入搜索、输入即看到合成结果并直接打开完整记录。",
+  "report": "orchestration/reports/CP1-UI-002.md"
+}

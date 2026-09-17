@@ -1,0 +1,7 @@
+{
+  "root": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7",
+  "approval_path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-001-approved.json",
+  "approval_sha256": "2cc71640231337f3984a465b8ad6ae08482bfc1cb45338d43b98e6661114935d",
+  "request_path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.json",
+  "request_sha256": "0c08c5cfd1c3cc3ebe2daf32ea128bf91f171ed72a29639b953918c735fd562d"
+}

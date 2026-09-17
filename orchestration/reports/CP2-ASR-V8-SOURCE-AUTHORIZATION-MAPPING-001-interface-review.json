@@ -1,0 +1,14 @@
+{
+  "RESULT": "PASS",
+  "reviewer": "/root/v7_intake_review",
+  "scope": "Read-only firstparty interface and fixed authority domain review",
+  "checks": [
+    "A6fields F/M/policy/newapproval, T6fields C/F/M/canonicalA; A.authority differs T.A.",
+    "Trust.release_hash C28bundle; input_document requires explicit manual_review bytes/hash; package9fields and originalRwrapper retained.",
+    "Full28filecopy is required by candidate_release_hash; fixing incomplete preflight harness needs no candidate/scope change. Guarded preflight separate process from realrun; NetworkGuard audit persists.",
+    "Store(parent,name) exclusively creates run; input files remain outside; consumed authority marker before sole invocation.",
+    "Only run_input once with manual_raw; connection_factory/review/fault None; no prefetch/retry. Returncode not acceptance; terminal/ledger/stop evidence mandatory."
+  ],
+  "no_execution": true,
+  "no_private_reads": true
+}

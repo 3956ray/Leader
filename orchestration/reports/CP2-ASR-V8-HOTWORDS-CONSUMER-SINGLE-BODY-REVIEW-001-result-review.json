@@ -1,0 +1,31 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "RESULT": "PASS",
+  "scope": "Independent semantic and scope review of the eight specified first-party derived records only.",
+  "blockers": [],
+  "reviewed_sha256": {
+    "report.json": "51336e73331f9fee139211b04d35e82b2f10c5fec3c432fac272bb2801d2463d",
+    "report.md": "9a76f05180b6bfff8ac52a665f599927411d30b357e5c47a2da36b65c2bc7828",
+    "matched-lines.json": "6540481ebccfde81e204b8b7d0bffc21f895deb4b5f017f935b7c006dacf1811",
+    "context-index.json": "3e77d1f50dca1ecbf1880d5e584d1c892ea222ca8e1fbbb8484575b13d547adb",
+    "visible-context.json": "e30ef8cc612584fd1b72fd2dbc8ec2cc510735d08573080ec58198956c65fabc",
+    "leader-verification.json": "d250701798ca6a61fa68de660281d4522ee32940db900090ebc4b3b8f5659ab0",
+    "scanner-coverage.json": "4ada842fc046a99507231911a4aa5a3266be44152cff9ece3be7e4a7f335399a",
+    "pre-request-acceptance.json": "ecc9f89de62f7f2d7bbca620e3d45734ac9958023a880992ce130229b2f40b6d"
+  },
+  "path_basis": "All reviewed filenames have prefix /Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-",
+  "checks": [
+    "All six report evidence references within the specified review set match the current derived file hashes. The supplied slices and signature/match indices cover 28 unique visible lines, consistent with the independent Leader verification.",
+    "Registration to &hotwords_file is directly visible. The report correctly limits this to a local option/configuration surface, without asserting future think business API exposure.",
+    "The visible Validate expressions support the nonempty-file decoding-method restriction and short-circuit FileExists guard. Only when this latter branch is reached and its predicate succeeds does it pass the path value to the error macro and return false. Empty input bypasses that particular FileExists call, not necessarily earlier/later checks or the whole function.",
+    "The path argument to the error macro and its inclusion in ToString establish diagnostic surfaces. The report expressly avoids claiming observed logging, actual disclosure, FileExists implementation effects, or runtime execution/reachability.",
+    "The constructor visibly delegates config to OnlineRecognizerImpl::Create(config). The exact include names an unresolved dependency; it neither supplies that implementation nor authorizes following it. Zero exact hotwords_buf tokens is presented as a lexical fact only, not absence of buffer support.",
+    "The initial scan's text_files=0 coverage gap is preserved and not called a clean source scan. The same-body .cpp alias is identity-bound to the original 8993-byte source by Leader verification; the subsequent text scan completes coverage within the same review, with no second upstream acquisition. Zero indicator findings do not change artifact manual_review.",
+    "The report separates observations, inferences and unresolved behavior, returns PRODUCT_DECISION_REQUIRED at the dependency gap, and retains consumed authority, paused adoption, original hard stops/pending, no clearance and unchanged Checkpoint status. No actual acceptance blocker was found."
+  ],
+  "limitations": [
+    "No private/raw/body/metadata/scanner-context paths were opened, no additional source obtained, and no handler/reviewer/scanner/candidate executed. Only the explicitly supplied derived excerpts were inspected.",
+    "Exact raw-body/response identity, private file permissions, one-GET accounting, complete-body lexical search, slice byte verification, 1237-byte visible total, scanner alias equality and pre-request fix closure are inherited from the specified Leader verification/acceptance records, not independently reproduced against raw material.",
+    "PASS concerns the accuracy and scope of this stopped review. Actual filesystem effects, full selector/empty behavior, downstream implementation, runtime and business reachability, source adoption and future investment remain unresolved."
+  ]
+}

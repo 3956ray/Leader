@@ -1,0 +1,9 @@
+{
+  "task_id": "V2-NOTES-ACCESSIBILITY-001",
+  "attempt_id": "288f5fe5-ba80-4381-be49-c7abf3c328c7",
+  "contract_sha256": "bcc6df204fefd1d191a7be21cc097af4a59b43b1b967ffb6c8c6cc0c4678427f",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "turn_id": "01a0aa9a-462a-76e0-bdc1-eac005e98003",
+  "acknowledged": true,
+  "receipt_source": "Developer explicit new-task ACK, recomputed hash and clean accepted baseline confirmed."
+}

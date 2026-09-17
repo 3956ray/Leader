@@ -1,0 +1,21 @@
+{
+  "RESULT": "PASS",
+  "bundle": "198c24c66a3e82117828e9eacfa333b4dde8eb19949c7425b8a81b839399553e",
+  "policy": "b8c37591ee45dacf984f0549c5d091ce288a3d30b7cf123150e2be3630cc3f1c",
+  "intake": "c289af3b1769dc7ae3b3cd7b7ced34153308fd6624dfb061801a5426fc7e2167",
+  "semantic": "2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86",
+  "role": "1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125",
+  "only_base_policy_kind_changed_from_v6": true,
+  "network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  }
+}

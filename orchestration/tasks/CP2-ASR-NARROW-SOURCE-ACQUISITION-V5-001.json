@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Execute one fresh bounded static source acquisition using accepted frozen v5 and newly granted Product Lead authorization; retain independently verifiable completion or enforced-stop evidence.",
+  "scope": [
+    "Read current formal decision, fresh authorization and v5 mapping, accepted freeze and project third-party/static gate skills. Reverify clean baseline and all frozen file/document identities before requests. The new user approval and this task supersede historical sync-phase do-not-start language only within this precise scope.",
+    "Create a brand-new private /private/tmp root and empty Store. Record pre-body empty output proof and source/tool/freeze/authority mapping identities. Run only trusted first-party code outside quarantine; never run third-party files.",
+    "Only historical input exception: /private/tmp/think-frozen-metadata-preflight-_6wsajyf/commit.json and tree.json. Through checked no-follow directory chain and bounded regular single-link reads, reverify2336/2742250 bytes and exact frozen SHA pins. No adjacent enumeration. Copy just those two into the new private root.",
+    "Use unchanged frozen Trust/input_document/canonical/parse_input to derive schema5 input. New expected2603 bytes/SHAa6ec55dd0ff07d4cceab430bdc09cca05d98dea5307fb139cb700da398d76b61 is corroboration only. Execute existing acquisition.run_input exactly once with default restricted real transport and private Store; no FakeFactory, prefetched bytes, injected review/fault or code changes.",
+    "Follow nine fixed seeds then deterministic allowed literal internal edges, with explicit LICENSE/license_text and C++ role mapping. Only api.github.com pinned-tree Git Data blob endpoints under durable authorize/before_request, ordinary LICENSE/csrc .h/.cc blob100644,96files/1048576 decodedbytes and all frozen raw/evidence caps.",
+    "On any stop no successor/retry/resume. Use existing first-party inspectors to review only this new run evidence, independently rehash body/metadata/ledger/terminal/file attributes, and scan inert new evidence from outside quarantine with approved scanner. Retain raw scan JSON/Markdown privately and truthful finding contexts; no third-party execution or source-path export.",
+    "Only add derived non-raw reports under doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v5/2026-09-06/. Real metadata/body/API/full scanner excerpts remain private; reports record identities, invocation, empty-output proof, request/budgets/stop/scan and private evidence paths/hashes. Commit derived reports, notify Leader then stop."
+  ],
+  "out_of_scope": [
+    "No old corpus/snapshot/restricted source artifacts or old-run/body/API reuse; only two named identity metadata files are excepted. No arbitrary URL, metadata endpoint, credentials, proxy, redirect, retry or secondary downloader.",
+    "No tools/policy/schema/test/App/old-freeze changes, altered roles or C++ parsing, added seeds/path/types/budgets, deny relaxation, source tree/snapshot/build input, third-party execution/build/install/load, external dependencies/models/audio/binaries/integration.",
+    "No prefetch/manual override, evidence repair to conceal failure, continuation after stop, scanner-verdict rewriting, license/source adoption, CP2 pass, CP3 or Alpha."
+  ],
+  "acceptance": [
+    "Fresh user authority binds exact accepted v5 freeze; all release/policy/role/input identities match before any body request; new empty output and one-attempt execution evidenced.",
+    "Every call path/SHA/order/role has durable preceding authorization/checkpoint; budgets and all stops enforced; no unauthorized successor or alternative fetch.",
+    "Retained body identities/bytes/Git SHA/SHA256/UTF8/NUL and regular single-link evidence verify; partial failures explicitly retained without reconstruction. Frozen wire JSON/header non-retention remains an explicit limitation.",
+    "Truthful fixed-point or exact enforced stop with source_verdict insufficient_evidence. LICENSE manual_review and scanner pending are honest; unchanged C++ intentional stops are not called upstream infeasibility.",
+    "Approved static scan original findings/verdict/coverage and contexts retained, raw bytes remain outside Git, exact bounded derived-report commit and clean worktree. No third-party execution or scope drift."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED; source/tool/freeze/fresh-authority/mapping/metadata/input hashes; private output location and pre-body proof; exact invocation and commands/results.",
+    "Request order/count and path/role, files/decoded/raw budgets, complete ledger/terminal/checkpoint hashes, stop/fixed-point, scans and unverified runtime/license/closure/P0/feasibility/device/wire-replay items.",
+    "Derived file purposes/commit-parent or uncommitted state, PRD/scope check, next bounded recommendation without starting it. Notify Leader01a071cf-9ac6-7171-b663-749a6e88b0a4 then stop."
+  ],
+  "stop_conditions": [
+    "Any input/release/policy/role/hash/source mismatch, unknown modifications, unavailable exact inputs or need additional code/endpoint/source scope.",
+    "Any frozen metadata/transport/parser/deny/type/identity/budget/persistence stop: no further network, retries or changes. Preserve existing evidence and report.",
+    "Missing durable request authorization, unexpected proxy/redirect/retry, scope escape, third-party execution/checkpoint expansion or inspection requiring forbidden additional acquisition."
+  ],
+  "baseline_commit": "b0193cf1e818f76a4e429c4d0aeeb81d29a16cbc",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "fresh_authorization_report": "orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-AUTHORIZATION-001.md",
+  "fresh_authorization_sha256": "b6eb68842e8787b75ca1dd14bc472560faca61ec78b4ec28007bac10638cbb03",
+  "authority_mapping_report": "orchestration/reports/CP2-ASR-V5-SOURCE-AUTHORIZATION-MAPPING-001.md",
+  "authority_mapping_sha256": "d9ccc71da03f30304b93d688bc4d8125e05c10d88b30c73fed1cb75835e48675",
+  "frozen_release_sha256": "21aaee7a39eb0ee9668c0e10f3ad51ee6068356c9924b57597c122bbf521541e",
+  "input_identity_report": "orchestration/reports/CP2-ASR-V5-FROZEN-INPUT-IDENTITY-001.json",
+  "input_identity_sha256": "4e91ed9795f7ce8406fd31e367be18cc403e2875a101bbc21a41a03866f82a4b",
+  "dispatched_at": "2026-09-06T04:03:06.240355+08:00",
+  "result_commit": "5dbfe9ad300a8750cf2f76588983a7069760f200",
+  "accepted_at": "2026-09-06T04:19:36.211401+08:00",
+  "task_result": "COMPLETE",
+  "commit": "5dbfe9ad300a8750cf2f76588983a7069760f200",
+  "report": "orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-001.md",
+  "report_sha256": "cfca8062ef47190e5976b9a9bfab184bc52de0ef3af1f9d7d3cbb106c6a29d8b",
+  "source_result": "insufficient_evidence",
+  "attempt_disposition": "terminated_on_denylist_capability; no_resume"
+}

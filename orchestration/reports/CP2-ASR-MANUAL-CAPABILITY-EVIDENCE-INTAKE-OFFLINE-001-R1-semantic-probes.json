@@ -1,0 +1,206 @@
+{
+  "candidate": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "results": [
+    {
+      "case": "clear_r1_original_format",
+      "stop_reason": "missing_review_evidence",
+      "calls": 10,
+      "effective_status": "comment_only_nonoperative_for_this_body"
+    },
+    {
+      "case": "clear_r1_private_0600",
+      "stop_reason": "missing_review_evidence",
+      "calls": 10,
+      "effective_status": "comment_only_nonoperative_for_this_body"
+    },
+    {
+      "case": "clear_r1_report_format_variant",
+      "stop_reason": "missing_review_evidence",
+      "calls": 10,
+      "effective_status": "comment_only_nonoperative_for_this_body"
+    },
+    {
+      "case": "r1_missing_original",
+      "stop_reason": "unknown_or_missing_fields",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_original_sha",
+      "stop_reason": "manual_original_report_identity",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_original_bytes",
+      "stop_reason": "manual_original_report_identity",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_original_content",
+      "stop_reason": "manual_original_report_identity",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_original_domain",
+      "stop_reason": "manual_original_report_domain",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_original_base64",
+      "stop_reason": "manual_original_report_encoding",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_missing_representation",
+      "stop_reason": "unknown_or_missing_fields",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_representation_original",
+      "stop_reason": "manual_representation_original_binding",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_K_raw_as_representation",
+      "stop_reason": "manual_commitment_binding",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_K_representation_as_raw",
+      "stop_reason": "manual_commitment_binding",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_M_raw_as_representation",
+      "stop_reason": "manual_map_commitment",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_stale_independent_pins",
+      "stop_reason": "manual_untrusted_authority",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_permissions_100644",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_permissions_0644",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_permissions_0666",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_permissions_0700",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_permissions_integer",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_permissions_boolean",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_file_symlink",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_file_hardlink",
+      "stop_reason": "manual_envelope_type",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_source_git_0600",
+      "stop_reason": "manual_object_role",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_source_git_regular",
+      "stop_reason": "manual_object_role",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_envelope_git_domain",
+      "stop_reason": "manual_envelope_domain",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_old_mode_field",
+      "stop_reason": "unknown_or_missing_fields",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "r1_H_as_F",
+      "stop_reason": "manual_map_commitment",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "changed_original_stale_representation",
+      "stop_reason": "manual_representation_original_binding",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "container_digest_as_original",
+      "stop_reason": "manual_original_report_identity",
+      "calls": 0,
+      "effective_status": null
+    },
+    {
+      "case": "new_original_stale_trust",
+      "stop_reason": "manual_untrusted_authority",
+      "calls": 0,
+      "effective_status": null
+    }
+  ],
+  "positive": 3,
+  "negative": 28,
+  "network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  },
+  "only_authored_fixtures": true
+}

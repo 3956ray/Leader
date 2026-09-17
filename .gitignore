@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.lock
+.DS_Store
+.env
+.env.*
+!.env.example
+auth.json
+*.pem
+*.key
+local-settings.json

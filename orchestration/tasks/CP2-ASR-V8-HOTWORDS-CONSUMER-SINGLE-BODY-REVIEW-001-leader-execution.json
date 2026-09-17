@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "dispatched",
+  "prepared_at": "2026-09-06T08:01:14.121132+00:00",
+  "baseline_commit": "bd0bb57efc4348f599c36a3166fa018809914788",
+  "goal": "只执行用户新批准的一个固定8993字节消费端源码获取及局部静态审查，回答热词文件与内存配置的消费线索，并在单文件边界停止。",
+  "approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-001-approved.json",
+    "bytes": 3258,
+    "sha256": "2cc71640231337f3984a465b8ad6ae08482bfc1cb45338d43b98e6661114935d"
+  },
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 5956,
+    "sha256": "0c08c5cfd1c3cc3ebe2daf32ea128bf91f171ed72a29639b953918c735fd562d"
+  },
+  "request_markdown": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.md",
+    "bytes": 3891,
+    "sha256": "8b69db108f40ec81b3fe667572e7c70ae48336de7b0932fdf88a9a9bfff9643b"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+    "bytes": 12792,
+    "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2"
+  },
+  "scope": [
+    "严格执行完整已批准request JSON的全部范围、pins、budget和stops；先在新private tmp第一方目录准备最小stdlib一次性handler及执行说明，回报path/bytes/SHA供Leader静态检查，在Leader具体执行指令前不联网、不读任何正文。此为同一任务的执行前检查，不开发新通用controller、不建立v9、不改旧工具。",
+    "Handler必须在request前校验固定request/approval身份；持久化O_EXCL single-attempt marker及parent fsync；全新0700隔离目录/0600普通单链接文件，禁止复用路径；固定HTTPS Git blob单GET、无凭据/代理/redirect/retry/resume/额外metadata，TLS验证，10秒connect/read，rawentity<=65536，decoded恰8993且<=262144；严格JSON无重复键/base64/UTF8/NUL/Gitblob/SHA256检查。失败只记录终态不重试；不要先做网络探测。",
+    "经Leader检查通过后，同一任务执行一次获取，静态scanner只读此新正文一次；scanner原报告留private。人工仅看hotwords_file/hotwords_buf命中与最小函数/类型；必要时分离行号索引与获准切片，禁止整正文输出和不相关源码展示。只记录直接消费/selector/空值/file I/O及下一精确依赖缺口；遇需下一文件或其他禁止能力立即停止，不跟随。",
+    "所有原响应/正文/scanner全文保持private；仅将派生报告、脚本身份、单次请求证据、局部行号/字节/哈希、停止原因和未验证项交Leader reports，产品repo保持只读且HEAD/clean不变。若不能写Leader报告，先放自己的新firstparty tmp并提供路径，Leader归档。"
+  ],
+  "out_of_scope": [
+    "禁止读取任意历史raw/body/metadata/corpus/scannercontext；禁止请求第二文件、元数据或重试；不修改冻结工具/策略/schema/denylist/旧run，不执行第三方源码。",
+    "不做App实现、依赖/模型下载、构建/安装/加载/测试/集成/采用/clearance/v9/CP2或CP3推进；原音频隐私和父亲数据红线不变。"
+  ],
+  "acceptance": [
+    "固定新approval和request完整匹配；handler在实请求前经Leader审查；单次结果可独立核验且无第二请求/重试。",
+    "准确区分实际可见源码、推断及未验证；其他能力或委派缺口触发停止；不能把目标函数局部证据当作全文件/运行时安全结论。",
+    "文件权限/哈希/单次marker/预算/扫描/终态/产品Git边界完整可核验；报告局部可见范围和所有限制。"
+  ],
+  "evidence_required": [
+    "先回报PRE_REQUEST_READY与仅第一方helper路径/bytes/SHA/控制说明，等待同任务Leader审查；不要自动请求。",
+    "最后 RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED，修改文件及purpose、执行/检查结果、逐项证据、未验证、范围偏移、Git状态；派生JSON+Markdown与private evidence inventory；报告后停止，不开始下一步。"
+  ],
+  "stop_conditions": [
+    "Any source/response/Gitblob/SHA256/mode/size/path mismatch, unsafe filesystem, invalid UTF8/NUL, malformed/ambiguous/oversized response or persistencefailure:stop withoutretry.",
+    "Decoded size must equal8993 and never exceed262144; rawentitynever exceeds65536; one requestonly,no redirects/credentials/proxy/metadata.",
+    "Any need to follow another include/symbol/file/dependency/metadata:record exact gap and stop. If thisfile onlydelegates, no automaticsecondfile.",
+    "Other prohibitedcapability:stop and returnproductdecision. Targethotwordconfigurationinspection doesnotclear activecategories or modifyexistingdenylist.",
+    "No sourceadoption/build/install/load/test/inference/integration/model/audio/device/publication/v9/mapclearance/Checkpointprogression.",
+    "脚本或输入身份漂移、未知修改、权限/持久化不符时停止；一次请求一旦开始失败也耗尽，不重新获取。",
+    "无法完成用户范围内的局部审查时报告确切阻塞，不扩大可见源码或换工具获取。"
+  ],
+  "dispatched_at": "2026-09-06T08:01:44.811228+00:00",
+  "execution_owner": "leader",
+  "execution_owner_changed_at": "2026-09-06T08:10:31.125848+00:00"
+}

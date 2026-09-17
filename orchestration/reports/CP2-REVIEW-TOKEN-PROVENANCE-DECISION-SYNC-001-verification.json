@@ -1,0 +1,51 @@
+{
+  "RESULT": "PASS",
+  "commit": "8a2d85d824f12cdc186f84514037698c88237dcb",
+  "parent": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "root_tree": "9c0993063506916a5d452f3224f40bd7aea8bdbc",
+  "five_files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 15375,
+      "sha256": "1c90ce42692395e95b09b85a0d3b0211a4836e850c93117f7e0ec36150d5efa1",
+      "blob": "45fc1f3b801d217babae757c9945f432bc388d1a"
+    },
+    {
+      "path": "doc/README.md",
+      "bytes": 15068,
+      "sha256": "c8bd5312384a26a3d6a77b6f846ff9f3be79d11995d5298a22c7ba38d979d83b",
+      "blob": "ce1f1a6711d5a24d7fb86118af3dab020f89e2a8"
+    },
+    {
+      "path": "doc/cp2-review-token-provenance-decision-2026-09-06.md",
+      "bytes": 9458,
+      "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+      "blob": "55071af340b27fe2fade62065a907f54160f0c5e"
+    },
+    {
+      "path": "doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 40090,
+      "sha256": "1d8d3405fd6b66e0764d81d1b32dbb36c57544b5c8dcb284a7a91d5cb017f60f",
+      "blob": "dfe3ca0505ac55014fc6e8b21ae4757bb91ebcd5"
+    },
+    {
+      "path": "doc/prd-v0.1-2026-09-04.md",
+      "bytes": 63461,
+      "sha256": "3cce758ccff443bdb7ea9368f3c585e4179653228c5071b0353b3991ce99ded7",
+      "blob": "3519ba82ada058514eccf4b015824f5cc3970131"
+    }
+  ],
+  "formal_copies_byte_equal": true,
+  "local_markdown_links": 64,
+  "external_or_anchor_not_fetched": 34,
+  "historical_raw_links_not_followed": 9,
+  "old_git_records_exact": 129510,
+  "old_git_records_nul_sha256": "93c485ea4a43f86348504e1cd309c2e645c596b4a016597f6a88986ba3c93681",
+  "unchanged_trees": {
+    "tools": "08b14a15170804f907f9d7ea632e2961f4028ee4",
+    "doc/security-reviews": "878e5644e1baef763b4d49719f12b96b07a57323",
+    "app": "753c8e7ce25f55b13b1492b64fcdc9df85b7fa88"
+  },
+  "worktree_clean": true,
+  "scope": "five-document-only sync; no P/private/source/network/candidate workload; scope semantics separately reviewed against formal decision"
+}

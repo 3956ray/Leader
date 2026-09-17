@@ -1,0 +1,41 @@
+{
+  "task_id": "CP2-ASR-HOTWORDS-CHAIN-TERMINATION-ROUTE-DECISION-001",
+  "RESULT": "ACCEPTED",
+  "product_decision": "APPROVED",
+  "accepted_at": "2026-09-06T09:14:53.402407+00:00",
+  "formal_files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-hotwords-chain-termination-route-decision-2026-09-06.md",
+      "bytes": 13982,
+      "sha256": "0d639a27ff661ef0106708810f817a2578400c7840e2b13825f9b1ebbc69ef2e"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 72021,
+      "sha256": "abcbd91a45146fca75d53509031bdf0b38318e956cd67f41f057de8118cde030"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "bytes": 10900,
+      "sha256": "b402abdce7e556531bbd3099e2c20d76c8207d6a87e3273d0a738c8939cbd3ed"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "bytes": 42056,
+      "sha256": "37dd3ddf891d4f82f157f53e1fc7af7ecf76eea94a1c8adc74eba5ae9bf3d418"
+    }
+  ],
+  "checks": [
+    "4deliveredfiles/6inputpins/115documentlinks independentlyverified; formal decision read and PRDdelta inspected.",
+    "Declaration-only3lines129B accurately limited; hotword per-filechain permanentlyterminated,no thirdsource; currentASRnotapproved.",
+    "Nextofficialresearch3-5non-sherpacandidates,<=3pages each+<=3cross,<=18total; all12criteria,<=2shortlist,hardcriteriaandinsufficientstatus, noartifact/code/execution.",
+    "Personalvocabularyimplementation Deferrednotremoved;90percentpropername andallprivacy/device/Checkpointgates retained. CoreASRstillblocked.",
+    "Ordinaryread-onlyofficial research expresslyauthorized withoutnewduplicateuserapproval; futureintake/acquisition/executionrequiresnewformal scope andapplicableauthorization."
+  ],
+  "limits": [
+    "KB lint toolmissing disclosedpartial; manualchecks complete.",
+    "KB4files uncommitted inexisting area, noKBcommitclaimed; product0043d343cleanunchanged."
+  ],
+  "routing_note": "PM result reached oldLeader, who relayed only; currentLeader independently verified actualfiles/controlstate. Future dispatch specifies currentLeader id.",
+  "next_step": "Five-document sync, then official-material research executed byPM underLeader orchestration."
+}

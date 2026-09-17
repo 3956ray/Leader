@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP0-DEV-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP0",
+  "status": "accepted",
+  "goal": "把已批准的 CP0 延后决定同步到 think 开发仓库，消除仓库规则与当前授权之间的冲突，并以单一文档提交完成。",
+  "commit": "82aa4cad460b227b50aaba73d4d25ee85b58f966",
+  "report": "orchestration/reports/CP0-DEV-SYNC-001.md"
+}
+

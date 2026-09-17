@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-LICENSE-TEXT-ROUTING-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Decide the minimal offline first-party repair boundary for fixed LICENSE text being misrouted into C/C++ lexical analysis, based on the accepted one-request stop evidence.",
+  "scope": [
+    "Read Leader accepted stop report, product four derived reports and frozen first-party parser/controller/policy as needed. Use only first-party/derived materials, no raw LICENSE/API/metadata/corpus or network.",
+    "Record APPROVED/REVISE/PAUSE in formal knowledge base decision, PRD, INDEX and LOG; define one bounded next repair contract and unchanged source/privacy/checkpoint limits.",
+    "Consider explicit fixed LICENSE text handling retaining acquisition identity/budgets/inert body evidence/static content review, without C/C++ quote/include parsing and without automatic license/adoption approval. Do not allow extension guessing or skipping scope/deny/security checks.",
+    "Require self-authored prose fixtures and baseline112 plus routing regressions; preserve v4/new freeze/terminated attempt unchanged. Candidate must be independently accepted then separately frozen and mapped to unchanged authorization before a new run.",
+    "Clarify existing intentionally unsupported C/C++ forms from frozen rules in the offline readiness checklist, so expected stops and bugs are distinguished. No new source evidence exists beyond LICENSE; do not silently approve macro/conditional/include semantic expansion."
+  ],
+  "out_of_scope": [
+    "No product repository writes/developer dispatch/code changes/network/new body requests/old corpus or actual LICENSE fixture reads.",
+    "No resume/retry of terminated attempt, altered source pins/seeds/budgets/denylist, builds/models/adoption or CP2/CP3 approval.",
+    "No broadening to generic preprocessor support or using one LICENSE stop as proof of source impossibility."
+  ],
+  "acceptance": [
+    "Decision directly addresses verified LICENSE line183 natural language apostrophe and zero C/C++ files obtained, without treating it as malware/source infeasibility.",
+    "Explicit typed routing and retained checks, self-authored tests, old-version preservation and separate acceptance/freeze/acquisition sequence are defined.",
+    "Formal files consistent, paths/SHA and checks/limitations reported; next task is bounded and developer remains idle until Leader sync/dispatch."
+  ],
+  "evidence_required": [
+    "RESULT APPROVED/REVISE/PAUSE, formal absolute paths and SHA256, clauses/rationale, one next task, unverified items and scope check; stop and report to Leader."
+  ],
+  "stop_conditions": [
+    "Need broader source/semantic/privacy/checkpoint changes or raw third-party data: explicitly REVISE/PAUSE without executing."
+  ],
+  "baseline_commit": "9aa40913c57cccd31105ac88385102f0a0758d63",
+  "input_report": "orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V4-001.md",
+  "input_report_sha256": "e06486baf8f78d0285af2f8136ed1f7b861198071511434f3b00ca4b890028f1",
+  "dispatched_at": "2026-09-06T02:24:01.922731+08:00",
+  "task_result": "APPROVED",
+  "accepted_at": "2026-09-06T02:32:18.549277+08:00",
+  "report": "orchestration/reports/CP2-ASR-LICENSE-TEXT-ROUTING-DECISION-001.md"
+}

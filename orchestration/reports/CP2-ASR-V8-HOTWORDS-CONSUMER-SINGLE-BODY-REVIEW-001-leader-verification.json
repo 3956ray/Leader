@@ -1,0 +1,124 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "RESULT": "PASS",
+  "verified_at": "2026-09-06T08:17:07.446396+00:00",
+  "product_HEAD": "bd0bb57efc4348f599c36a3166fa018809914788",
+  "product_clean": true,
+  "private_inventory": [
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/acquisition-terminal.json",
+      "bytes": 1361,
+      "sha256": "e6e2440ac5cb6e02bd07d294a4f4125275c6a139c77b43b21ef73c3320085d25",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/attempt-consumed.json",
+      "bytes": 253,
+      "sha256": "b127809016e42588e9e0356c4f3b19e40332baea3aa9f73a4c28406125c22d4d",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/online-recognizer.cc",
+      "bytes": 8993,
+      "sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/response.json",
+      "bytes": 12676,
+      "sha256": "a1752a244deb155f6c646b7c62966bba807311e5571d4b076e3e25f86c7815a5",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/same-body-scan.cpp",
+      "bytes": 8993,
+      "sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/scanner/scan-report.json",
+      "bytes": 1185,
+      "sha256": "9579a604ab3805ed509a1d60a77859e10dde1a55187d6059cf80ce9c6b4eb015",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/scanner/scan-report.md",
+      "bytes": 1534,
+      "sha256": "b53e478d502c87e244410454f64596f2c2a38e47972f9eb6831cd4a17405dd84",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/scanner-text/scan-report.json",
+      "bytes": 1183,
+      "sha256": "2330bfab5abf4f702c80bddd3452110f6e94eacd896acf1a953c4f91cbf5550e",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/scanner-text/scan-report.md",
+      "bytes": 1532,
+      "sha256": "73172ebeafe9de9d10722c558c5c9ee30539be937fb82b11abbfdc99cfcca4f7",
+      "mode": "0600",
+      "nlink": 1
+    }
+  ],
+  "file_count": 9,
+  "total_bytes": 37710,
+  "acquisition_terminal": {
+    "path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/acquisition-terminal.json",
+    "bytes": 1361,
+    "sha256": "e6e2440ac5cb6e02bd07d294a4f4125275c6a139c77b43b21ef73c3320085d25"
+  },
+  "visible_lines": [
+    27,
+    88,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    134,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    163,
+    164,
+    165,
+    166,
+    167,
+    198,
+    210,
+    222,
+    223,
+    224,
+    226,
+    268,
+    273
+  ],
+  "visible_unique_line_count": 28,
+  "visible_unique_bytes": 1237,
+  "checks": [
+    "Private outputs regular0600 singlelink; directories0700.",
+    "Rawresponse decodes exactly to expected8993B body and scan alias; Gitblob and SHA256 match.",
+    "One request/no retry/redirect/metadata; marker and all terminal file hashes independently checked.",
+    "Exact output line/slice bytes and SHA256 checked against body; no additional source text displayed.",
+    "Text scanner1 candidate1text0binary0skipped0unreadable score0; initial suffix gap and same-body coverage correction retained.",
+    "Product HEAD/clean unchanged; no app/tool/frozen policy changes or target execution."
+  ],
+  "limits": [
+    "Request count relies on reviewed handler plus terminal, no independent packet capture.",
+    "Socket timeout is inactivity bound; no overall deadline guarantee.",
+    "No claim of full source semantics, license/provenance/vulnerability closure, runtime behavior or adoption."
+  ]
+}

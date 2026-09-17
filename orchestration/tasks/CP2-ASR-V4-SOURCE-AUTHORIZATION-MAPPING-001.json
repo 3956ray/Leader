@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V4-SOURCE-AUTHORIZATION-MAPPING-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Map unchanged original precise source authorization onto the independently accepted new v4 release freeze before a separate bounded acquisition task.",
+  "scope": [
+    "Read original authorization/immutable contract, formal scope/metadata decisions and accepted freeze identities.",
+    "Compare design/upstream/seeds/root/mode/type/budgets/denylist and retained metadata input pins; record exact allowable original metadata paths and no new networking endpoints."
+  ],
+  "out_of_scope": [
+    "No actual acquisition or code changes during mapping; no expansion of source scope."
+  ],
+  "acceptance": [
+    "All scope fields match original authorization and current formal decisions; accepted immutable release and final pure parsing evidence exist."
+  ],
+  "evidence_required": [
+    "orchestration/reports/CP2-ASR-V4-SOURCE-AUTHORIZATION-MAPPING-001.md",
+    "Freeze independent verification and original authority hashes."
+  ],
+  "stop_conditions": [
+    "Any mismatch or expanded source/privacy/checkpoint scope."
+  ],
+  "accepted_at": "2026-09-06T02:00:53.169137+08:00",
+  "task_result": "MATCHED",
+  "report": "orchestration/reports/CP2-ASR-V4-SOURCE-AUTHORIZATION-MAPPING-001.md"
+}

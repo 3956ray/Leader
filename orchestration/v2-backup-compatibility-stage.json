@@ -1,0 +1,35 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "V2-BACKUP-COMPATIBILITY-001",
+    "owner": "developer",
+    "checkpoint": "CP8",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Complete versioned backup and atomic restore for all implemented persistent feature data, preserving identities and safe defaults.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2, accepted clean baseline53fb5da83c841d565f8c2f627de4d81905a1abf6. Formal PM addendum E9 X1-X3 and baseline C1-C10. One CP8 task; build on existing backup implementation.",
+      "X1: Include existing notes/drafts/categories/trash/title ownership/reminder configurations plus correction vocabulary text, calendar immutable provenance and import fingerprint/idempotence mappings, accepted AI title/category provenance, and explicit relation edges with stable endpoint mappings. No fabricated optional fields. No credentials, raw audio, logs/cache or unaccepted temporary AI suggestions; no model/runtime assets.",
+      "X2: Introduce explicit versioned format contract for added fields; handle prior v1 files explicitly without silent data loss, reject unknown newer versions/unknown meaningful fields, retain strict bounds/checksum/UTF8/reference/uniqueness checks. No silent same-version semantic expansion. Old-reader rejection of new format and new-reader old-file behavior must be tested.",
+      "Extend existing preview/merge, no whole-library overwrite. Preserve local conflicting originals, explicit conflict copies and complete note/category/draft/relation/calendar/AI provenance ID mapping. Repeated identical export id/hash remains idempotent; same export id/different content rejected. Re-importing calendar after restored provenance cannot overwrite local originals or silently duplicate mappings.",
+      "Restore is atomic with failure rollback across all restored durable fields; preview invalidated by relevant intervening local changes. Correction vocabulary currently SharedPreferences: choose minimal safe single transactional ownership or equivalent demonstrably recoverable approach; preserve existing vocabulary and never claim atomic DB+preferences without proof. Necessary local schema/storage migration for CP8 allowed; no new voice feature/model work.",
+      "Restored reminders stay disabled without scheduling. Do not export service secrets/configuration or enable AI on restore; restored AI requires local configuration/confirmation. In-memory state must reflect restored data and disabled AI, not stale active consent. Existing unaffected local reminder plans remain unchanged. Explain merge behavior for vocabulary conflicts and provenance identity deterministically.",
+      "X3: Actual Android synthetic full-field export/restore and system file workflow: old/new formats, empty database, conflicting notes/categories/relations and source mappings, repeated restore, subsequent calendar import, corrupt/truncated/unsupported files and injected transaction/write failures. Compare exact durable fields and original DB on failure; use tested copies only. All implemented data exported in one consistent snapshot or explicitly coordinated snapshot, including vocabulary.",
+      "Necessary host/build/lint and affected regressions. Update current backup coverage/UI documentation and exact format specification. No third-party dependency unless safety gate passed. Xiaomi15 SAF/provider behavior and family backup trial remain pending."
+    ],
+    "out_of_scope": [
+      "No new voice controls/models/accuracy work, AI provider requests, graph, unrelated UI redesign, cloud sync/accounts/payment/publication, Flutter/KMP, raw audio or personal data/device access. No separate developer tasks or further checkpoint."
+    ],
+    "acceptance": [
+      "X1-X3 and C1-C10 relevant behavior have exact field/identity round-trip and failure evidence; full implemented-data backup covers vocabulary/calendar/acceptedAI/relations with safe exclusions.",
+      "Version compatibility, conflict copy mapping, idempotence, stale preview, atomic rollback, restored reminders disabled/AI off and subsequent calendar import verified in actual Android synthetic flows, supported by meaningful host tests.",
+      "Build/lint and necessary regressions pass, final clean commit/APK/evidence hashes documented; no unknown dependency or unrelated modifications. Xiaomi/family/provider/voice gaps explicitly retained."
+    ],
+    "evidence_required": [
+      "ACK exact task/attempt/hash/baseline. RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED, file purposes, format/migration decisions, commands/results, X1-X3 matrix, old/new format fixtures with sanitized field comparisons, actual SAF/rollback/idempotence/calendar-after-restore evidence, exclusions proof, exact final commit/APK and manifest. Report unverified items and next recommendation then stop."
+    ],
+    "stop_conditions": [
+      "Complete this CP8 task then stop and report commander. Do not begin Xiaomi/family/other CP automatically. Preserve unknown edits.",
+      "Pause affected delivery for possible data loss, non-atomic restore, privacy boundary violation, unknown dependency or requirement expansion; report concrete evidence. Do not use private data or overwrite source backups. Engineering completion is not full-App or family delivery completion."
+    ]
+  }
+}

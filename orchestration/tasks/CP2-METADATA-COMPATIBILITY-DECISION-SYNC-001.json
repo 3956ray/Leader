@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-METADATA-COMPATIBILITY-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Synchronize the approved metadata compatibility decision and PRD into the product repository in one bounded five-file documentation commit.",
+  "scope": [
+    "Copy exact KB cp2-metadata-path-compatibility-decision-2026-09-06.md and prd-v0.1-2026-09-04.md to doc/.",
+    "Minimally update AGENTS.md, doc/README.md and doc/development-guide-v0.1-2026-09-04.md to reflect accepted v3/freeze, metadata preflight blocker and next offline compatibility repair in independent v4 directory.",
+    "Reflect raw inert-name preservation versus strict acquisition authorization, synthetic-only developer work and hash-fixed final Leader-only two-JSON pure parsing; independent acceptance, separate new freeze, separate mapped acquisition.",
+    "Verify five-file boundary, hashes and links, create one commit and report to current Leader; stop before implementation."
+  ],
+  "out_of_scope": [
+    "No tool/code changes, v4 creation, execution, network, third-party data, old corpus, actual metadata parsing, freeze, build, dependencies, models or CP3.",
+    "No edits beyond five files or changes to copied formal decision/PRD."
+  ],
+  "acceptance": [
+    "Decision SHA256 3272b0de1df984f9bb0fac81a369662d5876f3e9268e315f9466c7aae50e918e and PRD SHA256 d56ff590d7a1d7afc0b1a9e3e3dec858debbabbab65f3b25b19088f31810a67b match KB byte-for-byte.",
+    "Three entry documents accurately state scope and all unchanged privacy/source/checkpoint boundaries.",
+    "Commit parent e2d64f98aae52bd5e015962191a3bf2c121beeb2, exactly five files, git show --check passes, clean worktree."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED, commit/parent, file purposes, source/target hashes, validation commands/results, unverified items and scope check."
+  ],
+  "stop_conditions": [
+    "Unknown worktree edits, HEAD mismatch, source hash drift, scope expansion or contradictory requirements: stop and report."
+  ],
+  "baseline_commit": "e2d64f98aae52bd5e015962191a3bf2c121beeb2",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "dispatched_at": "2026-09-06T01:11:45.443857+08:00",
+  "task_result": "COMPLETE",
+  "accepted_at": "2026-09-06T01:20:23.149051+08:00",
+  "commit": "55d3c3303a3884c88240c2f14d9b855fd51ae88e",
+  "report": "orchestration/reports/CP2-METADATA-COMPATIBILITY-DECISION-SYNC-001.json"
+}

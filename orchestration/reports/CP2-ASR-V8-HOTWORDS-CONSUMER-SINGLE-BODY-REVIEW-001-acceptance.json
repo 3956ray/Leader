@@ -1,0 +1,58 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T08:21:43.643412+00:00",
+  "task_result": "PRODUCT_DECISION_REQUIRED",
+  "meaning": "Accepted completion of exactly one acquisition and bounded review with correct dependency stop; artifact remains manual_review, no adoption or CP2 acceptance.",
+  "evidence": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-report.json",
+      "bytes": 8265,
+      "sha256": "51336e73331f9fee139211b04d35e82b2f10c5fec3c432fac272bb2801d2463d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-report.md",
+      "bytes": 1829,
+      "sha256": "9a76f05180b6bfff8ac52a665f599927411d30b357e5c47a2da36b65c2bc7828"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-leader-verification.json",
+      "bytes": 4182,
+      "sha256": "d250701798ca6a61fa68de660281d4522ee32940db900090ebc4b3b8f5659ab0"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-result-review.json",
+      "bytes": 4030,
+      "sha256": "fb43e6d7ffeecd9d2b1432efc61f629d28b0a390cdb8c24844d93c3a354f3902"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-pre-request-acceptance.json",
+      "bytes": 1497,
+      "sha256": "ecc9f89de62f7f2d7bbca620e3d45734ac9958023a880992ce130229b2f40b6d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-scanner-coverage.json",
+      "bytes": 1265,
+      "sha256": "4ada842fc046a99507231911a4aa5a3266be44152cff9ece3be7e4a7f335399a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-execution-owner.json",
+      "bytes": 1006,
+      "sha256": "9aac8ab08d3ce20250e51ba889839449672ac986ad4f49d38d9c343ad68c8bb1"
+    }
+  ],
+  "criterion_evidence": [
+    "Fresh exact user approval2cc71640 and request0c08c5cf verified; selected Leader handler204683f9 independently reviewed and two minimal strict-format findings closed.",
+    "Exactly1GET,8993Bdecoded,12676Bentity,knownGitblob/SHA256; immutable consumed marker and terminal checked; no retry/redirect/metadata/second source.",
+    "9private regular0600 singlelink files37710bytes checked, including exactsamebody scanner alias; private dirs0700. First scanner gap disclosed, completed unchanged-scanner text pass1text0skipped0findings; no safety inference.",
+    "28visiblelines1237bytes limited target context checked; local file-existence call/diagnostic path/config delegate facts separated from unknown actualI/O/bufferselector/reachability; stopped at nextdependency.",
+    "Independent derived-result semantic review PASS. Productrepo unchangedcleanbd0bb57e; no thirdparty execution, no new dependencies, no frozenpolicy/oldrun changes."
+  ],
+  "unverified": [
+    "Actual FileExists implementation, runtime effects, complete buffer/file selection and adapter reachability.",
+    "Fullsource closure/license/provenance/vulnerability/model/device gates unchanged.",
+    "Request count backed by reviewed code and retained terminal, not packet capture.",
+    "Developer helper is unused and unreviewed, never received execution authorization."
+  ],
+  "next_step": "Sole formal product route decision from derived evidence; no automatic next acquisition."
+}

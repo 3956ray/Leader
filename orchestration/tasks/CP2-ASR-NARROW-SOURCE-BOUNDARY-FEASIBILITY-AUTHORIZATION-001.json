@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "decision": "AUTHORIZED",
+  "accepted_at": "2026-09-05T21:32:04+08:00",
+  "goal": "由 Product Lead 明确决定是否授权从固定上游重新取得有限 csrc 正文，执行窄运行时合同的静态源码边界可行性门禁。",
+  "report": "orchestration/reports/CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-AUTHORIZATION-001.md"
+}

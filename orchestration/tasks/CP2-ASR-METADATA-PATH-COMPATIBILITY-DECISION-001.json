@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-METADATA-PATH-COMPATIBILITY-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Decide and record the minimal offline first-party metadata path compatibility repair after the frozen parser rejected exact pinned real metadata.",
+  "scope": [
+    "Read Leader preflight report and current formal decisions; record APPROVED, REVISE or PAUSE in product knowledge base, PRD, INDEX and change log.",
+    "Consider a new independent first-party candidate preserving v2, v3 and existing release freeze unchanged. Separate inert metadata name representation from actual acquisition path authorization; preserve raw identity, all entries, uniqueness and traversal rejection.",
+    "Synthetic-only implementation and regressions; explicitly decide whether two exact hash-pinned JSON copies may be used solely for final read-only zero-network parser validation, never fixtures or source reuse.",
+    "Maintain existing exact source authorization, fixed identity, nine seeds, LICENSE/csrc h/cc, mode/type, denylist, 96 files/1 MiB, privacy and checkpoint gates. Define development, independent acceptance, separate new freeze and separate mapped acquisition sequence."
+  ],
+  "out_of_scope": [
+    "No developer dispatch, product repository edits, network, source bodies, old corpus, frozen code modification, new dependencies, builds, models or integration.",
+    "No metadata filtering/rewriting or changed pins to fit the parser; no broader source scope or CP2/CP3 approval."
+  ],
+  "acceptance": [
+    "Formal decision addresses the 171 out-of-scope names and exact failure; distinguishes first-party protocol compatibility from source feasibility.",
+    "Repair contract states all allowed work, unchanged restrictions, synthetic baseline regressions and explicit real-metadata validation boundary.",
+    "Formal files are consistent and report paths/hashes; product repo synchronization remains a separate Leader task."
+  ],
+  "evidence_required": [
+    "RESULT APPROVED/REVISE/PAUSE; formal files with SHA-256, decision clauses, verification, unverified items, scope check and next bounded task."
+  ],
+  "stop_conditions": [
+    "Need to expand source authorization, introduce network or reuse old source bodies, relax traversal/identity/budget/privacy/checkpoint gates: stop with REVISE or PAUSE."
+  ],
+  "baseline_commit": "e2d64f98aae52bd5e015962191a3bf2c121beeb2",
+  "input_report": "orchestration/reports/CP2-ASR-FROZEN-METADATA-PREFLIGHT-001.md",
+  "input_report_sha256": "513cf687ba44a4e33c32ea56684947e91f302b4d6b640e6b23b2e856f911d06a",
+  "dispatched_at": "2026-09-06T01:04:02.521425+08:00",
+  "task_result": "APPROVED",
+  "accepted_at": "2026-09-06T01:11:27.766347+08:00",
+  "report": "orchestration/reports/CP2-ASR-METADATA-PATH-COMPATIBILITY-DECISION-001.md"
+}

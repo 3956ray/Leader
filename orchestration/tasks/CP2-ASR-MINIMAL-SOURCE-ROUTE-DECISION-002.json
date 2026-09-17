@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-MINIMAL-SOURCE-ROUTE-DECISION-002",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "decision": "REVISE",
+  "goal": "基于首次最小源码快照因冻结清单不闭合且触碰 TTS 边界而正确停止的证据，决定下一条不放宽安全边界的可验证源码发现与冻结路线。",
+  "report": "orchestration/reports/CP2-ASR-MINIMAL-SOURCE-ROUTE-DECISION-002.md"
+}

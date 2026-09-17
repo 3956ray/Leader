@@ -1,0 +1,58 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T09:02:42.698272+00:00",
+  "task_result": "PRODUCT_DECISION_REQUIRED",
+  "meaning": "One approved final single-body review completed and stopped at target declaration. Hotword source-by-source evidence chain permanently terminated under current route; artifact manual_review, no source adoption or CP2 pass.",
+  "evidence": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-report.json",
+      "bytes": 6098,
+      "sha256": "d8d0888607c189a042c1808ef60b04abad15b549992f220260669885b1430d44"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-report.md",
+      "bytes": 1443,
+      "sha256": "28b19012996b440f2ebf7560f8f14b676d24d45403548d1a93fa3d7aad936bab"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-leader-verification.json",
+      "bytes": 3657,
+      "sha256": "731abd580c46267bec3ce638428d06530ed3cfd4353bb65271104c851a0c80b2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-result-review.json",
+      "bytes": 3430,
+      "sha256": "c0c89ccabf0fc8d8b9bce4a8291da6d9a42e92e62571b9b2a53d2c87b44f790f"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-visible-context.json",
+      "bytes": 1004,
+      "sha256": "690157129448150a036884b7c22743caa3ed4f59908e7facb1965220cd6638b9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-pre-request-acceptance.json",
+      "bytes": 1150,
+      "sha256": "6bf2d58da753a5f17fdc0472eb98eb1ce706a30e587df29b96a1be7b9a68074e"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-handler-provenance.json",
+      "bytes": 2073,
+      "sha256": "1d9ca03d00818211f35007cb02862a6b5eed899f3a31a075258ceaadc9a805e8"
+    }
+  ],
+  "criterion_evidence": [
+    "Exact freshapprovalffd046a2/requestd645a34e; newhandler5175f3d5 is independently reviewed substitution-only reuse oftrusted logic, not oldrun resume.",
+    "1GET3434Bentity/2286Bdecoded with exactGitblob9c2b4b71 andSHAee879c76; markerterminal and6private0600singlelinkfiles10069B verified; no retry/redirect/metadata/secondsource.",
+    "One unchangedscanner/IOC invocation on original.h:1text0binary0skipped0unreadable0findings. Retainedlow_indicators/0 isnotadoption.",
+    "Onlyclass20 andtargetdeclaration24-25 displayed:3uniquelines129B, below64/4096; allslice bytes/hashes independentlychecked. Immediately stopped,no othermethods ordependencyfollow.",
+    "IndependentderivedsemanticreviewPASS: declaration occurrenceonly, no wholefile/no-buffer inference; current chainterminated performalrule.",
+    "Productrepo0043d343 remainscleanunchanged; no thirdpartyexecution/dependency/model/implementation/privacy/Checkpointchanges."
+  ],
+  "limits": [
+    "ActualCreate implementation, selector/buffer-only feasibility/FileExists effects/businessreachability remain unverified.",
+    "No claim no other definitions exist; immediate-stop rule forbidslooking for them.",
+    "License/provenance/sourceclosure/vulnerability/model/device tests unresolved; request count based onreviewedhandler andterminal, notpacketcapture."
+  ],
+  "next_step": "CP2-ASR-HOTWORDS-CHAIN-TERMINATION-ROUTE-DECISION-001, no thirdsource request."
+}

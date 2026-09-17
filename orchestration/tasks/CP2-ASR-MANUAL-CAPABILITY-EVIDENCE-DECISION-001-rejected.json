@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "rejected",
+  "goal": "Decide whether a narrowly bounded offline mechanism may consume exact human comment adjudications, or pause the source route, without granting real acquisition or weakening active capability stops.",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "baseline_product_commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+  "review_report": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-review.json",
+  "review_report_sha256": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+  "scope": [
+    "Read current formal semantics decision/PRD, derived Leader manual review, accepted candidate/freeze and first-party schema only. Exact manual review covers two existing body/line/rule hits; neighboring server-use fields, dependencies and capability reachability remain unreviewed. Do not follow private/source pointers.",
+    "Return explicit APPROVED/REVISE/PAUSE and write formal decision in product knowledge base, update affected PRD/INDEX/decision log/source attribution. Chats alone are insufficient. Product repository source and frozen documents remain unchanged in this decision task; report formal hashes for separate sync.",
+    "Determine whether one next offline first-party bounded design/implementation task is warranted for authentic exact-bound human review evidence, or PAUSE if it requires arbitrary exceptions, broadened source scope or unnecessary additional investment. Specify only one next task and acceptance/stop conditions, no continuous development.",
+    "If approving a mechanism, require explicit independently trusted authority/report identity and full source/body/line/rule/occurrence binding with unambiguous old/new line hash domains. Missing, extra, altered, duplicate, wrong-object or conflicting evidence must fail closed; forbidden/unresolved/pending continue stopping. New comment occurrences cannot inherit clearance. Active/uncertain deny, lexical/unsupported/file-safety gates must remain hard regardless of review.",
+    "Decide how any justified narrow clearance is represented separately from source/runtime/license/P0/reachability approval. No external wrapper bypass, edited old terminal, blanket comment ignoring or global token exemptions; preserve original analysis and durable review provenance. Existing frozen v6 has no consumption API and remains immutable.",
+    "Define self-authored offline regression matrix retaining all158existingtests plus evidence-binding/tamper/nontransferability/priority/no-successor cases, deterministic double evidence and independent Leader acceptance before any separate new freeze/real authorization. No use of actual header content as fixture."
+  ],
+  "out_of_scope": [
+    "No real source/PRIVATE/body/metadata/API/scannercontext reads, pointer traversal, web/network or thirdparty acquisition/dependencies. No code/tool/freeze/oldrun/App changes, no live transport/input creation/real fetch permission.",
+    "No claim current comment decision clears adjacent fields/runtime/API scope or source closure/adoption, no new acquisition authorization or reuse of historical authorization, no CP2/CP3/Alpha approval.",
+    "No global/token-wide/multi-body exceptions or relaxed identity/seeds/budgets/path/type/deny/privacy/checkpoints."
+  ],
+  "acceptance": [
+    "Formal APPROVED/REVISE/PAUSE decision and relevant product documents exist with clear authority/next-task scope or pause, exact hash-bound review findings attributed accurately.",
+    "Decision explicitly preserves separate future Leader acceptance/freeze and fresh user acquisition approval; no realsource execution or access required for PM."
+  ],
+  "evidence_required": [
+    "RESULT APPROVED/REVISE/PAUSE; formal changedpaths/hashes and rationale, precise nextsingle task/acceptance/stops or pause; contradictions and unresolved issues. Notify Leader then stop."
+  ],
+  "stop_conditions": [
+    "Need actual source/otherfile review, relaxed scope/privacy/capability/checkpoint, arbitrary preprocessor or review waiver: PAUSE/return decision, do not execute expansion.",
+    "Existing formaldocuments or ownership unclear: report instead of overwriting unknown changes."
+  ],
+  "dispatched_at": "2026-09-06T06:49:59.388594+08:00"
+}

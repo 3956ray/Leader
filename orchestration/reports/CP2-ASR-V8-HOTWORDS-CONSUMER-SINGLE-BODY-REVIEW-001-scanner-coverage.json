@@ -1,0 +1,12 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "recorded_at": "2026-09-06T08:15:12.032941+00:00",
+  "reason": "Trusted scanner TEXT_SUFFIXES omits .cc; first invocation counted binary_files=1,text_files=0 and did not run content rules. Raw first result retained, not interpreted as a clean source scan.",
+  "same_logical_object": "sherpa-onnx/csrc/online-recognizer.cc",
+  "source_path": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/online-recognizer.cc",
+  "private_scan_alias": "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7/same-body-scan.cpp",
+  "bytes": 8993,
+  "both_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79",
+  "control": "An exact independent regular0600 singlelink copy with scanner-supported .cpp suffix. No network, second upstream object, third-party execution or scanner/frozen policy changes. Same authorized offline review; second scanner invocation completes missing text coverage, does not restart acquisition.",
+  "contract_clarification": "Leader-authored one scanner invocation clause corrected to allow missing coverage completion on identical already-authorized body, under persistent user authority. No scope or source approval change."
+}

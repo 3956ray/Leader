@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-09-16T02:19:27.015320+00:00",
+  "results": [
+    {
+      "path": "/private/tmp/thinkv2-voice-permission-denied.log",
+      "sha256": "5863a17b2716227a61b416ae885c27155453471fc87f7a3b4f9c1b63fcbaee4d",
+      "pass_marker": [
+        "OK (1 test)"
+      ],
+      "failure_marker": false
+    },
+    {
+      "path": "/private/tmp/thinkv2-voice-hold-background.log",
+      "sha256": "a33a9364b388c43cefab636c3691df4574147a3c61436d427a56bb817c74c2e3",
+      "pass_marker": [
+        "OK (1 test)"
+      ],
+      "failure_marker": false
+    },
+    {
+      "path": "/private/tmp/thinkv2-voice-regression.log",
+      "sha256": "2b2836f7e6de8655e59805063e50d3a233ba8bb13ad233221a96369eeb967a4f",
+      "pass_marker": [
+        "OK (4 tests)"
+      ],
+      "failure_marker": false
+    }
+  ],
+  "coverage": "Actual pointer down/up on isolated emulator microphone (silent source), background/cancel draft protection; direct controller start with denied platform permission. Permission dialog and runtime revoke/reopen evidence still separate. No Xiaomi/family acceptance."
+}

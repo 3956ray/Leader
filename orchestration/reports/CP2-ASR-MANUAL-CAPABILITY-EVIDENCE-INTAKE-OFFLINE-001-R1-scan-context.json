@@ -1,0 +1,13 @@
+{
+  "RESULT": "PASS",
+  "raw_verdict": "sandbox_only",
+  "raw_score": 100,
+  "findings": 751,
+  "port_findings": 732,
+  "port_occurrences_all_inside_exact_40_or_64_hex": 1196,
+  "other_contexts": "inert command text, negative AST eval fixture and active websocket self-authored deny fixtures",
+  "supplemental_diff_original_verdict": "sandbox_only",
+  "supplemental_diff_score": 20,
+  "supplemental_findings": 3,
+  "scope": "context validation only; scanner verdict unchanged; no source/runtime/security approval"
+}

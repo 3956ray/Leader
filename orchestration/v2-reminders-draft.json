@@ -1,0 +1,35 @@
+{
+  "task_id": "V2-REMINDERS-001",
+  "owner": "developer",
+  "checkpoint": "CP7",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "goal": "Implement persistent one-time, daily and weekly note reminders with honest delivery state, privacy-safe notifications and lifecycle reconciliation.",
+  "scope": [
+    "Only /Users/orderly_ray/Projects/thinkV2 after acceptance of V2-NOTES-LIFECYCLE-001. Implement approved PM B1-B10 in doc/product-baseline-decision-2026-09-16.md.",
+    "One enabled schedule per real note, stable reminder ID/revision, local date/time and weekly days. Enable/disable/edit controls and accessible reminder list. Viewing or dismissing notification does not cancel repeat schedule.",
+    "Local-wall-clock scheduling across reboot, time/timezone change and app update; deterministic DST gap/overlap behavior; idempotent occurrence/revision handling. Default inexact Android alarms with visible possible delay, no silent exact-alarm permission request.",
+    "Private notification text by default and correct real-note deep link. Permission/channel disabled means not enabled; keep saved configuration distinct from OS scheduling state. Cold-start reconciliation and retryable OS failure handling.",
+    "Integrate existing soft delete/restore: cancel pending alarm/notification on delete; restore configuration disabled until explicit user enable. No changes to existing note persistence semantics.",
+    "Persist missed/delivery state honestly; avoid missed-occurrence notification storms, do not equate notification posting with user reading. Use only existing dependencies/platform APIs where possible.",
+    "Meaningful clock/transition/reconciliation tests, offline build/lint and synthetic Android scheduling/notification/cancel/deep-link verification. Preserve evidence gaps for natural daily/weekly delivery and Xiaomi behavior."
+  ],
+  "out_of_scope": [
+    "No backup import/export, ASR, calendar import, AI, graph, account, cloud notification service or publication.",
+    "No personal-device clock changes, battery setting changes, private data, new unreviewed dependencies or exact-alarm escalation without concrete need."
+  ],
+  "acceptance": [
+    "One-time/daily/weekly rules work with stable IDs and revisions; same record repeats without duplicated notes; disable/edit cancels old work; weekly days are required and valid.",
+    "Fixed-clock tests cover future occurrences, DST gap/overlap, time rollback, duplicate broadcasts and missed recovery without storm.",
+    "Actual Android evidence for schedule, notification, direct note opening and cancellation; permission/channel blocked state is honest and retry restores operation.",
+    "Reboot/timezone/update/cold start reconcile persisted plans; stale revision cannot fire replacement plan; deleted note does not notify and restore does not re-enable silently.",
+    "Private body/title are absent from default lock-screen notification and diagnostic logs; failures retain recoverable saved settings.",
+    "Record natural daily/weekly repetition and real-device reliability as unverified unless actual evidence exists; host algorithms or compressed simulated time do not substitute."
+  ],
+  "evidence_required": [
+    "RESULT; fixed baseline/final HEAD; files and purpose; B1-B10 matrix; test commands/results; APK hashes; Android evidence with exact environment; unresolved physical/family timing checks."
+  ],
+  "stop_conditions": [
+    "Draft only until commander explicitly dispatches after previous task acceptance.",
+    "On new product semantics, unreviewed dependency or permission failure, report exact issue and continue independent bounded work; no automatic next stage."
+  ]
+}

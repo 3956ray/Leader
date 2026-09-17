@@ -1,0 +1,58 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001",
+  "RESULT": "PASS",
+  "scope": "Pending single-file request identity from accepted first-party derived records only; no source acquisition or adoption approval.",
+  "blockers": [],
+  "candidate": {
+    "path": "sherpa-onnx/csrc/online-recognizer.cc",
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "git_mode": "100644",
+    "git_type": "blob",
+    "bytes": 8993,
+    "git_blob_sha1": "20d4646bb5c6ffbe714848cc497e1809113d5195",
+    "historically_verified_content_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79"
+  },
+  "sources": [
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-minimal-source-snapshot/2026-09-05/snapshot-manifest.json",
+      "bytes": 106612,
+      "sha256": "e31d674b1f2c355aa74c744a355d6e8333f99f5dc9baae2072b35baa045089f4",
+      "accepted_commit": "6952167795d1243534a93fa59a18372fb0d192e8",
+      "document_git_mode": "100644",
+      "document_git_type": "blob",
+      "document_git_blob": "5bd9b4853a58ec00426e5882cc5eab28ee44c087",
+      "current_bytes_equal_accepted_git_object": true,
+      "candidate_pointer": "/entries/74",
+      "identity_pointers": ["/commit", "/tree_sha1", "/entries/74/path", "/entries/74/mode", "/entries/74/type", "/entries/74/size", "/entries/74/git_blob_sha1"],
+      "source_limit": "This entry is not_acquired_after_mandatory_stop. content_sha256, actual_git_blob_sha1 and actual_size are null. It supports frozen metadata identity only, not actual body acquisition or content verification."
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-static-closure-discovery/2026-09-05/corpus-manifest-current.json",
+      "bytes": 93872,
+      "sha256": "5a27cf1860513fb92d414c64d0723d5df0cf8ce563bf873c9bc3e6d423765cc1",
+      "accepted_commit": "0ded8eb54e5d4d529759b46c62b9b5eb10722fbb",
+      "document_git_mode": "100644",
+      "document_git_type": "blob",
+      "document_git_blob": "33f37772b007c48799add7ffcd6de2f20d93be6d",
+      "current_bytes_equal_accepted_git_object": true,
+      "candidate_pointer": "/files/66",
+      "identity_pointers": ["/identity/commit", "/identity/tree", "/files/66/path", "/files/66/tree_mode", "/files/66/tree_blob_sha", "/files/66/tree_size", "/files/66/actual_size", "/files/66/response_size", "/files/66/response_sha", "/files/66/git_blob_sha1_computed", "/files/66/content_sha256"],
+      "agreement": "tree_size=actual_size=response_size=8993; tree_blob_sha=response_sha=git_blob_sha1_computed=20d4646bb5c6ffbe714848cc497e1809113d5195. content_sha256 is the historically verified decoded-body digest. file_type=regular and lstat_mode=0600 are historical filesystem properties, distinct from Git type/mode."
+    }
+  ],
+  "acceptance_record_sha256": {
+    "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MINIMAL-SOURCE-SNAPSHOT-GATE-001.md": "8bb51bfbb10414189ea3a95f1ce2a055334de26d9c1355617419a32722992691",
+    "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-STATIC-CLOSURE-DISCOVERY-GATE-002.md": "c413bcc7cd6b558463b0d88ffae31bbf5ce3cdb441c3cee0fd52b4159802545e"
+  },
+  "verification": [
+    "Both exact JSON array pointers resolve to the sole requested path and share the fixed upstream commit/tree. Their declared Git identity and size agree.",
+    "git ls-tree at each accepted commit returned the recorded document mode/type/blob. git hash-object --no-filters on each current document matched its accepted blob. git show of each accepted document piped to cmp against the current file returned exit 0, confirming byte equality.",
+    "Both historical acceptance records explicitly distinguish TASK ACCEPTED from TASK RESULT BLOCKED and ARTIFACT VERDICT manual_review. The discovery acceptance independently attests size/Git blob/content SHA checks for all 112 recorded files; this supports inherited identity evidence only."
+  ],
+  "limitations": [
+    "Read only the two derived manifests and two historical Leader acceptance documents plus their Git objects. No raw/private/body/metadata/scanner context pointer was followed; no candidate/reviewer executed and no network accessed.",
+    "The candidate body was not read or rehashed. Historical content identity is inherited from the accepted discovery record; present availability, current private-file properties and future acquisition response identity are unverified.",
+    "This is a pending-request identity review. It does not authorize reading retained source, fetching this or any other file, retries/resume, runtime use, clearance, source adoption, builds, integration or Checkpoint progression. Historical manual_review and stop conclusions remain unchanged."
+  ]
+}

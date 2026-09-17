@@ -1,0 +1,30 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "reviewed_at": "2026-09-06T08:58:30.270487+00:00",
+  "body_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6",
+  "scope": "Only class header and exact first target factory signature; no other method body",
+  "slices": [
+    {
+      "start_line": 20,
+      "end_line": 20,
+      "byte_start": 497,
+      "byte_end": 526,
+      "sha256": "3b77bc60f4c1072166e0166ea55d0e24a50bec667a7f7029ad43656e68bc3076",
+      "text": "class OnlineRecognizerImpl {\n"
+    },
+    {
+      "start_line": 24,
+      "end_line": 25,
+      "byte_start": 607,
+      "byte_end": 707,
+      "sha256": "03bb4551f7ca5017bca6d12ccf03fe61e1e20b4379e8de97fb6c3e2472e84208",
+      "text": "  static std::unique_ptr<OnlineRecognizerImpl> Create(\n      const OnlineRecognizerConfig &config);\n"
+    }
+  ],
+  "cumulative_unique_lines": 3,
+  "cumulative_visible_bytes": 129,
+  "limits": {
+    "unique_lines": 64,
+    "visible_bytes": 4096
+  }
+}

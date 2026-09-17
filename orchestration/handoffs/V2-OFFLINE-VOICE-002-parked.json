@@ -1,0 +1,590 @@
+{
+  "task": {
+    "task_id": "V2-OFFLINE-VOICE-002",
+    "owner": "developer",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Improve failed offline Chinese dictation quality using one reviewed Android SenseVoice int8 candidate while preserving all existing privacy and draft protections.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2, baseline23ede0961ff83e5637493d7eb5f6c5ecf6b84f59. Previous task is reviewed PARTIAL/REVISE, not CP2 accepted. One CP2 rework only.",
+      "Candidate route only: sherpa-onnx with SenseVoice zh-en-ja-ko-yue int8 model dated2024-07-17. Primary lead https://k2-fsa.github.io/sherpa/onnx/sense-voice/pretrained.html documents Android and approximately228MB model. Pin one compatible Android runtime release, all necessary native dependencies and model/token objects; verify exact origins/licenses/hashes/arm64 and16KB alignment and relevant memory/audio/log paths before loading. Old think approvals do not transfer. Do not acquire upstream audio samples or execute export/training scripts.",
+      "Implement a bounded memory-only adapter behind the existing voice interface. Preserve hold/release/cancel,90-second maximum, silence behavior, editor/session/revision anchors, manual title/category ownership, explicit text corrections and no automatic formal note save. Offline recognizer buffering may change but must have explicit90-second memory bounds, cleanup and late-result rejection; no disk audio. Keep a reproducible rollback to reviewed baseline.",
+      "First qualify genuine candidate loading and evaluate the exact frozen30 clips with fixture plan SHA95d97b465918f40831658cbcbc29390cc2b417be6a13adf542826c76d9db0b6b. Preserve voice/rate/references/66 name occurrences and semantic scoring. Bind regenerated memory PCM identities; explain any difference rather than silently alter fixture. Freeze decoding settings before scoring, no answer-fed grammar/hotwords, no sample selection or reruns to cherry-pick. System offline TTS memory-only generator remains authorized test stimulus, not product TTS.",
+      "If candidate passes both accuracy gates, finish product integration and genuine10x30-second release-to-full-result P95 plus20x90-second stability on isolated emulator; test cancellation/background/permission/draft and existing affected features, inspect storage/log/network observations. Record cold-load time, package/disk size and process/native memory with honest mobile limits. No physical devices required now.",
+      "If artifact/ABI/license/data path or quality/resource gate fails, stop that affected route and return exact evidence and partial changes, without switching to another runtime/model or constructing an acquisition-tool project. Do not repeat35-minute stability after known quality failure unless needed to diagnose a specific defect. This bounds failed experiments while preserving all unmet app requirements."
+    ],
+    "out_of_scope": [
+      "No Vosk server model download, additional ASR routes, cloud ASR, private father data, persistent/raw audio attachments, training, product TTS, accounts, sync, payments or publishing.",
+      "No voice command mode, calendar, AI, relations or backup format expansion. No reduced accuracy/latency thresholds or claimed Xiaomi/family acceptance."
+    ],
+    "acceptance": [
+      "Raw proper-name correctness at least90% of66 frozen occurrences and strict usable clips at least27/30; raw and explicit corrected results separate. Report failures honestly.",
+      "For qualifying integration:30-second release-to-full-result P95<=5seconds for10 runs;20 complete90-second runs, no silent dropped frames, no crashes/unbounded memory, all capture/decoder resources closed. Emulator evidence only.",
+      "Existing V1-V6 functionality and privacy/data boundaries remain intact; meaningful host/device regression, final build/lint and exact APK/source/model identities, clean owned Git changes. New runtime/model safety review completed before execution.",
+      "Return RESULT COMPLETE only with all task gates met; otherwise BLOCKED or PRODUCT_DECISION_REQUIRED with implementation_status PARTIAL and exact missing condition. A failed candidate is a valid bounded report but not CP2 acceptance."
+    ],
+    "evidence_required": [
+      "Task/attempt/contract identity; baseline/final commit and status; exact candidate objects and dependency review; immutable fixture/config identity;30 raw outputs and occurrence/semantic comparison; size/load/memory/performance limits; tests and commands; APK hashes; privacy observations; preserved Xiaomi/family gaps; one next recommendation then stop."
+    ],
+    "stop_conditions": [
+      "Only this task and route; never self-start next checkpoint or add models. Report unknown license/ABI/runtime execution, privacy leakage or data damage before proceeding with affected action.",
+      "Do not overwrite unrelated changes. No silent platform permission/approval bypass. Stop after single deliverable for commander review."
+    ],
+    "contract_body": {
+      "task_id": "V2-OFFLINE-VOICE-002",
+      "owner": "developer",
+      "checkpoint": "CP2",
+      "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+      "goal": "Improve failed offline Chinese dictation quality using one reviewed Android SenseVoice int8 candidate while preserving all existing privacy and draft protections.",
+      "scope": [
+        "Only /Users/orderly_ray/Projects/thinkV2, baseline23ede0961ff83e5637493d7eb5f6c5ecf6b84f59. Previous task is reviewed PARTIAL/REVISE, not CP2 accepted. One CP2 rework only.",
+        "Candidate route only: sherpa-onnx with SenseVoice zh-en-ja-ko-yue int8 model dated2024-07-17. Primary lead https://k2-fsa.github.io/sherpa/onnx/sense-voice/pretrained.html documents Android and approximately228MB model. Pin one compatible Android runtime release, all necessary native dependencies and model/token objects; verify exact origins/licenses/hashes/arm64 and16KB alignment and relevant memory/audio/log paths before loading. Old think approvals do not transfer. Do not acquire upstream audio samples or execute export/training scripts.",
+        "Implement a bounded memory-only adapter behind the existing voice interface. Preserve hold/release/cancel,90-second maximum, silence behavior, editor/session/revision anchors, manual title/category ownership, explicit text corrections and no automatic formal note save. Offline recognizer buffering may change but must have explicit90-second memory bounds, cleanup and late-result rejection; no disk audio. Keep a reproducible rollback to reviewed baseline.",
+        "First qualify genuine candidate loading and evaluate the exact frozen30 clips with fixture plan SHA95d97b465918f40831658cbcbc29390cc2b417be6a13adf542826c76d9db0b6b. Preserve voice/rate/references/66 name occurrences and semantic scoring. Bind regenerated memory PCM identities; explain any difference rather than silently alter fixture. Freeze decoding settings before scoring, no answer-fed grammar/hotwords, no sample selection or reruns to cherry-pick. System offline TTS memory-only generator remains authorized test stimulus, not product TTS.",
+        "If candidate passes both accuracy gates, finish product integration and genuine10x30-second release-to-full-result P95 plus20x90-second stability on isolated emulator; test cancellation/background/permission/draft and existing affected features, inspect storage/log/network observations. Record cold-load time, package/disk size and process/native memory with honest mobile limits. No physical devices required now.",
+        "If artifact/ABI/license/data path or quality/resource gate fails, stop that affected route and return exact evidence and partial changes, without switching to another runtime/model or constructing an acquisition-tool project. Do not repeat35-minute stability after known quality failure unless needed to diagnose a specific defect. This bounds failed experiments while preserving all unmet app requirements."
+      ],
+      "out_of_scope": [
+        "No Vosk server model download, additional ASR routes, cloud ASR, private father data, persistent/raw audio attachments, training, product TTS, accounts, sync, payments or publishing.",
+        "No voice command mode, calendar, AI, relations or backup format expansion. No reduced accuracy/latency thresholds or claimed Xiaomi/family acceptance."
+      ],
+      "acceptance": [
+        "Raw proper-name correctness at least90% of66 frozen occurrences and strict usable clips at least27/30; raw and explicit corrected results separate. Report failures honestly.",
+        "For qualifying integration:30-second release-to-full-result P95<=5seconds for10 runs;20 complete90-second runs, no silent dropped frames, no crashes/unbounded memory, all capture/decoder resources closed. Emulator evidence only.",
+        "Existing V1-V6 functionality and privacy/data boundaries remain intact; meaningful host/device regression, final build/lint and exact APK/source/model identities, clean owned Git changes. New runtime/model safety review completed before execution.",
+        "Return RESULT COMPLETE only with all task gates met; otherwise BLOCKED or PRODUCT_DECISION_REQUIRED with implementation_status PARTIAL and exact missing condition. A failed candidate is a valid bounded report but not CP2 acceptance."
+      ],
+      "evidence_required": [
+        "Task/attempt/contract identity; baseline/final commit and status; exact candidate objects and dependency review; immutable fixture/config identity;30 raw outputs and occurrence/semantic comparison; size/load/memory/performance limits; tests and commands; APK hashes; privacy observations; preserved Xiaomi/family gaps; one next recommendation then stop."
+      ],
+      "stop_conditions": [
+        "Only this task and route; never self-start next checkpoint or add models. Report unknown license/ABI/runtime execution, privacy leakage or data damage before proceeding with affected action.",
+        "Do not overwrite unrelated changes. No silent platform permission/approval bypass. Stop after single deliverable for commander review."
+      ]
+    },
+    "contract_sha256": "bea42148f0e97dcd0194d6e15122a3129cd0b946675101f246b6e29e00f56fef",
+    "attempt_id": "cb6a5460-1655-4778-9d85-6095d87906e4",
+    "phase": "rejected",
+    "status": "rejected",
+    "sent_at": "2026-09-16T02:54:35.832926+00:00"
+  },
+  "state": {
+    "schema_version": 1,
+    "updated_at": "2026-09-16T03:31:16.614017+00:00",
+    "current_pm_handoff_report": "orchestration/handoffs/2026-09-06-pm-takeover.md",
+    "current_handoff_report": "orchestration/handoffs/2026-09-06-leader-takeover.md",
+    "current_developer_handoff_report": "orchestration/handoffs/2026-09-06-developer-takeover.md",
+    "current_checkpoint": "CP2",
+    "state": "REVISE",
+    "result_receiving_protocol": "orchestration/result-receiving.md",
+    "latest_result_receipt": "orchestration/reports/V2-OFFLINE-VOICE-002-receipt.json",
+    "resume_note": "User-authorized from-zero thinkV2. Historical think acceptance applies only to old project.",
+    "active_task_id": "V2-OFFLINE-VOICE-002",
+    "checkpoint_evidence": {
+      "V2-NOTES-CORE-001": "Engineering accepted at e2f6f4a; physical/family evidence not passed",
+      "V2-NOTES-LIFECYCLE-001": "Engineering accepted e363ea9; physical/family evidence still pending",
+      "V2-REMINDERS-001": "Engineering accepted 1dde8ec; natural recurring, Xiaomi and family evidence pending",
+      "V2-BACKUP-RESTORE-001": "Engineering accepted cc957d5; full-feature backup compatibility and physical/family evidence pending",
+      "V2-OFFLINE-VOICE-001": "Reviewed partial at 23ede096: functional, privacy-boundary and stability evidence retained; raw names 47/66 and usability10/30 fail. CP2 not accepted.",
+      "V2-OFFLINE-VOICE-002": "Reviewed partial c22345b:61/66 names,23/30 usability FAIL;29/30 samePCM; private embedding PAUSE. No candidate integration/long-test acceptance."
+    },
+    "observations": [
+      "Blank Compose template confirmed. First core development dispatched."
+    ],
+    "blocking_questions": [
+      {
+        "scope": "SenseVoice final private-app embedding only",
+        "owner": "product_manager",
+        "status": "PAUSE",
+        "decision": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/sensevoice-int8-product-admission-decision-2026-09-16.md",
+        "sha256": "b4927069160becae74a9afaa6d83ec3e14d1e9d0958ddb1a642f4e03cb75969d",
+        "evaluation": "APPROVED synthetic isolated evaluation after independent object safety gates; no private data or daily-use delivery"
+      }
+    ],
+    "last_accepted_task_id": "V2-BACKUP-RESTORE-001",
+    "last_developer_result": {
+      "task_id": "V2-OFFLINE-VOICE-002",
+      "RESULT": "BLOCKED",
+      "implementation_status": "PARTIAL",
+      "head": "c22345b1ef18335e11df15f4595879464a385f5b"
+    },
+    "last_dispatch": {
+      "task_id": "V2-OFFLINE-VOICE-002",
+      "thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+      "sent_at": "2026-09-16T02:54:35.832926+00:00"
+    },
+    "dispatch_history": [
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-GATE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T21:46:06+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-GATE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T21:48:39+08:00",
+        "phase": "handoff_reconciliation_only"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-GATE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T21:54:47+08:00",
+        "phase": "first_party_preflight_review_only"
+      },
+      {
+        "task_id": "CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-05T22:02:20+08:00"
+      },
+      {
+        "task_id": "CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T22:15:57+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-ACQUISITION-TOOL-SCOPE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-05T23:05:03.991454+08:00"
+      },
+      {
+        "task_id": "CP2-ACQUISITION-TOOL-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T23:16:56.701975+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T23:25:14.196660+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-ACQUISITION-TOOL-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T00:38:09.115663+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-METADATA-PATH-COMPATIBILITY-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T01:04:02.521425+08:00"
+      },
+      {
+        "task_id": "CP2-METADATA-COMPATIBILITY-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T01:11:45.443857+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-METADATA-PATH-COMPATIBILITY-REPAIR-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T01:20:43.682754+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-METADATA-COMPATIBLE-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T01:48:39.914721+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V4-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T02:01:44.540629+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-LICENSE-TEXT-ROUTING-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T02:24:01.922731+08:00"
+      },
+      {
+        "task_id": "CP2-LICENSE-TEXT-ROUTING-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T02:32:39.577694+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-LICENSE-TEXT-ROUTING-REPAIR-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T02:41:28.634573+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-LICENSE-TYPED-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T03:15:46.890274+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T04:03:06.240355+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-READINESS-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T04:21:04.558757+08:00"
+      },
+      {
+        "task_id": "CP2-SOURCE-SEMANTICS-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T04:30:42.068975+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T04:40:00.651181+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T05:29:15.973176+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T06:07:50.786471+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T06:49:59.388594+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-R1",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T06:59:51.436469+08:00"
+      },
+      {
+        "task_id": "CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T07:07:17.145768+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T07:20:25.438801+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T07:58:08.907377+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T08:44:22.904586+08:00"
+      },
+      {
+        "task_id": "CP2-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T08:55:38.850764+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T09:05:28.869230+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T10:03:00.306382+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-TOKEN-PROVENANCE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T10:12:57.215995+08:00"
+      },
+      {
+        "task_id": "CP2-REVIEW-TOKEN-PROVENANCE-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T10:22:03.070884+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T10:39:15.921901+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T11:06:20.678737+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T11:23:19.397743+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T13:13:47.600568+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-HARD-STOP-NEXT-STEP-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T13:39:06.250616+08:00"
+      },
+      {
+        "task_id": "CP2-V8-HARD-STOP-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T05:47:55.827404+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-LOCAL-CONFIGURATION-ROUTE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T06:07:09.652205+00:00"
+      },
+      {
+        "task_id": "CP2-V8-LOCAL-CONFIGURATION-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T06:19:42.556393+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T08:01:44.811228+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-ROUTE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T08:22:19.550352+00:00"
+      },
+      {
+        "task_id": "CP2-V8-HOTWORDS-CONSUMER-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T08:32:21.898039+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-HOTWORDS-CHAIN-TERMINATION-ROUTE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:02:49.401902+00:00"
+      },
+      {
+        "task_id": "CP2-HOTWORDS-CHAIN-TERMINATION-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T09:15:01.137931+00:00"
+      },
+      {
+        "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:20:49.755518+00:00"
+      },
+      {
+        "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:43:02.498485+00:00"
+      },
+      {
+        "task_id": "CP2-ALTERNATIVE-ASR-SECURITY-INTAKE-SELECTION-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:56:03.463245+00:00"
+      },
+      {
+        "task_id": "LOOP-V2-PM-PROBE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "e0565b64-75f0-4680-a8fb-5e3de83dc093",
+        "sent_at": "2026-09-06T15:23:42.651122+00:00"
+      },
+      {
+        "task_id": "LOOP-V2-DEV-PROBE-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "40f801e9-53fd-44f0-b2d3-82f4a580f27d",
+        "sent_at": "2026-09-06T15:25:49.863663+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-ARTIFACT-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "eacfd6ec-b659-4151-a404-93ff44c4053b",
+        "sent_at": "2026-09-07T13:00:09.377432+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-ARTIFACT-STATIC-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "db83c950-0012-46a1-a6a6-ef39a8a49d86",
+        "sent_at": "2026-09-07T16:32:19.955159+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-TOOL-GAP-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "ad76fabd-6890-4aa3-b39d-6f59c9e06255",
+        "sent_at": "2026-09-07T21:11:07.406609+00:00"
+      },
+      {
+        "task_id": "CP2-SIMPLIFIED-STAGED-REVIEW-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "0d005a32-4746-41cf-8051-d0f35fa713d1",
+        "sent_at": "2026-09-08T00:40:59.071417+00:00"
+      },
+      {
+        "task_id": "CP2-SIMPLIFIED-STAGED-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "b039c909-4aaf-4b98-a265-4268b296f18c",
+        "sent_at": "2026-09-08T05:03:41.314522+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE1-ACQUISITION-INSPECTION-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "07a96480-78dd-4040-8d30-5bc8d44a7ed0",
+        "sent_at": "2026-09-08T07:21:11.809081+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE2-SCOPE-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "c74bc093-5656-4a8e-99b6-726bd59dccdf",
+        "sent_at": "2026-09-08T07:36:15.125036+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE2-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "472a99f4-a969-4952-ae39-5edaa42ac447",
+        "sent_at": "2026-09-08T09:47:18.855892+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE2-INPACKAGE-STATIC-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "7fb3904a-af73-4049-b4c8-0b5c3f9eaf00",
+        "sent_at": "2026-09-08T09:52:29.026179+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-INTEGRATION-GAPS-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "8d5bc8f3-160a-4fa3-a054-fd41d4d17a68",
+        "sent_at": "2026-09-08T10:04:51.869551+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-INTEGRATION-GAPS-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "7d6ba0a6-e72c-4bca-874c-2823f6a2b168",
+        "sent_at": "2026-09-08T10:25:14.519005+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-DEPENDENCY-LICENSE-METADATA-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "a7189bfc-dbae-49d8-b1d2-19b5e7fe583a",
+        "sent_at": "2026-09-08T10:29:47.409480+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-ARM64-COMMAND-PATH-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "26b63ffe-ed33-46c3-a3e5-2cd46a2dd203",
+        "sent_at": "2026-09-08T11:20:51.717621+00:00"
+      },
+      {
+        "task_id": "CP2-OFFLINE-NEXT-TWO-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "ad032b97-a1b6-47de-8ffb-8707dfec39c8",
+        "sent_at": "2026-09-08T12:04:53.613291+00:00"
+      },
+      {
+        "task_id": "CP2-MEMORY-PCM-FAKE-ASR-CONTRACT-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "d70c86c5-8da0-443f-8493-af04e8ffbcf1",
+        "sent_at": "2026-09-08T12:11:48.427124+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-METADATA-RESUME-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "31424e25-9308-4c57-b30c-a04fadbbb674",
+        "sent_at": "2026-09-08T14:09:47.234122+00:00"
+      },
+      {
+        "task_id": "CP2-CHINESE-CORPUS-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "af861510-8a44-4376-8c7a-000a1e8bb0af",
+        "sent_at": "2026-09-09T03:33:33.550227+00:00"
+      },
+      {
+        "task_id": "CP2-CER-SCORER-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "902c0db6-7100-4b73-9732-756316214559",
+        "sent_at": "2026-09-09T03:45:06.093682+00:00"
+      },
+      {
+        "task_id": "CP2-JNA-SCOPE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "0fdd9888-9aec-4540-b030-06b8ce0c5e7f",
+        "sent_at": "2026-09-09T07:11:59.552747+00:00"
+      },
+      {
+        "task_id": "CP2-JNA-AAR-STATIC-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "152ecdef-f3ec-4dc8-8f36-f3de646bf2d8",
+        "sent_at": "2026-09-09T07:19:38.148414+00:00"
+      },
+      {
+        "task_id": "CP2-CONTROLLED-RUN-PLAN-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "c803f612-e378-4fe6-9862-500bff19da86",
+        "sent_at": "2026-09-09T07:39:31.997253+00:00"
+      },
+      {
+        "task_id": "NOTES-HOME-SCOPE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "5100c42f-d414-44c1-9c56-2ddc040790ba",
+        "sent_at": "2026-09-09T17:16:17.421343+00:00"
+      },
+      {
+        "task_id": "NOTES-TEXT-FOUNDATION-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "3ae44ad4-bc4c-44f5-9e55-78037786bb3b",
+        "sent_at": "2026-09-09T17:26:53.273086+00:00"
+      },
+      {
+        "task_id": "NOTES-HOME-SEARCH-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "3627b601-fac6-4913-935d-776bd91a1846",
+        "sent_at": "2026-09-09T17:47:40.303783+00:00"
+      },
+      {
+        "task_id": "NOTES-RELATION-GRAPH-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "c81775a2-2da4-462a-a82f-5e8169cbe647",
+        "sent_at": "2026-09-09T18:07:38.520772+00:00"
+      },
+      {
+        "task_id": "NOTES-RELATION-GRAPH-001-R1",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "a862e376-c2b5-44e2-a060-29603062145d",
+        "sent_at": "2026-09-09T18:20:06.511492+00:00"
+      },
+      {
+        "task_id": "NOTES-XIAOMI-FULL-SCOPE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "1c38df59-c044-48b6-9552-6485ba15277c",
+        "sent_at": "2026-09-11T10:29:00.974799+00:00"
+      }
+    ],
+    "handoff": {
+      "at": "2026-09-05T21:49:47+08:00",
+      "from_leader": "01a06d14-dcdb-7bd2-9bc2-4c3a85529a25",
+      "to_leader": "01a071cf-9ac6-7171-b663-749a6e88b0a4",
+      "developer": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+      "status": "completed",
+      "old_leader_acknowledged": true,
+      "report": "orchestration/handoffs/2026-09-05-leader-takeover/README.md",
+      "accepted_report": "/Users/orderly_ray/Leader/orchestration/handoffs/2026-09-05-leader-takeover/developer-reconciliation.md",
+      "report_sha256": "21e2fd3afbeb4cc7eea67245182ad60e7f6995ffeb01e925f7712ffc47681777"
+    },
+    "parked_task_id": "V2-OFFLINE-VOICE-002",
+    "historical_scheduler": {
+      "automation_id": "app-leader",
+      "status": "DELETED_BY_USER",
+      "interval_minutes": 10,
+      "target_thread_id": "01a07655-fdfd-7683-aa57-a4895188d2ff"
+    },
+    "coordination_mode": "interactive_callback_and_wait",
+    "automatic_scheduling_allowed": false,
+    "checkpoint_reconciliation": {
+      "decision_task_id": "NOTES-HOME-SCOPE-001",
+      "from": "CP2",
+      "to": "CP3",
+      "scope_note": "NOTES-L1/L2/L3限定本地文字先行；CP1人工延期，CP2/CP3整体未通过，Alpha未批准。",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/notes-home-redesign-decision-2026-09-10.md",
+          "sha256": "59e96dd7624f48efb981d3778f73cb607cdd84ca891c8cf55970b5c765d59728"
+        }
+      ]
+    },
+    "resume_observation": {
+      "at": "2026-09-16T01:23:54.419789+00:00",
+      "task_id": "V2-OFFLINE-VOICE-001",
+      "reason": "Prior developer turn ended with usage-limit error; ordinary usage now allowed. Same contract resumed after authoritative terminal observation.",
+      "developer_confirmed": "Only dedicated ADB5050 live; prior emulator/tests absent. No Chinese accuracy or real-time performance results yet."
+    }
+  },
+  "review": "orchestration/reports/V2-OFFLINE-VOICE-002-review.md",
+  "not_accepted": true
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-METADATA-COMPATIBLE-RELEASE-FREEZE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Freeze the independently accepted v4 metadata-compatible acquisition release in exactly three new documentation files, without altering any implemented code or authorizing acquisition.",
+  "scope": [
+    "Only create doc/security-reviews/asr-acquisition-v4-release-freeze/2026-09-06/freeze.json, MANIFEST.json and REPORT.md.",
+    "Use accepted v4 commit 524c6484b1290cd2556ebf9a1031a4d00b273a86, tree 4e0002cacaa429b282889161b705946ae30d9414, all 1024 delivered files including original manifest, and 18-file bundle 642d29885efb5df375564d0ebeec0875d4701e5dfc816934de329d3c2dda42d0.",
+    "Bind current formal metadata decision/PRD, Leader acceptance and real-parser derived report, unchanged exact source authority and archived immutable contract, original manifest/provenance/test evidence.",
+    "Record complete components, schema=3/policy identity unchanged, two-layer inert names versus acquisition paths, mode/type/denylist/all budgets/seeds, pins and source/privacy/checkpoint boundaries; hashes must have unambiguous non-cyclic canonical domains.",
+    "Record verified metadata byte lengths/pins and canonical input hash from Leader report as validation evidence only; do not read raw JSON. State final real compatibility accepted but network/source still unverified.",
+    "Recompute file identities and pure existing policy/bundle identity only, verify exact three-file Git boundary and commit. Stop for Leader freeze acceptance; future mapped acquisition remains separate."
+  ],
+  "out_of_scope": [
+    "No candidate/tool/schema/test edits or old freeze changes, no input/transport/run execution, test reruns, raw metadata/source/corpus reads, network, dependency/model/build/integration or CP2/CP3 claims.",
+    "No source allowlist/snapshot generation, no new execution scripts, no change to existing source authorization or automatic actual acquisition."
+  ],
+  "acceptance": [
+    "Exactly three new files; parent 524c6484b1290cd2556ebf9a1031a4d00b273a86; all v2/v3/v4/old-freeze identities unchanged; clean worktree, git show --check passes.",
+    "Canonical MANIFEST covers all 1024 accepted v4 files with size/hash and regular single-link evidence; original manifest hash c214f48326c45433949be979d3e971328bae7fd219612bee5fb149404b1bc799 and 1023-record digest db462eb6ee6493433a6f963d561e8bea9469bc4b9783882c10ac8315724daae3 match.",
+    "Freeze records exact 18-file bundle, unchanged policy ee9d1ae7b4b17d2d895d3a6e0b62f73bfda7eb8a9cfae50e9d264f9ed23fc627, complete code/protocol/name rules and evidence; old freeze is not inherited or rewritten.",
+    "Leader verified two 112-test/634-outcome runs, 495 matching artifacts and real 8585/0/171 lossless pure parsing are accurately attributed; raw scan remains manual_review and no source/CP approval.",
+    "Frozen source scope maps unchanged to original precise authorization; no extra user confirmation is required for identical future mapping, but Leader must accept this freeze then separately dispatch."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED, exact three file paths/SHA and purposes, commit/parent, complete release/bundle/manifest digests, source mappings, check commands/results, unverified items and scope check. Notify current Leader and stop."
+  ],
+  "stop_conditions": [
+    "Any candidate/source/hash/policy drift or unknown edits, need to modify code/schema/rules/authorization or read raw metadata/source/network, missing final Leader evidence or scope conflict."
+  ],
+  "baseline_commit": "524c6484b1290cd2556ebf9a1031a4d00b273a86",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "leader_acceptance_report": "orchestration/reports/CP2-ASR-METADATA-PATH-COMPATIBILITY-REPAIR-001.md",
+  "leader_acceptance_sha256": "2d59883757ebe66536c54fc41cff217b8f065defae05932c3d444a55b3829042",
+  "dispatched_at": "2026-09-06T01:48:39.914721+08:00",
+  "task_result": "COMPLETE",
+  "accepted_at": "2026-09-06T02:00:53.169137+08:00",
+  "commit": "2f4760d0ff3ea78de929198fba88d3744353a321",
+  "report": "orchestration/reports/CP2-ASR-METADATA-COMPATIBLE-RELEASE-FREEZE-001.md"
+}

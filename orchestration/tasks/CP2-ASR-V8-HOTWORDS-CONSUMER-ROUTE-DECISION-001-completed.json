@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-ROUTE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "completed",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "goal": "基于单文件热词消费端新证据，作出下一步最小且可验证的正式产品路线决定，保留暂停边界，明确是否值得继续补证及其范围。",
+  "prepared_at": "2026-09-06T08:20:24.318802+00:00",
+  "decision_inputs": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-report.json",
+      "bytes": 8265,
+      "sha256": "51336e73331f9fee139211b04d35e82b2f10c5fec3c432fac272bb2801d2463d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-report.md",
+      "bytes": 1829,
+      "sha256": "9a76f05180b6bfff8ac52a665f599927411d30b357e5c47a2da36b65c2bc7828"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-leader-verification.json",
+      "bytes": 4182,
+      "sha256": "d250701798ca6a61fa68de660281d4522ee32940db900090ebc4b3b8f5659ab0"
+    }
+  ],
+  "current_formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+    "bytes": 12792,
+    "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2"
+  },
+  "scope": [
+    "只读指定已验收派生证据和正式知识库/PRD，更新最少正式产品文档，结论明确APPROVED/REVISE/PAUSE；不要读源码片段文件、private/raw/body/metadata/scannercontext或联网。",
+    "区分：非空hotwords_file在可见Validate分支调用FileExists，失败传路径值给日志宏；空值只跳过此局部调用，不证明完整buffer-only。配置ToString含文件参数；实际运行/文件访问/业务暴露未验证。构造器把config委派给OnlineRecognizerImpl::Create(config)，精确引用online-recognizer-impl.h；没有读下一文件。hotwords_buf精确token0不是下层无buffer支持。",
+    "依现行决定在此停止并回产品门。评估继续补证的信息价值和成本、停止或替代离线ASR路线，选择唯一下一任务；若继续，定义能回答核心问题的最小有界证据范围与明确终止标准，避免不设上限的逐文件审批循环。现有derived身份不等于新正文权；任何新body仍需先准备可审阅的精确请求并获得用户新批准，不自动读取第二对象。",
+    "保留旧v8终态、无clearance、冻结工具不变、CP2未通过、CP1/Conformer Deferred not removed、CP3/Alpha未批准及原始录音隐私红线；本次是证据进展，不是App功能完成。只在产品知识库落地决定、必要PRD/INDEX/LOG更新，think仓库由另行同步任务处理。"
+  ],
+  "out_of_scope": [
+    "不做代码、技术实现、获取/下载/网络、新v9、decoder规则/冻结/旧run修改或实际可达性裁定。",
+    "不将FileExists名字当作其内部实现已查明；不将扫描0指标、空值短路或无hotwords_buf token当作安全、可采用或buffer功能不可行结论。"
+  ],
+  "acceptance": [
+    "正式结论APPROVED/REVISE/PAUSE已落地，准确绑定现有证据并区分Observed/Inferred/Unverified；当前路线状态和唯一下一步无歧义。",
+    "若提议继续补证，预算/对象身份准备来源/用途/停止和新授权边界明确，未实际扩权或读取；隐私、三步路径及全部设备Checkpoint标准保留。"
+  ],
+  "evidence_required": [
+    "正式文件路径/bytes/SHA、修改目的、文档检查、逐条结论依据与未验证、git/工作区修改归属；回报Leader后停止。"
+  ],
+  "stop_conditions": [
+    "证据不足就明确缺口，不猜测实现，不读取raw补齐。",
+    "任何改变P0/隐私/三步/Checkpoint或扩大技术范围必须作为正式产品决定明确指出，不在聊天中暗中授权执行。"
+  ],
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-acceptance.json",
+    "bytes": 3652,
+    "sha256": "38d718a932e5811600cd8f18e82765c3b40cf11ad1463826cf39fb70724f7a45"
+  },
+  "dispatched_at": "2026-09-06T08:22:19.550352+00:00",
+  "completed_at": "2026-09-06T08:32:16.684357+00:00",
+  "product_result": "APPROVED"
+}

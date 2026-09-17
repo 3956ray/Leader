@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Synchronize the accepted formal manual-capability evidence decision and PRD into exactly five product documentation files, preserving all accepted code and freezes.",
+  "baseline_commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "formal_decision_source": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-manual-capability-evidence-decision-2026-09-06.md",
+  "formal_decision_sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+  "formal_prd_source": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+  "formal_prd_sha256": "5c376c961c9ecafd21cb5492254a1c45c7adf422e2a890c1d1181a3871f386a6",
+  "leader_acceptance_report": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-R1-acceptance.json",
+  "leader_acceptance_sha256": "e7a61c25413f1dcd87f36a4e13a68ddd345117422347c050777b926c2d488de8",
+  "scope": [
+    "Copy formal decision and PRD byte-for-byte to doc/cp2-manual-capability-evidence-decision-2026-09-06.md and doc/prd-v0.1-2026-09-04.md. Modify only AGENTS.md,doc/README.md,doc/development-guide-v0.1-2026-09-04.md for current status, precedence, links, sole next-task and authorization sequence. Exactly5files total.",
+    "Mark v6 R1/freeze accepted and exact2manualcomment hits reviewed locally, with no operational pendingclearance or adjacentfield/API/sourceadoption. Preserve allhistorical decisions/version attribution. New formal APPROVED withR1 acyclicDAG controls only prospective v7 offlineintake.",
+    "Expose H historicalreviewfreeze and R report; C newcandidate; separate nonoperational K afterCacceptance beforeF; F binds C+K; M followsF and mustmatchK; userA afterM; trustedT independentlypins F/M/A; N newrun. No mutualfinalhash/selfhash,realmapinintake,inputlearnedTrust,oldrecordrewrite ortransfer.",
+    "This task is documentation sync only. After Leader accepts sync, sole prospective developer task is CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001 in independentv7 with158baseline+newself-authoredmatrix. Do not start it. Current active/uncertain/lexical/unsupported/file-safety/persistence/role/path/budget/checkpoint stops and original pending evidence remain; any effective status is separate newrun evidence.",
+    "Validate formalcopyhashes, all5docconsistency/linktargets/whitespace and exactGitboundary. No test/build/network/rawsource necessary. Commit exactly5files then report COMPLETE/BLOCKED with commitparent/hash/filepurpose/checkresults/unchangedtrees/unverified; notifyLeader andstop."
+  ],
+  "out_of_scope": [
+    "No v7 creation or implementation, no candidate/schema/code/test changes or workload runs, no source/header/metadata/API/private/body/rawscannercontext reads or network, no realcommitment/map/Trust/input/freeze/acquisition.",
+    "No edits to oldcandidate/freeze/run/productprivacy/Checkpoint or KB. No sourceadoption/build/model/device/CP2/CP3/Alpha claims; no globalcomment/tokenwaiver."
+  ],
+  "acceptance": [
+    "Exactly5declaredproductdocs changed fromd78577b, formal2copies exactSHA, currententrylinks/precedence/acyclicsequence and constraints consistent.",
+    "Allproductcode/tools/oldfreezes/runs unchanged and cleanpostcommit; syncdoesnotgrantv7execution orrealdata rights."
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED,5paths/purposes/SHA,commitparent,Gitscope/whitespace/linkchecks,unchangedoldtrees andlimitations; notifyLeader thenstop."
+  ],
+  "stop_conditions": [
+    "Unknownwork, formalhashdrift/contradiction/missingacceptedsource, needextraoutput/code/realdata/network:stopandreport,no silent expansion."
+  ],
+  "dispatched_at": "2026-09-06T07:07:17.145768+08:00",
+  "accepted_at": "2026-09-06T07:17:55.974547+08:00",
+  "acceptance_report": "orchestration/reports/CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001-acceptance.json",
+  "acceptance_sha256": "6878e5dfb2a421cae323fdef200eeea82a417061fc409697e18a2d08b024f579",
+  "accepted_commit": "7557ed554025ab7a06ea5f76cc1429915bbbbe06"
+}

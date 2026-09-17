@@ -1,0 +1,89 @@
+{
+  "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T10:00:17.367377+08:00",
+  "candidate_commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "parent": "4e853863e1bf0a68fbf8061767803797947eeec2",
+  "candidate_tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+  "bundle_sha256": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+  "formal_decision_sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33",
+  "prepared_contract_sha256": "5efa07abd71577bb2e234a44a56d3de5fd4f055989c89901d2bedb6117da781f",
+  "references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-baseline-verify.py",
+      "bytes": 2846,
+      "sha256": "ccc0147df4f3ba602d97f9a572632d3b73da91752254785db898f460dcb12c5c"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-baseline.json",
+      "bytes": 741,
+      "sha256": "76ddb83565e65f85e14b60aeaa1885fb766c3cc14f15b1caaa20060d890ff25a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-contracts.json",
+      "bytes": 1691,
+      "sha256": "f8e180a797d9bcc72048ad745d92b89ea3ad401046ae62ac0bb08271d8b6efd2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-identity-verify.py",
+      "bytes": 4862,
+      "sha256": "19ce78223a6cbe6a9582d0ae00a58d4031072a84c61b00d596351cfede3288ea"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-identity.json",
+      "bytes": 882,
+      "sha256": "fc312dd4cc7407627dd32ad8c26033c961d4354222cb9f0ae331bfdddedc1696"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-leader-a.log",
+      "bytes": 15884,
+      "sha256": "46c6e2066264dae6f7651ea60dd9333a73b26a02c69316de75d16161ff46ac55"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-leader-b.log",
+      "bytes": 15884,
+      "sha256": "769dd9f7abfe8db63c948bb78387e8b92530155c3242c311d0de51aa0357bd27"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-recalculation.json",
+      "bytes": 894,
+      "sha256": "d687033f180ca6ea5db9d685fa9a52c6ffffeb81a1689e7d2f5557fdfb051e05"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-runs-verify.py",
+      "bytes": 4931,
+      "sha256": "52cb466af4e6097cf7b0e328aa367cf18423b7f356512fae0da8662044e38d61"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-runs.json",
+      "bytes": 3442,
+      "sha256": "15408011467b88c5f716809cd7b4e39cedea8033a9bd2bbb2c2771e2cdf56441"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-semantic-probe.py",
+      "bytes": 4865,
+      "sha256": "1584839195275a74b325ae7d81e2e372c4bc6a8fd3b7cfea21d832d146e20cf2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-semantic-probes.json",
+      "bytes": 2741,
+      "sha256": "9738f6a0bd85636ba5182f8a6d730451e1ba3f4ebcaffa7bcd92922092f841bb"
+    }
+  ],
+  "criterion_evidence": [
+    "Only69497newfiles under v8; all Git blob/hash/type/mode/single-link identities and69496manifest rows independently checked. Old paths unchanged;clean candidatecommit.26necessary v7 sources/provenance verified;28filecandidatebundle rehashed.",
+    "Strict ASCII Gregorian dates0001..9999/0or1..6precision/offset±14:00;negativezero/leapsecond/UTCoverflow failclosed. Exact integer microseconds,raw UTC bytehash domains and full canonical representation preserve raw/precision/offset. H/R/occurrence v1 immutable,representationv2 and affected v8 domains. Independent contracts match.",
+    "All167oldtestmethod sources byteexact;twoLeader174tests1338outcomes0skip runs64.454s/64.658s.1210v7 and961v6 ordered outcomes retained. Both12preimportnetworktraps show zero actualevents/trappedcalls/runtimeviolations.",
+    "11571immutableJSON and3intentional pending shortwrites perrun identical across2Leader+2developer finalruns.456scenarios,7071ledger records perLeader run independently rehashed;5collections match finaldelivery. Intermediate development artifacts excluded explicitly.",
+    "Independent recalculator rebuilds98originalreports+representations+timestamps/384370originalbytes,98valid546invalidpackages,76adjudications276occurrences12rejections,1080complete source reports4144channels400capabilities;4bounded-incomplete remain stopped. New117timestamp inputs include95negative zero-request cases;4postrunadjudicationtamper cases distinguished.",
+    "Independent semantic reviewer:33361self-authoredcalendar/offset cases across producer,independentcivilcalculation and thirdintegerdatetimeoracle allmatch;41invalidsyntax cases rejected;14controllernegative zero-request cases plusrehashed schemastopmutant independentlyrejected. No semantic blocker found.",
+    "69488newscaninput identities/2564findingcontexts independently rehashed;2535portfindings3739matches allinside40/64hex IDs. Raw sandbox_only100/18high2535medium10low1info unchanged;diffsupplement low_indicators0/0findings. Contextual firstpartyacceptance is not securityPASS."
+  ],
+  "limitations": [
+    "Offline firstpartyself-authoredcandidate only; no realR/body/private/metadata/API/network/transport/build/model/device/audio validation or actualreviewconversion.",
+    "Generic runtime binds independently accepted original R and representation. Future actual conversion semantic verification belongs separate nonoperationalK task; no K/F/M/A/T/N created and no operationalpending cleared.",
+    "Four bounded incomplete reports remain failures. SameUID/inprocess hostilecaller sandbox and external signatures not claimed.",
+    "CP1/Conformer Deferred not removed;CP2notpassed;CP3/Alphaunapproved;historicalblock/manual_review and allnon-timehardgates preserved."
+  ],
+  "next_authorized_step": "Separate nonoperational v8 K preparation and independent acceptance using necessary already-authorized derived H/R fields, then separate F, then M, then fresh user A before trusted T/N. No source acquisition authorized."
+}

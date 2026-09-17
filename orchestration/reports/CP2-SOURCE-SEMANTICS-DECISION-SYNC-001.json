@@ -1,0 +1,20 @@
+{
+  "result": "ACCEPTED",
+  "commit": "c84685fce9205886a6fbe41386acaaa5b7374a57",
+  "parent": "5dbfe9ad300a8750cf2f76588983a7069760f200",
+  "file_hashes": {
+    "doc/cp2-source-semantics-readiness-decision-2026-09-06.md": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+    "doc/prd-v0.1-2026-09-04.md": "97ff4382c179482a02261b73b85e7e422d200c0dbf6654bac093cc56fc5d373f",
+    "AGENTS.md": "2f11ade49ef7d5d835d967fe017da3ec211d20fc517b5ddffad2d1fb2d574304",
+    "doc/README.md": "f84cd2acc892cb736e47ee6ec1a67f751db9b7febf49b0a1d13a28e710763ec1",
+    "doc/development-guide-v0.1-2026-09-04.md": "c4b1fb8ad5a46b090cd9d6780463ec221a14002de85b806d9a59927c63dea31a"
+  },
+  "exact_formal_copies": 2,
+  "project_relative_links_verified": 31,
+  "inherited_raw_links_not_followed": 0,
+  "semantic_review": "Read complete entry diffs and current decision/PRD. Current REVISE, full lexical/comment pending/active deny/strict guard/atomic priority/failure fallback and separate future stages consistent. Source/privacy/checkpoints unchanged.",
+  "source_card_links": "Inherited ../../raw references preserved; not read and not claimed to resolve in product repository.",
+  "v6_not_created": true,
+  "git_boundary_clean": true,
+  "next": "Dispatch authorized first-party v6 offline task separately; no raw/source/network."
+}

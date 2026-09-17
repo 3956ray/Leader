@@ -1,0 +1,569 @@
+{
+  "task": {
+    "task_id": "V2-NOTES-LIFECYCLE-001",
+    "owner": "developer",
+    "checkpoint": "CP3",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Complete the approved category management and recoverable note deletion workflow without losing existing notes or drafts.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2; baseline accepted HEAD e2f6f4a2e91ec367dea034dff263368341212fe6. Preserve existing synthetic/test evidence and real user data if any.",
+      "Implement PM A5 full category entities with stable IDs, create/rename/reassign/delete-category confirmation, manual/auto provenance; migrate existing category text preserving notes and drafts.",
+      "Implement PM A6 single-note soft deletion and recycle bin restore to original IDs. Hidden from normal notes/search; preserve body/title/category and identity. Missing category restores to unclassified with explicit notice.",
+      "No permanent delete or automatic purge. Provide clear confirmation and accessible recovery UI.",
+      "Transactional versioned migration, preserve old database on failure/unknown version, meaningful database/UI state tests; offline build/lint and synthetic emulator regression."
+    ],
+    "out_of_scope": [
+      "No reminders, OS scheduling, backup import/export, ASR, cloud AI, graph, account, release or private data.",
+      "No destructive migration or cross-project modification; no new dependency without review."
+    ],
+    "acceptance": [
+      "Existing notes/drafts from previous schema survive upgrade with original IDs, body, title mode and category content; repeated initialization is safe.",
+      "Category create/rename/reassign persists across reopening; deleting category moves notes to unclassified and never deletes notes.",
+      "Soft-deleted note leaves home/search, appears in recycle bin, restores same ID and content; no permanent deletion API/UI.",
+      "Failure during migration, delete or restore rolls back without false success; operations and search remain consistent.",
+      "Actual tests/build plus synthetic Android CRUD/restart evidence; explicitly distinguish emulator, physical device and household validation."
+    ],
+    "evidence_required": [
+      "RESULT; baseline/final commit and clean boundaries; changed files; per-criterion tests and commands; APK hash; emulator evidence; unverified items; no automatic next task."
+    ],
+    "stop_conditions": [
+      "Execute only after explicit commander dispatch; current task must be accepted first.",
+      "Stop affected operation on data-loss risk, conflicting unknown edits, permission refusal or unreviewed dependency; report exact gap and continue independent authorized work."
+    ],
+    "contract_body": {
+      "task_id": "V2-NOTES-LIFECYCLE-001",
+      "owner": "developer",
+      "checkpoint": "CP3",
+      "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+      "goal": "Complete the approved category management and recoverable note deletion workflow without losing existing notes or drafts.",
+      "scope": [
+        "Only /Users/orderly_ray/Projects/thinkV2; baseline accepted HEAD e2f6f4a2e91ec367dea034dff263368341212fe6. Preserve existing synthetic/test evidence and real user data if any.",
+        "Implement PM A5 full category entities with stable IDs, create/rename/reassign/delete-category confirmation, manual/auto provenance; migrate existing category text preserving notes and drafts.",
+        "Implement PM A6 single-note soft deletion and recycle bin restore to original IDs. Hidden from normal notes/search; preserve body/title/category and identity. Missing category restores to unclassified with explicit notice.",
+        "No permanent delete or automatic purge. Provide clear confirmation and accessible recovery UI.",
+        "Transactional versioned migration, preserve old database on failure/unknown version, meaningful database/UI state tests; offline build/lint and synthetic emulator regression."
+      ],
+      "out_of_scope": [
+        "No reminders, OS scheduling, backup import/export, ASR, cloud AI, graph, account, release or private data.",
+        "No destructive migration or cross-project modification; no new dependency without review."
+      ],
+      "acceptance": [
+        "Existing notes/drafts from previous schema survive upgrade with original IDs, body, title mode and category content; repeated initialization is safe.",
+        "Category create/rename/reassign persists across reopening; deleting category moves notes to unclassified and never deletes notes.",
+        "Soft-deleted note leaves home/search, appears in recycle bin, restores same ID and content; no permanent deletion API/UI.",
+        "Failure during migration, delete or restore rolls back without false success; operations and search remain consistent.",
+        "Actual tests/build plus synthetic Android CRUD/restart evidence; explicitly distinguish emulator, physical device and household validation."
+      ],
+      "evidence_required": [
+        "RESULT; baseline/final commit and clean boundaries; changed files; per-criterion tests and commands; APK hash; emulator evidence; unverified items; no automatic next task."
+      ],
+      "stop_conditions": [
+        "Execute only after explicit commander dispatch; current task must be accepted first.",
+        "Stop affected operation on data-loss risk, conflicting unknown edits, permission refusal or unreviewed dependency; report exact gap and continue independent authorized work."
+      ]
+    },
+    "contract_sha256": "99770fa3f734041a6f15111b970c15d6f2ae5ce5bd5ab7536f9c5c13f5ec5274",
+    "attempt_id": "b74076c2-b4b3-48f9-97ab-cbf236936532",
+    "phase": "accepted",
+    "status": "accepted",
+    "sent_at": "2026-09-15T17:00:47.707385+00:00",
+    "accepted_at": "2026-09-15T17:31:07.851655+00:00",
+    "acceptance_report": "orchestration/reports/V2-NOTES-LIFECYCLE-001-acceptance.md"
+  },
+  "state": {
+    "schema_version": 1,
+    "updated_at": "2026-09-15T17:31:07.851655+00:00",
+    "current_pm_handoff_report": "orchestration/handoffs/2026-09-06-pm-takeover.md",
+    "current_handoff_report": "orchestration/handoffs/2026-09-06-leader-takeover.md",
+    "current_developer_handoff_report": "orchestration/handoffs/2026-09-06-developer-takeover.md",
+    "current_checkpoint": "CP3",
+    "state": "ACCEPTED",
+    "result_receiving_protocol": "orchestration/result-receiving.md",
+    "latest_result_receipt": "orchestration/reports/CP2-VOSK-ANDROID-MAVEN-METADATA-001-receipt.md",
+    "resume_note": "User-authorized from-zero thinkV2. Historical think acceptance applies only to old project.",
+    "active_task_id": "V2-NOTES-LIFECYCLE-001",
+    "checkpoint_evidence": {
+      "V2-NOTES-CORE-001": "Engineering accepted at e2f6f4a; physical/family evidence not passed"
+    },
+    "observations": [
+      "Blank Compose template confirmed. First core development dispatched."
+    ],
+    "blocking_questions": [],
+    "last_accepted_task_id": "V2-NOTES-LIFECYCLE-001",
+    "last_developer_result": {
+      "task_id": "V2-NOTES-CORE-001",
+      "RESULT": "COMPLETE",
+      "head": "e2f6f4a2e91ec367dea034dff263368341212fe6"
+    },
+    "last_dispatch": {
+      "task_id": "V2-NOTES-LIFECYCLE-001",
+      "thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+      "sent_at": "2026-09-15T17:00:47.707385+00:00"
+    },
+    "dispatch_history": [
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-GATE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T21:46:06+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-GATE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T21:48:39+08:00",
+        "phase": "handoff_reconciliation_only"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-GATE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T21:54:47+08:00",
+        "phase": "first_party_preflight_review_only"
+      },
+      {
+        "task_id": "CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-05T22:02:20+08:00"
+      },
+      {
+        "task_id": "CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T22:15:57+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-ACQUISITION-TOOL-SCOPE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-05T23:05:03.991454+08:00"
+      },
+      {
+        "task_id": "CP2-ACQUISITION-TOOL-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T23:16:56.701975+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-05T23:25:14.196660+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-ACQUISITION-TOOL-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T00:38:09.115663+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-METADATA-PATH-COMPATIBILITY-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T01:04:02.521425+08:00"
+      },
+      {
+        "task_id": "CP2-METADATA-COMPATIBILITY-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T01:11:45.443857+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-METADATA-PATH-COMPATIBILITY-REPAIR-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T01:20:43.682754+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-METADATA-COMPATIBLE-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T01:48:39.914721+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V4-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T02:01:44.540629+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-LICENSE-TEXT-ROUTING-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T02:24:01.922731+08:00"
+      },
+      {
+        "task_id": "CP2-LICENSE-TEXT-ROUTING-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T02:32:39.577694+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-LICENSE-TEXT-ROUTING-REPAIR-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T02:41:28.634573+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-LICENSE-TYPED-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T03:15:46.890274+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T04:03:06.240355+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-READINESS-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T04:21:04.558757+08:00"
+      },
+      {
+        "task_id": "CP2-SOURCE-SEMANTICS-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T04:30:42.068975+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T04:40:00.651181+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-OFFLINE-READINESS-001-R1",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T05:29:15.973176+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T06:07:50.786471+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T06:49:59.388594+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-R1",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T06:59:51.436469+08:00"
+      },
+      {
+        "task_id": "CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T07:07:17.145768+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T07:20:25.438801+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T07:58:08.907377+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T08:44:22.904586+08:00"
+      },
+      {
+        "task_id": "CP2-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T08:55:38.850764+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T09:05:28.869230+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T10:03:00.306382+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-TOKEN-PROVENANCE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T10:12:57.215995+08:00"
+      },
+      {
+        "task_id": "CP2-REVIEW-TOKEN-PROVENANCE-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T10:22:03.070884+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T10:39:15.921901+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T11:06:20.678737+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T11:23:19.397743+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T13:13:47.600568+08:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-HARD-STOP-NEXT-STEP-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T13:39:06.250616+08:00"
+      },
+      {
+        "task_id": "CP2-V8-HARD-STOP-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T05:47:55.827404+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-LOCAL-CONFIGURATION-ROUTE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T06:07:09.652205+00:00"
+      },
+      {
+        "task_id": "CP2-V8-LOCAL-CONFIGURATION-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T06:19:42.556393+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T08:01:44.811228+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-ROUTE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T08:22:19.550352+00:00"
+      },
+      {
+        "task_id": "CP2-V8-HOTWORDS-CONSUMER-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T08:32:21.898039+00:00"
+      },
+      {
+        "task_id": "CP2-ASR-HOTWORDS-CHAIN-TERMINATION-ROUTE-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:02:49.401902+00:00"
+      },
+      {
+        "task_id": "CP2-HOTWORDS-CHAIN-TERMINATION-DECISION-SYNC-001",
+        "thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+        "sent_at": "2026-09-06T09:15:01.137931+00:00"
+      },
+      {
+        "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:20:49.755518+00:00"
+      },
+      {
+        "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:43:02.498485+00:00"
+      },
+      {
+        "task_id": "CP2-ALTERNATIVE-ASR-SECURITY-INTAKE-SELECTION-DECISION-001",
+        "thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+        "sent_at": "2026-09-06T09:56:03.463245+00:00"
+      },
+      {
+        "task_id": "LOOP-V2-PM-PROBE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "e0565b64-75f0-4680-a8fb-5e3de83dc093",
+        "sent_at": "2026-09-06T15:23:42.651122+00:00"
+      },
+      {
+        "task_id": "LOOP-V2-DEV-PROBE-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "40f801e9-53fd-44f0-b2d3-82f4a580f27d",
+        "sent_at": "2026-09-06T15:25:49.863663+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-ARTIFACT-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "eacfd6ec-b659-4151-a404-93ff44c4053b",
+        "sent_at": "2026-09-07T13:00:09.377432+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-ARTIFACT-STATIC-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "db83c950-0012-46a1-a6a6-ef39a8a49d86",
+        "sent_at": "2026-09-07T16:32:19.955159+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-TOOL-GAP-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "ad76fabd-6890-4aa3-b39d-6f59c9e06255",
+        "sent_at": "2026-09-07T21:11:07.406609+00:00"
+      },
+      {
+        "task_id": "CP2-SIMPLIFIED-STAGED-REVIEW-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "0d005a32-4746-41cf-8051-d0f35fa713d1",
+        "sent_at": "2026-09-08T00:40:59.071417+00:00"
+      },
+      {
+        "task_id": "CP2-SIMPLIFIED-STAGED-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "b039c909-4aaf-4b98-a265-4268b296f18c",
+        "sent_at": "2026-09-08T05:03:41.314522+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE1-ACQUISITION-INSPECTION-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "07a96480-78dd-4040-8d30-5bc8d44a7ed0",
+        "sent_at": "2026-09-08T07:21:11.809081+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE2-SCOPE-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "c74bc093-5656-4a8e-99b6-726bd59dccdf",
+        "sent_at": "2026-09-08T07:36:15.125036+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE2-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "472a99f4-a969-4952-ae39-5edaa42ac447",
+        "sent_at": "2026-09-08T09:47:18.855892+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-STAGE2-INPACKAGE-STATIC-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "7fb3904a-af73-4049-b4c8-0b5c3f9eaf00",
+        "sent_at": "2026-09-08T09:52:29.026179+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-INTEGRATION-GAPS-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "8d5bc8f3-160a-4fa3-a054-fd41d4d17a68",
+        "sent_at": "2026-09-08T10:04:51.869551+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-INTEGRATION-GAPS-DOC-SYNC-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "7d6ba0a6-e72c-4bca-874c-2823f6a2b168",
+        "sent_at": "2026-09-08T10:25:14.519005+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-DEPENDENCY-LICENSE-METADATA-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "a7189bfc-dbae-49d8-b1d2-19b5e7fe583a",
+        "sent_at": "2026-09-08T10:29:47.409480+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-ARM64-COMMAND-PATH-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "26b63ffe-ed33-46c3-a3e5-2cd46a2dd203",
+        "sent_at": "2026-09-08T11:20:51.717621+00:00"
+      },
+      {
+        "task_id": "CP2-OFFLINE-NEXT-TWO-DECISION-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "ad032b97-a1b6-47de-8ffb-8707dfec39c8",
+        "sent_at": "2026-09-08T12:04:53.613291+00:00"
+      },
+      {
+        "task_id": "CP2-MEMORY-PCM-FAKE-ASR-CONTRACT-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "d70c86c5-8da0-443f-8493-af04e8ffbcf1",
+        "sent_at": "2026-09-08T12:11:48.427124+00:00"
+      },
+      {
+        "task_id": "CP2-VOSK-METADATA-RESUME-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "31424e25-9308-4c57-b30c-a04fadbbb674",
+        "sent_at": "2026-09-08T14:09:47.234122+00:00"
+      },
+      {
+        "task_id": "CP2-CHINESE-CORPUS-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "af861510-8a44-4376-8c7a-000a1e8bb0af",
+        "sent_at": "2026-09-09T03:33:33.550227+00:00"
+      },
+      {
+        "task_id": "CP2-CER-SCORER-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "902c0db6-7100-4b73-9732-756316214559",
+        "sent_at": "2026-09-09T03:45:06.093682+00:00"
+      },
+      {
+        "task_id": "CP2-JNA-SCOPE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "0fdd9888-9aec-4540-b030-06b8ce0c5e7f",
+        "sent_at": "2026-09-09T07:11:59.552747+00:00"
+      },
+      {
+        "task_id": "CP2-JNA-AAR-STATIC-REVIEW-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "152ecdef-f3ec-4dc8-8f36-f3de646bf2d8",
+        "sent_at": "2026-09-09T07:19:38.148414+00:00"
+      },
+      {
+        "task_id": "CP2-CONTROLLED-RUN-PLAN-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "c803f612-e378-4fe6-9862-500bff19da86",
+        "sent_at": "2026-09-09T07:39:31.997253+00:00"
+      },
+      {
+        "task_id": "NOTES-HOME-SCOPE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "5100c42f-d414-44c1-9c56-2ddc040790ba",
+        "sent_at": "2026-09-09T17:16:17.421343+00:00"
+      },
+      {
+        "task_id": "NOTES-TEXT-FOUNDATION-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "3ae44ad4-bc4c-44f5-9e55-78037786bb3b",
+        "sent_at": "2026-09-09T17:26:53.273086+00:00"
+      },
+      {
+        "task_id": "NOTES-HOME-SEARCH-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "3627b601-fac6-4913-935d-776bd91a1846",
+        "sent_at": "2026-09-09T17:47:40.303783+00:00"
+      },
+      {
+        "task_id": "NOTES-RELATION-GRAPH-001",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "c81775a2-2da4-462a-a82f-5e8169cbe647",
+        "sent_at": "2026-09-09T18:07:38.520772+00:00"
+      },
+      {
+        "task_id": "NOTES-RELATION-GRAPH-001-R1",
+        "thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "attempt_id": "a862e376-c2b5-44e2-a060-29603062145d",
+        "sent_at": "2026-09-09T18:20:06.511492+00:00"
+      },
+      {
+        "task_id": "NOTES-XIAOMI-FULL-SCOPE-001",
+        "thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "attempt_id": "1c38df59-c044-48b6-9552-6485ba15277c",
+        "sent_at": "2026-09-11T10:29:00.974799+00:00"
+      }
+    ],
+    "handoff": {
+      "at": "2026-09-05T21:49:47+08:00",
+      "from_leader": "01a06d14-dcdb-7bd2-9bc2-4c3a85529a25",
+      "to_leader": "01a071cf-9ac6-7171-b663-749a6e88b0a4",
+      "developer": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+      "status": "completed",
+      "old_leader_acknowledged": true,
+      "report": "orchestration/handoffs/2026-09-05-leader-takeover/README.md",
+      "accepted_report": "/Users/orderly_ray/Leader/orchestration/handoffs/2026-09-05-leader-takeover/developer-reconciliation.md",
+      "report_sha256": "21e2fd3afbeb4cc7eea67245182ad60e7f6995ffeb01e925f7712ffc47681777"
+    },
+    "parked_task_id": "CP2-VOSK-DEPENDENCY-LICENSE-METADATA-001",
+    "historical_scheduler": {
+      "automation_id": "app-leader",
+      "status": "DELETED_BY_USER",
+      "interval_minutes": 10,
+      "target_thread_id": "01a07655-fdfd-7683-aa57-a4895188d2ff"
+    },
+    "coordination_mode": "interactive_callback_and_wait",
+    "automatic_scheduling_allowed": false,
+    "checkpoint_reconciliation": {
+      "decision_task_id": "NOTES-HOME-SCOPE-001",
+      "from": "CP2",
+      "to": "CP3",
+      "scope_note": "NOTES-L1/L2/L3\u9650\u5b9a\u672c\u5730\u6587\u5b57\u5148\u884c\uff1bCP1\u4eba\u5de5\u5ef6\u671f\uff0cCP2/CP3\u6574\u4f53\u672a\u901a\u8fc7\uff0cAlpha\u672a\u6279\u51c6\u3002",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/notes-home-redesign-decision-2026-09-10.md",
+          "sha256": "59e96dd7624f48efb981d3778f73cb607cdd84ca891c8cf55970b5c765d59728"
+        }
+      ]
+    }
+  }
+}

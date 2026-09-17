@@ -1,0 +1,46 @@
+{
+  "body_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79",
+  "scope": "Only direct target option/validation/logging and config-to-impl constructor slices",
+  "slices": [
+    {
+      "start_line": 109,
+      "end_line": 114,
+      "byte_start": 3450,
+      "byte_end": 3680,
+      "sha256": "1fab21c8ddda06dd1e56aa7cb47852b13d0864050f196ff1b971c4eeab8c74e8",
+      "text": "  po->Register(\n      \"hotwords-file\", &hotwords_file,\n      \"The file containing hotwords, one words/phrases per line, For example: \"\n      \"HELLO WORLD\"\n      \"\u4f60\u597d\u4e16\u754c\");\n  po->Register(\"decoding-method\", &decoding_method,\n"
+    },
+    {
+      "start_line": 149,
+      "end_line": 154,
+      "byte_start": 4933,
+      "byte_end": 5215,
+      "sha256": "b59ef09266d52015d3c831e64dc391bc64c89e2f76bde4f11a4ddb36cff5d254",
+      "text": "  if (!hotwords_file.empty() && decoding_method != \"modified_beam_search\") {\n    SHERPA_ONNX_LOGE(\n        \"Please use --decoding-method=modified_beam_search if you\"\n        \" provide --hotwords-file. Given --decoding-method=%s\",\n        decoding_method.c_str());\n    return false;\n"
+    },
+    {
+      "start_line": 163,
+      "end_line": 167,
+      "byte_start": 5392,
+      "byte_end": 5582,
+      "sha256": "4de8f0ce5c0712ce21127fd3a3dd081dc037e46072000cd40db73c469ad49840",
+      "text": "  if (!hotwords_file.empty() && !FileExists(hotwords_file)) {\n    SHERPA_ONNX_LOGE(\"--hotwords-file: '%s' does not exist\",\n                     hotwords_file.c_str());\n    return false;\n  }\n"
+    },
+    {
+      "start_line": 210,
+      "end_line": 210,
+      "byte_start": 6923,
+      "byte_end": 6978,
+      "sha256": "7de88c9faad001b252ec9f80861950aea140c63835e607399eec803797a33c7e",
+      "text": "  os << \"hotwords_file=\\\"\" << hotwords_file << \"\\\", \";\n"
+    },
+    {
+      "start_line": 222,
+      "end_line": 224,
+      "byte_start": 7375,
+      "byte_end": 7502,
+      "sha256": "9b1546986ca6c4c55fa2f1f92d44598f4f8f363a0dabe4674148221bc9f0992f",
+      "text": "OnlineRecognizer::OnlineRecognizer(const OnlineRecognizerConfig &config)\n    : impl_(OnlineRecognizerImpl::Create(config)) {}\n\n"
+    }
+  ]
+}

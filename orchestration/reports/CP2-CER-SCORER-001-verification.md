@@ -1,0 +1,15 @@
+# CER scorer verification
+
+Task CP2-CER-SCORER-001, attempt 902c0db6-7100-4b73-9732-756316214559, contract 41fd72b8d292e26d904f2a0b2adab2b0dcb26380a2f7bededf0224a50e92ee54, developer 01a0768d-95fd-78b3-9c31-404f7e1ac7ed.
+
+Leader observed completed developer turn 01a08444-ef62-7b90-99ed-ba566b4bf3a0 (810320 ms). Repeated original read_thread returned empty items without denial. Completion is reconciled from the exact scoped nine-file commit and independent artifact verification, not a claimed observed worker ACK/COMPLETE text or successful callback.
+
+Commit 3046f49344f4c3cd1c46836d0bf0b3060ac15bd6 contains exactly four documentation and five tools/cp2-cer files. Product main clean, ahead64, no push observed. show --check passed. Fixed decision SHA 8d0ccaba2360113e46debdfb67621ef6f8f3ab21dff1f1208d5df12859954256 and PRD SHA c6b23e5dc8d25abca39bffd79e88d9503cb470d1fc04d2ec8bc81e92c23e0947 match knowledge sources. Entrypoints document public fixtures separately from private audio and keep all actual runtime/CP2 gates.
+
+Leader read scorer, tests, all 21 golden cases and README. Scorer has no audio, network, dependency or ASR loading interface. Unicode normalization and code-point Levenshtein counts match the formal contract; missing/failed hypotheses remain full deletions, character-weighted denominator retained, >100 percent CER allowed. Paths are project-root relative, ancestor and leaf no-follow descriptor checks reject symlinks, regular inputs bounded, O_EXCL prevents overwrite. Public provenance is explicitly unauthenticated format validation, not proof of public ownership. README discloses hostile-directory-renaming/hardlink limitations and possible partial newly created output on storage failure.
+
+For independent tests Leader copied the reviewed first-party source, test and golden JSON into a fresh /private/tmp/think-cer-leader-SaP21V/tools/cp2-cer tree, preserving project-relative layout. This avoids writing test files into product workspace. Source/test hashes match the committed originals: 269ae035f2ea94df11f6014f25740395e31699c283461704b03d62a5cc25a599 and 2bbfd4c4bcc613d7c9b26654924b96491073bad71f376b14166901014acf23ba.
+
+Executed python3 -B /private/tmp/think-cer-leader-SaP21V/tools/cp2-cer/test_score.py --write-validation tools/cp2-cer/leader-validation.json. All20 tests passed in2.042s, including21 golden cases,961 short-string oracle comparisons, input maxima, failure modes, symlink/path/FIFO checks, deterministic actual CLI and no-overwrite tests. The newly generated CLI report is byte-identical to committed synthetic-validation.json, SHA8193dcc2faf4114e12de35b768412533e03dc060334303ed707755917be05117.
+
+Accepted as usable bounded scoring utility only. Actual public-corpus ASR evaluation NOT RUN. No audio downloaded or recognized. Official small corpus acquisition remains paused by formal decision after upstream502/429 and no verified small test package; JNA binary and real runtime admission remain pending. No further preparation chain is dispatched. The user's eventual real speech benchmark remains outstanding and must not be described as fulfilled by synthetic arithmetic.

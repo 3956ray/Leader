@@ -1,0 +1,1 @@
+{"verdict":"accepted","checks":{"identity":true,"four_files":true,"pins":true,"entry_rules":true,"clean_git":true},"evidence":[{"path":"/Users/orderly_ray/Leader/orchestration/reports/CP2-SIMPLIFIED-STAGED-DOC-SYNC-001-acceptance.md","sha256":"54f0844692ac072aa9a482e23b3680563dafbc79af71fedcdf9703a1083f1ebf"}]}

@@ -1,0 +1,56 @@
+{
+  "canonical_input": {
+    "result": "PASS",
+    "items": 5
+  },
+  "commit": {
+    "result": "PASS",
+    "items": 10
+  },
+  "tree": {
+    "result": "FAIL",
+    "type": "Rejected",
+    "reason": "tree_path_or_duplicate"
+  },
+  "path_diagnostics": {
+    "invalid_count": 171,
+    "first_five": [
+      {
+        "index": 2525,
+        "path": "flutter-examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png"
+      },
+      {
+        "index": 2526,
+        "path": "flutter-examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png"
+      },
+      {
+        "index": 2527,
+        "path": "flutter-examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png"
+      },
+      {
+        "index": 2528,
+        "path": "flutter-examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png"
+      },
+      {
+        "index": 2529,
+        "path": "flutter-examples/hello_world/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png"
+      }
+    ]
+  },
+  "input_sha256": "89de67bebd5cf927bfd7ca09a4bfad181f2cc59fb94c88051c55939820cf8868",
+  "input_bytes": 2037,
+  "zero_network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  },
+  "real_body_requests": 0,
+  "code_changed": false
+}

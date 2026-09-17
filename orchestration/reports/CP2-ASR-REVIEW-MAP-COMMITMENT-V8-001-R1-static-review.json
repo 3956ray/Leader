@@ -1,0 +1,16 @@
+{
+  "RESULT": "PASS",
+  "reviewed_script": {
+    "path": "/private/tmp/think-k-v8-r1-w90e8ogk/verify.py",
+    "bytes": 17659,
+    "sha256": "b6418d70ffd467a26d3dc316b7dc10caee7a4ce1f93582550b399ab017824315"
+  },
+  "execution_command": "/Library/Developer/CommandLineTools/usr/bin/python3 -I -B /private/tmp/think-k-v8-r1-w90e8ogk/verify.py --final",
+  "checks": [
+    "Leader read full exact script; standardlibrary only, print result, no candidate import, no subprocess/network, no writes.",
+    "Task and all 14 source records individually allowlisted; copied inputs checked byte-exact; 28 bundle and 8 module paths restricted and identities checked before execution.",
+    "Only the new K verifier executed; old review and P scripts not executed.",
+    "Leader independently reconstructs four complete objects using fixed original R plus accepted P; datetime integer civil arithmetic is independent of developer Gregorian algorithm."
+  ],
+  "archival_note": "Archived verifier is exact byte copy for review only; its __file__ relative inputs remain in original bounded temporary directory. Do not execute relocated copy."
+}

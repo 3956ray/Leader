@@ -1,0 +1,10 @@
+{
+  "task_id": "V2-VOICE-CONTROLS-001",
+  "attempt_id": "ee161236-6248-44c9-b597-d8842df793a2",
+  "contract_sha256": "c4ea01635c9faf6e1881938f84ddb5414c236760f2e4f162bed6d38ae528cdd9",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "turn_id": "01a0aa61-21c3-78b3-b313-2b2fc200a372",
+  "acknowledged": true,
+  "baseline": "7eb5b4dafe891d10fe65a15c5f67b01c0d2ab3ae",
+  "receipt_source": "Explicit developer callback ACK: full contract and PM scope read, clean baseline, three-command safe-mode boundary confirmed."
+}

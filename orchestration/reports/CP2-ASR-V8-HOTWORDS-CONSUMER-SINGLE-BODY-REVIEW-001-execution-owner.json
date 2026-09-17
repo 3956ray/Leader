@@ -1,0 +1,17 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "recorded_at": "2026-09-06T08:10:31.125848+00:00",
+  "change": "Leader sole executor; developer prep complete and stopped, never received execution release",
+  "developer_preflight_report": {
+    "directory": "/private/tmp/think-hotwords-single-handler-fowj26gg",
+    "handler_sha256": "8763dd9ff806160cbeec48bab43a65f2935593a1d73b45b83ccae424d491b043",
+    "execution": "Developer attested not executed; not selected and not read/imported by Leader."
+  },
+  "selected_handler": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-fetch.py",
+    "bytes": 7417,
+    "sha256": "d267920b69b48e7b9fbe5189b6fb9a9a4dafdf4b83076cec44129288a678b0c9"
+  },
+  "scope": "Same exact approved task, object and one-attempt budget. No new request or permission. Actual GET withheld until independent review passes.",
+  "developer_idle_cursor": "5fc3cb39-2e56-42ce-b696-82b3a7fc016f:3"
+}

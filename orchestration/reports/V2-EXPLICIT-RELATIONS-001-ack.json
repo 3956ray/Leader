@@ -1,0 +1,10 @@
+{
+  "task_id": "V2-EXPLICIT-RELATIONS-001",
+  "attempt_id": "3653a2dd-eb41-4831-9a4e-38734870da34",
+  "contract_sha256": "981a5e0733148b37aee52d293ea3f2ae614b7c23f0c1f605560b14bed4fcb701",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "turn_id": "01a0aa07-129b-79a2-b4a2-a03e28442194",
+  "acknowledged": true,
+  "baseline": "186204ee45b2f2664fd8073e53a63fe118e0df04",
+  "receipt_source": "Developer explicit callback ACK; baseline clean, branch codex/v2-explicit-relations, R1-R5 scope confirmed."
+}

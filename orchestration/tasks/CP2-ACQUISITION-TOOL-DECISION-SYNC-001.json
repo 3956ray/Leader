@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ACQUISITION-TOOL-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "将已批准的完整获取工具离线开发决定和最新 PRD 同步到产品仓库，以单一五文件文档提交建立下一开发任务的正式依据。",
+  "scope": [
+    "从 /Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/ 逐字节复制 cp2-acquisition-tool-scope-decision-2026-09-05.md 和 prd-v0.1-2026-09-04.md 到产品仓库 doc/。",
+    "只最小修改 AGENTS.md、doc/README.md、doc/development-guide-v0.1-2026-09-04.md，记录 v2 已验收但不完整，下一唯一任务 CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001 仅在独立 v3 目录离线开发完整组件与输入协议，实际网络为零。",
+    "同步完整候选独立验收→单独冻结→单独映射既有授权获取的顺序，冻结不能补代码；固定身份/9 seed/96文件/1MiB/denylist/隐私/Checkpoint均不变。",
+    "仅五文件；检查哈希、引用和Git边界后创建一个提交，停止并回报Leader。"
+  ],
+  "out_of_scope": [
+    "修改或执行工具、创建 v3、网络/真实API/第三方正文/旧corpus、冻结、获取、构建、依赖、模型、产品源码、CP3。",
+    "改写正式决定/PRD，修改五文件以外内容或替代Leader验收。"
+  ],
+  "acceptance": [
+    "决定与源逐字节一致，SHA-256=a26cd6f4f9fe103ba7f39034d72afcf32c0c98819cb8270e40689405991136bd；PRD SHA-256=bf9c6b31d90b9bdc1ba3beec620dfecbcafa073d3a1fa822d198dec3794a3a6c。",
+    "三个入口准确反映完整组件的零实际网络开发范围、后续分阶段顺序和全部不变边界。",
+    "提交父项 da9279a411d990e4c37191e22be680b2c4bfcb07，只含五文件；git show --check通过且工作区干净。"
+  ],
+  "evidence_required": [
+    "RESULT、提交/父项、五文件及目的、源/目标SHA与字节比较、入口关键位置、检查命令和结果、未验证项；完成后向当前Leader报告并停止。"
+  ],
+  "stop_conditions": [
+    "HEAD/工作区不符、未知修改、源哈希漂移、需超出五文件、网络或第三方输入时停止。"
+  ],
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "baseline_commit": "da9279a411d990e4c37191e22be680b2c4bfcb07",
+  "task_result": "COMPLETE",
+  "accepted_at": "2026-09-05T23:24:29.023505+08:00",
+  "commit": "926b06fc3513c60b96e494d7d5c087b2763d6064",
+  "report": "orchestration/reports/CP2-ACQUISITION-TOOL-DECISION-SYNC-001.json"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-V8-HARD-STOP-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "同步已验收v8硬停止下一步正式决定和PRD及三个工程入口，准确限定为Leader单独同对象七处命中的离线静态证据审查。",
+  "baseline_commit": "393640b8a6825a9a0b42c479949646e1914da199",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HARD-STOP-NEXT-STEP-DECISION-001-acceptance.json",
+    "bytes": 2467,
+    "sha256": "011e78127b6f9753a7b6df33050121a76d39ea935985e56c800b4184f9a424a5"
+  },
+  "formal_sources": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-v8-hard-stop-next-step-decision-2026-09-06.md",
+      "bytes": 10980,
+      "sha256": "2b099d1ec9a21c39969a7987453b32bf81068a0f8fb3256fdf63fb905439511d",
+      "destination": "doc/cp2-v8-hard-stop-next-step-decision-2026-09-06.md"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 65186,
+      "sha256": "19d21af8b69a22d45250038f3f59e24e1c46c3d1d60bd26f8fb9443d87a404d2",
+      "destination": "doc/prd-v0.1-2026-09-04.md"
+    }
+  ],
+  "scope": [
+    "仅原字节新增正式decision及同步PRD，两个文件与formal_sources完全一致。",
+    "仅更新AGENTS.md、doc/README.md和doc/development-guide-v0.1-2026-09-04.md的当前CP2状态、决定优先级链接和下一任务；明确旧P补录/K/F/M均已完成，v8单次获取393640b8只接受正确停止，2files/19297B、5active+4vs2comment、0adjudication、run永久结束。保留历史规范为历史，不重写旧决定。",
+    "下一唯一工作为Leader-owned CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001，依新正式决定只审当前header七occurrence，既有post-acquisition权限，无需重复批准；保持硬停止/no clearance/no新获取/no v9/CP2未过。开发者和PM不读取原始材料、不执行审查。",
+    "只提交这五文件、不push，报告精确hash/Gitblob/parent/tree、链接和diffcheck、旧tools/evidence/app保持不变。"
+  ],
+  "out_of_scope": [
+    "不读任何private/raw/body/envelope/metadata/scannercontext，不运行候选/scanner/controller或获取/构建/测试/安装，不开始Leader审查。",
+    "不修改五文件以外、旧决定/候选/证据/输入/授权/产品代码，不放宽任何隐私/范围/Checkpoint，不建立v9/新map或新获取。"
+  ],
+  "acceptance": [
+    "commit父393640b8，恰好五文档变更，decision/PRD逐byte一致，三个入口当前状态与下一Leader任务一致。",
+    "无产品实现/旧tools/evidence/app变更，工作区clean；CP1/Conformer Deferred not removed，CP2未通过，CP3/Alpha未批准。"
+  ],
+  "evidence_required": [
+    "RESULT及五文件目的/path/bytes/SHA/Gitblob、commitparent/tree、diff/链接检查、旧树未改证据和所有未验证项。",
+    "完成通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4 后停止，不执行任何原始审查。"
+  ],
+  "stop_conditions": [
+    "HEAD/正式源hash漂移、未知修改、需要五文件以外或raw材料时停止，不扩范围。"
+  ],
+  "prepared_at": "2026-09-06T13:47:50.480452+08:00"
+}

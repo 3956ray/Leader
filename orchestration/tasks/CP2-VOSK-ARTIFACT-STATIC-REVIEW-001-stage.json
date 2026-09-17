@@ -1,0 +1,34 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "CP2-VOSK-ARTIFACT-STATIC-REVIEW-001",
+    "owner": "developer",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+    "goal": "严格按已验收范围和用户精确授权，先核对现有工具前置条件，再串行取得Vosk AAR与中文模型并作有界离线静态审查；不能落实前置则零GET停止。",
+    "formal_scope": "/Users/orderly_ray/Projects/think/doc/cp2-vosk-artifact-review-scope-decision-2026-09-06.md",
+    "formal_scope_sha256": "6f537e2a58bbff9bcab8bf605079612d541bf4326d9e90cc825a26d4f66576a8",
+    "scope_acceptance": "/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-ARTIFACT-REVIEW-SCOPE-DECISION-001-acceptance.md",
+    "sync_acceptance": "/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-ARTIFACT-DOC-SYNC-001-acceptance.md",
+    "authorization_source": "Direct user message 01a07736-5d4c-7261-b38b-adb6809445e7 in PM turn 01a07736-5c7a-7c53-a4a8-5d630418f937, independently read by Leader; exact objects/bounds corroborated by knowledge LOG. No repeat user approval needed within that scope.",
+    "scope": [
+      "先只读完整formal_scope、产品AGENTS/README/PRD当前CP2与已审工具/安全门禁依据，核对82bde868干净基线、范围SHA及授权；给身份绑定ACK。旧文档中本单不执行指原同步任务，不能覆盖本次已授权静态审查合同。",
+      "前置仅盘点现有已审可用下载/静态工具的路径版本摘要、审查依据及实际资源/格式能力。必须能限制响应头64KiB、流式正文64MiB/对象、GET120秒、解析内存1GiB/每对象10分钟、成员/嵌套/展开/文本预算和离线静态阶段。不以下载后裁剪或跳过未支持限制替代。无法落实则BLOCKED、零GET，不新增专用工具工程/安装/重复冻结链。",
+      "通过前置后，只允许串行GET https://repo.maven.apache.org/maven2/com/alphacephei/vosk-android/0.3.75/vosk-android-0.3.75.aar 与 https://alphacephei.com/vosk/models/vosk-model-small-cn-0.22.zip，各仅一次，总两次/128MiB，禁止HEAD/Range/retry/redirect及额外URL；完整遵循formal_scope类型/TLS/长度/partial/失败及硬停止。AAR硬停止或block后不得获取模型；manual_review仅因非结构未知时可继续模型。",
+      "仅在全新 /private/tmp/think-vosk-artifact-review/CP2-VOSK-ARTIFACT-STATIC-REVIEW-001/ 的artifacts/reports保存，目录0700制品0600、不覆盖旧run或链接；实际bytes/SHA不是官方校验。不得成员落地解压；AAR一层嵌套JAR、模型不递归，同一预算最多10000成员、512MiB累计实际展开、128MiB单成员、100:1声明压缩比、文本2MiB单成员/32MiB总计。完整结构检查与静态覆盖以formal_scope为准。",
+      "保留工具原始报告、acquisition-ledger.json、runtime-static-review.md、model-static-review.md、artifact-review-summary.md和成员/覆盖清单。未取得对象记not_acquired；前置失败也留报告与零GET记录。整体adoption_gate固定blocked，两个对象独立裁决，不隐去异常主页/JNA5.18.1/.module/来源许可与未覆盖项。",
+      "完成在自己任务最终答复给身份绑定JSON回执及证据。按用户最新要求主动回调Leader 01a07655-fdfd-7683-aa57-a4895188d2ff，只发送结果/证据索引不发送制品；若回调被实际权限拒绝，记录错误并停止重试，不能绕过或声称成功。"
+    ],
+    "out_of_scope": [
+      "禁止获取JNA、.module、sidecar、公钥、依赖、源码/新metadata/任何额外对象，不访问异常主页，不安装/导入/构建/dlopen/模型加载/运行/推理/集成/真机/云扫描上传。",
+      "不修改think或知识库、不提交或推送、不写原始音频、不使用真实家庭数据、不恢复sherpa链、不改变CP2/CP3/Alpha及隐私门槛。"
+    ],
+    "acceptance": [
+      "前置条件逐项有证据；失败时诚实BLOCKED且零GET，不能为了完成而越过工具/资源门禁。",
+      "执行时只有授权两个对象按顺序/预算取得，身份与工具报告可复核，所有硬停止均落实；覆盖与未知分明，无目标执行或落地解压。",
+      "complete不等于安全通过；独立对象裁决、未取得原因、adoption_gate blocked和Git无改动可查。"
+    ],
+    "evidence_required": ["task_id/attempt_id/contract_sha256/assigned_thread_id/acknowledged:true/result:COMPLETE或BLOCKED或PRODUCT_DECISION_REQUIRED；文件路径bytes/SHA、工具前置矩阵、全部网络尝试/停止、静态覆盖原始报告、未知、Git状态、回调实际结果。"],
+    "stop_conditions": ["任何未具备前置能力、路径冲突、权限拒绝、身份/MIME/结构/CRC/资源/预算/范围异常立即停止，保留证据，不自动重试或取下一对象。", "完成/阻塞回调并停止，后续依赖或执行另立合同，不自行派单。"]
+  }
+}

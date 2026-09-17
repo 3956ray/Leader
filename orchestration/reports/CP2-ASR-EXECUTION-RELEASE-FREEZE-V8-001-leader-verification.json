@@ -1,0 +1,65 @@
+{
+  "C_bundle_files": 28,
+  "C_manifest_rows": 69496,
+  "F_sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+  "K": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+  "P": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc",
+  "RESULT": "PASS",
+  "commit": "75a9349c2e54d18a46dacddad762e7e669e9fbc2",
+  "contracts": {
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "role": "1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125",
+    "semantic": "2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86"
+  },
+  "developer_verifier_preflight": "Exact reviewed source and permitted derived/script path references verified before separate run",
+  "external_collection_sha256": "c001b9df2e3a1a0544d7e691497abbeaf9b2efc87dbe2bc2bea07be32a23a0d7",
+  "external_refs": 33,
+  "files": [
+    {
+      "bytes": 344,
+      "git_blob": "42060e41b293f1da3ff6cb05a5b0f9f3b0407cd2",
+      "mode": "100644",
+      "path": "F.json",
+      "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+      "type": "blob"
+    },
+    {
+      "bytes": 20545828,
+      "git_blob": "de7a027d26f9fc66bb76245bd09d52810ae7d01a",
+      "mode": "100644",
+      "path": "MANIFEST.json",
+      "sha256": "a373d657558fd7a8982bf29b737f313420f593793c93d8d3f24504071777f4c4",
+      "type": "blob"
+    },
+    {
+      "bytes": 10157,
+      "git_blob": "59aaef6617a74db009c8d7bc87afdae9cb134d81",
+      "mode": "100644",
+      "path": "REPORT.md",
+      "sha256": "f8bf98968875ceb93c1b8189cf06b246b1021664100f8663672c53b444c073c4",
+      "type": "blob"
+    },
+    {
+      "bytes": 23461,
+      "git_blob": "f30f80241ccd6a8702a0d870279ba94cb85f7bd0",
+      "mode": "100644",
+      "path": "freeze.json",
+      "sha256": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607",
+      "type": "blob"
+    }
+  ],
+  "files_collection_sha256": "83c3d1b4458e773d4eb3a0dd038f22f4554d471a10ca6b55b82f676b3c8db3ba",
+  "limitations": [
+    "All firstparty synthetic/source evidence hashed opaque, no private/original source pointer reads.",
+    "No candidate or prior verifier imports/execution; document acceptance only."
+  ],
+  "old_records": 129523,
+  "old_records_sha256": "f1d1f3adbead75a4a0e7ef9daeb2b4886edd143de209b6418c41f7b1f7b64198",
+  "output_tree": "b9d18a3f9775cdaf5d07e71e36f9eaac0e0c79e4",
+  "parent": "f48f4831c9d733080dab97932604f4ecf1e4cbc2",
+  "product_inputs": 69505,
+  "root_tree": "6467f2ff2da447c55795d1d12dca9970103411b4",
+  "supporting_freeze_sha256": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607",
+  "worktree_clean": true
+}

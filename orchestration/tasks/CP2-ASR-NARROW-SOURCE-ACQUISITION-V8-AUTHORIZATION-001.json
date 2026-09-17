@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "goal": "取得用户对已独立验收的v8冻结及映射所绑定的一次有限源码获取的全新明确授权。",
+  "prepared_at": "2026-09-06T11:38:08.816477+08:00",
+  "proposed_task": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "authorization_request": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.md",
+    "bytes": 5840,
+    "sha256": "1e1a16e81457e8ab5dd74367c20efc9142587cde51391e2589de9911cbe102a2"
+  },
+  "authorization_request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+    "bytes": 19883,
+    "sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b"
+  },
+  "accepted_F": {
+    "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/F.json",
+    "bytes": 344,
+    "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4"
+  },
+  "accepted_M": {
+    "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-authority-map-v8/2026-09-06/M.json",
+    "bytes": 858,
+    "sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0"
+  },
+  "scope": [
+    "用户审阅本次具体请求，明确批准、拒绝或缩小一次获取范围。",
+    "只有明确批准后Leader才能记录原文与请求hash，建立新A并独立复核F/M/policy/metadata/输入/Trust映射，然后另单派发一次获取。"
+  ],
+  "out_of_scope": [
+    "未批准前不得创建A/T/input/N、完整package或访问真实metadata/body/source、调用transport/请求正文。",
+    "不复用旧授权/run/corpus，不扩大解析/范围/预算/裁决/Checkpoint，不构建执行或集成第三方。"
+  ],
+  "acceptance": [
+    "用户明确回复可对应本次待批准请求及F/M/policy和固定范围；不能从沉默或历史泛化批准推断。",
+    "用户原文和请求精确hash保存在新授权记录；授权与后续映射/执行分开验收。"
+  ],
+  "evidence_required": [
+    "用户准确回复、本请求两文件SHA、F/M独立验收和固定scope，后续受信映射只能在批准后完成。"
+  ],
+  "stop_conditions": [
+    "尚未明确批准、拒绝/范围缩小/歧义或任何冻结/输入/身份漂移；不得先执行。"
+  ],
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-token-provenance-decision-2026-09-06.md",
+    "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+    "quote": "只有 F/M 完成后，才向 Product Lead 请求全新的 acquisition A；再建立 T/N。"
+  }
+}

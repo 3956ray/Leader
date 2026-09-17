@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REVIEW-AUTHORITY-MAP-V8-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "只将已独立接受的 F 与 K 精确组合为最终 v8 review_authority_map M，提供逐字段来源和独立验证证据。",
+  "baseline_commit": "75a9349c2e54d18a46dacddad762e7e669e9fbc2",
+  "predecessor_acceptance": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001-acceptance.json",
+  "predecessor_acceptance_sha256": "4f35f0fd8efe2dff2950148cf9d8e72599fbb70e675db2147a1f35da3a6fb8e9",
+  "formal_decision": "doc/cp2-review-token-provenance-decision-2026-09-06.md",
+  "formal_decision_sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+  "prepared_at": "2026-09-06T11:22:40.835163+08:00",
+  "output_directory": "doc/security-reviews/asr-review-authority-map-v8/2026-09-06",
+  "accepted_F": {
+    "commit": "75a9349c2e54d18a46dacddad762e7e669e9fbc2",
+    "tree": "b9d18a3f9775cdaf5d07e71e36f9eaac0e0c79e4",
+    "root": "doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06",
+    "runtime_F_sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+    "supporting_freeze_sha256": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607",
+    "files": [
+      {
+        "bytes": 344,
+        "git_blob": "42060e41b293f1da3ff6cb05a5b0f9f3b0407cd2",
+        "mode": "100644",
+        "path": "F.json",
+        "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+        "type": "blob"
+      },
+      {
+        "bytes": 20545828,
+        "git_blob": "de7a027d26f9fc66bb76245bd09d52810ae7d01a",
+        "mode": "100644",
+        "path": "MANIFEST.json",
+        "sha256": "a373d657558fd7a8982bf29b737f313420f593793c93d8d3f24504071777f4c4",
+        "type": "blob"
+      },
+      {
+        "bytes": 10157,
+        "git_blob": "59aaef6617a74db009c8d7bc87afdae9cb134d81",
+        "mode": "100644",
+        "path": "REPORT.md",
+        "sha256": "f8bf98968875ceb93c1b8189cf06b246b1021664100f8663672c53b444c073c4",
+        "type": "blob"
+      },
+      {
+        "bytes": 23461,
+        "git_blob": "f30f80241ccd6a8702a0d870279ba94cb85f7bd0",
+        "mode": "100644",
+        "path": "freeze.json",
+        "sha256": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607",
+        "type": "blob"
+      }
+    ],
+    "acceptance": {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001-acceptance.json",
+      "bytes": 7438,
+      "sha256": "4f35f0fd8efe2dff2950148cf9d8e72599fbb70e675db2147a1f35da3a6fb8e9"
+    }
+  },
+  "accepted_K": {
+    "commit": "f48f4831c9d733080dab97932604f4ecf1e4cbc2",
+    "tree": "5099a14ce2df00dcc5b3ad704b476dc5b15a5ee9",
+    "root": "doc/security-reviews/asr-review-map-commitment-v8/2026-09-06",
+    "identities": {
+      "C": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+      "H": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615",
+      "K": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+      "P": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc",
+      "P_acceptance": "02e6a8a8ac1fa8a1cf019219fc11e16c5feb17b735c22e14d36d6b0cc560db71",
+      "R_wrapper": "9569a0ff117a88fbda16fd2e548530bc4b46a673c7def9f6e05b2c3b2f49ab05",
+      "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+      "original_R": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+      "representation": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de",
+      "timestamp": "9810a201cd0d752a011c92ea1abd81641343ddfc79b325b6645b92b00d2a2d77"
+    },
+    "acceptance": {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-acceptance.json",
+      "bytes": 8041,
+      "sha256": "8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2"
+    }
+  },
+  "accepted_C": {
+    "commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+    "tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+    "root": "tools/asr_review_acquisition_v8",
+    "files": 69497,
+    "bundle": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "file_manifest_sha256": "d8b003df82da35b20f2e110c074a4a761de926ca914f5affc7b556650f5f9b56"
+  },
+  "pinned_references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001-acceptance.json",
+      "bytes": 7438,
+      "sha256": "4f35f0fd8efe2dff2950148cf9d8e72599fbb70e675db2147a1f35da3a6fb8e9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-acceptance.json",
+      "bytes": 8041,
+      "sha256": "8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-acceptance.json",
+      "bytes": 6661,
+      "sha256": "141c9b5655cbde45dc7761e65658fd6fe2801c2b5252fc6b12810371b430dbeb"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-P.json",
+      "bytes": 7092,
+      "sha256": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-acceptance.json",
+      "bytes": 4732,
+      "sha256": "02e6a8a8ac1fa8a1cf019219fc11e16c5feb17b735c22e14d36d6b0cc560db71"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/AGENTS.md",
+      "bytes": 15375,
+      "sha256": "1c90ce42692395e95b09b85a0d3b0211a4836e850c93117f7e0ec36150d5efa1"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/README.md",
+      "bytes": 15068,
+      "sha256": "c8bd5312384a26a3d6a77b6f846ff9f3be79d11995d5298a22c7ba38d979d83b"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-manual-capability-evidence-decision-2026-09-06.md",
+      "bytes": 19715,
+      "sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-timestamp-representation-decision-2026-09-06.md",
+      "bytes": 12271,
+      "sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-token-provenance-decision-2026-09-06.md",
+      "bytes": 9458,
+      "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 40090,
+      "sha256": "1d8d3405fd6b66e0764d81d1b32dbb36c57544b5c8dcb284a7a91d5cb017f60f"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/naming-decision-2026-09-04.md",
+      "bytes": 2414,
+      "sha256": "4a993a87fe6834f59a53fc19adddd19107f97407f79a6e2fcd90999d8ddfffdd"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/prd-v0.1-2026-09-04.md",
+      "bytes": 63461,
+      "sha256": "3cce758ccff443bdb7ea9368f3c585e4179653228c5071b0353b3991ce99ded7"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/F.json",
+      "bytes": 344,
+      "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/MANIFEST.json",
+      "bytes": 20545828,
+      "sha256": "a373d657558fd7a8982bf29b737f313420f593793c93d8d3f24504071777f4c4"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/REPORT.md",
+      "bytes": 10157,
+      "sha256": "f8bf98968875ceb93c1b8189cf06b246b1021664100f8663672c53b444c073c4"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/freeze.json",
+      "bytes": 23461,
+      "sha256": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/H.json",
+      "bytes": 432,
+      "sha256": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/K.json",
+      "bytes": 817,
+      "sha256": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/MANIFEST.json",
+      "bytes": 2068,
+      "sha256": "16bf32555fd9bb295427f112475dce333c56477bb48dab349970e09493e8ef3e"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/PROVENANCE.json",
+      "bytes": 62430,
+      "sha256": "9b835ffb83f007fc81bb9998d981ef1410a51479382a83879f71c077146f57c6"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/R.json",
+      "bytes": 9610,
+      "sha256": "9569a0ff117a88fbda16fd2e548530bc4b46a673c7def9f6e05b2c3b2f49ab05"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/REPORT.md",
+      "bytes": 4507,
+      "sha256": "f732272450a8b7b68c545bc43038c86a054c2cb8dcc02dbaff450771c479e7fa"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/VERIFICATION.json",
+      "bytes": 12980,
+      "sha256": "9a2ce9822e29215be7f45ad20a5ec74c158248c1be51cf9a3811932d900fcd4d"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-map-commitment-v8/2026-09-06/representation.json",
+      "bytes": 4278,
+      "sha256": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v8/evidence/identities.json",
+      "bytes": 6305,
+      "sha256": "8460606e963d7db2d5802c9fbbc4f59bfce3530b671044726734e4eeac57c1ae"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v8/offline_review/manual.py",
+      "bytes": 13094,
+      "sha256": "8af6f8f931dd7194b134b58e9410eb8a2af7cb9e8ced1183b761b560e2e2a5c9"
+    }
+  ],
+  "scope": [
+    "F75a9349c已独立验收，验收SHA4f35f0fd8efe2dff2950148cf9d8e72599fbb70e675db2147a1f35da3a6fb8e9。本单是后续单独M，先核对父HEAD/clean、F/K/C树和本合同pinned_references；原文件/证据不改，已有验收只读。",
+    "只新增指定目录恰好 M.json、PROVENANCE.json、VERIFICATION.json、MANIFEST.json、REPORT.md 五文件，普通单链接、Git100644/blob；只提交此五文件，不push。临时生成和独立验证脚本限Python标准库，供Leader读审；不导入或执行candidate/producer/旧脚本。",
+    "M.json必须严格等于已接受manual.py的M schema：domain=think-manual-M-v8，version=8，F=SHA256原canonical F.json，K=SHA256原canonical K.json，H/R/representation/authority/entries/map_schema逐字段从原K复制。恰好十顶层字段；不增加P/C/operational_authority/A/T/N/input/自身hash/创建时间等字段。entries严格保留原两ID/原decision和顺序，无新clearance。",
+    "M.F必须为runtime F c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4，不可用supporting freeze 000d922...或历史H context09523...。M.K8c909...与其representationda2ca.../原R0d8b.../原authoritydf26...精确绑定；map_schema1e7ba...保持v8。canonical统一sorted keys/compact ASCII/no nonfinite/exactly one LF，无selfhash/cycle/placeholder。",
+    "PROVENANCE记录每个M叶字段的固定F/K JSON路径或schema常量来源；显式绑定C/K/F/P及其独立验收、原R/representation域和原两token/时间均继承K验收未重新构造。P证据只在支持记录引用，不添加M字段。说明M是后续受信映射输入，不是新用户获取授权，也不改变原pending/旧run/source或许可结论。",
+    "读取只限pinned_references和新五输出；F的20MB MANIFEST只做opaque exactbyte hash，不重读其中fixture/scan/旧private引用，不遍历原C69505输入再跑验收。以已接受C/K/F树在当前Git不变和对应接受记录证明范围。其他正式derivedjson必要字段可以读，但任何private/source/metadata指针不得跟随；旧脚本不得执行。",
+    "独立标准库验证器从固定F/K原文件和已独立接受身份重建完整M canonical字节，验证F严格六字段、Kfalse及原entries、M十字段/全叶来源、各摘要域/排序/严格类型和所有pinned refs，核对已接受F/K/C树及旧129527Git记录保持，验证新五文件和MANIFEST。不得调用validate_package或构造假的A/T/package去换取PASS。",
+    "VERIFICATION记录生成/独立脚本路径bytes/SHA、完整命令、独立core结果/逐标准证据、零候选导入/网络/权限扩张的边界和未验证。独立final输出存临时目录，交付时给SHA。MANIFEST只列另四输出path/bytes/SHA/Gitblob/mode/type，按文件名排序，collection=SHA256(canonical(records))；排除自身最终hash，MANIFEST自身由外部交付+未来Leader验收固定。避免相互finalhash循环。",
+    "REPORT清楚说明F/K→M完成只待Leader独立接受，下一步才准备给用户审阅的新hash-bound一次获取授权请求；本单不请求用户授权或提前生成A/T/input/N。保持source_verdict insufficient_evidence/原pending、所有hardstops、三步和原音频隐私，CP1与Conformer Deferred not removed、CP2未通过、CP3/Alpha未批准。完成完整报告并通知Leader后停止。"
+  ],
+  "out_of_scope": [
+    "不创建A/T/input/N或完整package，不请求正文/metadata，不联网或复用旧acquisition授权/旧run，不建立假未来对象。",
+    "不修改C/tools/schema/tests/evidence/F/K/H/R/P/原reviewtime/decision/任何既有文件，不重新构造原review，不运行P/旧验证脚本。",
+    "不读取private/header/LICENSE/body/rawscannercontext/metadata/API/source或沿来源递归；不做fixture/test/scanner/controller/transport/build/model/device/audio/第三方依赖操作。",
+    "不改变身份/权限/预算/硬停止/隐私/范围/Checkpoint，不扩张两处comment裁定，不宣称source/license/reachability采用通过。"
+  ],
+  "acceptance": [
+    "只新增五文件；父提交75a9349c，旧129527条Git记录不变，工作区干净，C/K/F树与所有固定来源一致。",
+    "M完整canonical字节可独立重建，十字段/两个原entries/顺序/域精确；M.F只能runtimeF，K/原R/representation/authority/intake完整对应。",
+    "每个M叶字段可追溯固定输入，P/F/K接受记录显式绑定且无schema扩展/newclearance/selfhash/cycle。",
+    "独立标准库core/final验证PASS，脚本读审和结果可复核，四文件MANIFEST完整；未用candidate/假未来对象/新授权。",
+    "全部未验证项和产品/隐私/Checkpoint约束如实保留；M尚不代表新获取许可或旧pending清除。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED，五文件目的/bytes/SHA/Gitblob/mode/type、commit/parent/root/subtree/clean。",
+    "M/F/runtime与supporting/K/R/representation/P/intake精确摘要、逐叶来源、原entries/顺序和独立重建结果；MANIFEST规则/集合及自hash外置。",
+    "完整验证脚本/命令/输出path和SHA、逐条件证据、未验证/偏移检查；完成通知Leader并停止，建议下一步仅Leader验收再准备新用户A请求。"
+  ],
+  "stop_conditions": [
+    "任何固定身份/HEAD/源摘要/schema/类型/叶字段来源不一致，或未知修改、无法标准库复算，立即BLOCKED，不原地修旧记录。",
+    "需要新clearance、改旧R/P/K/F/C/schema/authorityDAG、读取原始/private/metadata或运行controller/transport/A/T/N时停止，产品范围改变交PRODUCT_DECISION_REQUIRED。"
+  ]
+}

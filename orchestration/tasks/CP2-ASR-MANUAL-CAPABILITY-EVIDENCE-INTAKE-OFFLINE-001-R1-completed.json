@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "completed",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "只修复 v7 既有人工报告精确摘要缺失与历史私有 envelope 权限域错误两项接收缺陷，保留全部既有测试及硬停止，交付重新双跑和独立复算的 R1 候选。",
+  "baseline_commit": "534e416b989698589bfb511332b3b0af2de4f185",
+  "formal_decision": "doc/cp2-manual-capability-evidence-decision-2026-09-06.md",
+  "formal_decision_sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+  "formal_prd_sha256": "5c376c961c9ecafd21cb5492254a1c45c7adf422e2a890c1d1181a3871f386a6",
+  "predecessor_acceptance": "orchestration/reports/CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001-acceptance.json",
+  "predecessor_acceptance_sha256": "6878e5dfb2a421cae323fdef200eeea82a417061fc409697e18a2d08b024f579",
+  "v6_provenance": {
+    "commit": "f55fda2dea237120ce09639112767c9857dab8d5",
+    "tree": "05f0b591753a9d8c845656c2f8d6be2c8c725464",
+    "bundle_sha256": "99114c1ad1126e627723585251ed696063562de4b507d35c28b93a3b1ffb6160",
+    "historical_freeze_commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+    "historical_freeze_tree": "b674a029f2faefdd92367866236037a74b7ac053"
+  },
+  "scope": [
+    "仅在现有未验收 tools/asr_review_acquisition_v7/ 修正 Leader review V7-R1 与 V7-R2 的第一方实现、schema、必要自建 fixture/新增回归、独立 recalculator 与对应 provenance/diff。原提交 534e416 保留；既有 evidence/ 下所有原始记录只读，不覆盖或删除。R1 新报告/扫描/manifest 用 evidence/r1/，新双跑用 evidence/run-r1-a 和 evidence/run-r1-b。其它目录及正式文档保持不变。",
+    "V7-R1：明确区分正式 R（既有原始人工报告 exact-byte digest）与规范化接收表示的独立 canonical digest。现有 K.R 强制 digest(新shape R) 且没有原报告身份锚点，不满足既有正式 R1 合同。通用 schema/controller/commitment/map/adjudication/recalculator 应完整绑定原始报告身份和表示身份，不能用后者替代前者，不能重写/重新生成既有报告冒充原身份。用完全自建“既有不同格式报告”字节及派生表示证明绑定，所有篡改/遗漏/跨域替代仍在后继请求前停止。不得读取真实 R 原文或建立真实映射。",
+    "V7-R2：历史磁盘 envelope regular/0600 与 source Git blob/100644 分别使用明确字段/domain 和严格验证。不得把历史0600转成Git100644以求通过，也不得容许宽权限或混淆 mode/type。现有 source身份/私有父目录/无链接/regular保护保持。完全自建0600历史 envelope 正例通过 intake；错误权限/类型/跨域替代继续 fail closed。",
+    "保留原158测试文件/断言、961旧outcome覆盖，保留现有164方法及所有新增193结果的测试目的与负例；允许仅为修正这两个schema域调整必要自建 fixture/字段取值，禁止删除或放宽断言掩盖缺陷。增加专门方法覆盖两个Leader反例和完整变体、独立 pins、原报告 bytes hash 与规范表示 hash 非同一域、H/F分离及完整匹配。全部路径仍走共享 controller，无 legacy bypass。",
+    "其余原任务正式合同全文及所有 hard stops/limits/privacy/authorityDAG/零真实数据约束继续适用。两次完整零网络测试，pre-import guard，重新生成本轮 evidence；独立 recalculator 从自建原报告bytes及独立pins重建原报告/表示/DAG/occurrence/adjudication/ledger/terminal，不只抄producer摘要。",
+    "更新 schema/policy/bundle/provenance 的必要身份，明确新候选与历史534e416/旧报告身份边界；新manifest绑定完整最终文件集但不冒充旧扫描输入。实际第一方静态扫描本轮已固定候选并保留原始verdict/coverage/context。只提交本目录 R1，完整报告后通知 Leader 并停止。"
+  ],
+  "out_of_scope": [
+    "不得读取真实 source/header/LICENSE/private/raw/body/metadata/API/旧 corpus 或旧原始 scanner context；不得沿报告指针扩大读取。第一方源代码/schema 和必要派生历史身份记录只读可用，真实报告不能成为测试输入。无实际网络/DNS/transport、新下载、第三方依赖或执行。",
+    "不得修改旧候选/controller/freeze/run、已固定报告/manifest/归档，禁止全局 comment/token 豁免、wrapper/sidecar 绕过、扩大 grammar/guard/metadata/LICENSE/role/path/budget 范围。",
+    "不建立真实 K、F、M、A、T、输入映射或执行 N；不复用旧获取授权。C 接受之后 K→F→M→新用户 A→T/N 各为分开的后续任务。",
+    "不得修改产品功能/PRD/隐私/Checkpoint；无构建、安装、模型、真实设备或音频验证。CP1 Deferred not removed，CP2 未通过，CP3/Alpha 未批准，旧 block/manual_review 不变。",
+    "不得为适配缺陷改变正式 R/H/F/K 含义或原报告身份，不通过创建真实 K/新历史报告/改已验收记录绕过；修正本任务新候选不等于修改已验收旧v6/freeze。"
+  ],
+  "acceptance": [
+    "两个 Leader 反例在修正域后的正例均可精确接收，且原报告摘要、规范表示摘要、私有文件permission与Gitmode互不替代；新的错域/错摘要/篡改/缺失/冲突反例零successor。独立审查能够逐项追溯到正式既有合同，无需改产品决策。",
+    "仅预定新目录变更、基线与旧证据不变；formal/provenance/候选代码、schema、manifest 及每项证据有可独立重算身份。最终工作区干净或逐项明确未提交状态，不混入其他修改。",
+    "全部 158 方法及 961 旧 outcomes 覆盖与断言保持，新矩阵逐项满足正式决定。两条相同文本/hash 但不同 line/interval 的自建 comments ID 必须不同且不能互清；正例仅清除精确 comment 的有效 pending，所有反例零 successor。",
+    "authority DAG 非循环、H/F 清楚分离、K 非操作性、M 无自摘要且严格符合 K、T 独立可信 pins；严格 canonical JSON、独立限额与所有绑定字段篡改均 fail closed。",
+    "所有原硬停止优先级保持，证据追加且无 wrapper/全局例外。新运行 hash 明确新身份，旧原始记录不重写。持久化/容量失败下无虚构完整证据或后继请求。",
+    "两轮完整运行无 skip，zero-network guard 有证据，JSON/ledger/terminal/occurrence/authority/adjudication 集合可比且独立复算通过；实际第一方静态扫描和覆盖/发现上下文齐全。",
+    "只返回 manual_capability_intake_candidate_ready_for_freeze 或 manual_capability_intake_candidate_blocked；ready 仅候选阶段结论，须 Leader 独立静态审查、双跑、复算后接受，未赋予真实 pending clearance 或获取权。"
+  ],
+  "evidence_required": [
+    "逐项 V7-R1/V7-R2 根因/修正/代码行与自建回归证据；旧164方法及158原断言映射、必要fixture域变动说明；原534e416证据目录逐字节未变证明。",
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED；candidate status；修改文件及目的；最终 commit/parent/Git 边界；v6→v7 来源和原断言覆盖映射；完整命令/环境/两轮 tests-subtests-outcomes-scenarios/skip 及 zero-network 结果。",
+    "正式八类矩阵逐项索引、DAG/occurrence/双 line-hash/每字段篡改/canonical 限额及硬停止证据，独立复算命令/结果/算法；所有证据 hash/domain/集合规则与 manifest；扫描原始 verdict/coverage/context。",
+    "未验证项、PRD/范围偏移检查、历史目录不变证明；建议下一步但不执行。完成后通知 Leader 任务 01a071cf-9ac6-7171-b663-749a6e88b0a4 并停止。"
+  ],
+  "stop_conditions": [
+    "这是对既有精确身份/私有文件规则的实现修正，不是放宽合同。若发现确实必须修改产品定义、扩大authority机制、读取真实报告/body或改变旧冻结才能满足，立即停止返回 PRODUCT_DECISION_REQUIRED，不猜测执行。",
+    "未知工作区修改、正式 hash 漂移、合同矛盾、无法按原断言保持基线、身份循环/角色不明、无法完整唯一匹配 occurrence 或复算证据：停止并返回具体证据，不静默扩大范围。",
+    "需要任何 wrapper bypass/全局例外/旧记录修改/降低硬停止/真实数据或网络/第三方库/扩大源码获取范围/改变隐私或 checkpoint，即 candidate_blocked 并交回 Leader/产品决策；不自行继续下一阶段。"
+  ],
+  "prepared_at": "2026-09-06T07:57:14.465402+08:00",
+  "review_report": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-review.json",
+  "review_sha256": "38a2e28b85cc9738ae4a80e5563755f4f15cf4515e5133f3f1f59dce7f201d7b",
+  "dispatched_at": "2026-09-06T07:58:08.907377+08:00",
+  "completed_at": "2026-09-06T08:31:44.111110+08:00",
+  "candidate_commit": "443bbb5dc73e52dc11610ba766fdda23a0923b80"
+}

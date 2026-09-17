@@ -1,0 +1,49 @@
+{
+  "task_id": "CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001",
+  "status": "AWAITING_EXPLICIT_USER_APPROVAL",
+  "prepared_at": "2026-09-06T06:26:58.597997+08:00",
+  "freeze_commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+  "freeze_acceptance_report": "orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001-acceptance.json",
+  "freeze_acceptance_sha256": "9f747c348bb0bc656ce7cf8f45824e3d4f2003c3ac5c06647d0fb0c453d631db",
+  "formal_decision_sha256": "35498c5d8424add7eed68401f5a5094ce000b5ea6265e4bb292b814f91f7c283",
+  "binding": {
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "source_path": "sherpa-onnx/csrc/online-recognizer.h",
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "body_bytes": 7939,
+    "git_blob_sha1": "a4559f413cae739f055509a01d5684879e4a626c",
+    "private_envelope": "/private/tmp/think-asr-v5-acquisition-hqssnorn/run/body-0002.json",
+    "envelope_sha256": "e112db3f6b7a38060ddbb320b7fdf892ec0aeaaaae95c676880106456823e40d",
+    "envelope_bytes": 8579,
+    "required_file_mode": "0600",
+    "required_parent_modes": "0700",
+    "required_type": "regular single-link with no symlink parent",
+    "rule": "websocket",
+    "targets": [
+      {
+        "line": 57,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      },
+      {
+        "line": 60,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      }
+    ],
+    "historical_line_hash_domain": "SHA256(UTF8 text line from decoded body.splitlines(), without line terminator); do not confuse with v6 physical-line-including-terminator hash. Review may additionally record original byte ranges and physical-line hashes after authorization, preserving original pin."
+  },
+  "proposed_owner": "leader",
+  "proposed_execution_task": "CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001",
+  "allowed_if_approved": [
+    "Read only the exact already-retained body-0002 envelope after bounded no-follow directory-chain/regularsinglelink/mode/hash checks; verify body UTF8,NUL,size,SHA256/GitSHA and both line hashes before interpreting. No other private corpus file required.",
+    "Read same-file context within this one7939byte header to decide only these two rule/line hits. Minimal stdlib data decoding/hash and manual untrusted text inspection only; no code import/execute/source-tree export.",
+    "Record exact per-body/per-line/per-rule decision forbidden, comment_only_nonoperative_for_this_body, or unresolved, with original offsets/line hashes and bounded reasoning. Output only first-party Leader review report and reference hashes; avoid reproducing full source.",
+    "If any scope/identity uncertainty or need other file, retain unresolved and stop; cannot enlarge context to dependencies or obtain new data."
+  ],
+  "not_authorized": [
+    "No network or new LICENSE/header/API/metadata/body requests; no oldrun continuation or reusing old acquisition authority.",
+    "No code/schema/freeze/App changes, no candidate workload or scanner replay, no blanket/global token waiver or implementation of pending-clearance API.",
+    "No fullsource safety/license/reachability/adoption/build/model/device/CP2/CP3/Alpha approval; comment-only is local line/body adjudication only."
+  ],
+  "preapproval_work": "Used only previously accepted first-party derived acquisition/inventory reports and freeze evidence to bind identities. No private body/source read performed in preparation."
+}

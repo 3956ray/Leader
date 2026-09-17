@@ -1,0 +1,62 @@
+{
+  "task_id": "CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T07:17:55.974547+08:00",
+  "commit": "7557ed554025ab7a06ea5f76cc1429915bbbbe06",
+  "verification_report": "orchestration/reports/CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001-verification.json",
+  "verification_sha256": "6ebf0ba0f746d253028aeadd7befc4b9d482196853952a91ed224bb361ff21e1",
+  "verification": {
+    "RESULT": "PASS",
+    "commit": "7557ed554025ab7a06ea5f76cc1429915bbbbe06",
+    "parent": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+    "files": [
+      {
+        "path": "doc/cp2-manual-capability-evidence-decision-2026-09-06.md",
+        "sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+        "bytes": 19715
+      },
+      {
+        "path": "doc/prd-v0.1-2026-09-04.md",
+        "sha256": "5c376c961c9ecafd21cb5492254a1c45c7adf422e2a890c1d1181a3871f386a6",
+        "bytes": 61707
+      },
+      {
+        "path": "AGENTS.md",
+        "sha256": "4771fa8d4059b47e5d5868c7585b967ce4e17f3c87cca7be4b683fcb8fbbb81c",
+        "bytes": 14257
+      },
+      {
+        "path": "doc/README.md",
+        "sha256": "48f2f65f77fe5229784340996fabd939c39221f1afb3a76a4cde19a162d9f2a3",
+        "bytes": 14245
+      },
+      {
+        "path": "doc/development-guide-v0.1-2026-09-04.md",
+        "sha256": "628857d19213a02fb9ac4608778dd3e5f3a308acfc044f8c2ea79d098fc6a018",
+        "bytes": 37958
+      }
+    ],
+    "exact_two_formal_copies": true,
+    "local_links_checked": 56,
+    "external_links_not_fetched": 34,
+    "historical_raw_links_not_followed": 9,
+    "unchanged_trees": {
+      "tools": "555938cab6aaab4dc36d9b5733a726dc6a5a1ec5",
+      "doc/security-reviews": "878e5644e1baef763b4d49719f12b96b07a57323",
+      "app": "753c8e7ce25f55b13b1492b64fcdc9df85b7fa88",
+      "gradle": "16c07b9058691537e22ea07b2799c56a147db6c7"
+    },
+    "v7_not_created": true,
+    "worktree_clean": true
+  },
+  "semantic_review": [
+    "Formal decision and PRD exact copies; three entry documents consistently identify current offline phase, authority DAG and unchanged checkpoint/privacy limits.",
+    "Historical review freeze H and future execution freeze F have distinct identity domains; K precedes F and final M follows F; fresh acquisition A follows independently accepted M.",
+    "All previous code, freezes and evidence unchanged. Current pending not operationally cleared."
+  ],
+  "unverified": [
+    "No v7 implementation or runtime testing in this documentation task.",
+    "External and historical raw links not followed; no network or real source reads.",
+    "Source adoption, runtime, license, models, device gates and CP2 remain unapproved."
+  ]
+}

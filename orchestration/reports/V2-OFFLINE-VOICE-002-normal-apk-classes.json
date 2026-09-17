@@ -1,0 +1,7 @@
+{
+  "apk_sha256": "7e43364910b37989a5898e760f868387beb735c948fba183bc8d6e39667c34a1",
+  "defined_classes": 17345,
+  "candidate_definitions": [],
+  "method": "Read DEX class_defs -> type_ids -> string_ids, no executable loading",
+  "limits": "Checks concrete candidate package/class names; not entire semantic byte equivalence or runtime safety."
+}

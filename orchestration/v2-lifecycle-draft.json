@@ -1,0 +1,32 @@
+{
+  "task_id": "V2-NOTES-LIFECYCLE-001",
+  "owner": "developer",
+  "checkpoint": "CP3",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "goal": "Complete the approved category management and recoverable note deletion workflow without losing existing notes or drafts.",
+  "scope": [
+    "Only /Users/orderly_ray/Projects/thinkV2; start after commander accepts V2-NOTES-CORE-001 and records baseline commit.",
+    "Implement PM A5 full category entities with stable IDs, create/rename/reassign/delete-category confirmation, manual/auto provenance; migrate existing category text preserving notes and drafts.",
+    "Implement PM A6 single-note soft deletion and recycle bin restore to original IDs. Hidden from normal notes/search; preserve body/title/category and identity. Missing category restores to unclassified with explicit notice.",
+    "No permanent delete or automatic purge. Provide clear confirmation and accessible recovery UI.",
+    "Transactional versioned migration, preserve old database on failure/unknown version, meaningful database/UI state tests; offline build/lint and synthetic emulator regression."
+  ],
+  "out_of_scope": [
+    "No reminders, OS scheduling, backup import/export, ASR, cloud AI, graph, account, release or private data.",
+    "No destructive migration or cross-project modification; no new dependency without review."
+  ],
+  "acceptance": [
+    "Existing notes/drafts from previous schema survive upgrade with original IDs, body, title mode and category content; repeated initialization is safe.",
+    "Category create/rename/reassign persists across reopening; deleting category moves notes to unclassified and never deletes notes.",
+    "Soft-deleted note leaves home/search, appears in recycle bin, restores same ID and content; no permanent deletion API/UI.",
+    "Failure during migration, delete or restore rolls back without false success; operations and search remain consistent.",
+    "Actual tests/build plus synthetic Android CRUD/restart evidence; explicitly distinguish emulator, physical device and household validation."
+  ],
+  "evidence_required": [
+    "RESULT; baseline/final commit and clean boundaries; changed files; per-criterion tests and commands; APK hash; emulator evidence; unverified items; no automatic next task."
+  ],
+  "stop_conditions": [
+    "Execute only after explicit commander dispatch; current task must be accepted first.",
+    "Stop affected operation on data-loss risk, conflicting unknown edits, permission refusal or unreviewed dependency; report exact gap and continue independent authorized work."
+  ]
+}

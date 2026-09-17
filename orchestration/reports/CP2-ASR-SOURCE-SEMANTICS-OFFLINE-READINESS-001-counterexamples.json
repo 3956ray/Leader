@@ -1,0 +1,482 @@
+{
+  "has_include_block": {
+    "input": "#if __has_include(<path/*websocket*/.h>)\n#endif\n",
+    "body_sha256": "013c90eb6c43c0a8e8ce17618f216858344eab42b60772f53177c5976634d723",
+    "report": {
+      "schema": 1,
+      "source": "sherpa-onnx/csrc/online-recognizer.h",
+      "body_sha256": "013c90eb6c43c0a8e8ce17618f216858344eab42b60772f53177c5976634d723",
+      "bytes": 48,
+      "body_base64": "I2lmIF9faGFzX2luY2x1ZGUoPHBhdGgvKndlYnNvY2tldCovLmg+KQojZW5kaWYK",
+      "semantic_contract_sha256": "4ba4322cafd11012dbf10a778ca402fce141ccf5891e21c2c938d31e615fb476",
+      "lines": [
+        {
+          "line": 1,
+          "start": 0,
+          "end": 41,
+          "sha256": "dd92c94f00b96453fdfe9ed16c16dfa61e394b8a9fb293e12a71d0f4192f9064"
+        },
+        {
+          "line": 2,
+          "start": 41,
+          "end": 48,
+          "sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438"
+        }
+      ],
+      "channels": [
+        {
+          "start": 0,
+          "end": 23,
+          "line": 1,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "1f28135db7215e97a010d3fd3106ad15933d9d01e251b489880e6728e2eff98a",
+          "line_sha256": "dd92c94f00b96453fdfe9ed16c16dfa61e394b8a9fb293e12a71d0f4192f9064",
+          "evidence_sha256": "5f0015e71ef2970c7f8c5010034ee18b322fd2ac3b1ee609c98d0c99d278c609"
+        },
+        {
+          "start": 23,
+          "end": 36,
+          "line": 1,
+          "channel": "block_comment",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "cf2c2229c5d9ab83feeefec166e886fe5a884e80bb72bfc8f9ff5b537f28d755",
+          "line_sha256": "dd92c94f00b96453fdfe9ed16c16dfa61e394b8a9fb293e12a71d0f4192f9064",
+          "evidence_sha256": "98ab526e50a62a443fd9714da0a16f659f0c1f2b60a09a7a948ad6361cbe6774"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "line": 1,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "092f59568455ddcdcf60a597ecdd6d3cc51e8533098caf21caa2932e61736a5e",
+          "line_sha256": "dd92c94f00b96453fdfe9ed16c16dfa61e394b8a9fb293e12a71d0f4192f9064",
+          "evidence_sha256": "24f9b8ad85033e4dab99b20bb22e709de92ed7b75819d6d99d6da3ae40c5e0d9"
+        },
+        {
+          "start": 41,
+          "end": 48,
+          "line": 2,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "line_sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "evidence_sha256": "4f8ad5ccfc244359785711069693d201d001c1800629b30cf0b534548ef04473"
+        }
+      ],
+      "lexical_issues": [],
+      "directives": [
+        {
+          "line": 1,
+          "start": 0,
+          "end": 41,
+          "line_sha256": "dd92c94f00b96453fdfe9ed16c16dfa61e394b8a9fb293e12a71d0f4192f9064",
+          "directive": "if",
+          "operand": " __has_include(<path             .h>)",
+          "definite": true,
+          "classification": "conditional",
+          "evidence_sha256": "0c361c7a7045e249556608b0a73e5b438a7c826ec28be4e4cff4155fbdbea2eb"
+        },
+        {
+          "line": 2,
+          "start": 41,
+          "end": 48,
+          "line_sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "directive": "endif",
+          "operand": "",
+          "definite": true,
+          "classification": "conditional",
+          "evidence_sha256": "97f52583b36d75059cc26949d517f2fd745644d52b7f26242884d7112204c8bb"
+        }
+      ],
+      "capabilities": [
+        {
+          "source": "sherpa-onnx/csrc/online-recognizer.h",
+          "body_sha256": "013c90eb6c43c0a8e8ce17618f216858344eab42b60772f53177c5976634d723",
+          "start": 25,
+          "end": 34,
+          "token": "websocket",
+          "rule": "websocket",
+          "detector": "deny_literal",
+          "line": 1,
+          "line_sha256": "dd92c94f00b96453fdfe9ed16c16dfa61e394b8a9fb293e12a71d0f4192f9064",
+          "channels": [
+            "block_comment"
+          ],
+          "definite": true,
+          "directive_context": true,
+          "classification": "comment_capability_mention",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "evidence_sha256": "28b4fbb80d4145e44d1694cfcf50f9ee424bb32b9f44fe668619d8fe1bd2f0e3"
+        }
+      ],
+      "guard": {
+        "classification": "no_canonical_header_guard",
+        "identifier": null,
+        "evaluated": false,
+        "lines": []
+      },
+      "edges": [
+        {
+          "classification": "conditional",
+          "directive": "if",
+          "source": "sherpa-onnx/csrc/online-recognizer.h",
+          "line": 1
+        },
+        {
+          "classification": "conditional",
+          "directive": "endif",
+          "source": "sherpa-onnx/csrc/online-recognizer.h",
+          "line": 2
+        }
+      ],
+      "capability_review_status": "pending",
+      "file_safety_issues": [],
+      "analysis_complete": true,
+      "decision": "edge_conditional"
+    }
+  },
+  "has_include_line": {
+    "input": "#if __has_include(<path//websocket.h>)\n#endif\n",
+    "body_sha256": "8136866a40e7374295e92f3acd6a71dc9b316d3d4ba55a2be4b2cd6addbd5cc1",
+    "report": {
+      "schema": 1,
+      "source": "sherpa-onnx/csrc/online-recognizer.h",
+      "body_sha256": "8136866a40e7374295e92f3acd6a71dc9b316d3d4ba55a2be4b2cd6addbd5cc1",
+      "bytes": 46,
+      "body_base64": "I2lmIF9faGFzX2luY2x1ZGUoPHBhdGgvL3dlYnNvY2tldC5oPikKI2VuZGlmCg==",
+      "semantic_contract_sha256": "4ba4322cafd11012dbf10a778ca402fce141ccf5891e21c2c938d31e615fb476",
+      "lines": [
+        {
+          "line": 1,
+          "start": 0,
+          "end": 39,
+          "sha256": "bf1b8be11d789b906761f7ec6c057331a9c2f18e0234490dd84f935c50060c2f"
+        },
+        {
+          "line": 2,
+          "start": 39,
+          "end": 46,
+          "sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438"
+        }
+      ],
+      "channels": [
+        {
+          "start": 0,
+          "end": 23,
+          "line": 1,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "1f28135db7215e97a010d3fd3106ad15933d9d01e251b489880e6728e2eff98a",
+          "line_sha256": "bf1b8be11d789b906761f7ec6c057331a9c2f18e0234490dd84f935c50060c2f",
+          "evidence_sha256": "233542a826cb1bc6468510dc035e8d2afa4f0cf51e946b14e229497c0bb0493b"
+        },
+        {
+          "start": 23,
+          "end": 38,
+          "line": 1,
+          "channel": "line_comment",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "22f812026e47c74748482fa695e6e793500830af2331f1c52f2750afcc58c0ad",
+          "line_sha256": "bf1b8be11d789b906761f7ec6c057331a9c2f18e0234490dd84f935c50060c2f",
+          "evidence_sha256": "0e036788f03fdbd6c80c6e44161887a63b83e52886b8e331d164c3592f169e3d"
+        },
+        {
+          "start": 38,
+          "end": 39,
+          "line": 1,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "line_sha256": "bf1b8be11d789b906761f7ec6c057331a9c2f18e0234490dd84f935c50060c2f",
+          "evidence_sha256": "439460d88a17d5e6226cd5b9bab98e61f35037d78f46f55fb764b363a2f31f1f"
+        },
+        {
+          "start": 39,
+          "end": 46,
+          "line": 2,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "line_sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "evidence_sha256": "88d2ce11d45c43e0794675a926035445979d901edd6f8d74c7bc9c78c270a0cf"
+        }
+      ],
+      "lexical_issues": [],
+      "directives": [
+        {
+          "line": 1,
+          "start": 0,
+          "end": 39,
+          "line_sha256": "bf1b8be11d789b906761f7ec6c057331a9c2f18e0234490dd84f935c50060c2f",
+          "directive": "if",
+          "operand": " __has_include(<path",
+          "definite": true,
+          "classification": "conditional",
+          "evidence_sha256": "6892c777ccbd17fbd974af0797648d2cce4466ff016f6da4511c32d910fa752a"
+        },
+        {
+          "line": 2,
+          "start": 39,
+          "end": 46,
+          "line_sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "directive": "endif",
+          "operand": "",
+          "definite": true,
+          "classification": "conditional",
+          "evidence_sha256": "461cf5a0c478b75aa579cca5ef06b240f7c8caf01381d99aac8384eeaf7a7bcf"
+        }
+      ],
+      "capabilities": [
+        {
+          "source": "sherpa-onnx/csrc/online-recognizer.h",
+          "body_sha256": "8136866a40e7374295e92f3acd6a71dc9b316d3d4ba55a2be4b2cd6addbd5cc1",
+          "start": 25,
+          "end": 34,
+          "token": "websocket",
+          "rule": "websocket",
+          "detector": "deny_literal",
+          "line": 1,
+          "line_sha256": "bf1b8be11d789b906761f7ec6c057331a9c2f18e0234490dd84f935c50060c2f",
+          "channels": [
+            "line_comment"
+          ],
+          "definite": true,
+          "directive_context": true,
+          "classification": "comment_capability_mention",
+          "previous": "0000000000000000000000000000000000000000000000000000000000000000",
+          "evidence_sha256": "509a51386b15343db13f41aa60d854237b59a60737d005735b3c91d597c967a3"
+        }
+      ],
+      "guard": {
+        "classification": "no_canonical_header_guard",
+        "identifier": null,
+        "evaluated": false,
+        "lines": []
+      },
+      "edges": [
+        {
+          "classification": "conditional",
+          "directive": "if",
+          "source": "sherpa-onnx/csrc/online-recognizer.h",
+          "line": 1
+        },
+        {
+          "classification": "conditional",
+          "directive": "endif",
+          "source": "sherpa-onnx/csrc/online-recognizer.h",
+          "line": 2
+        }
+      ],
+      "capability_review_status": "pending",
+      "file_safety_issues": [],
+      "analysis_complete": true,
+      "decision": "edge_conditional"
+    }
+  },
+  "multiline_directive": {
+    "input": "#ifndef X\n#define X /* open\n*/ 1\n#include <stddef.h>\n#endif\n",
+    "body_sha256": "6f8fb2e3fa52bab9bda4373c58732ac8b30f4ce0aef494ac10be312ccc1a6ac2",
+    "report": {
+      "schema": 1,
+      "source": "sherpa-onnx/csrc/online-recognizer.h",
+      "body_sha256": "6f8fb2e3fa52bab9bda4373c58732ac8b30f4ce0aef494ac10be312ccc1a6ac2",
+      "bytes": 60,
+      "body_base64": "I2lmbmRlZiBYCiNkZWZpbmUgWCAvKiBvcGVuCiovIDEKI2luY2x1ZGUgPHN0ZGRlZi5oPgojZW5kaWYK",
+      "semantic_contract_sha256": "4ba4322cafd11012dbf10a778ca402fce141ccf5891e21c2c938d31e615fb476",
+      "lines": [
+        {
+          "line": 1,
+          "start": 0,
+          "end": 10,
+          "sha256": "3af7cde542916e3e6bca3288168f79b94ad3fe742937010e7152b6181637939f"
+        },
+        {
+          "line": 2,
+          "start": 10,
+          "end": 28,
+          "sha256": "30bd7c60876bd53ab033eb391104cdd5a2b30834db62d65a2a137809901d008c"
+        },
+        {
+          "line": 3,
+          "start": 28,
+          "end": 33,
+          "sha256": "bdd64d9a02d4e3592b741f000aa39d6f4344b7bce32acd62df425fbca41e183b"
+        },
+        {
+          "line": 4,
+          "start": 33,
+          "end": 53,
+          "sha256": "f2051054d2a186d55b826975bf41be36cd7043ea00a9fc3d85e23a8ebe0ad870"
+        },
+        {
+          "line": 5,
+          "start": 53,
+          "end": 60,
+          "sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438"
+        }
+      ],
+      "channels": [
+        {
+          "start": 0,
+          "end": 10,
+          "line": 1,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "3af7cde542916e3e6bca3288168f79b94ad3fe742937010e7152b6181637939f",
+          "line_sha256": "3af7cde542916e3e6bca3288168f79b94ad3fe742937010e7152b6181637939f",
+          "evidence_sha256": "c318f93c9f4bdd8c86a0317a9b4442d24179d14b55dcad23b1772db212fbe7c9"
+        },
+        {
+          "start": 10,
+          "end": 20,
+          "line": 2,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "823fa446e89eb10d5c38a329bae6c7e8135d077743c2f0cd854033b5ecac9874",
+          "line_sha256": "30bd7c60876bd53ab033eb391104cdd5a2b30834db62d65a2a137809901d008c",
+          "evidence_sha256": "839c1c9d12edf16905c599a5c998c2a2ef47e825c7fe25d6141e0b07b1dd98b7"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "line": 2,
+          "channel": "block_comment",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "a15eb9ff114214867e43075cd4520b731eab2411694c662e353b12760e7587f2",
+          "line_sha256": "30bd7c60876bd53ab033eb391104cdd5a2b30834db62d65a2a137809901d008c",
+          "evidence_sha256": "32e5ffc9e6edbb34dcde5e66ae7127b08268b9c5d3b73ef725c4fe34ebedba36"
+        },
+        {
+          "start": 28,
+          "end": 30,
+          "line": 3,
+          "channel": "block_comment",
+          "definite": true,
+          "directive_context": false,
+          "sha256": "ed9623369ff082abe9b1df1fb3a161857bab3bfccda2886b31d526248a676201",
+          "line_sha256": "bdd64d9a02d4e3592b741f000aa39d6f4344b7bce32acd62df425fbca41e183b",
+          "evidence_sha256": "48ef4be0984d242b6247d865ab34968b34890842853ee28ebb9a44e7dddd5e9a"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "line": 3,
+          "channel": "code",
+          "definite": true,
+          "directive_context": false,
+          "sha256": "ed32f242203b8e7cf7822ab7ed18481d883e3e9d91f4f3b14fcb3e4c674c0037",
+          "line_sha256": "bdd64d9a02d4e3592b741f000aa39d6f4344b7bce32acd62df425fbca41e183b",
+          "evidence_sha256": "303446a11a306fde4f89db1fa0c5fc3755b73ace69cf252c0640c66f3b610b7d"
+        },
+        {
+          "start": 33,
+          "end": 53,
+          "line": 4,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "f2051054d2a186d55b826975bf41be36cd7043ea00a9fc3d85e23a8ebe0ad870",
+          "line_sha256": "f2051054d2a186d55b826975bf41be36cd7043ea00a9fc3d85e23a8ebe0ad870",
+          "evidence_sha256": "58986c28be7a58562d67f8d55897dac8858ddb8eb7467148329c4bc5dbc89926"
+        },
+        {
+          "start": 53,
+          "end": 60,
+          "line": 5,
+          "channel": "preprocessor",
+          "definite": true,
+          "directive_context": true,
+          "sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "line_sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "evidence_sha256": "f6986edcba55ec8057f936e51c9a60903eeeb7cec05b66a15ced06ba2ad3bab3"
+        }
+      ],
+      "lexical_issues": [],
+      "directives": [
+        {
+          "line": 1,
+          "start": 0,
+          "end": 10,
+          "line_sha256": "3af7cde542916e3e6bca3288168f79b94ad3fe742937010e7152b6181637939f",
+          "directive": "ifndef",
+          "operand": " X",
+          "definite": true,
+          "classification": "canonical_header_guard",
+          "evidence_sha256": "91710d1205e15624eaaf664799b3f733c75c336bfc6e451d316c32e7de6927bb"
+        },
+        {
+          "line": 2,
+          "start": 10,
+          "end": 28,
+          "line_sha256": "30bd7c60876bd53ab033eb391104cdd5a2b30834db62d65a2a137809901d008c",
+          "directive": "define",
+          "operand": " X",
+          "definite": true,
+          "classification": "canonical_header_guard",
+          "evidence_sha256": "68f8fb1c849bcf02dfb5607b485e075bb56abd59af0b4390f6e3d72ae393e888"
+        },
+        {
+          "line": 4,
+          "start": 33,
+          "end": 53,
+          "line_sha256": "f2051054d2a186d55b826975bf41be36cd7043ea00a9fc3d85e23a8ebe0ad870",
+          "directive": "include",
+          "operand": " <stddef.h>",
+          "definite": true,
+          "classification": "external",
+          "evidence_sha256": "916ea40219566954a224bae80adecc426540fad686dc0704363a844fef575bb9"
+        },
+        {
+          "line": 5,
+          "start": 53,
+          "end": 60,
+          "line_sha256": "9a349bbd1a21104f051e34b2c8a9e70cc7fbb50bc19a67781f2a140c386d9438",
+          "directive": "endif",
+          "operand": "",
+          "definite": true,
+          "classification": "canonical_header_guard",
+          "evidence_sha256": "54516032be17bf805c80ed8f7a75c89f64fcc8b01155749e6ea9cde47a3eaa1a"
+        }
+      ],
+      "capabilities": [],
+      "guard": {
+        "classification": "canonical_header_guard",
+        "identifier": "X",
+        "evaluated": false,
+        "lines": [
+          1,
+          2,
+          5
+        ],
+        "body_interpretation": "conservative-first-include-upper-bound"
+      },
+      "edges": [
+        {
+          "classification": "external",
+          "target": "stddef.h",
+          "delimiter": "<",
+          "conditional": false,
+          "source": "sherpa-onnx/csrc/online-recognizer.h",
+          "line": 4
+        }
+      ],
+      "capability_review_status": "no_comment_mentions",
+      "file_safety_issues": [],
+      "analysis_complete": true,
+      "decision": null
+    }
+  }
+}

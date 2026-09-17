@@ -1,0 +1,32 @@
+{
+  "verdict": "accepted",
+  "checks": {
+    "identity": true,
+    "scope": true,
+    "D1_D5_engineering": true,
+    "D6_deferred_explicit": true,
+    "host_and_android_tests": true,
+    "data_preservation": true,
+    "no_new_dependencies": true,
+    "git_boundary": true,
+    "limitations_recorded": true
+  },
+  "evidence": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/V2-CALENDAR-IMPORT-001-review.md",
+      "sha256": "8c99ff448338b109d0417f09b54ed9892b2054918c728e7dea348af82526de0b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/V2-CALENDAR-IMPORT-001-independent-host.json",
+      "sha256": "83e1b967008e736a7ef774b518f192d74fa9eb0ab0e78c79762acf6ba638f056"
+    },
+    {
+      "path": "/private/tmp/thinkv2-V2-CALENDAR-IMPORT-001-9b7b85da/result.json",
+      "sha256": "f2aac5b3ef2e9f872607c107051acb66f9e9734624210737236745811fb09e92"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/calendar/manifest.json",
+      "sha256": "0fddb4439e2b6f67f3ad8b0b2d5f7c84046c252357c21da6004591012321a5ac"
+    }
+  ]
+}

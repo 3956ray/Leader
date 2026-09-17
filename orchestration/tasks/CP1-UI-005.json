@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-UI-005",
+  "owner": "developer",
+  "checkpoint": "CP1",
+  "status": "accepted",
+  "goal": "补齐 CP1 可用性测试前的首页与搜索合成场景，使首页信息符合 P04，并能明确完成“找回昨天的一条记录”任务。",
+  "commit": "5d5b5778b3075a0e975e9f18dcae58d0d26a75c1",
+  "report": "orchestration/reports/CP1-UI-005.md"
+}

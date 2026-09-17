@@ -1,0 +1,73 @@
+{
+  "task_id": "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001",
+  "phase": "nonoperative_preparation_only",
+  "formal_decision_sha256": "2b099d1ec9a21c39969a7987453b32bf81068a0f8fb3256fdf63fb905439511d",
+  "raw_read_performed": false,
+  "execution_waits_for": "CP2-V8-HARD-STOP-DECISION-SYNC-001 acceptance and sole Leader task activation",
+  "read_plan": {
+    "unique_retained_path": "/private/tmp/think-acquisition-v8-quarantine-3_hb53be/source_v8_once/body-0002.json",
+    "envelope_bytes": 8579,
+    "envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+    "body_bytes": 7939,
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "git_blob": "a4559f413cae739f055509a01d5684879e4a626c",
+    "targets": [
+      {
+        "line": 15,
+        "start": 404,
+        "end": 411,
+        "kind": "active"
+      },
+      {
+        "line": 110,
+        "start": 3577,
+        "end": 3590,
+        "kind": "active"
+      },
+      {
+        "line": 143,
+        "start": 4756,
+        "end": 4769,
+        "kind": "active"
+      },
+      {
+        "line": 156,
+        "start": 5350,
+        "end": 5363,
+        "kind": "active"
+      },
+      {
+        "line": 156,
+        "start": 5364,
+        "end": 5377,
+        "kind": "active"
+      },
+      {
+        "line": 64,
+        "start": 2139,
+        "end": 2146,
+        "kind": "new_comment"
+      },
+      {
+        "line": 132,
+        "start": 4297,
+        "end": 4310,
+        "kind": "new_comment"
+      }
+    ],
+    "initial_human_visible_lines": [
+      15,
+      64,
+      110,
+      132,
+      143,
+      156
+    ],
+    "context_expansion": "Only same-body minimal full declaration/directive/statement and enclosing type/namespace as authorized; log exact ranges. Never follow other files."
+  },
+  "output_plan": [
+    "append-only derived JSON and Markdown with full occurrence identities and bounded judgments",
+    "standard-library independent verification script/report; identity/mode/tuple/output-minimization",
+    "explicit stop/no clearance and next product decision; no network or candidate/scanner execution"
+  ]
+}

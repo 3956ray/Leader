@@ -1,0 +1,42 @@
+{
+  "RESULT": "PASS",
+  "candidate_bundle_sha256": "642d29885efb5df375564d0ebeec0875d4701e5dfc816934de329d3c2dda42d0",
+  "input_sha256": "baab9ddac779808ad8a1ac79e1c76937bc5875cba335148c7984aa54e41810a2",
+  "input_bytes": 2037,
+  "raw_inputs": [
+    {
+      "name": "commit.json",
+      "bytes": 2336,
+      "sha256": "e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089"
+    },
+    {
+      "name": "tree.json",
+      "bytes": 2742250,
+      "sha256": "7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2"
+    }
+  ],
+  "canonical_input": "PASS",
+  "commit": "PASS",
+  "tree": "PASS",
+  "entry_count": 8585,
+  "duplicate_paths": 0,
+  "old_rule_unsupported_names": 171,
+  "unsupported_names_in_acquisition_scope": 0,
+  "raw_bytes_document_records_attributes_order_indices_preserved": true,
+  "collection_sha256": "ef9119025fab7c3e5613061ca3d83a91294ebdebb70baa5ca19218c074e58453",
+  "zero_network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  },
+  "real_body_requests": 0,
+  "calls": "Only input_document/parse_input/parse_commit/parse_tree and metadata representation. No controller, run_input, transport or blob decode.",
+  "scope": "Identity parser compatibility only; no allowlist, authorization or source verdict."
+}

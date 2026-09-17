@@ -1,0 +1,26 @@
+{
+  "interim_only": true,
+  "final_version_binding_pending": true,
+  "rows": [
+    {
+      "case": "1.0-light",
+      "ok": true
+    },
+    {
+      "case": "1.5-dark",
+      "ok": true
+    },
+    {
+      "case": "1.5-light",
+      "ok": true
+    },
+    {
+      "case": "2.0-dark",
+      "ok": true
+    },
+    {
+      "case": "2.0-light",
+      "ok": true
+    }
+  ]
+}

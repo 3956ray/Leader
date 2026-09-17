@@ -1,0 +1,136 @@
+{
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1",
+  "RESULT": "PASS",
+  "verified_at": "2026-09-06T09:53:25.721479+00:00",
+  "files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-evidence-cards-2026-09-06.md",
+      "bytes": 16903,
+      "sha256": "a28af30971250a028d464e3edc844fde5a0382345aefa40da031899f1078bead"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-comparison-matrix-2026-09-06.md",
+      "bytes": 10231,
+      "sha256": "af747a9ce0654bd6a9b9a285ba08365202de47b6ba28a5eb0661c4db15f9ebac"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-research-memo-2026-09-06.md",
+      "bytes": 9664,
+      "sha256": "4340ad61c2fa0b7e3909baa89a37f9bc8eb16e769736eb265199579f2d8c146b"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "bytes": 11523,
+      "sha256": "98065a85b6e1bb98f66757de1955677614a33b6a52e0ade039cc3c6e07861fc4"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "bytes": 46987,
+      "sha256": "39dcd93623f052fd57165faadffbaf5e5582ff1587b06114568e97b8cef0070c"
+    }
+  ],
+  "page_ledger": [
+    {
+      "source_id": "SRC-20260906-think-asr-alt-01",
+      "candidate": "Vosk",
+      "url": "https://alphacephei.com/vosk/index.zh.html"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-02",
+      "candidate": "Vosk",
+      "url": "https://github.com/alphacep/vosk-api"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-03",
+      "candidate": "Vosk",
+      "url": "https://alphacephei.com/vosk/models"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-04",
+      "candidate": "WeNet",
+      "url": "https://wenet-e2e.github.io/wenet/runtime.html"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-05",
+      "candidate": "WeNet",
+      "url": "https://github.com/wenet-e2e/wenet/blob/main/docs/pretrained_models.md?plain=1"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-06",
+      "candidate": "WeNet",
+      "url": "https://github.com/wenet-e2e/wenet/blob/main/LICENSE"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-07",
+      "candidate": "ONNX Runtime Mobile + SenseVoiceSmall-onnx",
+      "url": "https://onnxruntime.ai/docs/tutorials/mobile/"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-08",
+      "candidate": "ONNX Runtime Mobile + SenseVoiceSmall-onnx",
+      "url": "https://www.modelscope.cn/models/iic/SenseVoiceSmall-onnx"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-09",
+      "candidate": "ONNX Runtime Mobile + SenseVoiceSmall-onnx",
+      "url": "https://github.com/Microsoft/onnxruntime/blob/main/LICENSE"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-10",
+      "candidate": "whisper.cpp",
+      "url": "https://github.com/ggml-org/whisper.cpp"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-11",
+      "candidate": "whisper.cpp",
+      "url": "https://github.com/ggml-org/whisper.cpp/blob/master/examples/whisper.android/README.md?plain=1"
+    },
+    {
+      "source_id": "SRC-20260906-think-asr-alt-12",
+      "candidate": "whisper.cpp",
+      "url": "https://github.com/openai/whisper"
+    }
+  ],
+  "page_count": 12,
+  "candidate_count": 4,
+  "per_candidate_pages": {
+    "Vosk": 3,
+    "WeNet": 3,
+    "ONNX Runtime Mobile + SenseVoiceSmall-onnx": 3,
+    "whisper.cpp": 3
+  },
+  "matrix_dimensions": 12,
+  "LOG_initial_prefix_unchanged": true,
+  "formal_PRD_and_decision_unchanged": true,
+  "product_HEAD": "e89da0e5e119293f6af73ce10ff4e0159f995c4b",
+  "product_clean": true,
+  "official_source_checks": [
+    {
+      "source_id": "12",
+      "url": "https://github.com/openai/whisper",
+      "finding": "OriginalREADME License explicitly identifies code and modelweightsMIT; corrected. Exactconvertedartifact provenance remainsfuturework."
+    },
+    {
+      "source_id": "10",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "finding": "README Memoryusage tiny75MiB/~273MB andbase142MiB/~388MB correctlyrepresented asofficialestimates, notAndroidactuals."
+    },
+    {
+      "source_id": "07",
+      "url": "https://onnxruntime.ai/docs/tutorials/mobile/",
+      "finding": "OfficialAndroidJava/C/C++ package,ondeviceONNX inference/defaultCPU corroborated; exactASR compatibilitynotestablished."
+    },
+    {
+      "source_id": "08",
+      "url": "https://www.modelscope.cn/models/iic/SenseVoiceSmall-onnx",
+      "retrieval": "ExactofficialURL title-search indexedresult recovered; directpage previously0lines. Noothermodelused.",
+      "finding": "ASR/ONNX/cn/Apache2/iic/241.59MB/2024-09-26 andSenseVoicequantizedexport verified. Modelcarddescribes localorcloud offlineFunASRservice; CPUserverexample referencesSenseVoiceSmall-onnx andlocalhostclient. Documentationcommands notexecuted.",
+      "calibration": "This is localserver deployment evidence, notanAndroidASR demonstration. AndroidpathcomesfromSource07; composingofficiallocalONNXmodelwithAndroidORT is a boundedresearchhypothesis. Operator/inputs/preprocessing/JNI/PCM/privatebuffer/devicebehavior remainunverified."
+    }
+  ],
+  "limits": [
+    "No newURL/SourceID; unrelatedsearchresults discarded, notused/opened. Samebudgetedofficialpagesonly.",
+    "Knowledgeautolintunavailable; manualidentity/structure/ledger/semantic checks.",
+    "KB5files uncommittedinexistingdirtyarea; LOGpreservesinitialprefix. No source/model/artifact/intake/adoptionauthority."
+  ]
+}

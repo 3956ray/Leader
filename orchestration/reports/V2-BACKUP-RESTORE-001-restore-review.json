@@ -1,0 +1,39 @@
+{
+  "notes_exact": true,
+  "drafts_exact": true,
+  "categories_exact": true,
+  "reminder_rules_exact": true,
+  "reminders_disabled": true,
+  "one_import_receipt": true,
+  "no_copy_origins": true,
+  "empty_preview_no_write": true,
+  "repeat_no_change": true,
+  "conflict_preview_no_change": true,
+  "after-invalid-import_unchanged": true,
+  "after-source-preview_unchanged": true,
+  "after-preview-cancel_unchanged": true,
+  "evidence_hashes": {
+    "before-export.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "exported.thinkbackup.json": "c7203a6364708f3d9d1e97581353ee519e02aee5b4f656e13b99ab8ffc1009ed",
+    "restored-empty.json": "49641299c24e535d969ae3fd6ba8fb666d9e1e0d1d7f792d81987755f4801f17",
+    "empty-preview.json": "d7c46530e8ac8b7d57db1bb020900bb3da3cfa3128bcaf94dc9ef9b7c1fb5dc3",
+    "empty-before-import.json": "d7c46530e8ac8b7d57db1bb020900bb3da3cfa3128bcaf94dc9ef9b7c1fb5dc3",
+    "conflict-preview-unchanged.json": "49641299c24e535d969ae3fd6ba8fb666d9e1e0d1d7f792d81987755f4801f17",
+    "repeat-unchanged.json": "49641299c24e535d969ae3fd6ba8fb666d9e1e0d1d7f792d81987755f4801f17",
+    "after-import-cancel.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "default-export.thinkbackup.json": "40364e12f93c64f56de90e79b0dfa7322cb3732c0268c944592d4bbdb8de20dc",
+    "after-prefix-export.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "after-export-cancel.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "after-invalid-import.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "after-local-export-failure.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "after-enospc.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "after-source-preview.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "after-provider-crash.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b",
+    "after-preview-cancel.json": "6b7afda3e857b76d3411afb0521ef5bf5378673a16b8a367f3092692ba07d50b"
+  },
+  "conflict_review": {
+    "all_original_rows_preserved": true,
+    "repeat_conflict_no_change": true,
+    "copy_count": 1
+  }
+}

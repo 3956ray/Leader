@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP0-BASELINE-002",
+  "owner": "developer",
+  "checkpoint": "CP0",
+  "status": "accepted",
+  "goal": "把 Gradle Wrapper JAR 修正为与声明的 Gradle 9.5.0 完全匹配且可验证的官方文件，关闭首次受信任构建前的二进制不一致风险。",
+  "commit": "a35392335d183c9e567065ea389f85fc9d46a0c4",
+  "report": "orchestration/reports/CP0-BASELINE-002.md"
+}
+

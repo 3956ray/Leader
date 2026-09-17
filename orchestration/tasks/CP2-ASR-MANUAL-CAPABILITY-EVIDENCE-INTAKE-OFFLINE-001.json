@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "在独立 v7 第一方离线候选中实现可信、精确逐 occurrence 的人工 comment 裁定证据接收，并以保留的 v6 基线、自建矩阵、双跑和独立复算证明不可转移及硬停止优先级。",
+  "baseline_commit": "7557ed554025ab7a06ea5f76cc1429915bbbbe06",
+  "formal_decision": "doc/cp2-manual-capability-evidence-decision-2026-09-06.md",
+  "formal_decision_sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+  "formal_prd_sha256": "5c376c961c9ecafd21cb5492254a1c45c7adf422e2a890c1d1181a3871f386a6",
+  "predecessor_acceptance": "orchestration/reports/CP2-MANUAL-CAPABILITY-EVIDENCE-DECISION-SYNC-001-acceptance.json",
+  "predecessor_acceptance_sha256": "6878e5dfb2a421cae323fdef200eeea82a417061fc409697e18a2d08b024f579",
+  "v6_provenance": {
+    "commit": "f55fda2dea237120ce09639112767c9857dab8d5",
+    "tree": "05f0b591753a9d8c845656c2f8d6be2c8c725464",
+    "bundle_sha256": "99114c1ad1126e627723585251ed696063562de4b507d35c28b93a3b1ffb6160",
+    "historical_freeze_commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+    "historical_freeze_tree": "b674a029f2faefdd92367866236037a74b7ac053"
+  },
+  "scope": [
+    "仅新增 tools/asr_review_acquisition_v7/ 下的必要第一方代码、schema、文档、测试、provenance/diff、扫描及本轮重新生成的离线验收证据。只读复制已验收 v6 R1 的必要第一方内容；不得复制旧证据 run 树充当新证据。Python 标准库限定，保持旧版本、freeze、run、app、依赖、产品文档不变。",
+    "实现正式决定全文及 R1 澄清的通用 H/R/C/K/F/M/A/T/N domain schema 与严格验证：H 为历史 review context；R 引用 H；C 是 code/schema/tests/recalculator 的排序 path+SHA canonical collection；K 绑定 C/H/R/occurrence/decision/authority/schema 且 operational_authority=false；F 只绑定 C/K 和固定验证语义，不包含最终 M digest；M 精确满足 K 并绑定 F；A 绑定 F/M/scope；T 从独立 pins 构造；N 为新 run。禁止 self hash、循环依赖、从 input 学习 Trust 或可后填冻结字段。此次只用完全自建 identity fixtures，不创建真实 K/M/A/T。",
+    "将人工证据消费置于共享 controller 内部，在后继请求前完整验证后，仅追加 manual_capability_adjudication 与 effective_comment_review_status。原始 source analysis/capability_review_status=pending/occurrences 保留；所有历史记录原字节/hash 只读；新 run 的追加记录拥有新身份且不得冒充旧 terminal 延续。缺失人工证据时保留旧 pending/no-successor 行为。",
+    "逐 occurrence 完整绑定 object identity、upstream commit/tree/path/blob、body SHA/bytes、envelope identity/type/mode、rule、line、无 terminator 和含 terminator 两种独立 line-hash domain、line/token byte intervals、raw token、decision、reviewer/time、authority/request/report/verification identity。清楚区分历史 envelope/review context 和未来执行 body/release 的身份角色，不得通过猜测放宽合同；真正冲突返回产品决策。",
+    "待处理 body 的 comment occurrences 与可信 map 完整一一匹配；缺失/额外/重复/错序规范歧义/unknown fields/wrong object/domain/重叠越界/token 不符/错身份/冲突/partial review/replay 均在后继请求前 fail closed。仅 comment_only_nonoperative_for_this_body 可清除精确 occurrence 的有效 pending；forbidden/unresolved/pending/未知 decision 与任何未清项均停止。",
+    "保持 v6 identity/role/path/mode/type/budget/file-safety → active/uncertain deny → lexical → unsupported/ineligible 的原停止优先级，持久化/容量及 P0/reachability/fixed-point/scanner/license/checkpoint 门槛不可覆盖。input 与 review package 独立 byte/count/canonical encoding 上限进入 schema/provenance；严格拒绝重复键、非规范 JSON、非有限值、类型混淆和超限。",
+    "保留全部既有 158 测试方法及 961 outcomes 的覆盖和原断言，不删除/skip/用 legacy bypass 假通过；所有路径通过同一共享 controller。新增正式八类矩阵及 DAG/hash-domain/independent Trust/size 边界反例，以完全自建正文和身份生成证据；不得复制或转写真实 header、两行原文、private envelope、真实 review report 作 fixture。",
+    "至少两次独立完整零网络运行全部基线及新 tests/subtests，规范化 JSON/hash chain/ledger/terminal/集合摘要逐字节可比。网络、DNS、真实 transport 守卫在 workload import 前生效。交付独立 recalculator 复算 authority DAG、occurrence 双 hash 与 intervals、adjudication、persistence、no-successor、ledger/terminal，不仅转抄 producer digest。",
+    "在最终候选身份固定后记录逐文件 Git blob/mode/bytes/SHA 和 collection、v6→v7 provenance/diff、baseline 映射、schema/policy/limits identity、两轮结果与扫描输入覆盖。按已批准第一方静态审查流程对新候选执行实际扫描，保留原始 verdict、发现与上下文解释，不以安全 PASS 或第三方采用结论替换扫描结果。提交仅本任务目录、报告并停止。"
+  ],
+  "out_of_scope": [
+    "不得读取真实 source/header/LICENSE/private/raw/body/metadata/API/旧 corpus 或旧原始 scanner context；不得沿报告指针扩大读取。第一方源代码/schema 和必要派生历史身份记录只读可用，真实报告不能成为测试输入。无实际网络/DNS/transport、新下载、第三方依赖或执行。",
+    "不得修改旧候选/controller/freeze/run、已固定报告/manifest/归档，禁止全局 comment/token 豁免、wrapper/sidecar 绕过、扩大 grammar/guard/metadata/LICENSE/role/path/budget 范围。",
+    "不建立真实 K、F、M、A、T、输入映射或执行 N；不复用旧获取授权。C 接受之后 K→F→M→新用户 A→T/N 各为分开的后续任务。",
+    "不得修改产品功能/PRD/隐私/Checkpoint；无构建、安装、模型、真实设备或音频验证。CP1 Deferred not removed，CP2 未通过，CP3/Alpha 未批准，旧 block/manual_review 不变。"
+  ],
+  "acceptance": [
+    "仅预定新目录变更、基线与旧证据不变；formal/provenance/候选代码、schema、manifest 及每项证据有可独立重算身份。最终工作区干净或逐项明确未提交状态，不混入其他修改。",
+    "全部 158 方法及 961 旧 outcomes 覆盖与断言保持，新矩阵逐项满足正式决定。两条相同文本/hash 但不同 line/interval 的自建 comments ID 必须不同且不能互清；正例仅清除精确 comment 的有效 pending，所有反例零 successor。",
+    "authority DAG 非循环、H/F 清楚分离、K 非操作性、M 无自摘要且严格符合 K、T 独立可信 pins；严格 canonical JSON、独立限额与所有绑定字段篡改均 fail closed。",
+    "所有原硬停止优先级保持，证据追加且无 wrapper/全局例外。新运行 hash 明确新身份，旧原始记录不重写。持久化/容量失败下无虚构完整证据或后继请求。",
+    "两轮完整运行无 skip，zero-network guard 有证据，JSON/ledger/terminal/occurrence/authority/adjudication 集合可比且独立复算通过；实际第一方静态扫描和覆盖/发现上下文齐全。",
+    "只返回 manual_capability_intake_candidate_ready_for_freeze 或 manual_capability_intake_candidate_blocked；ready 仅候选阶段结论，须 Leader 独立静态审查、双跑、复算后接受，未赋予真实 pending clearance 或获取权。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED；candidate status；修改文件及目的；最终 commit/parent/Git 边界；v6→v7 来源和原断言覆盖映射；完整命令/环境/两轮 tests-subtests-outcomes-scenarios/skip 及 zero-network 结果。",
+    "正式八类矩阵逐项索引、DAG/occurrence/双 line-hash/每字段篡改/canonical 限额及硬停止证据，独立复算命令/结果/算法；所有证据 hash/domain/集合规则与 manifest；扫描原始 verdict/coverage/context。",
+    "未验证项、PRD/范围偏移检查、历史目录不变证明；建议下一步但不执行。完成后通知 Leader 任务 01a071cf-9ac6-7171-b663-749a6e88b0a4 并停止。"
+  ],
+  "stop_conditions": [
+    "未知工作区修改、正式 hash 漂移、合同矛盾、无法按原断言保持基线、身份循环/角色不明、无法完整唯一匹配 occurrence 或复算证据：停止并返回具体证据，不静默扩大范围。",
+    "需要任何 wrapper bypass/全局例外/旧记录修改/降低硬停止/真实数据或网络/第三方库/扩大源码获取范围/改变隐私或 checkpoint，即 candidate_blocked 并交回 Leader/产品决策；不自行继续下一阶段。"
+  ],
+  "prepared_at": "2026-09-06T07:19:31.188703+08:00"
+}

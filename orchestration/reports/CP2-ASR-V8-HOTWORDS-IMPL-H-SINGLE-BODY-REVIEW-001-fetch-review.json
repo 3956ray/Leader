@@ -1,0 +1,27 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "RESULT": "PASS",
+  "blockers": [],
+  "scope": "Independent static review of the exact acquisition-helper changes against the reviewed first-party template and fresh approved request.",
+  "reviewed_sha256": {
+    "handler-provenance": "1d9ca03d00818211f35007cb02862a6b5eed899f3a31a075258ceaadc9a805e8",
+    "new_handler": "5175f3d5623a04ea0d975a802df651c003f8cb5320c632e2fca228290d32e3ac",
+    "old_template": "204683f97f6cd99ac70d22d3521900ed1445e42c61790a2b16184005566797d2",
+    "approval": "ffd046a2d0e25ec05a9c0e0e72676bbe0b5f8d132986dd2ebc730eef13c39f38",
+    "request": "d645a34ec6c176c12683588f4bee7f778690bf8d6cebb1e17d028f38f8bbcaed"
+  },
+  "verified_bytes": {"new_handler": 7704, "old_template": 7700, "approval": 3405, "request": 7679},
+  "checks": [
+    "The actual diff contains only the declared task/request/approval identifiers, fresh root, Git blob, body SHA256, exact decoded size, raw entity cap and output filename replacements. No control-flow or validation logic changed.",
+    "The new APPROVED record binds the exact pending request and identical candidate. Fixed endpoint uses blob9c2b4b71d22b6757e9faa87d5b42f9e586a08456; request/body checks require2286 bytes and SHA256ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6. Whole-document pins bind repository, commit/tree, path and mode100644.",
+    "The configured private root is different from the old template root. The unchanged runtime gate rejects a nonempty or nonprivate root; an exclusive marker is written and file/directory fsynced before network construction and the sole GET. No retry/resume or second endpoint was introduced.",
+    "CAP16384 matches the fresh approved entity limit. Exact2286 body size, decoded hard cap262144, body SHA256 and Git blob identity, strict UTF8/NUL checks and output filename online-recognizer-impl.h are consistent.",
+    "Duplicate/nonstandard JSON rejection and base64 canonical roundtrip fixes remain intact. TLS certificate/hostname verification, no automatic TLS key log, no credentials/proxy/redirect handling, ten-second socket timeout and exclusive0600 output persistence remain unchanged.",
+    "The helper does not display body or implement source interpretation. The new request's cumulative64-line/4096-byte visible budget and declaration/delegation stop belong to the separately controlled subsequent review; this fetch PASS does not waive them or authorize a third source."
+  ],
+  "limitations": [
+    "No handler/template was executed or imported, no private root/body/raw material was read, and no network accessed. Fresh-root existence/emptiness is a runtime precondition, not a filesystem fact independently checked here.",
+    "Timeout remains socket inactivity rather than overall wall-clock deadline, as the fresh request explicitly states. Existing trusted single-executor filesystem assumptions remain unchanged.",
+    "PASS applies only to the exact7704-byte handler identified above under the new approval. Acquisition results, visible-scope enforcement and semantic stopping still require subsequent Leader verification; no source adoption or clearance is created."
+  ]
+}

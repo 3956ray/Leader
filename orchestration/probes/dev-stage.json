@@ -1,0 +1,16 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "LOOP-V2-DEV-PROBE-001",
+    "kind": "coordination_probe",
+    "owner": "developer",
+    "assigned_thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+    "checkpoint": "CP2",
+    "goal": "只读确认新调度合同身份，返回可匹配的接单和完成回执，验证开发者通信链路而不改变任何产品文件。",
+    "scope": ["只读Leader current-task.json及LOOP-V2.md，确认task_id/attempt_id/contract_sha256/assigned_thread_id。", "先简短确认接单，然后最终答复仅一个JSON对象，含上述四身份字段、acknowledged:true、result:COMPLETE、product_changed:false、note:coordination_only。"],
+    "out_of_scope": ["不读写产品或知识库，不联网，不下载/构建/执行产品，不继续已暂停产品任务，不跨任务发送。"],
+    "acceptance": ["回执四身份字段完全匹配，明确无产品改动，Leader可从本任务读取最终结果。"],
+    "evidence_required": ["在本dev任务最终答复返回JSON；Leader独立观察执行turn_id并存回执，不要求你发送回Leader。"],
+    "stop_conditions": ["合同不匹配或读取权限被拒则BLOCKED；完成停止，不能自行开始其他任务。"]
+  }
+}

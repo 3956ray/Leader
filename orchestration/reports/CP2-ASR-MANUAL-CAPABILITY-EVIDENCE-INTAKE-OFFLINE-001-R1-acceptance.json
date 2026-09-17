@@ -1,0 +1,80 @@
+{
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T08:38:54.828114+08:00",
+  "candidate_commit": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "parent": "534e416b989698589bfb511332b3b0af2de4f185",
+  "candidate_tree": "2797686abaf25028545e7a9d764b8a827e207560",
+  "bundle_sha256": "198c24c66a3e82117828e9eacfa333b4dde8eb19949c7425b8a81b839399553e",
+  "formal_decision_sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+  "references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-identity.json",
+      "bytes": 1514,
+      "sha256": "39d74a1168e08c23202327a88dba6ce422873ef18c2bf3baa7901844f9f9ecaa"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-identity-verify.py",
+      "bytes": 4998,
+      "sha256": "fa0cc5bb0b533c392ddec83384964e31fc8c541daf2bcc44c31dd6003c8b33bc"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-baseline.json",
+      "bytes": 316,
+      "sha256": "d22d3a94b674c0c70b4b1702d6699fd414cf035eda49bb6a4fcbe0567425d637"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-contracts.json",
+      "bytes": 835,
+      "sha256": "ae5e8d1470343b311b9e7b91a6e5b7daa6b8b9187b738fc60ad95950b83e8b6d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-scan-context.json",
+      "bytes": 516,
+      "sha256": "6b9bc0b3681699327d96ed4112f479c8c161db85f0fea26612abe0627fac054b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-runs.json",
+      "bytes": 2899,
+      "sha256": "2cbcceb2b2cc9305964a96db7c4ae58127183552127025849ae31d6d135b163b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-runs-verify.py",
+      "bytes": 4336,
+      "sha256": "e3d18c325b8e8de938e27c4587894d4358adcd6b68d6702755eb511603f91020"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-recalculation.json",
+      "bytes": 882,
+      "sha256": "a6f6dd2cba79a7f5a2a9850c51019e1041bbc503e162ca0fc1e8b7a2782f3cf9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-semantic-probe.py",
+      "bytes": 3002,
+      "sha256": "ab9fe604c6deaf972782473bc4d0e325d8b6fce7a1225f6b90f868494cbad475"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-semantic-probes.json",
+      "bytes": 5312,
+      "sha256": "a7824e526686aa89ae3ffcda528b094527b816e98d6b11c8e1b6a7e7908f641a"
+    }
+  ],
+  "criterion_evidence": [
+    "V7-R1 original historical report exact-byte SHA and normalized representation canonical SHA now distinct and bound by K/M/adjudication. Source analysis original_report_sha256 remains separately named source report identity. Generic runtime pins conversion through independently accepted K; actual conversion must be verified in future K task.",
+    "V7-R2 historical regular/0600 and source Git blob/100644 have separate fields/domains. 31 independent authored semantic cases:3positive28negative; negative cases zero requests/network. No controller priority regression found.",
+    "41400 file regular-single-link/Git/blob/mode/hash identities checked;9necessary code/doc changes and25462 new files only in v7.15908 old evidence files opaque-byte unchanged; all other repo paths unchanged. Manifest and25filebundle independently rehashed.",
+    "163 old method sources exact;1 field-access-only fixture adaptation retains assertions; all original158 testfiles unchanged. Full double Leader167methods/1210outcomes/0skip;1154priorv7/961v6 orderedoutcomes retained exact.",
+    "Two Leader runs in isolated firstparty copy:61.418s/60.751s. Normalized hash c754d320be4e6bfea0fefa733afddaf4ebdcb49ab95ade2d141db114a76ab2b7;8478immutableJSON/run byte-identical across2developer+2Leader runs.",
+    "Independent recalculator rebuilds54originalreports+54representations/257136originalbytes,54validpackages356invalid,32adjudications188occurrences12rejections,684complete source reports3176channels312capabilities;4explicit bounded-incomplete remain stops. Leader separately rehashes5162ledger/run and all5collections across339scenarios.",
+    "25filebundle/intake/semantic/role/policy independently checked; only policy kind differs from v6. Preimport12networktraps in both Leader runs,zero actualnetwork/trappedcalls/runtimeviolations.",
+    "25482newscaninput identities and751findingcontexts rehashed;732port findings1196matches allinside40/64hex. Rawscan sandbox_only100 and2diffsupplement sandbox_only20/3inertremovedcommands preserved; no safetyPASS or sourceapproval."
+  ],
+  "limitations": [
+    "Only firstparty self-authored offline input; no genuine report/body/metadata/API/network/transport/model/build/device/audio validated.",
+    "Historical report to normalized representation semantic conversion is a future independently reviewed nonoperational K task; no real K/F/M/A/T/N created and no pending operationally cleared.",
+    "Four bounded-incomplete source reports remain explicit failures; no claim to reconstruct missingfullbytes/hash.",
+    "No hostile same-UID/in-process sandbox or external signature validation; fixed budgets not lowCPU/heap guarantee.",
+    "CP1 andConformer Deferred not removed;CP2notpassed,CP3/Alphaunapproved;oldblock/manual_reviewunchanged."
+  ],
+  "next_authorized_step": "Separate nonoperational review_map_commitment K preparation and independent acceptance using exact already reviewed derived historical report identities, then separate F, then M, then fresh user A before trusted T/N. No new source acquisition authorized by this acceptance."
+}

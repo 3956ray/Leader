@@ -1,0 +1,78 @@
+{
+  "task_id": "V2-BACKUP-RESTORE-001",
+  "owner": "developer",
+  "checkpoint": "CP8",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "goal": "Implement user-controlled local backup and safe previewed merge restore, preserving notes, drafts, categories, recycle bin and disabled reminder configurations.",
+  "scope": [
+    "Only /Users/orderly_ray/Projects/thinkV2. Accepted baseline 1dde8ec7bd34caac991097c9f3962958cc753fab. Implement PM C1-C10 in the approved product baseline.",
+    "User-initiated export/import using Android system file selection. Clearly explain private plaintext data, recommend local folder, no automatic upload/sync.",
+    "Versioned JSON envelope and exact-byte payload/hash validation per C2. Consistent database snapshot includes current notes/drafts/categories/trash/title ownership/revisions/reminder settings; future relations empty until implemented, no audio/logs/secrets.",
+    "Bound parsing before persistence: file/payload/depth/count limits, strict types/schema/IDs/references/date/reminder validation; reject malformed/unsupported input without truncation or data loss.",
+    "Preview counts and conflicts before any write. Merge only: preserve existing local record, conflict copy gets new mapped ID or user skips it; no silent timestamp winner. Map references consistently, no category-name auto-merge.",
+    "Single transaction apply, revalidate preview against current database state, idempotent exportId/hash import; conflicting exportId rejected. Imported reminders disabled and do not schedule notifications.",
+    "Accessible export/restore UI with cancel/error/retry, no false success or sensitive diagnostics. Synthetic host tests and actual Android file workflow evidence."
+  ],
+  "out_of_scope": [
+    "No whole-database overwrite, automatic sync, encryption claim for base64, audio export, private real records, permanent delete, new cloud account or public release.",
+    "No ASR, calendar import, AI or graph implementation; preserve later roadmap."
+  ],
+  "acceptance": [
+    "Export then restore into an empty test database preserves all relevant fields and identities; current source database unchanged.",
+    "Conflict merge preserves local version and maps copies/references; repeat same import creates no duplicates; invalid exportId reuse rejected.",
+    "Preview does not mutate database or schedule alarms; changed local state forces re-preview; imported reminders remain disabled.",
+    "Truncation/hash corruption/unknown schema/duplicate IDs/dangling references/limits and injected transaction failure leave prior database and schedules unchanged.",
+    "Android file picker, cancel, successful local write/read and error behavior have recorded evidence; device-only gaps listed honestly.",
+    "User-visible privacy/plaintext and local provider guidance match actual behavior; no private text logging."
+  ],
+  "evidence_required": [
+    "RESULT; fixed baseline/final commit; C1-C10 evidence mapping; test logs and fixture provenance; Android file flow evidence; APK hash; unverified items."
+  ],
+  "stop_conditions": [
+    "Execute this single CP8 task only, then stop and report to commander; do not start the next feature.",
+    "Potential data corruption, unreviewed dependency, scope or permission issue stops affected action; no automatic next task."
+  ],
+  "contract_body": {
+    "task_id": "V2-BACKUP-RESTORE-001",
+    "owner": "developer",
+    "checkpoint": "CP8",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Implement user-controlled local backup and safe previewed merge restore, preserving notes, drafts, categories, recycle bin and disabled reminder configurations.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2. Accepted baseline 1dde8ec7bd34caac991097c9f3962958cc753fab. Implement PM C1-C10 in the approved product baseline.",
+      "User-initiated export/import using Android system file selection. Clearly explain private plaintext data, recommend local folder, no automatic upload/sync.",
+      "Versioned JSON envelope and exact-byte payload/hash validation per C2. Consistent database snapshot includes current notes/drafts/categories/trash/title ownership/revisions/reminder settings; future relations empty until implemented, no audio/logs/secrets.",
+      "Bound parsing before persistence: file/payload/depth/count limits, strict types/schema/IDs/references/date/reminder validation; reject malformed/unsupported input without truncation or data loss.",
+      "Preview counts and conflicts before any write. Merge only: preserve existing local record, conflict copy gets new mapped ID or user skips it; no silent timestamp winner. Map references consistently, no category-name auto-merge.",
+      "Single transaction apply, revalidate preview against current database state, idempotent exportId/hash import; conflicting exportId rejected. Imported reminders disabled and do not schedule notifications.",
+      "Accessible export/restore UI with cancel/error/retry, no false success or sensitive diagnostics. Synthetic host tests and actual Android file workflow evidence."
+    ],
+    "out_of_scope": [
+      "No whole-database overwrite, automatic sync, encryption claim for base64, audio export, private real records, permanent delete, new cloud account or public release.",
+      "No ASR, calendar import, AI or graph implementation; preserve later roadmap."
+    ],
+    "acceptance": [
+      "Export then restore into an empty test database preserves all relevant fields and identities; current source database unchanged.",
+      "Conflict merge preserves local version and maps copies/references; repeat same import creates no duplicates; invalid exportId reuse rejected.",
+      "Preview does not mutate database or schedule alarms; changed local state forces re-preview; imported reminders remain disabled.",
+      "Truncation/hash corruption/unknown schema/duplicate IDs/dangling references/limits and injected transaction failure leave prior database and schedules unchanged.",
+      "Android file picker, cancel, successful local write/read and error behavior have recorded evidence; device-only gaps listed honestly.",
+      "User-visible privacy/plaintext and local provider guidance match actual behavior; no private text logging."
+    ],
+    "evidence_required": [
+      "RESULT; fixed baseline/final commit; C1-C10 evidence mapping; test logs and fixture provenance; Android file flow evidence; APK hash; unverified items."
+    ],
+    "stop_conditions": [
+      "Execute this single CP8 task only, then stop and report to commander; do not start the next feature.",
+      "Potential data corruption, unreviewed dependency, scope or permission issue stops affected action; no automatic next task."
+    ]
+  },
+  "contract_sha256": "99200bf59c911bd93230a783437bac15a54e8de0915f5eda011fb548404f2dc0",
+  "attempt_id": "a7044d94-1422-4102-9994-0c6c80dcee68",
+  "phase": "accepted",
+  "status": "accepted",
+  "sent_at": "2026-09-15T18:33:14.839067+00:00",
+  "accepted_at": "2026-09-15T19:55:48.263713+00:00",
+  "accepted_head": "cc957d56e8f5337d6548ed2b0296712fc0cbdcba",
+  "acceptance_report": "orchestration/reports/V2-BACKUP-RESTORE-001-acceptance.md"
+}

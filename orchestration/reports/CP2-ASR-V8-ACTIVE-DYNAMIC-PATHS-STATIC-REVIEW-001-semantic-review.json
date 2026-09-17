@@ -1,0 +1,25 @@
+{
+  "task_id": "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001",
+  "RESULT": "PASS",
+  "scope": "Independent semantic and authority-scope review of first-party derived report, Markdown, verification result and formal decision only.",
+  "blockers": [],
+  "reviewed_sha256": {
+    "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001.json": "f5d1f99d54084aec6757038f726ae455395e334ac0b120c5f254791c1bcbda8b",
+    "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001.md": "a6ec5534ed6b2bcd7b6ae41dd34576f3465ef7df2494c614755a00e809acd39b",
+    "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-verification.json": "1812e5b8ef3384ebf82f7345c35865e5a7837ad39d84101bae14f8ebd24dcaac",
+    "/Users/orderly_ray/Projects/think/doc/cp2-v8-hard-stop-next-step-decision-2026-09-06.md": "2b099d1ec9a21c39969a7987453b32bf81068a0f8fb3256fdf63fb905439511d"
+  },
+  "checks": [
+    "The report and Markdown hashes match the independent verification result; the report's formal-decision hash matches the reviewed decision.",
+    "One literal include is characterized as locally nonoperative with downstream reachability unresolved. The conclusion concerns this directive, not the included implementation or overall runtime behavior.",
+    "Four hotwords_file occurrences are characterized as policy-relevant declaration, constructor parameter and member-initializer target/source. Local configuration/value propagation is distinguished from actual file access, executed selection, dynamic loading, downstream reachability and future business API exposure; those remain unverified.",
+    "Two comment-only labels describe local comment bytes under the formal decision. Every occurrence retains operational_authority=false and clearance=false. No authority-map update or pending clearance is claimed.",
+    "Returning the completed local evidence to PM while pausing the current acquisition/adoption route follows the formal decision. The recommendation does not claim global unsafety or maliciousness and does not authorize dependency reads, v9, a new acquisition or engineering work.",
+    "Frozen denylist_capability and manual_complete_matching remain; the run stays permanently terminated, pending is not cleared, successful adjudications remain zero, and no source or Checkpoint acceptance is claimed."
+  ],
+  "limitations": [
+    "No raw/private files, retained body, read receipts containing source excerpts, candidate, source code or verification scripts were read or executed in this review. No network or acquisition occurred.",
+    "Object identity, token/carrier/interval reconstruction, local syntax and data-flow observations, permissions and read-scope controls are inherited from Leader's independent verification facts. This report does not claim a second raw-material verification.",
+    "PASS applies only to faithful semantic interpretation and scope. Runtime behavior, actual file access, business-boundary exposure, downstream implementations, source adoption and any future investment remain undecided."
+  ]
+}

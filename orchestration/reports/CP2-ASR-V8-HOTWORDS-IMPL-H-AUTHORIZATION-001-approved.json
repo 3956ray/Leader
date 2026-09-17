@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-001",
+  "RESULT": "APPROVED",
+  "recorded_at": "2026-09-06T08:55:34.220343+00:00",
+  "user_response_verbatim": "批准",
+  "approval_context": "Direct user reply to the immediately preceding Leader final request linking the complete final impl.h request, 2286 bytes, at most64unique lines/4096visible bytes, declaration/delegation ends the chain. Fresh approval after presentation, not reused prior authority.",
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 7679,
+    "sha256": "d645a34ec6c176c12683588f4bee7f778690bf8d6cebb1e17d028f38f8bbcaed"
+  },
+  "request_markdown": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.md",
+    "bytes": 4306,
+    "sha256": "f6f3def136235e6d52b5bf0d92fd908fad25dc9aeaa0f7fe4ff0afd2684f3e82"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+    "bytes": 13812,
+    "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8"
+  },
+  "preparation_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-acceptance.json",
+    "bytes": 2800,
+    "sha256": "74c22960fc356fdd18a629e1c867e1b4661b0a2d47afc66e1df01e1174574b51"
+  },
+  "authorized_task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+    "git_type": "blob",
+    "mode": "100644",
+    "git_blob": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "decoded_bytes": 2286,
+    "expected_body_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6"
+  },
+  "authority_scope": "我批准 `CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001`：只针对 repository `k2-fsa/sherpa-onnx`、upstream commit `917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e`、tree `fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0`、path `sherpa-onnx/csrc/online-recognizer-impl.h`、Git blob `9c2b4b71d22b6757e9faa87d5b42f9e586a08456`、mode `100644`、decoded size `2286`，允许 1 次 GET 和一次离线局部静态审查；人工可见范围最多 64 个唯一行／4,096 bytes，只判断 `OnlineRecognizerImpl::Create(config)` 是否定义、config 的直接处理、file/buffer selector、文件 I/O 线索与是否继续委派。不得请求 metadata、重试、重定向、跟随任何 include／symbol／`.cc`／`FileExists`／具体 recognizer 或第二正文，不得构建、执行、加载、测试、集成、联网扩展、修改 detector/schema/freeze/旧 run、建立 v9 或形成 clearance。任一身份不匹配、超过 262,144 bytes、目标未定义或继续委派时立即停止并回产品决策门；该结果是热词源码链最后一次正文补证，不授权第三文件。本授权不批准源码采用、CP2、CP3 或父亲 Alpha。",
+  "permission_consumed_at_recording": false,
+  "meaning": "One new attempt and bounded review only. Old runs/markers remain immutable; no third source and no adoption."
+}

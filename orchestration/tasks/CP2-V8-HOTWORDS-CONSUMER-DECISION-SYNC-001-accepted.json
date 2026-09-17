@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-V8-HOTWORDS-CONSUMER-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "prepared_at": "2026-09-06T08:32:16.684357+00:00",
+  "goal": "仅同步已验收热词消费端路线决定和PRD及三个工程入口，使最后一个impl.h请求准备与永久停止条件成为明确当前状态。",
+  "baseline_commit": "bd0bb57efc4348f599c36a3166fa018809914788",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-ROUTE-DECISION-001-acceptance.json",
+    "bytes": 2247,
+    "sha256": "30c5b77eec8d611cdd950231af0ddbf3258f5b9efad6cfcfeff7a3b95554c9bd"
+  },
+  "formal_sources": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+      "bytes": 13812,
+      "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8",
+      "destination": "doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 69391,
+      "sha256": "5d74aea2e04e27415b4fdf4503bf65e27682cd2ed0975279cca23bfa7d3cfddf",
+      "destination": "doc/prd-v0.1-2026-09-04.md"
+    }
+  ],
+  "scope": [
+    "仅新增formaldecision并按formal_sources原字节同步PRD。",
+    "仅更新AGENTS.md、doc/README.md、doc/development-guide-v0.1-2026-09-04.md当前状态/优先级/下一任务：online-recognizer.cc单文件审查已验收1GET8993B/28lines1237visiblebytes；非空FileExists与路径诊断局部事实，实际I/O/完整bufferselector/业务可达性未知，停止于Create(config)委派。",
+    "当前PAUSED、零clearance、CP2未过。唯一下一步Leader-owned CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001，只从acceptedcommittedderivedidentity准备impl.h新请求；无新body/metadata/network权限。缺blob/mode/size则blocked；以后须用户新明确批准才可1GET/1body<=262144B且64uniquelines/4096visiblebytes。目标缺失/只声明/继续委派则终止热词逐文件链，无第三文件；一切结果回产品门。旧源码/获取/冻结与隐私/CP1/Conformer/CP2/CP3标准保留。",
+    "恰五文档提交，不push；其他旧Git树记录保持不变，完成后回报并停止。不要重写全部历史或开展授权准备。"
+  ],
+  "out_of_scope": [
+    "不读任何raw/private/body/metadata/scannercontext/源码片段，不执行获取/网络/scanner/候选/测试/构建/模型/真实音频；不运行任何此前handler。",
+    "不改五文件以外产品源码、旧tools/evidence/frozenpolicy/历史decision，不新增v9/authority/clearance，不准备新请求。"
+  ],
+  "acceptance": [
+    "父提交bd0bb57e且恰五文档；两正式源字节匹配；三个入口唯一当前任务和最后文件永久停止上限准确。",
+    "旧树其余记录不变，worktreeclean；本次只是文档同步，不记App实现/Checkpoint通过。"
+  ],
+  "evidence_required": [
+    "RESULT，五文件purpose/path/bytes/SHA/Gitblob，commitparent/tree，diffcheck/links/旧Git树边界，未验证项，报告后停止。"
+  ],
+  "stop_conditions": [
+    "基线/源hash漂移或未知修改立即停止，不覆盖；需要范围外材料则报告。"
+  ],
+  "dispatched_at": "2026-09-06T08:32:21.898039+00:00",
+  "completed_at": "2026-09-06T08:37:31.056222+00:00",
+  "result": "COMPLETE",
+  "accepted_at": "2026-09-06T08:37:31.056222+00:00",
+  "acceptance_report": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-V8-HOTWORDS-CONSUMER-DECISION-SYNC-001-acceptance.json",
+    "bytes": 1189,
+    "sha256": "4748b05901d8b8029340854b8315da1f959a89ac4f23fa492dfd6c050b0b817c"
+  }
+}

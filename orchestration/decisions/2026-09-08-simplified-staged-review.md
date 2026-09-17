@@ -1,0 +1,15 @@
+# User decision: simplified, staged review
+
+User in current Leader task: "可以按照你的简化规则来进行 你记得同步给pm和dev 可以分阶段".
+
+This approves the preceding comparison table's simplifications. Do not start the proposed 16-hour static adapter project. PM must record an APPROVED superseding decision and an executable next-stage contract; developer receives the steering now and implements only after formal sync/Leader dispatch. This is not cancellation of privacy or Checkpoint requirements.
+
+Retain official source/version/TLS checks, actual bytes and SHA, isolated non-overwriting storage, no target execution or external scan uploads, basic archive/path/link/structure safeguards, practical download/read/time bounds, license/dependency/coverage records and explicit unknowns.
+
+Simplify: permit bounded retries and verified-source finite HTTPS redirects rather than one-GET/no-redirect absolutism; choose and state sensible download limits without a dedicated exact-header limiter project; permit safe-path-checked extraction to a fresh isolated temporary directory with no execution; retain file-count and actual expansion bounds, use high compression ratio as a warning rather than proof of malice; do not require proven system-level 1GiB memory isolation as a prerequisite for a limited first inspection; retain bounded reads and timeout/termination and disclose residual risk. Prefer available sandboxing but distinguish no intentional network use from enforced isolation. Permit a new non-overwriting attempt subdirectory under the existing authorized root, preserving old evidence.
+
+Stages: (1) exact approved AAR/model acquisition and limited inventory/basic structural/license inspection; (2) before integration, inspect nested JAR, Manifest/native components and full dependencies/licenses with existing tools, not necessarily one universal scanner; (3) before product readiness, actual device/PCM/privacy/accuracy/performance/flight-mode gates from PRD. Record CRC coverage for read members and stop on corrupt/suspicious structures; unexamined members are Unknown. Do not require initial inspection to prove reproducible binaries, but retain provenance risk for adoption assessment.
+
+Known exact objects remain Vosk Android 0.3.75 and vosk-model-small-cn-0.22. No additional dependency acquisition, target installation/build/loading/inference/integration or device testing is authorized by this initial-stage decision. Later scopes need appropriate authority. PM should specify concrete retry/redirect/resource values and source validation in one coherent batch, not return to per-page approvals. The user has approved the categories of simplification; do not ask to reapprove identical ordinary scope changes after documenting them.
+
+Old strict contract, failed zero-GET run and tool-gap proposal remain historical; mark superseded for future execution without rewriting their evidence. Product/source data privacy and CP2/CP3/Alpha gates unchanged. Notifications/callbacks follow current user preference, subject to actual tool permissions.

@@ -1,0 +1,41 @@
+{
+  "body_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79",
+  "visible_scope": "Exact target match lines only, no other source",
+  "matches": [
+    {
+      "line": 110,
+      "start": 3466,
+      "end": 3505,
+      "line_sha256": "efef278a96bb272ed40d0f48d941fe44ced9f2ef497a2530733877c28d529b06",
+      "text": "      \"hotwords-file\", &hotwords_file,\n"
+    },
+    {
+      "line": 149,
+      "start": 4933,
+      "end": 5010,
+      "line_sha256": "25dd073bae2d87f07cfc9365e0ef1fc0ee08ee3fd0c1fc92e009945666256d3a",
+      "text": "  if (!hotwords_file.empty() && decoding_method != \"modified_beam_search\") {\n"
+    },
+    {
+      "line": 163,
+      "start": 5392,
+      "end": 5454,
+      "line_sha256": "25964bb375563bb903f8011040eb76a7995ca616288e9d4a7fd6badc5b4dbded",
+      "text": "  if (!hotwords_file.empty() && !FileExists(hotwords_file)) {\n"
+    },
+    {
+      "line": 165,
+      "start": 5515,
+      "end": 5560,
+      "line_sha256": "8324a297b684e0826e7deb1f0330d6df087d54ae04dab50d5dc66fab7c3937d0",
+      "text": "                     hotwords_file.c_str());\n"
+    },
+    {
+      "line": 210,
+      "start": 6923,
+      "end": 6978,
+      "line_sha256": "7de88c9faad001b252ec9f80861950aea140c63835e607399eec803797a33c7e",
+      "text": "  os << \"hotwords_file=\\\"\" << hotwords_file << \"\\\", \";\n"
+    }
+  ]
+}

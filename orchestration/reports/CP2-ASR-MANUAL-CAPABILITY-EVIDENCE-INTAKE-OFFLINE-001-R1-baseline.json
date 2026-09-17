@@ -1,0 +1,11 @@
+{
+  "RESULT": "PASS",
+  "old_methods": 164,
+  "new_methods": 167,
+  "unchanged_method_sources": 163,
+  "field_path_only_adaptation": [
+    "tests/test_manual_intake.py:ManualIntakeTests.test_positive_and_distinct_occurrences"
+  ],
+  "v6_original158_test_files_unchanged": true,
+  "provenance_sources_verified": 26
+}

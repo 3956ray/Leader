@@ -1,0 +1,34 @@
+{
+  "task_id": "V2-OFFLINE-VOICE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "goal": "Implement real offline Chinese voice entry into editable note drafts, with bounded memory-only audio, cancellation and explicit correction.",
+  "scope": [
+    "Draft only: bind latest accepted thinkV2 commit after CP8 backup acceptance. Implement V1-V7 in the approved emulator-first full-engineering addendum dated 2026-09-16.",
+    "Hold to record, release to process, cancel, explicit microphone permission, 90-second cap and honest silence/error states. Existing text entry remains usable.",
+    "Transcription enters the current editable draft at the cursor or appends when no cursor exists; never auto-save formal notes or overwrite existing text/title/category. Session and revision checks isolate late callbacks, cancellation and navigation.",
+    "Raw audio and intermediate PCM remain in bounded memory only. Inspect both first-party capture and selected runtime data paths. Release resources on every completion, cancellation, failure, permission loss and capture-screen exit.",
+    "Implement editable local text correction vocabulary/mappings. Ambiguous corrections require confirmation; distinguish postprocessing from actual model hotword capability and raw recognition accuracy.",
+    "Within this task assess one concrete runtime/model route with exact version, source, license, digest, ABI and offline/audio behavior before acquisition/loading as required by applicable security rules. Old think runtime approval does not transfer. Do not create a recursive acquisition-tool project.",
+    "Real engine evidence on isolated emulator using authorized synthetic/non-private speech and labeled memory injection or microphone route. Test offline recognition, silence, cancel, 90-second boundary, permissions, background interruption and preserved draft text. Record privacy observations and limitations."
+  ],
+  "out_of_scope": [
+    "No cloud ASR, raw audio persistence/upload/logs, private father fixtures, model training, TTS, accounts or public release.",
+    "Voice command mode is a separate later CP2 task; no calendar, AI, relations or cross-feature backup implementation in this task."
+  ],
+  "acceptance": [
+    "V1-V7 mapped to actual source, meaningful tests and emulator behavior; real engine produces editable Chinese text offline.",
+    "Cancellation and late results cannot change another note or overwrite newer edits; no empty/silent/fake formal note is created.",
+    "Audio path and runtime inspection plus persistent-directory/log/network observations support the memory-only boundary; unknown coverage is explicitly recorded.",
+    "Report 30 clips with at least 27 requiring no rerecord, raw proper-name occurrence accuracy at least 90 percent, 30-second clip release-to-result P95 at most 5 seconds, and 20 runs of 90 seconds. Label emulator environment and preserve Xiaomi/father evidence gaps; no assumed user acceptance of lower performance.",
+    "If precise runtime/model/ABI or execution authority is missing, return the concrete condition and implemented first-party portion as partial/BLOCKED. Do not claim real recognition or CP2 complete; independent next work may be considered by commander."
+  ],
+  "evidence_required": [
+    "RESULT; fixed baseline/final commit; runtime/model identity and review evidence; V1-V7 mapping; commands/results; synthetic sample text/identity and raw-versus-corrected outputs without audio attachments; APK hash; environment; unresolved Xiaomi/provider/family conditions."
+  ],
+  "stop_conditions": [
+    "Not authorized for execution until commander freezes and dispatches this draft after the preceding accepted task. Do not interrupt the current reminder task.",
+    "Stop the affected action for audio persistence/upload, unknown runtime execution, data corruption or permission rejection; report precise evidence and continue independent in-scope work. Stop and report after this one task, never self-start the next."
+  ]
+}

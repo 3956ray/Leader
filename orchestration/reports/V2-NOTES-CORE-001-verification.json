@@ -1,0 +1,46 @@
+{
+  "result": "verified",
+  "head": "e2f6f4a2e91ec367dea034dff263368341212fe6",
+  "file_checks": 70,
+  "independent_tests": [
+    {
+      "name": "com.example.thinkv2.ExampleUnitTest",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T16:58:53.389Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "0.002"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NoteRepositoryTest",
+      "tests": "14",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T16:58:53.395Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "1.387"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NotesModelTest",
+      "tests": "5",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T16:58:54.785Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "1.084"
+    }
+  ],
+  "result_sha256": "5b66575b7f90a09010def0b66e1e5db7c95bfc9981b31ffe023090a376cfd8de",
+  "apk_sha256": "5b707ab363ac848acbecfdc63d6e8a450a02cfd105b3f2a4a1d18df172a77a5e",
+  "limitations": [
+    "physical device/Xiaomi",
+    "TalkBack manual traversal",
+    "father trial",
+    "other Android API/screen combinations",
+    "actual disk-full on device"
+  ]
+}

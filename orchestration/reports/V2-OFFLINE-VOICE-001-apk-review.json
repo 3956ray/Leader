@@ -1,0 +1,46 @@
+{
+  "observed_at": "2026-09-16T02:31:48.192381+00:00",
+  "verified_apks": {
+    "final-app-debug.apk": {
+      "path": "/Users/orderly_ray/Projects/thinkV2/app/build/outputs/apk/debug/app-debug.apk",
+      "sha256": "895cbbf163aad3f825de8689752b95a82c645a5b771461b2887acf634c90ddd3",
+      "bytes": 67365889
+    },
+    "final-test.apk": {
+      "path": "/Users/orderly_ray/Projects/thinkV2/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+      "sha256": "db5dabb33f94fb818230c9e34047428712197b557fb00e87a758543a0f0c12be",
+      "bytes": 1101675
+    },
+    "performance-verified-app-debug.apk": {
+      "path": "/private/tmp/thinkv2-V2-OFFLINE-VOICE-001-a20f0582/performance-verified-app-debug.apk",
+      "sha256": "bb2b5af5574927068f3b83d86449627f169e7a8c40c8ec793935c944ea6bbf76",
+      "bytes": 67432695
+    },
+    "performance-verified-test.apk": {
+      "path": "/private/tmp/thinkv2-V2-OFFLINE-VOICE-001-a20f0582/performance-verified-test.apk",
+      "sha256": "88c2cfb6728fd38ae27eb1022fcf6d9d1f5f91c02d5a6fb1c024a9a3ebabc2d1",
+      "bytes": 1084334
+    }
+  },
+  "equal_model_manifest_and_native_entries": [
+    "lib/arm64-v8a/libandroidx.graphics.path.so",
+    "lib/arm64-v8a/libjnidispatch.so",
+    "lib/arm64-v8a/libvosk.so",
+    "assets/voice-model-manifest.json",
+    "assets/voice-model/README",
+    "assets/voice-model/am/final.mdl",
+    "assets/voice-model/conf/mfcc.conf",
+    "assets/voice-model/conf/model.conf",
+    "assets/voice-model/graph/Gr.fst",
+    "assets/voice-model/graph/HCLr.fst",
+    "assets/voice-model/graph/disambig_tid.int",
+    "assets/voice-model/graph/phones/word_boundary.int",
+    "assets/voice-model/ivector/final.dubm",
+    "assets/voice-model/ivector/final.ie",
+    "assets/voice-model/ivector/final.mat",
+    "assets/voice-model/ivector/global_cmvn.stats",
+    "assets/voice-model/ivector/online_cmvn.conf",
+    "assets/voice-model/ivector/splice.conf"
+  ],
+  "limitation": "Package identity and model/native equality verified; final UI differs. Core source input identity review pending."
+}

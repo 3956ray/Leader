@@ -1,0 +1,240 @@
+{
+  "RESULT": "PASS",
+  "approved_record": {
+    "bytes": 2016,
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001-approved.json",
+    "sha256": "694c69bc465663cb2a8ba58e21c9757d131d6135956a92df00ed78f997979c81"
+  },
+  "bundle_files": 28,
+  "copied_bundle": [
+    {
+      "path": "SCHEMA.md",
+      "sha256": "f0b19b5f25653b6f7cdfc4b7f5db2178ca0a5d7bf7c47e6dbb7c592808376107"
+    },
+    {
+      "path": "audit.py",
+      "sha256": "2cbf4ef771dd347e87116079141694abfba3b6cc2f99364fce05bd480efea1a1"
+    },
+    {
+      "path": "network_guard.py",
+      "sha256": "b9bcd4595be610063d8401d8b90f1871d6b402edc2d278ec3f03f0e5c178a33c"
+    },
+    {
+      "path": "offline_review/acquisition.py",
+      "sha256": "d763c2715b88cc7779707d3953bb8c8d8ab629c391d78f232eccff573b70a11b"
+    },
+    {
+      "path": "offline_review/adapter.py",
+      "sha256": "5b04e61b8bfc2becfeb0151fd4b7f72c554812efb1a61df7d0e0af667ed15b9a"
+    },
+    {
+      "path": "offline_review/controller.py",
+      "sha256": "5f3f513412241c2c44a5d0ed526465a03f2b305e305fd96d68366d682a822edc"
+    },
+    {
+      "path": "offline_review/manual.py",
+      "sha256": "8af6f8f931dd7194b134b58e9410eb8a2af7cb9e8ced1183b761b560e2e2a5c9"
+    },
+    {
+      "path": "offline_review/parser.py",
+      "sha256": "16e19e880704a3f196d902480b6bddb795334541f4782e578980a4ee88e82397"
+    },
+    {
+      "path": "offline_review/policy.py",
+      "sha256": "7a77ab9f490a8de8464c0fd4bf2deaf4ec145b76be11f85254b58ee33728c45c"
+    },
+    {
+      "path": "offline_review/protocol.py",
+      "sha256": "2a7d8c69ddbdb8ccc67e32a7d6aaf8b32ca196f6572ac11a3f8f18dcebbd91ab"
+    },
+    {
+      "path": "offline_review/routing.py",
+      "sha256": "ef12d44c4e88dc312dbde23dc63c40379a4a9ecbc9c2f1b8f52eace317e0daa5"
+    },
+    {
+      "path": "offline_review/semantics.py",
+      "sha256": "ac721e6b3bdb62e8b59b9ea60b5b5798dc48ef27942b35f0476de7c20c26ebcd"
+    },
+    {
+      "path": "offline_review/storage.py",
+      "sha256": "27a6e07f8e58f8329e32c4f625587dd8b085cd7f0076caef015845ccfa18b19d"
+    },
+    {
+      "path": "offline_review/timestamps.py",
+      "sha256": "127ed6a7a2e008527d73c5e891f18a83519871f13d77594bebbd04bb2c8b4fe6"
+    },
+    {
+      "path": "offline_review/transport.py",
+      "sha256": "fc295c92eebc194d375a575c27e09f833e134559b9bd7f65bd98b050f0158d98"
+    },
+    {
+      "path": "recalculate.py",
+      "sha256": "317915770364de895a0773c158ebdfccb4f3ceb3d7691b56266d0a1150de67e2"
+    },
+    {
+      "path": "tests/acquisition_support.py",
+      "sha256": "870fe8ba2d0b77af014041e83f28708551b73813fae4e8d20ebc4633ef95a4dd"
+    },
+    {
+      "path": "tests/manual_support.py",
+      "sha256": "ae4ccdd9a190deb751cd8d775b0de01bd4cebc592cb5b5c77b0ac98076eeea66"
+    },
+    {
+      "path": "tests/support.py",
+      "sha256": "ae6e17a3649cd70f96cd5b36b6f0d362a9882b3f62cf468bb5286783bea62646"
+    },
+    {
+      "path": "tests/test_acquisition.py",
+      "sha256": "4173366818ad2893b2654430926a7c963d6ba8a30aa69f4c2ab506f43915318f"
+    },
+    {
+      "path": "tests/test_behavior.py",
+      "sha256": "15e5ae57488d120a6667e54c6870764a0ce086539ff8df5fe7c88b6de5b7ea81"
+    },
+    {
+      "path": "tests/test_content_routing.py",
+      "sha256": "b33cd38a4c50745aeadda5a617bd305ede172808ae5122fb241c1d398eb91c88"
+    },
+    {
+      "path": "tests/test_manual_intake.py",
+      "sha256": "8fb1e19570ddc6ea2be603d54e6d572429b74f0f98144abad6b8239a83345e75"
+    },
+    {
+      "path": "tests/test_metadata_names.py",
+      "sha256": "5c1130f33983827211a70792616c61d34b152fe7f67c520a96da0e9b9b09ca89"
+    },
+    {
+      "path": "tests/test_source_semantics.py",
+      "sha256": "196c16f1228f0030af6c38b117c1a58aa298460f6827e1b125c1a5533010e24b"
+    },
+    {
+      "path": "tests/test_timestamps.py",
+      "sha256": "59bbb7b9bd32d659ebeefb314e57539b1269fc2e005634fcb48dd16ecf4eb297"
+    },
+    {
+      "path": "tests/timestamp_support.py",
+      "sha256": "e00c87df2a0afb1660edaf9db850de759ca4cc50c92f12a111db128a86dad019"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "86e371f1d640e5fb891ae57219710dd10eec6b8281d5778d91d44ae1ca7e05d7"
+    }
+  ],
+  "copy_directory": "/private/tmp/think-v8-mapping-full-preflight-r8ra3lou",
+  "files": [
+    {
+      "bytes": 339,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/A.json",
+      "sha256": "5e03d0d42eb6a4c2a48fc9ba5bb4df30e677229b07e2c476194193b467eafccc"
+    },
+    {
+      "bytes": 327,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/T.json",
+      "sha256": "c43f86fcbccff86a63d1d98931176f2b898c622d0417dd7086109c9ddb78b611"
+    },
+    {
+      "bytes": 4099,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/input.json",
+      "sha256": "0bc6c2c79883f35cca5f334b08baca43e01b32790c4e7c771a2f1efb60e5108a"
+    },
+    {
+      "bytes": 16768,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/manual-package.json",
+      "sha256": "2bcbb229bdfcd45f9d53c8fd03f288fd6202da4325710a4460aad0059b9cfa9e"
+    },
+    {
+      "bytes": 575,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/metadata-identities.json",
+      "sha256": "61efe77abb86152da4b3670a17ff03bf4c8cfdd6391fb7f2c59a9fa0c3459fd5"
+    },
+    {
+      "bytes": 1494,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/pins.json",
+      "sha256": "e44b1a231153119611ef7c8e0169d87f03b2558c44a318af30588c613f52ae9d"
+    }
+  ],
+  "frozen_external_references_rehashed": 33,
+  "frozen_inputs_rehashed": 69505,
+  "identities": {
+    "A": "5e03d0d42eb6a4c2a48fc9ba5bb4df30e677229b07e2c476194193b467eafccc",
+    "C": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "F": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+    "M": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+    "T": "c43f86fcbccff86a63d1d98931176f2b898c622d0417dd7086109c9ddb78b611",
+    "input": "0bc6c2c79883f35cca5f334b08baca43e01b32790c4e7c771a2f1efb60e5108a",
+    "package": "2bcbb229bdfcd45f9d53c8fd03f288fd6202da4325710a4460aad0059b9cfa9e",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0"
+  },
+  "imported_modules": [
+    "offline_review",
+    "offline_review.manual",
+    "offline_review.policy",
+    "offline_review.protocol",
+    "offline_review.routing",
+    "offline_review.semantics",
+    "offline_review.storage",
+    "offline_review.timestamps"
+  ],
+  "independent_objects_rebuilt": [
+    "A",
+    "T",
+    "manual-package",
+    "input",
+    "pins"
+  ],
+  "limitations": [
+    "No run_input/controller/transport invocation.",
+    "Prior partial-eight-module harness failed running_release_hash before network/body; immutable A/T/input/package were not regenerated; complete28filecopy pure validation now passes.",
+    "No thirdpartybody/read/execution or originalenvelope; only exact two approvedmetadata identities, no rawcopies exported."
+  ],
+  "metadata": [
+    {
+      "bytes": 2336,
+      "mode": "0o600",
+      "nofollow": true,
+      "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/commit.json",
+      "regular_singlelink": true,
+      "sha256": "e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089",
+      "stable_fd": true
+    },
+    {
+      "bytes": 2742250,
+      "mode": "0o600",
+      "nofollow": true,
+      "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/tree.json",
+      "regular_singlelink": true,
+      "sha256": "7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2",
+      "stable_fd": true
+    }
+  ],
+  "network": {
+    "actual_network_events": [],
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "dns_http_socket_traps": 12,
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation",
+    "trapped_workload_calls": []
+  },
+  "new_run_created": false,
+  "product_head": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "pure_validations": [
+    "candidate_release_hash",
+    "ManualPins.document",
+    "input_document",
+    "validate_package",
+    "parse_input",
+    "parse_commit",
+    "parse_tree"
+  ],
+  "rawbody_requests": 0,
+  "request": {
+    "bytes": 19883,
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+    "sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b"
+  },
+  "tree_entries": 8585
+}

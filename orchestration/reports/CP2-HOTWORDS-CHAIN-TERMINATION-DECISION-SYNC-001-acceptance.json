@@ -1,0 +1,23 @@
+{
+  "task_id": "CP2-HOTWORDS-CHAIN-TERMINATION-DECISION-SYNC-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T09:20:40.065938+00:00",
+  "commit": "e89da0e5e119293f6af73ce10ff4e0159f995c4b",
+  "parent": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "tree": "b27de03ae1ed00cf0a8f922902cf156a4c78c823",
+  "verification": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-HOTWORDS-CHAIN-TERMINATION-DECISION-SYNC-001-verification.json",
+    "bytes": 1852,
+    "sha256": "dd34336efe8205df6862c92bd7f054554c80d70e1f82169aec156c1e09db0364"
+  },
+  "checks": [
+    "Exactly5documents with2formalbytecopies;129539otheroldleafrecordsunchanged;55projectnavigationlinks;diffcheckclean.",
+    "All3entry additionsread: pendingASRruntime, permanenthotwordchaintermination, PM-only3-5candidate18page research withoutduplicateuserapproval, futureintake separatelydecided.",
+    "VocabularyDeferrednotremovedandpropername90percent retained; audio/three-step/device/Checkpointprivacy unchanged.",
+    "No productcode/tools/evidence/dependencies changed; no testsnecessary fordocumentationonly."
+  ],
+  "limits": [
+    "Research notexecuted bysync; no runtimecandidateadopted/CP2pass."
+  ],
+  "next_step": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001"
+}

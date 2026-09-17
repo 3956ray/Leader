@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-VOSK-SELECTION-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "dispatched",
+  "assigned_thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+  "report_to_thread_id": "01a07655-fdfd-7683-aa57-a4895188d2ff",
+  "goal": "将已验收的 Vosk 候选选择决定和最新 PRD 同步到产品仓库，仅统一正式文档入口与权限状态，不实现任何产品功能。",
+  "acceptance_report": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-ASR-SECURITY-INTAKE-SELECTION-DECISION-001-acceptance.md",
+  "source_root": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive",
+  "source_pins": {
+    "cp2-alternative-asr-security-intake-selection-decision-2026-09-06.md": "d58d59a51a94afc92f55f4211bd273972fe6b516d2823108ba55c9d27f166176",
+    "prd-v0.1-2026-09-04.md": "ec279fcd24db110188c9f0515675fc0ebe4bfe79909a60eaabfc2191bdffae89"
+  },
+  "scope": [
+    "先核对源文件 SHA 与产品仓库干净 HEAD e89da0e5；保留他人修改，有冲突停止。",
+    "只修改四个产品仓库文档：doc/cp2-alternative-asr-security-intake-selection-decision-2026-09-06.md、doc/prd-v0.1-2026-09-04.md、doc/README.md、AGENTS.md。前两个逐字节同步固定源文件。",
+    "README 与 AGENTS 最小更新为 Vosk 仅获候选身份准备批准，旧 sherpa 链终止，阶段 A 尚未执行、B/C 未批准。保持历史证据，不全面重写。同步当前 PM/dev/Leader 路由只限这两个入口文档。",
+    "执行纯文档差异、源副本一致性、本地链接与权限状态检查；完成一个仅四文件的文档提交，不推送。"
+  ],
+  "out_of_scope": [
+    "不联网、不启动身份 intake、不读源码/corpus、不获取模型/依赖/二进制，不构建、运行、扫描、测试产品或集成。",
+    "不改知识库、工具、app、构建文件或其他文档；不扩大产品/隐私/Checkpoint 权限。"
+  ],
+  "acceptance": [
+    "两个源副本 bytes/SHA 完全一致；四文件提交边界清楚、工作区干净。",
+    "入口一致且清楚区分候选选择、官方身份准备、制品审查和运行；CP2未过、CP3/Alpha未准、专名90%及音频不落盘不上传不日志不变。",
+    "相关本地链接有效；无功能代码、第三方制品或未审依赖变动。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED；四文件目的、提交SHA、源副本bytes/SHA、检查命令与结果、逐项验收、未验证、范围偏移与Git状态。可在本开发者任务最终答复留报告，勿重试被权限拒绝的跨任务发送。Leader独立检查。"
+  ],
+  "stop_conditions": [
+    "源pin变化、工作区归属不明、需要第五文件或产品决定时停止回报，不自行扩张。",
+    "任何步骤需要网络/第三方制品/执行或修改隐私门槛则停止。完成后待命，不自行开始身份准备。"
+  ]
+}

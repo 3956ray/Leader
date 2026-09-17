@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-ACQUISITION-TOOL-RELEASE-FREEZE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "将 Leader 已验收的完整 v3 工具、输入协议与既有固定审查范围一次性固定为可独立核对的冻结证据，不修改执行代码或启动真实获取。",
+  "baseline_commit": "e4cd300ca50be776b7077f1d7fae783642a696a7",
+  "allowed_root": "doc/security-reviews/asr-acquisition-v3-release-freeze/2026-09-06/",
+  "scope": [
+    "读取正式 acquisition-tool-scope 决定、Leader最终验收报告、既有精确授权归档和旧任务中immutable_contract/9seeds/denylist的第一方记录。只读v3已提交工具、schema、清单、报告；不读第三方正文/API响应/旧corpus。",
+    "只在全新的允许文档目录创建 freeze.json、MANIFEST.json 与 REPORT.md。以规范化JSON明确固定工具commit/目录tree、代码/schema/test bundle、完整4257文件身份/清单摘要、policy/schema/transport/入口及只读审查接口；以实际已实现代码为准，不补代码。",
+    "固定既有设计commit/tree/28项摘要、上游repository/commit/tree、两个已归档metadata SHA-256、按序9seed、允许根/type/mode、确定性解析/排队、denylist及保守检测语义、96文件/1048576正文字节、全部raw响应/累计预算、证据预算与停止条件。保留source_verdict恒insufficient_evidence的工具边界。",
+    "严格区分代码bundle摘要、完整制品清单摘要、冻结合同摘要和未来具体输入摘要；不能把自建fixture的Trust或metadata字节数填入真实合同。metadata在本单只固定既有真实摘要；真实输入bytes由后续匹配这些摘要的原始字节确定，并通过已实现input_document/parse_input，不改变policy。若冻结完整性需要尚无证据的值，明确blocked，不伪造。",
+    "可运行现有标准库只读哈希/JSON检查，或调用已验收的document/hash纯函数取已实现policy；不得调用run_input或transport，不进行模拟获取也不访问网络。输出应含后续调用/核验所需现有入口引用与确定步骤，不新增执行脚本。",
+    "一次形成固定合同及自洽清单，记录Leader验收引用；这只是本任务冻结产物，须Leader独立核对后才能另派真实获取。单一三文件文档提交，完成回报并停止。"
+  ],
+  "out_of_scope": [
+    "修改tools/v2/v3/执行代码/schema/tests/fixture/既有证据、改产品文档入口或APP、安装依赖、构建、模型、snapshot或真实allowlist。",
+    "网络/DNS/HTTP/代理、任何新第三方输入/API响应、旧corpus/制品、真实源码获取、运行run_input/transport、映射成已执行授权或宣称CP2/CP3通过。",
+    "补签或重冻旧尝试、把合成pins当真实pins、改变固定身份/seed/来源/限额/denylist/隐私/Checkpoint。"
+  ],
+  "acceptance": [
+    "冻结对象准确绑定e4cd300及Leader验收：bundle dc57dd71af457cbc25501a61f1d11f5f107d758fddb20c76898e6667bdf2e436、集合5b3178f5d8b3640dde642aa7f8abdcc305e9f6c9c07ac7ae4084cfc3af509e69、file-manifest 146eab132d189f1cfc69508ff6848370ff321b9bbf26bc851eaa936a16216300；可独立复算无自引用。",
+    "policy与已验收代码一致，完整输入schema和所有执行/审查组件已绑定，冻结过程中代码零修改。",
+    "固定范围逐项与正式决定/既有授权记录一致；metadata pin为e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089和7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2；不得用合成值代替缺失信息。",
+    "现有bundle/制品/合同/未来input身份区别清楚，数据派生步骤不能改变policy，未完成的真实metadata校验和网络/源码/CP2门槛明确保留。",
+    "恰好三个新增文档，父项e4cd300；git show --check通过且工作区干净，所有v3/v2及原文档未变；完成后停止。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED、freeze_ready_for_leader_review或freeze_blocked、三个文件路径/SHA、规范化算法/范围逐项比较、各类hash复算、代码未变证明。",
+    "提交/父项、检查命令与结果、未验证项及下一单建议；回报当前Leader后停止，不自行开启真实获取。"
+  ],
+  "stop_conditions": [
+    "基线/工作区/文件身份不符、未知修改、新目录存在，或需要修改代码/冻结规则以适配未来输入时停止。",
+    "需要实际网络/第三方正文/旧corpus、改变固定边界或补齐未授权metadata来源时停止；不补造/默认批准。",
+    "完整冻结无法仅靠已验收代码和第一方固定身份记录具体表述时返回blocked及缺失项，不包装成已具备真实获取条件。"
+  ],
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "leader_acceptance_report": "orchestration/reports/CP2-ASR-FIRST-PARTY-ACQUISITION-TOOL-OFFLINE-001.md",
+  "task_result": "COMPLETE",
+  "commit": "e2d64f98aae52bd5e015962191a3bf2c121beeb2",
+  "accepted_at": "2026-09-06T00:55:15.062639+08:00",
+  "report": "orchestration/reports/CP2-ASR-ACQUISITION-TOOL-RELEASE-FREEZE-001.md"
+}

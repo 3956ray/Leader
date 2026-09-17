@@ -1,0 +1,28 @@
+{
+  "status": "IN_PROGRESS_REVIEW_NOT_ACCEPTANCE",
+  "at": "2026-09-05T23:51:30.623807+08:00",
+  "baseline": "926b06fc3513c60b96e494d7d5c087b2763d6064",
+  "files_read_sha256": {
+    "offline_review/protocol.py": "10cb8a7d77a946eddc4379c82ffdfad4d7adeebc18c97b14718395f8eb435dc5",
+    "offline_review/acquisition.py": "b77191f2232e22ef000c8d9d5818b240622f0ae8d5de9bfdb7331573d0c6821a",
+    "offline_review/transport.py": "fc295c92eebc194d375a575c27e09f833e134559b9bd7f65bd98b050f0158d98",
+    "offline_review/controller.py": "09c5d249a694e600d1786380215090452f3148b297bf257bbf9c885424cf7f25",
+    "offline_review/policy.py": "7a77ab9f490a8de8464c0fd4bf2deaf4ec145b76be11f85254b58ee33728c45c",
+    "network_guard.py": "b9bcd4595be610063d8401d8b90f1871d6b402edc2d278ec3f03f0e5c178a33c",
+    "audit.py": "7298fb1413fd3c891a9468b9f769bd089686ddefdc3dac060721bb8bee4807e0",
+    "verify.py": "f1a121459bb2565d1193cefaec8bfb35fa7f0ba3a1bdc6ac1e349376fbe2d156",
+    "tests/acquisition_support.py": "870fe8ba2d0b77af014041e83f28708551b73813fae4e8d20ebc4633ef95a4dd",
+    "SCHEMA.md": "967e95e8abea0ece37c3308fbcabe5b892b5dd30d1a07c978933f75cb926863f"
+  },
+  "observations": [
+    "Production byte entry composes metadata verification, shared controller, restricted transport and durable journal.",
+    "Transport is single GET with fixed host/path; no proxy/follow/retry path; bounded read and per-read timeout.",
+    "Authorization and before_request records precede connection factory; self-authored factory inspects disk records.",
+    "Full final tests and independent reruns still pending; developer report of passing tests is not Leader acceptance."
+  ],
+  "pending": [
+    "Explain added file_audio detection as implementation of existing forbidden capability, including conservative false positives; do not claim implementation unchanged.",
+    "Document exact trusted invocation/metadata-pin supply and verified body availability for later manual source review; ensure complete execution needs no code added at freeze.",
+    "Final delivery hashes/scope, full static inspection of remaining code/tests, independent tests and request/ledger/terminal recomputation."
+  ]
+}

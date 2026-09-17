@@ -1,0 +1,21 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "CP2-SIMPLIFIED-STAGED-DOC-SYNC-001",
+    "owner": "developer",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+    "goal": "同步已验收的简化分阶段审查决定和PRD到产品仓库，并更新两个入口，使下一阶段遵循新规则且不再启动旧适配器路线。",
+    "source_root": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive",
+    "source_pins": {
+      "cp2-vosk-simplified-staged-review-decision-2026-09-08.md": "ae7af4a693aacb69a2f1766e7c2ea813b068916d1139166ae7e8aeccc375fbb8",
+      "prd-v0.1-2026-09-04.md": "de79c1eead829ef3ecef387b90920bc8a52e8a6fd1a9c42e40ed3c3d54bc86c2"
+    },
+    "acceptance_report": "/Users/orderly_ray/Leader/orchestration/reports/CP2-SIMPLIFIED-STAGED-REVIEW-DECISION-001-acceptance.md",
+    "scope": ["先确认干净82bde868、源pins及Leader验收，输出身份绑定ACK。", "仅四文件：两个源文件逐字节复制为doc同名副本；最小更新AGENTS.md、doc/README.md，最新简化规则优先、16小时adapter不执行、旧0GET是历史、初查不等于采用和CP2通过。", "源文档与PRD保持原字节，历史引用缺目标只记限制不新增第五文件。只做文档字节/hash、链接和差异检查，单个四文件提交不推送。"],
+    "out_of_scope": ["不改知识库、产品代码、工具或构建配置，不联网/下载/解包/扫描/安装/执行/集成/真机，不重做研究或启动下一单。"],
+    "acceptance": ["四文件提交边界明确，两个副本源/工作区/提交一致，入口符合最新用户决定且不放宽隐私/Checkpoint。", "检查结果与未验证项清楚，工作区干净，未取得制品。"],
+    "evidence_required": ["最终有效JSON：task_id/attempt_id/contract_sha256/assigned_thread_id/acknowledged:true/result；附文件目的、字节SHA、检查、提交、Git与限制。完成主动回调当前Leader，实际拒绝则如实记录不绕过；本任务原始最终结果仍须保留。"],
+    "stop_conditions": ["源pin变化、归属不明或必须第五文件/新权限则停止回报，不自扩范围。完成后待Leader验收，不自行取得或初查制品。"]
+  }
+}

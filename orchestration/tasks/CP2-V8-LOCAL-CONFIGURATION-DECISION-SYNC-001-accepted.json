@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-V8-LOCAL-CONFIGURATION-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "只同步已验收局部配置路线决定和PRD及三个工程入口，明确审查已完成、路线暂停且下一步仅为单文件授权请求准备。",
+  "baseline_commit": "63de9e684ad39a476624699f18dd349272062a51",
+  "prepared_at": "2026-09-06T06:19:37.595413+00:00",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-LOCAL-CONFIGURATION-ROUTE-DECISION-001-acceptance.json",
+    "bytes": 2489,
+    "sha256": "9b186c0855a146dbaf8f6b4b429ebc660fe30a8b93edd3bc79f568a62913b413"
+  },
+  "formal_sources": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+      "bytes": 12792,
+      "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2",
+      "destination": "doc/cp2-v8-local-configuration-route-decision-2026-09-06.md"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 67208,
+      "sha256": "32b8295d83ed1fa4a79d312860011cc647241bd8ccca1f0419237e9afce63480",
+      "destination": "doc/prd-v0.1-2026-09-04.md"
+    }
+  ],
+  "scope": [
+    "仅新增formaldecision并原字节同步PRD，与formal_sources精确相同。",
+    "仅更新AGENTS.md、doc/README.md、doc/development-guide-v0.1-2026-09-04.md当前状态/优先级/下一任务：七occurrence局部审查已接受，55行局部证据不证明实际I/O/未看同文件/跨文件/业务暴露。当前acquisition/adoption PAUSED、零clearance、旧run永久结束/stop/pending不变。旧七处审查任务作为历史，不再当前待办。",
+    "最新决定仅批准Leader-owned CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001，基于acceptedcommittedderivedidentity为单个online-recognizer.cc准备pendingrequest；无blob/mode/size则blocked，不取metadata/body、不联网。成功后先展示完整请求取得新用户批准再另开正文任务。保留所有真机/隐私/CP1/Conformer/CP2/CP3门槛。",
+    "仅五文档提交不push，逐文件hash/Gitblob/parent/tree及diff/链接和旧树保持证据；不复制KB其他改动或原始来源卡，不跟随raw指针。"
+  ],
+  "out_of_scope": [
+    "不得读取任何raw/private/body/metadata/envelope/scannercontext或候选源码；不执行获取/审查/scanner/controller/测试/构建/安装，不做授权准备。",
+    "不改五文件以外旧decision/tools/evidence/app/依赖/配置，不生成map/v9/新获取授权/clearance。"
+  ],
+  "acceptance": [
+    "提交父63de9e68且恰五文档，正式decision/PRD原字节匹配，三入口边界/最新任务一致。",
+    "其他旧tree记录完全不变，clean，无新实现；明确局部55行限制和所有原privacy/checkpoint门槛。"
+  ],
+  "evidence_required": [
+    "RESULT，五文件purpose/path/bytes/SHA/Gitblob，commitparent/tree，diffcheck/链接/完整旧树边界，未验证项。",
+    "完成通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4后停止，Leader独立验收后才准备request。"
+  ],
+  "stop_conditions": [
+    "HEAD/源hash漂移或未知修改即停；需五文件以外/原始材料/扩大范围则报告，不自动处理。"
+  ],
+  "dispatched_at": "2026-09-06T06:19:42.556393+00:00",
+  "completed_at": "2026-09-06T06:27:52.734651+00:00",
+  "developer_result": {
+    "RESULT": "COMPLETE",
+    "commit": "bd0bb57efc4348f599c36a3166fa018809914788"
+  },
+  "accepted_at": "2026-09-06T06:27:52.734651+00:00",
+  "acceptance_report": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-V8-LOCAL-CONFIGURATION-DECISION-SYNC-001-acceptance.json",
+    "bytes": 2020,
+    "sha256": "d66ddd54efd5d00312066f3c47e30f09912536301565c076d89ea973a86d366c"
+  }
+}

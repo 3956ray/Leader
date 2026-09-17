@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP0-PRODUCT-SYNC-001",
+  "owner": "product_manager",
+  "checkpoint": "CP0",
+  "status": "accepted",
+  "goal": "把用户批准的开发时序调整写入产品知识库，使当前 PRD 继续作为范围基线，同时允许在 CP0 完整实机审计前开始可逆开发。",
+  "report": "orchestration/reports/CP0-PRODUCT-SYNC-001.md"
+}
+

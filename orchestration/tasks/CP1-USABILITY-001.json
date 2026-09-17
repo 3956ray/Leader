@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-USABILITY-001",
+  "owner": "user",
+  "checkpoint": "CP1",
+  "status": "rejected",
+  "goal": "使用当前合成 APK 完成 CP1 父亲可用性验证，确认五项任务至少四项无需协助、正常路径不超过三步且下一步按钮清楚。",
+  "report": "orchestration/reports/CP1-USABILITY-001.md"
+}

@@ -1,0 +1,22 @@
+{
+  "RESULT": "PASS",
+  "private_files_rehashed": 88,
+  "ledger_records": 16,
+  "metadata_parts": 59,
+  "requests": 1,
+  "body_files": 1,
+  "decoded_bytes": 11358,
+  "blob_raw_bytes": 15935,
+  "total_raw_bytes": 2760521,
+  "stop_reason": "edge_unclosed_literal",
+  "fixed_point": false,
+  "no_successor_authorization": true,
+  "stop_line": 183,
+  "natural_language_apostrophe_confirmed": true,
+  "frozen_file_hashes_verified": 1024,
+  "derived_commit": "9aa40913c57cccd31105ac88385102f0a0758d63",
+  "git_boundary_clean": true,
+  "wire_evidence_limit": "Original blob API JSON/headers unavailable; no independent replay of wire fields. Body identity and ledger independently verified.",
+  "scanner_findings_unchanged": true,
+  "source_verdict": "insufficient_evidence"
+}

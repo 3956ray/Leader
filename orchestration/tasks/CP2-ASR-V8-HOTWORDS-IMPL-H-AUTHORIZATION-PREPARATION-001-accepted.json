@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "prepared_at": "2026-09-06T08:37:31.056222+00:00",
+  "goal": "仅使用已验收已提交的第一方派生身份记录，准备最后一个impl.h单文件正文及局部静态审查的精确pending授权请求。",
+  "baseline_commit": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-V8-HOTWORDS-CONSUMER-DECISION-SYNC-001-acceptance.json",
+    "bytes": 1189,
+    "sha256": "4748b05901d8b8029340854b8315da1f959a89ac4f23fa492dfd6c050b0b817c"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+    "bytes": 13812,
+    "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8"
+  },
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer-impl.h"
+  },
+  "scope": [
+    "只搜索/读取既有acceptedcommitted第一方派生manifest/identity里唯一candidate记录，核对正式历史验收、Git提交内原字节及path/commit/tree/blob/mode/type/精确size。不得读取历史body/rawmetadata或联网补身份；缺一项则blocked。",
+    "若身份可核验且size<=262144，新增pending JSON+Markdown绑定合同/formaldecision/完整对象/一次GET无retryredirectmetadata/精确size/64uniquelines4096visiblebytes/用途/全部停止条件与已替换的完整正式授权句。请求不产生authority。",
+    "未来只审Create(config)定义与直接配置处理/selector/I/O和委派；声明/缺失/再次委派/超可见预算/需第二依赖即停止并永久结束热词逐文件链，一切结果回产品门。禁止include/symbol/.cc/FileExists/具体recognizer/第三文件追踪。准备完成独立核验后展示请求，等待新的用户批准。"
+  ],
+  "out_of_scope": [
+    "不读任何body/private/rawmetadata/scannercontext/旧run，不执行候选/controller/scanner/网络/获取/构建/测试。",
+    "不改product/frozenpolicy/schema/工具/旧run，不新authority/v9/clearance/模型/依赖/实现/集成/Checkpoint。"
+  ],
+  "acceptance": [
+    "精确身份来自acceptedcommittedderived记录并独立复核，或明确authorization_request_preparation_blocked；无raw/新metadata/body/network。",
+    "ready请求正文唯一、预算/可见范围/最终停止/正式授权句准确且无占位，批准前没有创建获取authority。"
+  ],
+  "evidence_required": [
+    "来源path/bytes/SHA/Gitcommitblob/字段指针和验收引用、独立复核；完整pendingJSON/MD或blocked报告。",
+    "productHEAD/clean不变，明确未验证正文和未来响应。"
+  ],
+  "stop_conditions": [
+    "身份缺失/不一致或需要rawmetadata/body/network即blocked，不推断不补取。",
+    "任何扩大对象/预算/可见范围/追踪第三文件或创建authority即停止。"
+  ],
+  "started_at": "2026-09-06T08:37:31.246766+00:00",
+  "completed_at": "2026-09-06T08:41:12.288105+00:00",
+  "result": "authorization_request_ready_for_product_lead",
+  "accepted_at": "2026-09-06T08:41:12.288105+00:00",
+  "acceptance_report": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-acceptance.json",
+    "bytes": 2800,
+    "sha256": "74c22960fc356fdd18a629e1c867e1b4661b0a2d47afc66e1df01e1174574b51"
+  }
+}

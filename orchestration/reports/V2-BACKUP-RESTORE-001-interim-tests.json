@@ -1,0 +1,33 @@
+{
+  "status": "interim developer tests; not final acceptance",
+  "reports": [
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/app/build/test-results/testDebugUnitTest/TEST-com.example.thinkv2.backup.BackupCodecTest.xml",
+      "sha256": "afb6b5a3e2fa527654b2d8370a5d280552eabb579eacc740586c5baa70c056b7",
+      "suite": {
+        "name": "com.example.thinkv2.backup.BackupCodecTest",
+        "tests": "10",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-09-15T18:48:32.979Z",
+        "hostname": "OrderlyRaydeMBP",
+        "time": "0.013"
+      }
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/app/build/test-results/testDebugUnitTest/TEST-com.example.thinkv2.backup.BackupRepositoryTest.xml",
+      "sha256": "80864f6f91f2772233ba504e0d018696d39d79c20c5101d456ca314410403827",
+      "suite": {
+        "name": "com.example.thinkv2.backup.BackupRepositoryTest",
+        "tests": "10",
+        "skipped": "0",
+        "failures": "0",
+        "errors": "0",
+        "timestamp": "2026-09-15T18:48:31.715Z",
+        "hostname": "OrderlyRaydeMBP",
+        "time": "1.261"
+      }
+    }
+  ]
+}

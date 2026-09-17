@@ -1,0 +1,31 @@
+{
+  "verdict": "accepted",
+  "checks": {
+    "identity": true,
+    "explicit_mode_three_intents": true,
+    "safe_persistence_and_stale_guards": true,
+    "real_engine_and_ui_evidence": true,
+    "independent_host": true,
+    "privacy_boundary_and_dependencies": true,
+    "clean_git": true,
+    "general_quality_gap_retained": true
+  },
+  "evidence": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/V2-VOICE-CONTROLS-001-review.md",
+      "sha256": "2e6f1e6c25d15c1e9f70e53b9127fd79d657f4e073c74b726ebd5d4d144b1f7a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/V2-VOICE-CONTROLS-001-independent-host.json",
+      "sha256": "5c0f199183f7641e8389d038e7346c956d373c69cf8e49a1ec90c4913484f776"
+    },
+    {
+      "path": "/private/tmp/thinkv2-V2-VOICE-CONTROLS-001-ee161236/result.json",
+      "sha256": "5d666d11fe2d14b3290218efe239b9ea1a481c7eff977585da564a65f2a35251"
+    },
+    {
+      "path": "/private/tmp/thinkv2-V2-VOICE-CONTROLS-001-ee161236/evidence/manifest.json",
+      "sha256": "b02b7cea6406bf1ad9f4fa76863df728202687a72f434d3835d682caa26acfa6"
+    }
+  ]
+}

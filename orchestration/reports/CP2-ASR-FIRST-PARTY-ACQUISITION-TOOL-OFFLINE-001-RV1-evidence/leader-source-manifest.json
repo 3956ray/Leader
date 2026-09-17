@@ -1,0 +1,20 @@
+{
+  "SCHEMA.md": "88c2ad0775293ffb5072b5546e165595f6f9fc5502b6ee4c1aea726d36e2b763",
+  "audit.py": "7298fb1413fd3c891a9468b9f769bd089686ddefdc3dac060721bb8bee4807e0",
+  "fixtures/basic.json": "35df9fe193fcc846be59d71b8a3ea80ef439b27e5fee01867660eeccc83bf1d7",
+  "network_guard.py": "b9bcd4595be610063d8401d8b90f1871d6b402edc2d278ec3f03f0e5c178a33c",
+  "offline_review/acquisition.py": "b77191f2232e22ef000c8d9d5818b240622f0ae8d5de9bfdb7331573d0c6821a",
+  "offline_review/adapter.py": "5b04e61b8bfc2becfeb0151fd4b7f72c554812efb1a61df7d0e0af667ed15b9a",
+  "offline_review/controller.py": "6d754dbdea5f1e52554f33cc996ae35dbe46c77370c2b19f1506db33d284c3fb",
+  "offline_review/parser.py": "6af0e2aee0dd21ab0f68882f899c23fda77aefd279f6f485887fe2b15d28bf0b",
+  "offline_review/policy.py": "7a77ab9f490a8de8464c0fd4bf2deaf4ec145b76be11f85254b58ee33728c45c",
+  "offline_review/protocol.py": "10cb8a7d77a946eddc4379c82ffdfad4d7adeebc18c97b14718395f8eb435dc5",
+  "offline_review/storage.py": "96ec515150af6a5e01dd3e9b27a48fe5b1374bb6b966b22c2e8304b82b099d1f",
+  "offline_review/transport.py": "fc295c92eebc194d375a575c27e09f833e134559b9bd7f65bd98b050f0158d98",
+  "recalculate.py": "386d4095ad8ba0193989c03863a1bcacf0bad38ad4c7efb78b0ef5e1e98c040d",
+  "tests/acquisition_support.py": "870fe8ba2d0b77af014041e83f28708551b73813fae4e8d20ebc4633ef95a4dd",
+  "tests/support.py": "ae6e17a3649cd70f96cd5b36b6f0d362a9882b3f62cf468bb5286783bea62646",
+  "tests/test_acquisition.py": "2d8336d22b0242d86f138f081782ea4da4e7a6a07ebb658668f5eef7ca949da1",
+  "tests/test_behavior.py": "7079c9ff83dfd2afdaccf02befe450d4eb643f43026574562e8c6e95ca6d485f",
+  "verify.py": "f1a121459bb2565d1193cefaec8bfb35fa7f0ba3a1bdc6ac1e349376fbe2d156"
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-UI-003",
+  "owner": "developer",
+  "checkpoint": "CP1",
+  "status": "accepted",
+  "goal": "补齐 CP1 确认页的“继续按住补充”合成交互，使第二段内容追加而不覆盖原正文，并可取消补充。",
+  "commit": "391ca701bdbfeb2989b9abefd357397e1b06daa0",
+  "report": "orchestration/reports/CP1-UI-003.md"
+}

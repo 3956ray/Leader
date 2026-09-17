@@ -1,0 +1,90 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "RESULT": "PASS",
+  "verified_at": "2026-09-06T09:00:08.714604+00:00",
+  "private_inventory": [
+    {
+      "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/acquisition-terminal.json",
+      "bytes": 1361,
+      "sha256": "17824f6c5fd5a3797970512597139e712f5d7b5cc7b3a06b16042bc197c77f8e",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/attempt-consumed.json",
+      "bytes": 253,
+      "sha256": "43b709f732d340a78d36734ee6a528bfe5e5d6926f19d934e9628eab413ec47c",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/online-recognizer-impl.h",
+      "bytes": 2286,
+      "sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/response.json",
+      "bytes": 3434,
+      "sha256": "09cac6edf243c8c964ad3dcfbb3918470eb90bb186589f2cf7d390d650898ca2",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/scanner/scan-report.json",
+      "bytes": 1193,
+      "sha256": "8fb0dc3f4ea8abdda618d7aed90826deac47b484a9e207892935897fd208ef45",
+      "mode": "0600",
+      "nlink": 1
+    },
+    {
+      "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/scanner/scan-report.md",
+      "bytes": 1542,
+      "sha256": "c0cdbbbcf75fc91d20561e64b603837f44458071bff333307c59ed45dbb2f67a",
+      "mode": "0600",
+      "nlink": 1
+    }
+  ],
+  "file_count": 6,
+  "total_bytes": 10069,
+  "terminal": {
+    "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/acquisition-terminal.json",
+    "bytes": 1361,
+    "sha256": "17824f6c5fd5a3797970512597139e712f5d7b5cc7b3a06b16042bc197c77f8e"
+  },
+  "scanner": {
+    "report": {
+      "path": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e/scanner/scan-report.json",
+      "bytes": 1193,
+      "sha256": "8fb0dc3f4ea8abdda618d7aed90826deac47b484a9e207892935897fd208ef45"
+    },
+    "verdict": "low_indicators",
+    "score": 0,
+    "stats": {
+      "candidates": 1,
+      "text_files": 1,
+      "binary_files": 0,
+      "skipped_large": 0,
+      "skipped_limit": 0,
+      "unreadable": 0,
+      "archives": 0
+    }
+  },
+  "visible_unique_lines": 3,
+  "visible_bytes": 129,
+  "checks": [
+    "Allprivatefiles regular0600singlelink; directories0700; identityhashes inventoried.",
+    "Single response decodes to exact2286B body withfixed SHA256/Gitblob; endpoint,marker andterminal1GET0retry0redirect0metadata verified.",
+    "Bothvisible slices byte-for-byte andline/bytehashes matchbody; cumulative3lines129B <=64lines4096B. No extra source displayed during verification.",
+    "Scanner on original.h completes1text0binary0skipped0unreadable0findings; no alias or second invocation needed.",
+    "ProductHEAD/clean unchanged; no implementation, thirdparty execution or dependency/model changes."
+  ],
+  "product_HEAD": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "product_clean": true,
+  "limits": [
+    "Count backed by reviewed firstpartyhandler and terminal, not independent packet capture.",
+    "Verification reads fixed body bytes as data but shows only alreadyapproved3line excerpts; no additional semantic review.",
+    "No full-file/runtime/selector/buffer behavior or license/provenance/model/device conclusion."
+  ]
+}

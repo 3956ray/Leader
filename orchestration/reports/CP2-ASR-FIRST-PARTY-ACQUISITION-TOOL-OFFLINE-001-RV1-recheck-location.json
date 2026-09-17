@@ -1,0 +1,23 @@
+{
+  "path": "/private/tmp/think-leader-v3-rv1-_r4g8ho3",
+  "files": {
+    "SCHEMA.md": "47ed66266f6c5104fc02733fb211195349d50796756c51722cee84b2e7526d4e",
+    "audit.py": "7298fb1413fd3c891a9468b9f769bd089686ddefdc3dac060721bb8bee4807e0",
+    "fixtures/basic.json": "35df9fe193fcc846be59d71b8a3ea80ef439b27e5fee01867660eeccc83bf1d7",
+    "network_guard.py": "b9bcd4595be610063d8401d8b90f1871d6b402edc2d278ec3f03f0e5c178a33c",
+    "offline_review/acquisition.py": "569464429ef4d57df7b8ac0f3fcfa3d16e32b94f3890ba39efd408ed3833b399",
+    "offline_review/adapter.py": "5b04e61b8bfc2becfeb0151fd4b7f72c554812efb1a61df7d0e0af667ed15b9a",
+    "offline_review/controller.py": "02e5ab73d2c38fd25905b13cd96fee2d8b8bbfc11bee18d89dcf9488b8857634",
+    "offline_review/parser.py": "6af0e2aee0dd21ab0f68882f899c23fda77aefd279f6f485887fe2b15d28bf0b",
+    "offline_review/policy.py": "7a77ab9f490a8de8464c0fd4bf2deaf4ec145b76be11f85254b58ee33728c45c",
+    "offline_review/protocol.py": "559bfee9e62b046aab9abb4ae99b2bdab33bd53a382fa300ac0521120e3853ee",
+    "offline_review/storage.py": "24349ba89940bb9e0ed101c6ea71925f0bf7659c439d3c1ac6eff0d83bb812a0",
+    "offline_review/transport.py": "fc295c92eebc194d375a575c27e09f833e134559b9bd7f65bd98b050f0158d98",
+    "recalculate.py": "b94e80f1374589a69becadfdbb258ad5fc1fff1b3ccbb8ddd8aee3b9a44b47c4",
+    "tests/acquisition_support.py": "870fe8ba2d0b77af014041e83f28708551b73813fae4e8d20ebc4633ef95a4dd",
+    "tests/support.py": "ae6e17a3649cd70f96cd5b36b6f0d362a9882b3f62cf468bb5286783bea62646",
+    "tests/test_acquisition.py": "e319421289366b27df348b40e79b9cbaa0e7db8d07ac15f25e844b7a01e74ed7",
+    "tests/test_behavior.py": "7079c9ff83dfd2afdaccf02befe450d4eb643f43026574562e8c6e95ca6d485f",
+    "verify.py": "3221bb863258680a0379367165b7e623b06f4ed3641a804c56777863efc8eed8"
+  }
+}

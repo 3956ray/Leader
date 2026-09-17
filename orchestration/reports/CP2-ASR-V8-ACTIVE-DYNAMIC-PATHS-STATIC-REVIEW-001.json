@@ -1,0 +1,512 @@
+{
+  "task_id": "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001",
+  "RESULT": "active_paths_review_complete_for_product_decision",
+  "reviewer": "Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4",
+  "reviewed_at": "2026-09-06T06:01:31.690803+00:00",
+  "task": {
+    "path": "/Users/orderly_ray/Leader/orchestration/tasks/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001.json",
+    "bytes": 5635,
+    "sha256": "cb860d758144c7c101886ac6319169439646ff92bb816dfb63378f7fb5bdc641"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hard-stop-next-step-decision-2026-09-06.md",
+    "bytes": 10980,
+    "sha256": "2b099d1ec9a21c39969a7987453b32bf81068a0f8fb3256fdf63fb905439511d"
+  },
+  "user_approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001-approved.json",
+    "bytes": 2016,
+    "sha256": "694c69bc465663cb2a8ba58e21c9757d131d6135956a92df00ed78f997979c81"
+  },
+  "approved_request": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+    "bytes": 19883,
+    "sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b"
+  },
+  "authorization_basis": "Approved request /execution_protocol/4 permits independent static review of only new retained bounded evidence; this is not another acquisition attempt.",
+  "source": {
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer.h",
+    "git_type": "blob",
+    "git_mode": "100644",
+    "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+    "body_bytes": 7939,
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+    "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+    "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+  },
+  "occurrences": [
+    {
+      "identity": {
+        "source": {
+          "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+          "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "git_type": "blob",
+          "git_mode": "100644",
+          "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+          "body_bytes": 7939,
+          "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+          "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+          "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+          "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+        },
+        "line": 15,
+        "start": 404,
+        "end": 411,
+        "kind": "active",
+        "raw_token": "decoder",
+        "token_sha256": "c9fbd9152b7ff1375f060ed14c4fac7b6be8709b34cd20c2aeaf8962b100c1ad",
+        "carrier": "string_literal",
+        "line_start": 362,
+        "line_end": 422,
+        "physical_line_sha256": "5657993a76acb3a7e3dce0699cbba8b0ff5233f2812cbdae59b80163e5ce7e77",
+        "historical_line_sha256": "dd7e4972a3aaed361c2c4598ad67141c3392667b5714d06fc307243284c27302",
+        "rule": "dynamic_paths",
+        "detector": "path_pattern"
+      },
+      "occurrence_id": "436e1c48297455cf971f026753b9ad02c99db3e5c7fb1567dec3990a93595ff9",
+      "judgment": "locally_nonoperative_but_reachability_unresolved",
+      "basis": "Literal preprocessor include of online-ctc-fst-decoder-config.h; decoder is a substring of the compile-time dependency filename. This line does not perform runtime path concatenation, file reading or dynamic loading. The referenced type is used as a constructor parameter/member, but the dependency contents were not read.",
+      "visible_evidence_lines": [
+        15,
+        141,
+        152
+      ],
+      "unverified_references": [
+        "OnlineCtcFstDecoderConfig definition and any downstream use"
+      ],
+      "operational_authority": false,
+      "clearance": false
+    },
+    {
+      "identity": {
+        "source": {
+          "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+          "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "git_type": "blob",
+          "git_mode": "100644",
+          "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+          "body_bytes": 7939,
+          "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+          "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+          "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+          "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+        },
+        "line": 110,
+        "start": 3577,
+        "end": 3590,
+        "kind": "active",
+        "raw_token": "hotwords_file",
+        "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+        "carrier": "code",
+        "line_start": 3563,
+        "line_end": 3592,
+        "physical_line_sha256": "f63f83cdbff077b64e972de6dabb605ac2f04201bf1cca417f7e84b47228313d",
+        "historical_line_sha256": "384a9523dc40335bcf8b3a2ac36101d34a7501d90f2f72d67c2acb513a4184cb",
+        "rule": "dynamic_paths",
+        "detector": "path_pattern"
+      },
+      "occurrence_id": "d08ce898d8c7eb84a8b875372e4ab94bfc743e0f8aa7d321e2afdf9c4c77fb8f",
+      "judgment": "operative_or_policy_relevant_in_this_body",
+      "basis": "OnlineRecognizerConfig declares a public std::string hotwords_file member. It exposes a configurable filename slot. Same-type documentation for hotwords_buf describes buffered input replacing file-based hotword loading. This is policy-relevant configuration evidence, not proof that this declaration reads a file or that the app invokes it.",
+      "visible_evidence_lines": [
+        94,
+        109,
+        110,
+        130,
+        131,
+        132,
+        133
+      ],
+      "unverified_references": [
+        "Consumers of OnlineRecognizerConfig::hotwords_file; selection conditions and actual I/O implementation; business-boundary exposure"
+      ],
+      "operational_authority": false,
+      "clearance": false
+    },
+    {
+      "identity": {
+        "source": {
+          "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+          "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "git_type": "blob",
+          "git_mode": "100644",
+          "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+          "body_bytes": 7939,
+          "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+          "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+          "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+          "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+        },
+        "line": 143,
+        "start": 4756,
+        "end": 4769,
+        "kind": "active",
+        "raw_token": "hotwords_file",
+        "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+        "carrier": "code",
+        "line_start": 4705,
+        "line_end": 4771,
+        "physical_line_sha256": "d1c7b7ab5b385d80614363bdebf2262d11970babfb711dfabc3d0405a8fa3c41",
+        "historical_line_sha256": "5ed1b84ff24e585e26c7e484b50313670caec60a8f27aaf7fb1ce08fe35125a2",
+        "rule": "dynamic_paths",
+        "detector": "path_pattern"
+      },
+      "occurrence_id": "02a19a60630639bd6fe3e623602ed8cbb1f925368f6a177db28ad8a91f7a6545",
+      "judgment": "operative_or_policy_relevant_in_this_body",
+      "basis": "OnlineRecognizerConfig constructor accepts const std::string &hotwords_file. The same constructor copies that input into the member on line156; the header therefore directly exposes and stores a caller-provided configuration value. The constructor body is empty; no file-loading call is shown here.",
+      "visible_evidence_lines": [
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ],
+      "unverified_references": [
+        "Callers supplying this argument; downstream consumers and optional-feature disabling; boundary enforcement"
+      ],
+      "operational_authority": false,
+      "clearance": false
+    },
+    {
+      "identity": {
+        "source": {
+          "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+          "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "git_type": "blob",
+          "git_mode": "100644",
+          "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+          "body_bytes": 7939,
+          "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+          "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+          "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+          "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+        },
+        "line": 156,
+        "start": 5350,
+        "end": 5363,
+        "kind": "active",
+        "raw_token": "hotwords_file",
+        "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+        "carrier": "code",
+        "line_start": 5342,
+        "line_end": 5380,
+        "physical_line_sha256": "4381a67a1fbb9ea0d0f640fdc5c2202cb0e4c7d5882bc0018fe4b7c5d81d0dc8",
+        "historical_line_sha256": "b000a7b984520b24459fc9537bfb1e39b5fa0f347e76b86e1485bf88691ab892",
+        "rule": "dynamic_paths",
+        "detector": "path_pattern"
+      },
+      "occurrence_id": "91eec69adde199f7b606428d1fa8e4fde3d5775aa472645d6f7b5d5599dc0edc",
+      "judgment": "operative_or_policy_relevant_in_this_body",
+      "basis": "The first token is the member-initializer target OnlineRecognizerConfig::hotwords_file. The parenthesized argument is copied into this string member by the inline constructor. This is actual local value propagation if constructed, not evidence of actual I/O or dynamic loading.",
+      "visible_evidence_lines": [
+        110,
+        143,
+        156,
+        164
+      ],
+      "unverified_references": [
+        "Consumers of the stored value; caller reachability and configuration constraints"
+      ],
+      "operational_authority": false,
+      "clearance": false
+    },
+    {
+      "identity": {
+        "source": {
+          "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+          "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "git_type": "blob",
+          "git_mode": "100644",
+          "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+          "body_bytes": 7939,
+          "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+          "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+          "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+          "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+        },
+        "line": 156,
+        "start": 5364,
+        "end": 5377,
+        "kind": "active",
+        "raw_token": "hotwords_file",
+        "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+        "carrier": "code",
+        "line_start": 5342,
+        "line_end": 5380,
+        "physical_line_sha256": "4381a67a1fbb9ea0d0f640fdc5c2202cb0e4c7d5882bc0018fe4b7c5d81d0dc8",
+        "historical_line_sha256": "b000a7b984520b24459fc9537bfb1e39b5fa0f347e76b86e1485bf88691ab892",
+        "rule": "dynamic_paths",
+        "detector": "path_pattern"
+      },
+      "occurrence_id": "d7d6cbabe63be076721b30fde9dec6fd85a332c3c9d897aca33fd8af5fed3a2d",
+      "judgment": "operative_or_policy_relevant_in_this_body",
+      "basis": "The second token is the constructor parameter used as the member-initializer source. It forwards the caller-supplied string to the filename member. Its separate byte interval identifies a different occurrence from the target despite identical token spelling.",
+      "visible_evidence_lines": [
+        110,
+        143,
+        156,
+        164
+      ],
+      "unverified_references": [
+        "Actual argument provenance and consumers; whether the approved handle boundary ever exposes it"
+      ],
+      "operational_authority": false,
+      "clearance": false
+    },
+    {
+      "identity": {
+        "source": {
+          "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+          "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "git_type": "blob",
+          "git_mode": "100644",
+          "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+          "body_bytes": 7939,
+          "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+          "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+          "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+          "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+        },
+        "line": 64,
+        "start": 2139,
+        "end": 2146,
+        "kind": "new_comment",
+        "raw_token": "decoder",
+        "token_sha256": "c9fbd9152b7ff1375f060ed14c4fac7b6be8709b34cd20c2aeaf8962b100c1ad",
+        "carrier": "line_comment",
+        "line_start": 2097,
+        "line_end": 2171,
+        "physical_line_sha256": "9fd037da6ef494ffba223ebd39de2f8dd06d09d4a3f301b34033d87fc1cc00ed",
+        "historical_line_sha256": "30be15bbe3b0bc93b541b19120a57ca5a0c9b04cd45e04c3183c5c5c9b8d7162",
+        "rule": "dynamic_paths",
+        "detector": "path_pattern"
+      },
+      "occurrence_id": "c20cb802f856aea82dd5666be1faa1051c94c5a8e53042aaba4d3838e3d04734",
+      "judgment": "comment_only_nonoperative_for_this_body",
+      "basis": "The token decoder occurs in a terminated documentation line comment describing trailing blank-frame state in OnlineRecognizerResult. The continued sentence concerns decoder output-frame accounting/reset behavior. These comment bytes perform no operation; no runtime or decoder implementation conclusion follows.",
+      "visible_evidence_lines": [
+        24,
+        64,
+        65,
+        66,
+        67,
+        68
+      ],
+      "unverified_references": [
+        "Implementations of the documented result field remain unreviewed; no clearance issued"
+      ],
+      "operational_authority": false,
+      "clearance": false
+    },
+    {
+      "identity": {
+        "source": {
+          "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+          "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "git_type": "blob",
+          "git_mode": "100644",
+          "blob": "a4559f413cae739f055509a01d5684879e4a626c",
+          "body_bytes": 7939,
+          "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+          "current_envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+          "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+          "accepted_acquisition_commit": "393640b8a6825a9a0b42c479949646e1914da199"
+        },
+        "line": 132,
+        "start": 4297,
+        "end": 4310,
+        "kind": "new_comment",
+        "raw_token": "hotwords_file",
+        "token_sha256": "467188abfdb48f631e416a71ee2ec40f99241d4e2049958c0582bb8984400b7c",
+        "carrier": "line_comment",
+        "line_start": 4290,
+        "line_end": 4312,
+        "physical_line_sha256": "5383a9c0fa36267a2ee41c4dc41f7b4b178d3492302fc23bf794a18e4006dd49",
+        "historical_line_sha256": "b4276d09f49a873f7e08d73501c83445886e4af6b3e7a3e25ed5e4533e39cc8e",
+        "rule": "dynamic_paths",
+        "detector": "path_pattern"
+      },
+      "occurrence_id": "7f1cb2415afa7cfe9f588cf336a715497231abf24cc0db107f7a95ecb0b06143",
+      "judgment": "comment_only_nonoperative_for_this_body",
+      "basis": "The quoted hotwords_file token belongs to a terminated documentation line comment. With lines130-133 it describes preferring buffered hotwords over file-based input when the buffer is nonempty. Comment bytes do not execute, but their documented configuration meaning is policy-relevant and supports retaining the active-field stop.",
+      "visible_evidence_lines": [
+        130,
+        131,
+        132,
+        133
+      ],
+      "unverified_references": [
+        "Implementation of the documented buffer-versus-file selection is not present in inspected local context"
+      ],
+      "operational_authority": false,
+      "clearance": false
+    }
+  ],
+  "read_receipts": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read-1.json",
+      "bytes": 6019,
+      "sha256": "a4652f24145a9811f701d100c8f88ccfca73126997043bf08c74e8318081c947"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read-2.json",
+      "bytes": 10360,
+      "sha256": "e77d8ebe5c6c9413249b032fb02ce614aea04427becfe88ee6e8dc0600ccf335"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read-3.json",
+      "bytes": 8664,
+      "sha256": "57bae517a62442ac3eb5bd24feaf129256bbc005188e1166f607e6c0cc97e57f"
+    }
+  ],
+  "trusted_scripts": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read.py",
+      "bytes": 5295,
+      "sha256": "4919c35f23babbe012c7e936c90ffe9b94c964f24d2203f4ab2ec732773e8860"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-context.py",
+      "bytes": 1458,
+      "sha256": "6f2610e89439713653daaa45b240de2fd8d422b71b5a33ac5ce3eef8ac058a0f"
+    }
+  ],
+  "unique_retained_files": [
+    "/private/tmp/think-acquisition-v8-quarantine-3_hb53be/source_v8_once/body-0002.json"
+  ],
+  "reads": 3,
+  "human_visible_lines": [
+    15,
+    22,
+    24,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    94,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166
+  ],
+  "human_visible_bytes_unique": 2294,
+  "read_scope_explanation": "Initial six target lines, followed by target comment continuation, filename-member declaration documentation, complete local constructor and its smallest enclosing namespace/type anchors. Blank/boundary lines69 and166 were visible with this local context but supply no reachability conclusion. No complete header or other body was displayed or exported.",
+  "local_data_flow": [
+    {
+      "from": "constructor parameter hotwords_file",
+      "to": "OnlineRecognizerConfig::hotwords_file",
+      "operation": "member initialization",
+      "line": 156,
+      "runtime_executed_in_review": false
+    },
+    {
+      "from": "hotwords_buf parameter",
+      "to": "OnlineRecognizerConfig::hotwords_buf",
+      "operation": "member initialization",
+      "line": 164,
+      "scope": "Directly related documented buffer/file alternative only; actual selector implementation unreviewed"
+    }
+  ],
+  "stop": {
+    "reason": "Policy-relevant filename configuration and constructor propagation explicitly present; no runtime file access proved. Minimal evidence recorded; no engineering or cross-file investigation follows.",
+    "retained_run": "permanently_terminated",
+    "frozen_stop": "denylist_capability",
+    "complete_comment_set_rejection": "manual_complete_matching",
+    "pending_cleared": false,
+    "new_adjudications": 0,
+    "recommendation": "Keep current sherpa-onnx acquisition/adoption route paused under the formal decision. Return these local facts to PM before any possible further investment; do not add comments/map or create v9."
+  },
+  "controls": {
+    "other_body_reads": 0,
+    "new_network_requests": 0,
+    "thirdparty_code_execution": 0,
+    "candidate_scanner_controller_runs": 0,
+    "raw_body_exported": false,
+    "product_repo_modified": false,
+    "old_evidence_modified": false,
+    "new_acquisition_authorized": false
+  },
+  "limitations": [
+    "Local header evidence cannot prove actual file access, dynamic loading, selection execution, optional-path exclusion, downstream behavior or runtime reachability.",
+    "Four policy-relevant active occurrences are a declaration/parameter/member initialization; they do not establish maliciousness or that the future business handle API exposes them.",
+    "The include reference is literal compile-time dependency syntax; its body and implementation are unreviewed. No other file was read.",
+    "Two comment-local labels are descriptive evidence, not signed authority-map clearance; original two-comment map and current complete-set rejection remain unchanged.",
+    "No source/license/runtime/model/P0/device/Checkpoint acceptance;CP1 andConformer Deferred not removed,CP2notpassed,CP3/Alphaunapproved."
+  ]
+}

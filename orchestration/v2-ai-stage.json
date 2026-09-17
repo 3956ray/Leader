@@ -1,0 +1,37 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "V2-AI-SUGGESTIONS-001",
+    "owner": "developer",
+    "checkpoint": "CP5",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Implement configurable opt-in AI title and category suggestions with explicit minimal-data consent, manual acceptance, protected credentials and stale-response safety.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2, clean baseline84f3691f97efaae6e9fdbb7c81405e6525770e38 after accepted CP4. Authoritative approved emulator-first addendum E7 I1-I6 and existing baseline. One CP5 task; no inheritance of old think implementation/evidence.",
+      "I1: Default disabled. Implement endpoint/model/credential configuration, disable and clear. Use Android platform-protected credential storage; no shared hardcoded keys, logs, Git or backup secrets. Clearly document supported request protocol and endpoint form. Missing/invalid/unavailable configuration is honest unavailable state; local title/manual category remain usable.",
+      "I2: Before enable or sending, show supplier/purpose/exact fields and obtain explicit consent; endpoint/provider change invalidates consent. User deliberately requests suggestions for selected current note and can review minimal outgoing text plus needed category candidates. No raw audio, whole database, unrelated source calendar/account metadata, recycled notes or unrelated relations. Imported body includes readable source metadata: make outgoing selection explicit/minimal, do not blindly send the immutable provenance snapshot. No automatic request, fallback provider, account signup or payment.",
+      "I3: Separate title/category proposals allow accept/edit/reject. Never overwrite body or silently change manual title/category. Bind request and response application to recordId, revision and title/category ownership; note switch, edits or obsolete category invalidate affected result. New category remains an explicit user-confirmed proposal, not automatic creation. Persist accepted AI provenance separately from final manual choice as necessary for future backup.",
+      "I4: Real asynchronous request adapter with timeout, request/response size limits, cancellation and duplicate prevention. Record parameters. Disable/cancel invalidates late output and explains sent text cannot be recalled. Offline,429,5xx, malformed/empty/injected responses preserve notes and saving. Strict bounded response structure, no arbitrary action/script/body-replacement execution. Confirmed HTTPS destination and credential boundaries maintained across redirects; no silent host change, permissive TLS or secret-bearing logs.",
+      "I5: Meaningful host and real Android emulator UI tests with clearly labeled synthetic mock service for configuration/consent/outgoing fields, accept/edit/reject, timeout/cancel, stale response, offline/error/invalid content and restart. Product transport is real, mock is evidence only for controlled adapter behavior. Real provider request only if user has actually configured and authorized a test endpoint; currently no such endpoint/credential/consent supplied. Never search other projects/secrets or acquire keys. Track provider_verified=false if unavailable; do not block independent engineering or claim real AI quality.",
+      "Preserve notes/drafts/categories/recycle/reminders/calendar/voice behavior and IDs. Necessary schema migration must be safe. Document current backup exclusions for newly persisted provenance/settings; do not silently expand backup schema. Credentials and temporary suggestions never exported; final CP8 remains separately pending. Add INTERNET only as necessary for explicitly enabled AI path; offline local features stay functional. Prefer current/platform dependencies; any new object requires existing safety gate.",
+      "I6: Xiaomi15, user real-service configuration and family testing remain final phase. Provide usable configuration/request/acceptance feature now, plus accurate real-provider condition list. No placeholder AI labeled working, no rule-based fallback marketed as model inference."
+    ],
+    "out_of_scope": [
+      "No voice candidate/quality/control work, relations implementation, full-feature backup format change, account/sync/payment/public publishing, cloud ASR, Flutter/KMP or private-device access. No new independent developer task.",
+      "No private note transmission or real service request without actual user configuration and testing consent. Do not read unrelated local credentials. No automatically enabled AI or whole-library processing."
+    ],
+    "acceptance": [
+      "I1-I4 and configuration/request adapter UI complete with meaningful host and Android synthetic-service evidence; enabled sending requires accurate consent and user request; disable/default-off and manual workflows preserved.",
+      "I5 actual-provider condition explicitly classified: unavailable configuration leaves provider_verified=false and exact gap. Controlled mocks never prove real AI quality or provider compatibility beyond tested protocol. Engineering result and external service gap reported separately; no full-App completion.",
+      "Migration, cancellation/staleness/error/secret handling evidence and affected local-feature regressions pass; standard offline build/lint pass; no unknown dependency, no unrelated source modifications.",
+      "Exact final commit/clean state/APK hashes, reproducible sanitized test evidence and I1-I6 matrix; Xiaomi/family/backup obligations explicit."
+    ],
+    "evidence_required": [
+      "ACK exact task/attempt/contract/baseline. Completion RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED with separate engineering and provider_verified status; file purposes; tests/commands/results; captured synthetic request fields and consent/secret/stale/error tests; I1-I6 mapping; final Git/APK/dependency identities; limitations and one proposed next step then stop. No credentials or personal text in evidence."
+    ],
+    "stop_conditions": [
+      "One CP5 task only; do not begin relations, voice or CP8 work. Stop after delivery and notify commander. Do not overwrite unidentified changes.",
+      "Stop affected action for unauthorized network data/credential disclosure, unknown dependency, destructive migration or actual product/privacy boundary change; report evidence and preserve safe independent progress. Missing real-provider credentials is a documented external validation gap, not permission to fake output or obtain credentials."
+    ]
+  }
+}

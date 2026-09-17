@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-MINIMAL-SOURCE-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "由 Product Lead 明确决定是否授权建立新的 sherpa-onnx allowlist 最小源码快照，仅用于静态安全审查。",
+  "decision": "AUTHORIZED",
+  "accepted_at": "2026-09-05T13:09:53+08:00",
+  "report": "orchestration/reports/CP2-ASR-MINIMAL-SOURCE-AUTHORIZATION-001.md"
+}

@@ -1,0 +1,38 @@
+{
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001",
+  "RESULT": "REVISE",
+  "scope": "Independent internal hard-filter/evidence consistency review of the three specified first-party research documents and the task contract only.",
+  "reviewed_sha256": {
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-evidence-cards-2026-09-06.md": "6ef05df2979fe6e95b07e1979bf2fe03bab7b99cfdb5856397fdb46dfde1de3c",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-comparison-matrix-2026-09-06.md": "a879822153d0760ca82b6935b3b56442595cc6ea30b3ea1284962381b76fedec",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-research-memo-2026-09-06.md": "ec1cd583f0be420433992bdf9f5de574e693783702768a6a2dff7e440d0d361e",
+    "/Users/orderly_ray/Leader/orchestration/tasks/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001.json": "c366ec299682dd96031d04a373da63978cbe12871c5f2af7c645c2f288049f4e"
+  },
+  "acceptance_findings": [
+    {
+      "id": "hard_filter_evidence_not_established_for_second_qualifier",
+      "severity": "blocking_current_sufficient_claim",
+      "locations": ["evidence-cards:120-126", "comparison-matrix:37-43", "research-memo:18-20"],
+      "contract": "Task /scope/4 and /acceptance/1 require official evidence for all shortlist hard conditions and research_insufficient if fewer than two qualify.",
+      "finding": "The report directly supports an Android on-device ONNX runtime and a Chinese ONNX ASR model. Its combination card then marks no mandatory raw-audio cloud upload as Inferred and expressly leaves the core processing chain's local operation unestablished, with any mandatory cloud component deferred to future intake. Nevertheless the hard-filter table marks offline/no-cloud PASS and the memo counts this as the second qualifying candidate. The presented evidence chain does not explain why its admitted gap is outside the mandatory core condition, so the current sufficient result is unsupported.",
+      "calibration": "An Inferred label alone is not disqualifying. Component reasoning can be legitimate when documented premises support the particular core local recognition path and absence of a mandatory remote audio dependency. This review does not require research to prove every preprocessing implementation, optional punctuation/long-audio component, PCM buffer lifetime, arm64 package, supply-chain closure or device result. Those may remain explicit implementation/intake unknowns. It does require that the hard-condition PASS not rely on an unresolved essential premise or a future design proposal.",
+      "minimum_revision": "Either substantiate the core offline/no-mandatory-cloud conclusion from already-budgeted official evidence and state the bounded inference precisely, or mark these hard conditions unestablished and do not count the combination as qualified. A conditional research hypothesis may remain in the matrix, but QUALIFIED WITH CONDITIONS cannot waive a missing hard condition. Recalculate the shortlist and overall result after all evidence corrections; if fewer than two qualify, use research_insufficient. No new architecture implementation or product-route decision is required."
+    }
+  ],
+  "leader_source_correction_to_integrate": {
+    "locations": ["evidence-cards:148-154", "comparison-matrix:28,44", "research-memo:50"],
+    "supplied_fact": "Leader reports that the already-budgeted OpenAI Whisper official README explicitly identifies both code and model weights as MIT licensed.",
+    "implication": "Once Leader pins that source observation, the report cannot continue to describe model-weight license identification as absent. Separate the identified model license from still-unverified exact artifacts, converted-weight provenance, notice compliance and eventual redistribution review. The research contract asks for identifiable runtime/model license and source, not completed artifact/legal intake; apply that same threshold used for Vosk and the ORT model label.",
+    "limit": "This subreview did not open the official README and does not independently verify the quoted source fact. Correcting licensing does not automatically establish the separate Chinese-evidence condition or qualify whisper.cpp; those require their own evidence-based reassessment."
+  },
+  "preserved_valid_boundaries": [
+    "The documents distinguish documentation claims from unperformed device tests, keep research recommendations separate from acquisition/intake/adoption authorization and retain privacy, vocabulary and Checkpoint constraints.",
+    "No blanket judgment that ORT/SenseVoice cannot operate locally or that whisper.cpp lacks Chinese/buffer support is warranted. The finding concerns current evidence and acceptance wording, not technical impossibility or a product-route selection.",
+    "Incomplete extraction does not by itself invalidate a clearly captured official model/license statement, provided it is accurately attributed and auditable. No full implementation closure is demanded merely because a candidate is a component combination."
+  ],
+  "limitations": [
+    "Only the specified four first-party documents were read. No browsing, new pages, candidate source, private/raw material, artifact acquisition or execution occurred; no knowledge-base file was modified.",
+    "Actual official-page statements, Chinese model coverage, license scope and page-visit history were not independently revalidated here. The Whisper correction is explicitly supplied by Leader's parallel source verification.",
+    "This report does not select candidates, revise the product route, authorize intake or require a larger research budget. Research can be accepted as an honest insufficient result once its evidence and count agree."
+  ]
+}

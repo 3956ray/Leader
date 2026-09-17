@@ -1,0 +1,30 @@
+{
+  "RESULT": "PASS",
+  "commit": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "parent": "534e416b989698589bfb511332b3b0af2de4f185",
+  "tree": "2797686abaf25028545e7a9d764b8a827e207560",
+  "files_verified": 41400,
+  "modified_files": [
+    "tools/asr_review_acquisition_v7/README.md",
+    "tools/asr_review_acquisition_v7/SCHEMA.md",
+    "tools/asr_review_acquisition_v7/offline_review/controller.py",
+    "tools/asr_review_acquisition_v7/offline_review/manual.py",
+    "tools/asr_review_acquisition_v7/provenance.json",
+    "tools/asr_review_acquisition_v7/recalculate.py",
+    "tools/asr_review_acquisition_v7/tests/manual_support.py",
+    "tools/asr_review_acquisition_v7/tests/test_manual_intake.py",
+    "tools/asr_review_acquisition_v7/v6-to-v7.diff"
+  ],
+  "new_files": 25462,
+  "manifest_sha256": "b02dbd9d9f9c34e73fbef20d3b57d899d167b8690aba1fe1b44f00c84fb2c71e",
+  "collection_sha256": "878e2d4d7d007e700b4d75684ec0dcb19e359e11f1d148b048edd865c7caa847",
+  "old_evidence_unchanged": 15908,
+  "old_evidence_method": "opaque exact-byte Git blob verification; no old scanner context decoded",
+  "bundle_sha256": "198c24c66a3e82117828e9eacfa333b4dde8eb19949c7425b8a81b839399553e",
+  "scan_inputs_verified": 25482,
+  "raw_scan_verdict": "sandbox_only",
+  "scan_contexts_rehashed": 751,
+  "worktree_clean": true,
+  "isolated_first_party_copy": "/private/tmp/think-leader-v7r1-u8z3uez7",
+  "scope": "Identity, code-only copy, provenance boundary and new scan contexts; runtime and semantic verdict separate."
+}

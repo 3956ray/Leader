@@ -1,0 +1,15 @@
+{
+  "commit": "29482c49d17fc9c6470c0ea964419288b8931f67",
+  "command": ":app:testDebugUnitTest --offline --rerun-tasks --no-daemon --console=plain",
+  "result": {
+    "tests": 127,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "log": "/private/tmp/thinkv2-voice-controls-leader-host.log",
+  "log_sha256": "d1a4a3ef742d2e30cf8911b0f608fbb71718865fabe2c8f9bafe39258561636d",
+  "tested_source_manifest": "/Users/orderly_ray/Leader/orchestration/reports/V2-VOICE-CONTROLS-001-tested-source.json",
+  "tested_source_sha256": "f964931ed25166ef593be76548260c51ccb8cb0b677d7201c774e37ef5c154f8",
+  "final_source_matches_tested_manifest": true
+}

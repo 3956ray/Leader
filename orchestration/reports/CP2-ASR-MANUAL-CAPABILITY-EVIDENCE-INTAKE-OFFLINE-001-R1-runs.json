@@ -1,0 +1,81 @@
+{
+  "RESULT": "PASS",
+  "candidate": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "independent_directory": "/private/tmp/think-leader-v7r1-u8z3uez7",
+  "tests_per_run": 167,
+  "outcomes_per_run": 1210,
+  "old_v7_outcomes_exact_equal": 1154,
+  "old_v6_outcomes_exact_equal": 961,
+  "skipped": 0,
+  "normalized_sha256": "c754d320be4e6bfea0fefa733afddaf4ebdcb49ab95ade2d141db114a76ab2b7",
+  "immutable_json_files_identical_per_run_across_4_runs": 8478,
+  "scenarios": 339,
+  "ledger_records_independently_rehashed": {
+    "leader-r1-a": 5162,
+    "leader-r1-b": 5162
+  },
+  "collections": {
+    "ledger_collection_sha256": "8c12c2c1299510cf3e20307c9c27fe8eb75d4ebbbe55be08d3fa70e35d12fb13",
+    "terminal_collection_sha256": "bcab307726dbfd2eef6edbf7765048f4e2976a0d98b82f36bc15fc814f740da5",
+    "source_analysis_collection_sha256": "dbed8270b11be5a59a85df5547cf472eec0a83bf90f81be2462d28a9473d74e4",
+    "adjudication_collection_sha256": "00c7ad173b9c23adae5e74b368e3ac8b76128d8b47fff04641cb2102cb0c0df1",
+    "authority_collection_sha256": "cedd5bd8a87051394732b492dc28b9b489e40322607a56f7138b5b3256ba4f79"
+  },
+  "zero_network": {
+    "actual_network_events": [],
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "dns_http_socket_traps": 12,
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation",
+    "trapped_workload_calls": []
+  },
+  "candidate_independent_recalculator": {
+    "byte_identical_files_per_run": 8478,
+    "manual_recomputation": {
+      "adjudications": 32,
+      "invalid_packages": 356,
+      "occurrences": 188,
+      "original_report_bytes": 257136,
+      "original_reports": 54,
+      "packages": 54,
+      "rejections": 12,
+      "representations": 54
+    },
+    "normalized_sha256": "c754d320be4e6bfea0fefa733afddaf4ebdcb49ab95ade2d141db114a76ab2b7",
+    "recomputed_ledger_records": {
+      "leader-r1-a": 5162,
+      "leader-r1-b": 5162
+    },
+    "result": "PASS",
+    "semantic_recomputation": {
+      "bounded_incomplete": 4,
+      "capabilities": 312,
+      "channels": 3176,
+      "complete": 684
+    },
+    "source_verdict": "insufficient_evidence",
+    "test_and_subtest_records": 1210,
+    "tests": 167,
+    "zero_network": {
+      "actual_network_events": [],
+      "audit_event_prefixes": [
+        "socket.",
+        "http.client.",
+        "subprocess."
+      ],
+      "dns_http_socket_traps": 12,
+      "proxy_environment": "not consulted by direct HTTPSConnection",
+      "scope": "this offline workload only; no real network protocol validation",
+      "trapped_workload_calls": []
+    }
+  },
+  "seconds": {
+    "leader-r1-a": 61.418,
+    "leader-r1-b": 60.751
+  },
+  "scope": "Two Leader runs in new first-party-only directory; no real source/review/transport; source verdict remains insufficient_evidence."
+}

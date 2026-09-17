@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "在独立的新目录实现第一方离线源码审查工具修复，并用可重复的合成测试证明 F1–F9 缺陷及授权、停止和结论边界得到修正。",
+  "decision": "doc/cp2-first-party-tool-repair-decision-2026-09-05.md",
+  "decision_sha256": "c4c6aa825150bb7c3cb6a036d3ee6284140ae843eba6bb27d908cca512d41d12",
+  "allowed_root": "tools/asr_review_offline_v2/",
+  "scope": [
+    "开始前读取并遵循已同步正式决定全文及两个preflight报告。只读旧尝试五个第一方文件为问题证据；不得读/枚举旧 corpus 或旧第三方制品。",
+    "仅在全新的 tools/asr_review_offline_v2/ 中新增 policy schema、parser、controller、纯内存/本地合成 fetch adapter、fixtures、unittest tests、README、发现映射和规范化证据。不接入 Gradle/app，不设真实联网入口。",
+    "仅使用现有 Python 标准库；合成 fixtures 全部自主创建，不包含第三方代码、API响应、模型、音频或二进制。先完成新工具的静态自查再运行其离线测试；不得执行旧工具。",
+    "修复 F1–F9，优先明确且可证的 fail-closed 语义；每条不支持/不唯一的依赖必须登记并停止；denylist 一发现就停止；证据缺失无法产出 feasible。",
+    "完成正式决定六类测试、故障注入、两次独立目录确定性重跑与哈希重算；创建单一隔离范围提交后报告并停止。"
+  ],
+  "out_of_scope": [
+    "任何网络/DNS请求、真实 GitHub API获取、第三方下载/依赖、旧 corpus/第三方正文/API fixtures、模型/音频/二进制。",
+    "修改旧尝试或补签/冻结真实获取policy；重启旧队列、生成真实 snapshot/allowlist、ASR适配器、产品源码或构建入口。",
+    "修改 tools/asr_review_offline_v2/ 以外产品仓库文件，改变上游/设计身份、9seed、96文件/1MiB、denylist、隐私或CP2/CP3门槛。"
+  ],
+  "acceptance": [
+    "覆盖正式决定六类合成场景：内部/外部/缺失/歧义/宏/条件/注释/续行/非法定界符；所有未唯一解析情况显式登记并停止。",
+    "非最后seed发现禁止路径或能力时，后续模拟fetch数量为零，且ledger不出现停止点后的授权。",
+    "缺少任一P0映射、人工扫描裁决、denylist可达性或fixed point证据时，只能insufficient_evidence，不能feasible。所有合成通过与真实源码判定严格区分。",
+    "重定向、响应上限、错误SHA/size/mode/type、非法base64、NUL、非UTF8、路径/链接/特殊文件、短写、预算边界/超限等分别有实际测试；不能先采用再判断。",
+    "可捕获异常/模拟中断有结构化终态、连续ledger、最后检查点和可重算哈希；两次独立离线运行的规范化证据哈希一致。",
+    "负向能力检查和测试证明没有网络、subprocess/shell、动态代码执行、第三方依赖/正文或产品构建入口。全部F1–F9映射到实测结果，不能只给语法PASS。",
+    "旧五文件SHA-256未变；提交只涉及允许新目录；git show --check通过且工作区干净；无无关改动混入。",
+    "单一工具结论为tool_ready_for_freeze或tool_repair_blocked；即使通过也只供Leader验收，禁止自动冻结、获取或宣称CP2通过。"
+  ],
+  "evidence_required": [
+    "RESULT、工具结论、提交/父项、新增目录清单/每文件SHA-256、旧五文件未变证明、文件及目的。",
+    "F1–F9到测试编号/预期停止点/实际结果映射、六类验收逐项证据、完整测试命令与日志、两次确定性证据及重算说明。",
+    "静态自查和负向能力检查结果、标准库依赖清单、Git范围、未验证项、PRD范围检查和不自动执行的下一步建议。"
+  ],
+  "stop_conditions": [
+    "正式决定/基线/工作区归属不符或允许新目录已存在，不覆盖。",
+    "需要外网、真实上游输入、旧corpus、第三方依赖、执行旧工具或修改旧冻结文件时停止。",
+    "需要更改固定身份、seed/范围/限额/denylist、隐私/Checkpoint，或创建真实冻结/获取/构建/产品功能时停止。",
+    "无法用合成输入确定性证明fail-closed语义，返回tool_repair_blocked，不静默跳过失败测试。"
+  ],
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "baseline_commit": "5c882ec880022cfd053ed16dc15f1bb4d7e43e3b",
+  "task_result": "COMPLETE",
+  "accepted_at": "2026-09-05T23:04:22.105291+08:00",
+  "accepted_commit": "da9279a411d990e4c37191e22be680b2c4bfcb07",
+  "report": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001.md"
+}

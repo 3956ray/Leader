@@ -1,0 +1,76 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001",
+  "sources": [
+    {
+      "file": {
+        "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-minimal-source-snapshot/2026-09-05/snapshot-manifest.json",
+        "bytes": 106612,
+        "sha256": "e31d674b1f2c355aa74c744a355d6e8333f99f5dc9baae2072b35baa045089f4"
+      },
+      "accepted_commit": "6952167795d1243534a93fa59a18372fb0d192e8",
+      "document_git_record": "100644 blob 5bd9b4853a58ec00426e5882cc5eab28ee44c087\tdoc/security-reviews/sherpa-onnx-minimal-source-snapshot/2026-09-05/snapshot-manifest.json",
+      "acceptance": {
+        "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MINIMAL-SOURCE-SNAPSHOT-GATE-001.md",
+        "bytes": 3010,
+        "sha256": "8bb51bfbb10414189ea3a95f1ce2a055334de26d9c1355617419a32722992691"
+      },
+      "identity": {
+        "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+        "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0"
+      },
+      "pointer": "/entries/69",
+      "entry": {
+        "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+        "mode": "100644",
+        "type": "blob",
+        "size": 2286,
+        "git_blob_sha1": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+        "immutable_blob_url": "https://api.github.com/repos/k2-fsa/sherpa-onnx/git/blobs/9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+        "necessity": "Online ASR implementation/configuration source retained as the upstream online-recognition closure; punctuation, denoising, WebSocket, VAD, TTS and speaker capabilities are excluded.",
+        "content_sha256": null,
+        "actual_git_blob_sha1": null,
+        "actual_size": null,
+        "acquisition_status": "not_acquired_after_mandatory_stop"
+      },
+      "current_bytes_equal_accepted_commit": true
+    },
+    {
+      "file": {
+        "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-static-closure-discovery/2026-09-05/corpus-manifest-current.json",
+        "bytes": 93872,
+        "sha256": "5a27cf1860513fb92d414c64d0723d5df0cf8ce563bf873c9bc3e6d423765cc1"
+      },
+      "accepted_commit": "0ded8eb54e5d4d529759b46c62b9b5eb10722fbb",
+      "document_git_record": "100644 blob 33f37772b007c48799add7ffcd6de2f20d93be6d\tdoc/security-reviews/sherpa-onnx-static-closure-discovery/2026-09-05/corpus-manifest-current.json",
+      "acceptance": {
+        "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-STATIC-CLOSURE-DISCOVERY-GATE-002.md",
+        "bytes": 4504,
+        "sha256": "c413bcc7cd6b558463b0d88ffae31bbf5ce3cdb441c3cee0fd52b4159802545e"
+      },
+      "identity": {
+        "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+        "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0"
+      },
+      "pointer": "/files/61",
+      "entry": {
+        "actual_size": 2286,
+        "content_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6",
+        "file_type": "regular",
+        "git_blob_sha1_computed": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+        "immutable_url": "https://api.github.com/repos/k2-fsa/sherpa-onnx/git/blobs/9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+        "lstat_mode": "0600",
+        "lstat_nlink": 1,
+        "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+        "response_sha": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+        "response_sha256": "09cac6edf243c8c964ad3dcfbb3918470eb90bb186589f2cf7d390d650898ca2",
+        "response_size": 2286,
+        "tree_blob_sha": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+        "tree_mode": "100644",
+        "tree_size": 2286
+      },
+      "current_bytes_equal_accepted_commit": true
+    }
+  ],
+  "no_raw_metadata_or_body_read": true,
+  "no_network": true
+}

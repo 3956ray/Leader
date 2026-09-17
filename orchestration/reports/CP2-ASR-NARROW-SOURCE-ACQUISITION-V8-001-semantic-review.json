@@ -1,0 +1,49 @@
+{
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "reviewer": "independent-read-only-semantic-review",
+  "RESULT": "PASS",
+  "acceptance_scope": "The authorized single acquisition attempt stopped according to the frozen rules. This is not source adoption, comment clearance, runtime capability approval, or Checkpoint acceptance.",
+  "acceptance_blockers": [],
+  "observations": [
+    {
+      "rule": "complete_comment_set",
+      "code": "tools/asr_review_acquisition_v8/offline_review/manual.py:187-203",
+      "result": "The current object identity check precedes selection of every comment_capability_mention. Four current comment occurrences versus two authorized occurrences necessarily raises manual_complete_matching before tuple reconstruction and any clear result. Matching the two historic tuples is diagnostic only and cannot authorize a subset of the current complete set."
+    },
+    {
+      "rule": "active_and_comment_coexistence",
+      "code": "tools/asr_review_acquisition_v8/offline_review/semantics.py:196-229; offline_review/parser.py:151-165",
+      "result": "The derived report and independent Leader verification agree on five active dynamic_paths pattern hits at lines 15,110,143,156,156 and four comment occurrences at lines 57,60,64,132. Classifications are per occurrence, so five active hits and comment pending can coexist. Active lexical matches select denylist_capability while comments retain capability_review_status=pending. These are conservative lexical classifications, not proof of maliciousness, actual runtime capability, or reachability."
+    },
+    {
+      "rule": "hard_stop_precedence_and_no_successor",
+      "code": "tools/asr_review_acquisition_v8/offline_review/controller.py:285-346",
+      "result": "hard_stop is true for denylist_capability. The caught manual rejection is persisted with effective pending and the original hard_stop. The effective decision is changed only when hard_stop is false. Rejection therefore occurs before internal-edge enqueueing or any successor request. The reported final events parsed/manual_capability_adjudication/terminal_checkpoint and two total requests agree with this control flow."
+    },
+    {
+      "rule": "persisted_rejection",
+      "result": "Directly read only the current run's small manual-adjudication-0002.json. It contains think-manual-rejection-v8, reason manual_complete_matching, hard_stop denylist_capability, effective_comment_review_status pending, and original_report_sha256 90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac. It agrees with the derived source-review and Leader verification. Successful adjudications remain zero; fixed_point is false and source_verdict remains insufficient_evidence."
+    }
+  ],
+  "next_product_decision": [
+    "Determine whether to retain the current stop or commission narrowly scoped evidence review of the five active dynamic_paths lexical matches. Any proposed distinction between conservative detector matches and prohibited operative behavior must be an explicit formal decision with evidence and preserved hard-stop/privacy requirements; current comment authority cannot override active hits.",
+    "If further progress is approved, resolve the entire four-occurrence comment set with exact identity and provenance under a separately approved evidence/authority chain. Do not infer clearance for the two additional comments from the historic two matching tuples.",
+    "The consumed run remains terminal. Any changed frozen semantics, authority chain, or further acquisition requires its own bounded task and applicable fresh authorization. No retry, resume, source adoption, or Checkpoint progression follows from accepting this stop."
+  ],
+  "reviewed_sha256": {
+    "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06/source-review.json": "6bf0cbd564e4232d9a1c6114292d7d2e45c71b9da545578dbdf4565bf04e3fef",
+    "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-leader-verification.json": "9912a20aee31436dcd9d79982458f5895e52a831c8dd3909719e9d7e46f8a2f7",
+    "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-leader-verify.py": "d9f8ad2336feb22ab871261d5b8d7ad264e960d0288388b92485d8756d0b54ee",
+    "/private/tmp/think-acquisition-v8-quarantine-3_hb53be/source_v8_once/manual-adjudication-0002.json": "3d8b7eec371c51e3be68d01ee51562940e1caa41db92d683c13f27eeeaa321a0",
+    "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v8/offline_review/manual.py": "8af6f8f931dd7194b134b58e9410eb8a2af7cb9e8ced1183b761b560e2e2a5c9",
+    "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v8/offline_review/controller.py": "5f3f513412241c2c44a5d0ed526465a03f2b305e305fd96d68366d682a822edc",
+    "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v8/offline_review/semantics.py": "ac721e6b3bdb62e8b59b9ea60b5b5798dc48ef27942b35f0476de7c20c26ebcd",
+    "/Users/orderly_ray/Projects/think/tools/asr_review_acquisition_v8/offline_review/parser.py": "16e19e880704a3f196d902480b6bddb795334541f4782e578980a4ee88e82397"
+  },
+  "limitations": [
+    "Static source and derived-evidence review only. No candidate, verifier, scanner, third-party code, or network execution; no new clearance, no old private run/body/scanner context access, and no product edits.",
+    "Current raw body, metadata and scanner report were not reread. Per-occurrence token/carrier reconstruction and full ledger/file inventory verification are inherited from the reviewed independent Leader verifier and its output, not represented as a second raw-data verification.",
+    "REPORT.md was read for interpretation while its wording was being amended; its hash is deliberately not treated as a final accepted identity. Final Git/delivery identity verification remains with Leader.",
+    "Persisted evidence and reviewed control flow support no-successor behavior, without independent packet capture or retained raw HTTP response/header reconstruction. Scanner's manual_review result is not security clearance."
+  ]
+}

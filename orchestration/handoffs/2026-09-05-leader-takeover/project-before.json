@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "project": "思（think）Android App",
+  "leader_root": "/Users/orderly_ray/Leader",
+  "target_repo": "/Users/orderly_ray/Projects/think",
+  "threads": {
+    "product_manager": "01a05318-af84-7993-9861-41c0b73fc028",
+    "developer": "01a071cf-7b9b-73b3-9f14-857e84e4d040"
+  },
+  "canonical_sources": [
+    "/Users/orderly_ray/Projects/think/AGENTS.md",
+    "/Users/orderly_ray/Projects/think/doc/README.md",
+    "/Users/orderly_ray/Projects/think/doc/prd-v0.1-2026-09-04.md",
+    "/Users/orderly_ray/Projects/think/doc/development-guide-v0.1-2026-09-04.md",
+    "/Users/orderly_ray/Projects/think/doc/naming-decision-2026-09-04.md"
+  ],
+  "checkpoints": ["CP0", "CP1", "CP2", "CP3", "CP4", "CP5", "CP6", "CP7", "CP8"],
+  "state_values": [
+    "NEEDS_RECONCILIATION",
+    "READY_FOR_DISPATCH",
+    "IN_PROGRESS",
+    "AWAITING_REVIEW",
+    "REVISE",
+    "PRODUCT_DECISION_REQUIRED",
+    "PAUSED",
+    "ACCEPTED"
+  ],
+  "task_owner_values": ["leader", "product_manager", "developer", "user"],
+  "task_status_values": ["draft", "ready", "dispatched", "completed", "accepted", "rejected"]
+}

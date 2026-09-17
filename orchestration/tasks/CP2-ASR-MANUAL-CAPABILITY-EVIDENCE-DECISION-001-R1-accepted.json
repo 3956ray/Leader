@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-R1",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Clarify only the noncyclic authority-map/freeze/Trust identity domains and creation order in the formal v7 decision before sync or development.",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "baseline_product_commit": "d78577b8bac1108791e0c4ba3c7a0cd672958c94",
+  "review_report": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-review.json",
+  "scope": [
+    "Read the Leader AUTHORITY-DAG-01 review and current formal v7 decision. Make a minimal formal clarification in KB decision/PRD and relevant INDEX/LOG/source attribution; preserve all approved per-occurrence and hard-stop constraints.",
+    "Define exact objects and canonical hash domains for reviewed historical freeze, future candidate identity/new freeze, review package, authority map and trusted pins. State dependencies and chronological construction/verification order with no self-reference or mutual final-hash dependency. Distinguish an old review-context freeze from new execution-release identity if applicable.",
+    "Resolve how the future freeze binds an exact map digest while actual map establishment is sequenced after freeze. If a staged commitment/authority artifact is intended, explicitly identify it and its scope/creation time; do not silently authorize real mapping in offline development or change immutablefreeze afterward. If impossible within current boundary, REVISE/PAUSE explicitly.",
+    "Clarify original analysis/pending/ledger/terminal identity preservation means no overwrite of existing/historical published records; specify permissible append-only new adjudication/status records and new candidate/run identities so no hash change is disguised as preservation.",
+    "Return explicit APPROVED/REVISE/PAUSE, precise amended formal paths/hashes and narrow diff, then stop. This is product-contract clarification only, not mechanism implementation or real-data mapping."
+  ],
+  "out_of_scope": [
+    "No real source/PRIVATE/body/metadata/API/scannercontext reads, pointer traversal, web/network or thirdparty acquisition/dependencies. No code/tool/freeze/oldrun/App changes, no live transport/input creation/real fetch permission.",
+    "No claim current comment decision clears adjacent fields/runtime/API scope or source closure/adoption, no new acquisition authorization or reuse of historical authorization, no CP2/CP3/Alpha approval.",
+    "No global/token-wide/multi-body exceptions or relaxed identity/seeds/budgets/path/type/deny/privacy/checkpoints.",
+    "No source/raw/header/private reads, no real map or package materialization, no candidate/code/freeze changes and no sync/developer dispatch. No new dependencies or network."
+  ],
+  "acceptance": [
+    "Hash dependency graph and order are unambiguous and acyclic; both trusted binding and later mapping authorization are preserved without learning pins from input.",
+    "Formal text, PRD and source records consistent; existing158baseline/occurrence/hardstop/nontransferability and separate useracquisition authorization boundaries retained."
+  ],
+  "evidence_required": [
+    "Formal RESULT, exact amendedfiles/SHA, before/after explanation for AUTHORITY-DAG-01 and precise permitted nextstage; notifyLeader thenstop."
+  ],
+  "stop_conditions": [
+    "Need broader scope/security/privacy/checkpoint change or realdata mapping to define contract: stop/PAUSE, do not implement or access source."
+  ],
+  "dispatched_at": "2026-09-06T06:59:51.436469+08:00",
+  "acceptance_report": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001-R1-acceptance.json",
+  "acceptance_sha256": "e7a61c25413f1dcd87f36a4e13a68ddd345117422347c050777b926c2d488de8"
+}

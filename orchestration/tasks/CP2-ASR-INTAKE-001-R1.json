@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-INTAKE-001-R1",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "把 CP2 intake 文档中的后续安全门禁裁决词汇改为项目规则允许的唯一四态，并保持已核验内容不变。",
+  "commit": "e9c2e8fc3a9e0ef97470b7c42b364d5ddaa5d3ac",
+  "report": "orchestration/reports/CP2-ASR-INTAKE-001-R1.md"
+}

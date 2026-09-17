@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "goal": "只裁定已验收人工报告的含微秒及时区时间如何由未来证据接收表示无损绑定，并决定是否批准一项独立第一方离线格式修订或暂停；禁止通过截断时间创建 K。",
+  "baseline_commit": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+  "leader_preflight": "orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-001-preflight.json",
+  "leader_preflight_sha256": "8ae467cc01969637bf7680f6447dfbddcd1647fc110c4554bc3f1a8321c55c57",
+  "candidate_acceptance": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-acceptance.json",
+  "candidate_acceptance_sha256": "49eea49be628c2eacac3ac99bf8e8caba464d76aba674f8dc3fb1019a8bc7df8",
+  "scope": [
+    "仅使用正式文档、上述两个 Leader 派生报告及必要第一方schema/code进行产品范围裁决。新正式决策建议写入知识库 ideas/personal-thought-archive/cp2-review-timestamp-representation-decision-2026-09-06.md，同步同目录PRD、INDEX、LOG并建立最小真实派生来源卡。不得修改产品仓库或代码。",
+    "已验收 v7 R1 C=443bbb5（bundle198c24c66a3e82117828e9eacfa333b4dde8eb19949c7425b8a81b839399553e），仅自建离线候选通过。K前置检查发现既有R.reviewed_at=2026-09-06T06:48:22.579140+08:00，无损UTC为2026-09-05T22:48:22.579140Z；current schema仅YYYY-MM-DDTHH:MM:SSZ。两个字符串均不能接收，截断丢579140微秒。K/F/M/A/T/N均未创建；不推翻此前离线C验收，也不等于已能映射真实R。",
+    "给出 APPROVED/REVISE/PAUSE 并写入正式产品文档。建议只批准一个独立新候选中的时间表示最小离线修订：原样保留合法带小数秒/明确offset的review timestamp或另行明确无损canonical规则；不得截断、补造K时间替换review时间、悄悄降低精度或改原始报告。时间字段须仍完整绑定原报告、规范表示、K/M/T及adjudication，所有非时间权限/语义/字节hash规则不变。",
+    "若批准，定义唯一下一开发任务：独立目录如 tools/asr_review_acquisition_v8/，仅必要已验收v7第一方代码/schema/self-authoredfixtures，Python标准库；保留167methods/1210outcomes及158最初基线，新增精度/offset/规范形式/非法日历边界/原字段篡改/等时不同字符串处理规则/独立pins/no-successor矩阵及双跑独立复算。只用自建时间/报告fixture，不读真实R/header/metadata/privatebody。既有C/旧run/freeze/报告字节不改；新C独立验收后重新进入K→F→M→新用户A→T/N。",
+    "明确新普通可逆第一方离线任务仍已有用户持续授权，不重复请求批准；本产品决定只界定必要下一范围，先同步正式文档再由Leader单项派发。若需放宽其他约束则PAUSE，不扩大任务。",
+    "返回决定、精确变更文件/SHA、来源与PRD差异核对、未验证及现有lint工具执行或缺失实况，通知Leader后停止。任何现有知识库无关修改不覆盖、不归因成自己的提交。"
+  ],
+  "out_of_scope": [
+    "禁止真实原始source/header/LICENSE/private/envelope/body/metadata/API/旧rawscannercontext读取、外部网络、原文指针跟随；不得生成实际K/F/M/A/T/input/N、源码获取、构建/模型/集成/CP3。",
+    "不得把原报告hash保留解释成可以改错reviewed_at值；不得改既有报告或用新时间冒充旧审查时间。不得修改已验收v7或产品代码，不能以聊天答复替代正式决策。",
+    "其它authorityDAG、原报告与representation双域、逐occurrence精确匹配/硬停止/预算/角色/隐私/CP1和Conformer Deferred/CP2未通过/旧block manual_review保持。"
+  ],
+  "acceptance": [
+    "明确APPROVED/REVISE/PAUSE已写正式文档并同步PRD/索引/日志，精确源证据和时间不可表示原因无失真。",
+    "若APPROVED，时间原值/精度/时区/规范性/有效性/哈希域与绑定语义清晰可测试；范围仅独立离线修订，单项任务验收/停止条件/后续K阶段顺序完整。未偷改原C通过范围或新增真实获取权限。"
+  ],
+  "evidence_required": [
+    "RESULT、正式决定、文件及SHA、逐项来源映射、PRD范围变化和未验证项、实际检查结果、Git或未提交状态；完成通知Leader并停止。"
+  ],
+  "stop_conditions": [
+    "证据缺失/正式冲突/必须读取原始body或改旧报告/放宽非时间权限与隐私：PAUSE并给出具体原因，禁止自行开发或制造K。"
+  ],
+  "prepared_at": "2026-09-06T08:43:26.698060+08:00",
+  "dispatched_at": "2026-09-06T08:44:22.904586+08:00",
+  "accepted_at": "2026-09-06T08:53:53.537655+08:00",
+  "acceptance_report": "orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-001-acceptance.json",
+  "acceptance_sha256": "67b9d877666d72344b12da67c4ebde472fdfd0558ecec8967dbb1c92aaa2c391"
+}

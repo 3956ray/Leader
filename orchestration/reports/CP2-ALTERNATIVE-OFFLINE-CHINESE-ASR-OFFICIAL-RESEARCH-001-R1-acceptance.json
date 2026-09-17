@@ -1,0 +1,62 @@
+{
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T09:55:56.526841+00:00",
+  "research_outcome": "research_sufficient_for_security_intake_decision",
+  "qualified_research_candidates": [
+    "Vosk",
+    "ONNX Runtime Mobile + SenseVoiceSmall-onnx"
+  ],
+  "meaning": "Accepted official-material research and bounded architectural inference for choosing at most one future intake; no candidate adoption/intake execution/source or model acquisition authority.",
+  "formal_files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-evidence-cards-2026-09-06.md",
+      "bytes": 16903,
+      "sha256": "a28af30971250a028d464e3edc844fde5a0382345aefa40da031899f1078bead"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-comparison-matrix-2026-09-06.md",
+      "bytes": 10231,
+      "sha256": "af747a9ce0654bd6a9b9a285ba08365202de47b6ba28a5eb0661c4db15f9ebac"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-research-memo-2026-09-06.md",
+      "bytes": 9664,
+      "sha256": "4340ad61c2fa0b7e3909baa89a37f9bc8eb16e769736eb265199579f2d8c146b"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "bytes": 11523,
+      "sha256": "98065a85b6e1bb98f66757de1955677614a33b6a52e0ade039cc3c6e07861fc4"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "bytes": 46987,
+      "sha256": "39dcd93623f052fd57165faadffbaf5e5582ff1587b06114568e97b8cef0070c"
+    }
+  ],
+  "leader_verification": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1-leader-verification.json",
+    "bytes": 5815,
+    "sha256": "15f4b17405762c1ab4747f7a37c67d5b27753a8b9f1a5f35078da59fc1fc2e6e"
+  },
+  "independent_semantic_review": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1-semantic-review.json",
+    "bytes": 5436,
+    "sha256": "d2d8373acd48fe12612c8843029f05c856d99db6bff0880dda1a9e65ba8ebba6"
+  },
+  "checks": [
+    "Fivefinalfiles andoriginalcontract/rejection/sourcepins checked; unchanged12URLledger4candidates3pageseach,12matrixcriteria,LOGinitialprefixpreserved.",
+    "Whisper upstream code/modelweightsMIT nowidentified; tiny/baseofficialdisk-memory estimates distinguishedfromAndroidactuals andA100reference. Chinesehardconditionremainsunestablished intheselectedmaterials.",
+    "LeaderexactSource08indexedofficialpage independentlycorroboratesASR/ONNX/cn/Apache2andlocalCPUserverdeployment. TogetherwithSource07AndroidondeviceONNX/defaultCPU thissupportsboundedresearcharchitectureinference; doesnotproveAndroidASRintegration or in-processPCM.",
+    "IndependentR1reviewPASS; missingcompatibility/preprocessing/JNI/PCM/privacy/device/preciseartifactgates expresslyremainUnknown. No unverifiableessentialpremise silentlypromoted.",
+    "VoskofficialChineseofflineAndroidand42MmodelApache2corroborated; WeNetmodellicenseandWhisperChinesegapsretained. Atmost2suggestions,onefutureproductselectiononly.",
+    "Producte89da0e5clean,PRD/formalrouteunchanged; no candidatesource/model/artifact/execute/build/test/intake."
+  ],
+  "limits": [
+    "Source08researchsupport isindexedofficialpage withdirectbrowserloadingfailure; exactmetadata andartifactprovenance needfuturepermittedverification.",
+    "PublishednumbersnotXiaomi15results; allsecurity/CPUABI/audio/lifetime/wordlist90percent/devicegatesunverified.",
+    "Knowledgeautomaticlintunavailablemanualcheckscompleted;KBfivefilesuncommittedinexistingdirtyarea,notproductcode."
+  ],
+  "next_step": "CP2-ALTERNATIVE-ASR-SECURITY-INTAKE-SELECTION-DECISION-001"
+}

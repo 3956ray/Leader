@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-VOSK-ANDROID-IDENTITY-GAP-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "dispatched",
+  "assigned_thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+  "report_to_thread_id": "01a07655-fdfd-7683-aa57-a4895188d2ff",
+  "goal": "基于已停止身份任务的正式证据，裁定补齐Vosk Android精确发行版本与坐标所需的最小官方元数据查询范围，或明确暂停，不执行查询本身。",
+  "review": "/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-OFFICIAL-IDENTITY-INTAKE-001-review.md",
+  "scope": [
+    "只读已有三份cp2-vosk身份文档、正式选择决定、PRD和Leader review；不联网。",
+    "以APPROVED/REVISE/PAUSE正式落地最小后续范围决定；优先定义官方安装说明所声明Maven Central发行渠道的只读版本元数据/POM/许可证信息验证路线。不得猜任何具体URL、版本或存在性；若新增域名，定义执行前一方来源验证步骤。",
+    "明确新任务独立预算及硬停止；说明旧runtime3/3已耗尽而非重置旧账本。避免逐页面一次审批，定义足以验证一个Android坐标的有界批次；不借机研究模型或第二候选。",
+    "区分元数据中的版本/打包/发布者声明与AAR真实内容、安全及源码可复现性，后者继续Unknown并留后续独立门禁。",
+    "仅新增一份cp2-vosk-android-identity-gap-decision-2026-09-06.md和必要PRD/INDEX/LOG变更；保持旧决定及ledger历史。不改think。后续公开只读研究不额外制造重复用户审批；制品下载/执行仍需既有精确授权。"
+  ],
+  "out_of_scope": [
+    "不查询网络、不下载源码/模型/AAR/二进制、不构建/加载/集成，不恢复sherpa链。",
+    "不放宽隐私、专名90%、CP1恢复、CP2或CP3/Alpha门槛，不宣称身份任务已通过。"
+  ],
+  "acceptance": [
+    "正式结论与来源证据一致；下一合同包含唯一目标、来源验证、预算、产物、停止和权限，能在不下载制品下判定成功或不足。",
+    "旧停止与未知明确保留；新范围不借模型预算或重复旧授权，入口一致。"
+  ],
+  "evidence_required": [
+    "在本任务最终答复报告正式path/bytes/SHA、结论与下一合同、检查与未知、Git修改归属；不要跨任务发送。"
+  ],
+  "stop_conditions": [
+    "不能形成可执行的只读元数据范围则PAUSE并指出具体缺口；不自行联网补证。",
+    "完成停止等待Leader，不能同时开始后续研究或派开发者。"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "RESULT": "PASS",
+  "reviewer": "/root/v7_intake_review",
+  "reviewed_files": [
+    {
+      "bytes": 344,
+      "git_blob": "42060e41b293f1da3ff6cb05a5b0f9f3b0407cd2",
+      "mode": "100644",
+      "path": "F.json",
+      "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+      "type": "blob"
+    },
+    {
+      "bytes": 10157,
+      "git_blob": "59aaef6617a74db009c8d7bc87afdae9cb134d81",
+      "mode": "100644",
+      "path": "REPORT.md",
+      "sha256": "f8bf98968875ceb93c1b8189cf06b246b1021664100f8663672c53b444c073c4",
+      "type": "blob"
+    },
+    {
+      "bytes": 23461,
+      "git_blob": "f30f80241ccd6a8702a0d870279ba94cb85f7bd0",
+      "mode": "100644",
+      "path": "freeze.json",
+      "sha256": "000d922060e830706c638b3304b79a71cb191fc61a05de24b0a2ebc31319e607",
+      "type": "blob"
+    }
+  ],
+  "reviewed_verifier": {
+    "path": "/private/tmp/think-f-v8-14aswdsm/verify.py",
+    "bytes": 15839,
+    "sha256": "faaa33645961306784d5ed5bf083c62a4a5e2ff2bc03d20da8b92749d7925d00"
+  },
+  "findings": [
+    "F exact six fields bind accepted C/K/policy/intake; runtime F, supporting freeze and historical H domains distinct; future M.F only runtime F.",
+    "No self/future/cycle/placeholder or permission expansion; 9 seeds, complete contracts, budgets/timeouts/credentials/proxy/retry/priority stops/privacy/checkpoints preserved.",
+    "C/K/P independent acceptance attribution checked; 174/1338/0 skip and121 leaves correctly historical; sandbox_only100 not upgraded to thirdparty securityPASS.",
+    "Static verifier standardlibrary only, opaque fixture/scan/script hashing, no producer/candidate import or private/source pointer traversal. Git subprocess calls fixed read-only."
+  ],
+  "limitations": [
+    "Reviewer did not execute verifier or read20MBmanifest; Leader independently did input/Git verification and exact reviewed verifier rerun."
+  ]
+}

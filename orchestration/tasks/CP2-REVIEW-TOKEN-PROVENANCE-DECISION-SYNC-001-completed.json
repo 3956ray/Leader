@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-REVIEW-TOKEN-PROVENANCE-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "completed",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "只同步已获 Leader 验收的原 token 来源补录正式决定和最新 PRD，并更新三个工程入口，使下一项 Leader 补录任务范围一致且可追溯。",
+  "baseline_commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "predecessor_acceptance": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-DECISION-001-acceptance.json",
+  "predecessor_acceptance_sha256": "4b2ce918fe5361889a0920b6d546193836e0c23a0b9e467ebc357ab2dce50707",
+  "formal_sources": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-review-token-provenance-decision-2026-09-06.md",
+      "bytes": 9458,
+      "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+      "destination": "doc/cp2-review-token-provenance-decision-2026-09-06.md"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 63461,
+      "sha256": "3cce758ccff443bdb7ea9368f3c585e4179653228c5071b0353b3991ce99ded7",
+      "destination": "doc/prd-v0.1-2026-09-04.md"
+    }
+  ],
+  "scope": [
+    "仅新增doc/cp2-review-token-provenance-decision-2026-09-06.md、精确同步doc/prd-v0.1-2026-09-04.md，两份必须与正式源逐byte及SHA一致。",
+    "仅更新AGENTS.md、doc/README.md、doc/development-guide-v0.1-2026-09-04.md中的当前CP2状态、正式决定链接与下一任务描述。保留历史决定原貌，将已完成v8、K缺raw_token阻塞、PM APPROVED Leader-only P补录写清，不把当前阶段写成继续v8开发或K。",
+    "准确解释P补录在原same-object/two-occurrence离线review持续授权内，无需重复问用户；仅两个固定9byte slice的来源补录。开发者和PM不执行；Leader单独P→独立验收→另开K→F→M→新用户acquisition A→T/N，不合并阶段。原R/time/decision/v8/schema/oldrun不改。",
+    "检查五文件hash/链接/差异与Git边界，只提交这五文件，不push。保留来源卡及历史../../raw链接约定，不把KB其他修改同步进来。"
+  ],
+  "out_of_scope": [
+    "不读取原R/verification/private/header/body/metadata/API/rawscannercontext作为补录输入，不执行旧script或candidate/controller/scanner、不联网或获取，不生成P/representation/K/F/M/A/T/N。",
+    "不改任何tools/evidence/app/依赖/build配置或旧freeze/报告；不改变产品行为、权限/预算/隐私/Checkpoint。"
+  ],
+  "acceptance": [
+    "commit父1fe85740，恰好五文件变更，正式决定与PRD两个SHA精确一致，其他三个入口范围/链接一致。",
+    "所有旧tools/evidence源码和产物身份不变，工作区干净，无无关变更/第三方依赖；CP2未通过，CP1/Conformer Deferred not removed，CP3/Alpha未批准。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED，五文件目的/bytes/SHA/Gitblob、commitparent/tree、链接及diffcheck、全部旧工具树不变证据。",
+    "未验证、范围偏移检查、提交状态；完成后通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4并停止，Leader独立验收后才执行P。"
+  ],
+  "stop_conditions": [
+    "正式源hash/HEAD漂移、未知工作区修改、必须触碰五文件以外或需要原始/private材料则停；不自行补录、恢复K或扩大范围。"
+  ],
+  "prepared_at": "2026-09-06T10:21:16.130124+08:00",
+  "dispatched_at": "2026-09-06T10:22:03.070884+08:00",
+  "completed_at": "2026-09-06T10:27:38.328981+08:00",
+  "candidate_commit": "8a2d85d824f12cdc186f84514037698c88237dcb"
+}

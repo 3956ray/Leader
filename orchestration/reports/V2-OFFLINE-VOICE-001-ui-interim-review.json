@@ -1,0 +1,22 @@
+{
+  "observed_at": "2026-09-16T02:14:38.845010+00:00",
+  "task": "V2-OFFLINE-VOICE-001",
+  "ui_test": "realChineseDraftCursorCorrectionCancelAndLateEdit",
+  "result": "OK (1 test)",
+  "seconds": 61.12,
+  "evidence": [
+    {
+      "path": "/private/tmp/thinkv2-voice-ui2.log",
+      "sha256": "5d0312d511656a545c086f276a1db44d5a039e5bf8793651c35c2b3bab76d870"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/app/src/androidTest/java/com/example/thinkv2/voice/VoiceUiTest.kt",
+      "sha256": "f079d3cd377dd7043084f4ed89b11268f4eebc6727a701dc16f0552b43b1ac4f"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/thinkV2/app/src/main/java/com/example/thinkv2/voice/VoiceControls.kt",
+      "sha256": "33fbb4e268c87d414c40e057bb4e50505c3ec51b45d32de006f7fdd03794c30a"
+    }
+  ],
+  "scope": "Two different synthetic memory PCM clips through real model/controller/Compose screen; cursor order, manual title, correction span, cancellation, edits and navigation. Not actual microphone/permission dialog or TalkBack acceptance. Final APK binding pending."
+}

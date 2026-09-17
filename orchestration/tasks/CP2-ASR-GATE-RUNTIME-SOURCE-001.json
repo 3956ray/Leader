@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-GATE-RUNTIME-SOURCE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "安全获取并仅以静态、非执行方式审查 sherpa-onnx v1.13.7 固定提交的源码归档，形成独立的运行时源码门禁裁决。",
+  "artifact_verdict": "block",
+  "commit": "e00323b38d182fe82add0c26d7420a6d14dc7405",
+  "report": "orchestration/reports/CP2-ASR-GATE-RUNTIME-SOURCE-001.md"
+}

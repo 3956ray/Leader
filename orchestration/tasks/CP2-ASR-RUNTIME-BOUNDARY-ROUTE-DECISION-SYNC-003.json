@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-RUNTIME-BOUNDARY-ROUTE-DECISION-SYNC-003",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "task_result": "COMPLETE",
+  "goal": "把已验收的 CP2 ASR 运行时窄边界路线决定和最新 PRD 准确同步到产品仓库，并形成单一纯文档提交。",
+  "commit": "1812669faa90bfc899ac0ab0b01f17b39145ea37",
+  "report": "orchestration/reports/CP2-ASR-RUNTIME-BOUNDARY-ROUTE-DECISION-SYNC-003.md"
+}

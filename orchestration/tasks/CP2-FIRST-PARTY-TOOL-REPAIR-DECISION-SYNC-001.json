@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "将已批准的第一方工具离线返工决定和最新 PRD 同步到产品仓库，并以一个五文件纯文档提交建立后续修复依据。",
+  "scope": [
+    "从产品知识库逐字节复制 cp2-first-party-tool-repair-decision-2026-09-05.md 和 prd-v0.1-2026-09-04.md 到产品仓库 doc/。",
+    "仅最小修改 AGENTS.md、doc/README.md、doc/development-guide-v0.1-2026-09-04.md，记录旧准备尝试终止、批准第一方离线修复、下一唯一修复任务及四阶段顺序。",
+    "准确记录普通可逆修复无需重复授权；后续真实获取须另行调度，固定授权范围不变可由 Leader 映射，有变化则新授权。",
+    "只修改上述五文件，检查内容/链接/Git边界并创建一个提交；完成后停止。"
+  ],
+  "out_of_scope": [
+    "工具修复或执行、旧 corpus/第三方正文/API/网络、冻结、获取、模型、构建、产品源码/资源/测试修改、CP3。",
+    "改写正式决定或 PRD、不按源复制，或改变隐私/Checkpoint/既有制品裁决。"
+  ],
+  "acceptance": [
+    "决定与源逐字节一致且 SHA-256=c4c6aa825150bb7c3cb6a036d3ee6284140ae843eba6bb27d908cca512d41d12；PRD SHA-256=ae748d398aa4fb06c15d1811b1ad9ee0e8199d4352119b43903210eb1bfaadc7。",
+    "三个入口准确同步最新准入和禁止边界；CP2未通过、CP3未批准。",
+    "提交父项为4c128821f22ff8b61939976789e3df70746c6a51，仅含五个约定文件；git show --check通过且工作区干净。"
+  ],
+  "evidence_required": [
+    "RESULT、提交/父项、五文件清单、源/目标哈希与比较结果、入口关键位置、检查命令/结果、未验证项。"
+  ],
+  "stop_conditions": [
+    "HEAD/工作区不符或未知修改；源哈希漂移；需超出五文件或读/执行第三方正文。"
+  ],
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "task_result": "COMPLETE",
+  "commit": "5c882ec880022cfd053ed16dc15f1bb4d7e43e3b",
+  "report": "orchestration/reports/CP2-FIRST-PARTY-TOOL-REPAIR-DECISION-SYNC-001.md"
+}

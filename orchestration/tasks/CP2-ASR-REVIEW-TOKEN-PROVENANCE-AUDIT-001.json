@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REVIEW-TOKEN-PROVENANCE-AUDIT-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "goal": "只读审计已固定第一方历史验证脚本与派生结果，判断原 token 字节是否可从既有执行证据严格推出并形成不扩权的来源补充。",
+  "scope": [
+    "只读必要原R、verification、review请求/授权及已固定第一方 CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001-verify.py 源码，核验报告绑定脚本SHA后做静态数据流审查。此Leader单项扩大第一方源码只读审计范围，不增加任何私有正文权限。",
+    "仅在历史脚本精确字节匹配逻辑和已接受派生结果足以唯一证明时，新增来源补充与验证报告，保留原R原bytes。可对完全自建短字符串独立演示原匹配表达式的大小写语义；绝不执行/导入整个历史脚本。"
+  ],
+  "out_of_scope": [
+    "不读取或跟随任何真实body/private/header/API/metadata/rawscannercontext指针，不执行旧脚本、不联网、不运行controller、不改C或R，不建K/F/M/A/T/N。"
+  ],
+  "acceptance": [
+    "脚本SHA与原R绑定相等、数据流推导充分可独立审查、每项tuple来源精确；否则明确不足而停止，不从聊天或记忆猜rawtoken。"
+  ],
+  "evidence_required": [
+    "固定第一方脚本路径/bytes/SHA和准确源码行号、原报告字段映射、审计结论和未验证。"
+  ],
+  "stop_conditions": [
+    "脚本存在大小写归一化或结果无法确定原字节、需要原始材料或新裁决，则报告不足并升级；不得猜测或执行旧脚本。"
+  ],
+  "prepared_at": "2026-09-06T10:08:58.628294+08:00"
+}

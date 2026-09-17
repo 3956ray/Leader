@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-HOTWORDS-CHAIN-TERMINATION-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "completed",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "prepared_at": "2026-09-06T09:14:53.402407+00:00",
+  "goal": "只同步热词逐文件链终止后的正式路线决定与PRD及三个工程入口，明确下一步为只读官方资料调研且没有获准采用的ASR实现。",
+  "baseline_commit": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-HOTWORDS-CHAIN-TERMINATION-ROUTE-DECISION-001-acceptance.json",
+    "bytes": 2428,
+    "sha256": "fcb394949101a1c8822b67d6267e3554e2cb9bfc047c3bb9f89a065f4a58c872"
+  },
+  "formal_sources": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-hotwords-chain-termination-route-decision-2026-09-06.md",
+      "bytes": 13982,
+      "sha256": "0d639a27ff661ef0106708810f817a2578400c7840e2b13825f9b1ebbc69ef2e",
+      "destination": "doc/cp2-hotwords-chain-termination-route-decision-2026-09-06.md"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "bytes": 72021,
+      "sha256": "abcbd91a45146fca75d53509031bdf0b38318e956cd67f41f057de8118cde030",
+      "destination": "doc/prd-v0.1-2026-09-04.md"
+    }
+  ],
+  "scope": [
+    "只新增formaldecision并原字节同步PRD；另外仅改AGENTS.md、doc/README.md、doc/development-guide-v0.1-2026-09-04.md当前状态/优先级/下一任务与当前技术方向。",
+    "最新事实：最后impl.h1GET2286B/3lines129visiblebytes，在声明处立即停止；不推断整文件无定义或buffer不可行；热词逐文件链永久终止，无第三来源。sherpa-onnx旧制品block/manual_review仍不能采用，核心ASR未选定/未解阻。",
+    "唯一下一任务CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001，由Leader调度、PM执行、developeridle。3-5非sherpa候选，每个<=3官方页面+<=3跨候选页，总<=18；只证据卡/12项矩阵/<=2未来安全intake建议，无源码读取/下载/执行/实现。普通只读调研已获正式批准，不加重复用户审批；未来intake或制品取得/执行仍需独立正式决定和适用新授权。",
+    "个性词表实现Deferrednotremoved且CP2专名90%准确率等原门槛保留；三步/音频内存不落盘不上传不进日志/真机性能稳定性/CP1和Conformer延期/CP2未过CP3未授权保持。当前技术方向不能仍把sherpa写作唯一已选实现；历史规范保留历史归属，不重写历史证据。",
+    "恰五文档单提交不push；所有其他旧Git记录不变，返回完整身份/边界/检查后停止。不执行研究或任何此前handler。"
+  ],
+  "out_of_scope": [
+    "不读源码片段/raw/private/body/metadata/scannercontext，不联网/研究候选/获取/构建/测试/模型或实际音频。",
+    "不改5文件以外旧decision/tools/securityreports/productcode/依赖/策略/冻结/旧run，不新增clearance或第三源码请求。"
+  ],
+  "acceptance": [
+    "父0043d343且恰5文档；2正式副本原字节匹配，3入口唯一nexttask/新技术方向/终止与授权边界准确。",
+    "旧树其他记录不变、clean、无push；未执行任何技术研究/产品实现。"
+  ],
+  "evidence_required": [
+    "RESULT，五文件purpose/path/bytes/SHA/Gitblob，commitparent/tree、diffcheck/links/旧树边界、未验证与Git状态；回报当前Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4后停止。"
+  ],
+  "stop_conditions": [
+    "源hash/HEAD不符或未知修改即停，不覆盖；需要范围外内容则报告。"
+  ],
+  "dispatched_at": "2026-09-06T09:15:01.137931+00:00",
+  "completed_at": "2026-09-06T09:20:40.065938+00:00",
+  "result": "COMPLETE"
+}

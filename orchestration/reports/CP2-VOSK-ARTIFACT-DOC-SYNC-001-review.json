@@ -1,0 +1,1 @@
+{"verdict":"accepted","checks":{"frozen_sources":true,"six_files":true,"entry_semantics":true,"clean_git":true,"diff_check":true,"scope":true},"evidence":[{"path":"/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-ARTIFACT-DOC-SYNC-001-acceptance.md","sha256":"e23a913650f4563242680eb296e316081db679236dab8d97e7ca235c1d544424"}]}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "pending-final-hotword-single-body-authorization-request",
+  "status": "PENDING_USER_APPROVAL",
+  "prepared_at": "2026-09-06T08:39:37.969972+00:00",
+  "preparation_task": {
+    "path": "/Users/orderly_ray/Leader/orchestration/tasks/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001.json",
+    "bytes": 3164,
+    "sha256": "3cb577ab93133b25d0d82efaa8d8981076b7b40a4c1a88e10fba8a72f9382837"
+  },
+  "future_task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+    "bytes": 13812,
+    "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8"
+  },
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-V8-HOTWORDS-CONSUMER-DECISION-SYNC-001-acceptance.json",
+    "bytes": 1189,
+    "sha256": "4748b05901d8b8029340854b8315da1f959a89ac4f23fa492dfd6c050b0b817c"
+  },
+  "identity_sources": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-identity-sources.json",
+    "bytes": 3764,
+    "sha256": "ac3293a66725781607cfceabb41e041e28ab4ac3dd8a30e89ca46710b1f8fa7c"
+  },
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+    "git_type": "blob",
+    "mode": "100644",
+    "git_blob": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "decoded_bytes": 2286,
+    "expected_body_sha256": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6"
+  },
+  "request": {
+    "method": "GET",
+    "host": "api.github.com",
+    "endpoint": "/repos/k2-fsa/sherpa-onnx/git/blobs/9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "url": "https://api.github.com/repos/k2-fsa/sherpa-onnx/git/blobs/9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "max_requests": 1,
+    "retries": 0,
+    "redirects": 0,
+    "metadata_requests": 0,
+    "resume": false,
+    "credentials": false,
+    "proxy": false,
+    "TLS_verification": true,
+    "connect_timeout_seconds": 10,
+    "read_timeout_seconds": 10,
+    "expected_decoded_bytes": 2286,
+    "decoded_hard_cap": 262144,
+    "response_entity_hard_cap": 16384,
+    "scope_note": "Only intrinsic JSON/base64 envelope of this single fixed blob GET; no commit/tree endpoint, metadata refresh or network probe. Socket inactivity timeouts, not a guaranteed overall deadline."
+  },
+  "purpose": [
+    "Determine only whether OnlineRecognizerImpl::Create(config) has a definition or inline implementation in the file.",
+    "Review only directly relevant config/file/buffer processing, selector/file I/O clues and whether it delegates."
+  ],
+  "human_visible_scope": {
+    "max_unique_lines": 64,
+    "max_visible_bytes": 4096,
+    "only": "Target factory/direct configuration processing/selector/I/O and minimum enclosing type/function; do not display/export whole body or unrelated functions. All displays across this review share one cumulative unique-line/byte budget.",
+    "target_not_defined": "Declaration only or absent target ends semantic reading; record this and stop, do not investigate other methods.",
+    "budget_overflow": "Stop with an evidence gap before exceeding either bound; no automatic budget increase."
+  },
+  "retention": "Fresh private0700 directory, regular0600 single-link files. Raw response/body/scanner全文 remain outside Git; only derived identity/limited observations/gaps/verification reports exposed. No past source/raw metadata/scanner context reuse.",
+  "static_scan": "Unchanged trusted scanner/IOC on the same newly acquired object only; preserve original results and disclose any gap. A byte-identical private scanner-supported alias may complete format coverage within the same review if necessary; no second upstream object or rule change. Zero findings is not safety or adoption.",
+  "execution_preconditions": [
+    "Fresh explicit user approval bound to this full request after presentation; this pending document creates no authority.",
+    "Separate single-body task only after approval. Reuse only reviewed first-party acquisition logic with new exact task/request/approval/body pins and fresh one-attempt state; any changed handler bytes must be reviewed before the one GET. This is not v9 or a restart of old controller/run.",
+    "Exclusive durable consumed marker and parent fsync before any request. Success/failure/timeout ends the single opportunity, no retry, resume or alternative endpoint."
+  ],
+  "stop_conditions": [
+    "Any identity/blob/SHA256/mode/type/path/exact size mismatch; unsafe filesystem, malformed/ambiguous response including invalid JSON/base64, invalid UTF8/NUL, budget or persistence failure: stop without retry.",
+    "Exactly2286 decoded bytes and at most262144; entity at most16384; max64unique visible lines and4096visible bytes across the complete review.",
+    "Target absent, declaration only or continued delegation: immediately stop and permanently end this hotword source-by-source evidence chain. No third source under this route.",
+    "Any need to follow include/symbol/.cc/FileExists/concrete recognizer/second body or metadata: stop, record only the exact gap. No prohibited capability is cleared by this review.",
+    "No target execution, build/install/load/test/inference/integration/model/audio/device/publication/v9/detector-schema-freeze-policy-oldrun changes/clearance/sourceadoption/Checkpoint progression.",
+    "Regardless of result return to product decision. If insufficient evidence, only subsequent independent product choice of alternative offline ASR candidate research or explicit personal-dictionary deferral; not automatic implementation. If useful buffer-only evidence, only potential later first-party adapter/test-contract design without more source, subject to product decision."
+  ],
+  "preserved_state": [
+    "Acquisition/adoption route PAUSED; oldv8 run terminal, original hardstop/commentpending/zero adjudication/clearance unchanged.",
+    "Originalaudio never disk/upload/log/fixtures, nofatherrealdata; three-step user paths unchanged; CP1/Conformer Deferred notremoved;CP2notpassed;CP3/Alphaunapproved."
+  ],
+  "operational_authority": false,
+  "new_acquisition_authority_created": false,
+  "authorization_sentence": "我批准 `CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001`：只针对 repository `k2-fsa/sherpa-onnx`、upstream commit `917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e`、tree `fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0`、path `sherpa-onnx/csrc/online-recognizer-impl.h`、Git blob `9c2b4b71d22b6757e9faa87d5b42f9e586a08456`、mode `100644`、decoded size `2286`，允许 1 次 GET 和一次离线局部静态审查；人工可见范围最多 64 个唯一行／4,096 bytes，只判断 `OnlineRecognizerImpl::Create(config)` 是否定义、config 的直接处理、file/buffer selector、文件 I/O 线索与是否继续委派。不得请求 metadata、重试、重定向、跟随任何 include／symbol／`.cc`／`FileExists`／具体 recognizer 或第二正文，不得构建、执行、加载、测试、集成、联网扩展、修改 detector/schema/freeze/旧 run、建立 v9 或形成 clearance。任一身份不匹配、超过 262,144 bytes、目标未定义或继续委派时立即停止并回产品决策门；该结果是热词源码链最后一次正文补证，不授权第三文件。本授权不批准源码采用、CP2、CP3 或父亲 Alpha。",
+  "preparation_outcome": "authorization_request_ready_for_product_lead"
+}

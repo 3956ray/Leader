@@ -1,0 +1,87 @@
+{
+  "suites": [
+    {
+      "name": "com.example.thinkv2.backup.BackupRepositoryTest",
+      "tests": "10",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:04.547Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "2.49"
+    },
+    {
+      "name": "com.example.thinkv2.ExampleUnitTest",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:04.461Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "0.003"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NoteRepositoryTest",
+      "tests": "14",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:08.313Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "2.42"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NoteLifecycleTest",
+      "tests": "11",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:07.044Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "1.267"
+    },
+    {
+      "name": "com.example.thinkv2.backup.BackupCodecTest",
+      "tests": "10",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:04.468Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "0.075"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NotesModelTest",
+      "tests": "7",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:10.736Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "1.859"
+    },
+    {
+      "name": "com.example.thinkv2.reminders.ReminderTest",
+      "tests": "19",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:12.597Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "1.177"
+    },
+    {
+      "name": "com.example.thinkv2.backup.BackupWriterTest",
+      "tests": "3",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T19:03:07.039Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "0.004"
+    }
+  ],
+  "changed_inputs": [],
+  "log": "/private/tmp/thinkv2-leader-backup-tests.log",
+  "final_identity_pending": true
+}

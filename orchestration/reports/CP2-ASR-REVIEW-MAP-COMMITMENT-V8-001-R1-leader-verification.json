@@ -1,0 +1,106 @@
+{
+  "RESULT": "PASS",
+  "bundle_files": 28,
+  "canonical_objects_rebuilt": [
+    "H",
+    "R",
+    "representation",
+    "K"
+  ],
+  "commit": "f48f4831c9d733080dab97932604f4ecf1e4cbc2",
+  "developer_verifier_preflight": "PASS; exact reviewed script and bounded local data inputs checked before separate execution",
+  "files": [
+    {
+      "bytes": 432,
+      "git_blob": "97926fabba0873e34fc16ce5e9df057b9acd7996",
+      "mode": "100644",
+      "path": "H.json",
+      "sha256": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615",
+      "type": "blob"
+    },
+    {
+      "bytes": 817,
+      "git_blob": "60fbe83e77ad7dff17dcbd14deffe9a531afbaa6",
+      "mode": "100644",
+      "path": "K.json",
+      "sha256": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+      "type": "blob"
+    },
+    {
+      "bytes": 2068,
+      "git_blob": "e616bb1d223966d7f9d48c5c57ce71a25f19d8f7",
+      "mode": "100644",
+      "path": "MANIFEST.json",
+      "sha256": "16bf32555fd9bb295427f112475dce333c56477bb48dab349970e09493e8ef3e",
+      "type": "blob"
+    },
+    {
+      "bytes": 62430,
+      "git_blob": "526df58b4469b195ac34fcc423c98278a28ea17c",
+      "mode": "100644",
+      "path": "PROVENANCE.json",
+      "sha256": "9b835ffb83f007fc81bb9998d981ef1410a51479382a83879f71c077146f57c6",
+      "type": "blob"
+    },
+    {
+      "bytes": 9610,
+      "git_blob": "ad5fba28bddf5738634c04a96fdc1f99fa74e3a3",
+      "mode": "100644",
+      "path": "R.json",
+      "sha256": "9569a0ff117a88fbda16fd2e548530bc4b46a673c7def9f6e05b2c3b2f49ab05",
+      "type": "blob"
+    },
+    {
+      "bytes": 4507,
+      "git_blob": "eea414a782b2866bdc04a7ebb1358ce10ad95789",
+      "mode": "100644",
+      "path": "REPORT.md",
+      "sha256": "f732272450a8b7b68c545bc43038c86a054c2cb8dcc02dbaff450771c479e7fa",
+      "type": "blob"
+    },
+    {
+      "bytes": 12980,
+      "git_blob": "ef88e2d1d2f4aabe2e5b8fcd95f5a9028cdf941a",
+      "mode": "100644",
+      "path": "VERIFICATION.json",
+      "sha256": "9a2ce9822e29215be7f45ad20a5ec74c158248c1be51cf9a3811932d900fcd4d",
+      "type": "blob"
+    },
+    {
+      "bytes": 4278,
+      "git_blob": "df2b64f449678766e3118dd9541fe4e141268a26",
+      "mode": "100644",
+      "path": "representation.json",
+      "sha256": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de",
+      "type": "blob"
+    }
+  ],
+  "identities": {
+    "H": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615",
+    "K": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+    "P": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc",
+    "P_acceptance": "02e6a8a8ac1fa8a1cf019219fc11e16c5feb17b735c22e14d36d6b0cc560db71",
+    "original_R": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+    "representation": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de",
+    "timestamp": "9810a201cd0d752a011c92ea1abd81641343ddfc79b325b6645b92b00d2a2d77"
+  },
+  "independent_time_method": "datetime civil arithmetic with integer timedelta days/seconds/microseconds; exact fixed ISO value asserted first; no floating timestamp",
+  "limitations": [
+    "No private/source pointers followed; source truth inherited from accepted R/P.",
+    "No candidate/controller/transport/P or historical verifier execution; no new authority."
+  ],
+  "manifest_collection": "373565745d67451ddd95dee5d26e0db9705384e2100d6331bb9fe2c35baa9eeb",
+  "module_files": 8,
+  "occurrence_ids": [
+    "d03feeb2d0236594f1feb07b98cb78c2251aa893acb64c67f19b6e0fecfa6649",
+    "0cd777bfa5e50b8e0fa7e01b5c2e5ea72b9a24f87189b52a684e4792c9c9bf20"
+  ],
+  "old_git_records": 129515,
+  "old_tree_record_sha256": "1e19cb590ab7514bd238c70b1be32bc2ea140e83ab16183d194ddfd8e6964c13",
+  "output_tree": "5099a14ce2df00dcc5b3ad704b476dc5b15a5ee9",
+  "parent": "8a2d85d824f12cdc186f84514037698c88237dcb",
+  "root_tree": "0c25a7879b0f0270995e1aa49a78a8e4a25b5de5",
+  "sources_verified": 14,
+  "task_id": "CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1",
+  "worktree_clean": true
+}

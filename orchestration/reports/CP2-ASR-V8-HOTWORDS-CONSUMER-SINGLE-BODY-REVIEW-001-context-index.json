@@ -1,0 +1,39 @@
+{
+  "body_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79",
+  "scope": "Relevant enclosing signatures and exact implementation include only",
+  "rows": [
+    {
+      "line": 27,
+      "text": "#include \"sherpa-onnx/csrc/online-recognizer-impl.h\""
+    },
+    {
+      "line": 88,
+      "text": "void OnlineRecognizerConfig::Register(ParseOptions *po) {"
+    },
+    {
+      "line": 134,
+      "text": "bool OnlineRecognizerConfig::Validate() const {"
+    },
+    {
+      "line": 198,
+      "text": "std::string OnlineRecognizerConfig::ToString() const {"
+    },
+    {
+      "line": 222,
+      "text": "OnlineRecognizer::OnlineRecognizer(const OnlineRecognizerConfig &config)"
+    },
+    {
+      "line": 226,
+      "text": "OnlineRecognizer::OnlineRecognizer(Manager *mgr,"
+    },
+    {
+      "line": 268,
+      "text": "template OnlineRecognizer::OnlineRecognizer("
+    },
+    {
+      "line": 273,
+      "text": "template OnlineRecognizer::OnlineRecognizer("
+    }
+  ],
+  "hotwords_buf_literal_count": 0
+}

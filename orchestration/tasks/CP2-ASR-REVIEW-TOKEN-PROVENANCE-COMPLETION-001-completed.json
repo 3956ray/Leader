@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "completed",
+  "goal": "仅从原授权同一 retained envelope 的两个既定九字节区间补录精确 token 来源，生成独立追加 P 与证据，并在单独验收步骤后再考虑恢复 K。",
+  "baseline_commit": "8a2d85d824f12cdc186f84514037698c88237dcb",
+  "formal_decision_sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+  "predecessor_acceptance_sha256": "bdafc849255f358df4ae2708ad8a934a28c770405f4ab5c973047d4df29c2044",
+  "fixed_references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001.json",
+      "bytes": 7051,
+      "sha256": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001-verification.json",
+      "bytes": 3067,
+      "sha256": "ca492d93813eb41dc589dbf868c49a8d423c8611d8ee180265c388ed3cf7c102"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-CAPABILITY-REVIEW-001-verify.py",
+      "bytes": 3340,
+      "sha256": "923d0669081f5ad7d2d6c35dace85c5c34b8ce3fbf5443a777f0292179fbe3e9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001.json",
+      "bytes": 3588,
+      "sha256": "c66a9fe77a77e15ca6dfa8f958f47ac1de4e1816de52779add3b9eee497163c7"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REAL-COMMENT-REVIEW-AUTHORIZATION-001-approved.json",
+      "bytes": 1784,
+      "sha256": "df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-RELEASE-FREEZE-001-acceptance.json",
+      "bytes": 3668,
+      "sha256": "9f747c348bb0bc656ce7cf8f45824e3d4f2003c3ac5c06647d0fb0c453d631db"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-acceptance.json",
+      "bytes": 6661,
+      "sha256": "141c9b5655cbde45dc7761e65658fd6fe2801c2b5252fc6b12810371b430dbeb"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-DECISION-001-acceptance.json",
+      "bytes": 2356,
+      "sha256": "4b2ce918fe5361889a0920b6d546193836e0c23a0b9e467ebc357ab2dce50707"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-REVIEW-TOKEN-PROVENANCE-DECISION-SYNC-001-acceptance.json",
+      "bytes": 1210,
+      "sha256": "bdafc849255f358df4ae2708ad8a934a28c770405f4ab5c973047d4df29c2044"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-token-provenance-decision-2026-09-06.md",
+      "bytes": 9458,
+      "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/prd-v0.1-2026-09-04.md",
+      "bytes": 63461,
+      "sha256": "3cce758ccff443bdb7ea9368f3c585e4179653228c5071b0353b3991ce99ded7"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v6-release-freeze/2026-09-06/freeze.json",
+      "bytes": 54757,
+      "sha256": "09523de2726e1ac84d065bbf7284d20ae006fae2f561baa6ffbbb88bba0059b7"
+    }
+  ],
+  "fixed_binding": {
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "source_path": "sherpa-onnx/csrc/online-recognizer.h",
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "body_bytes": 7939,
+    "git_blob_sha1": "a4559f413cae739f055509a01d5684879e4a626c",
+    "private_envelope": "/private/tmp/think-asr-v5-acquisition-hqssnorn/run/body-0002.json",
+    "envelope_sha256": "e112db3f6b7a38060ddbb320b7fdf892ec0aeaaaae95c676880106456823e40d",
+    "envelope_bytes": 8579,
+    "required_file_mode": "0600",
+    "required_parent_modes": "0700",
+    "required_type": "regular single-link with no symlink parent",
+    "rule": "websocket",
+    "targets": [
+      {
+        "line": 57,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      },
+      {
+        "line": 60,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      }
+    ],
+    "historical_line_hash_domain": "SHA256(UTF8 text line from decoded body.splitlines(), without line terminator); do not confuse with v6 physical-line-including-terminator hash. Review may additionally record original byte ranges and physical-line hashes after authorization, preserving original pin."
+  },
+  "fixed_targets": [
+    {
+      "line": 57,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1865,
+      "line_byte_end": 1918,
+      "token_byte_start": 1893,
+      "token_byte_end": 1902,
+      "rule": "websocket",
+      "decision": "comment_only_nonoperative_for_this_body"
+    },
+    {
+      "line": 60,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1944,
+      "line_byte_end": 1997,
+      "token_byte_start": 1972,
+      "token_byte_end": 1981,
+      "rule": "websocket",
+      "decision": "comment_only_nonoperative_for_this_body"
+    }
+  ],
+  "authority": "Original explicit user offline review approval df26a4884e47a63c3cdbd0e2afc118e4a4f70f4ef7db9a267d6307e01b4aa9c2 persists for sameobject/twooccurrences; current formal20da8a defines narrower P task. This is not acquisition authorization.",
+  "outputs": {
+    "P": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-P.json",
+    "producer": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-produce.py",
+    "producer_result": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-production.json",
+    "verifier": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-verify.py",
+    "verification": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-verification.json",
+    "acceptance": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-acceptance.json"
+  },
+  "scope": [
+    "先固定所有第一方源/正式记录及HEAD；只读取此8579byte envelope，通过descriptor-relative逐层O_NOFOLLOW、两级private目录0700、regular singlelink0600、size/hash、body7939/UTF8/NUL/SHA/Gitblob、path/role验证。原verify.py只能静态读或hash，不执行/导入。",
+    "内存中只对两条既定行计算historical/physical双hash及绝对区间；只将[1893,1902)、[1972,1981)各9byte作为token提取并严格printableASCII/长度/lower-rule校验。全部对象内容仅用于hash/结构，不打印、导出或语义阅读原header/完整行/相邻字节。",
+    "P domain think-manual-token-provenance-v1/version1，canonical sortedkeys compactASCII no-nonfinite+oneLF。绑定任务/脚本、原request/approval/R/verification/script/H/originalformal、当前正式decision与权限依据、source/envelope身份、每处完整原tuple/decision、原reviewer/reviewed_at。补录created_at独立；token_ascii/base64/lowerhex/token_bytes=9及sha256-original-token-bytes-at-absolute-interval-v1/hash互证；P无自身digest、无新裁定、operational_authority=false。",
+    "生成脚本和独立验收脚本使用Python标准库，预先静态检查。生产步骤只输出新P/production结果，独立验收脚本使用另一实现重新验证同一文件identity/mode和two slices，并比较P所有字段/编码/原记录/hash、文件内容最小化、零网络。独立验收是第二个阶段、第二次同对象受控读取，不执行producer或candidate，不合并K。",
+    "只在Leader新增指定报告/脚本和必要状态记录；源R及产品仓库不变。任何失败停止，不自动重跑；成功P仅ready_for_acceptance，Leader独立验收后才另派K。"
+  ],
+  "out_of_scope": [
+    "不读取其他private/body/corpus/LICENSE/metadata/API/rawscannercontext、不沿依赖/原文指针；不联网、新获取、源码/旧script/candidate/controller/scanner执行，不重新人工裁定。",
+    "不改R/reviewtime/decision/v8/schema/oldfreeze/run，不创建representation/K/F/M/A/T/input/N，不clear pending或改变scope/预算/隐私/Checkpoint。"
+  ],
+  "acceptance": [
+    "同一固定文件与权限/全部hash精确匹配；仅两处token被持久化为原字节编码，原始大段内容不输出，每项tuple/原review来源可独立复算。",
+    "生产与验收两个独立阶段记录明确，P及脚本被hash固定、原所有记录/产品树不变、无实际网络或额外原始材料读取。",
+    "只接受token_provenance_complete_for_acceptance后由Leader单独ACCEPTED；R时间与P创建时间分离、操作权限false，真实运行/P0/闭包/源码采用/CP2未通过。"
+  ],
+  "evidence_required": [
+    "脚本源/hash/静态审查、P/production/独立verification identities、逐层权限与readreceipt、两token完整tuple/编码hash互证、原记录和产品Git未改。",
+    "记录source/semantic/runtime/privacy未验证及后续只能另开K；失败给token_provenance_blocked具体原因，不输出源内容。"
+  ],
+  "stop_conditions": [
+    "任一身份/权限/大小/hash/line/interval/ASCII/lower-rule/编码或来源失败即停止；需要其他上下文/对象/重获取/改原R或schema则回产品决策，不重试扩大范围。"
+  ],
+  "prepared_at": "2026-09-06T10:29:06.992064+08:00",
+  "dispatched_at": "2026-09-06T10:35:14.219714+08:00",
+  "completed_at": "2026-09-06T10:35:38.241802+08:00",
+  "result": "token_provenance_complete_for_acceptance",
+  "P_sha256": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc"
+}

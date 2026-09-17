@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP1-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP1",
+  "status": "accepted",
+  "goal": "把已批准的 CP1 人工门槛延后与 CP2 准入决定准确同步到产品源码仓库的正式文档，并形成单一纯文档提交。",
+  "commit": "2c2ab1c7389221b10218376c9df5918375b162c5",
+  "report": "orchestration/reports/CP1-DECISION-SYNC-001.md"
+}

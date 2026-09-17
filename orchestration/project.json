@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "project": "思（think）Android App",
+  "leader_root": "/Users/orderly_ray/Leader",
+  "target_repo": "/Users/orderly_ray/Projects/thinkV2",
+  "threads": {
+    "product_manager": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+    "developer": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "leader": "01a0a5ce-3e8b-75e1-92be-9eb89ef9ed37"
+  },
+  "canonical_sources": [
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/emulator-first-full-engineering-addendum-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/product-baseline-decision-2026-09-16.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/notes-home-redesign-decision-2026-09-10.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/notes-home-xiaomi-full-scope-decision-2026-09-11.md",
+    "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/sensevoice-int8-product-admission-decision-2026-09-16.md"
+  ],
+  "checkpoints": [
+    "CP0",
+    "CP1",
+    "CP2",
+    "CP3",
+    "CP4",
+    "CP5",
+    "CP6",
+    "CP7",
+    "CP8"
+  ],
+  "state_values": [
+    "NEEDS_RECONCILIATION",
+    "READY_FOR_DISPATCH",
+    "IN_PROGRESS",
+    "AWAITING_REVIEW",
+    "REVISE",
+    "PRODUCT_DECISION_REQUIRED",
+    "PAUSED",
+    "ACCEPTED"
+  ],
+  "task_owner_values": [
+    "leader",
+    "product_manager",
+    "developer",
+    "user"
+  ],
+  "task_status_values": [
+    "draft",
+    "ready",
+    "dispatched",
+    "completed",
+    "accepted",
+    "rejected"
+  ],
+  "previous_threads": {
+    "leader": "01a06d14-dcdb-7bd2-9bc2-4c3a85529a25",
+    "developer": "01a06cbc-2c6a-7ec1-9641-94537468b7eb"
+  },
+  "routing_history": [
+    {
+      "recorded_at": "2026-09-15T16:10:18.585906+00:00",
+      "previous_threads": {
+        "product_manager": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+        "developer": "01a0768d-95fd-78b3-9c31-404f7e1ac7ed",
+        "leader": "01a07655-fdfd-7683-aa57-a4895188d2ff"
+      },
+      "reason": "User explicitly designated current review commander and new developer; PM retained. Latest-context task is consultation only."
+    }
+  ],
+  "context_threads": {
+    "latest_father_app_thinking": "01a09ee2-641e-7af2-ab62-18399fa170ca"
+  },
+  "previous_target_repos": [
+    "/Users/orderly_ray/Projects/think"
+  ],
+  "target_repo_reconciliation": "User confirmed blank template; from-zero development authorized. Old evidence archived.",
+  "approved_sequence": [
+    {
+      "previous_task_id": "V2-CALENDAR-IMPORT-001",
+      "task_id": "V2-AI-SUGGESTIONS-001",
+      "from": "CP4",
+      "to": "CP5",
+      "scope_note": "Approved E6→E7 serial engineering under user emulator-first decision; does not mark full CP4/Xiaomi/family passed.",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/emulator-first-full-engineering-addendum-2026-09-16.md",
+          "sha256": "43c34a97ae642c0279f92cd2e9db5c6f6a85d28f3173e975fee7768bf7cc3391"
+        }
+      ]
+    },
+    {
+      "previous_task_id": "V2-AI-SUGGESTIONS-001",
+      "task_id": "V2-EXPLICIT-RELATIONS-001",
+      "from": "CP5",
+      "to": "CP3",
+      "scope_note": "Approved E7 to E8 serial emulator engineering; AI provider, voice quality, Xiaomi and family remain unverified.",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/emulator-first-full-engineering-addendum-2026-09-16.md",
+          "sha256": "43c34a97ae642c0279f92cd2e9db5c6f6a85d28f3173e975fee7768bf7cc3391"
+        }
+      ]
+    },
+    {
+      "previous_task_id": "V2-EXPLICIT-RELATIONS-001",
+      "task_id": "V2-BACKUP-COMPATIBILITY-001",
+      "from": "CP3",
+      "to": "CP8",
+      "scope_note": "Approved E8 to E9 serial engineering; complete backup for implemented feature data, without claiming voice/provider/Xiaomi/family completion.",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/emulator-first-full-engineering-addendum-2026-09-16.md",
+          "sha256": "43c34a97ae642c0279f92cd2e9db5c6f6a85d28f3173e975fee7768bf7cc3391"
+        }
+      ]
+    },
+    {
+      "previous_task_id": "V2-BACKUP-COMPATIBILITY-001",
+      "task_id": "V2-VOICE-CONTROLS-001",
+      "from": "CP8",
+      "to": "CP2",
+      "scope_note": "Complete retained approved post-E5 independent minimal voice-controls subtask; E9 accepted. General ASR quality and paused SenseVoice embedding are not reopened or waived.",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/emulator-first-full-engineering-addendum-2026-09-16.md",
+          "sha256": "43c34a97ae642c0279f92cd2e9db5c6f6a85d28f3173e975fee7768bf7cc3391"
+        }
+      ]
+    },
+    {
+      "previous_task_id": "V2-VOICE-CONTROLS-001",
+      "task_id": "V2-NOTES-ACCESSIBILITY-001",
+      "from": "CP2",
+      "to": "CP3",
+      "scope_note": "Approved baseline note UI/readability/accessibility refinement only, preserving existing behavior and lifecycle; no new product workflow or business feature.",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/product-baseline-decision-2026-09-16.md",
+          "sha256": "47716f64ffac8c2fa00974e9a1df9c5b61169955b445eca335209d9c5f639cdd"
+        }
+      ]
+    },
+    {
+      "previous_task_id": "V2-NOTES-ACCESSIBILITY-001",
+      "task_id": "V2-REMINDERS-USABILITY-001",
+      "from": "CP3",
+      "to": "CP7",
+      "scope_note": "Retained baseline full UI/readability requirements explicitly include reminder list. Verify existing reminder workflows only; preserve B1-B10 semantics and natural/Xiaomi/family gaps.",
+      "evidence": [
+        {
+          "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/product-baseline-decision-2026-09-16.md",
+          "sha256": "47716f64ffac8c2fa00974e9a1df9c5b61169955b445eca335209d9c5f639cdd"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-SOURCE-SEMANTICS-READINESS-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "Decide a coherent bounded next CP2 route addressing both conservative comment-token stops and include-guard/preprocessor limits, or pause, using only accepted derived v5 evidence.",
+  "scope": [
+    "Read Leader accepted v5 acquisition report/verification and committed derived report5dbfe9a; current formal LICENSE/narrow-boundary/acquisition decisions and PRD only. Do not follow private source/API/metadata/corpus or raw scanner pointers.",
+    "Form an explicit APPROVED, REVISE or PAUSE product decision in the formal knowledge base, update PRD/index/log as needed and return exact changed paths/hashes. Chat suggestion alone is not a requirement.",
+    "Consider both observed stops together: mandatory websocket token hit occurs in line comments57/60; include guard ifndef5/endif242 and define6 are independent intentional frozen unsupported forms. Neither proves runtime reachability or upstream infeasibility. A comment-only quick patch cannot make the existing contract ready.",
+    "Decide whether a narrowly specified first-party offline semantic/readiness contract is justified under unchanged CPU-only/ASR-only/privacy goals, or PAUSE the source route. If proposing a revision, define permitted supported subset, comment evidence versus actual capability review, exact unresolved stops, proof obligations and deterministic self-authored cases before any new candidate/freeze/acquisition. Do not authorize deleting a token/blanket ignoring comments, evaluating arbitrary C++ preprocessor expressions or simply refetching to discover the next known stop.",
+    "Keep design/source identity,9seeds,96files/1MiB, forbidden capabilities, no audio persistence/upload, checkpoint and prior artifact verdicts fixed unless explicitly escalating a proposed product change rather than silently implementing it. Ordinary reversible first-party work should not need redundant user permission; actual new source acquisition remains a separately reviewed/authenticated later step.",
+    "Deliver one smallest next task with goal/scope/non-goals/criteria/evidence/stops and honest pending authorization stages, or a precise pause reason and next product choice. Developer remains idle while decision is pending."
+  ],
+  "out_of_scope": [
+    "No product repository/code/tool/freeze/run edits; PM writes only formal product knowledge records. No real source/LICENSE/API/metadata/body/corpus reads, raw excerpts, network/new request, dependencies/models/build/integration or CP2/CP3 approval.",
+    "No restart/retry of the accepted terminated v5 attempt, no instruction to ignore safeguards or reinterpret scanner low_indicators as source/license approval, no automatic new acquisition authority.",
+    "No premature user confirmation for already authorized reversible first-party preparation; any fresh external acquisition authorization must be requested only after the concrete approved work and freeze are independently reviewable."
+  ],
+  "acceptance": [
+    "Formal decision explicitly APPROVED/REVISE/PAUSE with rationale rooted in accepted facts and complete semantics/readiness constraints rather than one-token symptom removal.",
+    "PRD and decision agree on smallest permitted next investment, unchanged privacy/CP gates, old-run termination, future authorization and all unverified items.",
+    "Exact formal files/hashes, one bounded next task or explicit pause/escalation; no developer/source execution begins before Leader verifies and synchronizes the decision."
+  ],
+  "evidence_required": [
+    "RESULT APPROVED/REVISE/PAUSE; formal document/PRD/index/log paths and SHA, chosen route/tradeoffs, next task contract and unresolved items; notify Leader01a071cf-9ac6-7171-b663-749a6e88b0a4 then stop."
+  ],
+  "stop_conditions": [
+    "Need raw third-party data/new acquisition or implementation to make this documentary decision; report missing evidence without accessing it.",
+    "Cannot define a defensible bounded offline route within existing privacy/scope; PAUSE or explicitly escalate instead of weakening gates."
+  ],
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "leader_acceptance_report": "orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V5-001.md",
+  "leader_acceptance_sha256": "cfca8062ef47190e5976b9a9bfab184bc52de0ef3af1f9d7d3cbb106c6a29d8b",
+  "accepted_acquisition_commit": "5dbfe9ad300a8750cf2f76588983a7069760f200",
+  "dispatched_at": "2026-09-06T04:21:04.558757+08:00",
+  "accepted_at": "2026-09-06T04:29:18.202959+08:00",
+  "task_result": "REVISE",
+  "report": "orchestration/reports/CP2-ASR-SOURCE-SEMANTICS-READINESS-DECISION-001.json",
+  "report_sha256": "fe7941850f657f72d1753ff8a938593aef11ba0acee13bfb9e74a7feab9ab3bd"
+}

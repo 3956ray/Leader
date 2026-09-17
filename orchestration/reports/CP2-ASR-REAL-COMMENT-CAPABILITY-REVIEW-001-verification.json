@@ -1,0 +1,87 @@
+{
+  "RESULT": "PASS",
+  "binding": {
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "source_path": "sherpa-onnx/csrc/online-recognizer.h",
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "body_bytes": 7939,
+    "git_blob_sha1": "a4559f413cae739f055509a01d5684879e4a626c",
+    "private_envelope": "/private/tmp/think-asr-v5-acquisition-hqssnorn/run/body-0002.json",
+    "envelope_sha256": "e112db3f6b7a38060ddbb320b7fdf892ec0aeaaaae95c676880106456823e40d",
+    "envelope_bytes": 8579,
+    "required_file_mode": "0600",
+    "required_parent_modes": "0700",
+    "required_type": "regular single-link with no symlink parent",
+    "rule": "websocket",
+    "targets": [
+      {
+        "line": 57,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      },
+      {
+        "line": 60,
+        "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb"
+      }
+    ],
+    "historical_line_hash_domain": "SHA256(UTF8 text line from decoded body.splitlines(), without line terminator); do not confuse with v6 physical-line-including-terminator hash. Review may additionally record original byte ranges and physical-line hashes after authorization, preserving original pin."
+  },
+  "directory_chain": [
+    {
+      "component": "private",
+      "directory": true,
+      "nofollow": true,
+      "mode": "0o755"
+    },
+    {
+      "component": "tmp",
+      "directory": true,
+      "nofollow": true,
+      "mode": "0o1777"
+    },
+    {
+      "component": "think-asr-v5-acquisition-hqssnorn",
+      "directory": true,
+      "nofollow": true,
+      "mode": "0o700"
+    },
+    {
+      "component": "run",
+      "directory": true,
+      "nofollow": true,
+      "mode": "0o700"
+    }
+  ],
+  "private_files_read": 1,
+  "body_envelope_regular_singlelink_0600": true,
+  "body_and_blob_hashes_verified": true,
+  "line_count": 242,
+  "targets": [
+    {
+      "line": 57,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "rule": "websocket",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1865,
+      "line_byte_end": 1918,
+      "token_byte_start": 1893,
+      "token_byte_end": 1902,
+      "line_starts_with_comment_marker": true,
+      "ends_with_continuation": false
+    },
+    {
+      "line": 60,
+      "line_sha256": "617472532f9d32b1c0cea9657c4a81e0d66f4a71c58c810e6dea2337b38b3efb",
+      "rule": "websocket",
+      "physical_line_sha256": "47ff7f7ae67a9f88dd7dd101afe07ee53938e9d01491370fa15f9807a188d37f",
+      "line_byte_start": 1944,
+      "line_byte_end": 1997,
+      "token_byte_start": 1972,
+      "token_byte_end": 1981,
+      "line_starts_with_comment_marker": true,
+      "ends_with_continuation": false
+    }
+  ],
+  "network_or_source_execution": false,
+  "scope": "Byte identities and literal markers only; manual semantic adjudication is separate."
+}

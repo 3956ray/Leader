@@ -1,0 +1,45 @@
+{
+  "RESULT": "PASS",
+  "commit": "63de9e684ad39a476624699f18dd349272062a51",
+  "parent": "393640b8a6825a9a0b42c479949646e1914da199",
+  "tree": "218385c894bb1ccec236e3d309190db61d242640",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 16155,
+      "sha256": "279e4397b60183eb166eb84887573ec326c682aee294010e06639639f3609095",
+      "git_blob": "5f3146f7e41a029f58313630d6d33409d6083404"
+    },
+    {
+      "path": "doc/README.md",
+      "bytes": 15613,
+      "sha256": "d0e39560fcc0022eb3ec01ac2cd2284aa89f0f7e1372c53ab28c95cfd794acb7",
+      "git_blob": "adc89c5f8a1fbe6b595c017e3002702ebb225e4d"
+    },
+    {
+      "path": "doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 41505,
+      "sha256": "27ff57ebdc0b1c90a61c7be6ad4849dd28f0eadb24223754e27ad4589b087e9e",
+      "git_blob": "653c966fc107da659f6699d8a94f06b3e32f8b83"
+    },
+    {
+      "path": "doc/prd-v0.1-2026-09-04.md",
+      "bytes": 65186,
+      "sha256": "19d21af8b69a22d45250038f3f59e24e1c46c3d1d60bd26f8fb9443d87a404d2",
+      "git_blob": "71976caa958dab730b173b10f7f4417559106ce7"
+    },
+    {
+      "path": "doc/cp2-v8-hard-stop-next-step-decision-2026-09-06.md",
+      "bytes": 10980,
+      "sha256": "2b099d1ec9a21c39969a7987453b32bf81068a0f8fb3256fdf63fb905439511d",
+      "git_blob": "3fd49b8d7885b458fd204b9e2a4bb3ec5a1bd593"
+    }
+  ],
+  "untouched_old_records": 129536,
+  "baseline_records": 129540,
+  "links_checked": 46,
+  "clean": true,
+  "formal_copies_exact": true,
+  "diff_check": "PASS",
+  "semantic_review": "Current seven-occurrence Leader-only scope, consumed run,5active4vs2comments,0adjudication/no clearance/newnetwork/v9,privacy/checkpoint unchanged. Historical stages clearly marked."
+}

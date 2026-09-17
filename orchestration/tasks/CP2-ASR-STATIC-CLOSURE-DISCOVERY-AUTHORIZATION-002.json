@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-STATIC-CLOSURE-DISCOVERY-AUTHORIZATION-002",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "decision": "AUTHORIZED",
+  "accepted_at": "2026-09-05T14:35:48+08:00",
+  "goal": "由 Product Lead 明确决定是否授权下一项有界静态闭包发现任务；该任务只形成静态发现材料，不形成最终快照或构建输入。",
+  "report": "orchestration/reports/CP2-ASR-STATIC-CLOSURE-DISCOVERY-AUTHORIZATION-002.md"
+}

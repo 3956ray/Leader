@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "commit": "e2d64f98aae52bd5e015962191a3bf2c121beeb2",
+  "freeze_files_sha256": {
+    "freeze.json": "b64dc4823d1ba38280497fd7b95c56c690caf0b9392d91cb58f0c0df95a4061f",
+    "MANIFEST.json": "5b81a88e471a93d830ef635379e83f2bc96ece8e03aa14ad75a1ae1980fa2bde",
+    "REPORT.md": "4d46de81ba12e481f6449bca06f62c118cba74ed168ff2d0dd50ac582ffaf4f8"
+  },
+  "artifact_files_verified": 4257,
+  "policy_matches_independently_tested_input": true,
+  "policy_sha256": "ee9d1ae7b4b17d2d895d3a6e0b62f73bfda7eb8a9cfae50e9d264f9ed23fc627",
+  "fixed_authorization_fields_match": true,
+  "all_source_pins_verified": true,
+  "tool_code_unchanged": true,
+  "worktree": "clean",
+  "real_metadata_validated": false,
+  "network_access": false
+}

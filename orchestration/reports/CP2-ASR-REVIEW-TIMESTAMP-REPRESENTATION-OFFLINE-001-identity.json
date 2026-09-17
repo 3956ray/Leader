@@ -1,0 +1,19 @@
+{
+  "RESULT": "PASS",
+  "commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "parent": "4e853863e1bf0a68fbf8061767803797947eeec2",
+  "tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+  "file_count": 69497,
+  "manifest_sha256": "d8b003df82da35b20f2e110c074a4a761de926ca914f5affc7b556650f5f9b56",
+  "manifest_collection": "209f2db082868de5060595009e14d111927452bd2aa86c9354115176b74aa352",
+  "bundle_sha256": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+  "bundle_files": 28,
+  "scan_inputs_verified": 69488,
+  "scan_contexts_rehashed": 2564,
+  "original_scan_verdict": "sandbox_only",
+  "old_v7_tree_unchanged": true,
+  "only_new_v8": true,
+  "worktree_clean": true,
+  "whitespace": "all non-diff files pass;32 standard unified-diff single-space context lines verified separately",
+  "isolated_first_party_copy": "/private/tmp/think-leader-v8-el98lnwd"
+}

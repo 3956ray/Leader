@@ -1,0 +1,21 @@
+{
+  "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-001",
+  "RESULT": "ACCEPTED",
+  "product_decision": "APPROVED bounded independent v8 offline timestamp representation only",
+  "accepted_at": "2026-09-06T08:53:53.537655+08:00",
+  "verification": "orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-001-verification.json",
+  "verification_sha256": "e8e3473abcc4f36923513c9c3d0bdb3a4bdd23be5a342a86e8b3be45149e1b95",
+  "formal_decision_sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33",
+  "formal_prd_sha256": "ca6477c0bb4e40913be6861b5299ae4b0121650552da3aa1cd4acbd46c91528f",
+  "review": [
+    "Five formal hashes and three immutable sourcecard references verified;101 local navigation link targets exist; full decision/sourcecard and scoped PRD delta read.",
+    "Strict Gregorian/RFC3339 subset,1..6 fraction digits,explicit +/-14:00 offset limits,-00:00/leapsecond/out-of-range/type/noncanonical rejection; preserve raw,losslessUTC,signedepochmicroseconds,precision/offset and separate exactbytehashdomains. Equal instant never equal representation identity.",
+    "New representation-v2 and affected v8 authority domains prevent old/new substitution; H andoriginalR bytes preserved,allnontimestampbounds unchanged. Only independentv8 selfauthoredoffline and167/1210baseline+matrixdouble/recalculation allowed.",
+    "Ordinary firstpartyoffline preparation already authorized; formalcopy sync then separate single-task dispatch; no genuineRconversion/K/F/M/A/T/N,network or sourceauthority."
+  ],
+  "limitations": [
+    "Knowledge automated lint unavailable per PM LOG; manual consistency checked, no automatedlint pass claimed.",
+    "KB has preexisting uncommitted/untracked work; no clean/commit claim for KB.",
+    "Newv8implementation andactualRmapping unverified;acceptedv7 C remainsimmutable;CP2notpassed."
+  ]
+}

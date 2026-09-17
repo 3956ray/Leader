@@ -1,0 +1,73 @@
+{
+  "observed_at": "2026-09-16T02:28:37.567051+00:00",
+  "command": "JAVA_HOME=AndroidStudioJBR ./gradlew --offline :app:testDebugUnitTest --rerun-tasks --no-daemon --console=plain",
+  "log": "/private/tmp/thinkv2-voice-leader-host-tests.log",
+  "log_sha256": "f2e990b7d081204a469786d654cdc6c1164b0249e5a80ff40301dba92f2d85d9",
+  "tests": 91,
+  "failures": 0,
+  "suites": [
+    {
+      "name": "com.example.thinkv2.backup.BackupRepositoryTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "8cf1816acd8b44fef708540563bcf16c620b24e7cb2cef91c393fad21c37b5f8"
+    },
+    {
+      "name": "com.example.thinkv2.voice.VoiceCaptureTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "15bac817d8745b46cf97afdd2fa94bbf159efb8fef8b3b0fae10c960cf8f6b72"
+    },
+    {
+      "name": "com.example.thinkv2.ExampleUnitTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "95ddbbc489a0aca757dceb0eb99caa41e7d5baad5ca8045a732eaafce58bcf97"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NoteRepositoryTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "0b5262a61a3f3f8ec717a9a47c25ae94c6828b4421e681650e6d5f16d9d58c21"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NoteLifecycleTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "ecca4758d86f0f2fd02d50380439fd2e6c2e80ccc8ccf27fe5bf75c48bc8967b"
+    },
+    {
+      "name": "com.example.thinkv2.backup.BackupCodecTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "cbf6701001d182c40ff28c6b680644f96a0e77e834295872b704d89608cae7a5"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NotesModelTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "ef471233863abd8f7876e3aa6b4e2e790d3b897d0ec163bd6d02269314903bc0"
+    },
+    {
+      "name": "com.example.thinkv2.reminders.ReminderTest",
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "b75065bf49bad8f3f005682d5c4853682a551cc8d0522f0e69df82f4cc11f0fc"
+    },
+    {
+      "name": "com.example.thinkv2.backup.BackupWriterTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "0808b766de7dda58f176fcae1d85fdbdcc50d5d6aaf34ec799b3a1357fcb7ec9"
+    }
+  ]
+}

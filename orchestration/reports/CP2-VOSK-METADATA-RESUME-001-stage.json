@@ -1,0 +1,24 @@
+{
+  "executor_idle": true,
+  "idle_evidence": "wait_threads observed PM idle/completed 01a080e8-2591-7660-913c-a7ece3a37b95; dev completed 01a080ee-7c6b-7a60-9a9a-10da945c6728. Product main clean at 7945dc25; leader_check passed.",
+  "contract": {
+    "task_id": "CP2-VOSK-METADATA-RESUME-001",
+    "owner": "product_manager",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+    "goal": "恢复并完成固定Vosk/JNA与中文模型的官方依赖、变体和许可文本查询，输出真实运行前剩余缺口。",
+    "formal_scope": "/Users/orderly_ray/Projects/think/doc/cp2-vosk-integration-gaps-decision-2026-09-08.md",
+    "formal_scope_sha256": "b8b474d8f4c2bfa0a5baa16a17b6aeaea721fddbff6b15e91c319709c8fc1f59",
+    "user_authorization_context": "2026-09-08当前Leader任务先明确询问：恢复第1步，仅官方JNA5.18.1依赖说明、Vosk0.3.75.module和runtime/model许可文本读取，不含新二进制/安装/运行；解释此前自动审批拒绝原因。用户直接回复：继续下一步。Leader据上下文记录为该范围的恢复确认，不扩展执行权限。",
+    "scope": [
+      "先读取正式范围及原cp2-vosk-dependency-license-metadata-2026-09-08.md权限停止报告，核对身份并ACK；记录最新用户恢复确认，旧拒绝及旧报告原文保留。",
+      "执行原正式范围的固定JNA5.18.1 POM、Vosk0.3.75.module与必要官方来源/规范、runtime/model许可说明查询。原12次总预算保留Q01已用1次，剩余最多11次；每响应1MiB，全批5MiB，30秒/请求，45分钟全批，最多2恢复且计总额；成功即停。遵循原范围来源建立、XML外部实体拒绝、JSON仅数据及实际跳转计数要求。",
+      "新建知识库cp2-vosk-dependency-license-metadata-resumed-2026-09-08.md及必要INDEX/LOG，保留请求原文和SHA、实际URL/HTTP/bytes/来源链及总账，输出依赖变体/POM差异表、两个主对象分别许可处置表、事实/未知和运行前阻塞；不覆盖旧证据。",
+      "结果明确metadata_batch_complete或metadata_insufficient；即便研究完成也不批准采用或真实执行。给出一个具体下一步建议，由Leader核验后处理，不自行派dev。"
+    ],
+    "out_of_scope": ["新二进制/源码实现/签名sidecar/旧包重取或新读/构建/安装/加载/麦克风/真机/产品源码修改/CP3/旧sherpa链/更深popen追踪。"],
+    "acceptance": ["保留旧尝试并遵守剩余预算，固定版本和官方文本来源；原始证据可核。", "依赖、变体、许可分别结论，未知与阻塞不伪装resolved；无范围外取得或执行；正式报告存在。"],
+    "evidence_required": ["四身份ACK；最终JSON含四身份、acknowledged和result COMPLETE/BLOCKED，报告路径及SHA、请求统计和逐项证据、未验证与工作区修改。此前完成回调已拒绝，不重复尝试；原始结果留本任务，由Leader主动wait/read核验。"],
+    "stop_conditions": ["实际权限拒绝立即停止，不换工具渠道；来源冲突/预算到限/必须新对象或执行则metadata_insufficient并报告具体缺口；不自动下一任务。"]
+  }
+}

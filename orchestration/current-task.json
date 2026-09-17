@@ -1,0 +1,66 @@
+{
+  "task_id": "V2-REMINDERS-USABILITY-001",
+  "owner": "developer",
+  "checkpoint": "CP7",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "goal": "Verify and minimally repair readability and operation of existing reminder workflows on synthetic emulators, preserving all reminder behavior.",
+  "scope": [
+    "Only /Users/orderly_ray/Projects/thinkV2 at clean accepted8a98e09d1276a17016a4e71f7f7385f6c57e402c. Baseline UI requirement explicitly includes reminder list; prior notes-only matrix does not cover this. CP7 only.",
+    "Inspect actual reminder form, plan list and event history at systemfont1.0/1.5/2.0, light/dark,320dp narrow portrait and IME/rotation. Verify once/daily/weekly multi-day controls, date/time entry, validation errors, enabled/disabled and permission-denied states, save/back, exact-note links and history pagination. Preserve useful error/status meaning and scroll access. Body18sp baseline and primary targets56dp; actual measured nodes and screenshots.",
+    "Fix only observed presentation, focus, semantics or state-loss defects. Existing fixed status/error area may consume viewport at large font; reproduce before claiming defect. Verify actual switch/chip selected states and labels, keyboard focus and meaningful disambiguation for same-title plans. No repeated open-ended TalkBack injection research: bounded test only if already available; report actual service gaps separately.",
+    "Use real durable synthetic reminders and exact record IDs; verify form persistence after explicit save and existing back semantics, update/cancel rules and notification links unchanged, no duplicated plans or accidental enable. Host algorithms and Android affected regressions; real scheduled single notification if needed for changed path, no claim compressed cycles prove natural recurrence."
+  ],
+  "out_of_scope": [
+    "No new repeat types/time slots, exact alarm permission, engine/provider, schema/dependency, notification privacy change or generalized redesign. No other feature UI edits unless minimal required integration. No real-device/private data or family tests; no ASR re-evaluation."
+  ],
+  "acceptance": [
+    "Each tested font/theme reminder route remains operable with visible or scrollable essential text/actions; actual settings and node bounds/screenshots recorded. Fix concrete failures without weakening existing behavior.",
+    "Exact SQLite and affected notification/scheduling regressions prove existing semantics retained. No private data, new dependency/schema or unreviewed service. Build/lint and meaningful tests pass; zero-source-change delivery acceptable if existing UI proves compliant.",
+    "Provide cleancommit and exact APK/test version binding, issue-to-fix evidence and explicit limitations. Keep natural daily/weekly,Xiaomi,family,TalkBack,ASR and provider gaps distinct; not whole-app completion."
+  ],
+  "evidence_required": [
+    "ACK task/attempt/hash/baseline, then RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED. Changed files, observed issues, exact test commands/results, screenshots/config/node bounds/focus/DB evidence, final commit/APKs/hashmanifest, failures preserved and remaining gaps."
+  ],
+  "stop_conditions": [
+    "One CP7 task only; finish report then stop. Do not start another checkpoint.",
+    "Stop affected work for data/consent loss, changed scheduling semantics or new dependency/permission/product scope need; report evidence, do not waive criteria."
+  ],
+  "contract_body": {
+    "task_id": "V2-REMINDERS-USABILITY-001",
+    "owner": "developer",
+    "checkpoint": "CP7",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Verify and minimally repair readability and operation of existing reminder workflows on synthetic emulators, preserving all reminder behavior.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2 at clean accepted8a98e09d1276a17016a4e71f7f7385f6c57e402c. Baseline UI requirement explicitly includes reminder list; prior notes-only matrix does not cover this. CP7 only.",
+      "Inspect actual reminder form, plan list and event history at systemfont1.0/1.5/2.0, light/dark,320dp narrow portrait and IME/rotation. Verify once/daily/weekly multi-day controls, date/time entry, validation errors, enabled/disabled and permission-denied states, save/back, exact-note links and history pagination. Preserve useful error/status meaning and scroll access. Body18sp baseline and primary targets56dp; actual measured nodes and screenshots.",
+      "Fix only observed presentation, focus, semantics or state-loss defects. Existing fixed status/error area may consume viewport at large font; reproduce before claiming defect. Verify actual switch/chip selected states and labels, keyboard focus and meaningful disambiguation for same-title plans. No repeated open-ended TalkBack injection research: bounded test only if already available; report actual service gaps separately.",
+      "Use real durable synthetic reminders and exact record IDs; verify form persistence after explicit save and existing back semantics, update/cancel rules and notification links unchanged, no duplicated plans or accidental enable. Host algorithms and Android affected regressions; real scheduled single notification if needed for changed path, no claim compressed cycles prove natural recurrence."
+    ],
+    "out_of_scope": [
+      "No new repeat types/time slots, exact alarm permission, engine/provider, schema/dependency, notification privacy change or generalized redesign. No other feature UI edits unless minimal required integration. No real-device/private data or family tests; no ASR re-evaluation."
+    ],
+    "acceptance": [
+      "Each tested font/theme reminder route remains operable with visible or scrollable essential text/actions; actual settings and node bounds/screenshots recorded. Fix concrete failures without weakening existing behavior.",
+      "Exact SQLite and affected notification/scheduling regressions prove existing semantics retained. No private data, new dependency/schema or unreviewed service. Build/lint and meaningful tests pass; zero-source-change delivery acceptable if existing UI proves compliant.",
+      "Provide cleancommit and exact APK/test version binding, issue-to-fix evidence and explicit limitations. Keep natural daily/weekly,Xiaomi,family,TalkBack,ASR and provider gaps distinct; not whole-app completion."
+    ],
+    "evidence_required": [
+      "ACK task/attempt/hash/baseline, then RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED. Changed files, observed issues, exact test commands/results, screenshots/config/node bounds/focus/DB evidence, final commit/APKs/hashmanifest, failures preserved and remaining gaps."
+    ],
+    "stop_conditions": [
+      "One CP7 task only; finish report then stop. Do not start another checkpoint.",
+      "Stop affected work for data/consent loss, changed scheduling semantics or new dependency/permission/product scope need; report evidence, do not waive criteria."
+    ]
+  },
+  "contract_sha256": "f691b2393ed29bec186ea9d2ee7579807e629a6a78ba575873b18e29948377cf",
+  "attempt_id": "8da8a67a-0259-4df6-9ae1-924d7c3fad37",
+  "phase": "review",
+  "status": "completed",
+  "send_intent_at": "2026-09-16T15:57:17.855670+00:00",
+  "sent_at": "2026-09-16T15:57:59.897881+00:00",
+  "acknowledged_at": "2026-09-16T15:59:09.110454+00:00",
+  "executor_turn_id": "01a0aaf0-7144-7051-8052-10fe18572986",
+  "result": "COMPLETE",
+  "result_at": "2026-09-16T16:39:10.686697+00:00"
+}

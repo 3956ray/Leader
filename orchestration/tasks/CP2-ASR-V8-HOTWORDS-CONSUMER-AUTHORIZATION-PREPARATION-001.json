@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "goal": "只从已接受且已提交的第一方派生身份记录核定单个online-recognizer.cc的精确身份，准备供用户新批准的单次正文及局部静态审查请求；缺身份则停止。",
+  "prepared_at": "2026-09-06T06:27:52.734651+00:00",
+  "baseline_commit": "bd0bb57efc4348f599c36a3166fa018809914788",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-V8-LOCAL-CONFIGURATION-DECISION-SYNC-001-acceptance.json",
+    "bytes": 2020,
+    "sha256": "d66ddd54efd5d00312066f3c47e30f09912536301565c076d89ea973a86d366c"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+    "bytes": 12792,
+    "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2"
+  },
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer.cc"
+  },
+  "scope": [
+    "执行正式决定全部约束，仅搜索并读取已提交第一方派生policy/manifest/identity摘要中与唯一candidate直接对应记录；核查对应历史验收、记录与Gitblob身份、commit/tree/mode/type/blob/精确decodedsize来源。不能把path+tree猜成blob，不能使用syntheticfixture或未验收副本。",
+    "若精确mode/blob/size可从已接受已提交记录独立复核，且size<=262144，新增pending authorization JSON和Markdown绑定task/formaldecision/完整对象/一次请求一次成功或失败/精确size及hardcap/用途/最小enclosingfunctiontype可见范围/所有禁止和停止条件。按正式模板替换所有占位，准备完成后交用户批准，绝不先创建acquisition authority或取正文。",
+    "用途只查看hotwords_file/hotwords_buf直接消费、selector/空值/fileI/O和下层缺证引用；未来单文件若委派或需依赖即停，禁止第二文件/递归跟随/新metadata/旧run恢复/v9/改frozenrules。",
+    "若找不到任一精确字段则交authorization_request_preparation_blocked；输出第一方搜索/来源核对/零raw读取证据并回产品门，不请求含占位/猜测身份的批准。只修改Leader派生文档，产品repo只读。"
+  ],
+  "out_of_scope": [
+    "不读取任何body/rawprivate/tree或commitmetadata/旧envelope/sourceanalysisarchive/rawscannercontext，不执行candidate/scanner/controller/reviewer/获取/网络/构建/测试/第三方。",
+    "不新增源码许可/clearance/新authority/map/v9，不改变产品/冻结/旧run/预算/隐私/Checkpoint；不能自动获取身份或第二文件。"
+  ],
+  "acceptance": [
+    "唯一candidate完整来源与模式/blob/精确size可复核且来源已接受已提交，或明确blocked缺口；无rawmetadata/body/network读或执行。",
+    "若ready，JSON/MD固定完整对象与一次<=262144B范围，正式授权句无占位，全部用途/可见界限/停止/无扩权一致；尚未创建authority或执行获取。"
+  ],
+  "evidence_required": [
+    "来源文件path/bytes/SHA/Gitcommitblob、历史验收出处/字段指针、独立核对记录和准备脚本（若有）身份；完整pendingrequest或blocked报告。",
+    "明确零网络/新metadata/body/旧run复用/候选执行、产品HEAD/clean不变；ready后只问具体新批准，不自动开始。"
+  ],
+  "stop_conditions": [
+    "任何来源identity/HEAD/未知修改不符或模式/size/blob缺失即停；不猜不取替代。",
+    "需要新metadata/body/network或第二对象即blocked并回产品门；请求含占位符时不得交用户批准。"
+  ]
+}

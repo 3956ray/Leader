@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-DECISION-SYNC-002",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "task_result": "COMPLETE",
+  "goal": "把已验收的 CP2 窄运行时边界设计准入决定和最新 PRD 准确同步到产品仓库，并形成单一纯文档提交。",
+  "commit": "4c128821f22ff8b61939976789e3df70746c6a51",
+  "report": "orchestration/reports/CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-DECISION-SYNC-002.md"
+}

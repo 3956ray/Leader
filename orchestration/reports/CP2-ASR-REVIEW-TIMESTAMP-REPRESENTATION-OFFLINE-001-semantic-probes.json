@@ -1,0 +1,107 @@
+{
+  "candidate": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "calendar_cases": 33361,
+  "accepted": 23730,
+  "rejected": 9631,
+  "syntax_cases": 41,
+  "input_fingerprint": "6aa7330a3b55d6e70013f27e36b46739e850f78a1f2dcd65c5b1dcaf07ea9537",
+  "controller": [
+    {
+      "case": "time_input_schema7",
+      "stop_reason": "schema",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_domain_H",
+      "stop_reason": "manual_domain",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_domain_R",
+      "stop_reason": "manual_domain",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_domain_representation",
+      "stop_reason": "manual_domain",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_domain_K",
+      "stop_reason": "manual_domain",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_domain_M",
+      "stop_reason": "manual_domain",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_domain_T",
+      "stop_reason": "manual_untrusted_authority",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_equal_fraction",
+      "stop_reason": "manual_commitment_binding",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_equal_zero_zone",
+      "stop_reason": "manual_commitment_binding",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_tamper_raw_domain",
+      "stop_reason": "timestamp_representation",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_tamper_utc_domain",
+      "stop_reason": "timestamp_representation",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_tamper_instant_float",
+      "stop_reason": "timestamp_representation",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_invalid_utc_underflow",
+      "stop_reason": "timestamp_utc_range",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    },
+    {
+      "case": "time_invalid_utc_overflow",
+      "stop_reason": "timestamp_utc_range",
+      "calls": 0,
+      "independent_terminal": "PASS"
+    }
+  ],
+  "schema_mutant_rejected": true,
+  "network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  }
+}

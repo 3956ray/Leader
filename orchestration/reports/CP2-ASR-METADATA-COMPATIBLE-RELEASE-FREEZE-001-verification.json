@@ -1,0 +1,18 @@
+{
+  "RESULT": "PASS",
+  "commit": "2f4760d0ff3ea78de929198fba88d3744353a321",
+  "parent": "524c6484b1290cd2556ebf9a1031a4d00b273a86",
+  "freeze_files": {
+    "freeze.json": "a9961c8243a75e244517428f53fed87374cd190a5114d5f62193826337196305",
+    "MANIFEST.json": "d11f799d37a9d5ada92071109cdbcc4d267e2eeb9bc6e1b034607b2bc2992fb7",
+    "REPORT.md": "61aac5e0165b49cbb09333443de0b29af9daa43451ebf982db5da257409e1a44"
+  },
+  "release_files_verified": 1024,
+  "all_canonical_hashes_and_git_blobs_match": true,
+  "external_evidence_sources_verified": 27,
+  "policy_scope_seeds_deny_processing_unchanged": true,
+  "real_parser_evidence_matches": true,
+  "old_trees_unchanged": true,
+  "no_network_or_acquisition": true,
+  "clean_worktree": true
+}

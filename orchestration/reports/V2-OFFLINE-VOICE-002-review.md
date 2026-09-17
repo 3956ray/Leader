@@ -1,0 +1,9 @@
+# V2-OFFLINE-VOICE-002: reviewed partial, REVISE and parked
+
+Final c22345b1ef18335e11df15f4595879464a385f5b; clean tracked workspace, completed/idle dev verified.74 evidence-manifest entries and4 APKs match. One real30-clip candidate run independently reviewed: names61/66, strict usability23/30, optimistic ceiling25/30. Quality fails.29 PCM hashes match001;CN14 differs, cause unproven. No repeated benchmark, answer hotwords, lowered threshold or long performance batch.
+
+Candidate remains explicit opt-in androidTest only. Normal main source diff empty; normal APK DEX17345 classes has no candidate/Sherpa/ONNX classes, no candidate assets/native. Normal/evaluation builds and lint pass;91 host tests reported0 failures, underlying product source unchanged. Model/AAR identities,4 arm64/16KB binaries, bounded memory adapter and exception cleanup reviewed. Source/static scans have documented binary/large-object limits; no universal privacy/provenance claim. Isolated runtime data/log observations retained.
+
+PM decision b4927069160becae74a9afaa6d83ec3e14d1e9d0958ddb1a642f4e03cb75969d permits only synthetic reference evaluation and pauses private embedding. This external permission gap remains independent of quality failure. No CP2 acceptance; no daily-use candidate package. Long-duration and candidate lifecycle evidence not acquired after failed gate, correctly unverified. Runtime/microphone/Xiaomi/family obligations remain in full matrix.
+
+Close and park this bounded attempt under approved emulator-first addendum: independent next engineering can proceed after partial delivery while actual external permission is unresolved. Next CP4 calendar import does not depend on this model. Voice entry and explicit voice controls remain unmet, to revisit after independent features; no automatic repeated license consultation or model search. Evaluation artifacts and ignored local objects are retained as internal evidence only.

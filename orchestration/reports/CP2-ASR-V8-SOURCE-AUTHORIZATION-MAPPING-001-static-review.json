@@ -1,0 +1,26 @@
+{
+  "RESULT": "PASS",
+  "scripts": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-prepare.py",
+      "bytes": 8941,
+      "sha256": "a325668728c307061711fc553b96a318d65e07427cf26fdec83a32b2c9dcc0b0"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-verify.py",
+      "bytes": 8655,
+      "sha256": "f03379aa1a3c56fcbf5b1920ff8704fd7f4d78bcff0b1c735900154efc8a556e"
+    }
+  ],
+  "checks": [
+    "Leader-authored standardlibrary prepare and independent verify scripts reviewed; no originalsource/privatebody reads; two exact authorized metadata files descriptor-relative nofollow/regularsinglelink0600/size/hash/stablefd.",
+    "Independent verifier reconstructs A/T/package/input/pins and validates unchanged objects; all69505frozeninputs/33externalrefs/28bundle and M/sourceacceptances independently rehashed.",
+    "Pure validation imports only8reviewed modules after12preimportnetwork traps; actualevents andcalls zero, acquisition/controller/transport notimported; no N."
+  ],
+  "initial_harness_issue": "First prepare script created objects and verified rawmetadata then pureparse_input stopped on missing SCHEMA.md in partial8modulecopy. No candidate modification, no request; objects retained. New independentverify uses complete28filecopy and all purechecks pass.",
+  "metadata_reads": "Each of two fixed files read once by prepare and once by independentverify; no raw copies exported; parsed only in successful guarded pureprocess.",
+  "commands": [
+    "python3 -I -B orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-prepare.py (exit1: incomplete preflight harness, no source requests)",
+    "python3 -I -B orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-verify.py (exit0 PASS)"
+  ]
+}

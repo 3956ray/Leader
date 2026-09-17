@@ -1,0 +1,38 @@
+{
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1",
+  "RESULT": "PASS",
+  "blockers": [],
+  "scope": "Independent internal evidence/inference/hard-filter consistency review of the three specified R1 research documents and R1 contract, incorporating Leader-supplied verification of the original official pages.",
+  "leader_supplied_source_verification_reference": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1-leader-verification.json",
+    "sha256": "15f4b17405762c1ab4747f7a37c67d5b27753a8b9f1a5f35078da59fc1fc2e6e",
+    "basis": "Reference and hash supplied by Leader; not independently opened in this four-document review."
+  },
+  "reviewed_sha256": {
+    "evidence-cards": "a28af30971250a028d464e3edc844fde5a0382345aefa40da031899f1078bead",
+    "comparison-matrix": "af747a9ce0654bd6a9b9a285ba08365202de47b6ba28a5eb0661c4db15f9ebac",
+    "research-memo": "4340ad61c2fa0b7e3909baa89a37f9bc8eb16e769736eb265199579f2d8c146b",
+    "R1-contract": "40faaf16b43a65582f241f2cb5a889f0f46f41827d8201c19ebfcab739e3de81"
+  },
+  "path_basis": {
+    "research_documents": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-alternative-offline-chinese-asr-{evidence-cards,comparison-matrix,research-memo}-2026-09-06.md",
+    "R1_contract": "/Users/orderly_ray/Leader/orchestration/tasks/CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001-R1.json"
+  },
+  "resolved_original_findings": [
+    "R1 adds the previously missing model-side premise: the same official SenseVoiceSmall-onnx page describes local-server offline transcription with the identified ONNX model, rather than merely a model format plus a generic Android runtime. Leader independently confirms that premise from the same exact Source08 URL. Together with Source07's Android/on-device/default-CPU runtime documentation, this supports the explicitly conditional research-stage component architecture inference that mandatory external-cloud audio upload is not inherent to the candidate route.",
+    "The documents keep concrete Android operator/input compatibility, JNI, preprocessing, tokenizer/decoder, in-process PCM, no-disk/log/buffer privacy, package identities, performance and complete dependency/license closure Unknown. These are not represented as tested PASS. The R1 contract expressly permits a bounded combination inference without requiring this implementation closure at research stage.",
+    "Whisper upstream code and model weights are now identified as MIT, separately from future converted-artifact provenance/redistribution review. The tiny/base disk and memory figures are identified as official estimates and distinguished from upstream A100 VRAM references and unperformed Android/device measurements. Leader supplied independent original-page confirmation; licensing no longer appears as the shortlist exclusion reason."
+  ],
+  "interpretation_boundaries": [
+    "Source08's local example is a server deployment. Its loopback client and .pcm file input do not establish Android execution, an in-process PCM interface or no filesystem use. The R1 documents do not claim those results, and explicitly preserve Android/PCM/privacy unknowns. Local-server operation supplies a limited no-mandatory-cloud premise, not a completed mobile implementation.",
+    "Source07 supplies the separate documented Android runtime path. The specific SenseVoice/Android integration remains conditional engineering inference; QUALIFIED WITH CONDITIONS means eligibility for a future independent product/intake selection decision only, not proven end-to-end compatibility or permission to integrate.",
+    "Partial extraction is accurately attributed to the same Source08 official search summary, with date and fields. This conclusion relies on Leader's independent confirmation of that exact page rather than treating a failed page render as evidence or substituting another model/page.",
+    "The three reports consistently count Vosk and the ONNX/SenseVoice combination as the two research qualifiers under this interpretation. WeNet retains the documented model-license gap; whisper.cpp retains the separately reported Chinese-evidence gap. Neither exclusion is framed as technical impossibility. No contradictory shortlist or outcome remains in the reviewed R1."
+  ],
+  "authorization_state": "Research sufficient for the next independent product decision only. No automatic intake, artifact acquisition, source review, runtime execution, adoption, privacy relaxation or Checkpoint progression. Initial rejected sufficiency is not retroactively accepted.",
+  "limitations": [
+    "Read only the three R1 knowledge-base reports and R1 contract. No browsing/new page, source/private/raw material, artifact acquisition, code execution or knowledge-base modification occurred.",
+    "Official-source truth for Source07/08 and Whisper license/resources is inherited from Leader's parallel same-page verification; it was not independently browsed by this reviewer. Other official claims and page-visit history remain outside this narrow internal consistency review.",
+    "PASS is not a product-route selection, legal approval, model/runtime security finding or statement that the inferred Android composition will work. A failed implementation premise may still stop a later independently authorized intake."
+  ]
+}

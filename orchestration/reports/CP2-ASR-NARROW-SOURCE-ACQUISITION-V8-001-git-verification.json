@@ -1,0 +1,63 @@
+{
+  "RESULT": "PASS",
+  "head": "393640b8a6825a9a0b42c479949646e1914da199",
+  "parent": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "root_tree": "98f3c00ddec4027118ca879b6ffe4d8708d07c36",
+  "output_subtree": "7ad02a8d60493469511116950cf6020e8480d779",
+  "unchanged_old_records": 129532,
+  "old_record_bytes_sha256": "e41f4110a3f0e8bb559fb7fcf5efb8c504e1f7642b12dc2b5501e4bbdbc65cd6",
+  "new_files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 4802,
+      "sha256": "ec8978ef16f7162c59688503a2ea303708b7eeb22a53d3668482b1c6365085ab",
+      "git_blob": "f97aeacca874b14d48c4bd6779d1f450232d7164"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 4698,
+      "sha256": "f4f74392c6ca09b45f9c29833aacbf80e09b2d5c2c37085136acf55976d6e112",
+      "git_blob": "c378b9176ab44151354ae8f2d45c33c42f61c301"
+    },
+    {
+      "path": "acquisition.json",
+      "bytes": 24129,
+      "sha256": "b5187cfe6113554dfdf003bfc5a6eb026e19c8a120fa69a0c3db2c3584ab9e17",
+      "git_blob": "f61744b6defaaa1063f17ece5fa1598490e6b414"
+    },
+    {
+      "path": "evidence-manifest.json",
+      "bytes": 49300,
+      "sha256": "fc23f12ed4d6cf1c109b6b00de20a9db9f4b371e2622bbb50125497ed9890a37",
+      "git_blob": "3ae53504caf7fe72ae9602e8ab2050028a9d36ae"
+    },
+    {
+      "path": "file-manifest.json",
+      "bytes": 1490,
+      "sha256": "172c7cc7453f24f17ff0339fdc9ba242f8c667813fd749a0f641334f89aa763e",
+      "git_blob": "e02df6d8f79f3d0eaf21a486e2ff8947983fa307"
+    },
+    {
+      "path": "request-ledger.json",
+      "bytes": 7949,
+      "sha256": "d19f8c8e012ff54821e625fe756cd18d054c4a6009c12cb9c3f24c6a57cf510f",
+      "git_blob": "20ad138bd49bc7391d7f7b6e2b02ca19c2c4e5e7"
+    },
+    {
+      "path": "scanner-summary.json",
+      "bytes": 5052,
+      "sha256": "0e6fba99685377c6a5bf1eafefc8d1d435a20d48423f044cf7defe4ea880c2aa",
+      "git_blob": "7358ac2b89829126b8b3a760fccba45b02c6021f"
+    },
+    {
+      "path": "source-review.json",
+      "bytes": 10522,
+      "sha256": "6bf0cbd564e4232d9a1c6114292d7d2e45c71b9da545578dbdf4565bf04e3fef",
+      "git_blob": "91081493056a81d50536331e63f63a6fde98f963"
+    }
+  ],
+  "file_manifest_collection": "dab73a9c31abcbb2b82eefed25f0ae063f449a2a6c0f96686df84787d805a790",
+  "clean": true,
+  "diff_and_show_check": "PASS",
+  "amend_note": "Only own unpushed report wording/file-manifest amended; parent unchanged; no retained run or frozen input mutations."
+}

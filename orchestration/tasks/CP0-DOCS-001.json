@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP0-DOCS-001",
+  "owner": "developer",
+  "checkpoint": "CP0",
+  "status": "accepted",
+  "goal": "核对并只提交已获用户授权的 Android 空项目安全审查文档，使产品仓库恢复边界清楚的干净工作区。",
+  "commit": "1019963129acbf5b93948155afea71d53bdfce48",
+  "report": "orchestration/reports/CP0-DOCS-001.md"
+}
+

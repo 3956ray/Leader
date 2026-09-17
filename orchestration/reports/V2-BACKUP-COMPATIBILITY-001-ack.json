@@ -1,0 +1,10 @@
+{
+  "task_id": "V2-BACKUP-COMPATIBILITY-001",
+  "attempt_id": "85ebe7d3-3c42-4907-84c0-168c13c79c2a",
+  "contract_sha256": "89c1bb14b1f3ef54516c2b1bed7f98a73e5c430bc71e4218c882bcae51845b2b",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "turn_id": "01a0aa2e-5dd4-7352-b2fe-4969b0b84df3",
+  "acknowledged": true,
+  "baseline": "53fb5da83c841d565f8c2f627de4d81905a1abf6",
+  "receipt_source": "Explicit developer callback ACK with independently recomputed contract hash, clean baseline, full contract and PM X1-X3/C1-C10 read."
+}

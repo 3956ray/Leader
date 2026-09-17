@@ -1,0 +1,45 @@
+{
+  "task_id": "CP2-V8-HOTWORDS-CONSUMER-DECISION-SYNC-001",
+  "RESULT": "PASS",
+  "commit": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "parent": "bd0bb57efc4348f599c36a3166fa018809914788",
+  "tree": "d82ae3e11ce903f3434a463921504da5c18361da",
+  "old_leaf_records": 129542,
+  "unchanged_outside_allowed": 129538,
+  "allowed_files": [
+    {
+      "path": "/Users/orderly_ray/Projects/think/AGENTS.md",
+      "bytes": 17127,
+      "sha256": "9087edf0b8da42ade751bb127435bddc793f651e03a539fc5cc9a0db6974c0a3",
+      "git_record": "100644 blob e7a1408604810f26a6b1f53fc27659acf5c1cc2f"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/README.md",
+      "bytes": 16409,
+      "sha256": "eb020f276f13e38ea97195d89de6d244ca5ed4cedc5621a2cdfba84783b67a82",
+      "git_record": "100644 blob c97898284c8831ac7877bac0681fcc0d55681317"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+      "bytes": 13812,
+      "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8",
+      "git_record": "100644 blob 468ffa6ff6dfffe7646008a47f23fa5b7199e333"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 45220,
+      "sha256": "751e1ea029faeadaa68be64530ed6c19a676afb6cc8f16503a4eb486f559f69c",
+      "git_record": "100644 blob 1d4ea7f125eb7fe74cd1e8d628339a10e1465e6e"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/prd-v0.1-2026-09-04.md",
+      "bytes": 69391,
+      "sha256": "5d74aea2e04e27415b4fdf4503bf65e27682cd2ed0975279cca23bfa7d3cfddf",
+      "git_record": "100644 blob 2ac8f928b121b632d6f03967dd5633eebb3cc419"
+    }
+  ],
+  "formal_copies_exact": true,
+  "navigation_links_checked": 52,
+  "clean": true,
+  "code_or_old_evidence_changes": false
+}

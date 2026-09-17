@@ -1,0 +1,40 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001",
+  "RESULT": "PASS",
+  "verified_at": "2026-09-06T06:38:49.383637+00:00",
+  "inputs": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-identity-verification.json",
+      "bytes": 4744,
+      "sha256": "0b34ee1ec46fb4967bad88412560bec79382065ca4e064d48b9a4d7ffc2d9437"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.json",
+      "bytes": 5956,
+      "sha256": "0c08c5cfd1c3cc3ebe2daf32ea128bf91f171ed72a29639b953918c735fd562d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.md",
+      "bytes": 3891,
+      "sha256": "8b69db108f40ec81b3fe667572e7c70ae48336de7b0932fdf88a9a9bfff9643b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-independent-identity-review.json",
+      "bytes": 4831,
+      "sha256": "40d649f91a6dd3371ab61f63248718f6b8e4e0df5b670cbeaa29c244cfff64ad"
+    }
+  ],
+  "checks": [
+    "Exact request JSON/Markdown identities and every direct contract reference verified.",
+    "Formal approval template after three fixed substitutions exactly equals JSON authorization_sentence and Markdown quote; no unresolved placeholders.",
+    "Identity evidence and independent reviewer agree; historical body not read or rehashed during preparation.",
+    "One GET, zero retry/metadata, exact size plus hard caps, purpose/minimum visible context, stops and prohibitions checked.",
+    "No new body/metadata/network/third-party execution or authority. Both developer and PM idle."
+  ],
+  "product_HEAD": "bd0bb57efc4348f599c36a3166fa018809914788",
+  "product_clean": true,
+  "unverified": [
+    "Future response identity, content semantics and runtime behavior remain unverified."
+  ],
+  "outcome": "authorization_request_ready_for_product_lead"
+}

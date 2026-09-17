@@ -1,0 +1,42 @@
+{
+  "git_files_verified": 1024,
+  "manifest_records_verified": 1023,
+  "bundle_sha256": "642d29885efb5df375564d0ebeec0875d4701e5dfc816934de329d3c2dda42d0",
+  "baseline_derived_or_new_files": [
+    "SCHEMA.md",
+    "audit.py",
+    "offline_review/protocol.py",
+    "verify.py",
+    "tests/test_metadata_names.py"
+  ],
+  "copy_root": "/var/folders/lg/xdzs0w2s2zz_rf8frygyzbl00000gn/T/think-leader-v4-8gm0ym1x",
+  "copied_files": [
+    "MATRIX.md",
+    "README.md",
+    "REPORT.md",
+    "SCHEMA.md",
+    "audit.py",
+    "fixtures/basic.json",
+    "network_guard.py",
+    "offline_review/acquisition.py",
+    "offline_review/adapter.py",
+    "offline_review/controller.py",
+    "offline_review/parser.py",
+    "offline_review/policy.py",
+    "offline_review/protocol.py",
+    "offline_review/storage.py",
+    "offline_review/transport.py",
+    "recalculate.py",
+    "tests/acquisition_support.py",
+    "tests/support.py",
+    "tests/test_acquisition.py",
+    "tests/test_behavior.py",
+    "tests/test_metadata_names.py",
+    "verify.py"
+  ],
+  "RESULT": "PASS",
+  "review_harness_notes": [
+    "Initial verifier assumed all modes 0644; corrected to recorded 0600/0644 and verified all records.",
+    "Provenance new-file record has no source commit; checked new hash without invented source. No candidate changes."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-DECISION-001",
+  "decision": "REVISE",
+  "reviewed_at": "2026-09-06T06:58:40.996469+08:00",
+  "formal_PM_result": "APPROVED offline v7 only, but Leader dispatch acceptance withheld pending bounded authority-contract clarification.",
+  "verified_references": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-manual-capability-evidence-decision-2026-09-06.md",
+      "sha256": "fa9e7582184123ba717bbe68a697dd2eef0dad927946f256bd91d0a26785e544"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "sha256": "d1206abc81dcbc69c921e88cea5b6aa4085b7815191e2a7b4b247f9fa499d64d"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "sha256": "61b424c0627ee04f2fd6a56d2a41b1356eda9be338807580bd08dfa6cc463c49"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "sha256": "a36711d5be1fbc56127854eef7e2ef9a0f7fb3604ca40a3d0e6cd229ecea173e"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-01.md",
+      "sha256": "96978aa0777208c90a266e341289979d8e45bb71e6f90f6acd7bfdd21a6d7a97"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-02.md",
+      "sha256": "04324e951376c90f4dae69c22e94187a34a5d84bc1c93a24569c59c2e62c11e3"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-03.md",
+      "sha256": "8278e25de603ee60ec8fdc8025a276bed727023912fde0702948817b2e09f7ce"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-04.md",
+      "sha256": "c8d9412d2bbafebd4456dfcbf14c7347f1e1c85d45b856bbc2f6f07d77bc5dbf"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/raw/SRC-20260906-think-cp2-manual-capability-05.md",
+      "sha256": "fba277a7146dac29f67e3341c885b02e88de6a95e28548591b200595dba5aad7"
+    }
+  ],
+  "checks": [
+    "Formal decision full text, PRD delta, all5sourcecards and INDEX/LOG inspected;9hashes match PM report.",
+    "Current approval/review/script/report hashes independently match formal cited identities; historical task sourcehash resolves to immutable taskarchive bdaf959b6ae61080ee115b936209047b04269af93749f1e29eae52de746964ee.",
+    "Product HEAD d78577b clean; no developer task active. Existing KB broad dirty/untracked not claimed committed/clean; lintpartial recorded truthfully."
+  ],
+  "finding": {
+    "id": "AUTHORITY-DAG-01",
+    "classification": "Unresolved binding-domain/order ambiguity, not a demonstrated implementation defect",
+    "evidence": [
+      "Formal trusted-source section requires canonical review_authority_map SHA bound by both future freeze and Trust.",
+      "Regression matrix requires freeze identity binding and anti-tamper, while final sequence creates freeze first then actual authority map.",
+      "No exact definition identifies whether map/package bind entire new freeze bytes, a prior immutable release identity, a precomputed map commitment or a separate authority artifact, nor how map hash can be fixed before the permitted mapping stage."
+    ],
+    "required": "State exact noncyclic hash domains, object dependencies, authoritative creation/verification order and trusted pins; preserve absence of realmap/fetch authority in offline task. No reference to own hash, mutual finalhash or inputlearnedTrust. Clarify preserved old report/ledger/terminal identities vs appended newversion/newrun evidence; no rehashing/overwriting historical records."
+  },
+  "next": "Bounded PM formal clarification R1 before five-doc sync or v7 development. No source/network/code/freeze work."
+}

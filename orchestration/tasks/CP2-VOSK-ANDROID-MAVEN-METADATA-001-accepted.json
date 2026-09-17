@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-VOSK-ANDROID-MAVEN-METADATA-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "completion_acceptance": "orchestration/reports/CP2-VOSK-ANDROID-MAVEN-METADATA-001-acceptance.md",
+  "result_receipt": "orchestration/reports/CP2-VOSK-ANDROID-MAVEN-METADATA-001-receipt.md",
+  "assigned_thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+  "report_to_thread_id": "01a07655-fdfd-7683-aa57-a4895188d2ff",
+  "goal": "执行已批准的单批次官方Central元数据查询，固定唯一Vosk Android发行坐标及POM打包、项目和许可声明，只判断后续制品身份准备是否就绪。",
+  "formal_decision": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-vosk-android-identity-gap-decision-2026-09-06.md",
+  "formal_decision_sha256": "e4cb90e2184db26dd5021c4acae079384f585a89f7c616f5b2e25af1a85e4dab",
+  "acceptance_report": "/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-ANDROID-IDENTITY-GAP-DECISION-001-acceptance.md",
+  "scope": [
+    "完整执行正式决定的下一项唯一合同；先验证固定输入，再建立新ledger，不重置旧身份记录。",
+    "唯一对象com.alphacephei:vosk-android，一个非动态非SNAPSHOT版本。先确认Central运营主体/官方交叉链接与布局，再读取版本元数据/POM。允许从验证布局与已观察字段确定性生成URL，不猜域名或版本。",
+    "最多10次尝试，包括搜索、失败、重试、重定向；单次1MiB、累计5MiB正文、单次30秒。按正式决定整批调配，不逐页审批；成功即停。使用已有可用只读工具，无Firecrawl依赖，无新安装。",
+    "最多一个直接父POM，不递归依赖或父链。只读XML，禁外部实体与自动网络解析，不调用Maven/Gradle。许可与发布者声明不可提升为安全或法律批准。",
+    "新增知识库cp2-vosk-android-maven-metadata-实际执行日期.md及必要INDEX/LOG；完整ledger、来源表、版本/POM原值、Observed/Derived/Unknown、关键元数据原文和SHA、成功判据逐项、限制及Git归属。旧身份文档只读。",
+    "最终仅identity_ready_for_artifact_intake_decision或identity_insufficient；核定元数据不证明AAR存在或内容、安全/隐私/源码可复现性。"
+  ],
+  "out_of_scope": [
+    "禁止GET/HEAD/Range请求AAR/APK/JAR/ZIP/模型/源码实现/归档/二进制/样本，禁止执行、构建、扫描、加载、测试、集成或修改think。",
+    "不查第二版本、第二父POM、模型或第二候选，不恢复旧sherpa链，不改变任何产品门槛。"
+  ],
+  "acceptance": [
+    "来源确认、唯一固定版本、精确group/artifact、POM一致、aar打包与项目/许可声明均有可核验元数据，或诚实返回不足。",
+    "全部请求和字节预算可查，关键原文证据保留，未知不猜；未请求制品，旧失败历史与隐私/Checkpoint不变。"
+  ],
+  "evidence_required": [
+    "在本PM任务最终答复给RESULT、正式path/bytes/SHA、ledger和关键证据、验收对照、未知/停止、Git归属。不要跨任务发送。"
+  ],
+  "stop_conditions": [
+    "预算/字节/等待上限、来源不明、关键字段缺失/冲突、需登录付费额外条款或禁止内容时停止。权限拒绝不绕过，渠道故障仅预算内合法恢复。",
+    "完成即停止等待Leader验收；不得下发开发任务或开始阶段B/C。"
+  ]
+}

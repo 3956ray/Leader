@@ -1,0 +1,178 @@
+{
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T13:37:29.717194+08:00",
+  "meaning": "Accepted exactly one authorized acquisition attempt and correct stop/evidence delivery; source not adopted and CP2 not passed.",
+  "candidate_commit": "393640b8a6825a9a0b42c479949646e1914da199",
+  "parent": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "root_tree": "98f3c00ddec4027118ca879b6ffe4d8708d07c36",
+  "output_tree": "7ad02a8d60493469511116950cf6020e8480d779",
+  "output_directory": "doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06",
+  "prepared_contract_sha256": "91692cef13c28e15672b62726e008923ecfacbb8ab317b521966dda301e83ac3",
+  "user_approval": {
+    "bytes": 2016,
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001-approved.json",
+    "sha256": "694c69bc465663cb2a8ba58e21c9757d131d6135956a92df00ed78f997979c81"
+  },
+  "identities": {
+    "A": "5e03d0d42eb6a4c2a48fc9ba5bb4df30e677229b07e2c476194193b467eafccc",
+    "C": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "F": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+    "M": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+    "T": "c43f86fcbccff86a63d1d98931176f2b898c622d0417dd7086109c9ddb78b611",
+    "input": "0bc6c2c79883f35cca5f334b08baca43e01b32790c4e7c771a2f1efb60e5108a",
+    "package": "2bcbb229bdfcd45f9d53c8fd03f288fd6202da4325710a4460aad0059b9cfa9e",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0"
+  },
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 4802,
+      "sha256": "ec8978ef16f7162c59688503a2ea303708b7eeb22a53d3668482b1c6365085ab",
+      "git_blob": "f97aeacca874b14d48c4bd6779d1f450232d7164"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 4698,
+      "sha256": "f4f74392c6ca09b45f9c29833aacbf80e09b2d5c2c37085136acf55976d6e112",
+      "git_blob": "c378b9176ab44151354ae8f2d45c33c42f61c301"
+    },
+    {
+      "path": "acquisition.json",
+      "bytes": 24129,
+      "sha256": "b5187cfe6113554dfdf003bfc5a6eb026e19c8a120fa69a0c3db2c3584ab9e17",
+      "git_blob": "f61744b6defaaa1063f17ece5fa1598490e6b414"
+    },
+    {
+      "path": "evidence-manifest.json",
+      "bytes": 49300,
+      "sha256": "fc23f12ed4d6cf1c109b6b00de20a9db9f4b371e2622bbb50125497ed9890a37",
+      "git_blob": "3ae53504caf7fe72ae9602e8ab2050028a9d36ae"
+    },
+    {
+      "path": "file-manifest.json",
+      "bytes": 1490,
+      "sha256": "172c7cc7453f24f17ff0339fdc9ba242f8c667813fd749a0f641334f89aa763e",
+      "git_blob": "e02df6d8f79f3d0eaf21a486e2ff8947983fa307"
+    },
+    {
+      "path": "request-ledger.json",
+      "bytes": 7949,
+      "sha256": "d19f8c8e012ff54821e625fe756cd18d054c4a6009c12cb9c3f24c6a57cf510f",
+      "git_blob": "20ad138bd49bc7391d7f7b6e2b02ca19c2c4e5e7"
+    },
+    {
+      "path": "scanner-summary.json",
+      "bytes": 5052,
+      "sha256": "0e6fba99685377c6a5bf1eafefc8d1d435a20d48423f044cf7defe4ea880c2aa",
+      "git_blob": "7358ac2b89829126b8b3a760fccba45b02c6021f"
+    },
+    {
+      "path": "source-review.json",
+      "bytes": 10522,
+      "sha256": "6bf0cbd564e4232d9a1c6114292d7d2e45c71b9da545578dbdf4565bf04e3fef",
+      "git_blob": "91081493056a81d50536331e63f63a6fde98f963"
+    }
+  ],
+  "manifest_collection_sha256": "dab73a9c31abcbb2b82eefed25f0ae063f449a2a6c0f96686df84787d805a790",
+  "references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-leader-verification.json",
+      "bytes": 4337,
+      "sha256": "9912a20aee31436dcd9d79982458f5895e52a831c8dd3909719e9d7e46f8a2f7"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-leader-verify.py",
+      "bytes": 10392,
+      "sha256": "48b258fedd47e2161d1fa1dbe712d622585e5a6bd26869a8cb23c0ee8d4d1c44"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-leader-rerun.json",
+      "bytes": 32127,
+      "sha256": "8d14deac9d122a132621369ce2695cc0c9aeea7114148419d944bed6464c9a0c"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-developer-verifier-reviewed.py",
+      "bytes": 9089,
+      "sha256": "a2e5afdc4d6a213037bcde5d13da013b12973c66e4c17e73b0a94f39f306123c"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-git-verification.json",
+      "bytes": 2409,
+      "sha256": "c723ada7505dd57c24ca7715108411a4850637b23b0c123f900e51eaf26185ca"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-semantic-review.json",
+      "bytes": 6132,
+      "sha256": "0b48e3c0f8d48e2ecef56e24fdbbf6f7aadea9a197b9c7db91d894c79ef1a4e2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-driver-review.json",
+      "bytes": 1411,
+      "sha256": "fe94aa31e2297736375ba1a1998a9f93ae7fc42eb9bd4e0c8b36940bf19690e5"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-scanner-identity-clarification.json",
+      "bytes": 1455,
+      "sha256": "c918d94c64c91afad0261e19bbc14e517593f970f7b63e813c364d96bc1be51a"
+    }
+  ],
+  "actual": {
+    "attempts": 1,
+    "requests": 2,
+    "decoded_bytes": 19297,
+    "blob_raw_bytes": 27161,
+    "total_raw_bytes": 2771747,
+    "run_files": 93,
+    "run_collection_sha256": "f3da5153c3622e5554bbd636eac3fb9aeb526cd59311caa4bccc31a8f15b99c9",
+    "stop_reason": "denylist_capability",
+    "source_verdict": "insufficient_evidence",
+    "fixed_point": false,
+    "active": 5,
+    "comment": 4,
+    "authorized_comment": 2,
+    "adjudications": 0,
+    "rejections": 1,
+    "effective_comment_status": "pending",
+    "remaining_seeds": 7,
+    "scanner_raw_verdict": "manual_review",
+    "scanner_score": 32,
+    "scanner_medium_findings": 4
+  },
+  "criterion_evidence": [
+    {
+      "criterion": "准确记录本次全新userapproval/request/C/F/M/A/T/input/package/metadata/bundle/driver/marker身份，单次run且旧Git记录清楚不变。",
+      "evidence": "Independent task/approval/mapping/C28/marker checks PASS; full unchanged 129532 old Git records."
+    },
+    {
+      "criterion": "每实际请求的固定blob/预算/角色/持久请求前授权链可复算；一旦停止后零后继请求、零retry/resume。",
+      "evidence": "Two fixed blob request intents and adjacent before_request checkpoints 13/14 and19/20; final parsed/rejection/terminal with no successor."
+    },
+    {
+      "criterion": "新quarantine/root/envelopes/metadata/ledger/adjudication/terminal均regular/nofollow/单链接/权限和hash匹配，完整新证据清单及容量/不完整项可独立核验。",
+      "evidence": "All93 run files and96 quarantine files plus48 trusted snapshot files rehashed, modes0600/0700; source/metadata/package archives and25ledger verified."
+    },
+    {
+      "criterion": "真实两comment若被应用需完整tuple且新adjudication持久化/域/pins/input绑定可复算；其他停止优先、不清旧pending或裁定扩散。",
+      "evidence": "Both original tuple diagnostics match; complete set4 !=2 rejected, hardstop wins, no N/successful clearance or mutation."
+    },
+    {
+      "criterion": "正确report真实stop/source_verdict/scanner/license/fixedpoint及全部未验证；只提交新派生文档、工作区clean，无第三方内容执行/正文进Git/未审查依赖。",
+      "evidence": "Only8 deriveddocs added, all manifest SHA/Gitblob matches and clean; rawscanner4findings are storedSHA substring; all limitations retained."
+    }
+  ],
+  "verification_notes": [
+    "Reviewed first-party developer verifier9089 bytes/a2e5afdc... rerun read-only and object-equal to developer result.",
+    "Separate Leader standard-library verifier reconstructed authority, complete inventories, exact current token/carrier classifications and scanner contexts; PASS.",
+    "First Leader verifier used stat equality including atime and stopped on access-time update; corrected verification-only stability check to dev/ino/mode/nlink/size/mtime/ctime. No acquisition or product artifact changed.",
+    "Final report wording corrected via own unpushed commit amend; finalcommit393640b8 retains originalparent."
+  ],
+  "limitations": [
+    "Raw HTTP response bodies/headers are not retained; blob_raw count cannot be reconstructed from wire bytes.",
+    "Persisted chain plus reviewed driver/transport supports single-run/no-successor conclusion; no independent packet capture.",
+    "Base64 archive contents are not recursively scanned by scanner; source/body semantics separately checked above.",
+    "No license, complete closure, actual reachability, runtime, model, P0 or device acceptance.",
+    "Scanner rawmanual_review unchanged; base64/JSON restrictions remain. CP1/Conformer Deferred not removed,CP3/Alpha unapproved."
+  ],
+  "next_authorized_step": "Return to formal product decision on the five active pattern hits and complete comment-set mismatch. No automatic override, new candidate, acquisition retry/resume, source adoption or checkpoint progression."
+}

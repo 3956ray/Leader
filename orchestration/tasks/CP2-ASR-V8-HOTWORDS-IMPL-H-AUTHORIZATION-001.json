@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-001",
+  "owner": "user",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "prepared_at": "2026-09-06T08:41:12.288105+00:00",
+  "goal": "审阅并决定是否批准最后一个热词链文件的精确单次正文请求：2286字节impl.h、最多64行4096可见字节，声明或继续委派即终止该补证链。",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-acceptance.json",
+    "bytes": 2800,
+    "sha256": "74c22960fc356fdd18a629e1c867e1b4661b0a2d47afc66e1df01e1174574b51"
+  },
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 7679,
+    "sha256": "d645a34ec6c176c12683588f4bee7f778690bf8d6cebb1e17d028f38f8bbcaed"
+  },
+  "request_markdown": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.md",
+    "bytes": 4306,
+    "sha256": "f6f3def136235e6d52b5bf0d92fd908fad25dc9aeaa0f7fe4ff0afd2684f3e82"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+    "bytes": 13812,
+    "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8"
+  },
+  "future_task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "scope": [
+    "展示完整pending请求及填妥的正式授权句；用户新决定只绑定此处精确JSON/Markdown。",
+    "当前只等待新明确批准；批准后另行记录真实答复和新单文件任务，不能自动追加第三文件。"
+  ],
+  "out_of_scope": [
+    "批准前不创建authority/正文任务，不读body/metadata、不联网；不复用任何此前批准或旧run。",
+    "不改变64行4096字节上限及永久终止条件，不授权源码采用、v9、构建、模型、App功能或Checkpoint通过。"
+  ],
+  "acceptance": [
+    "用户决定明确对应展示的精确请求；如批准，记录实际答复及上下文和请求身份，不从历史批准推断。"
+  ],
+  "evidence_required": [
+    "用户实际决定、完整请求path/bytes/SHA、正式决定和准备验收记录。"
+  ],
+  "stop_conditions": [
+    "请求身份变化或批准不清楚时停止依赖工作；拒绝则维持暂停并终止当前热词链投入。",
+    "此次未来机会无重试/第二文件；任何目标缺失、声明、委派或预算超限结束该证据链。"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REVIEW-TOKEN-PROVENANCE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "completed",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "goal": "裁定如何仅补齐已人工审查两处 occurrence 的原 token 字节来源，形成可供 K 逐字段映射的独立证据，同时保留已验收 v8 与原报告和权限边界。",
+  "decision_input": "orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-AUDIT-001-report.json",
+  "decision_input_sha256": "b871d25ccb825a093f03e42d27a808dceaa254096a89afad295869c9365df12c",
+  "accepted_candidate": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "accepted_C_report": "orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-acceptance.json",
+  "accepted_C_report_sha256": "141c9b5655cbde45dc7761e65658fd6fe2801c2b5252fc6b12810371b430dbeb",
+  "scope": [
+    "先读Leader审计报告、K blocked报告/合同、已验收v8合同以及原review授权请求与approved记录，仅第一方派生材料。核验原R及verification均缺raw_token；原历史第一方验证器第23行也lower后匹配。不得读private/source/rawscannercontext或执行旧verify.py。",
+    "在正式知识库写APPROVED/REVISE/PAUSE，批准时只定义一个单独由Leader执行的最小证据补录任务：固定原review的同一8579byte envelope及7939byte header/commit/tree/blob/body/双行hash/两个token绝对区间，在no-follow目录/regular-singlelink0600/0700/大小/SHA/Gitblob检查后，只在内存解码并提取两个区间的原9byte token，保存精确ASCII或hex/base64、hash-domain和完整tuple关联；不导出原header/整行/其他材料、不联网不重新获取、不重跑scanner/candidate/controller、不重新裁定注释或字段/API能力。若无法维持上述范围则PAUSE或明确更小可行方案。",
+    "补录是历史审查证据的独立追加，不重写7051byte原R或原review时间/decision/旧verification，也不把本轮补录时间冒充review时间；需用新不可变补录记录绑定原R、历史reviewauthority、H、原verification、补录脚本/本轮权限依据和每处完整身份，未来representation/K保留原R摘要，并通过PROVENANCE和K任务验收绑定补录来源。决定必须说清其来源证明如何满足既有schema而不扩充清除权。",
+    "明确授权依据：原用户批准的离线人工review已明确允许读取这个同一retained envelope/header和同两处命中，原文未写一次性读取限制；旧acquisition不得复用与离线review的同对象证据补录区分。结合用户持续授权，判断该更小证据补录是否已在原权限内，不应自动虚构新用户确认或把PM决定当用户授权。若正式现行约束确需新用户批准，引用确切冲突条款并定义一项具体可审查授权请求，由Leader完成前置准备后再问用户。",
+    "保留完整K→F→M→新用户acquisition A→T/N顺序。v8 C已接受不改，缺口是派生记录字段缺失，不能改raw_token为规则名/大小写不敏感或省略它，不能启动v9全套修订。补录验收后才能另行恢复K，不同任务不得合并补录/K/freeze/获取。",
+    "只维护本次必要正式decision、PRD对应CP2状态、sourcecard、INDEX/LOG；写清下一项唯一任务目标/允许输入输出/证据/停止条件/授权依据。报告每文件path/bytes/SHA、结论与同步清单。开发者空闲；PM只做正式决策，不直接执行补录或任何工程任务。"
+  ],
+  "out_of_scope": [
+    "不读取原body/private/header/LICENSE/metadata/API/rawscannercontext，不执行旧验证器、不运行工具/controller，不创建K/F/M/A/T/N，不改产品源码或验收候选。",
+    "不放宽大小写/rawtoken/完整tuple/原R双摘要/时间/authorityDAG/预算/权限/隐私/Checkpoint，不新增clearance或源码/运行时/模型/构建/集成许可。"
+  ],
+  "acceptance": [
+    "APPROVED/REVISE/PAUSE在正式产品文档落地，下一单范围唯一、身份/输出/权限依据和停止条件明确，事实区分原始记录缺失与工具缺陷。",
+    "保持原R与v8不变，补录只能给已裁定两处token提供精确来源；保持所有技术隐私门槛，CP2未通过。"
+  ],
+  "evidence_required": [
+    "正式文件精确path/bytes/SHA、source/PRD delta与链接检查、下一项唯一任务与授权依据；若需要用户确认引用具体要求。",
+    "通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4 后停止，不自行同步产品仓库/补录/恢复K。"
+  ],
+  "stop_conditions": [
+    "需要原始材料才能做产品决策、扩大清除或读取范围、改变已验收schema/隐私/预算/authority，则PAUSE并解释具体原因。"
+  ],
+  "prepared_at": "2026-09-06T10:12:06.501295+08:00",
+  "dispatched_at": "2026-09-06T10:12:57.215995+08:00",
+  "completed_at": "2026-09-06T10:20:26.942021+08:00"
+}

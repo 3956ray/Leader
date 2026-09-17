@@ -1,0 +1,19 @@
+{
+  "file_sha256": "c7203a6364708f3d9d1e97581353ee519e02aee5b4f656e13b99ab8ffc1009ed",
+  "file_bytes": 3241,
+  "payload_length_ok": true,
+  "payload_sha256_ok": true,
+  "source_field_equality": {
+    "notes": true,
+    "drafts": true,
+    "categories": true,
+    "reminders": true,
+    "origins": true,
+    "relations": true
+  },
+  "restoration_pending": true,
+  "default_payload_matches_edited_export": true,
+  "default_length_ok": true,
+  "default_hash_ok": true,
+  "import_cancel_database_unchanged": true
+}

@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "使用已经独立验收的v8冻结和新用户A及受信映射，从全新私有运行执行且仅执行一次96文件/1MiB上限的静态源码获取，保存可独立核验的停止和证据链。",
+  "prepared_at": "2026-09-06T13:12:56.268029+08:00",
+  "baseline_commit": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-acceptance.json",
+    "bytes": 6161,
+    "sha256": "ae5b8f0450c67d55676ea506843fa0d68a895fe8264988c7b6f87b97fd3d5c0c"
+  },
+  "user_approval": {
+    "bytes": 2016,
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001-approved.json",
+    "sha256": "694c69bc465663cb2a8ba58e21c9757d131d6135956a92df00ed78f997979c81"
+  },
+  "approved_request": {
+    "bytes": 19883,
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+    "sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b"
+  },
+  "identities": {
+    "A": "5e03d0d42eb6a4c2a48fc9ba5bb4df30e677229b07e2c476194193b467eafccc",
+    "C": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "F": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4",
+    "M": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0",
+    "T": "c43f86fcbccff86a63d1d98931176f2b898c622d0417dd7086109c9ddb78b611",
+    "input": "0bc6c2c79883f35cca5f334b08baca43e01b32790c4e7c771a2f1efb60e5108a",
+    "package": "2bcbb229bdfcd45f9d53c8fd03f288fd6202da4325710a4460aad0059b9cfa9e",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0"
+  },
+  "mapping_files": [
+    {
+      "bytes": 339,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/A.json",
+      "sha256": "5e03d0d42eb6a4c2a48fc9ba5bb4df30e677229b07e2c476194193b467eafccc"
+    },
+    {
+      "bytes": 327,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/T.json",
+      "sha256": "c43f86fcbccff86a63d1d98931176f2b898c622d0417dd7086109c9ddb78b611"
+    },
+    {
+      "bytes": 4099,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/input.json",
+      "sha256": "0bc6c2c79883f35cca5f334b08baca43e01b32790c4e7c771a2f1efb60e5108a"
+    },
+    {
+      "bytes": 16768,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/manual-package.json",
+      "sha256": "2bcbb229bdfcd45f9d53c8fd03f288fd6202da4325710a4460aad0059b9cfa9e"
+    },
+    {
+      "bytes": 575,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/metadata-identities.json",
+      "sha256": "61efe77abb86152da4b3670a17ff03bf4c8cfdd6391fb7f2c59a9fa0c3459fd5"
+    },
+    {
+      "bytes": 1494,
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001-artifacts/pins.json",
+      "sha256": "e44b1a231153119611ef7c8e0169d87f03b2558c44a318af30588c613f52ae9d"
+    }
+  ],
+  "metadata": [
+    {
+      "bytes": 2336,
+      "mode": "0o600",
+      "nofollow": true,
+      "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/commit.json",
+      "regular_singlelink": true,
+      "sha256": "e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089",
+      "stable_fd": true
+    },
+    {
+      "bytes": 2742250,
+      "mode": "0o600",
+      "nofollow": true,
+      "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf/tree.json",
+      "regular_singlelink": true,
+      "sha256": "7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2",
+      "stable_fd": true
+    }
+  ],
+  "scope_contract": {
+    "policy_hash": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "frozen_policy": {
+      "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+      "connect_timeout": 10,
+      "content_roles": {
+        "internal_dependency_role": "cpp_source_header",
+        "seeds": {
+          "LICENSE": "license_text",
+          "sherpa-onnx/csrc/online-model-config.h": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer-impl.cc": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer-impl.h": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer.cc": "cpp_source_header",
+          "sherpa-onnx/csrc/online-recognizer.h": "cpp_source_header",
+          "sherpa-onnx/csrc/online-stream.cc": "cpp_source_header",
+          "sherpa-onnx/csrc/online-stream.h": "cpp_source_header",
+          "sherpa-onnx/csrc/version.h": "cpp_source_header"
+        }
+      },
+      "deny": [
+        "wav",
+        "wave-writer",
+        "wave_writer",
+        "adsp",
+        "qnn",
+        "rknn",
+        "tts",
+        "vad",
+        "speaker",
+        "diarization",
+        "denoise",
+        "punctuation",
+        "audio-tagging",
+        "audio_tagging",
+        "websocket",
+        "portaudio",
+        "download",
+        "fetchcontent",
+        "jni",
+        "kotlin-api",
+        "dlopen",
+        "loadlibrary"
+      ],
+      "design": {
+        "commit": "a57f643bac24edef5d6601b8a59baa77060f3d2c",
+        "records": 28,
+        "sha256": "c318c5a5f91d4af1d2759895ab9d5296c5784eaa214548b92f25fba4096764d2",
+        "tree": "31376c73f43caf3bbfd664d8316ffecdc589379d"
+      },
+      "evidence_limits": {
+        "archive": 16777216,
+        "inline_edges": 256000,
+        "part": 48000,
+        "record": 2000000,
+        "state": 1000000
+      },
+      "external": [
+        "stddef.h",
+        "stdint.h",
+        "string",
+        "memory",
+        "vector"
+      ],
+      "generated": [],
+      "host": "api.github.com",
+      "include_roots": [
+        "sherpa-onnx/csrc/"
+      ],
+      "kind": "typed-acquisition-candidate-v8",
+      "limits": {
+        "blob_raw": 1500000,
+        "decoded": 1048576,
+        "files": 96,
+        "metadata_raw": 8388608,
+        "total_raw": 16777216
+      },
+      "max_bytes": 1048576,
+      "max_files": 96,
+      "max_response": 1500000,
+      "mode": "100644",
+      "proxy": false,
+      "read_timeout": 10,
+      "redirect": false,
+      "repository": "k2-fsa/sherpa-onnx",
+      "repository_prefix": "sherpa-onnx/",
+      "required_symbols": [
+        "runtime_handle",
+        "model_handle",
+        "stream_create",
+        "pcm_accept",
+        "decode",
+        "text_result",
+        "version",
+        "release"
+      ],
+      "retries": 0,
+      "seeds": [
+        "LICENSE",
+        "sherpa-onnx/csrc/online-recognizer.h",
+        "sherpa-onnx/csrc/online-recognizer.cc",
+        "sherpa-onnx/csrc/online-recognizer-impl.h",
+        "sherpa-onnx/csrc/online-recognizer-impl.cc",
+        "sherpa-onnx/csrc/online-stream.h",
+        "sherpa-onnx/csrc/online-stream.cc",
+        "sherpa-onnx/csrc/online-model-config.h",
+        "sherpa-onnx/csrc/version.h"
+      ],
+      "source_semantics": {
+        "ambiguous_suffix": "non-definite-code-carrier-no-recovery",
+        "analysis": "atomic-current-file-before-successor-authorization",
+        "channels": [
+          "code",
+          "line_comment",
+          "block_comment",
+          "string_literal",
+          "char_literal",
+          "preprocessor"
+        ],
+        "comments": "hash-bound-pending-no-successors-no-override",
+        "detectors": {
+          "deny": [
+            "wav",
+            "wave-writer",
+            "wave_writer",
+            "adsp",
+            "qnn",
+            "rknn",
+            "tts",
+            "vad",
+            "speaker",
+            "diarization",
+            "denoise",
+            "punctuation",
+            "audio-tagging",
+            "audio_tagging",
+            "websocket",
+            "portaudio",
+            "download",
+            "fetchcontent",
+            "jni",
+            "kotlin-api",
+            "dlopen",
+            "loadlibrary"
+          ],
+          "dynamic_paths": "\\b(?:provider|library|model_path|tokens_file|hotwords_file|encoder|decoder|joiner)\\b",
+          "file_audio": "(?:audio[-_](?:file|reader|writer)|(?:file|read|write)[-_]audio)",
+          "io": "\\b(?:fopen|freopen|fread|fwrite|fseek|ifstream|ofstream|fstream|sndfile|sf_open)\\b"
+        },
+        "directive_extent": "block-comment-newline-after-directive-start-is-unsupported",
+        "guard": "sole-outer-ascii-ident-no-replacement-no-other-semantic-use",
+        "header_name_ambiguity": "open-angle-in-any-directive-before-comment-no-evaluation",
+        "lines": "physical-LF-or-CRLF-including-terminators",
+        "offsets": "half-open-original-utf8-bytes",
+        "priority": [
+          "identity_file_safety",
+          "active_deny",
+          "lexical_ambiguity",
+          "unsupported_preprocessor",
+          "comment_pending",
+          "literal_edges"
+        ],
+        "revision": "v6-r1-directive-boundaries",
+        "schema": 1,
+        "source_verdict": "insufficient_evidence"
+      },
+      "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+      "type": "blob"
+    },
+    "constraints": {
+      "checkpoint": [
+        "CP1 and Conformer Deferred, not removed.",
+        "CP2 not passed; CP3 and father Alpha not approved."
+      ],
+      "deny": [
+        "wav",
+        "wave-writer",
+        "wave_writer",
+        "adsp",
+        "qnn",
+        "rknn",
+        "tts",
+        "vad",
+        "speaker",
+        "diarization",
+        "denoise",
+        "punctuation",
+        "audio-tagging",
+        "audio_tagging",
+        "websocket",
+        "portaudio",
+        "download",
+        "fetchcontent",
+        "jni",
+        "kotlin-api",
+        "dlopen",
+        "loadlibrary"
+      ],
+      "design": {
+        "commit": "a57f643bac24edef5d6601b8a59baa77060f3d2c",
+        "records": 28,
+        "sha256": "c318c5a5f91d4af1d2759895ab9d5296c5784eaa214548b92f25fba4096764d2",
+        "tree": "31376c73f43caf3bbfd664d8316ffecdc589379d"
+      },
+      "evidence_limits": {
+        "archive": 16777216,
+        "inline_edges": 256000,
+        "part": 48000,
+        "record": 2000000,
+        "state": 1000000
+      },
+      "hard_stops": [
+        "Identity/file safety, path/role/mode/type, budgets, persistence and capacity failures remain prior hard stops.",
+        "Active or uncertain deny, lexical ambiguity/traps and unsupported preprocessor/ineligible include outrank comment adjudication.",
+        "Unknown/conflicting/forbidden/unresolved/pending decisions fail closed; no global token/comment exception, wrapper bypass or implicit Trust.",
+        "Exact complete one-to-one occurrence matching only, two original comment decisions do not clear adjacent fields/API/implementation or capabilities.",
+        "Original pending/source analysis/ledger/terminal and terminated historical runs remain immutable; no old acquisition authority reuse."
+      ],
+      "input_bytes": 65536,
+      "limits": {
+        "blob_raw": 1500000,
+        "decoded": 1048576,
+        "files": 96,
+        "metadata_raw": 8388608,
+        "total_raw": 16777216
+      },
+      "ordered_seed_roles": [
+        {
+          "path": "LICENSE",
+          "role": "license_text"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer.cc",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-recognizer-impl.cc",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-stream.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-stream.cc",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/online-model-config.h",
+          "role": "cpp_source_header"
+        },
+        {
+          "path": "sherpa-onnx/csrc/version.h",
+          "role": "cpp_source_header"
+        }
+      ],
+      "path_rules": {
+        "include_roots": [
+          "sherpa-onnx/csrc/"
+        ],
+        "mode": "100644",
+        "repository_prefix": "sherpa-onnx/",
+        "syntax": "Existing strict authorized ASCII acquisition path; no normalization or expansion. Metadata labels are never filesystem paths; no traversal, absolute paths, empty/dot/dotdot segments, backslashes or control characters.",
+        "type": "blob"
+      },
+      "priority": [
+        "identity_file_safety",
+        "active_deny",
+        "lexical_ambiguity",
+        "unsupported_preprocessor",
+        "comment_pending",
+        "literal_edges"
+      ],
+      "privacy": [
+        "Normal recording and retrieval stay within three steps.",
+        "Original audio only in memory; no disk, upload, logs, test attachments or crash reports."
+      ],
+      "seed_order": [
+        "LICENSE",
+        "sherpa-onnx/csrc/online-recognizer.h",
+        "sherpa-onnx/csrc/online-recognizer.cc",
+        "sherpa-onnx/csrc/online-recognizer-impl.h",
+        "sherpa-onnx/csrc/online-recognizer-impl.cc",
+        "sherpa-onnx/csrc/online-stream.h",
+        "sherpa-onnx/csrc/online-stream.cc",
+        "sherpa-onnx/csrc/online-model-config.h",
+        "sherpa-onnx/csrc/version.h"
+      ],
+      "transport": {
+        "connect_timeout": 10,
+        "credentials": false,
+        "proxy": false,
+        "read_timeout": 10,
+        "redirect": false,
+        "retries": 0,
+        "scope": "constraints only, no transport execution or acquisition authorization"
+      },
+      "upstream": {
+        "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+        "host": "api.github.com",
+        "repository": "k2-fsa/sherpa-onnx",
+        "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0"
+      }
+    },
+    "transport": "Only existing v8 Git Data blob transport at api.github.com; fixed tree-derived blob SHA; no metadata endpoint, credentials, proxy, redirect, retry, alternate downloader.",
+    "output": "One fresh empty private0700 root with new run identity; retained thirdparty body/evidence regular single-link0600 outside Git. No previous corpus reuse.",
+    "manual_review": "Only exact two already accepted comment occurrences under frozen F/M, reconstructed from each newly verified body by shared controller; append-only new adjudication only; original pending/analysis/ledger/terminal untouched."
+  },
+  "accepted_F": {
+    "commit": "75a9349c2e54d18a46dacddad762e7e669e9fbc2",
+    "tree": "b9d18a3f9775cdaf5d07e71e36f9eaac0e0c79e4",
+    "file": {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/F.json",
+      "bytes": 344,
+      "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4"
+    }
+  },
+  "accepted_M": {
+    "commit": "6b83f40e75cbb501102207018658f6de15a79ff2",
+    "tree": "e6565de08821d03834196dbb5cec7d784db5d4c0",
+    "file": {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-authority-map-v8/2026-09-06/M.json",
+      "bytes": 858,
+      "sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0"
+    }
+  },
+  "accepted_C": {
+    "commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+    "tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+    "root": "tools/asr_review_acquisition_v8",
+    "files": 69497,
+    "bundle": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "file_manifest_sha256": "d8b003df82da35b20f2e110c074a4a761de926ca914f5affc7b556650f5f9b56"
+  },
+  "output_directory": "doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06",
+  "formal_decision": "doc/cp2-review-token-provenance-decision-2026-09-06.md",
+  "formal_decision_sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+  "scope": [
+    "用户本轮直接回复批准，精确绑定request MD1e1a16e8/JSON2114259d；新approval694c69bc...，A5e03d0d4...和独立mapping验收ae5b8f045...已接受。不得引用旧approval/冻结或原review authority当获取授权。本合同保留整个批准范围和约束，只有一次run_input尝试；没有续跑/重试权。",
+    "先核对本immutable任务、approval/request/mapping acceptance及六个mapping_files、C/K/F/M核心对象/接受报告/完整28filebundle、currentHEAD6b83f40/clean。完整69505输入已在批准后由Leader两次hash复核，禁止改任何旧code/schema/evidence。必要可信第一方只读复制须完整28filebundle，candidate_release_hash需要SCHEMA/test/audit等全部文件；不要只复制8模块。",
+    "仅重新读取本合同两份固定metadata，逐层descriptor-relative nofollow、regularsinglelink0600、限量原bytes/hash、读前后稳定身份。它们是唯一旧identity-input例外，不访问邻接文件，不请求metadata端点或另取替代JSON。rawcommit2336/rawtree2742250保持原字节，不重新serialize。",
+    "从Leader固定的pins与独立验收/批准记录构造ManualPins(candidate=C9bd39...,execution_freeze=Fc6e593...,authority_map=M661615...,acquisition_authorization=A5e03...)和Trust(release_hash=C,commit_metadata_hash=e020...,tree_metadata_hash=7643...,manual_pins)。核对ManualPins.document精确等于T.json、canonicalA/package/input原bytes/hash。A.authority=新approvalhash694c69...，T.A=canonicalA5e03...，input release_hash=C28bundle，切勿混淆runtimeF/supportingfreeze/Git tree/原R/wrapper/representation域。",
+    "Leader已经在独立无网络进程完成validate_package、parse_input和两metadata纯解析；如开发者再纯预检，仅验证同样固定输入，绝不以run_input预检。NetworkGuard audit永留该进程，真正执行必须新开干净可信进程，不能试图解除或绕过guard。禁止FakeFactory、connection_factory替身、review/fault回调、预取包装、API/输入自设Trust。",
+    "创建新的可信第一方driver临时目录保存最小胶水脚本和独占consumed marker；脚本限标准库/精确冻结模块，先完整静态检查并记录SHA。另建全新0700私有quarantine父目录；Store(parent,name)独占创建新的run，不能预建run或放输入进run。driver/input/pins在run之外且不可来自quarantine。明确记录driver路径/hash、module/bundle身份、输出根/权限及准备用参数。",
+    "在唯一调用前以O_CREAT|O_EXCL创建并fsync一次性consumed marker，内容绑定task、approval/request、C/F/M/A/T/input/package摘要和新run计划；存在marker或已有run即停止，绝不删除/重置。只调用一次冻结 acquisition.run_input(raw_input,raw_commit,raw_tree,trust,store,manual_raw=raw_package)，connection_factory/review/fault默认None。任何调用后异常/停止/超时即本次尝试已结束，哪怕零正文；禁止修driver或参数后再调用。",
+    "真实请求只由已审查GitBlobTransport产生固定api.github.com Git Data blob endpoint，请求源SHA来自已验证fixedtree。严格9seed顺序、LICENSE/license_text和csrc普通h/cc/blob100644、原路径/角色/denylist及96files1048576decoded，metadata8MiB/blobraw1500000/totalraw16MiB/input65536和evidence容量、10秒timeouts、no credentials/proxy/redirect/retry均不变。每请求前durable authorize/before_request必须存在；禁止外层curl/fetch替代或跟随metadataURL下载。",
+    "原两comment只可由controller在新body完整tuple匹配后生成独立新adjudication/effective status；原R/P/K/F/M和旧pending/analysis/ledger/terminal不改。其他硬停止仍优先；人工clearance不放行相邻字段/API/实现/源码许可/能力。不手改pending或把newenvelope当historicalenvelope。",
+    "完成一次调用或正确停止后，只静态审阅本次新留存有界证据。依项目third-party-security-gate和已审查scan-untrusted-code进行必要扫描/上下文解释：从可信目录调用已审查scanner，不在第三方目录执行命令/导入；完整scanner报告/摘录、body/envelope/rawmetadata留私有目录。正式输出只新增指定doc目录的派生身份/范围/预算/ledger链/各停止原因/guard/精确adjudication摘要/零扩权/扫描上下文报告，不把正文或原始材料入Git。scanner缺失/身份变化则记录未完成并停，不安装替代工具。",
+    "退出码0或run_input正常return不是成功：逐字段报告terminal.stop_reason/source_verdict/fixed_point、source_analysis/所有并存停止、pending与新effective状态区别、license_review/scanner verdict及request/ledger顺序；review=None时missing_review_evidence/insufficient_evidence必须原样保留，不补人工review再跑。保存部分持久化/failed/pending文件及wire未留存等实际限制。",
+    "提交仅新派生doc报告，不push，不改app/任何旧文件；报告RESULT COMPLETE（含正确停止）或BLOCKED/PRODUCT_DECISION_REQUIRED，commit/parent/tree/每文件hash、所有私有证据文件数量/集合hash/路径/可验证脚本（不含正文）及未验证。只建议下一步，通知Leader后停止，不开始其他获取/修复/审查范围扩展。"
+  ],
+  "out_of_scope": [
+    "不得恢复旧run/corpus/authorization，访问旧body/private/source/原review envelope或非指定metadata；仅本次新证据静态审阅。",
+    "不得执行第三方代码、源码导出为可采用快照/构建输入、build/install/dependency/model/load/inference/integration/device/audio。无账号同步支付公开发布Flutter/KMP/cloudASR。",
+    "不得修改candidate/schema/controller/parser/deny/roles/seeds/budgets/信任边界或wrapper绕过、全局comment豁免；不得重复run_input或删除consumed marker。",
+    "不得把局部comment/newadjudication/low_indicators/进程exit0提升为source/runtime/license/reachability/P0通过。CP1/Conformer Deferred not removed，CP2未通过，CP3/Alpha未批准；原音频不落盘不上传不进日志。"
+  ],
+  "acceptance": [
+    "准确记录本次全新userapproval/request/C/F/M/A/T/input/package/metadata/bundle/driver/marker身份，单次run且旧Git记录清楚不变。",
+    "每实际请求的固定blob/预算/角色/持久请求前授权链可复算；一旦停止后零后继请求、零retry/resume。",
+    "新quarantine/root/envelopes/metadata/ledger/adjudication/terminal均regular/nofollow/单链接/权限和hash匹配，完整新证据清单及容量/不完整项可独立核验。",
+    "真实两comment若被应用需完整tuple且新adjudication持久化/域/pins/input绑定可复算；其他停止优先、不清旧pending或裁定扩散。",
+    "正确report真实stop/source_verdict/scanner/license/fixedpoint及全部未验证；只提交新派生文档、工作区clean，无第三方内容执行/正文进Git/未审查依赖。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED、文件目的/提交parent/tree/每文件bytesSHA/Gitblob/clean；准确新approval和prepared合同身份。",
+    "driver/脚本完整命令/路径/sha、唯一consumed marker与开始/停止时间/次数；所有已用模块/包/输入/Trust对象独立身份。",
+    "逐请求path/blob/role/size/预算/receipt/checkpoint对应；实际body/rawbytes/metadataparts/ledger/terminal/adjudication数量与集合SHA、停止后无调用证据。",
+    "本次新私有保留证据路径/文件清单/权限/逐项hash及必要独立核验脚本，scanner原verdict与上下文限定、wire或持久化缺口；不输出原始body到Git/聊天。",
+    "未验证/PRD偏移/仍阻塞与建议下一步；通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4 后停止，等待独立验收。"
+  ],
+  "stop_conditions": [
+    "源身份/HEAD/hash/模式/权限/metadata/marker不匹配或未知修改；不取替代，不删除marker，不继续。",
+    "任一冻结hardstop、网络/容量/持久化/解析/未裁定或scope边界触发，立即保留结果并停止；调用后无重试即使零正文。",
+    "需要扩scope/schema/authority/能力裁定、第三方执行或修改产品时PRODUCT_DECISION_REQUIRED；不得临场解决后续跑。"
+  ],
+  "dispatched_at": "2026-09-06T13:13:47.600568+08:00",
+  "completed_at": "2026-09-06T13:37:29.717194+08:00",
+  "developer_result": {
+    "RESULT": "COMPLETE",
+    "commit": "393640b8a6825a9a0b42c479949646e1914da199",
+    "delivery": {
+      "path": "/private/tmp/think-acquisition-v8-driver-w125vAFT/delivery-r1.json",
+      "bytes": 1983,
+      "sha256": "dcada7b7b5856bac42c1b8e9d2954d8e08a9bdca43a27fd821c9e6111e0f45d5"
+    }
+  },
+  "accepted_at": "2026-09-06T13:37:29.717194+08:00",
+  "acceptance_report": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-acceptance.json",
+    "bytes": 9387,
+    "sha256": "1613473a2c951b66dbc8605df1ee02e2f398ca530502f6e2365ef036f41eb8d3"
+  }
+}

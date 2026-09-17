@@ -1,0 +1,50 @@
+{
+  "task_id": "CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001",
+  "RESULT": "REVISE",
+  "candidate_commit": "534e416b989698589bfb511332b3b0af2de4f185",
+  "candidate_tree": "77dae263d772aa8fd35de71ae3927d663fa80e53",
+  "reviewed_at": "2026-09-06T07:56:06.957629+08:00",
+  "identity_report": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-identity.json",
+  "identity_sha256": "75fab13b3bf62a8e93d08e32e6a97fcc28e8308d8d38ee96a2993ce8f86bbf18",
+  "counterexample_results": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-counterexamples.json",
+  "counterexample_sha256": "07c0f1c8cb8cfc1b7c4e1666cb65165d4e6d462272e7ec3015b9c238cc647138",
+  "probe_sha256": "060483124c38b9a1c881d4a4844c1ffcbe69bda8a1929c497fb79a6205d4ca3c",
+  "independent_reproduction_directory": "/private/tmp/think-leader-v7-probes-3ak0fmpo",
+  "findings": [
+    {
+      "id": "V7-R1",
+      "priority": "P1",
+      "file": "tools/asr_review_acquisition_v7/offline_review/manual.py",
+      "lines": [
+        137,
+        145
+      ],
+      "problem": "R is required to be a newly normalized think-manual-R-v1 object, and K.R must equal digest of that object. No separate identity field anchors the immutable, already accepted original human report exact bytes. Formal R identity cannot be preserved by substituting a normalized object digest.",
+      "evidence": "Fully authored existing-report exact digest in K.R, with all downstream F/M/A and independent pins consistently rebound, stops manual_commitment_binding before requests. Current normalized control proceeds with 10 fixture calls. Static schema confirms no external original-report exact-byte identity field.",
+      "required_fix": "Distinguish immutable original historical report identity from normalized intake representation identity and bind both through canonical/schema/commitment/map/adjudication/recalculator. Preserve formal existing R digest as the original report identity, without rewriting historical report or creating real mappings. Reject cross-domain substitution and mutation."
+    },
+    {
+      "id": "V7-R2",
+      "priority": "P1",
+      "file": "tools/asr_review_acquisition_v7/offline_review/manual.py",
+      "lines": [
+        92
+      ],
+      "problem": "historical_envelope type=regular is required to have mode=100644, confusing source Git blob mode with private regular-file permission 0600.",
+      "evidence": "Fully authored historical envelope with mode 0600 and all authority fixtures/pins rebound stops manual_envelope_type with zero requests. The same codebase creates private envelope files with 0600.",
+      "required_fix": "Use explicitly distinct source Git mode and historical envelope filesystem permission domains. Preserve and require the approved private envelope permission, not a Git-normalized substitute. Keep all no-link/private-parent/regular-file constraints and source blob/100644 checks."
+    }
+  ],
+  "passed_checks": [
+    "15938 file identities/Git blobs/modes/regular-single-link and manifest collection independently verified",
+    "23 v6 source provenance records and original test files verified",
+    "25-file bundle independently rehashed",
+    "15929 scan input identities and all465 raw finding contexts rehashed; original sandbox_only verdict retained",
+    "Independent authored control and both counterexamples reproduced twice across reviewer/Leader; zero actual network"
+  ],
+  "not_claimed": [
+    "No Leader full-suite double run for rejected candidate; developer reported 164/1154 double pass remains developer evidence only. Full independent pair reserved for corrected candidate.",
+    "No actual original report/body consumption or real K/F/M/A/T; no actual pending clearance, source approval or checkpoint advancement."
+  ],
+  "disposition": "Bounded implementation repair within existing formal exact-identity/private-file contract; no authority or product rule expansion. If repair requires changing formal semantics or real data, stop and escalate to PM."
+}

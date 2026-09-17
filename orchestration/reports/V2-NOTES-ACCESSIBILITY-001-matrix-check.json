@@ -1,0 +1,44 @@
+{
+  "1.0-dark": {
+    "passed": true,
+    "checks": 11,
+    "minHeight": 56,
+    "minWidth": 57.904762,
+    "logOK": true
+  },
+  "1.0-light": {
+    "passed": true,
+    "checks": 11,
+    "minHeight": 56,
+    "minWidth": 57.904762,
+    "logOK": true
+  },
+  "1.5-dark": {
+    "passed": true,
+    "checks": 11,
+    "minHeight": 56,
+    "minWidth": 68.57143,
+    "logOK": true
+  },
+  "1.5-light": {
+    "passed": true,
+    "checks": 11,
+    "minHeight": 56,
+    "minWidth": 68.57143,
+    "logOK": true
+  },
+  "2.0-dark": {
+    "passed": true,
+    "checks": 11,
+    "minHeight": 56,
+    "minWidth": 76.95238,
+    "logOK": true
+  },
+  "2.0-light": {
+    "passed": true,
+    "checks": 11,
+    "minHeight": 56,
+    "minWidth": 76.95238,
+    "logOK": true
+  }
+}

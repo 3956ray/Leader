@@ -1,0 +1,147 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "RESULT": "PRODUCT_DECISION_REQUIRED",
+  "review_completed_at": "2026-09-06T08:18:24.719450+00:00",
+  "review_outcome": "single_body_review_complete_stopped_at_dependency_gap",
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer.cc",
+    "git_type": "blob",
+    "mode": "100644",
+    "git_blob": "20d4646bb5c6ffbe714848cc497e1809113d5195",
+    "decoded_bytes": 8993,
+    "expected_body_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79"
+  },
+  "approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-001-approved.json",
+    "bytes": 3258,
+    "sha256": "2cc71640231337f3984a465b8ad6ae08482bfc1cb45338d43b98e6661114935d"
+  },
+  "acquisition": {
+    "requests": 1,
+    "decoded_bytes": 8993,
+    "response_entity_bytes": 12676,
+    "retries": 0,
+    "redirects": 0,
+    "metadata_requests": 0,
+    "authority_consumed": true
+  },
+  "observations": [
+    {
+      "status": "Observed",
+      "evidence": "lines109-113, enclosing Register signature88",
+      "finding": "hotwords-file option is registered with &hotwords_file; local help text describes a hotword file. This is option/configuration surface, not proof of think business API exposure."
+    },
+    {
+      "status": "Observed",
+      "evidence": "lines149-154, enclosing Validate signature134",
+      "finding": "If hotwords_file is nonempty and decoding_method differs from modified_beam_search, this branch logs a decoding-method error and returns false."
+    },
+    {
+      "status": "Observed",
+      "evidence": "lines163-167, enclosing Validate signature134",
+      "finding": "Visible C++ && short-circuit expression calls FileExists(hotwords_file) only if the string is nonempty. If FileExists returns false, the branch passes hotwords_file.c_str() to SHERPA_ONNX_LOGE and returns false. Empty string bypasses this particular existence-check call; it does not establish whole-function success or buffer-only operation."
+    },
+    {
+      "status": "Observed",
+      "evidence": "line210, enclosing ToString signature198",
+      "finding": "The config string representation includes hotwords_file. Along with the validation error branch, this is a path-value diagnostic exposure surface, not observed runtime logging or personal-data disclosure."
+    },
+    {
+      "status": "Observed",
+      "evidence": "lines222-223 and exact include27",
+      "finding": "The visible OnlineRecognizer constructor delegates the config to OnlineRecognizerImpl::Create(config). The same source names sherpa-onnx/csrc/online-recognizer-impl.h. No implementation/header was followed."
+    },
+    {
+      "status": "Observed",
+      "evidence": "Whole-body literal token search only, no whole-body human display",
+      "finding": "No exact hotwords_buf byte token occurs in this source. This limited lexical fact does not prove buffer support is absent in dependencies or runtime."
+    }
+  ],
+  "inferences": [
+    {
+      "status": "Inferred",
+      "finding": "The file-path configuration has visible validation and diagnostic consumers; it is more than a passive constructor field. Actual filesystem operations inside FileExists and their runtime reachability remain unverified."
+    },
+    {
+      "status": "Inferred",
+      "finding": "One local empty-value guard is insufficient to prove the complete buffer/file selector or a closed buffer-only architecture because construction delegates to an unreviewed implementation."
+    }
+  ],
+  "next_dependency_gap": {
+    "path": "sherpa-onnx/csrc/online-recognizer-impl.h",
+    "symbol": "OnlineRecognizerImpl::Create(config)",
+    "reason": "Exact local reference, not an approved next acquisition. It may itself only declare or delegate; no body/mode/size identity for a future request is asserted.",
+    "additional_unresolved_symbol": "FileExists; actual definition, filesystem behavior and build/runtime reachability were not inspected.",
+    "action": "STOP; return product decision, no include/symbol/file follow."
+  },
+  "visible_scope": {
+    "unique_lines": 28,
+    "unique_bytes": 1237,
+    "limits": "Target matches, limited validation/registration/string/constructor slices and relevant signatures only. A neighboring decoding-method registration line, blank constructor separator and two matching constructor instantiation signature lines were also visible; no unrelated function bodies or whole source exported. No claims about unseen same-file lines."
+  },
+  "scanner": {
+    "initial": "low_indicators/0 but text_files0 binary_files1: .cc unsupported text suffix; not valid source-text coverage.",
+    "completed_text_scan": "Exact8993B private regular0600 singlelink .cpp alias; unchanged scanner and IOC; candidates1 text1 binary0 skipped0 unreadable0 findings0 low_indicators/0.",
+    "meaning": "Configured static indicators only; not source approval. Both original and corrected scan reports preserved privately."
+  },
+  "artifact_verdict": "manual_review",
+  "preserved_state": [
+    "Old v8 run and frozen tools/policy remain unchanged and terminal; no clearance/adjudication/v9.",
+    "Current acquisition/adoption route PAUSED; CP2 not passed; CP1 and Conformer Deferred, not removed; CP3/Alpha unapproved.",
+    "No original audio, real father data, product code, dependency/model, build, install, load, inference, target test or integration."
+  ],
+  "evidence": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-matched-lines.json",
+      "bytes": 1361,
+      "sha256": "6540481ebccfde81e204b8b7d0bffc21f895deb4b5f017f935b7c006dacf1811"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-context-index.json",
+      "bytes": 1031,
+      "sha256": "3e77d1f50dca1ecbf1880d5e584d1c892ea222ca8e1fbbb8484575b13d547adb"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-visible-context.json",
+      "bytes": 2206,
+      "sha256": "e30ef8cc612584fd1b72fd2dbc8ec2cc510735d08573080ec58198956c65fabc"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-scanner-coverage.json",
+      "bytes": 1265,
+      "sha256": "4ada842fc046a99507231911a4aa5a3266be44152cff9ece3be7e4a7f335399a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-leader-verification.json",
+      "bytes": 4182,
+      "sha256": "d250701798ca6a61fa68de660281d4522ee32940db900090ebc4b3b8f5659ab0"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-pre-request-acceptance.json",
+      "bytes": 1497,
+      "sha256": "ecc9f89de62f7f2d7bbca620e3d45734ac9958023a880992ce130229b2f40b6d"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-execution-owner.json",
+      "bytes": 1006,
+      "sha256": "9aac8ab08d3ce20250e51ba889839449672ac986ad4f49d38d9c343ad68c8bb1"
+    }
+  ],
+  "unverified": [
+    "FileExists definition and actual filesystem effect; no runtime execution occurred.",
+    "Complete hotword buffer/file selector, empty behavior outside visible branch, lower implementation and compile/call reachability.",
+    "Whether think could expose or close file-path arguments; adapter/build tests absent.",
+    "Full source closure, whole-file semantics, licenses/provenance/current vulnerability checks, models and device metrics."
+  ],
+  "git": {
+    "HEAD": "bd0bb57efc4348f599c36a3166fa018809914788",
+    "clean": true,
+    "product_changes": false,
+    "Leader_outputs": "new first-party local reports and handler, uncommitted",
+    "push": false
+  },
+  "next_step": "Product manager to issue one formal APPROVED/REVISE/PAUSE route decision from these derived findings. No automatic second body or tool change."
+}

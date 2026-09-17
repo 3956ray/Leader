@@ -1,0 +1,1 @@
+{"verdict":"accepted","checks":{"pins":true,"four_files":true,"entry_semantics":true,"clean_git":true,"diff_check":true},"evidence":[{"path":"/Users/orderly_ray/Leader/orchestration/reports/CP2-VOSK-STAGE2-DOC-SYNC-001-verification.md","sha256":"0769e0fd4462cb966da261f1eea0a1829d1cd499ab4e4b0ec05048aca62bff17"}]}

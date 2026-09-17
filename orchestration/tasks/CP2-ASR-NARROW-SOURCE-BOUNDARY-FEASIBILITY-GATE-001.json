@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-SOURCE-BOUNDARY-FEASIBILITY-GATE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "draft",
+  "goal": "在全新隔离目录中从固定 sherpa-onnx commit/tree 按正文前冻结的 9 seed、允许根/类型和确定性字面量 include 规则重新获取新正文，静态判断已批准 handle 型 CPU-only/ASR-only 设计合同是否存在可闭合、无 denylist 依赖的最小源码边界。",
+  "immutable_contract": {
+    "design_commit": "a57f643bac24edef5d6601b8a59baa77060f3d2c",
+    "design_tree": "31376c73f43caf3bbfd664d8316ffecdc589379d",
+    "design_input_digest": "c318c5a5f91d4af1d2759895ab9d5296c5784eaa214548b92f25fba4096764d2",
+    "upstream_repository": "https://github.com/k2-fsa/sherpa-onnx",
+    "upstream_commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "upstream_tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "commit_response_sha256": "e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089",
+    "tree_response_sha256": "7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2",
+    "max_body_files": 96,
+    "max_body_bytes": 1048576
+  },
+  "seeds": [
+    "LICENSE",
+    "sherpa-onnx/csrc/online-recognizer.h",
+    "sherpa-onnx/csrc/online-recognizer.cc",
+    "sherpa-onnx/csrc/online-recognizer-impl.h",
+    "sherpa-onnx/csrc/online-recognizer-impl.cc",
+    "sherpa-onnx/csrc/online-stream.h",
+    "sherpa-onnx/csrc/online-stream.cc",
+    "sherpa-onnx/csrc/online-model-config.h",
+    "sherpa-onnx/csrc/version.h"
+  ],
+  "scope": [
+    "开始前建立全新 /private/tmp 隔离目录和空 corpus；不得读取、枚举或复用任何旧 corpus、候选清单、快照、block/manual_review 制品，并保存正文前空目录证据。",
+    "在获取正文前冻结并哈希：固定设计/上游身份、9 个精确 seed、允许路径与类型、字面量 include 解析/解析顺序、denylist、硬上限、停止条件及三态结论规则；冻结后不得增补 seed、重冻或改变策略。",
+    "先通过 GitHub Git Data API 复核 commit/tree 身份、tree truncated=false、固定元数据响应哈希及每个允许路径的 blob SHA；正文只能从 api.github.com 的固定 blob API 新取得。",
+    "每次正文请求前，先在追加式哈希链 ledger 中记录被预授权的固定路径、blob SHA、当前累计文件/字节、策略哈希及前一记录哈希；取得后核对 API SHA/size、Git blob SHA-1 语义和正文 SHA-256。",
+    "只允许 LICENSE，以及固定 tree 中 sherpa-onnx/csrc/ 下的普通 .h/.cc blob；必须验证 UTF-8、无 NUL、lstat 普通文件、无符号链接/硬链接/特殊文件。",
+    "只按冻结规则解析唯一、无宏、无歧义、仓库内的字面量 include；系统头和外部边只登记不获取。允许内部边按稳定确定顺序继续，直至 fixed point、停止条件或硬上限。",
+    "使用项目自有、已审查并冻结的获取器/解析器/控制器做静态处理；只能运行这些第一方工具和批准的静态扫描器，绝不导入、执行、编译或解释第三方正文。",
+    "对新 corpus 运行 scan-untrusted-code 静态扫描并人工逐项复核；将 scanner 原始结构化结果、人工裁决、P0 符号到源码映射、内部闭包、外部边和 denylist 可达性记录为派生证据。",
+    "只把派生审查证据提交到 doc/security-reviews/sherpa-onnx-narrow-source-boundary-feasibility/2026-09-05/；不得把第三方源码正文、GitHub API 响应正文、corpus、候选快照或构建输入加入产品仓库。"
+  ],
+  "denylist": [
+    "任何 WAV/wave writer、文件音频读写或保存原始录音能力",
+    "ADSP、QNN、RKNN、TTS、VAD、speaker、diarization、denoise、punctuation、audio tagging",
+    "WebSocket、PortAudio、download、FetchContent、JNI、kotlin-api、非必要公共 C/C++ 表面",
+    "用户可控 provider、library、model 或动态路径能力"
+  ],
+  "out_of_scope": [
+    "读取或复用旧 corpus、候选清单、快照、block/manual_review 制品，或把旧证据当作新正文来源。",
+    "获取 denylist 命中的正文、CMake、JNI/Kotlin、外部依赖、模型、音频、二进制、工具链、下载器或替代运行时。",
+    "修改 sherpa-onnx 或产品源码、建立/采用源码快照、形成实现/构建输入、补丁、适配器实现或产品功能。",
+    "执行第三方代码、配置 CMake、构建、安装、加载、推理、真机实验、集成、批准任何制品、宣称 CP2 通过或进入 CP3。"
+  ],
+  "acceptance": [
+    "固定设计合同和上游 commit/tree/metadata 哈希全部复核一致，tree 未截断；正文前策略与空 corpus 证据存在且可重算。",
+    "9 个 seed、所有后继正文及其顺序都能由冻结规则和请求前 ledger 确定性解释；文件数不超过 96，总正文不超过 1,048,576 字节。",
+    "每个正文条目均有固定路径/blob SHA、API SHA/size、Git blob SHA-1、SHA-256、类型/UTF-8/NUL/lstat/link 验证；ledger 哈希链可独立重算且无事后补授权。",
+    "内部 include 闭包及 fixed_point 状态可复算；所有系统/外部边、宏/歧义/未解析边显式列出，未发生静默忽略。",
+    "P0 API 每一符号都映射到允许范围内源码；denylist 可达性逐项有证据；静态扫描发现经人工复核，低发现不被等同为安全。",
+    "最终只能给出 source_boundary_feasible、source_boundary_blocked 或 insufficient_evidence，并逐条说明依据、未验证项和后续所需授权。",
+    "只有 fixed_point=true、无未解析/宏/歧义/漏记内部边、P0 映射完整且无 denylist 依赖时，才可给出 source_boundary_feasible；该结论仍不是源码/构建/制品批准。",
+    "产品仓库提交只包含指定目录下的派生证据，Git 修改边界清楚且不含第三方正文/API 正文；完成后停止等待 Leader 验收。"
+  ],
+  "evidence_required": [
+    "冻结策略及哈希、正文前空目录证据、第一方获取器/解析器/控制器内容与哈希、准确复现命令。",
+    "固定 commit/tree 元数据复核、tree 索引、请求前追加式 ledger、terminal hash、corpus manifest 和累计上限证据。",
+    "internal-review closure/fixed-point、P0 source map、external edges、unresolved/macro/ambiguous edges、denylist reachability。",
+    "scan-untrusted-code JSON/Markdown 原始输出、逐项人工裁决、最终 security verdict 和未验证项目。",
+    "开发者报告：RESULT、修改文件及目的、测试命令/结果、逐项验收证据、未验证项、PRD/范围偏移、Git 提交状态与不自动开始的下一步建议。"
+  ],
+  "stop_conditions": [
+    "任一 P0 符号或必需内部 include 触达 denylist、允许根/类型外路径、CMake/JNI/Kotlin、外部依赖、生成文件或必须修改上游源码。",
+    "下一正文会使文件数超过 96 或累计正文超过 1,048,576 字节，或固定 tree/API/哈希/路径/类型/link 验证不一致。",
+    "出现无法由冻结规则唯一处理的宏 include、歧义路径、生成头、未记录内部边，或需要修改 seed、策略、解析器语义或重冻。",
+    "需要访问旧 corpus/旧制品、获取模型/音频/二进制、执行第三方代码、构建、实现、集成或扩大本任务授权。",
+    "触发即停止获取并给出 source_boundary_blocked 或 insufficient_evidence；不得绕过、补清单、继续正文获取或自行进入下一任务。"
+  ],
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "execution_phase": "stopped_preflight",
+  "handoff_control": {
+    "leader_thread_id": "01a071cf-9ac6-7171-b663-749a6e88b0a4",
+    "previous_developer_thread_id": "01a06cbc-2c6a-7ec1-9641-94537468b7eb",
+    "scope": "Statically inspect existing first-party policy and tools against the unchanged source gate contract. No network, corpus enumeration or body reads, tool execution, frozen-file edits, new attempt or acquisition. Produce line-referenced findings and readiness verdict, then stop.",
+    "quarantine_root": "/private/tmp/think-cp2-asr-narrow-source-boundary-20260905.693AnW",
+    "authorization": "Existing authorization stays bound to this unfinished task; no second attempt or scope expansion is approved by this handoff."
+  },
+  "task_result": "BLOCKED",
+  "review_disposition": "First-party findings validated; source feasibility unassessed; acquisition remains stopped pending formal repair decision."
+}

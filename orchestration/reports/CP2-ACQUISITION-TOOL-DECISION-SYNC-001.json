@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "commit": "926b06fc3513c60b96e494d7d5c087b2763d6064",
+  "parent": "da9279a411d990e4c37191e22be680b2c4bfcb07",
+  "files": [
+    "AGENTS.md",
+    "doc/README.md",
+    "doc/cp2-acquisition-tool-scope-decision-2026-09-05.md",
+    "doc/development-guide-v0.1-2026-09-04.md",
+    "doc/prd-v0.1-2026-09-04.md"
+  ],
+  "checks": "source/worktree/HEAD bytes and SHA-256; parent; scope; show --check; worktree clean; v3 absent",
+  "entry_docs": "Leader read staged diff; HEAD matches worktree; approved scope unchanged",
+  "CP2_passed": false
+}

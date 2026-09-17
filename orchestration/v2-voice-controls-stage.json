@@ -1,0 +1,34 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "V2-VOICE-CONTROLS-001",
+    "owner": "developer",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+    "goal": "Add explicit local voice-command mode for new note, save current draft and cancel current input with safe confirmation and session isolation.",
+    "scope": [
+      "Only /Users/orderly_ray/Projects/thinkV2, clean accepted baseline7eb5b4dafe891d10fe65a15c5f67b01c0d2ab3ae. Formal emulator-first addendum retained independent post-E5 CP2 voice-controls paragraph; original V1-V7 privacy/session requirements remain. One bounded CP2 task.",
+      "Explicit user entry into clearly distinguished command mode. Ordinary dictation including command-like phrases stays text; it never triggers actions. Recognize only local 新建笔记 / 保存当前草稿 / 取消本次输入; exact bounded whitelist and clear unknown/empty feedback. No arbitrary command, navigation, cloud/AI execution or fuzzy destructive action.",
+      "Use already admitted current Vosk offline product runtime/model and existing microphone/lifecycle path, with no new dependency/model/grammar package. Command audio only bounded RAM, never files/backups/logs/upload. No SenseVoice integration or new candidate/license research. Preserve honest warning that general ASR quality remains unaccepted.",
+      "New note preserves prior draft/record and requires successful persistence before switching; saving requires nonempty current draft and explicit user confirmation after recognized intent, never automatic submit. Cancel only cancels current capture/command session, never erases earlier body or persisted draft. Display recognized intent before any state-changing action; avoid accidental effects from uncertain recognition.",
+      "Bind capture/result/confirmation to command mode, current record/editor session and revision; edits, record change, background, permission loss, cancel or repeated commands invalidate stale result. Ordinary text, manual title/category, correction suggestions, reminder/backup/AI/relations state remain intact. Show honest error when persistence fails, retain editable text.",
+      "Meaningful host plus actual Android emulator tests: command-vs-dictation separation, unknown and command-like body text, explicit enable/exit, new-note preservation, empty save rejection and confirmed nonempty save, cancelled save, cancel input preservation, permissions/lifecycle/late callback/repeated action and write failure. Include real current-engine recognition of non-private synthetic command samples via labeled bounded-memory input or authorized emulator microphone path; parser/mock tests alone are not real voice validation. Report recognition outcomes as measured, no quality threshold waiver or unsupported end-to-end claim.",
+      "Necessary build/lint and affected regressions. Prefer no new persistent fields; if necessary, preserve v2 backup completeness within existing contract or report required separate CP8 follow-up, never silently alter backup format. Xiaomi15 microphone, real pronunciation/false-trigger rate and family usability remain later."
+    ],
+    "out_of_scope": [
+      "No general ASR quality tuning, new runtime/model, paused SenseVoice/private embedding, cloud ASR, broad navigation/automation, deleting notes/text, accounts/sync/payment/public release, unrelated UI redesign, private data/device access. No new independent developer."
+    ],
+    "acceptance": [
+      "Explicit command mode delivers only approved three intents; normal dictation never dispatches actions; safe save confirmation, new-note draft preservation and cancellation verified with actual durable Android data.",
+      "Session/revision/lifecycle/error guards preserve existing edits, confirmed action occurs once, unexpected recognition causes no silent data loss. Existing current-engine real-command recognition evidence and mock/parser evidence clearly separate.",
+      "Appropriate host/Android/build/lint pass; unchanged privacy/dependencies and complete data backup boundary verified. Exact clean commit/APKs/manifest plus remaining general quality/Xiaomi/family gaps, no fullCP2 or fullApp claim."
+    ],
+    "evidence_required": [
+      "ACK exact task/attempt/hash/baseline. RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED; file purposes; action/state transition and evidence matrix; actual engine input identity/output (text only, no raw audio), UI confirmations and durable before/after/error tests; command-mode safety and permissions; test commands/results; commit/APK/manifest; unverified gaps and next recommendation then stop."
+    ],
+    "stop_conditions": [
+      "Stop after this bounded CP2 delivery and report commander. Do not start UI refinement, new ASR or another checkpoint independently. Preserve unknown changes.",
+      "Stop affected action for audio persistence/upload, lost text, unauthorized dependency, requirement expansion or inability to establish genuine command-path evidence. Report actual limitation; do not silently substitute mock recognition or lower general V7 quality bar."
+    ]
+  }
+}

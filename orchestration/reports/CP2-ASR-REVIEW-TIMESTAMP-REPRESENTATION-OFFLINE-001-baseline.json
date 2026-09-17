@@ -1,0 +1,16 @@
+{
+  "RESULT": "PASS",
+  "source_files_git_verified": 26,
+  "old_method_sources_exact": 167,
+  "new_methods": 7,
+  "formal_pins_verified": {
+    "doc/cp2-manual-capability-evidence-decision-2026-09-06.md": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+    "doc/cp2-review-timestamp-representation-decision-2026-09-06.md": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33",
+    "doc/prd-v0.1-2026-09-04.md": "ca6477c0bb4e40913be6861b5299ae4b0121650552da3aa1cd4acbd46c91528f"
+  },
+  "port_findings": 2535,
+  "port_matches_independently_context_checked": 3739,
+  "original_scan_verdict": "sandbox_only",
+  "diff_scan_verdict": "low_indicators",
+  "scope": "first-party source and new scan evidence only"
+}

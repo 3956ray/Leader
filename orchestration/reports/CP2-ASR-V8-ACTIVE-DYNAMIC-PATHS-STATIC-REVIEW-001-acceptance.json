@@ -1,0 +1,77 @@
+{
+  "task_id": "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T06:07:04.102341+00:00",
+  "product_outcome": "active_paths_review_complete_for_product_decision",
+  "baseline_unchanged": "63de9e684ad39a476624699f18dd349272062a51",
+  "reports": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001.json",
+      "bytes": 22372,
+      "sha256": "f5d1f99d54084aec6757038f726ae455395e334ac0b120c5f254791c1bcbda8b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001.md",
+      "bytes": 1912,
+      "sha256": "a6ec5534ed6b2bcd7b6ae41dd34576f3465ef7df2494c614755a00e809acd39b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-verification.json",
+      "bytes": 1574,
+      "sha256": "1812e5b8ef3384ebf82f7345c35865e5a7837ad39d84101bae14f8ebd24dcaac"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-verify.py",
+      "bytes": 7300,
+      "sha256": "852c3e2ab96a9b70af007f3724ded40577c9033c618c2921e174b5e904ac009b"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-semantic-review.json",
+      "bytes": 3013,
+      "sha256": "46d63124da6e24064fcc7c45b7e779c6d779cea151347fa7e06e0fd8623b4c8f"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read.py",
+      "bytes": 5295,
+      "sha256": "4919c35f23babbe012c7e936c90ffe9b94c964f24d2203f4ab2ec732773e8860"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-context.py",
+      "bytes": 1458,
+      "sha256": "6f2610e89439713653daaa45b240de2fd8d422b71b5a33ac5ce3eef8ac058a0f"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read-1.json",
+      "bytes": 6019,
+      "sha256": "a4652f24145a9811f701d100c8f88ccfca73126997043bf08c74e8318081c947"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read-2.json",
+      "bytes": 10360,
+      "sha256": "e77d8ebe5c6c9413249b032fb02ce614aea04427becfe88ee6e8dc0600ccf335"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001-read-3.json",
+      "bytes": 8664,
+      "sha256": "57bae517a62442ac3eb5bd24feaf129256bbc005188e1166f607e6c0cc97e57f"
+    }
+  ],
+  "criterion_evidence": [
+    "Exact current single envelope verified through descriptor-relative nofollow,regular singlelink0600/private0700 and8579B/SHA plus7939B body/SHA/Gitblob. Only same authorized body read3times forboundedhumanreview plus1independentverification; nootherbody/network/candidate/scanner/thirdparty execution.",
+    "All7unique occurrence tuples/rawtokens/linebyteintervals/carriers/doublelinehashes/sourceidentity/reportbinding independently recomputed. Humanvisible union55lines2294bytes; complete header not displayed or exported.",
+    "Independent stdlib verifier confirms field declaration/const-referenceparameter/memberinitializer source/target and empty constructor body; scope reviewer accepts limited judgment. No realI/O, maliciousness, runtime reachability or futurebusinessAPIexposure asserted.",
+    "Append-only JSON/Markdown andverifiers/receipts present; product HEAD/clean unchanged. Currentrun/frozenstops/pending unchanged; noauthoritymapclearance ornewacquisition."
+  ],
+  "judgments": {
+    "active_literal_include_locally_nonoperative_reachability_unresolved": 1,
+    "active_configuration_policy_relevant": 4,
+    "comments_locally_nonoperative_without_clearance": 2
+  },
+  "limitations": [
+    "Verifies local syntax/identity and narrow report; cannot establish downstream semantics, actual file access, business API exposure or runtime reachability.",
+    "Verification is a fourth read of the same authorized object, with no additional human source display; three prior review read receipts remain immutable.",
+    "Scope reviewer read onlyfirstpartyderivedreports; raw verification performed byLeader, not claimed twice byseparateagent.",
+    "No fullclosure/license/sourceadoption/runtime/model/P0/device/Checkpoint pass."
+  ],
+  "next_step": "Return formal local evidence to PM with current acquisition/adoption route paused; choose one bounded next decision without automatic engineering/newacquisition."
+}

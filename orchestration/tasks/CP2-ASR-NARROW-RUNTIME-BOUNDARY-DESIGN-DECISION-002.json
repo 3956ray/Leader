@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-DECISION-002",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "task_result": "APPROVED",
+  "decision": "accept_handle_boundary_contract_and_require_new_bounded_source_gate",
+  "decision_file": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-narrow-runtime-boundary-design-decision-2026-09-05.md",
+  "report": "orchestration/reports/CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-DECISION-002.md"
+}

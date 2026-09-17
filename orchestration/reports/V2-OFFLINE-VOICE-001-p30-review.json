@@ -1,0 +1,9 @@
+{
+  "rounds": 10,
+  "p95_ms": 235,
+  "all_captured_480000": true,
+  "all_closed": true,
+  "failures": [],
+  "scope": "emulator paced synthetic PCM through product queue; not Xiaomi microphone",
+  "stability_pending": true
+}

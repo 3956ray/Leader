@@ -1,0 +1,19 @@
+{
+  "task_id": "CP2-REVIEW-TOKEN-PROVENANCE-DECISION-SYNC-001",
+  "RESULT": "ACCEPTED",
+  "accepted_at": "2026-09-06T10:27:38.328981+08:00",
+  "commit": "8a2d85d824f12cdc186f84514037698c88237dcb",
+  "parent": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+  "verification_report": "/Users/orderly_ray/Leader/orchestration/reports/CP2-REVIEW-TOKEN-PROVENANCE-DECISION-SYNC-001-verification.json",
+  "verification_sha256": "5d7cb741919d62424dff589564d4764a8b20b23395db13f80fbb8add54696685",
+  "formal_decision_sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+  "formal_prd_sha256": "3cce758ccff443bdb7ea9368f3c585e4179653228c5071b0353b3991ce99ded7",
+  "criteria": [
+    "Exact five paths and two formal copies; three entrypoints align with acceptedv8/Kblocked/Pnotstarted and Leader-onlysame-objecttwo-slice supplement under existingreview authority.",
+    "129510oldGitrecords andtools/securityreviews/app trees unchanged,localnavigation valid,cleancommit; no source/P/K execution."
+  ],
+  "limitations": [
+    "P and exact token bytes not yet verified; no runtime/closure/CP2 conclusion."
+  ],
+  "next": "Separate Leader-owned P completion and separate acceptance, then new K task."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "prepared_at": "2026-09-06T08:55:34.220343+00:00",
+  "baseline_commit": "0043d343d4cb30b9c212bcb111c618fb2ca1d6e9",
+  "goal": "执行最后一个固定impl.h的单次获取及受限局部静态审查；若只有声明、目标缺失或继续委派，永久终止热词逐文件补证链并回产品门。",
+  "approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-001-approved.json",
+    "bytes": 3405,
+    "sha256": "ffd046a2d0e25ec05a9c0e0e72676bbe0b5f8d132986dd2ebc730eef13c39f38"
+  },
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 7679,
+    "sha256": "d645a34ec6c176c12683588f4bee7f778690bf8d6cebb1e17d028f38f8bbcaed"
+  },
+  "request_markdown": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.md",
+    "bytes": 4306,
+    "sha256": "f6f3def136235e6d52b5bf0d92fd908fad25dc9aeaa0f7fe4ff0afd2684f3e82"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+    "bytes": 13812,
+    "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8"
+  },
+  "scope": [
+    "按精确批准request全部pins和边界执行；以已审第一方单文件handler为只读模板，仅更换精确输入/对象/root/cap，独立静态核对最终变更后才执行一次GET。全新0700目录和前置O_EXCL/fsync消耗marker；无凭据代理redirectretrymetadata探测；严格JSON/base64/UTF8/NUL/Gitblob/SHA256/2286B，entity<=16384，正文hardcap262144。",
+    "保持不变的受信scanner/IOC仅静态扫描该新正文；原始响应/正文/scanner报告保留private且regular0600singlelink。原始/冻结旧资料不可复用；只归档派生报告与最小可见切片。",
+    "只定位Create(config)是否定义/inline及直接config/file-buffer-selector/I/O/委派；累计人工<=64unique lines且<=4096B。先最小匹配定位；看到仅声明/目标未定义/再次委派则立即终止语义阅读，不转其他方法、不跟随任何include/symbol/.cc/FileExists/具体recognizer/第二正文。",
+    "对本次固定证据进行身份/预算/权限/切片和结论独立复核；不扩大人工可见范围。结果不论正反都回产品门，不能自动进行下一技术任务。"
+  ],
+  "out_of_scope": [
+    "不改产品源码或文档、旧tools/冻结policy/schema/denylist/run，不执行第三方内容或构建/加载/测试/模型/真实音频/集成/采用/clearance/v9/Checkpoint。",
+    "不重复请求、不补metadata或替代地址，不沿热词链取第三文件，不以本次授权扩展正文/可见上下文预算。"
+  ],
+  "acceptance": [
+    "最终handler身份经独立检查；新approval/request完整绑定，唯一GET结果和消耗marker可验证。",
+    "固定2286B/Gitblob/SHA匹配，scanner范围完整或缺口披露；精确人工片段<=64unique lines/4096B，声明/缺失/委派触发永久终止。",
+    "报告Observed/Inferred/Unverified与逐项证据、文件边界、权限/预算/测试检查及Git不变；无第三方执行或新增依赖。"
+  ],
+  "evidence_required": [
+    "请求/approval/helper/marker/terminal/body/scanner身份及单次计数、private文件inventory和派生可见范围记录。",
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED，报告JSON/Markdown、独立复核、未验证、偏移检查、Git状态及明确链终止/回产品门决定。"
+  ],
+  "stop_conditions": [
+    "Any identity/blob/SHA256/mode/type/path/exact size mismatch; unsafe filesystem, malformed/ambiguous response including invalid JSON/base64, invalid UTF8/NUL, budget or persistence failure: stop without retry.",
+    "Exactly2286 decoded bytes and at most262144; entity at most16384; max64unique visible lines and4096visible bytes across the complete review.",
+    "Target absent, declaration only or continued delegation: immediately stop and permanently end this hotword source-by-source evidence chain. No third source under this route.",
+    "Any need to follow include/symbol/.cc/FileExists/concrete recognizer/second body or metadata: stop, record only the exact gap. No prohibited capability is cleared by this review.",
+    "No target execution, build/install/load/test/inference/integration/model/audio/device/publication/v9/detector-schema-freeze-policy-oldrun changes/clearance/sourceadoption/Checkpoint progression.",
+    "Regardless of result return to product decision. If insufficient evidence, only subsequent independent product choice of alternative offline ASR candidate research or explicit personal-dictionary deferral; not automatic implementation. If useful buffer-only evidence, only potential later first-party adapter/test-contract design without more source, subject to product decision."
+  ]
+}

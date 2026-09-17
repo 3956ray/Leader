@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-EXECUTION-RELEASE-FREEZE-V8-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "仅将已分别独立验收的 v8 工具 C 与非操作性审查承诺 K 固定为新的执行冻结 F，交付可逐字节复核的四份冻结文档。",
+  "baseline_commit": "f48f4831c9d733080dab97932604f4ecf1e4cbc2",
+  "predecessor_acceptance": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-acceptance.json",
+  "predecessor_acceptance_sha256": "8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2",
+  "formal_decision": "doc/cp2-review-token-provenance-decision-2026-09-06.md",
+  "formal_decision_sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153",
+  "prepared_at": "2026-09-06T11:05:36.611100+08:00",
+  "output_directory": "doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06",
+  "accepted_C": {
+    "commit": "1fe85740a185a63ca4f35df2abd22ae410f82fbb",
+    "tree": "68924b2a71443664b5d1203a1456066c49d7335d",
+    "root": "tools/asr_review_acquisition_v8",
+    "files": 69497,
+    "bundle": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+    "policy": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+    "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+    "file_manifest_sha256": "d8b003df82da35b20f2e110c074a4a761de926ca914f5affc7b556650f5f9b56"
+  },
+  "accepted_K": {
+    "commit": "f48f4831c9d733080dab97932604f4ecf1e4cbc2",
+    "tree": "5099a14ce2df00dcc5b3ad704b476dc5b15a5ee9",
+    "root": "doc/security-reviews/asr-review-map-commitment-v8/2026-09-06",
+    "files": [
+      {
+        "bytes": 432,
+        "git_blob": "97926fabba0873e34fc16ce5e9df057b9acd7996",
+        "mode": "100644",
+        "path": "H.json",
+        "sha256": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615",
+        "type": "blob"
+      },
+      {
+        "bytes": 817,
+        "git_blob": "60fbe83e77ad7dff17dcbd14deffe9a531afbaa6",
+        "mode": "100644",
+        "path": "K.json",
+        "sha256": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+        "type": "blob"
+      },
+      {
+        "bytes": 2068,
+        "git_blob": "e616bb1d223966d7f9d48c5c57ce71a25f19d8f7",
+        "mode": "100644",
+        "path": "MANIFEST.json",
+        "sha256": "16bf32555fd9bb295427f112475dce333c56477bb48dab349970e09493e8ef3e",
+        "type": "blob"
+      },
+      {
+        "bytes": 62430,
+        "git_blob": "526df58b4469b195ac34fcc423c98278a28ea17c",
+        "mode": "100644",
+        "path": "PROVENANCE.json",
+        "sha256": "9b835ffb83f007fc81bb9998d981ef1410a51479382a83879f71c077146f57c6",
+        "type": "blob"
+      },
+      {
+        "bytes": 9610,
+        "git_blob": "ad5fba28bddf5738634c04a96fdc1f99fa74e3a3",
+        "mode": "100644",
+        "path": "R.json",
+        "sha256": "9569a0ff117a88fbda16fd2e548530bc4b46a673c7def9f6e05b2c3b2f49ab05",
+        "type": "blob"
+      },
+      {
+        "bytes": 4507,
+        "git_blob": "eea414a782b2866bdc04a7ebb1358ce10ad95789",
+        "mode": "100644",
+        "path": "REPORT.md",
+        "sha256": "f732272450a8b7b68c545bc43038c86a054c2cb8dcc02dbaff450771c479e7fa",
+        "type": "blob"
+      },
+      {
+        "bytes": 12980,
+        "git_blob": "ef88e2d1d2f4aabe2e5b8fcd95f5a9028cdf941a",
+        "mode": "100644",
+        "path": "VERIFICATION.json",
+        "sha256": "9a2ce9822e29215be7f45ad20a5ec74c158248c1be51cf9a3811932d900fcd4d",
+        "type": "blob"
+      },
+      {
+        "bytes": 4278,
+        "git_blob": "df2b64f449678766e3118dd9541fe4e141268a26",
+        "mode": "100644",
+        "path": "representation.json",
+        "sha256": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de",
+        "type": "blob"
+      }
+    ],
+    "identities": {
+      "C": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+      "H": "24711176c031805c0d39aa995abb4041b29dba6143e1ca2136311056065af615",
+      "K": "8c90922477a24040e22a34800caeadbf6d9e4d8929097ac946c23a8560c6ecce",
+      "P": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc",
+      "P_acceptance": "02e6a8a8ac1fa8a1cf019219fc11e16c5feb17b735c22e14d36d6b0cc560db71",
+      "R_wrapper": "9569a0ff117a88fbda16fd2e548530bc4b46a673c7def9f6e05b2c3b2f49ab05",
+      "intake": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+      "original_R": "0d8b34a06960a2c82a07effc376b60efe3c06aea1c968fb5a83b160c0d0519e6",
+      "representation": "da2ca1f2eef0f8ca3d7a74c3e1e2cabd39544fd15edbe8a3b8f1a09ec11b59de",
+      "timestamp": "9810a201cd0d752a011c92ea1abd81641343ddfc79b325b6645b92b00d2a2d77"
+    },
+    "acceptance": {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-acceptance.json",
+      "bytes": 8041,
+      "sha256": "8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2"
+    }
+  },
+  "pinned_references": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-acceptance.json",
+      "bytes": 8041,
+      "sha256": "8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-developer-final.json",
+      "bytes": 3813,
+      "sha256": "5a913d318ccabddd3dbcdd11c2b96aa5ecb0a26cb0f355b2ca74eb81cb76274a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-developer-verifier-reviewed.py",
+      "bytes": 17659,
+      "sha256": "b6418d70ffd467a26d3dc316b7dc10caee7a4ce1f93582550b399ab017824315"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-leader-rerun.json",
+      "bytes": 3813,
+      "sha256": "5a913d318ccabddd3dbcdd11c2b96aa5ecb0a26cb0f355b2ca74eb81cb76274a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-leader-verification.json",
+      "bytes": 4035,
+      "sha256": "d6640f4965b4e32fbde4732b6c63bc704eaadbc0adc60e88f10e012818fd1ac9"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-leader-verify.py",
+      "bytes": 11050,
+      "sha256": "530ed7a2b2d8deba61d2782d98145427a6d48dca4f3606f9609943c109d10a5e"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-semantic-review.json",
+      "bytes": 1375,
+      "sha256": "6a58b7a816d09e9bbc7ae027f06c80052ce399d4ab0d9d1427ef14dba364ee99"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-MAP-COMMITMENT-V8-001-R1-static-review.json",
+      "bytes": 1127,
+      "sha256": "f2edee67169e707acece5fb0dbeda92b687c9a1b3d8936244da879ab3fcf05da"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-acceptance.json",
+      "bytes": 6661,
+      "sha256": "141c9b5655cbde45dc7761e65658fd6fe2801c2b5252fc6b12810371b430dbeb"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-baseline-verify.py",
+      "bytes": 2846,
+      "sha256": "ccc0147df4f3ba602d97f9a572632d3b73da91752254785db898f460dcb12c5c"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-baseline.json",
+      "bytes": 741,
+      "sha256": "76ddb83565e65f85e14b60aeaa1885fb766c3cc14f15b1caaa20060d890ff25a"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-contracts.json",
+      "bytes": 1691,
+      "sha256": "f8e180a797d9bcc72048ad745d92b89ea3ad401046ae62ac0bb08271d8b6efd2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-identity-verify.py",
+      "bytes": 4862,
+      "sha256": "19ce78223a6cbe6a9582d0ae00a58d4031072a84c61b00d596351cfede3288ea"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-identity.json",
+      "bytes": 882,
+      "sha256": "fc312dd4cc7407627dd32ad8c26033c961d4354222cb9f0ae331bfdddedc1696"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-leader-a.log",
+      "bytes": 15884,
+      "sha256": "46c6e2066264dae6f7651ea60dd9333a73b26a02c69316de75d16161ff46ac55"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-leader-b.log",
+      "bytes": 15884,
+      "sha256": "769dd9f7abfe8db63c948bb78387e8b92530155c3242c311d0de51aa0357bd27"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-recalculation.json",
+      "bytes": 894,
+      "sha256": "d687033f180ca6ea5db9d685fa9a52c6ffffeb81a1689e7d2f5557fdfb051e05"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-runs-verify.py",
+      "bytes": 4931,
+      "sha256": "52cb466af4e6097cf7b0e328aa367cf18423b7f356512fae0da8662044e38d61"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-runs.json",
+      "bytes": 3442,
+      "sha256": "15408011467b88c5f716809cd7b4e39cedea8033a9bd2bbb2c2771e2cdf56441"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-semantic-probe.py",
+      "bytes": 4865,
+      "sha256": "1584839195275a74b325ae7d81e2e372c4bc6a8fd3b7cfea21d832d146e20cf2"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001-semantic-probes.json",
+      "bytes": 2741,
+      "sha256": "9738f6a0bd85636ba5182f8a6d730451e1ba3f4ebcaffa7bcd92922092f841bb"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-P.json",
+      "bytes": 7092,
+      "sha256": "b2dcd22067c17edf08958bd07f31d84658557ecab684f513861af3cc7aa403fc"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-acceptance.json",
+      "bytes": 4732,
+      "sha256": "02e6a8a8ac1fa8a1cf019219fc11e16c5feb17b735c22e14d36d6b0cc560db71"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-REVIEW-TOKEN-PROVENANCE-COMPLETION-001-verification.json",
+      "bytes": 1100,
+      "sha256": "ce3579f090ede82fba506e2cc24d7f75d44262c3e603b1db457060e800aa880b"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/AGENTS.md",
+      "bytes": 15375,
+      "sha256": "1c90ce42692395e95b09b85a0d3b0211a4836e850c93117f7e0ec36150d5efa1"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/README.md",
+      "bytes": 15068,
+      "sha256": "c8bd5312384a26a3d6a77b6f846ff9f3be79d11995d5298a22c7ba38d979d83b"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-manual-capability-evidence-decision-2026-09-06.md",
+      "bytes": 19715,
+      "sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-timestamp-representation-decision-2026-09-06.md",
+      "bytes": 12271,
+      "sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/cp2-review-token-provenance-decision-2026-09-06.md",
+      "bytes": 9458,
+      "sha256": "20da8a661354e4d87d57effb2f70997bbe38aab700fad43304271bccba1ab153"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 40090,
+      "sha256": "1d8d3405fd6b66e0764d81d1b32dbb36c57544b5c8dcb284a7a91d5cb017f60f"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/naming-decision-2026-09-04.md",
+      "bytes": 2414,
+      "sha256": "4a993a87fe6834f59a53fc19adddd19107f97407f79a6e2fcd90999d8ddfffdd"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/prd-v0.1-2026-09-04.md",
+      "bytes": 63461,
+      "sha256": "3cce758ccff443bdb7ea9368f3c585e4179653228c5071b0353b3991ce99ded7"
+    }
+  ],
+  "scope": [
+    "K f48f483已由Leader独立接受，acceptance SHA 8fee6683c7990e161f40a6267773bd35cda0a32a3f1ed43ce26bb71cecf6e4c2。本单只建立F，不运行候选或修改C/K/P及任何旧文件。先验证HEAD父基线、干净工作区、C/K树、所有pinned_references，任何身份漂移停止。",
+    "只新增指定目录恰好四文件：F.json、MANIFEST.json、freeze.json、REPORT.md。全部普通单链接文件，Git100644/blob；只提交四文件，不push。新临时目录可存第一方标准库生成/验证脚本与输出供Leader审查，禁止第三方依赖。",
+    "F.json严格为已接受manual.py的canonical对象，恰好domain=think-manual-F-v8、version=8、C=accepted_C.bundle、K=accepted_K.identities.K、policy=accepted_C.policy、intake_schema=accepted_C.intake。sorted keys/compact ASCII/no nonfinite/exactly one LF；不新增operational字段或M/A/T/N/self/占位字段。F的hash只能由外层freeze和交付报告记载。不要调用validate_package并伪造未来对象。",
+    "MANIFEST.json只枚举既存输入，不包含本单四份输出：产品files恰好C根全部69497个已接受tracked文件与K根八文件，共69505条，使用产品仓库相对path按ASCII升序。每条精确path/bytes/sha256/git_blob/mode/type，独立读取重算byteSHA/Gitblob，lstat普通单链接无symlinkparent，与基线Git记录相等。C既有file-manifest的69496条另逐项核对并加上它自身，不丢弃开发期记录；开发期记录只归档、不当作final通过证据。记录数组collection_sha256=SHA256(canonical(files))，明确域和计数。",
+    "MANIFEST另一个external_references数组，恰好本合同pinned_references加本prepared immutable task文件本身；路径是明确绝对路径，按ASCII path排序、唯一，每条path/bytes/sha256，collection_sha256=SHA256(canonical(external_references))，与产品files集合分域。外部.py只做opaque hash，不执行；不要沿引用递归到P/raw/private/历史来源。不得引用mutable current-task/state或未来验收文件。MANIFEST自身最终SHA由freeze.json和提交报告记载，不自含最终hash。",
+    "freeze.json是支持性release记录，必须清楚区别runtime F canonical digest、supporting freeze.json exact-byte digest、MANIFEST集合/文件digest、C bundle与Git tree、历史H context_release。绑定F.json path/bytes/hash及其C/K/policy/intake字段、MANIFEST path/bytes/hash与两collection、完整28file code/schema/test/recalculator bundle记录和SHA、C/K提交及树、C/K/P独立验收、prepared合同身份、正式来源、policy/intake/semantic/role完整canonical合同及各摘要。以现有evidence/identities.json静态数据和已接受合同读取/复制即可，不导入候选。禁止把本freeze.json摘要当作未来M.F，M必须绑定F.json canonical摘要。",
+    "freeze中完整列明冻结的固定upstream commit/tree、设计合同identity、9 seed顺序与roles、path/type/mode、96文件/1048576 decoded、metadata8MiB/blobraw1500000/totalraw16MiB、input65536、timeouts、no credentials/proxy/redirect/retry和所有优先硬停止/隐私界限。这些是未来任务范围约束，不是授权。本单不读取实际metadata/正文或执行transport。K只承诺两处原comment裁定；相邻字段/API/实现和能力仍未清除，原pending不变。",
+    "REPORT解释C通过174tests/1338outcomes/0skip两次Leader验收，K独立R+P/121leaf/原时间验收；只引用已接受证据，不重复跑测试/fixture/扫描。保留C原始scan verdict sandbox_only100及上下文限定，不能称第三方security PASS。说明本单不证明source/license/reachability/build/model/device/audio/CP2，明确独立F接受后才另单M，再新用户A，再T/N。",
+    "避免循环：既存C/K/外部引用→MANIFEST；已接受C/K/policy/intake→F；MANIFEST+F+既存证据→freeze；前三份→REPORT；本单四文件hash/blob/commit由外部开发交付和未来Leader验收报告固定。四输出互不含自身最终digest，不预知未来M或填空待改。",
+    "完成独立标准库验证（不导入producer/candidate），逐一重算69505输入/两个collection/28bundle/全部引用、F严格字段及canonical、policy/intake/semantic/role、四文件字节/类型/Git、旧129523记录不变。脚本路径/精确SHA、命令、运行输出放临时目录并在REPORT/交付中列出；生成/验证脚本源供Leader静态审查，不写产品工具代码。完成后RESULT并停止，通知Leader。"
+  ],
+  "out_of_scope": [
+    "不得创建M/A/T/input/N或完整package，不修改K/H/R/representation/P/原时间/decision，不清pending或恢复旧run/旧授权。",
+    "不得修改产品源码/工具/schema/tests/evidence/既有文档；不新开发v8/v9，不执行候选/fixture/controller/transport/scanner/旧脚本/P脚本。",
+    "不得读取真实source/header/LICENSE/body/private/envelope/rawscannercontext/metadata/API，不沿参考指针读取原始材料；C自建fixtures与scan只可opaque hash，不作语义重读或执行。",
+    "无网络、获取、安装/依赖、构建、模型、设备或音频；CP1/Conformer Deferred not removed，CP2未通过，CP3/Alpha未批准。"
+  ],
+  "acceptance": [
+    "提交只新增四文件；父提交f48f483，全部旧129523Git记录不变且worktree干净。",
+    "canonical F精确六字段且C/K/policy/intake均对已接受独立身份；无未来map/self/cycle；支持freeze与runtime F hash明确分离。",
+    "MANIFEST全69505输入及明确外部refs逐字节/type/mode/Git验证；C69497完整不漏、K8完整，集合可复算；28bundle/所有合同digest与C接受一致。",
+    "C/K/P独立验收与正式来源均绑定，不把开发期材料或rawscan verdict升级为通过；所有未验证和后续分单门槛记录清楚。",
+    "独立只读标准库验证PASS、脚本可审查、输出hash可复现，无候选/网络/private原始读取或权限扩展。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED；四文件路径/用途/bytes/SHA/Gitblob/mode/type，commit/parent/root/subtree、工作区状态。",
+    "F canonical SHA与supporting freeze SHA分列；MANIFEST SHA及两集合/count、C/K/P/intake/policy/semantic/role、28bundle身份；逐标准证据及未验证。",
+    "生成/独立验证脚本与完整命令及输出路径/SHA，旧Git记录不变证据；完成通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4，并停止等待验收，不自行M或请求授权。"
+  ],
+  "stop_conditions": [
+    "任一固定源/HEAD/hash/schema/数量/文件安全/权限漂移、未知修改、无法标准库确定性验证或需要修改旧产物即BLOCKED。",
+    "需要读取原始/private/metadata或执行候选、创建M/A/T/N、重新获取、扩张范围/硬停止/Checkpoint时停止；产品语义变更提交PRODUCT_DECISION_REQUIRED。"
+  ]
+}

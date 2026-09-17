@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-RUNTIME-DECISION-SYNC-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "把已批准的 CP2 运行时安全路线决定和最新 PRD 准确同步到产品仓库，并形成单一纯文档提交。",
+  "commit": "66b73229c5732813a0f4a1c7659088176b5341a1",
+  "report": "orchestration/reports/CP2-RUNTIME-DECISION-SYNC-001.md"
+}

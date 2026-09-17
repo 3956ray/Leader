@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "commit": "da9279a411d990e4c37191e22be680b2c4bfcb07",
+  "added_files": 302,
+  "manifest_files_verified_against_HEAD": 301,
+  "leader_test_sources_unchanged": 11,
+  "old_files_unchanged": 5,
+  "independent_runs": 2,
+  "tests_per_run": 66,
+  "records_per_run": 117,
+  "ledger_records_per_run": 83,
+  "normalized_sha256": "9d86eccf2c898a772e9973f34faeec4b04cab5ccb258aaaba15ca04772fa4954",
+  "worktree": "clean",
+  "scope": "offline core and synthetic evidence only; live acquisition adapter missing",
+  "formal_freeze": false,
+  "CP2_passed": false
+}

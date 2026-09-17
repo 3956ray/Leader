@@ -1,0 +1,40 @@
+{
+  "source_snapshots": [
+    {
+      "original_path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/emulator-first-full-engineering-addendum-2026-09-16.md",
+      "portable_path": "handoff/sources/emulator-first-full-engineering-addendum-2026-09-16.md",
+      "sha256": "43c34a97ae642c0279f92cd2e9db5c6f6a85d28f3173e975fee7768bf7cc3391"
+    },
+    {
+      "original_path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/product-baseline-decision-2026-09-16.md",
+      "portable_path": "handoff/sources/product-baseline-decision-2026-09-16.md",
+      "sha256": "47716f64ffac8c2fa00974e9a1df9c5b61169955b445eca335209d9c5f639cdd"
+    },
+    {
+      "original_path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/notes-home-redesign-decision-2026-09-10.md",
+      "portable_path": "handoff/sources/notes-home-redesign-decision-2026-09-10.md",
+      "sha256": "59e96dd7624f48efb981d3778f73cb607cdd84ca891c8cf55970b5c765d59728"
+    },
+    {
+      "original_path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/notes-home-xiaomi-full-scope-decision-2026-09-11.md",
+      "portable_path": "handoff/sources/notes-home-xiaomi-full-scope-decision-2026-09-11.md",
+      "sha256": "fa600c883aa011cbe5b5e8418b6162b5cf00dd03bd9da38ca285c03a5ed155be"
+    },
+    {
+      "original_path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/think-v2/sensevoice-int8-product-admission-decision-2026-09-16.md",
+      "portable_path": "handoff/sources/sensevoice-int8-product-admission-decision-2026-09-16.md",
+      "sha256": "b4927069160becae74a9afaa6d83ec3e14d1e9d0958ddb1a642f4e03cb75969d"
+    }
+  ],
+  "repositories": {
+    "leader": "https://github.com/3956ray/Leader",
+    "product_manager": "https://github.com/3956ray/ProductManager",
+    "developer": "https://github.com/3956ray/Developer"
+  },
+  "old_roots": {
+    "leader": "/Users/orderly_ray/Leader",
+    "product": "/Users/orderly_ray/Projects/thinkV2",
+    "product_manager": "/Users/orderly_ray/Documents/Products Manager"
+  },
+  "rule": "Old absolute paths and frozen contract/thread IDs are provenance, not new-machine dispatch destinations. Reconcile pending review before preparing a new contract for new local paths and task IDs."
+}

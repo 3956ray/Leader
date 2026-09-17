@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-REVIEW-TIMESTAMP-REPRESENTATION-OFFLINE-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a071cf-7b9b-73b3-9f14-857e84e4d040",
+  "goal": "仅在独立 v8 第一方离线候选中实现审查时间的严格无损表示、精确哈希绑定与不可替代验证，保留 v7 全部既有行为并双跑和独立复算。",
+  "baseline_commit": "4e853863e1bf0a68fbf8061767803797947eeec2",
+  "formal_decision": "doc/cp2-review-timestamp-representation-decision-2026-09-06.md",
+  "formal_decision_sha256": "33bf3dfe9381b4ad7c2c78fedd830a776ada5d2e9dbb3fd50eaeae2a98c68a33",
+  "formal_prd_sha256": "ca6477c0bb4e40913be6861b5299ae4b0121650552da3aa1cd4acbd46c91528f",
+  "non_time_formal_decision_sha256": "071febe2c7f3c896c48877b4ffd90e1bd3083571e9e6fad8524943e7d7023972",
+  "predecessor_acceptance": "orchestration/reports/CP2-REVIEW-TIMESTAMP-REPRESENTATION-DECISION-SYNC-001-acceptance.json",
+  "predecessor_acceptance_sha256": "9225fdbfc75549219cca0eb8551402185b56153026b34431a5cf322e5017c316",
+  "source_v7": {
+    "commit": "443bbb5dc73e52dc11610ba766fdda23a0923b80",
+    "tree": "2797686abaf25028545e7a9d764b8a827e207560",
+    "bundle": "198c24c66a3e82117828e9eacfa333b4dde8eb19949c7425b8a81b839399553e",
+    "intake": "c289af3b1769dc7ae3b3cd7b7ced34153308fd6624dfb061801a5426fc7e2167",
+    "policy": "b8c37591ee45dacf984f0549c5d091ce288a3d30b7cf123150e2be3630cc3f1c",
+    "semantic": "2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86",
+    "role": "1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125",
+    "manifest": "b02dbd9d9f9c34e73fbef20d3b57d899d167b8690aba1fe1b44f00c84fb2c71e",
+    "Leader_acceptance": "orchestration/reports/CP2-ASR-MANUAL-CAPABILITY-EVIDENCE-INTAKE-OFFLINE-001-R1-acceptance.json",
+    "Leader_acceptance_sha256": "49eea49be628c2eacac3ac99bf8e8caba464d76aba674f8dc3fb1019a8bc7df8"
+  },
+  "scope": [
+    "只新增 tools/asr_review_acquisition_v8/，只读复制已验收443bbb5必要第一方code/schema/tests/recalculator，记录逐文件来源/hash/diff，不复制旧evidence run树作为新证据。旧v7及更早工具、freeze/run/evidence、产品文档/app/依赖一律不改。仅Python标准库及完全自建时间/报告/body/authority fixtures，不读取或转写真实R及其真实时间原值作fixture。",
+    "完整执行最新时间正式决定。reviewed_at_raw 严格ASCII且仍128bytes上限；语法YYYY-MM-DDTHH:MM:SS[.1..6digits](Z|±HH:MM)。年0001..9999，有效前推公历/闰年，小时00..23，分秒00..59；offset绝对值不超14:00，14时分钟必须00；拒绝-00:00、闰秒、24:00、无时区、命名时区、空格/小写/尾随、非ASCII、零位或超过6位小数、类型混淆和隐式纠错。",
+    "时间对象domain think-review-timestamp-v1；规范字段冻结于schema：原始raw逐byte不改；无损UTC保留raw小数位数；fraction_digits整数0..6；offset_minutes带符号整数；epoch明确1970-01-01T00:00:00Z、instant_microseconds带符号整数。使用精确整数算术避免浮点timestamp精度损失/locale/平台宽松纠错，冻结整数上下界与UTC可表示范围，覆盖年域边界、偏移造成的跨界和overflow；不能截断/回绕/悄悄归一化非法输入，不能为通过边界扩大正式日期域。",
+    "raw/UTC精确ASCII字节分别SHA256，独立domain sha256-reviewed-at-raw-ascii-v1 和 sha256-reviewed-at-utc-ascii-v1；值相同也不可跨域替代。外层representation-v2 canonical完整digest，与瞬时时刻等价分开；Z与+00:00、.1与.100000、不同offset即使同一instant，原raw/precision/offset/representation身份保持不同，已承诺K的表示不可换成等时其它表示。",
+    "受影响未来K/F/M/A/T/N及新input/release/adjudication等通用v8schema/domain/version清楚隔离v7；列出完整domain表、迁移范围与每字段hash域，禁止混用旧版本。H及原始R既有exact-byte身份保持只读，原报告原bytes digest与normalized representation digest继续分别完整绑定；时间对象与外层representation/K/M/T/新adjudication须精确绑定，Trust仍来自独立pins，K仍非操作性，F不引用未来M，自摘要/循环/输入学习信任禁止。此次只生成完全自建通用身份，不建真实对象。",
+    "保持同一个共享controller及所有非时间语义：完整逐occurrence、相同行hash不同line/interval不可互换、原pending/source分析保留、先持久化追加证据再任何后继动作、active/uncertain/lexical/unsupported/ineligible/身份/role/path/mode/type/file-safety/预算/持久化容量优先级不改。缺包/缺失/额外/冲突/replay/未知字段等继续停止，无wrapper/globalwaiver/legacybypass。",
+    "完整保留已接受167方法/1210既有outcomes及最初158方法/961覆盖；允许新时间对象与版本域必需的最小fixture字段路径/对象形状适配，逐项解释并保持原断言目的和负例，禁止删除/skip/放宽断言掩盖回归。原始自建报告bytes和派生表示时间对象之间转换也须独立可追溯，不能把原报告正文先改成想要的规范值以逃避验证。",
+    "新增正式六类矩阵：合法无小数/1..6小数/±offset/跨日月年/世纪闰年/±14:00/epoch前后/全日期域边界；所有非法日期/offset/精度/类型/canonical/重复未知字段；等时不同raw精度offset不可互换；逐字段rawUTCfractionoffsetinstant/hash/domain/R/representation/K/M/T/adjudication篡改及旧新domain混用；各负例在共享controller零successor，正例保留其它gate停止和source_verdict。",
+    "至少两次独立完整最终运行，pre-import网络/DNS/HTTP/真实transport陷阱；全测试/子测试0skip并持久化结果。独立recalculator不importproducer，独立精确解析日历/偏移/epoch微秒/时间hash及raw→representation，再复算R/authorityDAG/occurrence双行hash/adjudication/no-successor/持久化/ledger/terminal/集合。算法应足以独立发现舍入、offset符号、世纪闰年、边界与等时异串错误，而非抄producer输出。",
+    "冻结最终code/schema/policy/bundle与manifest/diff/所有文件SHA/Gitblob/mode/bytes，标明基线映射、domain变化及旧树不变证据。只对新候选做实际第一方静态扫描，保留raw verdict/coverage/findingcontext和diff补扫；不得解码旧rawscannercontext或复制旧run作为本轮输入，不把raw verdict改写成安全PASS。报告候选结果和未验证后提交仅v8并通知Leader停止。"
+  ],
+  "out_of_scope": [
+    "不读取真实R/其时间原值/原始header/source/LICENSE/body/private/API/metadata/旧rawscannercontext作fixture；不沿报告指针读真实材料，不联网、真实transport、第三方下载/库/执行/模型/构建/设备/音频。正式文档中的历史真实时间只为问题说明，不得复制到测试。",
+    "不建真实K/F/M/A/T/input/N、不恢复旧授权/旧run、不改已接受C/v7或历史reports/freeze，不把本候选当真实转换或pending操作性清除。",
+    "不扩大grammar/guard/metadata/LICENSE路由/occurrence/authorityDAG/role/path/budget/私有文件权限/硬停止/隐私/Checkpoint；不新增产品功能/账号/同步/支付/公开发布/云端ASR/Flutter/KMP。"
+  ],
+  "acceptance": [
+    "只新增v8，源443bbb5及全部旧目录/证据字节不变，provenance和新版本domain/hash结构完整；无未审查依赖/无网络或真实数据读取。",
+    "严格日期/offset/精度合法性与精确无损转换、epoch带符号微秒上下界和raw/UTC独立hash可复算；不得用浮点/locale/宽松纠错。原raw/精度/offset始终保留，等时异串K不可互换，originalR与representation身份不混淆。",
+    "167methods/1210旧结果覆盖及158最初断言保持；全部新增矩阵两次最终0skip，反例零successor，原active/lexical/permission/budget/persistence等硬门禁不被时间证据覆盖。",
+    "两轮normalized及immutableJSON/hashchain/ledger/terminal/集合逐byte一致；独立recalculator覆盖时间、原报告与表示、authority、occurrence、adjudication、持久化/no-successor和所有旧证据验证；Leader独立审查/双跑/复算后才接受。",
+    "输出仅timestamp_representation_candidate_ready_for_acceptance或timestamp_representation_candidate_blocked；前者仅新C候选资格，不是真实R转换/K/source/CP2许可。git修改归属清楚，无无关工作混入。"
+  ],
+  "evidence_required": [
+    "RESULT COMPLETE/BLOCKED/PRODUCT_DECISION_REQUIRED，candidate status，文件/目的及最终commitparent/tree；完整schema域表、时间算法/epoch上下界/bytehash定义；原方法和orderedoutcomes映射/每个必要fixture适配说明。",
+    "完整两轮命令/环境/时间/tests/subtests/outcomes/scenarios/skip和preimport零网络证据；正式六类矩阵逐项证据索引、独立复算命令/结果/算法与所有集合规则、候选和产物精确SHA/Gitblob/mode/manifest、实际扫描原始verdict/输入覆盖/上下文。",
+    "未验证/PRD范围检查/旧目录不变/Git提交或未提交状态；下一步建议仅供Leader裁决。完成后通知Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4 并停止，不自行K/freeze/map/acquisition。"
+  ],
+  "stop_conditions": [
+    "未知修改/正式hash漂移/合同真矛盾或需改变日期域/权限/预算/authority/产品语义：立即停并提供具体证据PRODUCT_DECISION_REQUIRED，不猜测或以宽松fallback通过。",
+    "需要真实R/时间原值/body作为fixture、精度截断舍入/改旧报告/新时间替代、第三方库/网络/locale/硬停止弱化/实际K/F/M/A/T/N或CP3，即candidate_blocked并回产品决策门；不得扩大本单。"
+  ],
+  "prepared_at": "2026-09-06T09:04:25.153411+08:00"
+}

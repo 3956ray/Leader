@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-HOTWORDS-CHAIN-TERMINATION-ROUTE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "dispatched",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "prepared_at": "2026-09-06T09:01:23.322460+00:00",
+  "goal": "在最后一次impl.h审查触发声明即停止后，正式终止热词逐文件补证链，并选择替代离线ASR候选研究或延期个性词表的唯一下一条产品路线。",
+  "decision_inputs": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-report.json",
+      "bytes": 6098,
+      "sha256": "d8d0888607c189a042c1808ef60b04abad15b549992f220260669885b1430d44"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-report.md",
+      "bytes": 1443,
+      "sha256": "28b19012996b440f2ebf7560f8f14b676d24d45403548d1a93fa3d7aad936bab"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-leader-verification.json",
+      "bytes": 3657,
+      "sha256": "731abd580c46267bec3ce638428d06530ed3cfd4353bb65271104c851a0c80b2"
+    }
+  ],
+  "current_formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hotwords-consumer-route-decision-2026-09-06.md",
+    "bytes": 13812,
+    "sha256": "f9d5fda7d29d242861b92af3641f69a69a7ce3f319da4e12d4e441ebaf0f14a8"
+  },
+  "scope": [
+    "仅基于指定已验收派生报告和正式PRD/知识库做产品决定，不读取源码片段/private/raw/body/metadata/scannercontext，不联网取新事实。",
+    "准确记录：一次GET2286B，人工只3行129B，目标Create(config)可见位置是声明，立即停止而未查别的定义。这是证据投入上限触发，不证明整个文件/下层无定义、不证明buffer-only不可行。当前热词逐文件补证链永久终止，禁止第三源码或改名续追。",
+    "依现行正式回退，仅在替代离线中文ASR候选研究与明确延期个性词表之间选择、落地APPROVED/REVISE/PAUSE，并给唯一最小下一任务的goal/scope/禁止/可判断验收/证据/停止。考虑用户语音优先P0，延期词表不能当作核心ASR采用已解阻；也不能默认恢复未通过gate的sherpa-onnx制品/工具。",
+    "如果选择候选研究，先定义有界的官方公开资料/已有派生证据研究任务和比较标准，明确中文/Android本地/原始音频内存处理/设备可验证性/许可及安全gate；当前决策不实际研究下载模型/源码或改实现。若研究为下一步获准的普通工作，可明确其范围是否需要其他用户信息；不得臆造新的重复审批门。",
+    "只更新产品知识库最少决定、必要PRD/INDEX/LOG；不改think产品repo，不执行/下发下一任务。保留全部三步路径、音频隐私、真机性能稳定性、CP1/Conformer Deferred notremoved、CP2未过/CP3未获准。"
+  ],
+  "out_of_scope": [
+    "不新增第三源码请求、隐私例外、v9/clearance/旧run恢复/冻结规则修改/运行模型或App功能开发。",
+    "不宣称最后3行证明实际I/O、无内存支持、运行时不可行或整体安全；不把scanner0发现当作采用结论。"
+  ],
+  "acceptance": [
+    "正式APPROVED/REVISE/PAUSE已落地，终止规则不可歧义；原实现事实与未验证明确，唯一下一步能落实且无无限补证循环。",
+    "如果改变P0个性词表的交付时机必须明确记录影响；如果转候选研究必须保留中文离线/Android/隐私/门禁及设备标准，不自动采用新依赖。"
+  ],
+  "evidence_required": [
+    "正式path/bytes/SHA、变更目的、结论证据/未验证、文档检查、Git状态及修改归属；报告后停止。"
+  ],
+  "stop_conditions": [
+    "信息不足就记录而不取raw或猜实现；需改变隐私/三步/Checkpoint标准则PAUSE明确升级，不自行绕过。",
+    "不得以此产品决定重开已终止第三源码链。"
+  ],
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-acceptance.json",
+    "bytes": 3672,
+    "sha256": "dfeef80f7f0cf8ad5b351910d00778b38d29ed0d9f8109ffcaa1665b4bb3c914"
+  },
+  "dispatched_at": "2026-09-06T09:02:49.401902+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-GATE-RUNTIME-AAR-001",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "安全获取并以静态、非执行方式独立审查官方 sherpa-onnx 1.13.7 AAR，形成不依赖源码归档批准的二进制门禁裁决。",
+  "artifact_verdict": "manual_review",
+  "commit": "7ab7784542801e4c3d37d0c6e244b31039255351",
+  "report": "orchestration/reports/CP2-ASR-GATE-RUNTIME-AAR-001.md"
+}

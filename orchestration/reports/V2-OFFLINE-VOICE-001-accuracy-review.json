@@ -1,0 +1,102 @@
+{
+  "cases": 30,
+  "correct_occurrences": 47,
+  "total_occurrences": 66,
+  "accuracy": 0.7121212121212122,
+  "passed_90_percent": false,
+  "missing": [
+    [
+      "CN04",
+      "陈晨"
+    ],
+    [
+      "CN05",
+      "刘洋"
+    ],
+    [
+      "CN06",
+      "林静"
+    ],
+    [
+      "CN09",
+      "孙梅"
+    ],
+    [
+      "CN11",
+      "郑强"
+    ],
+    [
+      "CN12",
+      "何丽"
+    ],
+    [
+      "CN14",
+      "许宁"
+    ],
+    [
+      "CN16",
+      "李明"
+    ],
+    [
+      "CN17",
+      "张伟"
+    ],
+    [
+      "CN18",
+      "陈晨"
+    ],
+    [
+      "CN19",
+      "刘洋"
+    ],
+    [
+      "CN19",
+      "林静"
+    ],
+    [
+      "CN20",
+      "赵敏"
+    ],
+    [
+      "CN22",
+      "孙梅"
+    ],
+    [
+      "CN23",
+      "郑强"
+    ],
+    [
+      "CN24",
+      "何丽"
+    ],
+    [
+      "CN25",
+      "吴刚"
+    ],
+    [
+      "CN26",
+      "许宁"
+    ],
+    [
+      "CN30",
+      "陈晨"
+    ]
+  ],
+  "results_sha256": "2b758771a0cdfa543202f9bccbf7c8fdd17f5f9bc00f2008636cbc9f538dc133",
+  "scope": "fixed synthetic offline speech; raw output only; no microphone/family claim",
+  "semantic_review": {
+    "developer_assessed_usable": 10,
+    "reviewed_all_30_against_raw": true,
+    "material_time_quantity_action_errors": [
+      "CN02",
+      "CN05",
+      "CN18",
+      "CN19",
+      "CN22",
+      "CN24",
+      "CN26",
+      "CN30"
+    ],
+    "note": "Name correctness threshold independently fails regardless of borderline edit-versus-rerecord judgments. No father acceptance inferred."
+  }
+}

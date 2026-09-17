@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HARD-STOP-NEXT-STEP-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "goal": "基于v8真实获取正确停止的已验收派生证据，正式裁定下一项最小可行工作及权限边界，避免在未解决活动能力硬停止前继续投入新获取或注释映射。",
+  "baseline_commit": "393640b8a6825a9a0b42c479949646e1914da199",
+  "prepared_at": "2026-09-06T13:39:01.244783+08:00",
+  "decision_inputs": [
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-acceptance.json",
+      "bytes": 9387,
+      "sha256": "1613473a2c951b66dbc8605df1ee02e2f398ca530502f6e2365ef036f41eb8d3"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06/REPORT.md",
+      "bytes": 4802,
+      "sha256": "ec8978ef16f7162c59688503a2ea303708b7eeb22a53d3668482b1c6365085ab"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06/source-review.json",
+      "bytes": 10522,
+      "sha256": "6bf0cbd564e4232d9a1c6114292d7d2e45c71b9da545578dbdf4565bf04e3fef"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06/request-ledger.json",
+      "bytes": 7949,
+      "sha256": "d19f8c8e012ff54821e625fe756cd18d054c4a6009c12cb9c3f24c6a57cf510f"
+    },
+    {
+      "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06/scanner-summary.json",
+      "bytes": 5052,
+      "sha256": "0e6fba99685377c6a5bf1eafefc8d1d435a20d48423f044cf7defe4ea880c2aa"
+    },
+    {
+      "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001-semantic-review.json",
+      "bytes": 6132,
+      "sha256": "0b48e3c0f8d48e2ecef56e24fdbbf6f7aadea9a197b9c7db91d894c79ef1a4e2"
+    }
+  ],
+  "scope": [
+    "先读正式知识库现行决定、产品仓库AGENTS/docREADME/PRD对应CP2条款与本合同固定派生输入。获取单已ACCEPTED仅证明正确停止：本次2文件19297bytes，5活动dynamic_paths（15/110/143/156/156行）、4comment（57/60/64/132行）、4vs原授权2导致manual_complete_matching拒绝，hardstop=denylist_capability；没有clearance/成功adjudication，源码insufficient_evidence/fixedpointfalse，CP2未通过。",
+    "只基于第一方派生证据做APPROVED/REVISE/PAUSE正式产品决定：保留当前停线，或批准一项范围明确的最小只读静态证据审查以判断5处活动模式命中及2处新增comment的语义和仍缺的可达性证据。说明投入是否有助于解除真实工程阻塞，不默认再建v9/冻结/映射等机制。匹配token属于模式命中，不代表恶意或运行时可达，但当前硬停止仍有效。",
+    "不能仅补两条comment映射后继续：当前active硬停止优先且独立存在。任何未来调整策略、证明非操作性、扩大审查范围或更换路线均须正式界定证据要求、隐私不变量和停止条件；不得在本产品决定内直接生成clearance、弱化active/uncertain/词法/路径/角色/预算门禁或批准采用源码。若没有不放宽现行红线的最小可行步骤，应PAUSE并列具体原因。",
+    "若批准后续离线审查，定义一个唯一owner/目标/精确当前对象身份/最小输入及输出/可读边界/允许判断与不得判断/完整证据/停止条件，明确依据当前用户已批准的一次新获取及后置静态审查是否足够，避免对已有权限重复索取确认。若确实需要新的用户授权，引用现行决定确切条款并给出可审查请求字段，由Leader先完成准备再询问；PM结论不能冒充用户获取授权。",
+    "用户此次唯一run_input已消耗并永久结束，旧run/候选/原R/P/K/F/M/A/T/控制器/台账不变。无重试、续跑、新网络/新body，无第三方执行、构建、模型或App实现。后续即使批准证据审查也不能隐含同意新获取。保留原音频不落盘不上传、不用父亲真实数据、CP1和Conformer Deferred not removed，CP2未通过且CP3/Alpha未批准。",
+    "仅在正式产品知识库写一份本次决定及必要source card/PRD CP2状态/INDEX/LOG同步，明确区分旧文档历史快照与当前已验收事实。返回所有文件路径/字节/SHA、正式结论、差异和链接核验、下一唯一任务合同。不要修改产品仓库；需要镜像同步由Leader另行调度开发者。完成后通知Leader并停止。"
+  ],
+  "out_of_scope": [
+    "不得读取任何原始body/envelope/metadata/rawscannercontext（包括本次和旧run），不得运行reviewer/scanner/controller/transport或访问网络；本任务仅做正式产品决策。",
+    "不得修改产品源代码、冻结对象、历史证据、预算/denylist/角色/隐私或放行既有pending；不得创建C/K/F/M/A/T/N、开发新机制或开始下一任务。"
+  ],
+  "acceptance": [
+    "APPROVED/REVISE/PAUSE在正式知识库落地，事实与已验收393640b8派生证据一致，活动命中和完整comment集合分别处置，没有把正确停止当源码/CP2通过。",
+    "下一项唯一可执行任务或明确暂停原因具体完整，读取范围和判断权限准确，授权依据引用现行条款，不凭PM聊天创造用户授权、不重复请求已有许可。",
+    "文件path/bytes/SHA、PRD状态及来源链接同步验证完成；未修改产品仓库或使用原始材料。"
+  ],
+  "evidence_required": [
+    "逐文件精确身份、差异/链接检查结果、正式结论和下一唯一任务范围/验收/停止条件、授权依据；若需要新用户批准提供具体条款和可审查请求。",
+    "向Leader 01a071cf-9ac6-7171-b663-749a6e88b0a4报告后停止，开发者维持空闲。"
+  ],
+  "stop_conditions": [
+    "需要原始材料才能产品裁决时不得自行读取，应把精确只读证据任务作为待裁定下一步或PAUSE。",
+    "触及现行隐私红线/Checkpoint门槛/未获范围、需新获取或放宽active硬停止时不得直接工程化；正式说明可行性和权限要求。"
+  ]
+}

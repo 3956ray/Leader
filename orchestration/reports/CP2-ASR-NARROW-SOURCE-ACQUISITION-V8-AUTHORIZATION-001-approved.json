@@ -1,0 +1,40 @@
+{
+  "task_id": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001",
+  "RESULT": "APPROVED",
+  "recorded_at": "2026-09-06T13:03:58.861111+08:00",
+  "user_reply": "批准",
+  "user_reply_context": "Direct response in current Leader conversation to the concrete v8 request linked in immediately preceding assistant final.",
+  "request": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.md",
+    "bytes": 5840,
+    "sha256": "1e1a16e81457e8ab5dd74367c20efc9142587cde51391e2589de9911cbe102a2"
+  },
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+    "bytes": 19883,
+    "sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b"
+  },
+  "authorized_task": "CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-001",
+  "attempts": 1,
+  "F": {
+    "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-acquisition-v8-release-freeze/2026-09-06/F.json",
+    "bytes": 344,
+    "sha256": "c6e59308eb1ae72ce3d42e1c5678656d0f9442a3baaf8e503867368c98a9bad4"
+  },
+  "M": {
+    "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/asr-review-authority-map-v8/2026-09-06/M.json",
+    "bytes": 858,
+    "sha256": "661615944e4d565dba2e9fd8ad4da759a4cff6dd5654c721360411da6d347ea0"
+  },
+  "scope_policy_sha256": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+  "baseline_commit": "6b83f40e75cbb501102207018658f6de15a79ff2",
+  "conditions": "Exact request scope, original nine seeds,96files/1048576decodedbytes, all frozen stops and metadata identity exception. One fresh attempt only; no old authority/run/corpus reuse. Separate trusted mapping verification before dispatch.",
+  "scope_source": "Full approved scope and exclusions are the exact hash-bound request JSON/Markdown; no inferred expansion.",
+  "not_created_yet": [
+    "canonical_A",
+    "T",
+    "input",
+    "N",
+    "manual_package"
+  ]
+}

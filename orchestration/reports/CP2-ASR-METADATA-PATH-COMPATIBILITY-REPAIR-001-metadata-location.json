@@ -1,0 +1,16 @@
+{
+  "directory": "/private/tmp/think-v4-fixed-metadata-yafdos8b",
+  "records": [
+    {
+      "name": "commit.json",
+      "bytes": 2336,
+      "sha256": "e020549c1a78964acc8e400091ee54ba29f29ffd08e5b919a1bf06801dd68089"
+    },
+    {
+      "name": "tree.json",
+      "bytes": 2742250,
+      "sha256": "7643e529ba6588e5dbe425acb624569218596a6316a1be9bc7d55bacd105ccd2"
+    }
+  ],
+  "temporary_raw_copies_removed_after_validation": true
+}

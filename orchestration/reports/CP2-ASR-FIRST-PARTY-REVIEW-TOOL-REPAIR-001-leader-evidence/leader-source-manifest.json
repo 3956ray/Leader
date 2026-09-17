@@ -1,0 +1,13 @@
+{
+  "audit.py": "8e5eacf9244ce11a82ac0a537fe6dfe08f2664bbc662a64907ace664faabc457",
+  "fixtures/basic.json": "35df9fe193fcc846be59d71b8a3ea80ef439b27e5fee01867660eeccc83bf1d7",
+  "offline_review/__init__.py": "568088e6725e8b889f27ca84ff23615488955ec50c5ea578ab2bb6ac5443ba40",
+  "offline_review/adapter.py": "5b04e61b8bfc2becfeb0151fd4b7f72c554812efb1a61df7d0e0af667ed15b9a",
+  "offline_review/controller.py": "11d696dd879f9bde8db6e8922dd1badb8fedf714c9aeb44ccf46c35facd464f7",
+  "offline_review/parser.py": "6af0e2aee0dd21ab0f68882f899c23fda77aefd279f6f485887fe2b15d28bf0b",
+  "offline_review/policy.py": "2f41e2c3f0db860321322fd0a6a1ab2e31bafdf973b54591e3def719b1fcee3d",
+  "offline_review/storage.py": "7abff3b5678c181e68899c4a5fcfb6ec75383ae8d8e4d5776b91fc3e689fe5c0",
+  "tests/support.py": "ae6e17a3649cd70f96cd5b36b6f0d362a9882b3f62cf468bb5286783bea62646",
+  "tests/test_behavior.py": "5adc656b99bc507de3600c903249054e63cb5f65d640674bd1e4c01ecca5fc82",
+  "verify.py": "201f50a0c73e656a20f886f1eebe1a02908a7b98f73ebd80a8ba6819fab0a5c3"
+}

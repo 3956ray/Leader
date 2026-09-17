@@ -1,0 +1,14 @@
+{
+  "task_id":"CP2-VOSK-METADATA-RESUME-001",
+  "attempt_id":"31424e25-9308-4c57-b30c-a04fadbbb674",
+  "contract_sha256":"15aca7cf8d75db4721530d1d354fa981bf56f2009bf5160fdd45afb55592e279",
+  "assigned_thread_id":"01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+  "turn_id":"01a0815a-51d6-7bc0-9471-74bc2c785a6e",
+  "observed_completed":true,
+  "result":"COMPLETE",
+  "recovery_reason":"wait_threads observed completed turn; read_thread original items empty without permission denial. Newly written formal report contains complete matching task/attempt/hash/role and result; recovered without claiming observed chat ACK or callback.",
+  "evidence":[
+    {"path":"/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-vosk-dependency-license-metadata-resumed-2026-09-08.md","sha256":"e55ebdf23380fa03a5b7b917cbc699482f79fc689a5a8768708d8a0b09e3580c"},
+    {"path":"/private/tmp/think-vosk-artifact-review/CP2-VOSK-ARTIFACT-STATIC-REVIEW-001/metadata-resume-31424e25-9308-4c57-b30c-a04fadbbb674/evidence-manifest.json","sha256":"fad6c24e0616818c5228199632d6452e8da634e9da88b2efcaeedad6c3a63217"}
+  ]
+}

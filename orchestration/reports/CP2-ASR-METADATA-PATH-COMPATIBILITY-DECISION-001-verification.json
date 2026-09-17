@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/cp2-metadata-path-compatibility-decision-2026-09-06.md",
+      "sha256": "3272b0de1df984f9bb0fac81a369662d5876f3e9268e315f9466c7aae50e918e"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/ideas/personal-thought-archive/prd-v0.1-2026-09-04.md",
+      "sha256": "d56ff590d7a1d7afc0b1a9e3e3dec858debbabbab65f3b25b19088f31810a67b"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/INDEX.md",
+      "sha256": "5fe56b5f068aa0d08ecb43e961334fd98bfd3a1d4c3851e4c43a63363acc425a"
+    },
+    {
+      "path": "/Users/orderly_ray/Documents/Products Manager/product-knowledge-base/LOG.md",
+      "sha256": "7f9a488484672c8289fc3f05102224dce7052047b755c33abeab4e513364d941"
+    }
+  ],
+  "all_hashes_match": true
+}

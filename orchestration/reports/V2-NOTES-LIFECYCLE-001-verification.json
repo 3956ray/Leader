@@ -1,0 +1,58 @@
+{
+  "result": "verified",
+  "head": "e363ea92615c8b0594388e9a9992e0782ab545aa",
+  "file_checks": 89,
+  "independent_tests": [
+    {
+      "name": "com.example.thinkv2.ExampleUnitTest",
+      "tests": "1",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T17:24:32.888Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "0.003"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NoteRepositoryTest",
+      "tests": "14",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T17:24:33.649Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "1.344"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NoteLifecycleTest",
+      "tests": "11",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T17:24:32.895Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "0.752"
+    },
+    {
+      "name": "com.example.thinkv2.notes.NotesModelTest",
+      "tests": "7",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-09-15T17:24:34.995Z",
+      "hostname": "OrderlyRaydeMBP",
+      "time": "1.855"
+    }
+  ],
+  "tested_inputs_match": true,
+  "result_sha256": "aa44125a63545d9d9a6ae3163e03c1cb13d8a9fed97cbdbf8df5183a8ac7817a",
+  "apk_sha256": "d09f317c166f1cfa96bca4c6c5d74be4c6995126750d81318926d43ea93008ab",
+  "limitations": [
+    "physical device/Xiaomi",
+    "manual TalkBack",
+    "father trial",
+    "other Android versions/sizes",
+    "long background operation",
+    "device disk full"
+  ]
+}

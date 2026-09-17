@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-SOURCE-AUTHORIZATION-MAPPING-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "ready",
+  "goal": "Verify accepted v8 freeze/map and exact metadata, then construct separately pinned A/T/package/input before the sole authorized acquisition.",
+  "prepared_at": "2026-09-06T13:05:27.438927+08:00",
+  "approval_path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001-approved.json",
+  "approval_sha256": "694c69bc465663cb2a8ba58e21c9757d131d6135956a92df00ed78f997979c81",
+  "request_path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+  "request_sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b",
+  "scope": [
+    "Rehash accepted C/K/F/M/P and exact references, full frozen input collection and Git; no body acquisition in this task.",
+    "Construct canonical A from new recorded approval; independently compose T/protocol Trust/manual package/input from accepted pins. Pure schema validation only after module identity/static review and preimport network denial.",
+    "Only the two requested metadata inputs: descriptor-relative nofollow, regular-singlelink, bounded exact size/hash reads and optional zero-network pure metadata parsing; no raw contents exported.",
+    "Save mapping and independent standardlibrary verification/script identities; no run_input or actual N."
+  ],
+  "out_of_scope": [
+    "No oldbody/source/header/privatecorpus or adjacentmetadata reads, no P/oldreview script execution, no controller/transport/network.",
+    "No frozen/schema/source/product changes, authority from input, oldrun reuse, or N before separate dispatch."
+  ],
+  "acceptance": [
+    "A exactly binds acceptedF/M/policy and freshapproval; T/input independently reconstructed, no selfcycle/scope expansion.",
+    "Full frozen C/K collection and allrefs/M/Git unchanged; two exactmetadata identities and pure package/input parsing pass with no network.",
+    "Mapping evidence, scripts, hashes and bounded successor contract complete; no rawbody requests."
+  ],
+  "evidence_required": [
+    "A/T/package/input/pins hashes, metadata identity receipts, independent reconstruction and guarded purevalidation evidence.",
+    "Approval/request/acceptance hashes and unchanged boundaries; only after pass dispatch one acquisition."
+  ],
+  "stop_conditions": [
+    "Any source/hash/metadata/type/permission drift or need for unauthorized material: stop, no alternative acquisition.",
+    "Any need to change candidate/product/scope/hardstops or execute transport before acceptance: stop."
+  ]
+}

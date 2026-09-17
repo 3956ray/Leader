@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-001",
+  "RESULT": "APPROVED",
+  "recorded_at": "2026-09-06T08:01:14.121132+00:00",
+  "user_response_verbatim": "批准",
+  "approval_context": "Direct user response to Leader final question presenting the complete linked request for exactly online-recognizer.cc, 8993 bytes, one acquisition and local static review, no other files. This is new approval after presentation, not an earlier reused reply.",
+  "request_json": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 5956,
+    "sha256": "0c08c5cfd1c3cc3ebe2daf32ea128bf91f171ed72a29639b953918c735fd562d"
+  },
+  "request_markdown": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-request.md",
+    "bytes": 3891,
+    "sha256": "8b69db108f40ec81b3fe667572e7c70ae48336de7b0932fdf88a9a9bfff9643b"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+    "bytes": 12792,
+    "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2"
+  },
+  "preparation_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-AUTHORIZATION-PREPARATION-001-acceptance.json",
+    "bytes": 3072,
+    "sha256": "e9c78dbcdac06fc305e1b1beb0a50a17b0c6f4b32f2b3b019f2c073c0a5b0259"
+  },
+  "authorized_task_id": "CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001",
+  "candidate": {
+    "repository": "k2-fsa/sherpa-onnx",
+    "commit": "917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e",
+    "tree": "fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0",
+    "path": "sherpa-onnx/csrc/online-recognizer.cc",
+    "git_type": "blob",
+    "mode": "100644",
+    "git_blob": "20d4646bb5c6ffbe714848cc497e1809113d5195",
+    "decoded_bytes": 8993,
+    "expected_body_sha256": "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79"
+  },
+  "authority_scope": "我批准 `CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001`：只针对 upstream commit `917bed95c8e5c7c18aa4d69fea42e9ef8ef0a60e`、tree `fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0`、path `sherpa-onnx/csrc/online-recognizer.cc`、Git blob `20d4646bb5c6ffbe714848cc497e1809113d5195`、mode `100644`、decoded size `8993`，允许一次正文获取和一次离线静态审查；只判断 `hotwords_file`／`hotwords_buf` 的直接消费、selector、空值行为与文件 I/O 线索。不得获取或跟随任何第二文件、include、symbol、依赖或 metadata，不得运行第三方内容、构建、加载、测试、集成、联网扩展、修改 detector/schema/freeze/旧 run 或形成 clearance；任一身份不匹配、超过 262,144 bytes、需要下一文件或出现其他禁止能力时立即停止并回产品决策门。本授权不批准 v9、源码采用、CP2、CP3 或父亲 Alpha。",
+  "permission_consumed": false,
+  "meaning": "Fresh one-attempt authority for this exact request; old runs remain terminated. Scope includes reviewed first-party handling and verification of the one result; no second acquisition or separate expanded semantic review."
+}

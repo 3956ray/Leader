@@ -1,0 +1,44 @@
+{
+  "RESULT": "PASS",
+  "commit": "bd0bb57efc4348f599c36a3166fa018809914788",
+  "parent": "63de9e684ad39a476624699f18dd349272062a51",
+  "tree": "d67fb64854e5c33573f2f817bd71accca0eac655",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 16682,
+      "sha256": "2effffea6e9dd78540e87346d1245c947e7cf235ed5730631e779bf62bb6f500",
+      "git_blob": "1e0690058ea3e552f735442fc4f6e84a55432931"
+    },
+    {
+      "path": "doc/README.md",
+      "bytes": 16285,
+      "sha256": "4610174bf2fd7dce3641bf6575810dc56ae21cfc2245ff9d950de61304cb861d",
+      "git_blob": "c0d7d06b3e01cd0b7751284e9115617a930fcba6"
+    },
+    {
+      "path": "doc/development-guide-v0.1-2026-09-04.md",
+      "bytes": 43016,
+      "sha256": "6e394f212f8aa685a3d29dd354fbdfbae8c58d16afdea1959fa9b1fb4281f195",
+      "git_blob": "8f5271cce57c5734f8fe449cef4c4e879dc99f34"
+    },
+    {
+      "path": "doc/cp2-v8-local-configuration-route-decision-2026-09-06.md",
+      "bytes": 12792,
+      "sha256": "73ab95079108941d8d3847f8295d6fbd129be1d4155c07e804041afd6e9205c2",
+      "git_blob": "5799272dd87d3b5e41a20f88e8e0c0c07580c4a6"
+    },
+    {
+      "path": "doc/prd-v0.1-2026-09-04.md",
+      "bytes": 67208,
+      "sha256": "32b8295d83ed1fa4a79d312860011cc647241bd8ccca1f0419237e9afce63480",
+      "git_blob": "f552e541e6ec66aaabaa5e4d1e51fbe12d65a5a7"
+    }
+  ],
+  "baseline_records": 129541,
+  "unchanged_records": 129537,
+  "links_checked": 49,
+  "formal_sources_exact": true,
+  "clean": true,
+  "semantic_review": "Fivefile docs-only;55line local evidence limitations,source routePAUSED,newrequestpreparationonly/no bodymetadata/network/newv9,oldstops retained.Three currententrances consistent,oldstage historical."
+}

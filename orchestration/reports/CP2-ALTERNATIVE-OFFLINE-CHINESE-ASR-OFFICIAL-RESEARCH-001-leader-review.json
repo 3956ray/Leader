@@ -1,0 +1,97 @@
+{
+  "task_id": "CP2-ALTERNATIVE-OFFLINE-CHINESE-ASR-OFFICIAL-RESEARCH-001",
+  "RESULT": "REVISE",
+  "reviewed_at": "2026-09-06T09:41:22.637337+00:00",
+  "review_scope": "First-party report integrity and seven already-budgeted official pages; no new candidate page or source/artifact access.",
+  "findings": [
+    {
+      "id": "WHISPER_MODEL_LICENSE_MISREAD",
+      "severity": "blocking",
+      "source_id": "12",
+      "url": "https://github.com/openai/whisper",
+      "section": "License",
+      "finding": "The already-used official README explicitly identifies both code and model weights as MIT. Treating the upstream weights license as unidentified is incorrect. Exact converted artifact provenance/redistribution remains future work, consistently with Vosk/ORT, but is not the same as absent model license identification.",
+      "required_fix": "Correct evidencecard/matrix/hardfilter/memo. Preserve a separate Chinese-evidence gap if still unsupported; do not claim complete legal clearance."
+    },
+    {
+      "id": "INFERRED_CORE_CONDITION_COUNTED_PASS",
+      "severity": "blocking",
+      "source_ids": [
+        "07",
+        "08"
+      ],
+      "urls": [
+        "https://onnxruntime.ai/docs/tutorials/mobile/",
+        "https://www.modelscope.cn/models/iic/SenseVoiceSmall-onnx"
+      ],
+      "finding": "Report labels complete Android ASR chain and no-required-cloud property inferred/unknown, yet promotes it to hardfilter PASS and counts the conditional composite as a second qualified candidate. The contract requires official support for all hardcriteria and does not permit conditional unknowns to satisfy them. General Android CPU inference support alone is not direct evidence about complete ASR core processing.",
+      "required_fix": "Trace exact same-page official evidence supporting each hardproperty of this named combination, preserving distinction from implementation/ABI/privacy tests. If it remains only proposed composition or missing evidence, mark that hardcondition Unknown/NOT QUALIFIED and recompute count/outcome; do not weaken formal criteria to preserve sufficient."
+    },
+    {
+      "id": "PUBLISHED_RESOURCE_ESTIMATES_OMITTED",
+      "severity": "supporting_correction",
+      "source_id": "10",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "section": "Memory usage",
+      "finding": "The already-used README gives tiny/base disk and memory estimates. Matrix6 relies instead on upstream GPU VRAM and leaves ggml resource disclosure unrepresented.",
+      "required_fix": "Represent official tiny/base disk/memory estimates as published estimates distinct from actual Android/Xiaomi15 RAM/performance, which remain unknown."
+    }
+  ],
+  "verified_positive": [
+    {
+      "source_ids": [
+        "01",
+        "02",
+        "03"
+      ],
+      "finding": "Vosk official pages identify Chinese/offlineAndroid and its42M Chinese small model underApache2, consistent with initial hardfilter for research only."
+    },
+    {
+      "source_id": "07",
+      "finding": "ORT Mobile page documents Android Java/C/C++,on-device execution/defaultCPU; ResNet1.18arm64size example is correctly limited, not candidate actualsize."
+    }
+  ],
+  "page_ledger": [
+    {
+      "source_id": "12",
+      "url": "https://github.com/openai/whisper",
+      "status": "read README,License"
+    },
+    {
+      "source_id": "07",
+      "url": "https://onnxruntime.ai/docs/tutorials/mobile/",
+      "status": "read officialpage"
+    },
+    {
+      "source_id": "08",
+      "url": "https://www.modelscope.cn/models/iic/SenseVoiceSmall-onnx",
+      "status": "pageextraction0lines; cannotindependentlyverifyPMpartialclaims"
+    },
+    {
+      "source_id": "01",
+      "url": "https://alphacephei.com/vosk/index.zh.html",
+      "status": "read officialpage"
+    },
+    {
+      "source_id": "02",
+      "url": "https://github.com/alphacep/vosk-api",
+      "status": "read README/licenselabelonly"
+    },
+    {
+      "source_id": "03",
+      "url": "https://alphacephei.com/vosk/models",
+      "status": "read officialmodeltable only; no downloadlinksfollowed"
+    },
+    {
+      "source_id": "10",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "status": "read README includingMemoryusage; no codefilesfollowed"
+    }
+  ],
+  "search_note": "One targeted query for exact ModelScope model returned unrelated search results, not used as candidate evidence and none opened. No newpageorcandidateadded to12-page ledger.",
+  "limits": [
+    "Chinese proof on Whisper embedded figure not inspected; no tokenizer/sourcefile followed.",
+    "ModelScope partial claims require traceable original-page evidence, not inference fromanothermodel.",
+    "Not a security/technical/runtime/licensing-adoption conclusion."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-09-16T01:51:45.555811+00:00",
+  "task_id": "V2-OFFLINE-VOICE-001",
+  "source": "/Users/orderly_ray/Projects/thinkV2/doc/evidence/voice/performance-results.json",
+  "snapshot_sha256": "45bba5c03a981a5594b3a144278abfeabac7ffa995bdc3660c401eea95cac892",
+  "completed_s90": 10,
+  "required_s90": 20,
+  "all_captured_exactly_90_seconds": true,
+  "all_sources_closed": true,
+  "failures": [],
+  "wall_ms": [
+    90129,
+    90100,
+    90135,
+    90112,
+    90109,
+    90118,
+    90121,
+    90102,
+    90113,
+    90110
+  ],
+  "status": "IN_PROGRESS; not final acceptance",
+  "pending_review": [
+    "actual pointer hold/release",
+    "permission dialog denial and recovery",
+    "runtime permission revocation behavior",
+    "final privacy observations",
+    "final source/APK identities",
+    "accuracy gates remain failed"
+  ]
+}

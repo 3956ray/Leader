@@ -1,0 +1,13 @@
+# Voice controls review plan — development ongoing, not acceptance
+
+Developer reports127host,6Android state/lifecycle cases and real currentVosk fixed synthetic command outputs: 新建 笔记 / 保存 当前 草稿 / 取消 本次 输入. All3 matched; negative sentence containing command phrase did not match. Reports realVoiceCapture+Vosk+Compose confirmations and SQLite outcomes. Await immutable source/APK/manifest and independent verification; fixed3samples do not satisfy generalV7 accuracy or real-user false-trigger criteria.
+
+Review: explicit mode entry/exit; whitespace normalization vs exact bounded whitelist; normaldictation command-like text stays body; confirmation requires same capture/session/record/revision; new-note persists olddraft before switching; empty/save cancellation/writefailure preserve data; repeated/late results never apply twice. Permission denial/revocation/background and actual process restart still being verified.
+
+Existing reminder/calendar/AI/relation and fullv2backup payload unchanged verification pending. No new durablefields or format expected. Synthetic generation uses previously admitted offlineTTS memory callbacks→pipe→ADB localabstract RAM; no audiofiles, host generation network/filewrites denied. OS speechservice internals unknown; do not imply complete system-wide privacy proof. No newmodel/dependency/SenseVoice or generalquality acceptance.
+
+## Locked source preliminary review
+Read VoiceCommand, VoiceModel and NotesModel diff. Parser strips whitespace only then exact3phrase match with128UTF16unit bound; no embedded/fuzzy intent. Preview binds anchor and generation; confirm checks exactpreview object, same session/editor and microphone permission. NEW persists existing draft before switching; SAVE nonempty and explicit confirmation. Cancel path never calls draft discard. Product persistent schema unchanged. Final127host independent rerun started after developer reports Gradle stopped; retain tested source hashes for later commit identity check. Await completed results and final archive.
+
+## Screenshot evidence correction
+Developer reports earlier real-engine UI screenshots captured before confirmation dialog was drawn; those PNGs are diagnostic only, not visual confirmation evidence. Existing semantic button/database assertions reportedly passed. Test-only synchronization correction and a new Android testAPK build/rerun are authorized within current contract; product source/hash expected unchanged. Prior independent127host pass remains source-hash-bound; verify final main/test manifest before binding finalcommit. Final review must use regenerated screenshot and matching testAPK, preserve earlier failed evidence provenance, and must not infer actual visible dialog from prior PNG.

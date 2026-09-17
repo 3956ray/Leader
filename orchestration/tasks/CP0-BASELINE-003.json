@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "task_id": "CP0-BASELINE-003",
+  "owner": "developer",
+  "checkpoint": "CP0",
+  "status": "accepted",
+  "goal": "建立经过安全门禁、版本核对和严格校验的 Android 依赖基线，并用首次受控构建与单元测试证明当前空项目可重复构建。",
+  "commit": "7dacd3676fa7efc8162c1ed1171389e96fc807cb",
+  "report": "orchestration/reports/CP0-BASELINE-003.md"
+}
+

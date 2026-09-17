@@ -1,0 +1,9 @@
+{
+  "head": "1dde8ec7bd34caac991097c9f3962958cc753fab",
+  "result_sha256": "3cd82773b67b612dda7e5483b60d695b81edac36cf3ddb44ceb22aecd6e6a763",
+  "verified_file_entries": 147,
+  "unchanged_tested_inputs": 53,
+  "clean_worktree": true,
+  "contract_matches": true,
+  "result_path": "/private/tmp/thinkv2-V2-REMINDERS-001-6cbedbcd/result.json"
+}

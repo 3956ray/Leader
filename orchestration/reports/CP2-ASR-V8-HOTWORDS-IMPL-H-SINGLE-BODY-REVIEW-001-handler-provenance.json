@@ -1,0 +1,36 @@
+{
+  "task_id": "CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001",
+  "root": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e",
+  "old_template": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-CONSUMER-SINGLE-BODY-REVIEW-001-fetch.py",
+    "bytes": 7700,
+    "sha256": "204683f97f6cd99ac70d22d3521900ed1445e42c61790a2b16184005566797d2"
+  },
+  "new_handler": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-SINGLE-BODY-REVIEW-001-fetch.py",
+    "bytes": 7704,
+    "sha256": "5175f3d5623a04ea0d975a802df651c003f8cb5320c632e2fca228290d32e3ac"
+  },
+  "approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-001-approved.json",
+    "bytes": 3405,
+    "sha256": "ffd046a2d0e25ec05a9c0e0e72676bbe0b5f8d132986dd2ebc730eef13c39f38"
+  },
+  "request": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-V8-HOTWORDS-IMPL-H-AUTHORIZATION-PREPARATION-001-request.json",
+    "bytes": 7679,
+    "sha256": "d645a34ec6c176c12683588f4bee7f778690bf8d6cebb1e17d028f38f8bbcaed"
+  },
+  "changes": {
+    "HOTWORDS-CONSUMER": "HOTWORDS-IMPL-H",
+    "/private/tmp/think-hotword-single-a4a7efb3bf5b4476b68937ee3333c8d7": "/private/tmp/think-hotword-impl-final-8fe984ad417e45db9bd5da64c2e93c8e",
+    "2cc71640231337f3984a465b8ad6ae08482bfc1cb45338d43b98e6661114935d": "ffd046a2d0e25ec05a9c0e0e72676bbe0b5f8d132986dd2ebc730eef13c39f38",
+    "0c08c5cfd1c3cc3ebe2daf32ea128bf91f171ed72a29639b953918c735fd562d": "d645a34ec6c176c12683588f4bee7f778690bf8d6cebb1e17d028f38f8bbcaed",
+    "20d4646bb5c6ffbe714848cc497e1809113d5195": "9c2b4b71d22b6757e9faa87d5b42f9e586a08456",
+    "c872eb5cdf4f4e25b133e79cfd156343782f61a344efba7b3aef4a6f3d1e1b79": "ee879c7618a637a24e6011b9e426a49550ef8cc76d10235f61c5b751569608f6",
+    "8993": "2286",
+    "CAP = 65536": "CAP = 16384",
+    "online-recognizer.cc": "online-recognizer-impl.h"
+  },
+  "meaning": "Newtask,newidentity,newone-attemptstate; oldtemplate unchanged and never rerun."
+}

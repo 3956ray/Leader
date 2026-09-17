@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-001-R1",
+  "owner": "developer",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "task_result": "COMPLETE",
+  "design_verdict": "design_feasible",
+  "commit": "a57f643bac24edef5d6601b8a59baa77060f3d2c",
+  "goal": "修复窄运行时边界设计中机器证据 coverage 不完整和输入集合哈希不可确定性重算的问题，使结构化分析与人类可读提案完全一致。",
+  "report": "orchestration/reports/CP2-ASR-NARROW-RUNTIME-BOUNDARY-DESIGN-001-R1.md"
+}

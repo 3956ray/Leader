@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "same_id_revision": true,
+    "same_local_0900": true,
+    "utc_delta_12h": true,
+    "both_scheduled": true,
+    "package_replaced": true,
+    "update_scheduled": true
+  },
+  "cold_final_pending": true,
+  "final_artifact_binding_pending": true
+}

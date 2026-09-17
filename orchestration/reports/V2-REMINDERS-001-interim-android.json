@@ -1,0 +1,15 @@
+{
+  "status": "interim Android evidence; final build identity and final reruns still pending",
+  "logs": [
+    {
+      "path": "/private/tmp/thinkv2-reminders-regression.log",
+      "sha256": "23ec0e27bff7ad52beef858834f5c7a1b62086a1e21cd80252004db5432fcae8",
+      "tail": "TUS: numtests=4\nINSTRUMENTATION_STATUS: stream=\ncom.example.thinkv2.ExampleInstrumentedTest:\nINSTRUMENTATION_STATUS: test=useAppContext\nINSTRUMENTATION_STATUS_CODE: 1\nINSTRUMENTATION_STATUS: class=com.example.thinkv2.ExampleInstrumentedTest\nINSTRUMENTATION_STATUS: current=4\nINSTRUMENTATION_STATUS: id=AndroidJUnitRunner\nINSTRUMENTATION_STATUS: numtests=4\nINSTRUMENTATION_STATUS: stream=.\nINSTRUMENTATION_STATUS: test=useAppContext\nINSTRUMENTATION_STATUS_CODE: 0\nINSTRUMENTATION_RESULT: stream=\n\nTime: 18.359\n\nOK (4 tests)\n\n\nINSTRUMENTATION_CODE: -1\n"
+    },
+    {
+      "path": "/private/tmp/thinkv2-reminders-ui.log",
+      "sha256": "ac6dbfe44825ae492be020a73b719050ed79f09f10176fbf94c2e9f8ce95addf",
+      "tail": "e.thinkv2.ReminderUiTest:\nINSTRUMENTATION_STATUS: test=weeklyConfigurationValidationBlockedStatusAndDisable\nINSTRUMENTATION_STATUS_CODE: 1\nINSTRUMENTATION_STATUS: class=com.example.thinkv2.ReminderUiTest\nINSTRUMENTATION_STATUS: current=1\nINSTRUMENTATION_STATUS: id=AndroidJUnitRunner\nINSTRUMENTATION_STATUS: numtests=1\nINSTRUMENTATION_STATUS: stream=.\nINSTRUMENTATION_STATUS: test=weeklyConfigurationValidationBlockedStatusAndDisable\nINSTRUMENTATION_STATUS_CODE: 0\nINSTRUMENTATION_RESULT: stream=\n\nTime: 5.351\n\nOK (1 test)\n\n\nINSTRUMENTATION_CODE: -1\n"
+    }
+  ]
+}

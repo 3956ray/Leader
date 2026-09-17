@@ -1,0 +1,45 @@
+{
+  "bundle_sha256": "9bd39cec857137703c205b92b755eca200c58a2345d197a1ce853825cd1fe1bf",
+  "intake_contract_sha256": "1e7ba2c62a848fdfa0349cc8d30a8eaedb2d3dbd745a85dbdb584a57f27d1146",
+  "policy_sha256": "abf2119febd5cadeb76943d0fce72606cba842b2fab5b24dd2e43ba040be62b0",
+  "semantic_contract_sha256": "2b048314969209f4db3a6a63f2b6646ceeb06d5b3794fa44e1dcd52c0b583c86",
+  "role_contract_sha256": "1c8a95b48c034e830b2a0a545192c691af12127774152921e1df73c6ee670125",
+  "RESULT": "PASS",
+  "time_contract": {
+    "domain": "think-review-timestamp-v1",
+    "version": 1,
+    "raw_bytes_limit": 128,
+    "grammar": "YYYY-MM-DDTHH:MM:SS[.1..6 digits](Z|+HH:MM|-HH:MM)",
+    "calendar": "proleptic Gregorian; raw and UTC years0001..9999",
+    "fraction_digits": [
+      0,
+      6
+    ],
+    "offset_minutes": [
+      -840,
+      840
+    ],
+    "unknown_offset": "-00:00 rejected",
+    "epoch": "1970-01-01T00:00:00Z",
+    "instant_microseconds": [
+      -62135596800000000,
+      253402300799999999
+    ],
+    "raw_hash_domain": "sha256-reviewed-at-raw-ascii-v1",
+    "utc_hash_domain": "sha256-reviewed-at-utc-ascii-v1",
+    "conversion": "exact integer microseconds; UTC same fraction digits; reject UTC overflow",
+    "identity": "exact raw and UTC ASCII hashes plus entire canonical object; instant equality is not identity"
+  },
+  "network": {
+    "actual_network_events": [],
+    "trapped_workload_calls": [],
+    "dns_http_socket_traps": 12,
+    "audit_event_prefixes": [
+      "socket.",
+      "http.client.",
+      "subprocess."
+    ],
+    "proxy_environment": "not consulted by direct HTTPSConnection",
+    "scope": "this offline workload only; no real network protocol validation"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-V8-ACTIVE-DYNAMIC-PATHS-STATIC-REVIEW-001",
+  "owner": "leader",
+  "checkpoint": "CP2",
+  "status": "dispatched",
+  "goal": "仅在获准同一保留头文件的七处命中及必要最小同文件上下文中完成静态语义证据，保持硬停止并返回产品决策门。",
+  "prepared_at": "2026-09-06T05:55:42.480860+00:00",
+  "baseline_commit": "63de9e684ad39a476624699f18dd349272062a51",
+  "predecessor_acceptance": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-V8-HARD-STOP-DECISION-SYNC-001-acceptance.json",
+    "bytes": 2008,
+    "sha256": "35d7fac1337d4c02303f0652fce26af9964c6b3d8faca7bd07cb7f6b7e822f7a"
+  },
+  "formal_decision": {
+    "path": "/Users/orderly_ray/Projects/think/doc/cp2-v8-hard-stop-next-step-decision-2026-09-06.md",
+    "bytes": 10980,
+    "sha256": "2b099d1ec9a21c39969a7987453b32bf81068a0f8fb3256fdf63fb905439511d"
+  },
+  "user_approval": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-001-approved.json",
+    "bytes": 2016,
+    "sha256": "694c69bc465663cb2a8ba58e21c9757d131d6135956a92df00ed78f997979c81"
+  },
+  "approved_request": {
+    "path": "/Users/orderly_ray/Leader/orchestration/reports/CP2-ASR-NARROW-SOURCE-ACQUISITION-V8-AUTHORIZATION-REQUEST-001.json",
+    "bytes": 19883,
+    "sha256": "2114259dc42837e96d938c65bce2b165ee47836623408c4377ffb8d11d5a392b"
+  },
+  "retained_object": {
+    "unique_retained_path": "/private/tmp/think-acquisition-v8-quarantine-3_hb53be/source_v8_once/body-0002.json",
+    "envelope_bytes": 8579,
+    "envelope_sha256": "290e9fd9b193bf0b8a5c465de6403a6a2d0ee4021d9a22dd545e27cc5706ff8f",
+    "body_bytes": 7939,
+    "body_sha256": "382e6bcc6e26079419c0a0f972d89b6c48de5d9ecda49ceca592bd0786482836",
+    "git_blob": "a4559f413cae739f055509a01d5684879e4a626c",
+    "targets": [
+      {
+        "line": 15,
+        "start": 404,
+        "end": 411,
+        "kind": "active"
+      },
+      {
+        "line": 110,
+        "start": 3577,
+        "end": 3590,
+        "kind": "active"
+      },
+      {
+        "line": 143,
+        "start": 4756,
+        "end": 4769,
+        "kind": "active"
+      },
+      {
+        "line": 156,
+        "start": 5350,
+        "end": 5363,
+        "kind": "active"
+      },
+      {
+        "line": 156,
+        "start": 5364,
+        "end": 5377,
+        "kind": "active"
+      },
+      {
+        "line": 64,
+        "start": 2139,
+        "end": 2146,
+        "kind": "new_comment"
+      },
+      {
+        "line": 132,
+        "start": 4297,
+        "end": 4310,
+        "kind": "new_comment"
+      }
+    ],
+    "initial_human_visible_lines": [
+      15,
+      64,
+      110,
+      132,
+      143,
+      156
+    ],
+    "context_expansion": "Only same-body minimal full declaration/directive/statement and enclosing type/namespace as authorized; log exact ranges. Never follow other files."
+  },
+  "derived_input": {
+    "path": "/Users/orderly_ray/Projects/think/doc/security-reviews/sherpa-onnx-narrow-source-acquisition-v8/2026-09-06/source-review.json",
+    "bytes": 10522,
+    "sha256": "6bf0cbd564e4232d9a1c6114292d7d2e45c71b9da545578dbdf4565bf04e3fef"
+  },
+  "source_analysis_sha256": "90a03a3f41409632b9de40d08578fc8d89596295832fba11af7627f4d6c01fac",
+  "scope": [
+    "正式决定全部范围适用。先逐层descriptor nofollow/regular singlelink0600/private0700/size/hash/body/Gitblob核验唯一body-0002.json，不枚举或读取邻接retained文件。内存解码7939B，人工先见6目标物理行，仅追加局部语法必需的完整directive/declaration/statement和最小enclosing type/function/namespace。逐次记录可见line/bytes/hash。",
+    "5active和2新增comment绑定完整tuple/token/carrier/语法/同文件直接引用关系，仅给正式允许的局部分类和精确缺证symbol。发现明确禁止能力仅完成最小记录后停止，不进入工程方案；跨文件问题保持未验证。",
+    "仅新增Leader append-only JSON和Markdown、标准库读取/验证脚本与报告，绑定本决定/用户批准/对象/reviewer/time。独立复核只读同一个获准对象，零网络和第三方/candidate/scanner/controller执行，产品仓库只读。",
+    "完成或blocked后独立验收，回产品决策门，不自行创建commentmap/v9/新获取或修改旧对象。"
+  ],
+  "out_of_scope": [
+    "不读取任何其他body/LICENSE/metadata/analysis archive/rawscannercontext/旧run，不跟随include/symbol/API/path打开文件或网络；不展示完整header/无关行。",
+    "不生成clearance、不改冻结分类/任何旧授权/规则/预算/Checkpoint，不执行安装构建模型音频集成设备。"
+  ],
+  "acceptance": [
+    "唯一对象身份/权限及七tuple/carrier和可见边界可复算，输出逐项局部证据与所有未验证，无跨文件或运行时断言。",
+    "只输出active_paths_review_complete_for_product_decision或active_paths_review_blocked，保持run永久结束/硬停止/pending与全部门槛。"
+  ],
+  "evidence_required": [
+    "输入/脚本/报告精确hash、reviewer/time、唯一file/bytes、每次可见line/byte/hash、局部结论和限制及独立验证。",
+    "零其他body/网络/候选/scanner/controller执行，Git只读/clean，明确停止与下一产品决定建议。"
+  ],
+  "stop_conditions": [
+    "任一identity/link/mode/权限/size/hash/tuple/carrier不符立即停，不修材料。",
+    "需其他实现材料解释时unresolved并停；发现明确政策禁止能力完成最小记录后停并建议暂停，不扩大读取或工程化。"
+  ],
+  "started_at": "2026-09-06T05:55:42.659111+00:00"
+}

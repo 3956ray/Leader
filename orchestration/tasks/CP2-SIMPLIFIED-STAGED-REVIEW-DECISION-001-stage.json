@@ -1,0 +1,22 @@
+{
+  "executor_idle": true,
+  "contract": {
+    "task_id": "CP2-SIMPLIFIED-STAGED-REVIEW-DECISION-001",
+    "owner": "product_manager",
+    "checkpoint": "CP2",
+    "assigned_thread_id": "01a0768c-7ba7-7f11-bd4f-f5c2fd1fa779",
+    "goal": "把用户已批准的简化、分阶段Vosk审查规则正式落档，替代未执行的16小时适配器路线并明确下一项有限检查合同。",
+    "user_decision": "/Users/orderly_ray/Leader/orchestration/decisions/2026-09-08-simplified-staged-review.md",
+    "scope": [
+      "先阅读用户决定、既有范围/预检和PRD；按用户决定APPROVED落地，不重评是否允许已明确批准的简化，不要求用户重复确认。",
+      "新增cp2-vosk-simplified-staged-review-decision-2026-09-08.md及必要PRD/INDEX/LOG，明确新决定优先，16小时adapter任务不下发，旧严格范围及0GET证据保持历史。",
+      "逐项写出保留/简化/延期及残余风险；给出一个可执行首阶段合同，固定两个原对象和URL、适度具体下载/文件数/实际展开/时间上限、有限重试与已核实来源HTTPS跳转规则、安全临时解包与新attempt子目录、不执行目标。现有工具组合优先，必要少量配置不扩为新平台。",
+      "重试/重定向/路径/资源是本次用户已批准的变更类别，PM一次明确合理数值与范围；不得增加新依赖对象或开放任意域名，不依靠关闭TLS或任意解包。精确响应头上限、1GiB系统硬隔离、全内存解包不再是第一阶段绝对门槛，仍明确现实防护和未覆盖。",
+      "明确第二阶段集成前嵌套代码/native/依赖许可等审查，第三阶段真实CP2产品门槛，初查完成不是安全/采用通过。提交最小正式同步文件清单供Leader下一单交dev，不改think、不执行查询下载。"
+    ],
+    "out_of_scope": ["不实施适配器、不联网/获取制品/安装/执行/集成，不修改产品隐私、专名90%、CP1恢复或后续Checkpoint准入。"],
+    "acceptance": ["简化规则与用户决定逐项一致，阶段责任清楚且首阶段可执行、未知诚实、旧路线不会误启动。", "正式文档一致，下一合同包含完整边界/验收/证据/停止，普通只读/文档工作不新增审批循环。"],
+    "evidence_required": ["身份绑定ACK与最终RESULT、正式文件path/bytes/SHA、逐项变更表、下一合同及同步清单；完成主动回调Leader，实际拒绝则记录不绕过。"],
+    "stop_conditions": ["若简化必须额外改变用户硬边界则指出具体问题，不能暗中扩大；本轮仅落档，完成等待Leader验收，不自行派开发或获取。"]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "V2-NOTES-CORE-001",
+  "owner": "developer",
+  "checkpoint": "CP3",
+  "assigned_thread_id": "01a0a5d3-8ec3-7071-82f6-a49f80ba7d1d",
+  "goal": "Build the first persistent text-note creation, draft, editing, reopening and real search workflow from the blank thinkV2 template.",
+  "scope": [
+    "Work only in /Users/orderly_ray/Projects/thinkV2; user confirmed blank from-zero project. Establish independent Git baseline without committing in parent repository.",
+    "Inspect build scripts and dependency identity before execution. Write concise project AGENTS, README and requirement baseline; do not copy old source or review tools.",
+    "Implement stable note IDs, durable local storage and drafts, AUTO/MANUAL titles, save failure recovery, home/editor and real text search; manually correctable category field.",
+    "Use current template dependencies and Android platform where possible; large readable UI, clear unavailable voice entry. Explicitly prevent unrequested system cloud backup of private notes.",
+    "Run appropriate unit/persistence tests and available build/lint. Synthetic test emulator only if available; physical devices and private data excluded."
+  ],
+  "out_of_scope": [
+    "No reminders, backup export/import, ASR, calendar migration, cloud AI, graph, account or publication in this first task; retain these as later full-app requirements.",
+    "No inherited old implementation/acceptance, unknown file overwrite, private father data, unreviewed new dependency or parent-repository commit."
+  ],
+  "acceptance": [
+    "Empty database contains no demo; save nonempty note to real list, edit same ID, rebuild store and retain body/title/category; failure never reports success.",
+    "Automatic title does not overwrite manual title; reject empty body, recover committed draft, confirm discard/delete and support category correction.",
+    "Search actual title/body including Chinese substring and whitespace AND; edits update search; home-to-record within three steps.",
+    "56dp main targets and 18sp body; theme/font verification or explicit unverified status. No fake voice or fake backup.",
+    "Independent project version boundary, clear changes, actual test/build reports and explicit device verification gaps."
+  ],
+  "evidence_required": [
+    "RESULT; Git root/HEAD; changed files and purpose; commands/results; per-criterion evidence; APK path/hash if built; unverified items; one suggested next step."
+  ],
+  "stop_conditions": [
+    "One CP3 core workflow only; report then stop for commander review.",
+    "Report exact new dependency or permission gaps while continuing independent first-party work. Stop affected actions on data-loss risk or scope change."
+  ]
+}

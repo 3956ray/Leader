@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "task_id": "CP2-ASR-ACQUISITION-TOOL-SCOPE-DECISION-001",
+  "owner": "product_manager",
+  "checkpoint": "CP2",
+  "status": "accepted",
+  "goal": "根据已验收离线核心缺少真实获取入口的事实，明确完整第一方获取工具的离线开发范围和冻结前置条件，并将单一产品决定落地正式知识库。",
+  "scope": [
+    "只读 Leader 验收报告、提交 da9279a 的第一方 README/REPORT/接口与正式返工决定，确认离线核心已验收但不能执行真实获取；不再重复裁定已通过的 F1–F9。",
+    "给出 APPROVED、REVISE 或 PAUSE，写入正式产品知识库决定、PRD及必要索引。评估下一单仅开发第一方真实获取组件和输入协议，Python标准库，全部测试使用项目自建合成响应和替身传输，实际网络/DNS仍为零。",
+    "明确未来用于固定 GitHub 身份的传输、真实metadata/input入口、请求前授权、前置响应与累计预算、禁止跳转/自动重试绕过账本、证据持久化等完整链路必须在冻结前实现和独立验收；不能冻结时补代码，不能仅改synthetic标记就放行。",
+    "建议保留已验收离线核心不变，在独立新目录添加组件/组合入口及必要测试；如果需要修改核心语义，必须明确范围并重新验收受影响部分。真实输入协议可以开发和用合成数据验证，不能读取真实上游fixture或旧corpus。",
+    "明确固定设计/上游身份、9 seed、96文件/1MiB、denylist和原授权继续不变。普通可逆第一方离线开发无需重复用户确认；开发验收、完整正式冻结、真实获取仍是分离任务，产品经理不代替Leader验收实现。"
+  ],
+  "out_of_scope": [
+    "修改产品仓库或工具、联网或读取第三方正文/API响应/旧corpus、真实获取、下载依赖或模型、构建、集成、产品功能、冻结任何release或policy。",
+    "把离线核心通过视为完整获取工具就绪，放宽来源/限额/隐私/Checkpoint，采用现有block或manual_review制品，宣称CP2通过或CP3获准。"
+  ],
+  "acceptance": [
+    "正式结论及文档存在，明确区别允许编写未来网络组件与禁止当前实际网络行为；能够形成一个具体、可测试的下一开发任务。",
+    "完整获取release冻结前必须完成所有执行组件和输入协议的独立审查，冻结后不可静默补代码；现有离线验收结论保持准确。",
+    "给出下一任务允许范围、不做、验收、证据、停止条件；不引入第三方依赖或来源范围、隐私与CP门槛变化。"
+  ],
+  "evidence_required": [
+    "RESULT及APPROVED/REVISE/PAUSE，正式决定/PRD/索引绝对路径与SHA-256、修改归属和检查结果、未验证项目。",
+    "引用Leader已验收提交和独立证据；下一项唯一开发任务及冻结前必须满足的条件；完成后向当前Leader发回报告并停止。"
+  ],
+  "stop_conditions": [
+    "需要改变既有固定身份、seed、范围、限额、denylist、隐私或Checkpoint时停止并明确待决问题，不自行批准新获取范围。",
+    "知识库出现无法归属修改或冲突时不覆盖；不修改产品仓库，不把聊天回复当作正式需求落地。"
+  ],
+  "assigned_thread_id": "01a05318-af84-7993-9861-41c0b73fc028",
+  "baseline_commit": "da9279a411d990e4c37191e22be680b2c4bfcb07",
+  "leader_acceptance_report": "orchestration/reports/CP2-ASR-FIRST-PARTY-REVIEW-TOOL-REPAIR-001.md",
+  "task_result": "COMPLETE",
+  "accepted_at": "2026-09-05T23:16:50.927294+08:00",
+  "report": "orchestration/reports/CP2-ASR-ACQUISITION-TOOL-SCOPE-DECISION-001.md"
+}

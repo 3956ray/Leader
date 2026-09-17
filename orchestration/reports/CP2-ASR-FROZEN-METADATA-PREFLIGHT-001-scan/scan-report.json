@@ -1,0 +1,121 @@
+{
+  "scanner": {
+    "name": "scan-untrusted-code",
+    "version": "1.1.2"
+  },
+  "target": {
+    "path": "/private/tmp/think-frozen-metadata-preflight-_6wsajyf",
+    "sha256": null
+  },
+  "verdict": "manual_review",
+  "risk_score": 32,
+  "verdict_basis": "contextual or medium-severity indicators require human review",
+  "block_signals": [],
+  "score_breakdown": [
+    {
+      "rule_id": "IOC-DAAM-PORT-8085",
+      "path": "commit.json",
+      "severity": "medium",
+      "source_kind": "source_code",
+      "points": 8
+    },
+    {
+      "rule_id": "IOC-DAAM-PORT-8085",
+      "path": "tree.json",
+      "severity": "medium",
+      "source_kind": "source_code",
+      "points": 8
+    },
+    {
+      "rule_id": "IOC-DAAM-PORT-8086",
+      "path": "tree.json",
+      "severity": "medium",
+      "source_kind": "source_code",
+      "points": 8
+    },
+    {
+      "rule_id": "IOC-DAAM-PORT-8087",
+      "path": "tree.json",
+      "severity": "medium",
+      "source_kind": "source_code",
+      "points": 8
+    }
+  ],
+  "context_summary": {
+    "source_code": 4
+  },
+  "highest_severity": "medium",
+  "summary": {
+    "medium": 4
+  },
+  "stats": {
+    "candidates": 2,
+    "text_files": 2,
+    "binary_files": 0,
+    "skipped_large": 0,
+    "skipped_limit": 0,
+    "unreadable": 0,
+    "archives": 0
+  },
+  "findings": [
+    {
+      "rule_id": "IOC-DAAM-PORT-8085",
+      "severity": "medium",
+      "confidence": "Confirmed",
+      "category": "ioc",
+      "path": "commit.json",
+      "line": 32,
+      "evidence": "\"payload\": \"tree fd2c4e97c9f7499b6ed91c7c2854b4211f61bdc0\\nparent 6fe2cdeb2df6b43817bc49c36e3a1263c25af096\\nauthor Fangjun Kuang <csukuangfj@gmail.com> 1788238085 +0800\\ncommitter GitHub <noreply@github.com> 1788238085 +0800\\n\\nRelease v1.1...",
+      "rationale": "Observed external data-channel port; require contextual review.",
+      "source_kind": "source_code",
+      "reachable": false,
+      "base_severity": "medium"
+    },
+    {
+      "rule_id": "IOC-DAAM-PORT-8085",
+      "severity": "medium",
+      "confidence": "Confirmed",
+      "category": "ioc",
+      "path": "tree.json",
+      "line": 13813,
+      "evidence": "\"sha\": \"e0a2ac883917acb75e8085f3d3791cefe5c8c49f\",",
+      "rationale": "Observed external data-channel port; require contextual review.",
+      "source_kind": "source_code",
+      "reachable": false,
+      "base_severity": "medium"
+    },
+    {
+      "rule_id": "IOC-DAAM-PORT-8086",
+      "severity": "medium",
+      "confidence": "Confirmed",
+      "category": "ioc",
+      "path": "tree.json",
+      "line": 18907,
+      "evidence": "\"sha\": \"362edc3c87ed585a051f2c4faab9bf4da8c80863\",",
+      "rationale": "Observed external auxiliary-channel port; require contextual review.",
+      "source_kind": "source_code",
+      "reachable": false,
+      "base_severity": "medium"
+    },
+    {
+      "rule_id": "IOC-DAAM-PORT-8087",
+      "severity": "medium",
+      "confidence": "Confirmed",
+      "category": "ioc",
+      "path": "tree.json",
+      "line": 57834,
+      "evidence": "\"sha\": \"2d16a19e9e05dbc808742e57ac7ef7d7009a9dc2\",",
+      "rationale": "Observed external worker-channel port; require contextual review.",
+      "source_kind": "source_code",
+      "reachable": false,
+      "base_severity": "medium"
+    }
+  ],
+  "limitations": [
+    "Static inspection cannot prove that an artifact is safe.",
+    "Runtime-fetched, encrypted, obfuscated, oversized, or generated payloads may not be visible.",
+    "A network/upload capability does not prove successful data transfer.",
+    "Repository reputation and dependency vulnerability lookups are outside the offline V1.1 scan.",
+    "Binary metadata, code-signing, and package provenance checks are reserved for a later macOS/Python extension."
+  ]
+}

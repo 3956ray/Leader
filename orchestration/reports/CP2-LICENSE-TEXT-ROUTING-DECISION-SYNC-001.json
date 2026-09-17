@@ -1,0 +1,22 @@
+{
+  "RESULT": "ACCEPTED",
+  "commit": "f347260f8afc24a22970cead9740c5b6792d0527",
+  "parent": "9aa40913c57cccd31105ac88385102f0a0758d63",
+  "files": {
+    "doc/cp2-license-text-routing-decision-2026-09-06.md": "27789c9bd35e6e452de70c21b637fc496d8ac17902cda075a98af81c7006aa75",
+    "doc/prd-v0.1-2026-09-04.md": "a3978678287f558cb5c21c00f3879c01ab6b2affd8eda2d06a8a1d86e2c74b57",
+    "AGENTS.md": "5dd1f1e5d7904b67354dfc5180257dcd15c7286575bc652867887bda85925a06",
+    "doc/README.md": "cd5c7373d689718e660e9f095ed2ac2c9a8c748877f545f0503440e96bbb3a28",
+    "doc/development-guide-v0.1-2026-09-04.md": "220f8594821f86de27d2ead6cb7aa56a7cfe4e7abfe4cf6461436f33020340ee"
+  },
+  "five_file_scope": true,
+  "source_worktree_HEAD_match": true,
+  "clean_worktree": true,
+  "v5_absent": true,
+  "semantic_review": "Exact LICENSE role offline repair; unchanged C++ semantics and all safety constraints; fresh authority for second real acquisition correctly reflected.",
+  "limitations": [
+    "KB files pinned by authorized SHA, not claimed committed.",
+    "Existing KB raw links remain source references; not copied into product.",
+    "No runtime validation in documentation task."
+  ]
+}
