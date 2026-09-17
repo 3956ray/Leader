@@ -58,8 +58,8 @@
     },
     {
       "path": "handoff/START-HERE.md",
-      "bytes": 6457,
-      "sha256": "3e329ab56d1a2d8e5cd91a65156fd9f8e2aa67dd0d304581c244b002e66aeb41"
+      "bytes": 6931,
+      "sha256": "9615e701f5ee2c915dbfb5a4a75ca5afed5dad7468d96106323096f33810c970"
     },
     {
       "path": "handoff/THINK-AGENTS.md",
@@ -83,8 +83,8 @@
     },
     {
       "path": "handoff/publication-status.json",
-      "bytes": 1142,
-      "sha256": "d4b0a5cdce19086e873cbecb23506f2992866dc207f9a6a1f97b043b0c795f07"
+      "bytes": 2308,
+      "sha256": "826251da979daf8522d21d5bdbcf3aafa5bdbf66e25033d3117df13753072bc2"
     },
     {
       "path": "handoff/sources/emulator-first-full-engineering-addendum-2026-09-16.md",

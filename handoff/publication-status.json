@@ -6,10 +6,27 @@
     "entrypoint": "handoff/START-HERE.md"
   },
   "developer": {
-    "status": "blocked_by_approval_review_in_developer_task",
-    "remote_writes": false,
-    "local_receipt": "migration/developer-migration-receipt.json",
-    "required_action": "User direct approval in Developer task requested; no bypass attempted"
+    "status": "public_upload_complete",
+    "repository": "https://github.com/3956ray/Developer",
+    "branches": {
+      "codex/migrate-thinkv2-20260917": "9ecfe708b32a749a3980fa00ea47d3e507e75daa",
+      "codex/thinkv2-public-history": "6cfd50f5eb6e2a8e6df0968886c9bec9b7d1ba14"
+    },
+    "release": "https://github.com/3956ray/Developer/releases/tag/thinkv2-migration-20260917",
+    "entrypoint": "https://github.com/3956ray/Developer/blob/codex/migrate-thinkv2-20260917/handoff/thinkV2/NEW_COMPUTER.md",
+    "verification": "Leader independently matched both remote branch heads; Developer completed anonymous full download SHA verification",
+    "download_verification": {
+      "public_url": "https://github.com/3956ray/Developer/releases/download/thinkv2-migration-20260917/public-acceptance-evidence.tar.gz",
+      "downloaded_bytes": 1172246269,
+      "download_sha256": "f286e9712e5badbaca062398f3ed7c6301fecbfdcec77e236ace04627bce8706",
+      "matches_local_verified_package": true,
+      "github_digest": "sha256:f286e9712e5badbaca062398f3ed7c6301fecbfdcec77e236ace04627bce8706",
+      "checksum_file_download_verified": true,
+      "authentication_used_for_download": false,
+      "transport": "4 concurrent validated HTTP byte ranges; every byte hashed in original order",
+      "range_count": 35
+    },
+    "remaining": "Private/offline original backup transfer, new computer build and task rebinding"
   },
   "product_manager": {
     "status": "pushed_and_remote_verified_by_pm",

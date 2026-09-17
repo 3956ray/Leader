@@ -51,7 +51,7 @@ thinkV2由空白独立开发；用户顺序为模拟器工程先行，完整开�
 
 - Leader 已推送；初次迁移提交 `a25ed2575c9d0cd8dedb3c3f526987e4910f9634`。
 - PM 已推送到 `codex/thinkv2-pm-migration-20260917`，提交 `d590c574a09726eaa640c2719674f206d50c5d4e`；克隆后需检出此分支。[PM恢复入口](https://github.com/3956ray/ProductManager/blob/codex/thinkv2-pm-migration-20260917/product-knowledge-base/ideas/think-v2/migration-handoff-2026-09-17.md)。
-- Developer 尚未推送：开发者任务的自动审批拒绝了公开交接分支，未接受转述的用户授权。需用户在开发者任务直接确认该公开包（内部路径、历史元数据与约1.17GB公开证据）；不得绕过拒绝。
-- 离开旧电脑前手动安全转移 `/Users/orderly_ray/Projects/thinkV2-migration-private-20260917/complete-original-transfer.tar.gz`（1,849,004,421 bytes）。此包仅私下/离线转移，不上传公开仓库；开发者报告 SHA256 为 `e45bfc25e368b1f823fa2477d03c9c2ac6a899b4bf1cd773b22ff5ac01abd5c9`，新机须重新核对。它包含完整原始历史和验收存档；仅克隆目前远端三个仓库不足以恢复全部内容。
+- Developer 已完成公开迁移：交接分支 `codex/migrate-thinkv2-20260917` = `9ecfe708b32a749a3980fa00ea47d3e507e75daa`；源码分支 `codex/thinkv2-public-history` = `6cfd50f5eb6e2a8e6df0968886c9bec9b7d1ba14`。Leader独立核对远端分支一致。[开发恢复入口](https://github.com/3956ray/Developer/blob/codex/migrate-thinkv2-20260917/handoff/thinkV2/NEW_COMPUTER.md)；[公开证据包 Release](https://github.com/3956ray/Developer/releases/tag/thinkv2-migration-20260917)，1,172,246,269 bytes。Developer已匿名完整下载校验 SHA256 `f286e9712e5badbaca062398f3ed7c6301fecbfdcec77e236ace04627bce8706`。原审批阻塞已由用户在dev任务直接批准解决。
+- 离开旧电脑前手动安全转移 `/Users/orderly_ray/Projects/thinkV2-migration-private-20260917/complete-original-transfer.tar.gz`（1,849,004,421 bytes）。此包仅私下/离线转移，不上传公开仓库；开发者报告 SHA256 为 `e45bfc25e368b1f823fa2477d03c9c2ac6a899b4bf1cd773b22ff5ac01abd5c9`，新机须重新核对。它包含完整原始历史和验收存档；仅克隆远端三个仓库不足以恢复受限原始资源，公开证据还需下载Release附件。
 
 发布状态见 `publication-status.json`。迁移不改变提醒任务 AWAITING_REVIEW，也不表示完整App验收通过。
